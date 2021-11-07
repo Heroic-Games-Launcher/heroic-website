@@ -27,9 +27,9 @@ const Home: NextPage = () => {
         <section className={styles.downloadSection}>
           <a
             className={styles.downloadBtn}
-            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic.Portable.1.11.0-alpha.exe"
+            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic-1.11.0-alpha.AppImage"
             target="_blank"
-          ><b>Windows</b></a>
+          ><b>Linux</b></a>
           <a
             className={styles.downloadBtn}
             href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic-1.11.0-alpha.dmg"
@@ -37,9 +37,9 @@ const Home: NextPage = () => {
           ><b>MacOS</b></a>
           <a
             className={styles.downloadBtn}
-            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic-1.11.0-alpha.AppImage"
+            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic.Portable.1.11.0-alpha.exe"
             target="_blank"
-          ><b>Linux</b></a>
+          ><b>Windows</b></a>
         </section>
 
         <div className={styles.grid}>
