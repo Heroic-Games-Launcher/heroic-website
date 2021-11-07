@@ -24,12 +24,26 @@ const Home: NextPage = () => {
 
         <Image alt="Heroic Library" src={libraryImage} />
 
+        <section className={styles.downloadSection}>
+          <a
+            className={styles.downloadBtn}
+            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic.Portable.1.11.0-alpha.exe"
+            target="_blank"
+          ><b>Windows</b></a>
+          <a
+            className={styles.downloadBtn}
+            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic-1.11.0-alpha.dmg"
+            target="_blank"
+          ><b>MacOS</b></a>
+          <a
+            className={styles.downloadBtn}
+            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v1.11.0-alpha/Heroic-1.11.0-alpha.AppImage"
+            target="_blank"
+          ><b>Linux</b></a>
+        </section>
+
         <div className={styles.grid}>
 
-          <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases" className={styles.card}>
-            <h2>Download &rarr;</h2>
-            <p>Get Heroic Latest Release for your Linux distro, Mac or Windows system!</p>
-          </a>
 
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" className={styles.card}>
             <h2>Documentation &rarr;</h2>
@@ -42,6 +56,11 @@ const Home: NextPage = () => {
           >
             <h2>Support the Project &rarr;</h2>
             <p>Heroic is free so we need contributions to keep the project alive. :)</p>
+          </a>
+
+          <a href="https://hosted.weblate.org/projects/heroic-games-launcher/" className={styles.card}>
+            <h2>Translate &rarr;</h2>
+            <p>Heroic is localized by volunteers :). It's even translated to non-official languages, like Catalan!</p>
           </a>
 
           <a
