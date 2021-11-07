@@ -1,0 +1,8 @@
+tasks:
+  - init: npm i yarn -g && yarn
+    command: yarn dev
+
+ports:
+  - port: 3000
+    visibility: private
+    onOpen: open-preview
