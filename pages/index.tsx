@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import libraryImage from '../assets/heroic_01.png'
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +21,8 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           An Open Source Epic games launcher alternative for Linux, Windows and MacOSX.
         </p>
+
+        <Image alt="Heroic Library" src={libraryImage} />
 
         <div className={styles.grid}>
 
