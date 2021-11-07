@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher">Heroic!</a>
+          Welcome to <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher">Heroic Games Launcher!</a>
         </h1>
 
         <p className={styles.description}>
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases" className={styles.card}>
             <h2>Download &rarr;</h2>
-            <p>Download Heroic Latest Release!</p>
+            <p>Get Heroic Latest Release for your Linux distro, Mac or Windows system!</p>
           </a>
 
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" className={styles.card}>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Support the Project &rarr;</h2>
-            <p>Help the Project keeping alive buying us a Coffee.</p>
+            <p>Heroic is free so we need contributions to keep the project alive. :)</p>
           </a>
 
           <a
