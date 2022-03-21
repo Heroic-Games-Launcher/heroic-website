@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             className={styles.card}
           >
             <h2>Support the Project &rarr;</h2>
-            <p>Heroic is free so we need contributions to keep the project alive. :)</p>
+            <p>Heroic is free! make a contribution to keep the project alive. :)</p>
           </a>
 
           <a
