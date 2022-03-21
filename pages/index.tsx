@@ -1,8 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import libraryImage from '../assets/heroic_01.png'
 
 const Home: NextPage = () => {
   return (
@@ -22,7 +21,7 @@ const Home: NextPage = () => {
           An Open Source GOG and Epic games launcher for Linux, Windows and MacOSX.
         </p>
 
-        <Image alt="Heroic Library" src={libraryImage} />
+        <img alt="Heroic Library" src='https://user-images.githubusercontent.com/26871415/159332062-0e01f2d1-ec79-44ef-8d29-c436e9334023.png' />
 
         <div className={styles.grid}>
 
