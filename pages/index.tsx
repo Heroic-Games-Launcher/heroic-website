@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          An Open Source Epic games launcher alternative for Linux, Windows and MacOSX.
+          An Open Source GOG and Epic games launcher for Linux, Windows and MacOSX.
         </p>
 
         <Image alt="Heroic Library" src={libraryImage} />
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Heroic Games Launcher @2021
+          Heroic Games Launcher @2022
         </a>
       </footer>
     </div>
