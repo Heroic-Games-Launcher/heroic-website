@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production'
 module.exports = withPlugins([
   [optimizedImages, {
     optipng: {
-      optimizationLevel: 4,
+      optimizationLevel: 3,
     },
   }], {
     reactStrictMode: true,

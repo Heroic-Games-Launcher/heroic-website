@@ -108,10 +108,11 @@
     margin-left: 0.5rem;
 }
 
-
 .container img {
     width: 95%;
+    max-width: 1200px;
 }
+
 
 @media (max-width: 600px) {
     .grid {
