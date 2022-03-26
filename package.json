@@ -6,7 +6,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm i && npm run build && npm run export"
   },
   "dependencies": {
     "imagemin-optipng": "^8.0.0",
