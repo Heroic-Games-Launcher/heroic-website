@@ -1,6 +1,7 @@
 import React from 'react'
 
 const logo = require('../../assets/logo.png')
+import { LogoGithub, LogoDiscord } from 'react-ionicons'
 
 export default function Header() {
   return (
@@ -17,12 +18,12 @@ export default function Header() {
     <ul>
         <li>
             <a href="https://github.com/Heroic-Games-Launcher">
-                <ion-icon className="icon" name="logo-github"></ion-icon>
+                <LogoGithub color={'#00000'} />
             </a>
         </li>
         <li>
             <a href="https://discord.com/invite/rHJ2uqdquK">
-                <ion-icon className="icon" name="logo-discord"></ion-icon>
+                <LogoDiscord color={'#00000'} />
             </a>
         </li>
         <li>
