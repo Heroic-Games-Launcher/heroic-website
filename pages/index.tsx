@@ -7,66 +7,71 @@ const libraryImage = require('../assets/heroic_01.png')
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Heroic Games Launcher</title>
         <meta name="description" content="An Open Source GOG and Epic Games Launcher" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher">Heroic Games Launcher!</a>
-        </h1>
-
-        <p className={styles.description}>
-          An Open Source GOG and Epic games launcher for Linux, Windows and MacOSX.
-        </p>
-
-        <img alt="Heroic Library" src={libraryImage} />
-
-        <div className={styles.grid}>
-
-          <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases" className={styles.card}>
-            <h2>Download &rarr;</h2>
-            <p>Get Heroic Latest Release for your Linux distro, Mac or Windows system!</p>
-          </a>
-
-          <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Check our Wiki for information and Troubleshooting guides.</p>
-          </a>
-
-          <a
-            href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/main/Support.md"
-            className={styles.card}
-          >
-            <h2>Support the Project &rarr;</h2>
-            <p>Heroic is free! make a contribution to keep the project alive. :)</p>
-          </a>
-
-          <a
-            href="https://discord.gg/rHJ2uqdquK"
-            className={styles.card}
-          >
-            <h2>Community &rarr;</h2>
-            <p>
-              Become part of our community by joining our Discord.
+      <header className="hero center">
+        <div className="container">
+          <h1>Play like a Hero</h1>
+          <p>An Open Source GOG and Epic games launcher for Linux, Windows and MacOS.</p>
+            <p className={styles.buttonContainer}>
+              <a href="/downloads" role="button" className="secondary">Download</a>
+              <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" role="button" className="contrast outline">Documentation</a>
             </p>
-          </a>
+          <img src={libraryImage}
+            alt="Heroic Games Launcher preview" />
         </div>
-      </main>
+      </header>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Heroic Games Launcher @2022
-        </a>
-      </footer>
-    </div>
+{/*       <section className="container">
+        <div className="hero">
+          <div className="grid center">
+            <div>
+              <h2>Feature 1#</h2>
+              <p>Ehi dude, this feature is awesome. You will absolutely love it and never came back, trust me!</p>
+            </div>
+            <div>
+              <img
+                src="https://user-images.githubusercontent.com/26871415/157914736-469d3f69-ddfc-4b63-af0b-4d8600f5744d.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container">
+        <div className="hero">
+          <div className="grid center">
+            <div>
+              <img
+                src="https://user-images.githubusercontent.com/26871415/157914736-469d3f69-ddfc-4b63-af0b-4d8600f5744d.png" />
+            </div>
+            <div>
+              <h2>Feature 2#</h2>
+              <p>Ehi dude, this feature is awesome. You will absolutely love it and never came back, trust me!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container">
+        <div className="hero">
+          <div className="grid center">
+            <div>
+              <h2>Feature 3#</h2>
+              <p>Ehi dude, this feature is awesome. You will absolutely love it and never came back, trust me!</p>
+            </div>
+            <div>
+              <img
+                src="https://user-images.githubusercontent.com/26871415/157914736-469d3f69-ddfc-4b63-af0b-4d8600f5744d.png" />
+            </div>
+          </div>
+        </div>
+      </section> */}
+    </>
   )
 }
 

@@ -1,0 +1,29 @@
+@media (min-width: 576px) {
+
+    body>footer,
+    body>header,
+    body>main,
+    section {
+        --block-spacing-vertical: calc(var(--spacing) * 1.2);
+    }
+}
+
+@media (min-width: 768px) {
+
+    body>footer,
+    body>header,
+    body>main,
+    section {
+        --block-spacing-vertical: calc(var(--spacing) * 1);
+    }
+}
+
+@media (min-width: 992px) {
+
+    body>footer,
+    body>header,
+    body>main,
+    section {
+        --block-spacing-vertical: calc(var(--spacing) * 2);
+    }
+}

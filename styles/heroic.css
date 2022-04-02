@@ -1,0 +1,48 @@
+/* Hero */
+
+.hero h1,
+.hero h2,
+.hero h3 {
+    --font-weight: 800;
+    --typography-spacing-vertical: 1.2rem;
+}
+
+.hero h1 {
+    --font-size: 3rem;
+
+}
+
+.hero.center {
+    text-align: center;
+}
+
+/* Article */
+article header h2,
+article header h3,
+article header h4 {
+    margin: 0;
+}
+
+/* Snippet */
+code.snippet,
+code.snippet.hljs {
+    padding: 1.6rem;
+    line-height: 1.6em;
+}
+
+/* Extra */
+.icon {
+    margin-top: 7px;
+    position: relative;
+    top: 3px;
+}
+
+.spacer {
+    margin: 40px 0;
+}
+
+/* Grid */
+.grid.center {
+    align-items: center;
+    justify-items: center;
+}

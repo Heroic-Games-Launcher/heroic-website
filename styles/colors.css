@@ -1,0 +1,37 @@
+/* Root */
+:root:not([data-theme=dark]),
+[data-theme=light] {
+    --secondary: #323035;
+    --secondary-hover: #151f3c;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme=light]),
+    [data-theme=dark] {
+        --secondary: #fff;
+        --secondary-hover: #fff;
+        --secondary-inverse: #191919;
+    }
+    nav li>a {
+        color: var(--h1-color)
+    }
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* Nav */
+nav li>a {
+    --color: var(--secondary);
+}
+
+nav li>a:hover,
+nav li>a:active,
+nav li>a:focus {
+    --color: var(--secondary-hover);
+}
+
+nav li>a:focus {
+    background-color: var(--secondary-focus);
+}
