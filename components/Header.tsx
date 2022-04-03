@@ -1,6 +1,6 @@
 import React from 'react'
 
-const logo = require('../../assets/logo.png')
+const logo = require('../assets/logo.png')
 import { LogoGithub, LogoDiscord } from 'react-ionicons'
 
 export default function Header() {
