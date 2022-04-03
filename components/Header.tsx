@@ -10,7 +10,7 @@ export default function Header() {
         <li>
             <a href="/" className="contrast">
                 <img src={logo} alt="Heroic Games Launcher"
-                    style={{height: "32px"}} />
+                    style={{height: '32px'}} />
                 <strong>Heroic Games Launcher</strong>
             </a>
         </li>

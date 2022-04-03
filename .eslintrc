@@ -5,13 +5,11 @@
       "node": true
     },
     "extends": [
-      "eslint:recommended"
+      "eslint:recommended",
+      "next",
+      "plugin:@next/next/recommended"
     ],
-    "root": true,
     "rules": {
-      "@typescript-eslint/explicit-module-boundary-types": "off",
-      "@typescript-eslint/no-explicit-any": "error",
-      "@typescript-eslint/no-unused-vars": "error",
       "complexity": "off",
       "quotes": [
         "error",
