@@ -9,7 +9,7 @@ export default function Header() {
         <nav className="container-fluid">
             <ul>
                 <li>
-                    <Link href="/">
+                    <Link href="/" passHref>
                         <span className="contrast link">
                             <img src={logo} alt="Heroic Games Launcher" height="32px" width="32px" />
                             <strong>Heroic Games Launcher</strong>
@@ -20,12 +20,12 @@ export default function Header() {
             <ul>
                 <li>
                     <a href="https://github.com/Heroic-Games-Launcher">
-                        <LogoGithub color={'#00000'} />
+                        <LogoGithub color={'#00000'} title="Heroic Github Page" />
                     </a>
                 </li>
                 <li>
                     <a href="https://discord.com/invite/rHJ2uqdquK">
-                        <LogoDiscord color={'#00000'} />
+                        <LogoDiscord color={'#00000'} title="Heroic Discord Server" />
                     </a>
                 </li>
                 <li>

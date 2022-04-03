@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <h1>Play like a Hero</h1>
           <p>An Open Source GOG and Epic games launcher for Linux, Windows and MacOS.</p>
             <p className={styles.buttonContainer}>
-              <Link href="/downloads"><span role="button" className="secondary">Download</span></Link>
+              <Link href="/downloads" passHref><span role="button" className="secondary">Download</span></Link>
               <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" role="button" className="contrast outline">Documentation</a>
             </p>
           <img src={libraryImage} width="1130" height="765px"
