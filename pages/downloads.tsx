@@ -42,15 +42,15 @@ const Downloads: NextPage = () => {
         <details>
             <summary>Windows</summary>
             <p>
-                <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">Download</a> 
-                here the latest version for Windows.
+                <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">Download </a> 
+                 here the latest version for Windows.
             </p>
         </details>
 
         <details>
             <summary>MacOS</summary>
             <p>
-                <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">Download</a> 
+                <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">Download </a> 
                 here the latest version for MacOS.
             </p>
         </details>

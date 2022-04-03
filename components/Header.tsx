@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const logo = require('../assets/logo.png')
+const logo = require('../assets/logo.webp')
 import { LogoGithub, LogoDiscord } from 'react-ionicons'
 
 export default function Header() {
@@ -11,8 +11,7 @@ export default function Header() {
                 <li>
                     <Link href="/">
                         <span className="contrast link">
-                            <img src={logo} alt="Heroic Games Launcher"
-                                style={{ height: '32px' }} />
+                            <img src={logo} alt="Heroic Games Launcher" height="32px" width="32px" />
                             <strong>Heroic Games Launcher</strong>
                         </span>
                     </Link>
