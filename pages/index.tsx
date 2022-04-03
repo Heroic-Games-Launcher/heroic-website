@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const libraryImage = require('../assets/heroic_01.webp')
+const libraryImage = require('../assets/heroic_01.webp?resize&sizes[]=300&sizes[]=600&sizes[]=1000')
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
               <Link href="/downloads" passHref><span role="button" className="secondary">Download</span></Link>
               <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" role="button" className="contrast outline">Documentation</a>
             </p>
-          <img src={libraryImage} width="1130" height="765px"
+          <img src={libraryImage.src}
             alt="Heroic Games Launcher preview" />
         </div>
       </header>
