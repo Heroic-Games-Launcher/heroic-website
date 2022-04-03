@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const logo = require('../assets/logo.png')
@@ -30,7 +31,7 @@ export default function Header() {
             <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">Documentation</a>
         </li>
         <li>
-            <a href="/donate">Support Us</a>
+            <Link href="/donate">Support Us</Link>
         </li>
     </ul>
 </nav>
