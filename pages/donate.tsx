@@ -15,7 +15,7 @@ const Donate: NextPage = () => {
                 <h4>GitHub Sponsor</h4>
                 <small>One-time or flexible-sub</small>
                 <p>Support us with a one-time or recurring donation through GitHub.</p>
-                <a href="https://github.com/Heroic-Games-Launcher">Go to GitHub</a>
+                <a href="https://github.com/sponsors/Heroic-Games-Launcher">Go to GitHub</a>
             </article>
             <article>
                 <h4>Patreon</h4>
