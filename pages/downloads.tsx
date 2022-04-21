@@ -1,8 +1,22 @@
 import { NextPage } from 'next'
 import React from 'react'
+import { getLatestReleases, ReleaseUrls } from './api/github'
 
 const Downloads: NextPage = () => {
   const userAgent = global.window?.navigator?.userAgent || ''
+  const [releases, setReleases] = React.useState<ReleaseUrls>({
+    Linux: '',
+    Windows: '',
+    Mac: ''
+  })
+
+  React.useEffect(() => {
+    const getLatestPackages = async () => {
+      const latests = await getLatestReleases()
+      setReleases(latests)
+    }
+    getLatestPackages()
+  })
 
   if (!userAgent) {
     return null
@@ -38,21 +52,18 @@ const Downloads: NextPage = () => {
             <article>
               <h4>AppImage</h4>
               <p>
-                Download it in AppImage format to take it always with you,
-                everywhere.
+                Download it in AppImage format so it will work on any Linux
+                distro.
               </p>
               <footer>
-                <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
+                <a href={releases.Linux}>
                   <strong>Download</strong>
                 </a>
               </footer>
             </article>
             <article>
               <h4>Other</h4>
-              <p>
-                Download it in AppImage format to take it always with you,
-                everywhere.
-              </p>
+              <p>Heroic is also distributed in RPM, DEB and a TAR.XZ file.</p>
               <footer>
                 <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                   <strong>See all</strong>
@@ -65,7 +76,7 @@ const Downloads: NextPage = () => {
         <details open={isWindows}>
           <summary>Windows</summary>
           <p>
-            <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
+            <a href={releases.Windows}>
               <strong>Download </strong>
             </a>
             here the latest version for Windows.
@@ -75,7 +86,7 @@ const Downloads: NextPage = () => {
         <details open={isMac}>
           <summary>MacOS</summary>
           <p>
-            <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
+            <a href={releases.Mac}>
               <strong>Download </strong>
             </a>
             here the latest version for MacOS.
