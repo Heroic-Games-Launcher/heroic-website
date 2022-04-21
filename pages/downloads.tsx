@@ -30,7 +30,7 @@ const Downloads: NextPage = () => {
     <header className="hero">
       <div className="container">
         <h1>Download</h1>
-        <p>Heroic is available for all operating systems.</p>
+        <p>Heroic is available for all Major operating systems.</p>
 
         <hr className="spacer" />
 
@@ -40,8 +40,8 @@ const Downloads: NextPage = () => {
             <article className="secondary">
               <h4>Flatpak</h4>
               <p>
-                Get the best Heroic experience on any Linux distribution via
-                Flatpak.
+                Get the best Heroic experience on any Linux distribution or on
+                the Steam Deck via Flatpak.
               </p>
               <footer>
                 <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
