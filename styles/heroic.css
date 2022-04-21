@@ -30,6 +30,17 @@ code.snippet.hljs {
     line-height: 1.6em;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (prefers-color-scheme: light) {
+    article>footer {
+        background-color: var(--card-border-color);
+    }
+}
+
 /* Extra */
 .icon {
     margin-top: 7px;

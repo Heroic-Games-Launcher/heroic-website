@@ -1,12 +1,14 @@
 import { NextPage } from 'next'
 import React from 'react'
 import { getLatestReleases, ReleaseUrls } from './api/github'
+import styles from '../styles/Home.module.css'
 
 const Downloads: NextPage = () => {
   const userAgent = global.window?.navigator?.userAgent || ''
   const [releases, setReleases] = React.useState<ReleaseUrls>({
     Linux: '',
     Windows: '',
+    WindowsPortable: '',
     Mac: ''
   })
 
@@ -37,7 +39,7 @@ const Downloads: NextPage = () => {
         <details open={isLinux}>
           <summary>Linux</summary>
           <div className="grid">
-            <article className="secondary">
+            <article className={styles.downloadBoxes}>
               <h4>Flatpak</h4>
               <p>
                 Get the best Heroic experience on any Linux distribution or on
@@ -49,11 +51,11 @@ const Downloads: NextPage = () => {
                 </a>
               </footer>
             </article>
-            <article>
+            <article className={styles.downloadBoxes}>
               <h4>AppImage</h4>
               <p>
                 Download it in AppImage format so it will work on any Linux
-                distro.
+                distro. The AppImage can update itself when a new version is released.
               </p>
               <footer>
                 <a href={releases.Linux}>
@@ -61,9 +63,9 @@ const Downloads: NextPage = () => {
                 </a>
               </footer>
             </article>
-            <article>
+            <article className={styles.downloadBoxes}>
               <h4>Other</h4>
-              <p>Heroic is also distributed in RPM, DEB and a TAR.XZ file.</p>
+              <p>Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.</p>
               <footer>
                 <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                   <strong>See all</strong>
@@ -75,22 +77,45 @@ const Downloads: NextPage = () => {
 
         <details open={isWindows}>
           <summary>Windows</summary>
-          <p>
-            <a href={releases.Windows}>
-              <strong>Download </strong>
-            </a>
-            here the latest version for Windows.
-          </p>
+          <div className="grid">
+          <article className={styles.downloadBoxes}>
+              <h4>Setup</h4>
+              <p>
+                Install Heroic on your system and get auto-updates when a new version is released. Next, Next, Finish!
+              </p>
+              <footer>
+                <a href={releases.Windows}>
+                  <strong>Download Setup</strong>
+                </a>
+              </footer>
+            </article>
+            <article className={styles.downloadBoxes}>
+              <h4>Portable</h4>
+              <p>
+                Use the portable version in case you do not want the full installation. You will still have all the features included.
+              </p>
+              <footer>
+                <a href={releases.WindowsPortable}>
+                  <strong>Download Portable</strong>
+                </a>
+              </footer>
+            </article>
+          </div>
         </details>
 
         <details open={isMac}>
           <summary>MacOS</summary>
-          <p>
-            <a href={releases.Mac}>
-              <strong>Download </strong>
-            </a>
-            here the latest version for MacOS.
-          </p>
+          <article className={styles.downloadBoxes}>
+              <h4>Application</h4>
+              <p>
+                Download the DMG, open it and copy the Heroic App to the Applications folder and you are good to go! Heroic will auto update once a new version is released!
+              </p>
+              <footer>
+                <a href={releases.Mac}>
+                  <strong>Download DMG</strong>
+                </a>
+              </footer>
+            </article>
         </details>
       </div>
     </header>

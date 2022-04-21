@@ -4,3 +4,9 @@
     justify-content: space-evenly;
     align-self: center;
 }
+
+.downloadBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

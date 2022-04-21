@@ -17,6 +17,7 @@ export interface Release {
 export interface ReleaseUrls {
   Linux: string
   Windows: string
+  WindowsPortable: string
   Mac: string
 }
 
@@ -31,14 +32,16 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
 
     const appImage = assets.filter((a) => a.name.endsWith('.AppImage'))[0]
     const windowsSetup = assets.filter((a) => a.name.includes('Setup'))[0]
+    const windowsPortable = assets.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0]
     const dmg = assets.filter((a) => a.name.endsWith('.dmg'))[0]
 
     return {
       Linux: appImage.browser_download_url,
       Windows: windowsSetup.browser_download_url,
+      WindowsPortable: windowsPortable.browser_download_url,
       Mac: dmg.browser_download_url
     }
   } catch (error) {
-    return { Linux: defaultUrl, Windows: defaultUrl, Mac: defaultUrl }
+    return { Linux: defaultUrl, Windows: defaultUrl, Mac: defaultUrl, WindowsPortable: defaultUrl }
   }
 }
