@@ -13,17 +13,18 @@ export interface Release {
   tag_name: string
   published_at: string
   prerelease: boolean
+  id: number
 }
 
 export interface ReleaseUrls {
   Linux: string
-  LinuxBeta?: string
   Windows: string
-  WindowsBeta?: string
   WindowsPortable: string
-  WindowsPortableBeta?: string
   Mac: string
-  MacBeta?: string
+  LinuxBeta?: string | null
+  WindowsBeta?: string | null
+  WindowsPortableBeta?: string | null
+  MacBeta?: string | null
 }
 
 const defaultUrl =
@@ -33,20 +34,23 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
   try {
     const data = await fetch(githubApi)
     const releases: Release[] = await data.json()
-    const stable = releases.filter(rel => rel.prerelease === false)
-    const beta = releases.filter(rel => rel.prerelease === true)
-    const { assets: assetsStable } = stable[0]
-    const { assets: assetsBeta } = beta[0]
+    const { assets: assetsStable, id: idStable } = releases.filter(rel => rel.prerelease === false)[0]
+    const { assets: assetsBeta, id: idBeta} = releases.filter(rel => rel.prerelease === true)[0]
 
     const appImageStable = assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0].browser_download_url
     const windowsSetupStable = assetsStable.filter((a) => a.name.includes('Setup'))[0].browser_download_url
     const windowsPortableStable = assetsStable.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0].browser_download_url
     const dmgStable = assetsStable.filter((a) => a.name.endsWith('.dmg'))[0].browser_download_url
 
-    const appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0].browser_download_url
-    const windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0].browser_download_url
-    const windowsPortableBeta = assetsBeta.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0].browser_download_url
-    const dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0].browser_download_url
+    let appImageBeta, windowsPortableBeta, windowsSetupBeta, dmgBeta = null
+
+    // Check Ids to see if beta is newer than stable
+    if (idBeta > idStable) {
+      appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0].browser_download_url
+      windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0].browser_download_url
+      windowsPortableBeta = assetsBeta.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0].browser_download_url
+      dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0].browser_download_url
+    }
 
     return {
       Linux: appImageStable,
