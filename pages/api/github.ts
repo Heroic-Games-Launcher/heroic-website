@@ -12,13 +12,18 @@ export interface Release {
   name: string
   tag_name: string
   published_at: string
+  prerelease: boolean
 }
 
 export interface ReleaseUrls {
   Linux: string
+  LinuxBeta?: string
   Windows: string
+  WindowsBeta?: string
   WindowsPortable: string
+  WindowsPortableBeta?: string
   Mac: string
+  MacBeta?: string
 }
 
 const defaultUrl =
@@ -28,18 +33,22 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
   try {
     const data = await fetch(githubApi)
     const releases: Release[] = await data.json()
-    const { assets } = releases[0]
+    const stable = releases.filter(rel => rel.prerelease === false)
+    // const beta = releases.filter(rel => rel.prerelease === true)
+    const { assets: assetsStable } = stable[0]
+    // const { assets: assetsBeta } = beta[0]
 
-    const appImage = assets.filter((a) => a.name.endsWith('.AppImage'))[0]
-    const windowsSetup = assets.filter((a) => a.name.includes('Setup'))[0]
-    const windowsPortable = assets.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0]
-    const dmg = assets.filter((a) => a.name.endsWith('.dmg'))[0]
+    const appImageStable = assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
+    const windowsSetupStable = assetsStable.filter((a) => a.name.includes('Setup'))[0]
+    const windowsPortableStable = assetsStable.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0]
+    const dmgStable = assetsStable.filter((a) => a.name.endsWith('.dmg'))[0]
 
     return {
-      Linux: appImage.browser_download_url,
-      Windows: windowsSetup.browser_download_url,
-      WindowsPortable: windowsPortable.browser_download_url,
-      Mac: dmg.browser_download_url
+      Linux: appImageStable.browser_download_url,
+      LinuxBeta: appImageStable.browser_download_url,
+      Windows: windowsSetupStable.browser_download_url,
+      WindowsPortable: windowsPortableStable.browser_download_url,
+      Mac: dmgStable.browser_download_url,
     }
   } catch (error) {
     return { Linux: defaultUrl, Windows: defaultUrl, Mac: defaultUrl, WindowsPortable: defaultUrl }
