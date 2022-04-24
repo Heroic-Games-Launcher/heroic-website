@@ -32,7 +32,7 @@ code.snippet.hljs {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 @media only screen and (prefers-color-scheme: light) {

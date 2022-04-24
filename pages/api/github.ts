@@ -34,21 +34,29 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     const data = await fetch(githubApi)
     const releases: Release[] = await data.json()
     const stable = releases.filter(rel => rel.prerelease === false)
-    // const beta = releases.filter(rel => rel.prerelease === true)
+    const beta = releases.filter(rel => rel.prerelease === true)
     const { assets: assetsStable } = stable[0]
-    // const { assets: assetsBeta } = beta[0]
+    const { assets: assetsBeta } = beta[0]
 
-    const appImageStable = assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
-    const windowsSetupStable = assetsStable.filter((a) => a.name.includes('Setup'))[0]
-    const windowsPortableStable = assetsStable.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0]
-    const dmgStable = assetsStable.filter((a) => a.name.endsWith('.dmg'))[0]
+    const appImageStable = assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0].browser_download_url
+    const windowsSetupStable = assetsStable.filter((a) => a.name.includes('Setup'))[0].browser_download_url
+    const windowsPortableStable = assetsStable.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0].browser_download_url
+    const dmgStable = assetsStable.filter((a) => a.name.endsWith('.dmg'))[0].browser_download_url
+
+    const appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0].browser_download_url
+    const windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0].browser_download_url
+    const windowsPortableBeta = assetsBeta.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0].browser_download_url
+    const dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0].browser_download_url
 
     return {
-      Linux: appImageStable.browser_download_url,
-      LinuxBeta: appImageStable.browser_download_url,
-      Windows: windowsSetupStable.browser_download_url,
-      WindowsPortable: windowsPortableStable.browser_download_url,
-      Mac: dmgStable.browser_download_url,
+      Linux: appImageStable,
+      LinuxBeta: appImageBeta,
+      Windows: windowsSetupStable,
+      WindowsBeta: windowsSetupBeta,
+      WindowsPortable: windowsPortableStable,
+      WindowsPortableBeta: windowsPortableBeta,
+      Mac: dmgStable,
+      MacBeta: dmgBeta
     }
   } catch (error) {
     return { Linux: defaultUrl, Windows: defaultUrl, Mac: defaultUrl, WindowsPortable: defaultUrl }

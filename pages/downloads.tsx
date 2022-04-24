@@ -18,7 +18,7 @@ const Downloads: NextPage = () => {
       setReleases(latests)
     }
     getLatestPackages()
-  })
+  }, [])
 
   if (!userAgent) {
     return null
@@ -59,8 +59,11 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.Linux}>
-                  <strong>Download</strong>
+                  <strong>Stable</strong>
                 </a>
+                {releases.LinuxBeta && <a href={releases.LinuxBeta}>
+                  <strong>Beta</strong>
+                </a>}
               </footer>
             </article>
             <article className={styles.downloadBoxes}>
@@ -85,8 +88,11 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.Windows}>
-                  <strong>Download Setup</strong>
+                  <strong>Stable</strong>
                 </a>
+                {releases.WindowsBeta && <a href={releases.WindowsBeta}>
+                  <strong>Beta</strong>
+                </a>}
               </footer>
             </article>
             <article className={styles.downloadBoxes}>
@@ -96,8 +102,11 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.WindowsPortable}>
-                  <strong>Download Portable</strong>
+                  <strong>Stable</strong>
                 </a>
+                {releases.WindowsPortableBeta && <a href={releases.WindowsPortableBeta}>
+                  <strong>Beta</strong>
+                </a>}
               </footer>
             </article>
           </div>
@@ -112,8 +121,11 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.Mac}>
-                  <strong>Download DMG</strong>
-                </a>
+                  <strong>Stable</strong>
+              </a>
+              {releases.MacBeta && <a href={releases.MacBeta}>
+                  <strong>Beta</strong>
+                </a>}
               </footer>
             </article>
         </details>
