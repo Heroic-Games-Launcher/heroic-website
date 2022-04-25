@@ -1,59 +1,117 @@
+:root {
+  --primary: #8e24aa;
+}
+
 /* Hero */
 
 .hero h1,
 .hero h2,
 .hero h3 {
-    --font-weight: 800;
-    --typography-spacing-vertical: 1.2rem;
+  --font-weight: 800;
+  --typography-spacing-vertical: 1.2rem;
 }
 
 .hero h1 {
-    --font-size: 3rem;
-
+  --font-size: 3rem;
 }
 
 .hero.center {
-    text-align: center;
+  text-align: center;
 }
 
 /* Article */
 article header h2,
 article header h3,
 article header h4 {
-    margin: 0;
+  margin: 0;
 }
 
 /* Snippet */
 code.snippet,
 code.snippet.hljs {
-    padding: 1.6rem;
-    line-height: 1.6em;
+  padding: 1.6rem;
+  line-height: 1.6em;
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media only screen and (prefers-color-scheme: light) {
-    article>footer {
-        background-color: var(--card-border-color);
-    }
+  article > footer {
+    background-color: var(--card-border-color);
+  }
 }
 
 /* Extra */
 .icon {
-    margin-top: 7px;
-    position: relative;
-    top: 3px;
+  margin-top: 7px;
+  position: relative;
+  top: 3px;
 }
 
 .spacer {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
 /* Grid */
 .grid.center {
+  align-items: center;
+  justify-items: center;
+}
+
+.cookieBanner {
+  width: 95vw;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(162, 166, 173, 0.299);
+  border-radius: 10px;
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .cookieBanner > .grid {
     align-items: center;
     justify-items: center;
+    height: fit-content;
+    max-height: 100px;
+    grid-template-rows: 3fr 1fr;
+    padding: 16px 12px;
+  }
+
+  .cookieBanner > .grid .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .cookieBanner > .grid {
+    grid-template-columns: 8fr 1fr;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
+    height: fit-content;
+    padding: 16px 24px;
+  }
+  .cookieBanner > .grid .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    width: 212px;
+  }
+}
+
+.cookieBanner > .grid > .buttons button {
+  height: fit-content;
+  padding: 0;
+  width: 100px;
+  margin: 0;
+  font-size: 14px;
 }
