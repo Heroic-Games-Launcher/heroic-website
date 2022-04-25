@@ -27,26 +27,37 @@ const Donate: NextPage = () => {
               <p>
                 Support us with a one-time or recurring donation through GitHub.
               </p>
-              <a href="https://github.com/sponsors/Heroic-Games-Launcher">
-                Go to GitHub
-              </a>
+              <footer>
+                <a href="https://github.com/sponsors/Heroic-Games-Launcher">
+                  <strong>Go to GitHub</strong>
+                </a>
+              </footer>
             </article>
             <article>
               <h4>Patreon</h4>
               <small>Monthly-sub</small>
               <p>
-                Activate a monthly subscription on Patreon to support us, you
-                will have access to special content.
+                Activate a monthly subscription on Patreon to support us and get
+                rewards.
               </p>
-              <a href="https://patreon.com/heroicgameslauncher">
-                Go to Patreon
-              </a>
+              <footer>
+                <a href="https://patreon.com/heroicgameslauncher">
+                  <strong>Go to Patreon</strong>
+                </a>
+              </footer>
             </article>
             <article>
               <h4>Ko-fi</h4>
               <small>One-time</small>
-              <p>Support the project by offering us a coffee.</p>
-              <a href="https://ko-fi.com/heroicgames">Go to Ko-fi</a>
+              <p>
+                Support the project by offering us a coffee. Just like that,
+                fast and simple!
+              </p>
+              <footer>
+                <a href="https://ko-fi.com/heroicgames">
+                  <strong>Go to Ko-fi</strong>
+                </a>
+              </footer>
             </article>
           </div>
         </div>
