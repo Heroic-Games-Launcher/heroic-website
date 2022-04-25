@@ -11,6 +11,8 @@ type Props = {
 
 export const Layout = ({ children }: Props) => {
   const router = useRouter();
+
+  // Proper check of router changings
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       pageview(url);

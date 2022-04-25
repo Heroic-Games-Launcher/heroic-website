@@ -3,7 +3,7 @@ import React from 'react'
 import { getLatestReleases, ReleaseUrls } from './api/github'
 import styles from '../styles/Home.module.css'
 import { event } from './api/ga'
-import {useRouter} from 'next/Router'
+import { useRouter } from 'next/router'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
@@ -33,6 +33,7 @@ const Downloads: NextPage = () => {
   const isLinux = !isWindows && !isMac
 
   function handleDownload(version: string) {
+    // Send info about which packages are being download ONLY
     event({ action: 'click', category: 'download', label: version, value: 1 })
     setTimeout(() => {
       router.push('/donate')
