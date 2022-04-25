@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -9,12 +8,6 @@ const libraryImage = require('../assets/heroic_01.webp')
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Heroic Games Launcher</title>
-        <meta name="description" content="An Open Source GOG and Epic Games Launcher" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <header className="hero center">
         <div className="container">
           <h1>Play like a Hero</h1>

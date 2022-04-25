@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import Footer from './Footer'
-import Header from './Header'
+import Navbar from './Navbar'
+import WebsiteHead from './WebsiteHead'
 
 type Props = {
     children: ReactNode
@@ -9,7 +10,8 @@ type Props = {
 export const Layout = ({children}: Props) => {
   return (
     <>
-        <Header />
+      <WebsiteHead />
+        <Navbar />
             <main>{children}</main>
         <Footer />
     </>

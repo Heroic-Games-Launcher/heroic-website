@@ -4,7 +4,7 @@ import React from 'react'
 const logo = require('../assets/logo.webp')
 import { LogoGithub, LogoDiscord } from 'react-ionicons'
 
-export default function Header() {
+export default function Navbar() {
     return (
         <nav className="container-fluid">
             <ul>
