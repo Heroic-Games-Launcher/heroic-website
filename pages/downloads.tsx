@@ -2,8 +2,12 @@ import { NextPage } from 'next'
 import React from 'react'
 import { getLatestReleases, ReleaseUrls } from './api/github'
 import styles from '../styles/Home.module.css'
+import { event } from './api/ga'
+import {useRouter} from 'next/Router'
 
 const Downloads: NextPage = () => {
+  const router = useRouter()
+
   const userAgent = global.window?.navigator?.userAgent || ''
   const [releases, setReleases] = React.useState<ReleaseUrls>({
     Linux: '',
@@ -28,6 +32,13 @@ const Downloads: NextPage = () => {
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac
 
+  function handleDownload(version: string) {
+    event({ action: 'click', category: 'download', label: version, value: 1 })
+    setTimeout(() => {
+      router.push('/donate')
+    }, 3000);
+  }
+
   return (
     <header className="hero">
       <div className="container">
@@ -47,7 +58,7 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
-                  <strong>Get from Flathub</strong>
+                  <strong onClick={() =>  handleDownload('flatpak')}>Get from Flathub</strong>
                 </a>
               </footer>
             </article>
@@ -59,10 +70,10 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.Linux}>
-                  <strong>Stable</strong>
+                  <strong onClick={() =>  handleDownload('appimage-stable')}>Stable</strong>
                 </a>
                 {releases.LinuxBeta && <a href={releases.LinuxBeta}>
-                  <strong>Beta</strong>
+                  <strong onClick={() =>  handleDownload('appimage-beta')}>Beta</strong>
                 </a>}
               </footer>
             </article>
@@ -71,7 +82,7 @@ const Downloads: NextPage = () => {
               <p>Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.</p>
               <footer>
                 <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
-                  <strong>See all</strong>
+                  <strong onClick={() =>  handleDownload('all-packages')}>See all</strong>
                 </a>
               </footer>
             </article>
@@ -88,10 +99,10 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.Windows}>
-                  <strong>Stable</strong>
+                  <strong onClick={() =>  handleDownload('windows-stable')}>Stable</strong>
                 </a>
                 {releases.WindowsBeta && <a href={releases.WindowsBeta}>
-                  <strong>Beta</strong>
+                  <strong onClick={() =>  handleDownload('windows-beta')}>Beta</strong>
                 </a>}
               </footer>
             </article>
@@ -102,10 +113,10 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.WindowsPortable}>
-                  <strong>Stable</strong>
+                  <strong onClick={() =>  handleDownload('windows-portable-stable')}>Stable</strong>
                 </a>
                 {releases.WindowsPortableBeta && <a href={releases.WindowsPortableBeta}>
-                  <strong>Beta</strong>
+                  <strong onClick={() =>  handleDownload('windows-portable-beta')}>Beta</strong>
                 </a>}
               </footer>
             </article>
@@ -121,10 +132,10 @@ const Downloads: NextPage = () => {
               </p>
               <footer>
                 <a href={releases.Mac}>
-                  <strong>Stable</strong>
+                  <strong onClick={() =>  handleDownload('mac-stable')}>Stable</strong>
               </a>
               {releases.MacBeta && <a href={releases.MacBeta}>
-                  <strong>Beta</strong>
+                  <strong onClick={() =>  handleDownload('mac-beta')}>Beta</strong>
                 </a>}
               </footer>
             </article>
