@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import WebsiteHead from './WebsiteHead'
 import { pageview } from '../pages/api/ga'
 import CookieBanner from './CookieBanner'
+import useCookies from './hooks/useCookies'
 
 type Props = {
   children: ReactNode
@@ -12,14 +13,13 @@ type Props = {
 
 export const Layout = ({ children }: Props) => {
   const router = useRouter()
-  const storage = global.window?.localStorage
-  const bannerState = Boolean(storage?.getItem('cookieBanner'))
-  const [showCookieBanner, setShowCookieBanner] = useState(!bannerState)
-
+  const { cookiesState } = useCookies()
   // Proper check of router changings
   useEffect(() => {
     const handleRouteChange = (url: string) => {
-      pageview(url)
+      if (cookiesState === 'accepted') {
+        pageview(url)
+      }
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
@@ -27,17 +27,12 @@ export const Layout = ({ children }: Props) => {
     }
   }, [router.events])
 
-  function handleClick() {
-    setShowCookieBanner(false)
-    storage.setItem('cookieBanner', 'true')
-  }
-
   return (
     <>
-      <WebsiteHead />
+      {cookiesState === 'accepted' && <WebsiteHead />}
       <Navbar />
       <main>{children}</main>
-      {showCookieBanner && <CookieBanner handleClick={() => handleClick()} />}
+      <CookieBanner />
       <Footer />
     </>
   )

@@ -5,9 +5,11 @@ import styles from '../styles/Home.module.css'
 import { event } from './api/ga'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import useCookies from '../components/hooks/useCookies'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
+  const { cookiesState } = useCookies()
 
   const userAgent = global.window?.navigator?.userAgent || ''
   const [releases, setReleases] = React.useState<ReleaseUrls>({
@@ -35,7 +37,9 @@ const Downloads: NextPage = () => {
 
   function handleDownload(version: string) {
     // Send info about which packages are being download ONLY
-    event({ action: 'click', category: 'download', label: version, value: 1 })
+    if (cookiesState === 'accepted') {
+      event({ action: 'click', category: 'download', label: version, value: 1 })
+    }
     setTimeout(() => {
       router.push('/donate')
     }, 3000)

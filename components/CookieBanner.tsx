@@ -1,10 +1,18 @@
 import React from 'react'
+import { CookiesState } from '../pages/api/ga'
+import useCookies from './hooks/useCookies'
 
-interface Props {
-  handleClick: () => void
-}
+export default function CookieBanner() {
+  const { setCookiesState, cookiesState } = useCookies()
 
-export default function CookieBanner({ handleClick }: Props) {
+  function handleClick(value: CookiesState) {
+    setCookiesState(value)
+  }
+
+  if (Boolean(cookiesState)) {
+    return null
+  }
+
   return (
     <div className="cookieBanner">
       <span className="grid">
@@ -13,10 +21,10 @@ export default function CookieBanner({ handleClick }: Props) {
           website.
         </span>
         <span className="buttons">
-          <button onClick={() => handleClick()} className="primary">
+          <button onClick={() => handleClick('accepted')} className="primary">
             Accept
           </button>
-          <button onClick={() => handleClick()} className="outline">
+          <button onClick={() => handleClick('denied')} className="outline">
             Decline
           </button>
         </span>
