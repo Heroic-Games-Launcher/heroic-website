@@ -4,11 +4,9 @@ import { getLatestReleases, ReleaseUrls } from './api/github'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import useCookies from '../components/hooks/useCookies'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
-  const { cookiesState } = useCookies()
 
   const userAgent = global.window?.navigator?.userAgent || ''
   const [releases, setReleases] = React.useState<ReleaseUrls>({

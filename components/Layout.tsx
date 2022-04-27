@@ -4,9 +4,7 @@ import Navbar from './Navbar'
 import CookieBanner from './CookieBanner'
 import useCookies from './hooks/useCookies'
 import { init } from '@socialgouv/matomo-next'
-
-const MATOMO_URL = process.env.NEXT_PUBLIC_MATOMO_URL
-const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID
+import { NEXT_PUBLIC_MATOMO_URL } from '../pages/api/utils'
 
 type Props = {
   children: ReactNode
@@ -17,7 +15,7 @@ export const Layout = ({ children }: Props) => {
   // Proper check of router changings
   useEffect(() => {
     if (cookiesState === 'accepted') {
-      init({ url: MATOMO_URL || '', siteId: MATOMO_SITE_ID || '' })
+      init({ url: NEXT_PUBLIC_MATOMO_URL || '', siteId: '1' })
     }
   }, [])
 
