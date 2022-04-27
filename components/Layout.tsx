@@ -2,34 +2,29 @@ import React, { ReactNode, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Footer from './Footer'
 import Navbar from './Navbar'
-import WebsiteHead from './WebsiteHead'
 import { pageview } from '../pages/api/ga'
 import CookieBanner from './CookieBanner'
 import useCookies from './hooks/useCookies'
+import { init } from '@socialgouv/matomo-next'
+
+const MATOMO_URL = process.env.NEXT_PUBLIC_MATOMO_URL
+const MATOMO_SITE_ID = process.env.NEXT_PUBLIC_MATOMO_SITE_ID
 
 type Props = {
   children: ReactNode
 }
 
 export const Layout = ({ children }: Props) => {
-  const router = useRouter()
   const { cookiesState } = useCookies()
   // Proper check of router changings
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      if (cookiesState === 'accepted') {
-        pageview(url)
-      }
+    if (cookiesState === 'accepted') {
+      init({ url: MATOMO_URL || '', siteId: MATOMO_SITE_ID || '' })
     }
-    router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
+  }, [])
 
   return (
     <>
-      {cookiesState === 'accepted' && <WebsiteHead />}
       <Navbar />
       <main>{children}</main>
       <CookieBanner />
