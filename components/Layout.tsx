@@ -17,7 +17,7 @@ export const Layout = ({ children }: Props) => {
     if (cookiesState === 'accepted') {
       init({ url: NEXT_PUBLIC_MATOMO_URL || '', siteId: '1' })
     }
-  }, [])
+  }, [cookiesState])
 
   return (
     <>
