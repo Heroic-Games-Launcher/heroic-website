@@ -14,7 +14,7 @@ export const Layout = ({ children }: Props) => {
   const { cookiesState } = useCookies()
   // Proper check of router changings
   useEffect(() => {
-    if (cookiesState === 'accepted') {
+    if (!(cookiesState === 'denied')) {
       init({ url: NEXT_PUBLIC_MATOMO_URL || '', siteId: '1' })
     }
   }, [cookiesState])
