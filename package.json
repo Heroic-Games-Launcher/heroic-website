@@ -10,7 +10,6 @@
     "deploy": "yarn && yarn build && yarn export"
   },
   "dependencies": {
-    "@socialgouv/matomo-next": "^1.3.0",
     "imagemin-optipng": "^8.0.0",
     "next": "12.1.4",
     "next-optimized-images": "^2.6.2",

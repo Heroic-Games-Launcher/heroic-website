@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { CookiesState } from '../../pages/api/utils'
+import { CookiesState } from '../../pages/api/ga'
 
 const storage = global.window?.localStorage
 

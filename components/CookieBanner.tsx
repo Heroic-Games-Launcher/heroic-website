@@ -1,5 +1,5 @@
 import React from 'react'
-import { CookiesState } from '../pages/api/utils'
+import { CookiesState } from '../pages/api/ga'
 import useCookies from './hooks/useCookies'
 
 export default function CookieBanner() {
