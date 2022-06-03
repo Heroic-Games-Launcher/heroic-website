@@ -86,17 +86,24 @@ const Downloads: NextPage = () => {
                   distro. The AppImage can update itself when a new version is
                   released.
                 </p>
-                <footer>
+                <footer className="downloadLink">
                   <a href={releases.Linux}>
                     <strong onClick={() => handleDownload('appimage-stable')}>
                       Stable
                     </strong>
+
+                    <span className="smallText">
+                      {` (${releases.Linux.split('/')[7] ?? ''})`}
+                    </span>
                   </a>
                   {releases.LinuxBeta && (
                     <a href={releases.LinuxBeta}>
                       <strong onClick={() => handleDownload('appimage-beta')}>
                         Beta
                       </strong>
+                      <span className="smallText">
+                        {` (${releases.LinuxBeta.split('/')[7] ?? ''})`}
+                      </span>
                     </a>
                   )}
                 </footer>
@@ -132,12 +139,18 @@ const Downloads: NextPage = () => {
                     <strong onClick={() => handleDownload('windows-stable')}>
                       Stable
                     </strong>
+                    <span className="smallText">
+                      {` (${releases.Windows.split('/')[7] ?? ''})`}
+                    </span>
                   </a>
                   {releases.WindowsBeta && (
                     <a href={releases.WindowsBeta}>
                       <strong onClick={() => handleDownload('windows-beta')}>
                         Beta
                       </strong>
+                      <span className="smallText">
+                        {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
+                      </span>
                     </a>
                   )}
                 </footer>
@@ -155,6 +168,9 @@ const Downloads: NextPage = () => {
                     >
                       Stable
                     </strong>
+                    <span className="smallText">
+                      {` (${releases.WindowsPortable.split('/')[7] ?? ''})`}
+                    </span>
                   </a>
                   {releases.WindowsPortableBeta && (
                     <a href={releases.WindowsPortableBeta}>
@@ -163,6 +179,11 @@ const Downloads: NextPage = () => {
                       >
                         Beta
                       </strong>
+                      <span className="smallText">
+                        {` (${
+                          releases.WindowsPortableBeta.split('/')[7]
+                        } ?? '')`}
+                      </span>
                     </a>
                   )}
                 </footer>
@@ -183,12 +204,18 @@ const Downloads: NextPage = () => {
                   <strong onClick={() => handleDownload('mac-stable')}>
                     Stable
                   </strong>
+                  <span className="smallText">
+                    {` (${releases.Mac.split('/')[7]})`}
+                  </span>
                 </a>
                 {releases.MacBeta && (
                   <a href={releases.MacBeta}>
                     <strong onClick={() => handleDownload('mac-beta')}>
                       Beta
                     </strong>
+                    <span className="smallText">
+                      {` (${releases.MacBeta.split('/')[7] ?? ''})`}
+                    </span>
                   </a>
                 )}
               </footer>

@@ -94,6 +94,7 @@ footer {
 
 .feature {
   background-color: #e7e8ed;
+  margin-bottom: 72px;
 }
 
 .feature .description {
@@ -105,6 +106,11 @@ footer {
   padding: 50px;
   font-weight: 700;
   color: #0d101c;
+}
+
+.smallText {
+  font-weight: 400;
+  font-size: 13px;
 }
 
 @media screen and (min-width: 900px) {
@@ -124,7 +130,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 991px) {
   .grid.center {
     grid-template-columns: auto;
   }
