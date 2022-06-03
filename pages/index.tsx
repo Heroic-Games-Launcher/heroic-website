@@ -4,13 +4,15 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const img1 = require('../assets/heroic_01.webp')
-const img2 = require('../assets/heroic_game.webp')
-const img3 = require('../assets/heroic_install.webp')
-const img4 = require('../assets/heroic_stores.webp')
-const img5 = require('../assets/heroic_wine.webp')
-const img6 = require('../assets/heroic_wine_settings.webp')
-const img7 = require('../assets/heroic_langs.webp')
+const img1 = require('../assets/heroic_01.png?webp')
+const img2 = require('../assets/heroic_game.png?webp')
+const img3 = require('../assets/heroic_install.png?webp')
+const img4 = require('../assets/heroic_stores.png?webp')
+const img5 = require('../assets/heroic_wine.png?webp')
+const img6 = require('../assets/heroic_wine_settings.png?webp')
+const img7 = require('../assets/heroic_langs.png?webp')
+const img8 = require('../assets/heroic_menu.png?webp')
+const gif = require('../assets/themes.gif')
 
 const Home: NextPage = () => {
   return (
@@ -86,6 +88,25 @@ const Home: NextPage = () => {
         <div className="hero">
           <div className="grid center">
             <div>
+              <a href={gif}>
+                <img alt="Themes" aria-label="Themes" src={gif} />
+              </a>
+            </div>
+            <div className="description">
+              <h2>Themes</h2>
+              <p>
+                If you don't like the default colors, you have the ability to
+                change them. It also includes the famous Dracula theme.{' '}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container feature">
+        <div className="hero">
+          <div className="grid center">
+            <div>
               <a href={img2}>
                 <img src={img2} alt="Game Page" aria-label="Game Page" />
               </a>
@@ -143,6 +164,25 @@ const Home: NextPage = () => {
               <p>
                 Go to the Epic or GOG store without even leaving Heroic. Get
                 free games or buy new ones directly from Heroic's interface!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container feature">
+        <div className="hero">
+          <div className="grid center">
+            <div>
+              <a href={img8}>
+                <img alt="Context Menu" aria-label="Context Menu" src={img8} />
+              </a>
+            </div>
+            <div className="description">
+              <h2>Organize your library</h2>
+              <p>
+                Add games to favorites or simply hide the games you already
+                played or will never play at all!
               </p>
             </div>
           </div>

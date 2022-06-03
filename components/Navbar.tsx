@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const logo = require('../assets/logo.webp')
+const logo = require('../assets/logo.png')
 import { LogoGithub, LogoDiscord, LogoTwitter } from 'react-ionicons'
 
 export default function Navbar() {
