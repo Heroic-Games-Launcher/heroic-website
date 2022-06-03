@@ -69,9 +69,8 @@ const Home: NextPage = () => {
           </div>
           <img
             src={img1}
-            width="1130"
-            height="765px"
             alt="Heroic Games Launcher preview"
+            className="heroicPreview"
           />
         </div>
       </header>

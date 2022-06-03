@@ -128,6 +128,16 @@ footer {
     margin-top: 8px;
     width: 212px;
   }
+
+  .feature img {
+    width: 813px;
+    height: 541px;
+  }
+
+  .heroicPreview {
+    width: 1130px;
+    height: 854px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -142,6 +152,18 @@ footer {
 
   .feature .description {
     margin: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .feature img {
+    width: 374px;
+    height: 250px;
+  }
+
+  .heroicPreview {
+    width: 357px;
+    height: 260px;
   }
 }
 
