@@ -27,6 +27,7 @@
     "@typescript-eslint/parser": "^5.21.0",
     "eslint": "7",
     "eslint-config-next": "12.0.3",
+    "imagemin-gifsicle": "^7.0.0",
     "next-compose-plugins": "^2.2.1",
     "prettier": "^2.6.2",
     "pretty-quick": "^3.1.3",
