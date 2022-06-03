@@ -3,7 +3,12 @@ import Link from 'next/link'
 import React from 'react'
 
 const logo = require('../assets/logo.png')
-import { LogoGithub, LogoDiscord, LogoTwitter } from 'react-ionicons'
+import {
+  faTwitter,
+  faGithub,
+  faDiscord
+} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
   return (
@@ -25,32 +30,41 @@ export default function Navbar() {
       </ul>
       <ul>
         <li>
-          <a href="https://twitter.com/HeroicLauncher">
-            <LogoTwitter
-              height={'22px'}
-              width={'22px'}
+          <a
+            href="https://twitter.com/HeroicLauncher"
+            title="Heroic Twitter Page"
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              height={22}
+              width={22}
               color={'#00000'}
-              title="Heroic Github Page"
             />
           </a>
         </li>
         <li>
-          <a href="https://github.com/Heroic-Games-Launcher">
-            <LogoGithub
-              height={'22px'}
-              width={'22px'}
+          <a
+            href="https://github.com/Heroic-Games-Launcher"
+            title="Heroic GitHub Page"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              height={22}
+              width={22}
               color={'#00000'}
-              title="Heroic Github Page"
             />
           </a>
         </li>
         <li>
-          <a href="https://discord.com/invite/rHJ2uqdquK">
-            <LogoDiscord
-              height={'22px'}
-              width={'22px'}
+          <a
+            href="https://discord.com/invite/rHJ2uqdquK"
+            title="Heroic Discord Server"
+          >
+            <FontAwesomeIcon
+              icon={faDiscord}
+              height={22}
+              width={22}
               color={'#00000'}
-              title="Heroic Discord Server"
             />
           </a>
         </li>
