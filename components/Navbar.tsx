@@ -26,17 +26,32 @@ export default function Navbar() {
       <ul>
         <li>
           <a href="https://twitter.com/HeroicLauncher">
-            <LogoTwitter color={'#00000'} title="Heroic Github Page" />
+            <LogoTwitter
+              height={'22px'}
+              width={'22px'}
+              color={'#00000'}
+              title="Heroic Github Page"
+            />
           </a>
         </li>
         <li>
           <a href="https://github.com/Heroic-Games-Launcher">
-            <LogoGithub color={'#00000'} title="Heroic Github Page" />
+            <LogoGithub
+              height={'22px'}
+              width={'22px'}
+              color={'#00000'}
+              title="Heroic Github Page"
+            />
           </a>
         </li>
         <li>
           <a href="https://discord.com/invite/rHJ2uqdquK">
-            <LogoDiscord color={'#00000'} title="Heroic Discord Server" />
+            <LogoDiscord
+              height={'22px'}
+              width={'22px'}
+              color={'#00000'}
+              title="Heroic Discord Server"
+            />
           </a>
         </li>
         <li>
