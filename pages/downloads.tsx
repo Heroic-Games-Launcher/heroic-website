@@ -176,8 +176,7 @@ const Downloads: NextPage = () => {
               <h4>Application</h4>
               <p>
                 Download the DMG, open it and copy the Heroic App to the
-                Applications folder and you are good to go! Heroic will auto
-                update once a new version is released!
+                Applications folder and you are good to go!
               </p>
               <footer>
                 <a href={releases.Mac}>
