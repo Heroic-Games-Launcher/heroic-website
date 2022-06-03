@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           }}
         >
           <h1>PLAY LIKE A HERO!</h1>
-          <p
+          <div
             style={{
               width: '90%',
               maxWidth: '500px',
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                 Documentation
               </a>
             </p>
-          </p>
+          </div>
           <img
             src={img1}
             width="1130"

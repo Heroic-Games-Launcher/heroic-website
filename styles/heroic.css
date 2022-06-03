@@ -66,7 +66,7 @@ footer {
   width: 95vw;
   max-width: 800px;
   margin: auto;
-  background-color: rgb(222, 224, 228);
+  background-color: var(--background);
   border-radius: 10px;
   position: fixed;
   bottom: 16px;
