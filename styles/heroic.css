@@ -59,6 +59,7 @@ footer {
 .grid.center {
   align-items: center;
   justify-items: center;
+  grid-template-columns: 72% auto;
 }
 
 .cookieBanner {
@@ -91,6 +92,21 @@ footer {
   }
 }
 
+.feature {
+  background-color: #e7e8ed;
+}
+
+.feature .description {
+  margin: auto 15px auto 8px;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 50px;
+  font-weight: 700;
+  color: #0d101c;
+}
+
 @media screen and (min-width: 900px) {
   .cookieBanner > .grid {
     grid-template-columns: 8fr 1fr;
@@ -108,10 +124,30 @@ footer {
   }
 }
 
+@media screen and (max-width: 414px) {
+  .grid.center {
+    grid-template-columns: auto;
+  }
+
+  .feature {
+    width: 96%;
+    padding: 0;
+  }
+
+  .feature .description {
+    margin: 15px;
+  }
+}
+
 .cookieBanner > .grid > .buttons button {
   height: fit-content;
   padding: 0;
   width: 100px;
   margin: 0;
   font-size: 14px;
+}
+
+a {
+  font-weight: 700;
+  color: #0d101c;
 }

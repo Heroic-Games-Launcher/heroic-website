@@ -1,10 +1,18 @@
+.buttonContainer {
+  margin-bottom: 64px;
+  margin-top: 32px;
+}
 
 .buttonContainer > span {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .downloadBoxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.features {
+  grid-template-columns: 2fr 1fr;
 }
