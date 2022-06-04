@@ -2,6 +2,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+
 import styles from '../styles/Home.module.css'
 
 const img1 = require('../assets/heroic_01.png?webp')
@@ -14,6 +16,11 @@ const img7 = require('../assets/heroic_langs.png?webp')
 const img8 = require('../assets/heroic_menu.png?webp')
 const gif = require('../assets/themes.gif')
 
+const initial = { y: '300px', opacity: 0 }
+const final = { y: '0px', opacity: 1 }
+const hover = { scale: 1.05 }
+const transition = { duration: 0.5 }
+
 const Home: NextPage = () => {
   return (
     <>
@@ -25,7 +32,10 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header
+      <motion.header
+        initial={initial}
+        animate={final}
+        transition={transition}
         className="hero center"
         style={{
           marginBottom: '210px',
@@ -73,7 +83,7 @@ const Home: NextPage = () => {
             className="heroicPreview"
           />
         </div>
-      </header>
+      </motion.header>
 
       <h1
         style={{
@@ -83,7 +93,14 @@ const Home: NextPage = () => {
         MAIN FEATURES AND MORE INFO
       </h1>
 
-      <section className="container feature">
+      <motion.section
+        initial={initial}
+        whileInView={final}
+        transition={transition}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -100,9 +117,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="container feature">
+      <motion.section
+        initial={initial}
+        transition={transition}
+        whileInView={final}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -119,9 +143,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="container feature">
+      <motion.section
+        initial={initial}
+        transition={transition}
+        whileInView={final}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -144,9 +175,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="container feature">
+      <motion.section
+        transition={transition}
+        initial={initial}
+        whileInView={final}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -167,9 +205,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="container feature">
+      <motion.section
+        initial={initial}
+        transition={transition}
+        whileInView={final}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -186,9 +231,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="container feature">
+      <motion.section
+        initial={initial}
+        transition={transition}
+        whileInView={final}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -207,8 +259,15 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="container feature">
+      </motion.section>
+      <motion.section
+        initial={initial}
+        transition={transition}
+        whileInView={final}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -233,8 +292,15 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="container feature">
+      </motion.section>
+      <motion.section
+        initial={initial}
+        transition={transition}
+        whileInView={final}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
         <div className="hero">
           <div className="grid center">
             <div>
@@ -264,7 +330,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   )
 }
