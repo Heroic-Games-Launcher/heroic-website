@@ -38,12 +38,6 @@ footer {
   justify-content: space-around;
 }
 
-@media only screen and (prefers-color-scheme: light) {
-  article > footer {
-    background-color: var(--card-border-color);
-  }
-}
-
 /* Extra */
 .icon {
   margin-top: 7px;
@@ -131,12 +125,10 @@ footer {
 
   .feature img {
     width: 813px;
-    height: 520px;
   }
 
   .heroicPreview {
     width: 1130px;
-    height: 768px;
   }
 }
 
@@ -155,14 +147,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 414px) {
-  .heroicPreview,
-  .feature img {
-    width: 374px;
-    height: 250px;
-  }
-}
-
 .cookieBanner > .grid > .buttons button {
   height: fit-content;
   padding: 0;
@@ -174,4 +158,21 @@ footer {
 a {
   font-weight: 700;
   color: #0d101c;
+}
+
+@media screen and (max-width: 414px) {
+  .feature {
+    width: 374px;
+  }
+
+  .heroicPreview,
+  .feature img {
+    width: 374px;
+  }
+}
+
+@media only screen and (prefers-color-scheme: light) {
+  article > footer {
+    background-color: var(--card-border-color);
+  }
 }
