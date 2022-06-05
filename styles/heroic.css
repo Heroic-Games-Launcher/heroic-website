@@ -163,6 +163,7 @@ a {
 @media screen and (max-width: 414px) {
   .feature {
     width: 374px;
+    margin-bottom: 42px;
   }
 
   .heroicPreview,
