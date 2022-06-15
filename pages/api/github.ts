@@ -34,23 +34,41 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
   try {
     const data = await fetch(githubApi)
     const releases: Release[] = await data.json()
-    const { assets: assetsStable, id: idStable } = releases.filter(rel => rel.prerelease === false)[0]
-    const { assets: assetsBeta, id: idBeta} = releases.filter(rel => rel.prerelease === true)[0]
+    const { assets: assetsStable, id: idStable } = releases.filter(
+      (rel) => rel.prerelease === false
+    )[0]
+    const { assets: assetsBeta, id: idBeta } = releases.filter(
+      (rel) => rel.prerelease === true
+    )[0]
 
-    const appImageStable = assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0].browser_download_url
-    const windowsSetupStable = assetsStable.filter((a) => a.name.includes('Setup'))[0].browser_download_url
-    const windowsPortableStable = assetsStable.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0].browser_download_url
-    const dmgStable = assetsStable.filter((a) => a.name.endsWith('.dmg'))[0].browser_download_url
+    const appImageStable = assetsStable.filter((a) =>
+      a.name.endsWith('.AppImage')
+    )[0].browser_download_url
+    const windowsSetupStable = assetsStable.filter((a) =>
+      a.name.includes('Setup')
+    )[0].browser_download_url
+    const windowsPortableStable = assetsStable.filter(
+      (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
+    )[0].browser_download_url
+    const dmgStable = assetsStable.filter((a) => a.name.endsWith('.dmg'))[0]
+      .browser_download_url
 
-    let appImageBeta, windowsPortableBeta, windowsSetupBeta, dmgBeta = null
+    let appImageBeta,
+      windowsPortableBeta,
+      windowsSetupBeta,
+      dmgBeta = null
 
-    // Check Ids to see if beta is newer than stable
-    if (idBeta > idStable) {
-      appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0].browser_download_url
-      windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0].browser_download_url
-      windowsPortableBeta = assetsBeta.filter((a) => a.name.endsWith('.exe') && !a.name.includes('Setup'))[0].browser_download_url
-      dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0].browser_download_url
-    }
+    console.log({ assetsBeta, idBeta, idStable })
+
+    appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0]
+      .browser_download_url
+    windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0]
+      .browser_download_url
+    windowsPortableBeta = assetsBeta.filter(
+      (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
+    )[0].browser_download_url
+    dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0]
+      .browser_download_url
 
     return {
       Linux: appImageStable,
@@ -63,6 +81,11 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       MacBeta: dmgBeta
     }
   } catch (error) {
-    return { Linux: defaultUrl, Windows: defaultUrl, Mac: defaultUrl, WindowsPortable: defaultUrl }
+    return {
+      Linux: defaultUrl,
+      Windows: defaultUrl,
+      Mac: defaultUrl,
+      WindowsPortable: defaultUrl
+    }
   }
 }
