@@ -2,14 +2,11 @@ import { NextPage } from 'next'
 import React from 'react'
 import { getLatestReleases, ReleaseUrls } from './api/github'
 import styles from '../styles/Home.module.css'
-import { event } from './api/ga'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import useCookies from '../components/hooks/useCookies'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
-  const { cookiesState } = useCookies()
 
   const userAgent = global.window?.navigator?.userAgent || ''
   const [releases, setReleases] = React.useState<ReleaseUrls>({
@@ -36,10 +33,6 @@ const Downloads: NextPage = () => {
   const isLinux = !isWindows && !isMac
 
   function handleDownload(version: string) {
-    // Send info about which packages are being download ONLY
-    if (cookiesState === 'accepted') {
-      event({ action: 'click', category: 'download', label: version, value: 1 })
-    }
     setTimeout(() => {
       router.push('/donate')
     }, 3000)
@@ -181,8 +174,8 @@ const Downloads: NextPage = () => {
                       </strong>
                       <span className="smallText">
                         {` (${
-                          releases.WindowsPortableBeta.split('/')[7]
-                        } ?? '')`}
+                          releases.WindowsPortableBeta.split('/')[7] ?? ''
+                        })`}
                       </span>
                     </a>
                   )}
