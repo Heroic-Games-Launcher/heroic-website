@@ -60,7 +60,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       windowsSetupBeta,
       dmgBeta = null
 
-    const isSameMajor = tagStable === tagBeta.split('-')[0]
+    const isSameMajor = tagStable >= tagBeta.split('-')[0]
 
     if (!isSameMajor) {
       appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0]
