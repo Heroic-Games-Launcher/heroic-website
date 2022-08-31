@@ -41,17 +41,19 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       (rel) => rel.prerelease === true
     )[0]
 
-    const appImageStable = assetsStable.filter((a) =>
-      a.name.endsWith('.AppImage')
-    )[0].browser_download_url
-    const windowsSetupStable = assetsStable.filter((a) =>
-      a.name.includes('Setup')
-    )[0].browser_download_url
-    const windowsPortableStable = assetsStable.filter(
-      (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
-    )[0].browser_download_url
-    const dmgStable = assetsStable.filter((a) => a.name.endsWith('.dmg'))[0]
-      .browser_download_url
+    const appImageStable =
+      assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
+        ?.browser_download_url || defaultUrl
+    const windowsSetupStable =
+      assetsStable.filter((a) => a.name.includes('Setup'))[0]
+        ?.browser_download_url || defaultUrl
+    const windowsPortableStable =
+      assetsStable.filter(
+        (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
+      )[0]?.browser_download_url || defaultUrl
+    const dmgStable =
+      assetsStable.filter((a) => a.name.endsWith('.dmg'))[0]
+        ?.browser_download_url || defaultUrl
 
     let appImageBeta,
       windowsPortableBeta,
@@ -83,6 +85,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       MacBeta: dmgBeta
     }
   } catch (error) {
+    console.error({ error })
     return {
       Linux: defaultUrl,
       Windows: defaultUrl,
