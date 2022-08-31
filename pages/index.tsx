@@ -95,32 +95,6 @@ const Home: NextPage = () => {
 
       <motion.section
         initial={initial}
-        whileInView={final}
-        transition={transition}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={gif}>
-                <img alt="Themes" aria-label="Themes" src={gif} />
-              </a>
-            </div>
-            <div className="description">
-              <h2>Themes</h2>
-              <p>
-                If you don't like the default colors, you have the ability to
-                change them. It also includes the famous Dracula theme.{' '}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        initial={initial}
         transition={transition}
         whileInView={final}
         viewport={{ once: true }}
@@ -131,7 +105,12 @@ const Home: NextPage = () => {
           <div className="grid center">
             <div>
               <a href={img2}>
-                <img src={img2} alt="Game Page" aria-label="Game Page" />
+                <img
+                  src={img2}
+                  alt="Game Page"
+                  aria-label="Game Page"
+                  loading="lazy"
+                />
               </a>
             </div>
             <div className="description">
@@ -161,6 +140,7 @@ const Home: NextPage = () => {
                   src={img3}
                   alt="Platform Selection"
                   aria-label="Platform Selection"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -193,6 +173,7 @@ const Home: NextPage = () => {
                   alt="Epic Store inside Heroic"
                   aria-label="Epic Store inside Heroic"
                   src={img4}
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -219,7 +200,12 @@ const Home: NextPage = () => {
           <div className="grid center">
             <div>
               <a href={img8}>
-                <img alt="Context Menu" aria-label="Context Menu" src={img8} />
+                <img
+                  alt="Context Menu"
+                  aria-label="Context Menu"
+                  src={img8}
+                  loading="lazy"
+                />
               </a>
             </div>
             <div className="description">
@@ -227,6 +213,37 @@ const Home: NextPage = () => {
               <p>
                 Add games to favorites or simply hide the games you already
                 played or will never play at all!
+              </p>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
+      <motion.section
+        initial={initial}
+        whileInView={final}
+        transition={transition}
+        viewport={{ once: true }}
+        whileHover={hover}
+        className="container feature"
+      >
+        <div className="hero">
+          <div className="grid center">
+            <div>
+              <a href={gif}>
+                <img
+                  alt="Themes"
+                  aria-label="Themes"
+                  src={gif}
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div className="description">
+              <h2>Themes</h2>
+              <p>
+                If you don't like the default colors, you have the ability to
+                change them. It also includes the famous Dracula theme.{' '}
               </p>
             </div>
           </div>
@@ -245,7 +262,12 @@ const Home: NextPage = () => {
           <div className="grid center">
             <div>
               <a href={img5}>
-                <img alt="Wine Manager" aria-label="Wine Manager" src={img5} />
+                <img
+                  alt="Wine Manager"
+                  aria-label="Wine Manager"
+                  src={img5}
+                  loading="lazy"
+                />
               </a>
             </div>
             <div className="description">
@@ -276,6 +298,7 @@ const Home: NextPage = () => {
                   alt="Wine Settings"
                   aria-label="Wine Settings"
                   src={img6}
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -309,6 +332,7 @@ const Home: NextPage = () => {
                   alt="Epic Store inside Heroic"
                   aria-label="Epic Store inside Heroic"
                   src={img7}
+                  loading="lazy"
                 />
               </a>
             </div>
