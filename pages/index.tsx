@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import i18next from '../components/i18next'
 
 import styles from '../styles/Home.module.css'
 
@@ -50,7 +51,7 @@ const Home: NextPage = () => {
             alignItems: 'center'
           }}
         >
-          <h1>PLAY LIKE A HERO!</h1>
+          <h1>{i18next.t("PLAY_LIKE_A_HERO")}</h1>
           <div
             style={{
               width: '90%',
@@ -65,7 +66,7 @@ const Home: NextPage = () => {
             <p className={styles.buttonContainer}>
               <Link href="/downloads" passHref>
                 <span role="button" className="secondary">
-                  Download
+                  {i18next.t("Download")}
                 </span>
               </Link>
               <a
@@ -73,7 +74,7 @@ const Home: NextPage = () => {
                 role="button"
                 className="contrast outline"
               >
-                Documentation
+                {i18next.t("Documentation")}
               </a>
             </p>
           </div>
@@ -90,7 +91,7 @@ const Home: NextPage = () => {
           textAlign: 'center'
         }}
       >
-        MAIN FEATURES AND MORE INFO
+        {i18next.t("MAIN_FEATURES_AND_MORE_INFO")}
       </h1>
 
       <motion.section
@@ -107,17 +108,18 @@ const Home: NextPage = () => {
               <a href={img2}>
                 <img
                   src={img2}
-                  alt="Game Page"
-                  aria-label="Game Page"
+                  alt={i18next.t("Game_Page")}
+                  aria-label={i18next.t("Game_Page")}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Game Page</h2>
+              <h2>
+                {i18next.t("Game_Page")}
+              </h2>
               <p>
-                Check game details like description, publisher, download and
-                install size, time played and more.
+                {i18next.t("Game_Page_desc")}
               </p>
             </div>
           </div>
@@ -138,19 +140,18 @@ const Home: NextPage = () => {
               <a href={img3}>
                 <img
                   src={img3}
-                  alt="Platform Selection"
-                  aria-label="Platform Selection"
+                  alt={i18next.t("Platform_Selection")}
+                  aria-label={i18next.t("Platform_Selection")}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Platform Selection</h2>
+              <h2>
+                {i18next.t("Platform_Selection")}
+              </h2>
               <p>
-                On Linux and on MacOS you can select to install the Windows
-                version of a native game. This might be handy in case the native
-                version is not supported anymore. On Linux you can choose that
-                for GOG games only.
+                {i18next.t("Platform_Selection_desc")}
               </p>
             </div>
           </div>
@@ -170,18 +171,19 @@ const Home: NextPage = () => {
             <div>
               <a href={img4}>
                 <img
-                  alt="Epic Store inside Heroic"
-                  aria-label="Epic Store inside Heroic"
+                  alt={i18next.t("Epic_Store_inside_Heroic")}
+                  aria-label={i18next.t("Epic_Store_inside_Heroic")}
                   src={img4}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Access to the Stores</h2>
+              <h2>
+                {i18next.t("Access_to_the_Stores")}
+              </h2>
               <p>
-                Go to the Epic or GOG store without even leaving Heroic. Get
-                free games or buy new ones directly from Heroic's interface!
+                {i18next.t("Access_to_the_Stores_desc")}
               </p>
             </div>
           </div>
@@ -201,18 +203,19 @@ const Home: NextPage = () => {
             <div>
               <a href={img8}>
                 <img
-                  alt="Context Menu"
-                  aria-label="Context Menu"
+                  alt={i18next.t("Context_Menu")}
+                  aria-label={i18next.t("Context_Menu")}
                   src={img8}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Organize your library</h2>
+              <h2>
+                {i18next.t("Organize_your_library")}
+              </h2>
               <p>
-                Add games to favorites or simply hide the games you already
-                played or will never play at all!
+                {i18next.t("Organize_your_library_desc")}
               </p>
             </div>
           </div>
@@ -232,18 +235,19 @@ const Home: NextPage = () => {
             <div>
               <a href={gif}>
                 <img
-                  alt="Themes"
-                  aria-label="Themes"
+                  alt={i18next.t("Themes")}
+                  aria-label={i18next.t("Themes")}
                   src={gif}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Themes</h2>
+              <h2>
+                {i18next.t("Themes")}
+              </h2>
               <p>
-                If you don't like the default colors, you have the ability to
-                change them. It also includes the famous Dracula theme.{' '}
+                {i18next.t("Themes_desc")}
               </p>
             </div>
           </div>
@@ -263,20 +267,19 @@ const Home: NextPage = () => {
             <div>
               <a href={img5}>
                 <img
-                  alt="Wine Manager"
-                  aria-label="Wine Manager"
+                  alt={i18next.t("Wine_Manager")}
+                  aria-label={i18next.t("Wine_Manager")}
                   src={img5}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Wine Manager</h2>
+              <h2>
+                {i18next.t("Wine_Manager")}
+              </h2>
               <p>
-                On Linux, download the latest version of Wine-GE, Wine-Lutris or
-                even Proton-GE using the Wine Manager. These selection of Wine
-                version are focused on improving the gaming experience and
-                compatibility.
+                {i18next.t("Wine_Manager_desc")}
               </p>
             </div>
           </div>
@@ -295,22 +298,19 @@ const Home: NextPage = () => {
             <div>
               <a href={img6}>
                 <img
-                  alt="Wine Settings"
-                  aria-label="Wine Settings"
+                  alt={i18next.t("Wine_Settings")}
+                  aria-label={i18next.t("Wine_Settings")}
                   src={img6}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Wine Settings</h2>
+              <h2>
+                {i18next.t("Wine_Settings")}
+              </h2>
               <p>
-                Besides using the right Wine version, it is important to setup
-                everything to have the best gameplay experience on Linux and on
-                macOS. Under the Wine Settings it is possible to auto install
-                tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks
-                and Run EXE on the prefix, so you can install games
-                pre-requisites in a easy way.
+                {i18next.t("Wine_Settings_desc")}
               </p>
             </div>
           </div>
@@ -329,26 +329,26 @@ const Home: NextPage = () => {
             <div>
               <a href={img7}>
                 <img
-                  alt="Epic Store inside Heroic"
-                  aria-label="Epic Store inside Heroic"
+                  alt={i18next.t("Epic_Store_inside_Heroic")}
+                  aria-label={i18next.t("Epic_Store_inside_Heroic")}
                   src={img7}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Multi Language</h2>
+              <h2>
+                {i18next.t("Multi_Language")}
+              </h2>
               <p>
-                Heroic was translated by the community in more than 30
-                languages, from Portuguese to Korean, from Farsi to French. You
-                can also help with translations by accessing{' '}
+                {i18next.t("Multi_Language_desc")}
                 <a
                   href="https://hosted.weblate.org/projects/heroic-games-launcher/"
                   rel="norefferer"
                   target="_blank"
                 >
                   {' '}
-                  our Weblate Page
+                  {i18next.t("Multi_Language_desc_Weblate_link")}
                 </a>
               </p>
             </div>
