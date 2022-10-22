@@ -22,4 +22,4 @@ It has an initialization of i18next, already exported, and imported by each page
   - It's not totally important to follow the official ones, but it's recommended. 
   Just to avoid conflicts and misunderstandings in the future, in case of multi-regional languages, like spanish, portugese... etc. 
   So I recommend using `es-ES` in case of spanish of Spain, but it doesn't affect the way i18next (the translation handler plugin) works.
-- You can now start translating! YAAAY! It's that easy. :D
+- You can now start translating! YAAAY! It's that easy. :smile:
