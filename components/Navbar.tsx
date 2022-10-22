@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
+import i18next from '../components/i18next'
 
 const logo = require('../assets/logo.png')
 import {
@@ -32,7 +33,7 @@ export default function Navbar() {
         <li>
           <a
             href="https://twitter.com/HeroicLauncher"
-            title="Heroic Twitter Page"
+            title={i18next.t("Heroic_Twitter_Page")}
           >
             <FontAwesomeIcon
               icon={faTwitter}
@@ -45,7 +46,7 @@ export default function Navbar() {
         <li>
           <a
             href="https://github.com/Heroic-Games-Launcher"
-            title="Heroic GitHub Page"
+            title={i18next.t("Heroic_GitHub_Page")}
           >
             <FontAwesomeIcon
               icon={faGithub}
@@ -70,11 +71,11 @@ export default function Navbar() {
         </li>
         <li>
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
-            Documentation
+            {i18next.t("Documentation")}
           </a>
         </li>
         <li>
-          <Link href="/donate">Support Us</Link>
+          <Link href="/donate">{i18next.t("Support_Us")}</Link>
         </li>
       </ul>
     </nav>
