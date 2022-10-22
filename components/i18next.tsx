@@ -8,6 +8,13 @@ i18next.init({
   resources: {
     en: {
       translation: {
+        Navbar: {
+          Documentation: "Documentation",
+          Support_Us: "Support Us",
+          Heroic_GitHub_Page: "Heroic GitHub Page",
+          Heroic_Twitter_Page: "Heroic Twitter Page", 
+          Heroic_Discord_Server: "Heroic Discord Server",
+        },
         Home_Page: {
           PLAY_LIKE_A_HERO: "PLAY LIKE A HERO!",
           Heroic_Summary: {
@@ -24,9 +31,6 @@ i18next.init({
           },
           Download: "Download",
           Documentation: "Documentation",
-          Support_Us: "Support Us",
-          Heroic_GitHub_Page: "Heroic GitHub Page",
-          Heroic_Twitter_Page: "Heroic Twitter Page", 
 
           MAIN_FEATURES_AND_MORE_INFO: "MAIN FEATURES AND MORE INFO",
           Game_Page: "Game Page",
@@ -53,6 +57,13 @@ i18next.init({
     },
     hu: {
       translation: {
+        Navbar: {
+          Documentation: "Documentáció",
+          Support_Us: "Támogass minket",
+          Heroic_GitHub_Page: "Heroic GitHub oldal",
+          Heroic_Twitter_Page: "Heroic Twitter oldal", 
+          Heroic_Discord_Server: "Heroic Discord Szerver",
+        },
         Home_Page: {
           PLAY_LIKE_A_HERO: "JÁTSZ MINT EGY HŐS!",
           Heroic_Summary: {
@@ -69,9 +80,6 @@ i18next.init({
           },
           Download: "Letöltés",
           Documentation: "Documentáció",
-          Support_Us: "Támogass minket",
-          Heroic_GitHub_Page: "Heroic GitHub oldal",
-          Heroic_Twitter_Page: "Heroic Twitter oldal", 
 
           MAIN_FEATURES_AND_MORE_INFO: "FŐBB FUNKCIÓK ÉS TÖBB INFO",
           Game_Page: "Játék oldala",
@@ -83,7 +91,7 @@ i18next.init({
           Access_to_the_Stores_desc: "Menj az Epic vagy GOG áruház oldalára anélkül, hogy  elhagynád Heroic-ot. Szerezd be az ingyenes játékokat, vagy vegyél újakat, egyenesen a Heroic felületén!",
           Context_Menu: "Context Menu",
           Organize_your_library: "Rendszerezd könyvtáradat",
-          Organize_your_library_desc: "Add games to favorites or simply hide the games you already played or will never play at all!",
+          Organize_your_library_desc: "Add hozzá kedvenc játékaidat vagy szimplán rejtsd el azokat, amiket már kijátszottál vagy épp sose fogsz egyáltalán játszani!",
           Themes: "Témák",
           Themes_desc: "Ha nem tetszenek az alapértelmezett színek, lehetőséged van megváltoztatni azokat. A kínálat a híres Dracula témát is tartalmazza.",
           Wine_Manager: "Wine Kezelő",

@@ -33,7 +33,7 @@ export default function Navbar() {
         <li>
           <a
             href="https://twitter.com/HeroicLauncher"
-            title={i18next.t("Heroic_Twitter_Page")}
+            title={i18next.t("Navbar.Heroic_Twitter_Page")}
           >
             <FontAwesomeIcon
               icon={faTwitter}
@@ -46,7 +46,7 @@ export default function Navbar() {
         <li>
           <a
             href="https://github.com/Heroic-Games-Launcher"
-            title={i18next.t("Heroic_GitHub_Page")}
+            title={i18next.t("Navbar.Heroic_GitHub_Page")}
           >
             <FontAwesomeIcon
               icon={faGithub}
@@ -59,7 +59,7 @@ export default function Navbar() {
         <li>
           <a
             href="https://discord.com/invite/rHJ2uqdquK"
-            title="Heroic Discord Server"
+            title={i18next.t("Navbar.Heroic_Discord_Server")}
           >
             <FontAwesomeIcon
               icon={faDiscord}
@@ -71,11 +71,11 @@ export default function Navbar() {
         </li>
         <li>
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
-            {i18next.t("Documentation")}
+            {i18next.t("Navbar.Documentation")}
           </a>
         </li>
         <li>
-          <Link href="/donate">{i18next.t("Support_Us")}</Link>
+          <Link href="/donate">{i18next.t("Navbar.Support_Us")}</Link>
         </li>
       </ul>
     </nav>
