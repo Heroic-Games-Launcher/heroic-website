@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
   let {lang} = router.query
   lang = lang?.toString()
+  lang = (lang == "undefined")? "en" : lang
 
   // change language by the given regional code in the url
   i18next.changeLanguage(lang)
