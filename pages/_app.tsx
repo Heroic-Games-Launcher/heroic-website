@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <Layout siteLang={lang}>
-      <Component {...pageProps} />
+      <Component siteLang={lang} {...pageProps} />
     </Layout>
   )
 }
