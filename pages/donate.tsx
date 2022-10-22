@@ -1,12 +1,14 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+import i18next from '../components/i18next'
+import SuppotUsPageArticleCard from '../components/SuppotUsPageArticleCard'
 
 const Donate: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Support Heroic Development</title>
+        <title>{i18next.t('Support_Us.Support_Heroic_Development')}</title>
         <meta
           name="description"
           content="An Open Source GOG and Epic Games Launcher"
@@ -15,35 +17,33 @@ const Donate: NextPage = () => {
       </Head>
       <header className="hero">
         <div className="container">
-          <h1>Support Us</h1>
-          <p>Heroic is free! Donations help us keep the project alive.</p>
+          <h1>{i18next.t('Support_Us.Support_Us')}</h1>
+          <p>{i18next.t('Support_Us.Heroic_is_free')}</p>
 
           <hr className="spacer" />
 
           <div className="grid">
             <SuppotUsPageArticleCard
               className="secondary"
-              articleTitle="GitHub Sponsor"
-              articleSubTitle="One-time or flexible-sub"
-              articleContent="Support us with a one-time or recurring donation through GitHub."
+              articleTitle={i18next.t("Support_Us.GitHub_Sponsor")}
+              articleSubTitle={i18next.t("Support_Us.One-time_or_flexible-sub")}
+              articleContent={i18next.t("Support_Us.GitHub_Sponsor_desc")}
               articleLink="https://github.com/sponsors/Heroic-Games-Launcher"
-              articleLinkText="Go to GitHub"
+              articleLinkText={i18next.t("Support_Us.Go_to_GitHub")}
             />
             <SuppotUsPageArticleCard
-              articleTitle="Patreon"
-              articleSubTitle="Monthly-sub"
-              articleContent="Activate a monthly subscription on Patreon to support us and get
-              rewards."
+              articleTitle={i18next.t("Support_Us.Patreon")}
+              articleSubTitle={i18next.t("Support_Us.Monthly-sub")}
+              articleContent={i18next.t("Support_Us.Patreon_desc")}
               articleLink="https://patreon.com/heroicgameslauncher"
-              articleLinkText="Go to Patreon"
+              articleLinkText={i18next.t("Support_Us.Go_to_Patreon")}
             />
             <SuppotUsPageArticleCard
-              articleTitle="Ko-fi"
-              articleSubTitle="One-time"
-              articleContent="Support the project by offering us a coffee. Just like that,
-              fast and simple!"
+              articleTitle={i18next.t("Support_Us.Ko-fi")}
+              articleSubTitle={i18next.t("Support_Us.One-time")}
+              articleContent={i18next.t("Support_Us.Ko-fi_desc")}
               articleLink="https://ko-fi.com/heroicgames"
-              articleLinkText="Go to Ko-fi"
+              articleLinkText={i18next.t("Support_Us.Go_to_Ko-fi")}
             />
           </div>
         </div>

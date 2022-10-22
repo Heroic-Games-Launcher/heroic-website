@@ -52,6 +52,26 @@ i18next.init({
           Multi_Language: "Multi Language",
           Multi_Language_desc: "Heroic was translated by the community in more than 30 languages, from Portuguese to Korean, from Farsi to French. You can also help with translations by accessing ",
           Multi_Language_desc_Weblate_link: "our Weblate Page",
+        },
+        Support_Us: {
+          Support_Heroic_Development: "Support Heroic Development",
+          Support_Us: "Support Us",
+          Heroic_is_free: "Heroic is free! Donations help us keep the project alive.",
+
+          GitHub_Sponsor: "GitHub Sponsor",
+          "One-time_or_flexible-sub": "One-time or flexible-sub",
+          GitHub_Sponsor_desc: "Support us with a one-time or recurring donation through GitHub.",
+          Go_to_GitHub: "Go to GitHub",
+
+          Patreon: "Patreon",
+          "Monthly-sub": "Monthly-sub",
+          Patreon_desc: "Activate a monthly subscription on Patreon to support us and get rewards.",
+          Go_to_Patreon: "Go to Patreon",
+
+          "Ko-fi": "Ko-fi",
+          "One-time": "One-time",
+          "Ko-fi_desc": "Support the project by offering us a coffee. Just like that, fast and simple!",
+          "Go_to_Ko-fi": "Go to Ko-fi",
         }
       }
     },
@@ -101,6 +121,26 @@ i18next.init({
           Multi_Language: "Több nyelvűség",
           Multi_Language_desc: "Heroic a közösség által lett lefordítva, több mint 30 nyelvre, portugáltól koreaiig, perzsától franciáig. Te is segíthetsz a fordításban ",
           Multi_Language_desc_Weblate_link: "a Weblate Oldalunkon",
+        },
+        Support_Us: {
+          Support_Heroic_Development: "Támogasd a Heroic fejlesztésést",
+          Support_Us: "Támogass minket",
+          Heroic_is_free: "A Heroic ingyenes! Az adományok segítenek életben tartani a projektet.",
+
+          GitHub_Sponsor: "GitHub Szponzor",
+          "One-time_or_flexible-sub": "Egyszeri alkalom vagy rugalmas előfizetés",
+          GitHub_Sponsor_desc: "Támogass minket egyszeri alkalmú vagy megújulü támogatással a GitHub-on keresztül.",
+          Go_to_GitHub: "Irány a GitHub",
+
+          Patreon: "Patreon",
+          "Monthly-sub": "Havi előfizetés",
+          Patreon_desc: "Aktiválj egy havi előfizetést a Patreon-on hogy támogass minket és jutalmakat nyerj.",
+          Go_to_Patreon: "Irány a Patreon",
+
+          "Ko-fi": "Ko-fi",
+          "One-time": "Egyszeri alkalom",
+          "Ko-fi_desc": "Támogasd a projektet azzal, hogy felajánlasz nekünk egy kávét. Csak így, gyorsan és egyszerűen!",
+          "Go_to_Ko-fi": "Irány a Ko-fi",
         }
       }
     },
