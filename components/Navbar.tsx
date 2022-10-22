@@ -10,13 +10,24 @@ import {
   faDiscord
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useRouter } from 'next/router'
 
-export default function Navbar() {
+interface Navbar {
+  siteLang: string|string[]|undefined
+}
+
+export default function Navbar({siteLang}:Navbar) {
+  const router = useRouter()
+  
+  function changeLanguage(lang){
+    router.push(`/${lang.target.value}`)
+  }
+
   return (
     <nav className="container-fluid">
       <ul>
         <li>
-          <Link href="/" passHref>
+          <Link href={`/${siteLang}/`} passHref>
             <span className="contrast link">
               <img
                 src={logo}
@@ -30,6 +41,12 @@ export default function Navbar() {
         </li>
       </ul>
       <ul>
+        <li>
+          <select name="language" id="language" onChange={changeLanguage}>
+            <option value="en">English</option>
+            <option value="hu">Magyar</option>
+          </select>
+        </li>
         <li>
           <a
             href="https://twitter.com/HeroicLauncher"
@@ -75,7 +92,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <Link href="/donate">{i18next.t("Navbar.Support_Us")}</Link>
+          <Link href={`/${siteLang}/donate`}>{i18next.t("Navbar.Support_Us")}</Link>
         </li>
       </ul>
     </nav>

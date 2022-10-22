@@ -3,20 +3,21 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import i18next from '../components/i18next'
+import i18next from '../../components/i18next'
 
-import styles from '../styles/Home.module.css'
-import IndexSection from '../components/IndexSection'
+import styles from '../../styles/Home.module.css'
+import IndexSection from '../../components/IndexSection'
+import Router from 'next/router'
 
-const img1 = require('../assets/heroic_01.png?webp')
-const img2 = require('../assets/heroic_game.png?webp')
-const img3 = require('../assets/heroic_install.png?webp')
-const img4 = require('../assets/heroic_stores.png?webp')
-const img5 = require('../assets/heroic_wine.png?webp')
-const img6 = require('../assets/heroic_wine_settings.png?webp')
-const img7 = require('../assets/heroic_langs.png?webp')
-const img8 = require('../assets/heroic_menu.png?webp')
-const gif = require('../assets/themes.gif')
+const img1 = require('../../assets/heroic_01.png?webp')
+const img2 = require('../../assets/heroic_game.png?webp')
+const img3 = require('../../assets/heroic_install.png?webp')
+const img4 = require('../../assets/heroic_stores.png?webp')
+const img5 = require('../../assets/heroic_wine.png?webp')
+const img6 = require('../../assets/heroic_wine_settings.png?webp')
+const img7 = require('../../assets/heroic_langs.png?webp')
+const img8 = require('../../assets/heroic_menu.png?webp')
+const gif = require('../../assets/themes.gif')
 
 const initial = { y: '300px', opacity: 0 }
 const final = { y: '0px', opacity: 1 }

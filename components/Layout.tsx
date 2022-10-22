@@ -4,12 +4,13 @@ import Navbar from './Navbar'
 
 type Props = {
   children: ReactNode
+  siteLang: string|string[]|undefined
 }
 
-export const Layout = ({ children }: Props) => {
+export const Layout = ({ children, siteLang }: Props) => {
   return (
     <>
-      <Navbar />
+      <Navbar siteLang={siteLang} />
       <main>{children}</main>
       <Footer />
     </>

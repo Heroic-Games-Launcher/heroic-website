@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
-import i18next from '../components/i18next'
-import SuppotUsPageArticleCard from '../components/SuppotUsPageArticleCard'
+import i18next from '../../components/i18next'
+import SuppotUsPageArticleCard from '../../components/SuppotUsPageArticleCard'
 
 const Donate: NextPage = () => {
   return (
