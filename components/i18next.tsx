@@ -129,7 +129,7 @@ i18next.init({
           Download: "Letöltés",
           Documentation: "Documentáció",
 
-          MAIN_FEATURES_AND_MORE_INFO: "FŐBB FUNKCIÓK ÉS TÖBB INFO",
+          MAIN_FEATURES_AND_MORE_INFO: "FŐBB FUNKCIÓK ÉS MÉG TÖBB INFÓ",
           Game_Page: "Játék oldala",
           Game_Page_desc: "Nézd meg a játék részleteit: leírását, kiadóját, letöltés és telepítés méretét, játszott idejét és így tovább.",
           Platform_Selection: "Platform választás",
