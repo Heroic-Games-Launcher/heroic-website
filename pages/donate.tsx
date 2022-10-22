@@ -21,44 +21,30 @@ const Donate: NextPage = () => {
           <hr className="spacer" />
 
           <div className="grid">
-            <article className="secondary">
-              <h4>GitHub Sponsor</h4>
-              <small>One-time or flexible-sub</small>
-              <p>
-                Support us with a one-time or recurring donation through GitHub.
-              </p>
-              <footer>
-                <a href="https://github.com/sponsors/Heroic-Games-Launcher">
-                  <strong>Go to GitHub</strong>
-                </a>
-              </footer>
-            </article>
-            <article>
-              <h4>Patreon</h4>
-              <small>Monthly-sub</small>
-              <p>
-                Activate a monthly subscription on Patreon to support us and get
-                rewards.
-              </p>
-              <footer>
-                <a href="https://patreon.com/heroicgameslauncher">
-                  <strong>Go to Patreon</strong>
-                </a>
-              </footer>
-            </article>
-            <article>
-              <h4>Ko-fi</h4>
-              <small>One-time</small>
-              <p>
-                Support the project by offering us a coffee. Just like that,
-                fast and simple!
-              </p>
-              <footer>
-                <a href="https://ko-fi.com/heroicgames">
-                  <strong>Go to Ko-fi</strong>
-                </a>
-              </footer>
-            </article>
+            <SuppotUsPageArticleCard
+              className="secondary"
+              articleTitle="GitHub Sponsor"
+              articleSubTitle="One-time or flexible-sub"
+              articleContent="Support us with a one-time or recurring donation through GitHub."
+              articleLink="https://github.com/sponsors/Heroic-Games-Launcher"
+              articleLinkText="Go to GitHub"
+            />
+            <SuppotUsPageArticleCard
+              articleTitle="Patreon"
+              articleSubTitle="Monthly-sub"
+              articleContent="Activate a monthly subscription on Patreon to support us and get
+              rewards."
+              articleLink="https://patreon.com/heroicgameslauncher"
+              articleLinkText="Go to Patreon"
+            />
+            <SuppotUsPageArticleCard
+              articleTitle="Ko-fi"
+              articleSubTitle="One-time"
+              articleContent="Support the project by offering us a coffee. Just like that,
+              fast and simple!"
+              articleLink="https://ko-fi.com/heroicgames"
+              articleLinkText="Go to Ko-fi"
+            />
           </div>
         </div>
       </header>
