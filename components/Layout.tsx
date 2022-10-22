@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 type Props = {
   children: ReactNode
-  siteLang: string|string[]|undefined
+  siteLang: string
 }
 
 export const Layout = ({ children, siteLang }: Props) => {

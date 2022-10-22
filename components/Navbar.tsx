@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from 'next/router'
 
 interface Navbar {
-  siteLang: string|string[]|undefined
+  siteLang: string
 }
 
 export default function Navbar({siteLang}:Navbar) {

@@ -7,14 +7,13 @@ import i18next from 'i18next'
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
   let {lang} = router.query
-  lang = lang?.toString()
-  lang = (lang == "undefined")? "en" : lang
+  let siteLang:string = (lang)? lang?.toString(): "en"
 
   // change language by the given regional code in the url
-  i18next.changeLanguage(lang)
+  i18next.changeLanguage(siteLang)
 
   return (
-    <Layout siteLang={lang}>
+    <Layout siteLang={siteLang}>
       <Component siteLang={lang} {...pageProps} />
     </Layout>
   )
