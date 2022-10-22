@@ -16,6 +16,7 @@ i18next.init({
           Heroic_Discord_Server: "Heroic Discord Server",
         },
         Home_Page: {
+          meta_desc: "An Open Source GOG and Epic Games Launcher",
           PLAY_LIKE_A_HERO: "PLAY LIKE A HERO!",
           Heroic_Summary: {
             Heroic: "Heroic is an Open Source",
@@ -72,6 +73,32 @@ i18next.init({
           "One-time": "One-time",
           "Ko-fi_desc": "Support the project by offering us a coffee. Just like that, fast and simple!",
           "Go_to_Ko-fi": "Go to Ko-fi",
+        },
+        Download: {
+          title: "Download Heroic",
+          meta_desc: "An Open Source GOG and Epic Games Launcher",
+          Download: "Download",
+          AvailableFor: "Heroic is available for all Major operating systems.",
+          Stable: "Stable",
+          Beta: "Beta",
+          Other: "Other",
+          Setup: "Setup",
+          Portable: "Portable",
+          See_all: "See all",
+          Linux: {
+            Flatpack_desc: "Get the best Heroic experience on any Linux distribution or on the Steam Deck via Flatpak.",
+            Flatpack_get: "Get from Flathub",
+            AppImage_desc: "Download it in AppImage format so it will work on any Linux distro. The AppImage can update itself when a new version is released.",
+            Other_desc: "Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.",
+          },
+          MacOS: {
+            Application: "Application",
+            Application_desc: "Download the DMG, open it and copy the Heroic App to the Applications folder and you are good to go!",
+          },
+          Windows: {
+            Setup_desc: "Install Heroic on your system and get auto-updates when a new version is released. Next, Next, Finish!",
+            Portable_desc: "Use the portable version in case you do not want the full installation. You will still have all the features included.",
+          }
         }
       }
     },
@@ -85,6 +112,7 @@ i18next.init({
           Heroic_Discord_Server: "Heroic Discord Szerver",
         },
         Home_Page: {
+          meta_desc: "Egy nyílt forráskódú GOG és Epic Games Launcher",
           PLAY_LIKE_A_HERO: "JÁTSZ MINT EGY HŐS!",
           Heroic_Summary: {
             Heroic: "Heroic egy Nyílt Forráskódú",
@@ -141,6 +169,32 @@ i18next.init({
           "One-time": "Egyszeri alkalom",
           "Ko-fi_desc": "Támogasd a projektet azzal, hogy felajánlasz nekünk egy kávét. Csak így, gyorsan és egyszerűen!",
           "Go_to_Ko-fi": "Irány a Ko-fi",
+        },
+        Download: {
+          title: "Töltsd le a Heroic-ot",
+          meta_desc: "Egy nyílt forráskódú GOG és Epic Games Launcher",
+          Download: "Letöltés",
+          AvailableFor: "A Heroic elérhető a jelentősebb operációs rendszerre.",
+          Stable: "Stabil",
+          Beta: "Béta",
+          Other: "Egyéb",
+          Setup: "Telepítő",
+          Portable: "Hordozható",
+          See_all: "Lásd mindet",
+          Linux: {
+            Flatpack_desc: "Legyen tied a legjobb Heroic élményt bármilyen Linux disztribúción vagy Steam Deck-en a Flatpak segítségével.",
+            Flatpack_get: "Szerezd meg Flathub-ról",
+            AppImage_desc: "Töltsd le AppImage formátumban , így minden Linux distrón működni fog. Az AppImage képes frissíteni önmagát, ha egy újabb verzió megjelenik.",
+            Other_desc: "Heroic ugyanakkor elérhető RPM, DEB és egy TAR.XZ fájlban is. Keresd az alternatív repository-kat a Github oldalunkon.",
+          },
+          MacOS: {
+            Application: "Alkalmazás",
+            Application_desc: "Töltsd le a DMG-t, nyisd meg és másold a Heroic App-ot az Applications/Alkalmazások mappába és már mehet is a menet!",
+          },
+          Windows: {
+            Setup_desc: "Telepítsd a Heroic-ot a rendszeredre és szerezd be a frissítéseket, amint kijön az új verzió. Next/Tovább, Next/Tovább, Finish/Befejezés!",
+            Portable_desc: "Használd a hordozható verziót, ha nem akarod teljesen telepíteni. Így is minden funkciót megkapsz.",
+          }
         }
       }
     },

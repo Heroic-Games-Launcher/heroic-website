@@ -35,7 +35,7 @@ const Home: NextPage = ({siteLang}:HomePage) => {
         <title>Heroic Games Launcher</title>
         <meta
           name="description"
-          content="An Open Source GOG and Epic Games Launcher"
+          content={i18next.t("Home_Page.meta_desc")}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

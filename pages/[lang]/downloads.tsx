@@ -4,8 +4,13 @@ import { getLatestReleases, ReleaseUrls } from './../api/github'
 import styles from '../../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import i18next from 'i18next'
 
-const Downloads: NextPage = () => {
+interface DownloadsPage{
+  siteLang: string|string[]|undefined
+}
+
+const Downloads: NextPage = ({siteLang}:DownloadsPage) => {
   const router = useRouter()
 
   const userAgent = global.window?.navigator?.userAgent || ''
@@ -34,24 +39,24 @@ const Downloads: NextPage = () => {
 
   function handleDownload(version: string) {
     setTimeout(() => {
-      router.push('/donate')
+      router.push(`/${siteLang}/donate`)
     }, 3000)
   }
 
   return (
     <>
       <Head>
-        <title>Download Heroic</title>
+        <title>{i18next.t("Download.title")}</title>
         <meta
           name="description"
-          content="An Open Source GOG and Epic Games Launcher"
+          content={i18next.t("Download.meta_desc")}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="hero">
         <div className="container">
-          <h1>Download</h1>
-          <p>Heroic is available for all Major operating systems.</p>
+          <h1>{i18next.t("Download.Download")}</h1>
+          <p>{i18next.t("Download.AvailableFor")}</p>
 
           <hr className="spacer" />
 
@@ -61,13 +66,12 @@ const Downloads: NextPage = () => {
               <article className={styles.downloadBoxes}>
                 <h4>Flatpak</h4>
                 <p>
-                  Get the best Heroic experience on any Linux distribution or on
-                  the Steam Deck via Flatpak.
+                  {i18next.t("Download.Linux.Flatpack_desc")}
                 </p>
                 <footer>
                   <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
                     <strong onClick={() => handleDownload('flatpak')}>
-                      Get from Flathub
+                      {i18next.t("Download.Linux.Flatpack_get")}
                     </strong>
                   </a>
                 </footer>
@@ -75,14 +79,12 @@ const Downloads: NextPage = () => {
               <article className={styles.downloadBoxes}>
                 <h4>AppImage</h4>
                 <p>
-                  Download it in AppImage format so it will work on any Linux
-                  distro. The AppImage can update itself when a new version is
-                  released.
+                  {i18next.t("Download.Linux.AppImage_desc")}
                 </p>
                 <footer className="downloadLink">
                   <a href={releases.Linux}>
                     <strong onClick={() => handleDownload('appimage-stable')}>
-                      Stable
+                      {i18next.t("Download.Stable")}
                     </strong>
 
                     <span className="smallText">
@@ -92,7 +94,7 @@ const Downloads: NextPage = () => {
                   {releases.LinuxBeta && (
                     <a href={releases.LinuxBeta}>
                       <strong onClick={() => handleDownload('appimage-beta')}>
-                        Beta
+                        {i18next.t("Download.Beta")}
                       </strong>
                       <span className="smallText">
                         {` (${releases.LinuxBeta.split('/')[7] ?? ''})`}
@@ -102,15 +104,14 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>Other</h4>
+                <h4>{i18next.t("Download.Other")}</h4>
                 <p>
-                  Heroic is also distributed in RPM, DEB and a TAR.XZ file.
-                  Check for alternative repos in our Github.
+                  {i18next.t("Download.Linux.Other_desc")}
                 </p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                     <strong onClick={() => handleDownload('all-packages')}>
-                      See all
+                      {i18next.t("Download.See_all")}
                     </strong>
                   </a>
                 </footer>
@@ -122,15 +123,14 @@ const Downloads: NextPage = () => {
             <summary>Windows</summary>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>Setup</h4>
+                <h4>{i18next.t("Download.Setup")}</h4>
                 <p>
-                  Install Heroic on your system and get auto-updates when a new
-                  version is released. Next, Next, Finish!
+                  {i18next.t("Download.Windows.Setup_desc")}
                 </p>
                 <footer>
                   <a href={releases.Windows}>
                     <strong onClick={() => handleDownload('windows-stable')}>
-                      Stable
+                      {i18next.t("Download.Stable")}
                     </strong>
                     <span className="smallText">
                       {` (${releases.Windows.split('/')[7] ?? ''})`}
@@ -139,7 +139,7 @@ const Downloads: NextPage = () => {
                   {releases.WindowsBeta && (
                     <a href={releases.WindowsBeta}>
                       <strong onClick={() => handleDownload('windows-beta')}>
-                        Beta
+                        {i18next.t("Download.Beta")}
                       </strong>
                       <span className="smallText">
                         {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
@@ -149,17 +149,16 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>Portable</h4>
+                <h4>{i18next.t("Download.Portable")}</h4>
                 <p>
-                  Use the portable version in case you do not want the full
-                  installation. You will still have all the features included.
+                  {i18next.t("Download.Windows.Portable_desc")}
                 </p>
                 <footer>
                   <a href={releases.WindowsPortable}>
                     <strong
                       onClick={() => handleDownload('windows-portable-stable')}
                     >
-                      Stable
+                      {i18next.t("Download.Stable")}
                     </strong>
                     <span className="smallText">
                       {` (${releases.WindowsPortable.split('/')[7] ?? ''})`}
@@ -170,7 +169,7 @@ const Downloads: NextPage = () => {
                       <strong
                         onClick={() => handleDownload('windows-portable-beta')}
                       >
-                        Beta
+                        {i18next.t("Download.Beta")}
                       </strong>
                       <span className="smallText">
                         {` (${
@@ -187,15 +186,14 @@ const Downloads: NextPage = () => {
           <details open={isMac}>
             <summary>MacOS</summary>
             <article className={styles.downloadBoxes}>
-              <h4>Application</h4>
+              <h4>{i18next.t("Download.MacOS.Application")}</h4>
               <p>
-                Download the DMG, open it and copy the Heroic App to the
-                Applications folder and you are good to go!
+                {i18next.t("Download.MacOS.Application_desc")}
               </p>
               <footer>
                 <a href={releases.Mac}>
                   <strong onClick={() => handleDownload('mac-stable')}>
-                    Stable
+                    {i18next.t("Download.Stable")}
                   </strong>
                   <span className="smallText">
                     {` (${releases.Mac.split('/')[7]})`}
@@ -204,7 +202,7 @@ const Downloads: NextPage = () => {
                 {releases.MacBeta && (
                   <a href={releases.MacBeta}>
                     <strong onClick={() => handleDownload('mac-beta')}>
-                      Beta
+                      {i18next.t("Download.Beta")}
                     </strong>
                     <span className="smallText">
                       {` (${releases.MacBeta.split('/')[7] ?? ''})`}
