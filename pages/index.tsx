@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import i18next from '../components/i18next'
 
 import styles from '../styles/Home.module.css'
+import IndexSection from '../components/IndexSection'
 
 const img1 = require('../assets/heroic_01.png?webp')
 const img2 = require('../assets/heroic_game.png?webp')
@@ -93,267 +94,113 @@ const Home: NextPage = () => {
         {i18next.t("Home_Page.MAIN_FEATURES_AND_MORE_INFO")}
       </h1>
 
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img2}>
-                <img
-                  src={img2}
-                  alt={i18next.t("Home_Page.Game_Page")}
-                  aria-label={i18next.t("Home_Page.Game_Page")}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Game_Page")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Game_Page_desc")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={img2}
+        sectionImageAlt={i18next.t("Home_Page.Game_Page")}
+        sectionTitle={i18next.t("Home_Page.Game_Page")}
+        sectionContent={i18next.t("Home_Page.Game_Page_desc")}
+      />
 
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img3}>
-                <img
-                  src={img3}
-                  alt={i18next.t("Home_Page.Platform_Selection")}
-                  aria-label={i18next.t("Home_Page.Platform_Selection")}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Platform_Selection")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Platform_Selection_desc")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={img3}
+        sectionImageAlt={i18next.t("Home_Page.Platform_Selection")}
+        sectionTitle={i18next.t("Home_Page.Platform_Selection")}
+        sectionContent={i18next.t("Home_Page.Platform_Selection_desc")}
+      />
 
-      <motion.section
-        transition={transition}
-        initial={initial}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img4}>
-                <img
-                  alt={i18next.t("Home_Page.Epic_Store_inside_Heroic")}
-                  aria-label={i18next.t("Home_Page.Epic_Store_inside_Heroic")}
-                  src={img4}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Access_to_the_Stores")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Access_to_the_Stores_desc")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={img4}
+        sectionImageAlt={i18next.t("Home_Page.Epic_Store_inside_Heroic")}
+        sectionTitle={i18next.t("Home_Page.Access_to_the_Stores")}
+        sectionContent={i18next.t("Home_Page.Access_to_the_Stores_desc")}
+      />
 
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img8}>
-                <img
-                  alt={i18next.t("Home_Page.Context_Menu")}
-                  aria-label={i18next.t("Home_Page.Context_Menu")}
-                  src={img8}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Organize_your_library")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Organize_your_library_desc")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={img8}
+        sectionImageAlt={i18next.t("Home_Page.Context_Menu")}
+        sectionTitle={i18next.t("Home_Page.Organize_your_library")}
+        sectionContent={i18next.t("Home_Page.Organize_your_library_desc")}
+      />
 
-      <motion.section
-        initial={initial}
-        whileInView={final}
-        transition={transition}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={gif}>
-                <img
-                  alt={i18next.t("Home_Page.Themes")}
-                  aria-label={i18next.t("Home_Page.Themes")}
-                  src={gif}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Themes")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Themes_desc")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={gif}
+        sectionImageAlt={i18next.t("Home_Page.Themes")}
+        sectionTitle={i18next.t("Home_Page.Themes")}
+        sectionContent={i18next.t("Home_Page.Themes_desc")}
+      />
 
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img5}>
-                <img
-                  alt={i18next.t("Home_Page.Wine_Manager")}
-                  aria-label={i18next.t("Home_Page.Wine_Manager")}
-                  src={img5}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Wine_Manager")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Wine_Manager_desc")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img6}>
-                <img
-                  alt={i18next.t("Home_Page.Wine_Settings")}
-                  aria-label={i18next.t("Home_Page.Wine_Settings")}
-                  src={img6}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Wine_Settings")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Wine_Settings_desc")}
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img7}>
-                <img
-                  alt={i18next.t("Home_Page.Epic_Store_inside_Heroic")}
-                  aria-label={i18next.t("Home_Page.Epic_Store_inside_Heroic")}
-                  src={img7}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>
-                {i18next.t("Home_Page.Multi_Language")}
-              </h2>
-              <p>
-                {i18next.t("Home_Page.Multi_Language_desc")}
-                <a
-                  href="https://hosted.weblate.org/projects/heroic-games-launcher/"
-                  rel="norefferer"
-                  target="_blank"
-                >
-                  {' '}
-                  {i18next.t("Home_Page.Multi_Language_desc_Weblate_link")}
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={img5}
+        sectionImageAlt={i18next.t("Home_Page.Wine_Manager")}
+        sectionTitle={i18next.t("Home_Page.Wine_Manager")}
+        sectionContent={i18next.t("Home_Page.Wine_Manager_desc")}
+      />
+
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={img6}
+        sectionImageAlt={i18next.t("Home_Page.Wine_Settings")}
+        sectionTitle={i18next.t("Home_Page.Wine_Settings")}
+        sectionContent={i18next.t("Home_Page.Wine_Settings_desc")}
+      />
+
+      <IndexSection
+        sectionInitial={initial}
+        sectionTransition={transition}
+        sectionWhileInView={final}
+        sectionWhileHover={hover}
+        
+        sectionImage={img7}
+        sectionImageAlt={i18next.t("Home_Page.Epic_Store_inside_Heroic")}
+        sectionTitle={i18next.t("Home_Page.Multi_Language")}
+        sectionContent={
+          <>
+            {i18next.t('Home_Page.Multi_Language_desc')}
+            <a
+              href="https://hosted.weblate.org/projects/heroic-games-launcher/"
+              rel="norefferer"
+              target="_blank"
+            >
+              {' '}
+              {i18next.t('Home_Page.Multi_Language_desc_Weblate_link')}
+            </a>
+          </>
+        }
+      />
     </>
   )
 }
