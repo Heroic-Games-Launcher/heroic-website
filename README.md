@@ -22,4 +22,14 @@ It has an initialization of i18next, already exported, and imported by each page
   - It's not totally important to follow the official ones, but it's recommended. 
   Just to avoid conflicts and misunderstandings in the future, in case of multi-regional languages, like spanish, portugese... etc. 
   So I recommend using `es-ES` in case of spanish of Spain, but it doesn't affect the way i18next (the translation handler plugin) works.
+- After all that you just need to add your language to the other languages in the `Navbar` component's  select tag
+  ```
+  <select name="language" id="language" onChange={changeLanguage}>
+    <option value="en">English</option>
+    <option value="hu">Magyar</option>
+    ---> HERE <---
+  </select>
+  ``` 
+  - The value of the `<option>` have to be the **same code you have given to your language**
+- Now you can reach your own language at `http://localhost:3000/YOUR_CODE/`
 - You can now start translating! YAAAY! It's that easy. :smile:
