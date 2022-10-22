@@ -129,7 +129,7 @@ i18next.init({
 
           GitHub_Sponsor: "GitHub Szponzor",
           "One-time_or_flexible-sub": "Egyszeri alkalom vagy rugalmas előfizetés",
-          GitHub_Sponsor_desc: "Támogass minket egyszeri alkalmú vagy megújulü támogatással a GitHub-on keresztül.",
+          GitHub_Sponsor_desc: "Támogass minket egyszeri alkalmú vagy megújuló támogatással a GitHub-on keresztül.",
           Go_to_GitHub: "Irány a GitHub",
 
           Patreon: "Patreon",
