@@ -7,10 +7,10 @@ import Head from 'next/head'
 import i18next from 'i18next'
 
 interface DownloadsPage{
-  siteLang: string|string[]|undefined
+  siteLang: string
 }
 
-const Downloads: NextPage = ({siteLang}:DownloadsPage) => {
+const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
   const router = useRouter()
 
   const userAgent = global.window?.navigator?.userAgent || ''

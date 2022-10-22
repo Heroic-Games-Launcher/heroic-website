@@ -19,7 +19,7 @@ interface Navbar {
 export default function Navbar({siteLang}:Navbar) {
   const router = useRouter()
   
-  function changeLanguage(lang){
+  function changeLanguage(lang:{target:{value:string}}){
     router.push(`/${lang.target.value}`)
   }
 

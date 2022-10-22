@@ -25,10 +25,10 @@ const hover = { scale: 1.05 }
 const transition = { duration: 0.5 }
 
 interface HomePage {
-  siteLang: string|string[]|undefined
+  siteLang: string
 }
 
-const Home: NextPage = ({siteLang}:HomePage) => {
+const Home: NextPage<HomePage> = ({siteLang}) => {
   return (
     <>
       <Head>
