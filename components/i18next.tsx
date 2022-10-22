@@ -3,7 +3,7 @@ import { NextPageContext } from 'next'
 import { ReactElement } from 'react'
 
 i18next.init({
-  lng: "hu",
+  lng: "en",
   fallbackLng: "en",
   resources: {
     en: {

@@ -25,11 +25,11 @@ It has an initialization of i18next, already exported, and imported by each page
 - After all that you just need to add your language to the other languages in the `Navbar` component's  select tag
   ```
   <select name="language" id="language" onChange={changeLanguage}>
-    <option value="en">English</option>
-    <option value="hu">Magyar</option>
+    <option value="en" selected={siteLang == "en"}>English</option>
+    <option value="hu" selected={siteLang == "hu"}>Magyar</option>
     ---> HERE <---
   </select>
   ``` 
-  - The value of the `<option>` have to be the **same code you have given to your language**
+  - The value and "selected" condition of the `<option>` have to be the **same code you have given to your language**
 - Now you can reach your own language at `http://localhost:3000/YOUR_CODE/`
 - You can now start translating! YAAAY! It's that easy. :smile:
