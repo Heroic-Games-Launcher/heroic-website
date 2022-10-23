@@ -8,10 +8,10 @@ const Donate: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{i18next.t('Support_Us.Support_Heroic_Development')}</title>
+        <title>{i18next.t('Support_Us.title')}</title>
         <meta
           name="description"
-          content="An Open Source GOG and Epic Games Launcher"
+          content={i18next.t('Support_Us.meta_desc')}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -55,7 +55,8 @@ i18next.init({
           Multi_Language_desc_Weblate_link: "our Weblate Page",
         },
         Support_Us: {
-          Support_Heroic_Development: "Support Heroic Development",
+          title: "Support Heroic Development",
+          meta_desc: "An Open Source GOG and Epic Games Launcher",
           Support_Us: "Support Us",
           Heroic_is_free: "Heroic is free! Donations help us keep the project alive.",
 
@@ -151,7 +152,8 @@ i18next.init({
           Multi_Language_desc_Weblate_link: "a Weblate Oldalunkon",
         },
         Support_Us: {
-          Support_Heroic_Development: "Támogasd a Heroic fejlesztésést",
+          title: "Támogasd a Heroic fejlesztésést",
+          meta_desc: "Egy nyílt forráskódú GOG és Epic Games Launcher",
           Support_Us: "Támogass minket",
           Heroic_is_free: "A Heroic ingyenes! Az adományok segítenek életben tartani a projektet.",
 
