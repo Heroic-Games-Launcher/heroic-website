@@ -5,6 +5,7 @@ import styles from '../../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import i18next from 'i18next'
+import DownloadsPageArticleCard from '../../components/DownloadsPageArticleCard'
 
 interface DownloadsPage {
   siteLang: string
@@ -60,21 +61,25 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
           <details open={isLinux}>
             <summary>Linux</summary>
             <div className="grid">
-              <article className={styles.downloadBoxes}>
-                <h4>Flatpak</h4>
-                <p>{i18next.t('Download.Linux.Flatpack_desc')}</p>
-                <footer>
-                  <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
-                    <strong onClick={() => handleDownload('flatpak')}>
-                      {i18next.t('Download.Linux.Flatpack_get')}
-                    </strong>
-                  </a>
-                </footer>
-              </article>
-              <article className={styles.downloadBoxes}>
-                <h4>AppImage</h4>
-                <p>{i18next.t('Download.Linux.AppImage_desc')}</p>
-                <footer className="downloadLink">
+                
+              <DownloadsPageArticleCard
+                className={styles.downloadBoxes}
+                articleTitle="Flatpack"
+                articleDescription={i18next.t('Download.Linux.Flatpack_desc')}
+              >
+                <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
+                  <strong onClick={() => handleDownload('flatpak')}>
+                    {i18next.t('Download.Linux.Flatpack_get')}
+                  </strong>
+                </a>
+              </DownloadsPageArticleCard>
+
+              <DownloadsPageArticleCard
+                className={styles.downloadBoxes}
+                articleTitle="AppImage"
+                articleDescription={i18next.t('Download.Linux.AppImage_desc')}
+              >
+                <>
                   <a href={releases.Linux}>
                     <strong onClick={() => handleDownload('appimage-stable')}>
                       {i18next.t('Download.Stable')}
@@ -94,29 +99,34 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
                       </span>
                     </a>
                   )}
-                </footer>
-              </article>
-              <article className={styles.downloadBoxes}>
-                <h4>{i18next.t('Download.Other')}</h4>
-                <p>{i18next.t('Download.Linux.Other_desc')}</p>
-                <footer>
-                  <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
-                    <strong onClick={() => handleDownload('all-packages')}>
-                      {i18next.t('Download.See_all')}
-                    </strong>
-                  </a>
-                </footer>
-              </article>
+                </>
+              </DownloadsPageArticleCard>
+
+              <DownloadsPageArticleCard
+                className={styles.downloadBoxes}
+                articleTitle={i18next.t('Download.Other')}
+                articleDescription={i18next.t('Download.Linux.Other_desc')}
+              >
+                <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
+                  <strong onClick={() => handleDownload('all-packages')}>
+                    {i18next.t('Download.See_all')}
+                  </strong>
+                </a>
+              </DownloadsPageArticleCard>
+
             </div>
           </details>
 
           <details open={isWindows}>
             <summary>Windows</summary>
             <div className="grid">
-              <article className={styles.downloadBoxes}>
-                <h4>{i18next.t('Download.Setup')}</h4>
-                <p>{i18next.t('Download.Windows.Setup_desc')}</p>
-                <footer>
+
+              <DownloadsPageArticleCard
+                className={styles.downloadBoxes}
+                articleTitle={i18next.t('Download.Setup')}
+                articleDescription={i18next.t('Download.Windows.Setup_desc')}
+              >
+                <>
                   <a href={releases.Windows}>
                     <strong onClick={() => handleDownload('windows-stable')}>
                       {i18next.t('Download.Stable')}
@@ -135,12 +145,15 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
                       </span>
                     </a>
                   )}
-                </footer>
-              </article>
-              <article className={styles.downloadBoxes}>
-                <h4>{i18next.t('Download.Portable')}</h4>
-                <p>{i18next.t('Download.Windows.Portable_desc')}</p>
-                <footer>
+                </>
+              </DownloadsPageArticleCard>
+
+              <DownloadsPageArticleCard
+                className={styles.downloadBoxes}
+                articleTitle={i18next.t('Download.Portable')}
+                articleDescription={i18next.t('Download.Windows.Portable_desc')}
+              >
+                <>
                   <a href={releases.WindowsPortable}>
                     <strong
                       onClick={() => handleDownload('windows-portable-stable')}
@@ -165,17 +178,21 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
                       </span>
                     </a>
                   )}
-                </footer>
-              </article>
+                </>
+              </DownloadsPageArticleCard>
+
             </div>
           </details>
 
           <details open={isMac}>
             <summary>MacOS</summary>
-            <article className={styles.downloadBoxes}>
-              <h4>{i18next.t('Download.MacOS.Application')}</h4>
-              <p>{i18next.t('Download.MacOS.Application_desc')}</p>
-              <footer>
+            
+            <DownloadsPageArticleCard
+              className={styles.downloadBoxes}
+              articleTitle={i18next.t('Download.MacOS.Application')}
+              articleDescription={i18next.t('Download.MacOS.Application_desc')}
+            >
+              <>
                 <a href={releases.Mac}>
                   <strong onClick={() => handleDownload('mac-stable')}>
                     {i18next.t('Download.Stable')}
@@ -194,8 +211,9 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
                     </span>
                   </a>
                 )}
-              </footer>
-            </article>
+              </>
+            </DownloadsPageArticleCard>
+
           </details>
         </div>
       </header>
