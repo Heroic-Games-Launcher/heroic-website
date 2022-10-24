@@ -6,11 +6,11 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import i18next from 'i18next'
 
-interface DownloadsPage{
+interface DownloadsPage {
   siteLang: string
 }
 
-const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
+const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
   const router = useRouter()
 
   const userAgent = global.window?.navigator?.userAgent || ''
@@ -46,17 +46,14 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
   return (
     <>
       <Head>
-        <title>{i18next.t("Download.title")}</title>
-        <meta
-          name="description"
-          content={i18next.t("Download.meta_desc")}
-        />
+        <title>{i18next.t('Download.title')}</title>
+        <meta name="description" content={i18next.t('Download.meta_desc')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="hero">
         <div className="container">
-          <h1>{i18next.t("Download.Download")}</h1>
-          <p>{i18next.t("Download.AvailableFor")}</p>
+          <h1>{i18next.t('Download.Download')}</h1>
+          <p>{i18next.t('Download.AvailableFor')}</p>
 
           <hr className="spacer" />
 
@@ -65,26 +62,22 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
             <div className="grid">
               <article className={styles.downloadBoxes}>
                 <h4>Flatpak</h4>
-                <p>
-                  {i18next.t("Download.Linux.Flatpack_desc")}
-                </p>
+                <p>{i18next.t('Download.Linux.Flatpack_desc')}</p>
                 <footer>
                   <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
                     <strong onClick={() => handleDownload('flatpak')}>
-                      {i18next.t("Download.Linux.Flatpack_get")}
+                      {i18next.t('Download.Linux.Flatpack_get')}
                     </strong>
                   </a>
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
                 <h4>AppImage</h4>
-                <p>
-                  {i18next.t("Download.Linux.AppImage_desc")}
-                </p>
+                <p>{i18next.t('Download.Linux.AppImage_desc')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Linux}>
                     <strong onClick={() => handleDownload('appimage-stable')}>
-                      {i18next.t("Download.Stable")}
+                      {i18next.t('Download.Stable')}
                     </strong>
 
                     <span className="smallText">
@@ -94,7 +87,7 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
                   {releases.LinuxBeta && (
                     <a href={releases.LinuxBeta}>
                       <strong onClick={() => handleDownload('appimage-beta')}>
-                        {i18next.t("Download.Beta")}
+                        {i18next.t('Download.Beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.LinuxBeta.split('/')[7] ?? ''})`}
@@ -104,14 +97,12 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{i18next.t("Download.Other")}</h4>
-                <p>
-                  {i18next.t("Download.Linux.Other_desc")}
-                </p>
+                <h4>{i18next.t('Download.Other')}</h4>
+                <p>{i18next.t('Download.Linux.Other_desc')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                     <strong onClick={() => handleDownload('all-packages')}>
-                      {i18next.t("Download.See_all")}
+                      {i18next.t('Download.See_all')}
                     </strong>
                   </a>
                 </footer>
@@ -123,14 +114,12 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
             <summary>Windows</summary>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{i18next.t("Download.Setup")}</h4>
-                <p>
-                  {i18next.t("Download.Windows.Setup_desc")}
-                </p>
+                <h4>{i18next.t('Download.Setup')}</h4>
+                <p>{i18next.t('Download.Windows.Setup_desc')}</p>
                 <footer>
                   <a href={releases.Windows}>
                     <strong onClick={() => handleDownload('windows-stable')}>
-                      {i18next.t("Download.Stable")}
+                      {i18next.t('Download.Stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.Windows.split('/')[7] ?? ''})`}
@@ -139,7 +128,7 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
                   {releases.WindowsBeta && (
                     <a href={releases.WindowsBeta}>
                       <strong onClick={() => handleDownload('windows-beta')}>
-                        {i18next.t("Download.Beta")}
+                        {i18next.t('Download.Beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
@@ -149,16 +138,14 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{i18next.t("Download.Portable")}</h4>
-                <p>
-                  {i18next.t("Download.Windows.Portable_desc")}
-                </p>
+                <h4>{i18next.t('Download.Portable')}</h4>
+                <p>{i18next.t('Download.Windows.Portable_desc')}</p>
                 <footer>
                   <a href={releases.WindowsPortable}>
                     <strong
                       onClick={() => handleDownload('windows-portable-stable')}
                     >
-                      {i18next.t("Download.Stable")}
+                      {i18next.t('Download.Stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.WindowsPortable.split('/')[7] ?? ''})`}
@@ -169,7 +156,7 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
                       <strong
                         onClick={() => handleDownload('windows-portable-beta')}
                       >
-                        {i18next.t("Download.Beta")}
+                        {i18next.t('Download.Beta')}
                       </strong>
                       <span className="smallText">
                         {` (${
@@ -186,14 +173,12 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
           <details open={isMac}>
             <summary>MacOS</summary>
             <article className={styles.downloadBoxes}>
-              <h4>{i18next.t("Download.MacOS.Application")}</h4>
-              <p>
-                {i18next.t("Download.MacOS.Application_desc")}
-              </p>
+              <h4>{i18next.t('Download.MacOS.Application')}</h4>
+              <p>{i18next.t('Download.MacOS.Application_desc')}</p>
               <footer>
                 <a href={releases.Mac}>
                   <strong onClick={() => handleDownload('mac-stable')}>
-                    {i18next.t("Download.Stable")}
+                    {i18next.t('Download.Stable')}
                   </strong>
                   <span className="smallText">
                     {` (${releases.Mac.split('/')[7]})`}
@@ -202,7 +187,7 @@ const Downloads: NextPage<DownloadsPage> = ({siteLang}) => {
                 {releases.MacBeta && (
                   <a href={releases.MacBeta}>
                     <strong onClick={() => handleDownload('mac-beta')}>
-                      {i18next.t("Download.Beta")}
+                      {i18next.t('Download.Beta')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.MacBeta.split('/')[7] ?? ''})`}
