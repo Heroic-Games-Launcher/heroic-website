@@ -216,10 +216,14 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>ARM64 Chips (M1/M2)</h4>
+                <h4>Apple Chips (M1/M2)</h4>
                 <p>
-                  Optimized for Apple chips. Open it and copy the Heroic App to
-                  the Applications folder. Run and Play!
+                  Might need to run this command on the terminal to make it
+                  work:
+                  <code>
+                    sudo xattr -r -d com.apple.quarantine
+                    "/Applications/Heroic.app"
+                  </code>
                 </p>
                 <footer>
                   <a href={releases.MacArm}>
