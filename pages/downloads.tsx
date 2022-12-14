@@ -13,7 +13,8 @@ const Downloads: NextPage = () => {
     Linux: '',
     Windows: '',
     WindowsPortable: '',
-    Mac: ''
+    Mac: '',
+    MacArm: ''
   })
 
   React.useEffect(() => {
@@ -186,33 +187,62 @@ const Downloads: NextPage = () => {
 
           <details open={isMac}>
             <summary>MacOS</summary>
-            <article className={styles.downloadBoxes}>
-              <h4>Application</h4>
-              <p>
-                Download the DMG, open it and copy the Heroic App to the
-                Applications folder and you are good to go!
-              </p>
-              <footer>
-                <a href={releases.Mac}>
-                  <strong onClick={() => handleDownload('mac-stable')}>
-                    Stable
-                  </strong>
-                  <span className="smallText">
-                    {` (${releases.Mac.split('/')[7]})`}
-                  </span>
-                </a>
-                {releases.MacBeta && (
-                  <a href={releases.MacBeta}>
-                    <strong onClick={() => handleDownload('mac-beta')}>
-                      Beta
+            <div className="grid">
+              <article className={styles.downloadBoxes}>
+                <h4>Intel Chips</h4>
+                <p>
+                  Optimized for Intel Chips. Open it and copy the Heroic App to
+                  the Applications folder and you are good to go!
+                </p>
+                <footer>
+                  <a href={releases.Mac}>
+                    <strong onClick={() => handleDownload('mac-stable')}>
+                      Stable
                     </strong>
                     <span className="smallText">
-                      {` (${releases.MacBeta.split('/')[7] ?? ''})`}
+                      {` (${releases.Mac.split('/')[7]})`}
                     </span>
                   </a>
-                )}
-              </footer>
-            </article>
+                  {releases.MacBeta && (
+                    <a href={releases.MacBeta}>
+                      <strong onClick={() => handleDownload('mac-beta')}>
+                        Beta
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.MacBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
+                  )}
+                </footer>
+              </article>
+              <article className={styles.downloadBoxes}>
+                <h4>ARM64 Chips (M1/M2)</h4>
+                <p>
+                  Optimized for Apple chips. Open it and copy the Heroic App to
+                  the Applications folder. Run and Play!
+                </p>
+                <footer>
+                  <a href={releases.MacArm}>
+                    <strong onClick={() => handleDownload('mac-stable')}>
+                      Stable
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.MacArm.split('/')[7]})`}
+                    </span>
+                  </a>
+                  {releases.MacArmBeta && (
+                    <a href={releases.MacArmBeta}>
+                      <strong onClick={() => handleDownload('mac-beta')}>
+                        Beta
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.MacArmBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
+                  )}
+                </footer>
+              </article>
+            </div>
           </details>
         </div>
       </header>
