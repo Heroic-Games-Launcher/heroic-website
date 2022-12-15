@@ -221,8 +221,7 @@ const Downloads: NextPage = () => {
                   Might need to run this command on the terminal to make it
                   work:
                   <code>
-                    sudo xattr -r -d com.apple.quarantine | mdfind
-                    kMDItemCFBundleIdentifier = "*heroic"
+                    xattr -d com.apple.quarantine | mdfind kMDItemCFBundleIdentifier = "*heroic"
                   </code>
                 </p>
                 <footer>
