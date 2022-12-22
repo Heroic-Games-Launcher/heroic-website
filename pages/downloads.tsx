@@ -221,7 +221,7 @@ const Downloads: NextPage = () => {
                   Might need to run this command on the terminal to make it
                   work:
                   <code>
-                    xattr -d com.apple.quarantine /Applications/Heroic.app
+                    xattr -r -d com.apple.quarantine /Applications/Heroic.app
                   </code>
                 </p>
                 <footer>
