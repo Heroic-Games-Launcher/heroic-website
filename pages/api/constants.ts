@@ -99,23 +99,24 @@ export const faqs: { question: string; answer: string[] }[] = [
   {
     question: 'What is Wine and how does it work with Heroic?',
     answer: [
-      'Wine is a free and open source software that allows users to run Windows applications on Linux and macOS. It works by translating Windows API calls into equivalent calls for the host operating system, allowing Windows programs to run as if they were native applications. In the context of Heroic, Wine can be used to run Windows-only games on Linux and macOS, and it can be integrated into the launcher to make it easier to manage and launch these games.'
+      `Wine is a free and open-source compatibility layer that allows Windows applications to run on Unix-like operating systems, including Linux and macOS. Heroic uses Wine to run Windows games on those operating systems.`,
+      `Wine is not an emulator, but rather it translates the Windows API calls into POSIX calls that are understood by the operating system. This allows Windows games to run without the need for a full Windows installation.`,
+      `You can learn more about Wine and its capabilities on the Wine project website: https://www.winehq.org`
     ]
   },
+
   {
     question: 'What is Proton and how does it work with Heroic?',
     answer: [
-      'Proton is a compatibility layer developed by Valve that allows users to run Windows games on Linux using the Steam client. It is based on Wine and includes additional improvements and enhancements to make it easier to run a wider range of games. Like Wine, Proton can be integrated into Heroic to make it easier to launch and manage Windows games on Linux.'
+      'Proton is a compatibility layer developed by Valve that allows running Windows games on Linux. It is based on Wine, but includes additional patches and improvements to make it more stable and compatible with a larger number of games., In Heroic, you can use Proton to run Windows games on Linux. You can choose which version of Proton to use for each game, and you can also download custom versions of Proton directly from the interface., It is important to note that Proton was not designed to run games outside of Steam, and the results may vary. You can check for compatibility information for each game on the ProtonDB website: https://www.protondb.com'
     ]
   },
   {
     question: 'What is Crossover and how does it work with Heroic?',
     answer: [
-      `Crossover is a commercial software tool that allows users to run Windows applications on Linux and macOS. It uses Wine, a compatibility layer that allows Windows applications to run on non-Windows operating systems, to provide support for Windows applications.`,
-
-      `In Heroic, Crossover can be used to run Windows games on macOS. To use Crossover with Heroic, you will need to install the Crossover software and then add the game to Heroic as you would any other game. When you launch the game through Heroic, it will be opened using Crossover and should be able to run as if it were on a Windows machine.`,
-
-      `Please note that Crossover is a commercial software tool and is not included with Heroic. You will need to purchase a license for Crossover in order to use it with Heroic.`
+      `Crossover is a commercial software that allows you to run Windows applications on Linux and macOS. It is developed by CodeWeavers and can be purchased from their website: https://www.codeweavers.com/.`,
+      `In Heroic, you can use Crossover to run Windows games on macOS by selecting the "Crossover" version in the game settings and also the bottle name (default is HEROIC). Please note that Crossover is a third-party software and its usage is not officially supported by Heroic.`,
+      `If you decide to purchase Crossover, you can use the coupon code LEGENDARY to get a discount and support the development of the Legendary app, which is used by Heroic to integrate with the Epic Games Store.`
     ]
   },
   {
