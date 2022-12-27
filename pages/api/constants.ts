@@ -205,6 +205,21 @@ export const faqs: { question: string; answer: string[] }[] = [
     ]
   },
   {
+    question:
+      'Can I use Heroic to manage and launch games from other platforms, such as Ubisoft Connect or the EA App?',
+    answer: [
+      'Yes, it is possible to use the feature ADD GAME to add another store frontend like Ubisoft Connect and EA APP. However, the integration is not the same as it has for Epic and GOG, since in this case you will need to launch Heroic and then launch the other launcher from within Heroic.'
+    ]
+  },
+  {
+    question:
+      'Is it possible to use Heroic to launch games that have been purchased outside of the Epic Games Store or GOG, such as on a physical disc or through another digital store?',
+    answer: [
+      `Yes, you can use the ADD GAME feature in Heroic to add games that have been purchased outside of the Epic Games Store or GOG. After installing the game normally, use the ADD GAME option and fill in the necessary information. Heroic will automatically retrieve an image for the game from the web. If the game requires an installer to be run before launching, you can use the "Run Installer First" button on the ADD GAME screen to do so.`
+    ]
+  },
+
+  {
     question: 'Is Heroic free to use?',
     answer: ['Yes, Heroic is completely free to use.']
   },
