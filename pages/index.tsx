@@ -68,13 +68,11 @@ const Home: NextPage = () => {
                   Download
                 </span>
               </Link>
-              <a
-                href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki"
-                role="button"
-                className="contrast outline"
-              >
-                Documentation
-              </a>
+              <Link href="/faq" passHref>
+                <span role="button" className="contrast outline">
+                  FAQ
+                </span>
+              </Link>
             </p>
           </div>
           <img

@@ -6,7 +6,8 @@ const logo = require('../assets/logo.png')
 import {
   faTwitter,
   faGithub,
-  faDiscord,faMastodon
+  faDiscord,
+  faMastodon
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -30,10 +31,11 @@ export default function Navbar() {
       </ul>
       <ul>
         <li>
-            <a 
-              rel="me"             
-              title="Heroic Mastodon Page" 
-              href="https://mastodon.social/@heroiclauncher">
+          <a
+            rel="me"
+            title="Heroic Mastodon Page"
+            href="https://mastodon.social/@heroiclauncher"
+          >
             <FontAwesomeIcon
               icon={faMastodon}
               height={22}
@@ -80,6 +82,9 @@ export default function Navbar() {
               color={'#00000'}
             />
           </a>
+        </li>
+        <li>
+          <a href="/faq">FAQ</a>
         </li>
         <li>
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
