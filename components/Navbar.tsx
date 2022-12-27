@@ -84,7 +84,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="/faq">FAQ</a>
+          <Link href="/faq">FAQ</Link>
         </li>
         <li>
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
