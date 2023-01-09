@@ -7,12 +7,12 @@ const FAQPage: NextPage = () => {
     <header className="hero">
       <div className="container">
         <h1>Frequently Asked Questions</h1>
-        {faqs.map((faq, index) => (
-          <details key={index} open={index === 0}>
+        {faqs.map((faq, i) => (
+          <details key={i} open={i === 0}>
             <summary>{faq.question}</summary>
             <ul>
-              {faq.answer.map((answer, index) => (
-                <li key={index}>
+              {faq.answer.map((answer, j) => (
+                <li key={j}>
                   {answer.split(' ').map((word) => {
                     // check if the word is a URL
                     if (word.startsWith('https://')) {
