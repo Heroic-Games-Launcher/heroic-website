@@ -26,7 +26,7 @@ It has an initialization of i18next, already exported, and imported by each page
 Like this (replace `en` (in this case `hu`) with your region code. and give it REM with a full name of your language in it, so it can be found more easily):  
   ```ts
   /** Hungarian */
-  const hu: { question: string; answer: string[] }[] = [
+  const hu: faq[] = [
     ...
   ]
   ```
