@@ -106,7 +106,8 @@ i18next.init({
           }
         },
         FAQ:{
-          title: "Frequently Asked Questions"
+          title: "Frequently Asked Questions",
+          meta_desc: "An Open Source GOG and Epic Games Launcher",
         }
       }
     },
@@ -210,7 +211,8 @@ i18next.init({
           }
         },
         FAQ:{
-          title: "Gyakran Ismételt Kérdések"
+          title: "Gyakran Ismételt Kérdések",
+          meta_desc: "Egy nyílt forráskódú GOG és Epic Games Launcher",
         }
       }
     },
