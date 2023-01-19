@@ -4,15 +4,15 @@ import Navbar from './Navbar'
 
 type Props = {
   children: ReactNode
-  siteLang: string
 }
 
-export const Layout = ({ children, siteLang }: Props) => {
+export const Layout = ({ children }: Props) => {
+  
   return (
     <>
-      <Navbar siteLang={siteLang}/>
+      <Navbar />
       <main>{children}</main>
-      <Footer siteLang={siteLang} />
+      <Footer />
     </>
   )
 }

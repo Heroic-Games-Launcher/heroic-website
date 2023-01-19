@@ -1,11 +1,9 @@
+import i18next from 'i18next'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-interface Footer {
-  siteLang: string
-}
 
-const Footer = ({ siteLang }: Footer) => {
+const Footer = () => {
   const router = useRouter()
 
   function changeLanguage(lang: { target: { value: string } }) {
@@ -21,7 +19,7 @@ const Footer = ({ siteLang }: Footer) => {
             name="language"
             id="language"
             onChange={changeLanguage}
-            value={siteLang}
+            value={i18next.language}
           >
             <option value="en">English</option>
             <option value="hu">Magyar</option>

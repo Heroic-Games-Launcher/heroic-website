@@ -24,11 +24,9 @@ const final = { y: '0px', opacity: 1 }
 const hover = { scale: 1.05 }
 const transition = { duration: 0.5 }
 
-interface HomePage {
-  siteLang: string
-}
 
-const Home: NextPage<HomePage> = ({siteLang}) => {
+const Home = () => {
+  
   return (
     <>
       <Head>
@@ -69,7 +67,7 @@ const Home: NextPage<HomePage> = ({siteLang}) => {
             <strong>{i18next.t("Home_Page.Heroic_Summary.Epic_games")}</strong> {i18next.t("Home_Page.Heroic_Summary.Launcher")} <strong>{i18next.t("Home_Page.Heroic_Summary.Linux")}</strong>,{' '}
             <strong>{i18next.t("Home_Page.Heroic_Summary.Windows")}</strong> {i18next.t("Home_Page.Heroic_Summary.and")} <strong>{i18next.t("Home_Page.Heroic_Summary.macOS")}</strong>. {i18next.t("Home_Page.Heroic_Summary.AlsoAvailable")} <strong>{i18next.t("Home_Page.Heroic_Summary.SteamDeck")}</strong>!
             <p className={styles.buttonContainer}>
-              <Link href={`/${siteLang}/downloads`} passHref>
+              <Link href={`/${i18next.language}/downloads`} passHref>
                 <span role="button" className="secondary">
                   {i18next.t("Home_Page.Download")}
                 </span>

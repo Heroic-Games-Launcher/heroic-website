@@ -7,11 +7,7 @@ import Head from 'next/head'
 import i18next from 'i18next'
 import DownloadsPageArticleCard from '../../components/DownloadsPageArticleCard'
 
-interface DownloadsPage {
-  siteLang: string
-}
-
-const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
+const Downloads = () => {
   const router = useRouter()
 
   const userAgent = global.window?.navigator?.userAgent || ''
@@ -41,7 +37,7 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
 
   function handleDownload(version: string) {
     setTimeout(() => {
-      router.push(`/${siteLang}/donate`)
+      router.push(`/${i18next.language}/donate`)
     }, 3000)
   }
 

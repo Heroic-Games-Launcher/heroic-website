@@ -6,15 +6,23 @@ import i18next from 'i18next'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
-  let {lang} = router.query
-  let siteLang:string = (lang)? lang?.toString(): "en"
 
+  let supportedLanguages = [
+    "en",
+    "hu"
+  ]
+
+  let {lang} = router.query
+  lang = lang+"" // required for TypeScript to accept it as String and not "String | String[]"
+  
+  let siteLang:string = (lang && supportedLanguages.includes(lang))? lang?.toString(): "en"
+  
   // change language by the given regional code in the url
   i18next.changeLanguage(siteLang)
 
   return (
-    <Layout siteLang={siteLang}>
-      <Component siteLang={lang} {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
     </Layout>
   )
 }

@@ -13,17 +13,14 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from 'next/router'
 
-interface Navbar {
-  siteLang: string
-}
 
-export default function Navbar({siteLang}:Navbar) {
+export default function Navbar() {
 
   return (
     <nav className="container-fluid">
       <ul>
         <li>
-          <Link href={`/${siteLang}/`} passHref>
+          <Link href={`/${i18next.language}/`} passHref>
             <span className="contrast link">
               <img
                 src={logo}
@@ -99,7 +96,7 @@ export default function Navbar({siteLang}:Navbar) {
           </a>
         </li>
         <li>
-          <Link href={`/${siteLang}/donate`}>{i18next.t("Navbar.Support_Us")}</Link>
+          <Link href={`/${i18next.language}/donate`}>{i18next.t("Navbar.Support_Us")}</Link>
         </li>
       </ul>
     </nav>
