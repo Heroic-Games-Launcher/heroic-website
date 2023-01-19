@@ -88,7 +88,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <Link href="/faq">FAQ</Link>
+          <Link href={`/${i18next.language}/faq`}>FAQ</Link>
         </li>
         <li>
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
