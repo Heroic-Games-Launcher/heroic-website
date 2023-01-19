@@ -10,9 +10,9 @@ type Props = {
 export const Layout = ({ children, siteLang }: Props) => {
   return (
     <>
-      <Navbar siteLang={siteLang} />
+      <Navbar siteLang={siteLang}/>
       <main>{children}</main>
-      <Footer />
+      <Footer siteLang={siteLang} />
     </>
   )
 }

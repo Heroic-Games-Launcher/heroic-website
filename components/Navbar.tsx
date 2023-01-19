@@ -18,11 +18,6 @@ interface Navbar {
 }
 
 export default function Navbar({siteLang}:Navbar) {
-  const router = useRouter()
-  
-  function changeLanguage(lang:{target:{value:string}}){
-    router.push(`/${lang.target.value}`)
-  }
 
   return (
     <nav className="container-fluid">
@@ -42,12 +37,6 @@ export default function Navbar({siteLang}:Navbar) {
         </li>
       </ul>
       <ul>
-        <li>
-          <select name="language" id="language" onChange={changeLanguage}>
-            <option value="en" selected={siteLang == "en"}>English</option>
-            <option value="hu" selected={siteLang == "hu"}>Magyar</option>
-          </select>
-        </li>
         <li>
           <a
             rel="me"
