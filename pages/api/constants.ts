@@ -263,85 +263,85 @@ const en: faq[] = [
 /** Hungarian */
 const hu: { question: string; answer: string[] }[] = [
   {
-    question: 'What is Heroic?',
+    question: 'Mi az a Heroic?',
     answer: [
-      'Heroic is an open source, lightweight games launcher that is available for Linux, Windows, and macOS. It is an alternative to the Epic Games Launcher and GOG Galaxy, and it is focused on privacy, using fewer resources, and supporting a range of tools such as Wine, Proton, Crossover, DXVK, and VKD3D.'
+      'A Heroic egy nyílt forráskódú, kevés helyet foglaló játékindító, ami elérhető Linux, Windows, és macOS rendszerekre. Az Epic Games Launcher és GOG Galaxy egyik alternatívája, amely a adatvédelmére fókuszál, kevesebb erőforrást használva, és széles körű eszközöket támogatva, mint a Wine, Proton, Crossover, DXVK, and VKD3D.'
     ]
   },
   {
-    question: 'Is Heroic safe to use?',
+    question: 'Biztonságos a Heroic használata?',
     answer: [
-      "Yes, Heroic is a safe and secure games launcher that does not collect any data from the user's computer. It is also open source, which means that the source code is publicly available and can be reviewed by the community to ensure that it does not contain any malicious code."
+      "Igen, a Heroic egy biztonságos játékindító, amely nem gyűjt adatokat a felhasználó számítógépedről. Emellett nyílt forráskódú, ami azt jelenti, hogy a forráskód nyilvánosan elérhető, és a közösség ellenőrizheti, hogy nem tartalmaz-e rosszindulatú kódot."
     ]
   },
   {
-    question: 'Does Heroic collect my data, username, or password?',
+    question: 'Gyűjti a Heroic az adataimat, felhasználónevemet vagy jelszavamat?',
     answer: [
-      'No, Heroic is a privacy-centered application and does not collect any data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.',
-      'In addition, Heroic does not collect any usage data or analytics from your use of the application. Your privacy is important to us and we take steps to ensure that your data is secure and not collected or shared without your consent.'
+      'Nem, a Heroic egy adatvédelmi központú alkalmazás, és nem gyűjt adatokat a számítógépedről vagy eszközödről. Nem gyűjti a felhasználóneved, jelszavad vagy más személyes adataid. Bejelentkezel a hivatalos Epic Games Store vagy a GOG weboldalán, és ezután a Heroic csak egy tokent tart meg, amely csak arra szolgál, hogy listázza, letöltse és elindítsa a játékokat ezekből az áruházakból.',
+      'Ezen túlmenően a Heroic nem gyűjt semmilyen használati adatot vagy analitikai elemzést az alkalmazás használatából. Az adataid védelme fontos számunkra, és lépéseket teszünk annak érdekében, hogy az adataid biztonságban legyenek, és ne gyűjtsék vagy osszák meg azokat a beleegyezésed nélkül.'
     ]
   },
   {
-    question: 'Can I get banned for using Heroic?',
+    question: 'Kitilthatnak a Heroic használatáért?',
     answer: [
-      'It is unlikely that you will get banned for using Heroic to launch games from the Epic Games Store or GOG.',
+      'Nem valószínű, hogy kitiltanak, ha a Heroic segítségével indítasz el játékokat az Epic Games Store-ból vagy a GOG-ból.',
 
-      'However, please note that certain actions, such as cheating or violating the terms of service for a particular game, may result in a ban. It is important to follow the rules and guidelines of each game and store in order to avoid any issues.',
-      'Some games also might ban you if you are trying to run the game on a non-supported operating system using Wine or Proton, for example.'
+      'Felhívjuk azonban a figyelmed, hogy bizonyos cselekedetek, mint például a csalás vagy az adott játék szolgáltatási feltételeinek megsértése, kitiltást vonhatnak maguk után. Fontos, hogy a problémák elkerülése érdekében tartsd be az egyes játékok és áruházak szabályait és irányelveit.',
+      'Néhány játék akkor is letilthat, ha a játékot nem támogatott operációs rendszeren próbálod futtatni, például Wine vagy Proton használatával.'
     ]
   },
 
   {
-    question: 'How do I install Heroic on my computer?',
+    question: 'Hogyan telepíthetem a Heroicot a számítógépemre?',
     answer: [
-      `The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package and then run the command xattr -r -d com.apple.quarantine /Applications/Heroic.app in the terminal to complete the installation. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website.`
+      `A Heroic telepítésének folyamata az operációs rendszertől függ. Linuxon a Heroic telepítéséhez használhatsz egy csomagkezelőt, például Flatpak, .deb, .pacman vagy .rpm, vagy használhatsz AppImage-et. MacOS-en a Heroicot standard alkalmazáscsomagként telepítheted, majd a telepítés befejezéséhez futtasd a terminálban a xattr -r -d com.apple.quarantine /Applications/Heroic.app parancsot. Windowson a WinGet csomagkezelőt használhatod a winget install HeroicGamesLauncher.HeroicGamesLauncher parancs futtatásával, vagy letöltheted és futtathatod a telepítő exe vagy a hordozható exe programot a weboldalról.`
     ]
   },
   {
     question:
-      'What features are currently available in Heroic, and what features are planned for the future?',
+      'Milyen funkciók állnak jelenleg rendelkezésre a Heroicban, és milyen funkciókat terveznek a jövőben?',
     answer: [
-      'Currently available features in Heroic include:',
-      'Support for launching games from the Epic Games Store and GOG',
-      'Support for installing, uninstalling, updating, repairing, and moving games',
-      'Support for importing already installed games',
-      'Support for playing Epic games online (AntiCheat on macOS and on Linux depends on the game)',
-      'Support for playing games using Wine or Proton on Linux',
-      'Support for playing games using Crossover on macOS',
-      'Support for downloading custom Wine and Proton versions on Linux',
-      'Direct access to the Epic and GOG stores from within the Heroic interface',
-      'Search for game compatibility information on ProtonDB on Linux',
-      'Sync installed games with an existing Epic Games Store installation',
-      'Sync saves with the cloud',
-      'Custom theming support',
-      'Download queue',
-      'Add games and applications outside of GOG and Epic Games',
-      'Planned features for the future include:',
-      'Support for other stores (such as Amazon Gaming and IndieGala)',
-      'Play GOG games online'
+      'A Heroic jelenleg elérhető funkciói a következők::',
+      'Az Epic Games Store és a GOG játékok indításának támogatása',
+      'Támogatás a játékok telepítéséhez, eltávolításához, frissítéséhez, javításához és mozgatásához',
+      'Támogatás a már telepített játékok importálásához',
+      'Epic Games online játék támogatása (AntiCheat macOS-en és Linuxon a játéktól függően)',
+      'Támogatás a játékok lejátszásához Linuxon Wine vagy Proton segítségével',
+      'Támogatás a Crossover használatával játszott játékokhoz macOS alatt',
+      'Egyedi Wine és Proton verziók letöltésének támogatása Linuxon',
+      'Közvetlen hozzáférés az Epic és a GOG áruházakhoz a Heroic felületéről',
+      'Játékkompatibilitási információk keresése a ProtonDB-ről Linuxon',
+      'A telepített játékok szinkronizálása egy meglévő Epic Games Store telepítéssel',
+      'Mentés szinkronizálása a felhővel',
+      'Egyedi tematizálás támogatása',
+      'Letöltési várólista',
+      'Játékok és alkalmazások hozzáadása a GOG-on és az Epic Games-en kívül',
+      'A jövőben tervezett funkciók:',
+      'Más áruházak támogatása (például Amazon Gaming és IndieGala)',
+      'GOG játékok online játéka'
     ]
   },
   {
-    question: 'What are the supported operating systems for Heroic?',
+    question: 'Milyen operációs rendszereket támogat a Heroic?',
     answer: [
-      'Linux: Ubuntu 20.04LTS or newer, Fedora 33 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.',
-      'Windows: Windows 10 and 11',
-      'macOS: macOS 10.15 or newer.'
+      'Linux: Ubuntu 20.04LTS vagy újabb, Fedora 33 vagy újabb, Arch Linux és származékai (mint például Manjaro, Garuda, és EndeavourOS). A Heroic a legtöbb más Linux disztróban is működik, de további beállításokat és hibaelhárítást igényelhet. SteamOS-en is támogatott, de a letöltés csak a Discover szoftverközponton keresztül érhető el.',
+      'Windows: Windows 10 és 11',
+      'macOS: macOS 10.15 vagy újabb.'
     ]
   },
   {
-    question: 'What are the minimum system requirements for Heroic?',
+    question: 'Mik a Heroic minimális rendszerkövetelményei?',
     answer: [
-      'Heroic is an Electron-based application and requires approximately 500MB of storage space. In terms of hardware requirements, the minimum specifications for running Heroic are:',
-      '2GB of RAM',
-      '1.8GHz dual-core processor',
-      'However, please note that these are the minimum requirements and you may need more powerful hardware in order to run certain games or applications.'
+      'A Heroic egy Electron-alapú alkalmazás, és körülbelül 500 MB tárhelyet igényel. Ami a hardverkövetelményeket illeti, a Heroic futtatásához szükséges minimális specifikációk a következők:',
+      '2GB RAM',
+      '1.8GHz kétmagos processzor',
+      'Felhívjuk azonban a figyelmét, hogy ezek a minimumkövetelmények, és előfordulhat, hogy bizonyos játékok vagy alkalmazások futtatásához nagyobb teljesítményű hardverre van szüksége.'
     ]
   },
   {
-    question: 'How do I use Heroic to play games?',
+    question: 'Hogyan használhatom a Heroicot játékokhoz?',
     answer: [
-      'Once you have installed Heroic, you can use it to browse and install games from a range of sources. You can also use it to launch and manage games that you have installed on your computer. If you encounter any issues with games, you can check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . If you are unable to find a solution, you can also seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK .'
+      'Miután telepítetted a Heroicot, a segítségével számos forrásból származó játékokat böngészhetsz és telepíthetsz. Használhatod a számítógépedre telepített játékok elindítására és kezelésére is. Ha bármilyen problémád adódik a játékokkal, a hibaelhárításhoz és a megoldásokhoz az általános dokumentációt ezen a linken találod: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . Ha nem találsz megoldást, a Heroic Discord szerverén is kérhetsz segítséget ezen a linken: https://discord.com/invite/rHJ2uqdquK .'
     ]
   },
   {
