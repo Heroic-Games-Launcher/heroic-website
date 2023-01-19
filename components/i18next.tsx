@@ -123,7 +123,7 @@ i18next.init({
         },
         Home_Page: {
           meta_desc: "Egy nyílt forráskódú GOG és Epic Games Launcher",
-          PLAY_LIKE_A_HERO: "JÁTSZ MINT EGY HŐS!",
+          PLAY_LIKE_A_HERO: "JÁTSSZ ÚGY, MINT EGY HŐS!",
           Heroic_Summary: {
             Heroic: "Heroic egy Nyílt Forráskódú",
             GOG: "GOG",
