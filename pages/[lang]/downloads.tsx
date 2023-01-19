@@ -19,7 +19,8 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
     Linux: '',
     Windows: '',
     WindowsPortable: '',
-    Mac: ''
+    Mac: '',
+    MacArm: ''
   })
 
   React.useEffect(() => {
@@ -61,7 +62,6 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
           <details open={isLinux}>
             <summary>Linux</summary>
             <div className="grid">
-                
               <DownloadsPageArticleCard
                 className={styles.downloadBoxes}
                 articleTitle="Flatpack"
@@ -113,14 +113,12 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
                   </strong>
                 </a>
               </DownloadsPageArticleCard>
-
             </div>
           </details>
 
           <details open={isWindows}>
             <summary>Windows</summary>
             <div className="grid">
-
               <DownloadsPageArticleCard
                 className={styles.downloadBoxes}
                 articleTitle={i18next.t('Download.Setup')}
@@ -180,40 +178,67 @@ const Downloads: NextPage<DownloadsPage> = ({ siteLang }) => {
                   )}
                 </>
               </DownloadsPageArticleCard>
-
             </div>
           </details>
 
           <details open={isMac}>
             <summary>MacOS</summary>
-            
-            <DownloadsPageArticleCard
-              className={styles.downloadBoxes}
-              articleTitle={i18next.t('Download.MacOS.Application')}
-              articleDescription={i18next.t('Download.MacOS.Application_desc')}
-            >
-              <>
-                <a href={releases.Mac}>
-                  <strong onClick={() => handleDownload('mac-stable')}>
-                    {i18next.t('Download.Stable')}
-                  </strong>
-                  <span className="smallText">
-                    {` (${releases.Mac.split('/')[7]})`}
-                  </span>
-                </a>
-                {releases.MacBeta && (
-                  <a href={releases.MacBeta}>
-                    <strong onClick={() => handleDownload('mac-beta')}>
-                      {i18next.t('Download.Beta')}
+            <div className="grid">
+              <DownloadsPageArticleCard
+                className={styles.downloadBoxes}
+                articleTitle={i18next.t('Download.MacOS.IntelChips')}
+                articleDescription={i18next.t('Download.MacOS.IntelChips_desc')}
+              >
+                <>
+                  <a href={releases.Mac}>
+                    <strong onClick={() => handleDownload('mac-stable')}>
+                      {i18next.t('Download.Stable')}
                     </strong>
                     <span className="smallText">
-                      {` (${releases.MacBeta.split('/')[7] ?? ''})`}
+                      {` (${releases.Mac.split('/')[7]})`}
                     </span>
                   </a>
-                )}
-              </>
-            </DownloadsPageArticleCard>
+                  {releases.MacBeta && (
+                    <a href={releases.MacBeta}>
+                      <strong onClick={() => handleDownload('mac-beta')}>
+                        {i18next.t('Download.Beta')}
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.Mac.split('/')[7]})`}
+                      </span>
+                    </a>
+                  )}
+                </>
+              </DownloadsPageArticleCard>
 
+              <DownloadsPageArticleCard
+                className={styles.downloadBoxes}
+                articleTitle={i18next.t('Download.MacOS.AppleChips')}
+                articleDescription={i18next.t('Download.MacOS.AppleChips_desc')}
+                sampleCode="xattr -r -d com.apple.quarantine /Applications/Heroic.app"
+              >
+                <>
+                  <a href={releases.MacArm}>
+                    <strong onClick={() => handleDownload('mac-stable')}>
+                      {i18next.t('Download.Stable')}
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.MacArm.split('/')[7]})`}
+                    </span>
+                  </a>
+                  {releases.MacArmBeta && (
+                    <a href={releases.MacArmBeta}>
+                      <strong onClick={() => handleDownload('mac-beta')}>
+                        {i18next.t('Download.Beta')}
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.MacArm.split('/')[7]})`}
+                      </span>
+                    </a>
+                  )}
+                </>
+              </DownloadsPageArticleCard>
+            </div>
           </details>
         </div>
       </header>

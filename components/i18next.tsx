@@ -32,6 +32,7 @@ i18next.init({
           },
           Download: "Download",
           Documentation: "Documentation",
+          FAQ: "FAQ",
 
           MAIN_FEATURES_AND_MORE_INFO: "MAIN FEATURES AND MORE INFO",
           Game_Page: "Game Page",
@@ -93,8 +94,10 @@ i18next.init({
             Other_desc: "Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.",
           },
           MacOS: {
-            Application: "Application",
-            Application_desc: "Download the DMG, open it and copy the Heroic App to the Applications folder and you are good to go!",
+            IntelChips: "Intel Chips",
+            IntelChips_desc: "Optimized for Intel Chips. Open it and copy the Heroic App to the Applications folder and you are good to go!",
+            AppleChips: "Apple Chips (M1/M2)",
+            AppleChips_desc: "Might need to run this command on the terminal to make it work: ",
           },
           Windows: {
             Setup_desc: "Install Heroic on your system and get auto-updates when a new version is released. Next, Next, Finish!",
@@ -129,6 +132,7 @@ i18next.init({
           },
           Download: "Letöltés",
           Documentation: "Documentáció",
+          FAQ: "GYIK",
 
           MAIN_FEATURES_AND_MORE_INFO: "FŐBB FUNKCIÓK ÉS MÉG TÖBB INFÓ",
           Game_Page: "Játék oldala",
@@ -190,8 +194,10 @@ i18next.init({
             Other_desc: "Heroic ugyanakkor elérhető RPM, DEB és egy TAR.XZ fájlban is. Keresd az alternatív repository-kat a Github oldalunkon.",
           },
           MacOS: {
-            Application: "Alkalmazás",
-            Application_desc: "Töltsd le a DMG-t, nyisd meg és másold a Heroic App-ot az Applications/Alkalmazások mappába és már mehet is a menet!",
+            IntelChips: "Intel Chip-ek",
+            IntelChips_desc: `Intel Chip-ekre optimalizálva. Nyisd meg és másold a Heroic App-ot az "Applications" mappába és már készen is vagy!`,
+            AppleChips: "Apple Chip-ek (M1/M2)",
+            AppleChips_desc: "Lehet le kell futtatnod ezt a parancsot a terminal-ba, ahhoz hogy működjön: ",
           },
           Windows: {
             Setup_desc: "Telepítsd a Heroic-ot a rendszeredre és szerezd be a frissítéseket, amint kijön az új verzió. Next/Tovább, Next/Tovább, Finish/Befejezés!",

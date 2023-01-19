@@ -7,7 +7,8 @@ const logo = require('../assets/logo.png')
 import {
   faTwitter,
   faGithub,
-  faDiscord
+  faDiscord,
+  faMastodon
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from 'next/router'
@@ -49,6 +50,20 @@ export default function Navbar({siteLang}:Navbar) {
         </li>
         <li>
           <a
+            rel="me"
+            title="Heroic Mastodon Page"
+            href="https://mastodon.social/@heroiclauncher"
+          >
+            <FontAwesomeIcon
+              icon={faMastodon}
+              height={22}
+              width={22}
+              color={'#00000'}
+            />
+          </a>
+        </li>
+        <li>
+          <a
             href="https://twitter.com/HeroicLauncher"
             title={i18next.t("Navbar.Heroic_Twitter_Page")}
           >
@@ -85,6 +100,9 @@ export default function Navbar({siteLang}:Navbar) {
               color={'#00000'}
             />
           </a>
+        </li>
+        <li>
+          <Link href="/faq">FAQ</Link>
         </li>
         <li>
           <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">

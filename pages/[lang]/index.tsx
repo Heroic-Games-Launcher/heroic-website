@@ -74,13 +74,11 @@ const Home: NextPage<HomePage> = ({siteLang}) => {
                   {i18next.t("Home_Page.Download")}
                 </span>
               </Link>
-              <a
-                href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki"
-                role="button"
-                className="contrast outline"
-              >
-                {i18next.t("Home_Page.Documentation")}
-              </a>
+              <Link href="/faq" passHref>
+                <span role="button" className="contrast outline">
+                  {i18next.t("Home_Page.FAQ")}
+                </span>
+              </Link>
             </p>
           </div>
           <img

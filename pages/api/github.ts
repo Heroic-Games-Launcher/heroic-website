@@ -21,10 +21,12 @@ export interface ReleaseUrls {
   Windows: string
   WindowsPortable: string
   Mac: string
+  MacArm: string
   LinuxBeta?: string | null
   WindowsBeta?: string | null
   WindowsPortableBeta?: string | null
   MacBeta?: string | null
+  MacArmBeta?: string | null
 }
 
 const defaultUrl =
@@ -52,13 +54,17 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
         (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
       )[0]?.browser_download_url || defaultUrl
     const dmgStable =
-      assetsStable.filter((a) => a.name.endsWith('.dmg'))[0]
+      assetsStable.filter((a) => a.name.includes('macOS-x64'))[0]
+        ?.browser_download_url || defaultUrl
+    const dmgArmStable =
+      assetsStable.filter((a) => a.name.includes('macOS-arm64'))[0]
         ?.browser_download_url || defaultUrl
 
     let appImageBeta,
       windowsPortableBeta,
       windowsSetupBeta,
-      dmgBeta = null
+      dmgBeta = null,
+      dmgArmBeta = null
 
     const isSameMajor = tagStable >= tagBeta.split('-')[0]
 
@@ -72,6 +78,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       )[0].browser_download_url
       dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0]
         .browser_download_url
+      dmgArmBeta = assetsBeta.filter((a) => a.name.includes('macOS-arm64'))[0]
     }
 
     return {
@@ -82,6 +89,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       WindowsPortable: windowsPortableStable,
       WindowsPortableBeta: windowsPortableBeta,
       Mac: dmgStable,
+      MacArm: dmgArmStable,
       MacBeta: dmgBeta
     }
   } catch (error) {
@@ -90,6 +98,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       Linux: defaultUrl,
       Windows: defaultUrl,
       Mac: defaultUrl,
+      MacArm: defaultUrl,
       WindowsPortable: defaultUrl
     }
   }
