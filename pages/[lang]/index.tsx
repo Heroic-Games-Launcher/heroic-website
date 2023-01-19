@@ -72,7 +72,7 @@ const Home = () => {
                   {i18next.t("Home_Page.Download")}
                 </span>
               </Link>
-              <Link href="/faq" passHref>
+              <Link href={`/${i18next.language}/faq`} passHref>
                 <span role="button" className="contrast outline">
                   {i18next.t("Home_Page.FAQ")}
                 </span>
