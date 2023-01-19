@@ -104,6 +104,9 @@ i18next.init({
             Setup_desc: "Install Heroic on your system and get auto-updates when a new version is released. Next, Next, Finish!",
             Portable_desc: "Use the portable version in case you do not want the full installation. You will still have all the features included.",
           }
+        },
+        FAQ:{
+          title: "Frequently Asked Questions"
         }
       }
     },
@@ -205,6 +208,9 @@ i18next.init({
             Setup_desc: "Telepítsd a Heroic-ot a rendszeredre és szerezd be a frissítéseket, amint kijön az új verzió. Next/Tovább, Next/Tovább, Finish/Befejezés!",
             Portable_desc: "Használd a hordozható verziót, ha nem akarod teljesen telepíteni. Így is minden funkciót megkapsz.",
           }
+        },
+        FAQ:{
+          title: "Gyakran Ismételt Kérdések"
         }
       }
     },
