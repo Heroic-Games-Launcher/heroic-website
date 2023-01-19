@@ -13,6 +13,7 @@ i18next.init({
           Support_Us: "Support Us",
           Heroic_GitHub_Page: "Heroic GitHub Page",
           Heroic_Twitter_Page: "Heroic Twitter Page", 
+          Heroic_Mastodon_Page: "Heroic Mastodon Page", 
           Heroic_Discord_Server: "Heroic Discord Server",
         },
         Home_Page: {
@@ -113,6 +114,7 @@ i18next.init({
           Support_Us: "Támogass minket",
           Heroic_GitHub_Page: "Heroic GitHub oldal",
           Heroic_Twitter_Page: "Heroic Twitter oldal", 
+          Heroic_Mastodon_Page: "Heroic Mastodon oldal", 
           Heroic_Discord_Server: "Heroic Discord Szerver",
         },
         Home_Page: {

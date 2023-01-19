@@ -40,7 +40,7 @@ export default function Navbar({siteLang}:Navbar) {
         <li>
           <a
             rel="me"
-            title="Heroic Mastodon Page"
+            title={i18next.t("Navbar.Heroic_Mastodon_Page")}
             href="https://mastodon.social/@heroiclauncher"
           >
             <FontAwesomeIcon
