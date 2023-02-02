@@ -49,10 +49,11 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
         ?.browser_download_url || defaultUrl
     const windowsSetupStable =
-      assetsStable.filter((a) => a.name.includes('Setup'))[0]
+      assetsStable.filter((a) => a.name.includes('Setup-x64'))[0]
         ?.browser_download_url || defaultUrl
-    const WindowsSetupArmStable = assetsStable.filter(
-      (a) => a.name.includes('Setup-arm64'))[0]?.browser_download_url || defaultUrl
+    const WindowsSetupArmStable =
+      assetsStable.filter((a) => a.name.includes('Setup-arm64'))[0]
+        ?.browser_download_url || defaultUrl
     const windowsPortableStable =
       assetsStable.filter(
         (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
@@ -78,8 +79,9 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
         .browser_download_url
       windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0]
         .browser_download_url
-      windowsSetupArmBeta = assetsBeta.filter(
-        (a) => a.name.includes('Setup-arm64'))[0].browser_download_url
+      windowsSetupArmBeta = assetsBeta.filter((a) =>
+        a.name.includes('Setup-arm64')
+      )[0].browser_download_url
       windowsPortableBeta = assetsBeta.filter(
         (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
       )[0].browser_download_url
