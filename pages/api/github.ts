@@ -19,11 +19,13 @@ export interface Release {
 export interface ReleaseUrls {
   Linux: string
   Windows: string
+  WindowsArm: string
   WindowsPortable: string
   Mac: string
   MacArm: string
   LinuxBeta?: string | null
   WindowsBeta?: string | null
+  WindowsArmBeta?: string | null
   WindowsPortableBeta?: string | null
   MacBeta?: string | null
   MacArmBeta?: string | null
@@ -49,6 +51,8 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     const windowsSetupStable =
       assetsStable.filter((a) => a.name.includes('Setup'))[0]
         ?.browser_download_url || defaultUrl
+    const WindowsSetupArmStable = assetsStable.filter(
+      (a) => a.name.includes('Setup-arm64'))[0]?.browser_download_url || defaultUrl
     const windowsPortableStable =
       assetsStable.filter(
         (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
@@ -63,6 +67,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     let appImageBeta,
       windowsPortableBeta,
       windowsSetupBeta,
+      windowsSetupArmBeta,
       dmgBeta = null,
       dmgArmBeta = null
 
@@ -73,6 +78,8 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
         .browser_download_url
       windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0]
         .browser_download_url
+      windowsSetupArmBeta = assetsBeta.filter(
+        (a) => a.name.includes('Setup-arm64'))[0].browser_download_url
       windowsPortableBeta = assetsBeta.filter(
         (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
       )[0].browser_download_url
@@ -85,7 +92,9 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       Linux: appImageStable,
       LinuxBeta: appImageBeta,
       Windows: windowsSetupStable,
+      WindowsArm: WindowsSetupArmStable,
       WindowsBeta: windowsSetupBeta,
+      WindowsArmBeta: windowsSetupArmBeta,
       WindowsPortable: windowsPortableStable,
       WindowsPortableBeta: windowsPortableBeta,
       Mac: dmgStable,
@@ -97,6 +106,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     return {
       Linux: defaultUrl,
       Windows: defaultUrl,
+      WindowsArm: defaultUrl,
       Mac: defaultUrl,
       MacArm: defaultUrl,
       WindowsPortable: defaultUrl

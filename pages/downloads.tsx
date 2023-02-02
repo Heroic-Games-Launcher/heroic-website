@@ -12,6 +12,7 @@ const Downloads: NextPage = () => {
   const [releases, setReleases] = React.useState<ReleaseUrls>({
     Linux: '',
     Windows: '',
+    WindowsArm: '',
     WindowsPortable: '',
     Mac: '',
     MacArm: ''
@@ -149,6 +150,35 @@ const Downloads: NextPage = () => {
                   )}
                 </footer>
               </article>
+              {releases.WindowsArm && (
+                <article className={styles.downloadBoxes}>
+                  <h4>Windows ARM64</h4>
+                  <p>
+                    For Windows on ARM64 devices like the Surface Pro X and
+                    others
+                  </p>
+                  <footer>
+                    <a href={releases.WindowsArm}>
+                      <strong onClick={() => handleDownload('mac-stable')}>
+                        Stable
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.WindowsArm.split('/')[7]})`}
+                      </span>
+                    </a>
+                    {releases.WindowsArmBeta && (
+                      <a href={releases.WindowsArmBeta}>
+                        <strong onClick={() => handleDownload('mac-beta')}>
+                          Beta
+                        </strong>
+                        <span className="smallText">
+                          {` (${releases.WindowsArmBeta.split('/')[7] ?? ''})`}
+                        </span>
+                      </a>
+                    )}
+                  </footer>
+                </article>
+              )}
               <article className={styles.downloadBoxes}>
                 <h4>Portable</h4>
                 <p>
