@@ -13,7 +13,6 @@ const Downloads: NextPage = () => {
     Linux: '',
     Windows: '',
     WindowsArm: '',
-    WindowsPortable: '',
     Mac: '',
     MacArm: ''
   })
@@ -183,33 +182,14 @@ const Downloads: NextPage = () => {
                 <h4>Portable</h4>
                 <p>
                   Use the portable version in case you do not want the full
-                  installation. You will still have all the features included.
+                  installation. Check for x64 and arm64 versions on our Github.
                 </p>
                 <footer>
-                  <a href={releases.WindowsPortable}>
-                    <strong
-                      onClick={() => handleDownload('windows-portable-stable')}
-                    >
-                      Stable
+                  <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
+                    <strong onClick={() => handleDownload('all-packages')}>
+                      See all packages
                     </strong>
-                    <span className="smallText">
-                      {` (${releases.WindowsPortable.split('/')[7] ?? ''})`}
-                    </span>
                   </a>
-                  {releases.WindowsPortableBeta && (
-                    <a href={releases.WindowsPortableBeta}>
-                      <strong
-                        onClick={() => handleDownload('windows-portable-beta')}
-                      >
-                        Beta
-                      </strong>
-                      <span className="smallText">
-                        {` (${
-                          releases.WindowsPortableBeta.split('/')[7] ?? ''
-                        })`}
-                      </span>
-                    </a>
-                  )}
                 </footer>
               </article>
             </div>

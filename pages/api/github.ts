@@ -20,13 +20,11 @@ export interface ReleaseUrls {
   Linux: string
   Windows: string
   WindowsArm: string
-  WindowsPortable: string
   Mac: string
   MacArm: string
   LinuxBeta?: string | null
   WindowsBeta?: string | null
   WindowsArmBeta?: string | null
-  WindowsPortableBeta?: string | null
   MacBeta?: string | null
   MacArmBeta?: string | null
 }
@@ -54,10 +52,6 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     const WindowsSetupArmStable =
       assetsStable.filter((a) => a.name.includes('Setup-arm64'))[0]
         ?.browser_download_url || defaultUrl
-    const windowsPortableStable =
-      assetsStable.filter(
-        (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
-      )[0]?.browser_download_url || defaultUrl
     const dmgStable =
       assetsStable.filter((a) => a.name.includes('macOS-x64'))[0]
         ?.browser_download_url || defaultUrl
@@ -82,9 +76,6 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       windowsSetupArmBeta = assetsBeta.filter((a) =>
         a.name.includes('Setup-arm64')
       )[0].browser_download_url
-      windowsPortableBeta = assetsBeta.filter(
-        (a) => a.name.endsWith('.exe') && !a.name.includes('Setup')
-      )[0].browser_download_url
       dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0]
         .browser_download_url
       dmgArmBeta = assetsBeta.filter((a) => a.name.includes('macOS-arm64'))[0]
@@ -97,8 +88,6 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       WindowsArm: WindowsSetupArmStable,
       WindowsBeta: windowsSetupBeta,
       WindowsArmBeta: windowsSetupArmBeta,
-      WindowsPortable: windowsPortableStable,
-      WindowsPortableBeta: windowsPortableBeta,
       Mac: dmgStable,
       MacArm: dmgArmStable,
       MacBeta: dmgBeta
@@ -110,8 +99,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       Windows: defaultUrl,
       WindowsArm: defaultUrl,
       Mac: defaultUrl,
-      MacArm: defaultUrl,
-      WindowsPortable: defaultUrl
+      MacArm: defaultUrl
     }
   }
 }
