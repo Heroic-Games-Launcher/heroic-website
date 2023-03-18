@@ -4,6 +4,7 @@ import { getLatestReleases, ReleaseUrls } from './api/github'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import { osRequirements } from './api/constants'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
@@ -58,6 +59,7 @@ const Downloads: NextPage = () => {
 
           <details open={isLinux}>
             <summary>Linux</summary>
+            <p>Supported OS versions: {osRequirements.linux}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
                 <h4>Flatpak</h4>
@@ -121,6 +123,7 @@ const Downloads: NextPage = () => {
 
           <details open={isWindows}>
             <summary>Windows</summary>
+            <p>Supported OS versions: {osRequirements.windows}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
                 <h4>Setup</h4>
@@ -197,6 +200,7 @@ const Downloads: NextPage = () => {
 
           <details open={isMac}>
             <summary>MacOS</summary>
+            <p>Supported OS versions: {osRequirements.macos}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
                 <h4>Intel Chips</h4>
