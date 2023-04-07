@@ -1,91 +1,50 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import CardFeatures from "@/components/CardFeatures";
+import Image from "next/image";
+import gamePage from "../../public/images/game_page.webp";
+import heroImage from "../../public/images/hero_image.webp";
+import { featuresInfo } from "../contants";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="py-20">
+      <section className="container max-w-5xl mx-auto px-4 flex flex-col gap-4">
+        <div className="max-w-lg mx-auto flex flex-col items-center gap-4 dark:text-white">
+          <h2 className="uppercase font-extrabold text-center text-5xl">
+            Play like a hero!
+          </h2>
+          <p className="text-center">
+            Heroic is an Open Source GOG and Epic Games Launcher for Linux,
+            Windows, and macOS. Also available on the SteamDeck!
+          </p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Download
+            </button>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          className="mx-auto rounded-lg border dark:border-gray-700 shadow"
+          src={heroImage}
+          alt="Heroic Games Launcher Preview"
         />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="container max-w-5xl mx-auto pt-20 px-4 flex flex-col gap-4 dark:text-white">
+        <h2 className="uppercase text-3xl font-semibold text-center">
+          Main features and more info
+        </h2>
+        {featuresInfo.map(({ title, description }, index) => (
+          <CardFeatures
+            key={index}
+            title={title}
+            img={gamePage}
+            description={description}
+          />
+        ))}
+      </section>
     </main>
-  )
+  );
 }
