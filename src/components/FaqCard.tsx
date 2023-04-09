@@ -19,8 +19,8 @@ export default function FaqCard({ question, answer }: Props) {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               stroke-width="2"
               d="M19 9l-7 7-7-7"
             />
