@@ -8,7 +8,7 @@ export const metadata = {
 export default function FaqPage (): JSX.Element {
   return (
     <main className='container mx-auto px-4 py-10'>
-      <h1 className='text-4xl font-bold dark:text-white'>
+      <h1 className='text-5xl font-bold dark:text-white'>
         Frequently Asked Questions
       </h1>
       <div className='flex flex-col gap-2 mt-5'>
