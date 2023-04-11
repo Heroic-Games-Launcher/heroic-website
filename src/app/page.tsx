@@ -10,7 +10,7 @@ import heroicWine from '../../public/images/heroic_wine.png'
 import heroicWineSettings from '../../public/images/heroic_wine_settings.png'
 import { ArrowDownTray } from '@/components/Icons'
 
-export const featuresInfo = [
+const featuresInfo = [
   {
     title: 'Game Page',
     description:
