@@ -1,4 +1,4 @@
-import { ArrowTopRigthOnSquare, CurrencyDollar } from '@/components/Icons'
+import { ArrowTopRigthOnSquare, Github, Kofi, Patreon } from '@/components/Icons'
 
 export const metadata = {
   title: 'Donate'
@@ -8,17 +8,20 @@ const donate = [
   {
     name: 'Github Sponsor',
     description:
-      'Support us with a one-time or recurring donation through GitHub.'
+      'Support us with a one-time or recurring donation through GitHub.',
+    logo: <Github />
   },
   {
     name: 'Patreon',
     description:
-      'Activate a monthly subscription on Patreon to support us and get rewards.'
+      'Activate a monthly subscription on Patreon to support us and get rewards.',
+    logo: <Patreon />
   },
   {
     name: 'Ko-fi',
     description:
-      'Support the project by offering us a coffee. Just like that, fast and simple!'
+      'Support the project by offering us a coffee. Just like that, fast and simple!',
+    logo: <Kofi />
   }
 ]
 
@@ -32,13 +35,13 @@ export default function DonatePage (): JSX.Element {
         </p>
       </div>
       <div className='mt-10 flex flex-col md:items-stretch md:grid gap-4 md:grid-cols-3'>
-        {donate.map(({ description, name }, index) => (
+        {donate.map(({ description, name, logo }, index) => (
           <div
             key={index}
-            className='flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'
+            className='flex gap-2 flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'
           >
             <div className='dark:text-gray-400 mb-2'>
-              <CurrencyDollar />
+              {logo}
             </div>
             <h5 className='mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white'>
               {name}
