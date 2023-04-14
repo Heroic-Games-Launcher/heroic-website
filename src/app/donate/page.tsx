@@ -24,18 +24,18 @@ const donate = [
 
 export default function DonatePage (): JSX.Element {
   return (
-    <main className='container mx-auto px-4 py-10'>
+    <main className='max-w-screen-xl mx-auto px-4 py-10'>
       <div className='flex flex-col gap-4'>
         <h1 className='text-5xl font-bold dark:text-white'>Support Us</h1>
         <p className='dark:text-white'>
           Heroic is free! Donations help us keep the project alive.
         </p>
       </div>
-      <div className='mt-10 flex flex-col items-center md:items-stretch md:grid gap-4 md:grid-cols-3'>
+      <div className='mt-10 flex flex-col md:items-stretch md:grid gap-4 md:grid-cols-3'>
         {donate.map(({ description, name }, index) => (
           <div
             key={index}
-            className='max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'
+            className='flex flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'
           >
             <div className='dark:text-gray-400 mb-2'>
               <CurrencyDollar />
@@ -48,7 +48,7 @@ export default function DonatePage (): JSX.Element {
             </p>
             <a
               href='#'
-              className='flex gap-2 items-center text-blue-600 hover:underline'
+              className='flex w-fit gap-2 items-center text-blue-600 hover:underline'
             >
               {name}
               <ArrowTopRigthOnSquare />

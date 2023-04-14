@@ -9,6 +9,7 @@ import heroicThemes from '../../public/images/themes.gif'
 import heroicWine from '../../public/images/heroic_wine.png'
 import heroicWineSettings from '../../public/images/heroic_wine_settings.png'
 import { ArrowDownTray } from '@/components/Icons'
+import Link from 'next/link'
 
 const featuresInfo = [
   {
@@ -58,7 +59,7 @@ const featuresInfo = [
 export default function HomePage (): JSX.Element {
   return (
     <main className='py-20'>
-      <section className='container max-w-5xl mx-auto px-4 flex flex-col gap-4'>
+      <section className='max-w-5xl mx-auto px-4 flex flex-col gap-4'>
         <div className='max-w-lg mx-auto flex flex-col items-center gap-4 dark:text-white'>
           <h2 className='uppercase font-extrabold text-center text-5xl'>
             Play like a hero!
@@ -68,13 +69,14 @@ export default function HomePage (): JSX.Element {
             Windows, and macOS. Also available on the SteamDeck!
           </p>
           <div className='flex gap-2'>
-            <button
+            <Link
+              href='/downloads'
               type='button'
               className='text-white flex items-center gap-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'
             >
               Download
               <ArrowDownTray />
-            </button>
+            </Link>
           </div>
         </div>
         <Image
@@ -85,7 +87,7 @@ export default function HomePage (): JSX.Element {
           placeholder='blur'
         />
       </section>
-      <section className='container max-w-5xl mx-auto pt-20 px-4 flex flex-col gap-4 dark:text-white'>
+      <section className='max-w-5xl mx-auto pt-20 px-4 flex flex-col gap-4 dark:text-white'>
         <h2 className='uppercase text-3xl font-semibold text-center'>
           Main features and more info
         </h2>
