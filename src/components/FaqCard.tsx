@@ -1,4 +1,4 @@
-import { ChevronDown } from './Icons'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 interface Props {
   question: string
@@ -14,7 +14,7 @@ export default function FaqCard ({ question, answer }: Props): JSX.Element {
             {question}
           </h2>
           <div className='ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180 dark:text-white'>
-            <ChevronDown />
+            <ChevronDownIcon className='w-5 h-5' />
           </div>
         </summary>
         <p className='px-4 my-4 leading-relaxed text-gray-700 dark:text-white/70'>

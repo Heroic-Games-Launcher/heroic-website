@@ -1,5 +1,5 @@
 import Image, { type StaticImageData } from 'next/image'
-import { ArrowRight } from './Icons'
+import { ArrowRightIcon } from '@heroicons/react/20/solid'
 
 interface Props {
   title: string
@@ -29,7 +29,7 @@ export default function CardFeatures ({ title, img, description }: Props): JSX.E
           className='flex gap-2 w-fit items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
         >
           Read more
-          <ArrowRight />
+          <ArrowRightIcon className='w-5 h-5' />
         </a>
       </div>
     </div>

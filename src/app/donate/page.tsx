@@ -1,4 +1,5 @@
-import { ArrowTopRigthOnSquare, Github, Kofi, Patreon } from '@/components/Icons'
+import { GithubIcon, KofiIcon, PatreonIcon } from '@/components/Icons'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid'
 
 export const metadata = {
   title: 'Donate'
@@ -9,19 +10,19 @@ const donate = [
     name: 'Github Sponsor',
     description:
       'Support us with a one-time or recurring donation through GitHub.',
-    logo: <Github />
+    logo: <GithubIcon className='w-8 h-8' />
   },
   {
     name: 'Patreon',
     description:
       'Activate a monthly subscription on Patreon to support us and get rewards.',
-    logo: <Patreon />
+    logo: <KofiIcon className='w-8 h-8' />
   },
   {
     name: 'Ko-fi',
     description:
       'Support the project by offering us a coffee. Just like that, fast and simple!',
-    logo: <Kofi />
+    logo: <PatreonIcon className='w-8 h-8' />
   }
 ]
 
@@ -54,7 +55,7 @@ export default function DonatePage (): JSX.Element {
               className='flex w-fit gap-2 items-center text-blue-600 hover:underline'
             >
               {name}
-              <ArrowTopRigthOnSquare />
+              <ArrowTopRightOnSquareIcon className='w-5 h-5' />
             </a>
           </div>
         ))}

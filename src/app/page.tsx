@@ -8,8 +8,8 @@ import heroicMenu from '../../public/images/heroic_menu.png'
 import heroicThemes from '../../public/images/themes.gif'
 import heroicWine from '../../public/images/heroic_wine.png'
 import heroicWineSettings from '../../public/images/heroic_wine_settings.png'
-import { ArrowDownTray } from '@/components/Icons'
 import Link from 'next/link'
+import { ArrowDownTrayIcon } from '@heroicons/react/20/solid'
 
 const featuresInfo = [
   {
@@ -75,7 +75,7 @@ export default function HomePage (): JSX.Element {
               className='text-white flex items-center gap-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'
             >
               Download
-              <ArrowDownTray />
+              <ArrowDownTrayIcon className='w-5 h-5' />
             </Link>
           </div>
         </div>

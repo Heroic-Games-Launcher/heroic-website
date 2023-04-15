@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import logo from '../../public/images/logo.png'
-import { Bars3 } from './Icons'
+import { Bars3Icon } from '@heroicons/react/20/solid'
 
 const pagePaths = [
   {
@@ -53,7 +53,7 @@ export default function Header (): JSX.Element {
           aria-expanded='false'
         >
           <span className='sr-only'>Open main menu</span>
-          <Bars3 />
+          <Bars3Icon className='w-5 h-5' />
         </button>
         <div
           className={`${

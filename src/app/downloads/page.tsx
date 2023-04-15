@@ -1,4 +1,4 @@
-import { ArrowDownTray } from '@/components/Icons'
+import { ArrowDownTrayIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import { getLatestReleases } from './getLatestReleases'
 import WindowsLogo from '../../../public/images/logo-windows.webp'
@@ -26,11 +26,11 @@ export default async function DownloadsPage (): Promise<JSX.Element> {
           <div className='flex gap-2 flex-wrap justify-center'>
             <a href={Windows} className='flex gap-2 w-fit items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               Windows x64
-              <ArrowDownTray />
+              <ArrowDownTrayIcon />
             </a>
             <a href={WindowsArm64} className='flex gap-2 w-fit items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               Windows Arm64
-              <ArrowDownTray />
+              <ArrowDownTrayIcon />
             </a>
           </div>
         </section>
@@ -42,11 +42,11 @@ export default async function DownloadsPage (): Promise<JSX.Element> {
           <div className='flex gap-2'>
             <a href={LinuxDEB} className='flex gap-2 w-fit items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               .deb
-              <ArrowDownTray />
+              <ArrowDownTrayIcon />
             </a>
             <a href={LinuxRPM} className='flex gap-2 w-fit items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               .rpm
-              <ArrowDownTray />
+              <ArrowDownTrayIcon />
             </a>
           </div>
         </section>
@@ -58,11 +58,11 @@ export default async function DownloadsPage (): Promise<JSX.Element> {
           <div className='flex gap-2 flex-wrap justify-center'>
             <a href={Mac} className='flex gap-2 w-fit items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               Mac
-              <ArrowDownTray />
+              <ArrowDownTrayIcon />
             </a>
             <a href={MacArm64} className='flex gap-2 w-fit items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               Mac Arm64
-              <ArrowDownTray />
+              <ArrowDownTrayIcon />
             </a>
           </div>
         </section>
