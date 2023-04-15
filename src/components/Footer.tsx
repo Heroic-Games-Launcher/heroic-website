@@ -16,7 +16,7 @@ export default function Footer (): JSX.Element {
               height={30}
               alt='Heroic Games Launcher Logo'
             />
-            <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
+            <span className='self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white'>
               Heroic Games Launcher
             </span>
           </Link>
