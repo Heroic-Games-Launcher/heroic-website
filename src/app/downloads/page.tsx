@@ -40,7 +40,7 @@ const downloadSection = [
 ]
 
 export default async function DownloadsPage (): Promise<JSX.Element> {
-  const data = await getLatestReleases()
+  const data: any = await getLatestReleases()
   return (
     <main className='max-w-screen-xl mx-auto px-4 py-10'>
       <div className='flex flex-col gap-4'>
