@@ -37,7 +37,7 @@ devDependencies:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.22)
   eslint-config-prettier:
-    specifier: ^8.8.0
+    specifier: 8.8.0
     version: 8.8.0(eslint@8.38.0)
   postcss:
     specifier: 8.4.22
