@@ -50,11 +50,11 @@ export enum ContentType {
   ApplicationXXz = 'application/x-xz',
   ApplicationXYAML = 'application/x-yaml',
   ApplicationZip = 'application/zip',
-  TextYAML = 'text/yaml',
+  TextYAML = 'text/yaml'
 }
 
 export enum State {
-  Uploaded = 'uploaded',
+  Uploaded = 'uploaded'
 }
 
 export interface Author {
@@ -80,36 +80,36 @@ export interface Author {
 
 export enum EventsURL {
   HTTPSAPIGithubCOMUsersArieljEventsPrivacy = 'https://api.github.com/users/arielj/events{/privacy}',
-  HTTPSAPIGithubCOMUsersFlavioislimaEventsPrivacy = 'https://api.github.com/users/flavioislima/events{/privacy}',
+  HTTPSAPIGithubCOMUsersFlavioislimaEventsPrivacy = 'https://api.github.com/users/flavioislima/events{/privacy}'
 }
 
 export enum FollowingURL {
   HTTPSAPIGithubCOMUsersArieljFollowingOtherUser = 'https://api.github.com/users/arielj/following{/other_user}',
-  HTTPSAPIGithubCOMUsersFlavioislimaFollowingOtherUser = 'https://api.github.com/users/flavioislima/following{/other_user}',
+  HTTPSAPIGithubCOMUsersFlavioislimaFollowingOtherUser = 'https://api.github.com/users/flavioislima/following{/other_user}'
 }
 
 export enum GistsURL {
   HTTPSAPIGithubCOMUsersArieljGistsGistID = 'https://api.github.com/users/arielj/gists{/gist_id}',
-  HTTPSAPIGithubCOMUsersFlavioislimaGistsGistID = 'https://api.github.com/users/flavioislima/gists{/gist_id}',
+  HTTPSAPIGithubCOMUsersFlavioislimaGistsGistID = 'https://api.github.com/users/flavioislima/gists{/gist_id}'
 }
 
 export enum Login {
   Arielj = 'arielj',
-  Flavioislima = 'flavioislima',
+  Flavioislima = 'flavioislima'
 }
 
 export enum NodeID {
   MDQ6VXNlcjE4ODQ2NA = 'MDQ6VXNlcjE4ODQ2NA==',
-  MDQ6VXNlcjI2ODcxNDE1 = 'MDQ6VXNlcjI2ODcxNDE1',
+  MDQ6VXNlcjI2ODcxNDE1 = 'MDQ6VXNlcjI2ODcxNDE1'
 }
 
 export enum StarredURL {
   HTTPSAPIGithubCOMUsersArieljStarredOwnerRepo = 'https://api.github.com/users/arielj/starred{/owner}{/repo}',
-  HTTPSAPIGithubCOMUsersFlavioislimaStarredOwnerRepo = 'https://api.github.com/users/flavioislima/starred{/owner}{/repo}',
+  HTTPSAPIGithubCOMUsersFlavioislimaStarredOwnerRepo = 'https://api.github.com/users/flavioislima/starred{/owner}{/repo}'
 }
 
 export enum Type {
-  User = 'User',
+  User = 'User'
 }
 
 export interface Reactions {
@@ -127,5 +127,5 @@ export interface Reactions {
 
 export enum TargetCommitish {
   Beta = 'beta',
-  Main = 'main',
+  Main = 'main'
 }

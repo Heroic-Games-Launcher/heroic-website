@@ -136,7 +136,7 @@ export const faqs = [
 
       'If the issue persists, you can consider opening an issue on the Heroic GitHub page at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . Providing as much information as possible about your issue, such as the operating system, game, and any error messages you are seeing, can help the team investigate and resolve the issue.',
 
-      'If the issue is specific to a particular game, you may want to check the game\'s documentation or contact the game developer for assistance.',
+      "If the issue is specific to a particular game, you may want to check the game's documentation or contact the game developer for assistance.",
 
       'Finally, you may want to consider trying other tools or compatibility layers, such as Wine or Proton, to see if they can help resolve the issue.'
     ]

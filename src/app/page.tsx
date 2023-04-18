@@ -56,39 +56,39 @@ const featuresInfo = [
   }
 ]
 
-export default function HomePage (): JSX.Element {
+export default function HomePage(): JSX.Element {
   return (
-    <main className='py-20'>
-      <section className='max-w-5xl mx-auto px-4 flex flex-col gap-4'>
-        <div className='max-w-lg mx-auto flex flex-col items-center gap-4 dark:text-white'>
-          <h2 className='uppercase font-extrabold text-center text-5xl'>
+    <main className="py-20">
+      <section className="max-w-5xl mx-auto px-4 flex flex-col gap-4">
+        <div className="max-w-lg mx-auto flex flex-col items-center gap-4 dark:text-white">
+          <h2 className="uppercase font-extrabold text-center text-5xl">
             Play like a hero!
           </h2>
-          <p className='text-center'>
+          <p className="text-center">
             Heroic is an Open Source GOG and Epic Games Launcher for Linux,
             Windows, and macOS. Also available on the SteamDeck!
           </p>
-          <div className='flex gap-2'>
+          <div className="flex gap-2">
             <Link
-              href='/downloads'
-              type='button'
-              className='text-white flex items-center gap-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'
+              href="/downloads"
+              type="button"
+              className="text-white flex items-center gap-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
               Download
-              <ArrowDownTrayIcon className='w-5 h-5' />
+              <ArrowDownTrayIcon className="w-5 h-5" />
             </Link>
           </div>
         </div>
         <Image
-          className='mx-auto rounded-lg border dark:border-gray-700 shadow'
+          className="mx-auto rounded-lg border dark:border-gray-700 shadow"
           src={heroicGameHero}
-          alt='Heroic Games Launcher Preview'
+          alt="Heroic Games Launcher Preview"
           priority
-          placeholder='blur'
+          placeholder="blur"
         />
       </section>
-      <section className='max-w-5xl mx-auto pt-20 px-4 flex flex-col gap-4 dark:text-white'>
-        <h2 className='uppercase text-3xl font-semibold text-center'>
+      <section className="max-w-5xl mx-auto pt-20 px-4 flex flex-col gap-4 dark:text-white">
+        <h2 className="uppercase text-3xl font-semibold text-center">
           Main features and more info
         </h2>
         {featuresInfo.map(({ title, description, image }, index) => (

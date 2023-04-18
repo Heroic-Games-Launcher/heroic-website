@@ -13,14 +13,14 @@ const inter = Inter({
   display: 'swap'
 })
 
-export default function RootLayout ({
+export default function RootLayout({
   children
 }: {
   children: React.ReactNode
 }): JSX.Element {
   return (
-    <html lang='en' className={inter.className}>
-      <body className='dark:bg-gray-900 antialiased'>
+    <html lang="en" className={inter.className}>
+      <body className="dark:bg-gray-900 antialiased">
         <Header />
         {children}
         <Footer />
