@@ -1,5 +1,6 @@
-import CardFeatures from '@/components/CardFeatures'
 import Image from 'next/image'
+import Link from 'next/link'
+
 import heroicGame from '../../public/images/heroic_game.png'
 import heroicGameHero from '../../public/images/heroic_01.png'
 import heroicInstall from '../../public/images/heroic_install.png'
@@ -8,8 +9,9 @@ import heroicMenu from '../../public/images/heroic_menu.png'
 import heroicThemes from '../../public/images/themes.gif'
 import heroicWine from '../../public/images/heroic_wine.png'
 import heroicWineSettings from '../../public/images/heroic_wine_settings.png'
-import Link from 'next/link'
+
 import { ArrowDownTrayIcon } from '@heroicons/react/20/solid'
+import { CardFeatures } from './components/CardFeatures/CardFeatures'
 
 const featuresInfo = [
   {

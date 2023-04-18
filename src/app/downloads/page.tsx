@@ -40,7 +40,7 @@ const downloadSection = [
 ]
 
 export default async function DownloadsPage(): Promise<JSX.Element> {
-  const data: any = await getLatestReleases()
+  const data = await getLatestReleases()
   return (
     <main className="max-w-screen-xl mx-auto px-4 py-10">
       <div className="flex flex-col gap-4">
@@ -70,7 +70,6 @@ export default async function DownloadsPage(): Promise<JSX.Element> {
             </p>
             <div className="flex gap-2 flex-wrap justify-center">
               {Object.entries(url).map(([name, value]) => (
-                // TODO: fix type
                 <a
                   key={name}
                   href={data[name]}

@@ -1,7 +1,7 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import { Inter } from 'next/font/google'
 import './globals.css'
+import { Inter } from 'next/font/google'
+import { Navbar } from './components/Navbar/Navbar'
+import { Footer } from './components/Footer'
 
 export const metadata = {
   title: 'Heroic Games Launcher',
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body className="dark:bg-gray-900 antialiased">
-        <Header />
+        <Navbar />
         {children}
         <Footer />
       </body>

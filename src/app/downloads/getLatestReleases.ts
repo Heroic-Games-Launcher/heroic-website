@@ -3,7 +3,11 @@ import { Github } from './github.model'
 const API =
   'https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases'
 
-export interface ReleaseUrls {
+interface Map {
+  [key: string]: string
+}
+
+export interface ReleaseUrls extends Map {
   LinuxDEB: string
   LinuxRPM: string
   Windows: string

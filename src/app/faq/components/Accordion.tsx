@@ -1,11 +1,11 @@
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-interface Props {
+interface AccordionProps {
   question: string
   answer: string[]
 }
 
-export default function FaqCard({ question, answer }: Props): JSX.Element {
+export const Accordion: React.FC<AccordionProps> = ({ question, answer }) => {
   return (
     <div className="space-y-4">
       <details className="group [&_summary::-webkit-details-marker]:hidden">

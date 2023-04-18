@@ -1,4 +1,4 @@
-import FaqCard from '@/components/FaqCard'
+import { Accordion } from './components/Accordion'
 import { faqs } from '@/contants'
 
 export const metadata = {
@@ -13,7 +13,7 @@ export default function FaqPage(): JSX.Element {
       </h1>
       <div className="flex flex-col gap-2 mt-5">
         {faqs.map(({ question, answer }) => (
-          <FaqCard key={question} question={question} answer={answer} />
+          <Accordion key={question} question={question} answer={answer} />
         ))}
       </div>
     </main>

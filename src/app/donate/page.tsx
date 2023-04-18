@@ -1,4 +1,4 @@
-import { GithubIcon, KofiIcon, PatreonIcon } from '@/components/Icons'
+import { GithubIcon, KofiIcon, PatreonIcon } from '@/app/components/Icons'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid'
 
 export const metadata = {

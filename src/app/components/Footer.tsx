@@ -1,17 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../public/images/logo.png'
 
 const year = new Date().getFullYear()
 
-export default function Footer(): JSX.Element {
+export const Footer = (): JSX.Element => {
   return (
     <footer className="bg-white shadow dark:bg-gray-900">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link href="/" className="flex items-center mb-4 sm:mb-0">
             <Image
-              src={logo}
+              src="/images/logo.png"
               width={30}
               height={30}
               alt="Heroic Games Launcher Logo"
