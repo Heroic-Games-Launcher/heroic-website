@@ -68,6 +68,10 @@ footer {
   font-size: 15px;
 }
 
+nav.container-fluid div {
+  display: flex;
+}
+
 @media screen and (max-width: 900px) {
   .cookieBanner > .grid {
     align-items: center;

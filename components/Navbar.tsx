@@ -29,72 +29,76 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a
-            rel="me"
-            title="Heroic Mastodon Page"
-            href="https://mastodon.social/@heroiclauncher"
-          >
-            <FontAwesomeIcon
-              icon={faMastodon}
-              height={22}
-              width={22}
-              color={'#00000'}
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/HeroicLauncher"
-            title="Heroic Twitter Page"
-          >
-            <FontAwesomeIcon
-              icon={faTwitter}
-              height={22}
-              width={22}
-              color={'#00000'}
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Heroic-Games-Launcher"
-            title="Heroic GitHub Page"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              height={22}
-              width={22}
-              color={'#00000'}
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://discord.com/invite/rHJ2uqdquK"
-            title="Heroic Discord Server"
-          >
-            <FontAwesomeIcon
-              icon={faDiscord}
-              height={22}
-              width={22}
-              color={'#00000'}
-            />
-          </a>
-        </li>
-        <li>
-          <Link href="/faq">FAQ</Link>
-        </li>
-        <li>
-          <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
-            Documentation
-          </a>
-        </li>
-        <li>
-          <Link href="/donate">Support Us</Link>
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            <a
+              rel="me"
+              title="Heroic Mastodon Page"
+              href="https://mastodon.social/@heroiclauncher"
+            >
+              <FontAwesomeIcon
+                icon={faMastodon}
+                height={22}
+                width={22}
+                color={'#00000'}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/HeroicLauncher"
+              title="Heroic Twitter Page"
+            >
+              <FontAwesomeIcon
+                icon={faTwitter}
+                height={22}
+                width={22}
+                color={'#00000'}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Heroic-Games-Launcher"
+              title="Heroic GitHub Page"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                height={22}
+                width={22}
+                color={'#00000'}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://discord.com/invite/rHJ2uqdquK"
+              title="Heroic Discord Server"
+            >
+              <FontAwesomeIcon
+                icon={faDiscord}
+                height={22}
+                width={22}
+                color={'#00000'}
+              />
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link href="/faq">FAQ</Link>
+          </li>
+          <li>
+            <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
+              Documentation
+            </a>
+          </li>
+          <li>
+            <Link href="/donate">Support Us</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   )
 }
