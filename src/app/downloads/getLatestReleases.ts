@@ -17,7 +17,7 @@ export interface ReleaseUrls extends Map {
 }
 
 export async function getLatestReleases(): Promise<ReleaseUrls> {
-  const res = await fetch(API)
+  const res = await fetch(API, { cache: 'no-store' })
   const data: Github[] = await res.json()
   const { assets } = data.filter((rel) => !rel.prerelease)[0]
 

@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const Logo = (): JSX.Element => {
+export const Logo = ({
+  ...props
+}: React.AnchorHTMLAttributes<HTMLAnchorElement>): JSX.Element => {
   return (
-    <Link href="/" className="flex items-center">
+    <Link href="/" {...props}>
       <Image
         src="/images/logo.png"
         width={30}
