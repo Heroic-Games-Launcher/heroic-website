@@ -13,11 +13,16 @@ export const CardFeatures: React.FC<CardFeaturesProps> = ({
   description
 }) => {
   return (
-    <div className="md:grid md:grid-cols-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="md:grid md:grid-cols-2 bg-white border border-gray-200 rounded-lg overflow-auto shadow dark:bg-gray-800 dark:border-gray-700">
       {img.src.endsWith('.gif') ? (
-        <Image src={img} alt={title} />
+        <Image className="object-cover h-full" src={img} alt={title} />
       ) : (
-        <Image src={img} alt={title} placeholder="blur" />
+        <Image
+          className="object-cover h-full"
+          src={img}
+          alt={title}
+          placeholder="blur"
+        />
       )}
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
