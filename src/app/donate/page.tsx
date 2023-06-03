@@ -10,19 +10,22 @@ const donate = [
     name: 'Github Sponsor',
     description:
       'Support us with a one-time or recurring donation through GitHub.',
-    logo: <GithubIcon className="w-8 h-8" />
+    logo: <GithubIcon className="w-8 h-8" />,
+    url: 'https://github.com/sponsors/Heroic-Games-Launcher'
   },
   {
     name: 'Patreon',
     description:
       'Activate a monthly subscription on Patreon to support us and get rewards.',
-    logo: <KofiIcon className="w-8 h-8" />
+    logo: <PatreonIcon className="w-8 h-8" />,
+    url: 'https://www.patreon.com/heroicgameslauncher'
   },
   {
     name: 'Ko-fi',
     description:
       'Support the project by offering us a coffee. Just like that, fast and simple!',
-    logo: <PatreonIcon className="w-8 h-8" />
+    logo: <KofiIcon className="w-8 h-8" />,
+    url: 'https://ko-fi.com/heroicgames'
   }
 ]
 
@@ -36,7 +39,7 @@ export default function DonatePage(): JSX.Element {
         </p>
       </div>
       <div className="mt-10 flex flex-col md:items-stretch md:grid gap-4 md:grid-cols-3">
-        {donate.map(({ description, name, logo }, index) => (
+        {donate.map(({ description, name, logo, url }, index) => (
           <div
             key={index}
             className="flex gap-2 flex-col justify-between p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -49,8 +52,10 @@ export default function DonatePage(): JSX.Element {
               {description}
             </p>
             <a
-              href="#"
+              href={url}
+              target="_blank"
               className="flex w-fit gap-2 items-center text-blue-600 hover:underline"
+              rel="noreferrer"
             >
               {name}
               <ArrowTopRightOnSquareIcon className="w-5 h-5" />

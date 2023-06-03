@@ -16,7 +16,7 @@ const pagePaths = [
   },
   {
     label: 'Documentation',
-    url: '#'
+    url: 'https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki'
   },
   {
     label: 'Support Us',
