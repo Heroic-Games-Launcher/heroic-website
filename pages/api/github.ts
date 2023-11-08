@@ -43,6 +43,8 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       (rel) => rel.prerelease === true
     )[0]
 
+      console.log({ assetsStable, assetsBeta, tagStable, tagBeta })
+
     const appImageStable =
       assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
         ?.browser_download_url || defaultUrl
@@ -68,7 +70,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
 
     const isSameMajor = tagStable >= tagBeta.split('-')[0]
 
-    if (!isSameMajor) {
+/*     if (!isSameMajor) {
       appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0]
         .browser_download_url
       windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0]
@@ -79,7 +81,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0]
         .browser_download_url
       dmgArmBeta = assetsBeta.filter((a) => a.name.includes('macOS-arm64'))[0]
-    }
+    } */
 
     return {
       Linux: appImageStable,

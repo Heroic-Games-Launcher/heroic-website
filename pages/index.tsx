@@ -58,8 +58,8 @@ const Home: NextPage = () => {
               textAlign: 'left'
             }}
           >
-            Heroic is an Open Source <strong>GOG</strong> and{' '}
-            <strong>Epic games</strong> launcher for <strong>Linux</strong>,{' '}
+            Heroic is a Free and Open Source <strong>Epic</strong>,{' '}
+            <strong>GOG</strong> and <strong>Amazon Prime Games</strong> launcher for <strong>Linux</strong>,{' '}
             <strong>Windows</strong> and <strong>macOS</strong>. Also available
             on the <strong>SteamDeck</strong>!
             <p className={styles.buttonContainer}>
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
             <div className="description">
               <h2>Access to the Stores</h2>
               <p>
-                Go to the Epic or GOG store without even leaving Heroic. Get
+                Go to the Epic, Amazon Prime or GOG store without even leaving Heroic. Get
                 free games or buy new ones directly from Heroic's interface!
               </p>
             </div>
@@ -337,7 +337,7 @@ const Home: NextPage = () => {
             <div className="description">
               <h2>Multi Language</h2>
               <p>
-                Heroic was translated by the community in more than 30
+                Heroic was translated by the community in more than 40
                 languages, from Portuguese to Korean, from Farsi to French. You
                 can also help with translations by accessing{' '}
                 <a

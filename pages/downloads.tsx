@@ -30,6 +30,8 @@ const Downloads: NextPage = () => {
     return null
   }
 
+  console.log(releases)
+
   const isWindows = userAgent.toLowerCase().includes('windows')
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac
@@ -46,7 +48,7 @@ const Downloads: NextPage = () => {
         <title>Download Heroic</title>
         <meta
           name="description"
-          content="An Open Source GOG and Epic Games Launcher"
+          content="An Open Source GOG , Amazon Prime and Epic Games Launcher"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -152,7 +154,7 @@ const Downloads: NextPage = () => {
                   )}
                 </footer>
               </article>
-              {releases.WindowsArm && (
+{/*               {releases.WindowsArm && (
                 <article className={styles.downloadBoxes}>
                   <h4>Windows ARM64</h4>
                   <p>
@@ -180,7 +182,7 @@ const Downloads: NextPage = () => {
                     )}
                   </footer>
                 </article>
-              )}
+              )} */}
               <article className={styles.downloadBoxes}>
                 <h4>Portable</h4>
                 <p>
