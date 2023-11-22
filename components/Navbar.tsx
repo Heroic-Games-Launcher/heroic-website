@@ -97,6 +97,9 @@ export default function Navbar() {
           <li>
             <Link href="/donate">Support Us</Link>
           </li>
+          <li>
+            <Link href="/cla">CLA</Link>
+          </li>
         </ul>
       </div>
     </nav>
