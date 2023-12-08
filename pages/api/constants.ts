@@ -130,7 +130,7 @@ export const faqs: { question: string; answer: string[] }[] = [
     question: 'My game is not working with Heroic. What should I do?',
     answer: [
       `If you are having trouble running a game with Heroic, you can: 
-    Check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki. This resource may contain information that can help you resolve your issue.`,
+    Check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . This resource may contain information that can help you resolve your issue.`,
 
       `If you are unable to find a solution in the documentation, you can seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK . Other users and members of the Heroic team may be able to offer advice or assistance.`,
 
