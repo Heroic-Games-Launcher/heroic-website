@@ -12,7 +12,7 @@ const Cla: NextPage = () => {
         <title>CLA</title>
         <meta
           name="description"
-          content="An Open Source GOG and Epic Games Launcher"
+          content="An Open Source Epic, GOG and Amazon Prime Games Launcher"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
