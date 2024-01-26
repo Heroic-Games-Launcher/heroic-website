@@ -232,7 +232,7 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>Apple Chips (M1/M2)</h4>
+                <h4>Apple Chips (M1/M2/M3)</h4>
                 <p>
                   Might need to run this command on the terminal to make it
                   work:
