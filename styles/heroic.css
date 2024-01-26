@@ -181,3 +181,9 @@ a {
     background-color: var(--card-border-color);
   }
 }
+
+@media screen and (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  }
+}

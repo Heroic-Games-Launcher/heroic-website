@@ -21,18 +21,6 @@ const Donate: NextPage = () => {
           <hr className="spacer" />
 
           <div className="grid">
-            <article className="secondary">
-              <h4>GitHub Sponsor</h4>
-              <small>One-time or flexible-sub</small>
-              <p>
-                Support us with a one-time or recurring donation through GitHub.
-              </p>
-              <footer>
-                <a href="https://github.com/sponsors/Heroic-Games-Launcher">
-                  <strong>Go to GitHub</strong>
-                </a>
-              </footer>
-            </article>
             <article>
               <h4>Patreon</h4>
               <small>Monthly-sub</small>
@@ -56,6 +44,30 @@ const Donate: NextPage = () => {
               <footer>
                 <a href="https://ko-fi.com/heroicgames">
                   <strong>Go to Ko-fi</strong>
+                </a>
+              </footer>
+            </article>
+            <article>
+              <h4>GOG.com</h4>
+              <small>One-time</small>
+              <p>
+                Use our link when making purchases on GOG and support the project. Cool right?
+              </p>
+              <footer>
+                <a href="https://af.gog.com?as=1838482841">
+                  <strong>Go to GOG</strong>
+                </a>
+              </footer>
+            </article>
+            <article>
+              <h4>GitHub Sponsor</h4>
+              <small>One-time or flexible-sub</small>
+              <p>
+                Support us with a one-time or recurring donation through GitHub.
+              </p>
+              <footer>
+                <a href="https://github.com/sponsors/Heroic-Games-Launcher">
+                  <strong>Go to GitHub</strong>
                 </a>
               </footer>
             </article>
