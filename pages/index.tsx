@@ -78,6 +78,7 @@ const Home: NextPage = () => {
           <img
             src={img1}
             alt="Heroic Games Launcher preview"
+            title='Heroic Games Launcher preview'
             className="heroicPreview"
           />
         </div>
@@ -106,6 +107,7 @@ const Home: NextPage = () => {
                 <img
                   src={img2}
                   alt="Game Page"
+                  title='Game Page'
                   aria-label="Game Page"
                   loading="lazy"
                 />
@@ -137,6 +139,7 @@ const Home: NextPage = () => {
                 <img
                   src={img3}
                   alt="Platform Selection"
+                  title='Platform Selection'
                   aria-label="Platform Selection"
                   loading="lazy"
                 />
@@ -169,6 +172,7 @@ const Home: NextPage = () => {
               <a href={img4}>
                 <img
                   alt="Epic Store inside Heroic"
+                  title='Epic Store inside Heroic'
                   aria-label="Epic Store inside Heroic"
                   src={img4}
                   loading="lazy"
@@ -200,6 +204,7 @@ const Home: NextPage = () => {
               <a href={img8}>
                 <img
                   alt="Context Menu"
+                  title='Context Menu'
                   aria-label="Context Menu"
                   src={img8}
                   loading="lazy"
@@ -231,6 +236,7 @@ const Home: NextPage = () => {
               <a href={gif}>
                 <img
                   alt="Themes"
+                  title='Themes'
                   aria-label="Themes"
                   src={gif}
                   loading="lazy"
@@ -294,6 +300,7 @@ const Home: NextPage = () => {
               <a href={img6}>
                 <img
                   alt="Wine Settings"
+                  title='Wine Settings'
                   aria-label="Wine Settings"
                   src={img6}
                   loading="lazy"
@@ -327,8 +334,9 @@ const Home: NextPage = () => {
             <div>
               <a href={img7}>
                 <img
-                  alt="Epic Store inside Heroic"
-                  aria-label="Epic Store inside Heroic"
+                  alt="Heroic is supported in several languages"
+                  title='Heroic is supported in several languages'
+                  aria-label="Heroic is supported in several languages"
                   src={img7}
                   loading="lazy"
                 />
