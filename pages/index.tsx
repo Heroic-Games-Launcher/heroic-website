@@ -6,14 +6,14 @@ import { motion } from 'framer-motion'
 
 import styles from '../styles/Home.module.css'
 
-const img1 = require('../assets/heroic_01.webp')
-const img2 = require('../assets/heroic_game.webp')
-const img3 = require('../assets/heroic_install.webp')
-const img4 = require('../assets/heroic_stores.webp')
-const img5 = require('../assets/heroic_wine.webp')
-const img6 = require('../assets/heroic_wine_settings.webp')
+const img1 = require('../assets/heroic_01.png?webp')
+const img2 = require('../assets/heroic_game.png?webp')
+const img3 = require('../assets/heroic_install.png?webp')
+const img4 = require('../assets/heroic_stores.png?webp')
+const img5 = require('../assets/heroic_wine.png?webp')
+const img6 = require('../assets/heroic_wine_settings.png?webp')
 const img7 = require('../assets/heroic_langs.png?webp')
-const img8 = require('../assets/heroic_menu.webp')
+const img8 = require('../assets/heroic_menu.png?webp')
 const gif = require('../assets/themes.gif')
 
 const initial = { y: '300px', opacity: 0 }

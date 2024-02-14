@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const logo = require('../assets/logo.png?webp')
+const logo = require('../assets/logo.png')
 import {
   faTwitter,
   faGithub,

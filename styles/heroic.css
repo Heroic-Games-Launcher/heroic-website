@@ -127,7 +127,9 @@ footer {
     width: 212px;
   }
 
- 
+  .feature img {
+    width: 813px;
+  }
 
   .heroicPreview {
     width: 1130px;
