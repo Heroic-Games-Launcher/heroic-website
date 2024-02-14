@@ -9,7 +9,6 @@ on:
 
 jobs:
   build_and_preview:
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,5 +17,5 @@ jobs:
         with:
           repoToken: '${{ secrets.ACTIONS_DEPLOY_KEY }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HEROICGAMESLAUNCHER }}'
-          channelId: preview
           projectId: heroicgameslauncher
+          channelId: ${{ github.event.pull_request.number }}
