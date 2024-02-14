@@ -10,11 +10,11 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: npm run deploy
+      - uses: actions/checkout@v4
+      - run: yarn && yarn build && yarn export
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.ACTIONS_DEPLOY_KEY }}'
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HEROICGAMESLAUNCHER }}'
           channelId: live
           projectId: heroicgameslauncher
