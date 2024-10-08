@@ -36,9 +36,6 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-
-
       <motion.header
         initial={initial}
         animate={final}
@@ -90,7 +87,6 @@ const Home: NextPage = () => {
           />
         </div>
       </motion.header>
-
       <h1
         style={{
           textAlign: 'center',
@@ -99,7 +95,7 @@ const Home: NextPage = () => {
       >
         MAIN FEATURES AND MORE INFO
       </h1>
-      </div>
+
       <motion.section
         initial={initial}
         transition={transition}
