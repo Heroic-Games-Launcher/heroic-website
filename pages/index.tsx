@@ -24,6 +24,10 @@ const transition = { duration: 0.5 }
 const Home: NextPage = () => {
   return (
     <>
+
+
+
+
       <Head>
         <title>Heroic Games Launcher</title>
         <meta
@@ -32,6 +36,9 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div>
+
+
       <motion.header
         initial={initial}
         animate={final}
@@ -86,12 +93,13 @@ const Home: NextPage = () => {
 
       <h1
         style={{
-          textAlign: 'center'
+          textAlign: 'center',
+          paddingInline: '25px',
         }}
       >
         MAIN FEATURES AND MORE INFO
       </h1>
-
+      </div>
       <motion.section
         initial={initial}
         transition={transition}

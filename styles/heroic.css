@@ -2,6 +2,10 @@
   --primary: #8e24aa;
 }
 
+
+
+
+
 /* Hero */
 
 .hero h1,
@@ -162,15 +166,17 @@ a {
   color: #0d101c;
 }
 
+/*changed the width 100% instead of a hardcoded value*/
 @media screen and (max-width: 414px) {
   .feature {
-    width: 374px;
+    width: 100%;
+
     margin-bottom: 42px;
   }
 
   .heroicPreview,
   .feature img {
-    width: 374px;
+    width: 100%;
   }
 }
 

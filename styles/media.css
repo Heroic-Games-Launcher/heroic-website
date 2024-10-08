@@ -42,6 +42,16 @@
         flex-wrap: wrap;
         flex-direction: column-reverse;
         align-items: center;
+
     }
-    
+
+
+
+}
+
+/*added a breakpoint for the navbar*/
+@media (max-width: 360px) {
+    nav.container-fluid div a {
+        font-size: 0.84rem;
+    }
 }
