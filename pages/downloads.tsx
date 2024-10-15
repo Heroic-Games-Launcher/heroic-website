@@ -154,7 +154,7 @@ const Downloads: NextPage = () => {
                   )}
                 </footer>
               </article>
-{/*               {releases.WindowsArm && (
+              {/*               {releases.WindowsArm && (
                 <article className={styles.downloadBoxes}>
                   <h4>Windows ARM64</h4>
                   <p>

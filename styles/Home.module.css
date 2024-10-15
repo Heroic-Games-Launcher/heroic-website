@@ -1,7 +1,6 @@
 .buttonContainer {
   margin-bottom: 64px;
   margin-top: 32px;
-
 }
 
 .buttonContainer > span {
@@ -13,7 +12,6 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 0px;
-
 }
 
 .features {
