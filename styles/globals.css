@@ -1,7 +1,7 @@
-@import url("pico.min.css");
-@import url("heroic.css");
-@import url("media.css");
-@import url("colors.css");
+@import url('pico.min.css');
+@import url('heroic.css');
+@import url('media.css');
+@import url('colors.css');
 
 html,
 body {
@@ -9,6 +9,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+/*added flex style to main*/
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
 }
 
 a {

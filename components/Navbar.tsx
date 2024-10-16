@@ -20,7 +20,7 @@ export default function Navbar() {
             <span className="contrast link">
               <img
                 src={logo}
-                title='Heroic Games Launcher'
+                title="Heroic Games Launcher"
                 alt="Heroic Games Launcher"
                 height="32px"
                 width="32px"

@@ -8,9 +8,9 @@ Setting up a development environment:
 2. Clone the repo and enter the cloned folder, for example with the following commands:
 
 ```bash
-git clone https://github.com/Heroic-Games-Launcher/heroic-website.git 
+git clone https://github.com/Heroic-Games-Launcher/heroic-website.git
 cd heroic-website
-   ```
+```
 
 To run the development server:
 

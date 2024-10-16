@@ -51,7 +51,8 @@ const Donate: NextPage = () => {
               <h4>GOG.com</h4>
               <small>One-time</small>
               <p>
-                Use our link when making purchases on GOG and support the project. Cool right?
+                Use our link when making purchases on GOG and support the
+                project. Cool right?
               </p>
               <footer>
                 <a href="https://af.gog.com?as=1838482841">
