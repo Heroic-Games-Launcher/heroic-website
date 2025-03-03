@@ -204,6 +204,33 @@ const Downloads: NextPage = () => {
             <summary>MacOS</summary>
             <p>Supported OS versions: {osRequirements.macos}</p>
             <div className="grid">
+            <article className={styles.downloadBoxes}>
+                <h4>Apple Chips (M1 and Newer)</h4>
+                <p>
+                  Optimized for Apple Silicon Chips. Open it and copy the Heroic
+                  App to the Applications folder and you are good to go!
+                </p>
+                <footer>
+                  <a href={releases.MacArm}>
+                    <strong onClick={() => handleDownload('mac-stable')}>
+                      Stable
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.MacArm.split('/')[7]})`}
+                    </span>
+                  </a>
+                  {releases.MacArmBeta && (
+                    <a href={releases.MacArmBeta}>
+                      <strong onClick={() => handleDownload('mac-beta')}>
+                        Beta
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.MacArmBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
+                  )}
+                </footer>
+              </article>
               <article className={styles.downloadBoxes}>
                 <h4>Intel Chips</h4>
                 <p>
@@ -226,36 +253,6 @@ const Downloads: NextPage = () => {
                       </strong>
                       <span className="smallText">
                         {` (${releases.MacBeta.split('/')[7] ?? ''})`}
-                      </span>
-                    </a>
-                  )}
-                </footer>
-              </article>
-              <article className={styles.downloadBoxes}>
-                <h4>Apple Chips (M1/M2/M3)</h4>
-                <p>
-                  Might need to run this command on the terminal to make it
-                  work:
-                  <code>
-                    xattr -r -d com.apple.quarantine /Applications/Heroic.app
-                  </code>
-                </p>
-                <footer>
-                  <a href={releases.MacArm}>
-                    <strong onClick={() => handleDownload('mac-stable')}>
-                      Stable
-                    </strong>
-                    <span className="smallText">
-                      {` (${releases.MacArm.split('/')[7]})`}
-                    </span>
-                  </a>
-                  {releases.MacArmBeta && (
-                    <a href={releases.MacArmBeta}>
-                      <strong onClick={() => handleDownload('mac-beta')}>
-                        Beta
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.MacArmBeta.split('/')[7] ?? ''})`}
                       </span>
                     </a>
                   )}

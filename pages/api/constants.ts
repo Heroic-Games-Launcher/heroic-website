@@ -1,8 +1,8 @@
 export const osRequirements = {
   linux:
-    'Ubuntu 20.04LTS or newer, Fedora 33 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.',
+    'Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.',
   windows: 'Windows 10 and 11',
-  macos: 'macOS 12 or newer.'
+  macos: 'macOS 14 or newer.'
 }
 
 export const faqs: { question: string; answer: string[] }[] = [
