@@ -1,0 +1,58 @@
+{
+  "footer": {
+    "copyright": "Heroic Games Launcher © {{year}}"
+  },
+  "title": "Heroic Games Launcher",
+  "navbar": {
+    "mastodon": "Heroic Mastodon Seite",
+    "twitter": "Heroic Twitter Seite",
+    "github": "Heroic GitHub Seite",
+    "discord": "Heroic Discord Server",
+    "faq": "FAQ",
+    "documentation": "Dokumentation",
+    "support_us": "Unterstütze uns",
+    "cla": "CLA"
+  },
+  "meta_description": "Ein Open Source Epic, GOG und Amazon Prime Games Launcher",
+  "hero": {
+    "title": "SPIELE WIE EIN HELD!",
+    "description": "Heroic ist ein kostenloser und quelloffener <1>Epic</1>, <3>GOG</3> und <5>Amazon Prime Games</5> Launcher für <7>Linux</7>, <9>Windows</9> und <11>macOS</11>. Auch verfügbar auf dem <13>SteamDeck</13>!",
+    "download": "Herunterladen",
+    "faq": "FAQ"
+  },
+  "features": {
+    "title": "HAUPTFUNKTIONEN UND WEITERE INFOS",
+    "game_page": {
+      "title": "Spieleseite",
+      "description": "Prüfe Spieledetails wie Beschreibung, Herausgeber, Download- und Installationsgröße, gespielte Zeit und mehr."
+    },
+    "platform_selection": {
+      "title": "Plattformauswahl",
+      "description": "Unter Linux und MacOS kannst du auswählen, ob du die Windows-Version eines nativen Spiels installieren möchtest. Dies kann nützlich sein, falls die native Version nicht mehr unterstützt wird. Unter Linux kannst du das nur für GOG-Spiele wählen."
+    },
+    "stores": {
+      "title": "Zugriff auf die Stores",
+      "description": "Besuche den Epic, Amazon Prime oder GOG Store, ohne Heroic zu verlassen. Hol dir kostenlose Spiele oder kaufe neue direkt über die Heroic-Oberfläche!"
+    },
+    "organize": {
+      "title": "Organisiere deine Bibliothek",
+      "description": "Füge Spiele zu Favoriten hinzu oder verstecke einfach die Spiele, die du bereits gespielt hast oder niemals spielen wirst!"
+    },
+    "themes": {
+      "title": "Designs",
+      "description": "Wenn dir die Standardfarben nicht gefallen, hast du die Möglichkeit, sie zu ändern. Es enthält auch das berühmte Dracula-Design."
+    },
+    "wine_manager": {
+      "title": "Wine-Manager",
+      "description": "Unter Linux kannst du die neueste Version von Wine-GE, Wine-Lutris oder sogar Proton-GE mit dem Wine-Manager herunterladen. Diese Wine-Versionen sind darauf ausgerichtet, das Spielerlebnis und die Kompatibilität zu verbessern."
+    },
+    "wine_settings": {
+      "title": "Wine-Einstellungen",
+      "description": "Neben der Verwendung der richtigen Wine-Version ist es wichtig, alles einzurichten, um das beste Spielerlebnis auf Linux und macOS zu haben. In den Wine-Einstellungen ist es möglich, Tools wie DXVK, VKD3D und FSR automatisch zu installieren und auch WineCFG, Winetricks und EXE im Prefix auszuführen, so dass du Spiel-Voraussetzungen auf einfache Weise installieren kannst."
+    },
+    "multi_language": {
+      "title": "Mehrsprachigkeit",
+      "description": "Heroic wurde von der Community in mehr als 40 Sprachen übersetzt, von Portugiesisch bis Koreanisch, von Farsi bis Französisch. Du kannst auch bei Übersetzungen helfen, indem du <1>unsere Weblate-Seite</1> besuchst"
+    }
+  }
+}

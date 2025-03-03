@@ -3,8 +3,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-
 import styles from '../styles/Home.module.css'
+import { useTranslation, Trans } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { GetStaticProps } from 'next'
 
 const img1 = require('../assets/heroic_01.webp')
 const img2 = require('../assets/heroic_game.webp')
@@ -15,20 +17,21 @@ const img6 = require('../assets/heroic_wine_settings.webp')
 const img7 = require('../assets/heroic_langs.png?webp')
 const img8 = require('../assets/heroic_menu.webp')
 const gif = require('../assets/themes.gif')
-
 const initial = { y: '300px', opacity: 0 }
 const final = { y: '0px', opacity: 1 }
 const hover = { scale: 1.05 }
 const transition = { duration: 0.5 }
 
 const Home: NextPage = () => {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <Head>
-        <title>Heroic Games Launcher</title>
+        <title>{t('title')}</title>
         <meta
           name="description"
-          content="An Open Source Epic, GOG and Amazon Prime Games Launcher"
+          content={t('meta_description')}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -50,7 +53,7 @@ const Home: NextPage = () => {
             alignItems: 'center'
           }}
         >
-          <h1>PLAY LIKE A HERO!</h1>
+          <h1>{t('hero.title')}</h1>
           <div
             style={{
               width: '90%',
@@ -58,20 +61,22 @@ const Home: NextPage = () => {
               textAlign: 'left'
             }}
           >
-            Heroic is a Free and Open Source <strong>Epic</strong>,{' '}
-            <strong>GOG</strong> and <strong>Amazon Prime Games</strong>{' '}
-            launcher for <strong>Linux</strong>, <strong>Windows</strong> and{' '}
-            <strong>macOS</strong>. Also available on the{' '}
-            <strong>SteamDeck</strong>!
+            <Trans i18nKey="hero.description" t={t}>
+              Heroic is a Free and Open Source <strong>Epic</strong>,{' '}
+              <strong>GOG</strong> and <strong>Amazon Prime Games</strong>{' '}
+              launcher for <strong>Linux</strong>, <strong>Windows</strong> and{' '}
+              <strong>macOS</strong>. Also available on the{' '}
+              <strong>SteamDeck</strong>!
+            </Trans>
             <p className={styles.buttonContainer}>
               <Link href="/downloads" passHref>
                 <span role="button" className="secondary">
-                  Download
+                  {t('hero.download')}
                 </span>
               </Link>
               <Link href="/faq" passHref>
                 <span role="button" className="contrast outline">
-                  FAQ
+                  {t('hero.faq')}
                 </span>
               </Link>
             </p>
@@ -90,9 +95,8 @@ const Home: NextPage = () => {
           paddingInline: '25px'
         }}
       >
-        MAIN FEATURES AND MORE INFO
+        {t('features.title')}
       </h1>
-
       <motion.section
         initial={initial}
         transition={transition}
@@ -115,16 +119,12 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Game Page</h2>
-              <p>
-                Check game details like description, publisher, download and
-                install size, time played and more.
-              </p>
+              <h2>{t('features.game_page.title')}</h2>
+              <p>{t('features.game_page.description')}</p>
             </div>
           </div>
         </div>
       </motion.section>
-
       <motion.section
         initial={initial}
         transition={transition}
@@ -147,18 +147,12 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Platform Selection</h2>
-              <p>
-                On Linux and on MacOS you can select to install the Windows
-                version of a native game. This might be handy in case the native
-                version is not supported anymore. On Linux you can choose that
-                for GOG games only.
-              </p>
+              <h2>{t('features.platform_selection.title')}</h2>
+              <p>{t('features.platform_selection.description')}</p>
             </div>
           </div>
         </div>
       </motion.section>
-
       <motion.section
         transition={transition}
         initial={initial}
@@ -181,17 +175,12 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Access to the Stores</h2>
-              <p>
-                Go to the Epic, Amazon Prime or GOG store without even leaving
-                Heroic. Get free games or buy new ones directly from Heroic's
-                interface!
-              </p>
+              <h2>{t('features.stores.title')}</h2>
+              <p>{t('features.stores.description')}</p>
             </div>
           </div>
         </div>
       </motion.section>
-
       <motion.section
         initial={initial}
         transition={transition}
@@ -214,16 +203,12 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Organize your library</h2>
-              <p>
-                Add games to favorites or simply hide the games you already
-                played or will never play at all!
-              </p>
+              <h2>{t('features.organize.title')}</h2>
+              <p>{t('features.organize.description')}</p>
             </div>
           </div>
         </div>
       </motion.section>
-
       <motion.section
         initial={initial}
         whileInView={final}
@@ -246,16 +231,12 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Themes</h2>
-              <p>
-                If you don't like the default colors, you have the ability to
-                change them. It also includes the famous Dracula theme.{' '}
-              </p>
+              <h2>{t('features.themes.title')}</h2>
+              <p>{t('features.themes.description')}</p>
             </div>
           </div>
         </div>
       </motion.section>
-
       <motion.section
         initial={initial}
         transition={transition}
@@ -277,13 +258,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Wine Manager</h2>
-              <p>
-                On Linux, download the latest version of Wine-GE, Wine-Lutris or
-                even Proton-GE using the Wine Manager. These selection of Wine
-                version are focused on improving the gaming experience and
-                compatibility.
-              </p>
+              <h2>{t('features.wine_manager.title')}</h2>
+              <p>{t('features.wine_manager.description')}</p>
             </div>
           </div>
         </div>
@@ -310,15 +286,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Wine Settings</h2>
-              <p>
-                Besides using the right Wine version, it is important to setup
-                everything to have the best gameplay experience on Linux and on
-                macOS. Under the Wine Settings it is possible to auto install
-                tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks
-                and Run EXE on the prefix, so you can install games
-                pre-requisites in a easy way.
-              </p>
+              <h2>{t('features.wine_settings.title')}</h2>
+              <p>{t('features.wine_settings.description')}</p>
             </div>
           </div>
         </div>
@@ -345,19 +314,21 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>Multi Language</h2>
+              <h2>{t('features.multi_language.title')}</h2>
               <p>
-                Heroic was translated by the community in more than 40
-                languages, from Portuguese to Korean, from Farsi to French. You
-                can also help with translations by accessing{' '}
-                <a
-                  href="https://hosted.weblate.org/projects/heroic-games-launcher/"
-                  rel="norefferer"
-                  target="_blank"
-                >
-                  {' '}
-                  our Weblate Page
-                </a>
+                <Trans i18nKey="features.multi_language.description" t={t}>
+                  Heroic was translated by the community in more than 40
+                  languages, from Portuguese to Korean, from Farsi to French. You
+                  can also help with translations by accessing{' '}
+                  <a
+                    href="https://hosted.weblate.org/projects/heroic-games-launcher/"
+                    rel="norefferer"
+                    target="_blank"
+                  >
+                    {' '}
+                    our Weblate Page
+                  </a>
+                </Trans>
               </p>
             </div>
           </div>
@@ -366,5 +337,13 @@ const Home: NextPage = () => {
     </>
   )
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || 'en', ['common'])),
+    },
+  };
+};
 
 export default Home

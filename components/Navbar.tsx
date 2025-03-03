@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
-
 const logo = require('../assets/logo.png?webp')
 import {
   faTwitter,
@@ -10,8 +9,11 @@ import {
   faMastodon
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTranslation } from 'next-i18next'
 
 export default function Navbar() {
+  const { t } = useTranslation('common');
+  
   return (
     <nav className="container-fluid">
       <ul>
@@ -20,12 +22,12 @@ export default function Navbar() {
             <span className="contrast link">
               <img
                 src={logo}
-                title="Heroic Games Launcher"
-                alt="Heroic Games Launcher"
+                title={t('title')}
+                alt={t('title')}
                 height="32px"
                 width="32px"
               />
-              <strong>Heroic Games Launcher</strong>
+              <strong>{t('title')}</strong>
             </span>
           </Link>
         </li>
@@ -35,7 +37,7 @@ export default function Navbar() {
           <li>
             <a
               rel="me"
-              title="Heroic Mastodon Page"
+              title={t('navbar.mastodon')}
               href="https://mastodon.social/@heroiclauncher"
             >
               <FontAwesomeIcon
@@ -49,7 +51,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://twitter.com/HeroicLauncher"
-              title="Heroic Twitter Page"
+              title={t('navbar.twitter')}
             >
               <FontAwesomeIcon
                 icon={faTwitter}
@@ -62,7 +64,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://github.com/Heroic-Games-Launcher"
-              title="Heroic GitHub Page"
+              title={t('navbar.github')}
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -75,7 +77,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://discord.com/invite/rHJ2uqdquK"
-              title="Heroic Discord Server"
+              title={t('navbar.discord')}
             >
               <FontAwesomeIcon
                 icon={faDiscord}
@@ -88,18 +90,18 @@ export default function Navbar() {
         </ul>
         <ul>
           <li>
-            <Link href="/faq">FAQ</Link>
+            <Link href="/faq">{t('navbar.faq')}</Link>
           </li>
           <li>
             <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
-              Documentation
+              {t('navbar.documentation')}
             </a>
           </li>
           <li>
-            <Link href="/donate">Support Us</Link>
+            <Link href="/donate">{t('navbar.support_us')}</Link>
           </li>
           <li>
-            <Link href="/cla">CLA</Link>
+            <Link href="/cla">{t('navbar.cla')}</Link>
           </li>
         </ul>
       </div>

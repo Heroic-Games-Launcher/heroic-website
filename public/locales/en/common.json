@@ -1,0 +1,58 @@
+{
+  "title": "Heroic Games Launcher",
+  "meta_description": "An Open Source Epic, GOG and Amazon Prime Games Launcher",
+  "hero": {
+    "title": "PLAY LIKE A HERO!",
+    "description": "Heroic is a Free and Open Source <1>Epic</1>, <3>GOG</3> and <5>Amazon Prime Games</5> launcher for <7>Linux</7>, <9>Windows</9> and <11>macOS</11>. Also available on the <13>SteamDeck</13>!",
+    "download": "Download",
+    "faq": "FAQ"
+  },
+  "navbar": {
+    "mastodon": "Heroic Mastodon Page",
+    "twitter": "Heroic Twitter Page",
+    "github": "Heroic GitHub Page",
+    "discord": "Heroic Discord Server",
+    "faq": "FAQ",
+    "documentation": "Documentation",
+    "support_us": "Support Us",
+    "cla": "CLA"
+  },
+  "footer": {
+    "copyright": "Heroic Games Launcher © {{year}}"
+  },
+  "features": {
+    "title": "MAIN FEATURES AND MORE INFO",
+    "game_page": {
+      "title": "Game Page",
+      "description": "Check game details like description, publisher, download and install size, time played and more."
+    },
+    "platform_selection": {
+      "title": "Platform Selection",
+      "description": "On Linux and on MacOS you can select to install the Windows version of a native game. This might be handy in case the native version is not supported anymore. On Linux you can choose that for GOG games only."
+    },
+    "stores": {
+      "title": "Access to the Stores",
+      "description": "Go to the Epic, Amazon Prime or GOG store without even leaving Heroic. Get free games or buy new ones directly from Heroic's interface!"
+    },
+    "organize": {
+      "title": "Organize your library",
+      "description": "Add games to favorites or simply hide the games you already played or will never play at all!"
+    },
+    "themes": {
+      "title": "Themes",
+      "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
+    },
+    "wine_manager": {
+      "title": "Wine Manager",
+      "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
+    },
+    "wine_settings": {
+      "title": "Wine Settings",
+      "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
+    },
+    "multi_language": {
+      "title": "Multi Language",
+      "description": "Heroic was translated by the community in more than 40 languages, from Portuguese to Korean, from Farsi to French. You can also help with translations by accessing <1>our Weblate Page</1>"
+    }
+  }
+}

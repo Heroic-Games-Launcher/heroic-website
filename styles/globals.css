@@ -30,3 +30,38 @@ a {
 .link {
   cursor: pointer;
 }
+
+/* Language selector styling */
+.language-selector {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.language-selector select {
+  background-color: var(--background-color);
+  color: var(--color);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  width: auto;
+}
+
+.language-selector select:hover {
+  border-color: var(--contrast);
+}
+
+.language-selector select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.2);
+}
+
+.language-selector option {
+  padding: 8px;
+}
+
+footer .grid {
+  align-items: center;
+}
