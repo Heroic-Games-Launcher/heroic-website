@@ -82,10 +82,18 @@ export default function Navbar() {
   const navLinks = (
     <ul className="nav-links">
       <li>
-        <Link href="/downloads" onClick={toggleSidebar}>{t('navbar.downloads')}</Link>
+        <Link href="/downloads">
+          <a onClick={closeSidebar}>
+            {t('navbar.downloads')}
+          </a>
+        </Link>
       </li>
       <li>
-        <Link href="/faq" onClick={closeSidebar}>{t('navbar.faq')}</Link>
+        <Link href="/faq">
+          <a onClick={closeSidebar}>
+            {t('navbar.faq')}
+          </a>
+        </Link>
       </li>
       <li>
         <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" onClick={closeSidebar}>
@@ -93,12 +101,20 @@ export default function Navbar() {
         </a>
       </li>
       <li>
-        <Link href="/donate" onClick={closeSidebar}>{t('navbar.supportUs')}</Link>
+        <Link href="/donate">
+          <a onClick={closeSidebar}>
+            {t('navbar.supportUs')}
+          </a>
+        </Link>
       </li>
       <li>
-        <Link href="/cla" onClick={closeSidebar}>{t('navbar.cla')}</Link>
+        <Link href="/cla">
+          <a onClick={closeSidebar}>
+            {t('navbar.cla')}
+          </a>
+        </Link>
       </li>
-    </ul>
+    </ul >
   )
 
   return (
@@ -110,12 +126,12 @@ export default function Navbar() {
               <span className="contrast link">
                 <img
                   src={logo}
-                  title={t('common.copyright')}
-                  alt={t('common.copyright')}
+                  title="Heroic Games Launcher"
+                  alt="Heroic Games Launcher"
                   height="32px"
                   width="32px"
                 />
-                <strong>{t('common.copyright')}</strong>
+                <strong>Heroic Games Launcher</strong>
               </span>
             </Link>
           </li>
@@ -160,16 +176,16 @@ export default function Navbar() {
               transition={{ type: 'tween', duration: 0.3, ease: 'easeInOut' }}
             >
               <div className="sidebar-header">
-                <Link href="/" passHref onClick={closeSidebar}>
-                  <span className="contrast link">
+                <Link href="/" passHref>
+                  <span className="contrast link" onClick={closeSidebar}>
                     <img
                       src={logo}
-                      title={t('common.copyright')}
-                      alt={t('common.copyright')}
+                      title="Heroic Games Launcher"
+                      alt="Heroic Games Launcher"
                       height="32px"
                       width="32px"
                     />
-                    <strong>{t('common.copyright')}</strong>
+                    <strong>Heroic Games Launcher</strong>
                   </span>
                 </Link>
                 <button
