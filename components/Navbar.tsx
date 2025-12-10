@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const logo = require('../assets/logo.png?webp')
 import {
@@ -14,6 +15,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
+  const { t } = useTranslation()
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen)
@@ -24,7 +26,7 @@ export default function Navbar() {
       <li>
         <a
           rel="me"
-          title="Heroic Mastodon Page"
+          title={t('navbar.heroicMastodon')}
           href="https://mastodon.social/@heroiclauncher"
         >
           <FontAwesomeIcon
@@ -38,7 +40,7 @@ export default function Navbar() {
       <li>
         <a
           href="https://twitter.com/HeroicLauncher"
-          title="Heroic Twitter Page"
+          title={t('navbar.heroicTwitter')}
         >
           <FontAwesomeIcon
             icon={faTwitter}
@@ -51,7 +53,7 @@ export default function Navbar() {
       <li>
         <a
           href="https://github.com/Heroic-Games-Launcher"
-          title="Heroic GitHub Page"
+          title={t('navbar.heroicGithub')}
         >
           <FontAwesomeIcon
             icon={faGithub}
@@ -64,7 +66,7 @@ export default function Navbar() {
       <li>
         <a
           href="https://discord.com/invite/rHJ2uqdquK"
-          title="Heroic Discord Server"
+          title={t('navbar.heroicDiscord')}
         >
           <FontAwesomeIcon
             icon={faDiscord}
@@ -80,21 +82,21 @@ export default function Navbar() {
   const navLinks = (
     <ul className="nav-links">
       <li>
-        <Link href="/downloads" onClick={toggleSidebar}>Downloads</Link>
+        <Link href="/downloads" onClick={toggleSidebar}>{t('navbar.downloads')}</Link>
       </li>
       <li>
-        <Link href="/faq" onClick={closeSidebar}>FAQ</Link>
+        <Link href="/faq" onClick={closeSidebar}>{t('navbar.faq')}</Link>
       </li>
       <li>
         <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki" onClick={closeSidebar}>
-          Documentation
+          {t('navbar.documentation')}
         </a>
       </li>
       <li>
-        <Link href="/donate" onClick={closeSidebar}>Support Us</Link>
+        <Link href="/donate" onClick={closeSidebar}>{t('navbar.supportUs')}</Link>
       </li>
       <li>
-        <Link href="/cla" onClick={closeSidebar}>CLA</Link>
+        <Link href="/cla" onClick={closeSidebar}>{t('navbar.cla')}</Link>
       </li>
     </ul>
   )
@@ -108,12 +110,12 @@ export default function Navbar() {
               <span className="contrast link">
                 <img
                   src={logo}
-                  title="Heroic Games Launcher"
-                  alt="Heroic Games Launcher"
+                  title={t('common.copyright')}
+                  alt={t('common.copyright')}
                   height="32px"
                   width="32px"
                 />
-                <strong>Heroic Games Launcher</strong>
+                <strong>{t('common.copyright')}</strong>
               </span>
             </Link>
           </li>
@@ -162,12 +164,12 @@ export default function Navbar() {
                   <span className="contrast link">
                     <img
                       src={logo}
-                      title="Heroic Games Launcher"
-                      alt="Heroic Games Launcher"
+                      title={t('common.copyright')}
+                      alt={t('common.copyright')}
                       height="32px"
                       width="32px"
                     />
-                    <strong>Heroic Games Launcher</strong>
+                    <strong>{t('common.copyright')}</strong>
                   </span>
                 </Link>
                 <button
