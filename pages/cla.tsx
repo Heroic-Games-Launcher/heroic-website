@@ -4,12 +4,12 @@ import React from 'react'
 import { useTranslation, Trans } from 'react-i18next'
 
 const Cla: NextPage = () => {
-  const { t } = useTranslation('cla')
+  const { t } = useTranslation()
 
   return (
     <>
       <Head>
-        <title>{t('pageTitle')}</title>
+        <title>{t('cla.pageTitle')}</title>
         <meta
           name="description"
           content="An Open Source Epic, GOG and Amazon Prime Games Launcher"
@@ -18,9 +18,9 @@ const Cla: NextPage = () => {
       </Head>
       <header className="hero">
         <div className="container">
-          <h1>{t('title')}</h1>
+          <h1>{t('cla.title')}</h1>
           <p>
-            <Trans i18nKey="intro1" t={t}>
+            <Trans i18nKey="cla.intro1" t={t}>
               This Contribution License Agreement (the <strong>"CLA"</strong>) is
               between the individual set forth in the signature block (
               <strong>"You"</strong>) and Heroic Labs, Inc. (
@@ -29,45 +29,45 @@ const Cla: NextPage = () => {
               Contributions to Heroic.
             </Trans>
           </p>
-          <p>{t('intro2')}</p>
+          <p>{t('cla.intro2')}</p>
         </div>
       </header>
       <div className="container">
         <ol>
           <li>
-            <u>{t('definitions.title')}</u>{' '}
-            <Trans i18nKey="definitions.contribution" t={t}>
+            <u>{t('cla.definitions.title')}</u>{' '}
+            <Trans i18nKey="cla.definitions.contribution" t={t}>
               <strong>"Contribution"</strong> means any original work of authorship...
             </Trans>{' '}
-            <Trans i18nKey="definitions.submit" t={t}>
+            <Trans i18nKey="cla.definitions.submit" t={t}>
               <strong>"Submit"</strong> means any form of electronic...
             </Trans>
           </li>
           <li>
-            <u>{t('copyrightLicense.title')}</u> {t('copyrightLicense.content')}
+            <u>{t('cla.copyrightLicense.title')}</u> {t('cla.copyrightLicense.content')}
           </li>
           <li>
-            <u>{t('patentLicense.title')}</u> {t('patentLicense.content')}
+            <u>{t('cla.patentLicense.title')}</u> {t('cla.patentLicense.content')}
           </li>
           <li>
-            <u>{t('representations.title')}</u> {t('representations.intro')}
+            <u>{t('cla.representations.title')}</u> {t('cla.representations.intro')}
             <ul>
-              <li>{t('representations.item1')}</li>
-              <li>{t('representations.item2')}</li>
-              <li>{t('representations.item3')}</li>
+              <li>{t('cla.representations.item1')}</li>
+              <li>{t('cla.representations.item2')}</li>
+              <li>{t('cla.representations.item3')}</li>
             </ul>
           </li>
           <li>
-            <u>{t('support.title')}</u> {t('support.content')}
+            <u>{t('cla.support.title')}</u> {t('cla.support.content')}
           </li>
           <li>
-            <u>{t('thirdParty.title')}</u> {t('thirdParty.content')}
+            <u>{t('cla.thirdParty.title')}</u> {t('cla.thirdParty.content')}
           </li>
           <li>
-            <u>{t('notice.title')}</u> {t('notice.content')}
+            <u>{t('cla.notice.title')}</u> {t('cla.notice.content')}
           </li>
           <li>
-            <u>{t('general.title')}</u> {t('general.content')}
+            <u>{t('cla.general.title')}</u> {t('cla.general.content')}
           </li>
         </ol>
       </div>
@@ -78,39 +78,39 @@ const Cla: NextPage = () => {
         >
           <div>
             <p>
-              <strong>{t('signature.yourName')} __________________________________</strong>
+              <strong>{t('cla.signature.yourName')} __________________________________</strong>
               <br />
             </p>
             <p>
-              <strong>{t('signature.by')} __________________________________</strong>
+              <strong>{t('cla.signature.by')} __________________________________</strong>
               <br />
             </p>
             <p>
-              <strong>{t('signature.date')} ____/____/____</strong>
+              <strong>{t('cla.signature.date')} ____/____/____</strong>
               <br />
             </p>
             <p>
-              <strong>{t('signature.email')} __________________________________</strong>
+              <strong>{t('cla.signature.email')} __________________________________</strong>
               <br />
             </p>
           </div>
           <div>
             <p>
-              <strong>{t('signature.heroicLabs')}</strong>
+              <strong>{t('cla.signature.heroicLabs')}</strong>
             </p>
             <p>
-              <strong>{t('signature.by')} __________________________________</strong>
+              <strong>{t('cla.signature.by')} __________________________________</strong>
               <br />
             </p>
             <p>
-              <strong>{t('signature.date')} ____/____/____</strong>
+              <strong>{t('cla.signature.date')} ____/____/____</strong>
               <br />
             </p>
           </div>
         </div>
       </footer>
       <div className="container">
-        <button onClick={() => window.print()}>{t('printButton')}</button>
+        <button onClick={() => window.print()}>{t('cla.printButton')}</button>
       </div>
     </>
   )

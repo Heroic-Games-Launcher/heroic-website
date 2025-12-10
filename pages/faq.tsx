@@ -8,13 +8,13 @@ interface FAQ {
 }
 
 const FAQPage: NextPage = () => {
-  const { t } = useTranslation('faq')
-  const questions = t('questions', { returnObjects: true }) as FAQ[]
+  const { t } = useTranslation()
+  const questions = t('faq.questions', { returnObjects: true }) as FAQ[]
 
   return (
     <header className="hero">
       <div className="container">
-        <h1>{t('title')}</h1>
+        <h1>{t('faq.title')}</h1>
         {Array.isArray(questions) && questions.map((faq, i) => (
           <details key={i} open={i === 0}>
             <summary>{faq.question}</summary>

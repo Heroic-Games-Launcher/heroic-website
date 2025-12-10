@@ -14,7 +14,7 @@ const languages = [
 ]
 
 const Footer = () => {
-  const { t, i18n } = useTranslation('common')
+  const { t, i18n } = useTranslation()
 
   const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
     i18n.changeLanguage(event.target.value)
@@ -53,7 +53,7 @@ const Footer = () => {
           ))}
         </select>
       </div>
-      <small>{t('copyright')} &copy; {new Date().getFullYear()}</small>
+      <small>{t('common.copyright')} &copy; {new Date().getFullYear()}</small>
     </footer>
   )
 }

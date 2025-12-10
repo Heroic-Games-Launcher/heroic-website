@@ -14,15 +14,15 @@ i18n
     supportedLngs: supportedLanguages,
     debug: process.env.NODE_ENV === 'development',
 
-    ns: ['common', 'home', 'downloads', 'faq', 'donate', 'cla', 'navbar'],
-    defaultNS: 'common',
+    ns: ['translations'],
+    defaultNS: 'translations',
 
     interpolation: {
       escapeValue: false // React already escapes by default
     },
 
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json'
+      loadPath: '/locales/{{lng}}/translations.json'
     },
 
     detection: {

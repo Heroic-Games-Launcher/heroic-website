@@ -4,12 +4,11 @@ import { getLatestReleases, ReleaseUrls } from './api/github'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import { osRequirements } from './api/constants'
 import { useTranslation } from 'react-i18next'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
-  const { t } = useTranslation('downloads')
+  const { t } = useTranslation()
 
   const userAgent = global.window?.navigator?.userAgent || ''
   const [releases, setReleases] = React.useState<ReleaseUrls>({
@@ -47,7 +46,7 @@ const Downloads: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('pageTitle')}</title>
+        <title>{t('downloads.pageTitle')}</title>
         <meta
           name="description"
           content="An Open Source GOG , Amazon Prime and Epic Games Launcher"
@@ -56,33 +55,33 @@ const Downloads: NextPage = () => {
       </Head>
       <header className="hero">
         <div className="container">
-          <h1>{t('title')}</h1>
-          <p>{t('subtitle')}</p>
+          <h1>{t('downloads.title')}</h1>
+          <p>{t('downloads.subtitle')}</p>
 
           <hr className="spacer" />
 
           <details open={isLinux}>
-            <summary>{t('linux.title')}</summary>
-            <p>{t('supportedOS')} {osRequirements.linux}</p>
+            <summary>{t('downloads.linux.title')}</summary>
+            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.linux')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{t('linux.flatpak.title')}</h4>
-                <p>{t('linux.flatpak.description')}</p>
+                <h4>{t('downloads.linux.flatpak.title')}</h4>
+                <p>{t('downloads.linux.flatpak.description')}</p>
                 <footer>
                   <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
                     <strong onClick={() => handleDownload('flatpak')}>
-                      {t('linux.flatpak.button')}
+                      {t('downloads.linux.flatpak.button')}
                     </strong>
                   </a>
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('linux.appimage.title')}</h4>
-                <p>{t('linux.appimage.description')}</p>
+                <h4>{t('downloads.linux.appimage.title')}</h4>
+                <p>{t('downloads.linux.appimage.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Linux}>
                     <strong onClick={() => handleDownload('appimage-stable')}>
-                      {t('linux.appimage.stable')}
+                      {t('downloads.linux.appimage.stable')}
                     </strong>
 
                     <span className="smallText">
@@ -92,7 +91,7 @@ const Downloads: NextPage = () => {
                   {releases.LinuxBeta && (
                     <a href={releases.LinuxBeta}>
                       <strong onClick={() => handleDownload('appimage-beta')}>
-                        {t('linux.appimage.beta')}
+                        {t('downloads.linux.appimage.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.LinuxBeta.split('/')[7] ?? ''})`}
@@ -102,12 +101,12 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('linux.other.title')}</h4>
-                <p>{t('linux.other.description')}</p>
+                <h4>{t('downloads.linux.other.title')}</h4>
+                <p>{t('downloads.linux.other.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                     <strong onClick={() => handleDownload('all-packages')}>
-                      {t('linux.other.button')}
+                      {t('downloads.linux.other.button')}
                     </strong>
                   </a>
                 </footer>
@@ -116,16 +115,16 @@ const Downloads: NextPage = () => {
           </details>
 
           <details open={isWindows}>
-            <summary>{t('windows.title')}</summary>
-            <p>{t('supportedOS')} {osRequirements.windows}</p>
+            <summary>{t('downloads.windows.title')}</summary>
+            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.windows')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{t('windows.setup.title')}</h4>
-                <p>{t('windows.setup.description')}</p>
+                <h4>{t('downloads.windows.setup.title')}</h4>
+                <p>{t('downloads.windows.setup.description')}</p>
                 <footer>
                   <a href={releases.Windows}>
                     <strong onClick={() => handleDownload('windows-stable')}>
-                      {t('windows.setup.stable')}
+                      {t('downloads.windows.setup.stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.Windows.split('/')[7] ?? ''})`}
@@ -134,7 +133,7 @@ const Downloads: NextPage = () => {
                   {releases.WindowsBeta && (
                     <a href={releases.WindowsBeta}>
                       <strong onClick={() => handleDownload('windows-beta')}>
-                        {t('windows.setup.beta')}
+                        {t('downloads.windows.setup.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
@@ -144,12 +143,12 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('windows.portable.title')}</h4>
-                <p>{t('windows.portable.description')}</p>
+                <h4>{t('downloads.windows.portable.title')}</h4>
+                <p>{t('downloads.windows.portable.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                     <strong onClick={() => handleDownload('all-packages')}>
-                      {t('windows.portable.button')}
+                      {t('downloads.windows.portable.button')}
                     </strong>
                   </a>
                 </footer>
@@ -158,16 +157,16 @@ const Downloads: NextPage = () => {
           </details>
 
           <details open={isMac}>
-            <summary>{t('macos.title')}</summary>
-            <p>{t('supportedOS')} {osRequirements.macos}</p>
+            <summary>{t('downloads.macos.title')}</summary>
+            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.macos')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{t('macos.appleChips.title')}</h4>
-                <p>{t('macos.appleChips.description')}</p>
+                <h4>{t('downloads.macos.appleChips.title')}</h4>
+                <p>{t('downloads.macos.appleChips.description')}</p>
                 <footer>
                   <a href={releases.MacArm}>
                     <strong onClick={() => handleDownload('mac-stable')}>
-                      {t('macos.appleChips.stable')}
+                      {t('downloads.macos.appleChips.stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.MacArm.split('/')[7]})`}
@@ -176,7 +175,7 @@ const Downloads: NextPage = () => {
                   {releases.MacArmBeta && (
                     <a href={releases.MacArmBeta}>
                       <strong onClick={() => handleDownload('mac-beta')}>
-                        {t('macos.appleChips.beta')}
+                        {t('downloads.macos.appleChips.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.MacArmBeta.split('/')[7] ?? ''})`}
@@ -186,12 +185,12 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('macos.intelChips.title')}</h4>
-                <p>{t('macos.intelChips.description')}</p>
+                <h4>{t('downloads.macos.intelChips.title')}</h4>
+                <p>{t('downloads.macos.intelChips.description')}</p>
                 <footer>
                   <a href={releases.Mac}>
                     <strong onClick={() => handleDownload('mac-stable')}>
-                      {t('macos.intelChips.stable')}
+                      {t('downloads.macos.intelChips.stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.Mac.split('/')[7]})`}
@@ -200,7 +199,7 @@ const Downloads: NextPage = () => {
                   {releases.MacBeta && (
                     <a href={releases.MacBeta}>
                       <strong onClick={() => handleDownload('mac-beta')}>
-                        {t('macos.intelChips.beta')}
+                        {t('downloads.macos.intelChips.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.MacBeta.split('/')[7] ?? ''})`}

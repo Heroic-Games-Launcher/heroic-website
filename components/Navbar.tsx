@@ -13,7 +13,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
-  const { t } = useTranslation('navbar')
+  const { t } = useTranslation()
 
   return (
     <nav className="container-fluid">
@@ -38,7 +38,7 @@ export default function Navbar() {
           <li>
             <a
               rel="me"
-              title={String(t('heroicMastodon'))}
+              title={String(t('navbar.heroicMastodon'))}
               href="https://mastodon.social/@heroiclauncher"
             >
               <FontAwesomeIcon
@@ -52,7 +52,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://twitter.com/HeroicLauncher"
-              title={String(t('heroicTwitter'))}
+              title={String(t('navbar.heroicTwitter'))}
             >
               <FontAwesomeIcon
                 icon={faTwitter}
@@ -65,7 +65,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://github.com/Heroic-Games-Launcher"
-              title={String(t('heroicGithub'))}
+              title={String(t('navbar.heroicGithub'))}
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -78,7 +78,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://discord.com/invite/rHJ2uqdquK"
-              title={String(t('heroicDiscord'))}
+              title={String(t('navbar.heroicDiscord'))}
             >
               <FontAwesomeIcon
                 icon={faDiscord}
@@ -91,18 +91,18 @@ export default function Navbar() {
         </ul>
         <ul>
           <li>
-            <Link href="/faq">{t('faq')}</Link>
+            <Link href="/faq">{t('navbar.faq')}</Link>
           </li>
           <li>
             <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
-              {t('documentation')}
+              {t('navbar.documentation')}
             </a>
           </li>
           <li>
-            <Link href="/donate">{t('supportUs')}</Link>
+            <Link href="/donate">{t('navbar.supportUs')}</Link>
           </li>
           <li>
-            <Link href="/cla">{t('cla')}</Link>
+            <Link href="/cla">{t('navbar.cla')}</Link>
           </li>
         </ul>
       </div>

@@ -23,10 +23,10 @@ const hover = { scale: 1.05 }
 const transition = { duration: 0.5 }
 
 const Home: NextPage = () => {
-  const { t } = useTranslation('home')
+  const { t } = useTranslation()
 
   // Helper to convert translation to string
-  const ts = (key: string) => String(t(key))
+  const ts = (key: string) => String(t(`home.${key}`))
 
   return (
     <>
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             alignItems: 'center'
           }}
         >
-          <h1>{t('heroTitle')}</h1>
+          <h1>{t('home.heroTitle')}</h1>
           <div
             style={{
               width: '90%',
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
               textAlign: 'left'
             }}
           >
-            <Trans i18nKey="heroDescription" t={t}>
+            <Trans i18nKey="home.heroDescription" t={t}>
               Heroic is a Free and Open Source <strong>Epic</strong>,{' '}
               <strong>GOG</strong> and <strong>Amazon Prime Games</strong>{' '}
               launcher for <strong>Linux</strong>, <strong>Windows</strong> and{' '}
@@ -74,12 +74,12 @@ const Home: NextPage = () => {
             <p className={styles.buttonContainer}>
               <Link href="/downloads" passHref>
                 <span role="button" className="secondary">
-                  {t('download')}
+                  {t('home.download')}
                 </span>
               </Link>
               <Link href="/faq" passHref>
                 <span role="button" className="contrast outline">
-                  {t('faq')}
+                  {t('home.faq')}
                 </span>
               </Link>
             </p>
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
           paddingInline: '25px'
         }}
       >
-        {t('mainFeatures')}
+        {t('home.mainFeatures')}
       </h1>
 
       <motion.section
@@ -123,8 +123,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('gamePage.title')}</h2>
-              <p>{t('gamePage.description')}</p>
+              <h2>{t('home.gamePage.title')}</h2>
+              <p>{t('home.gamePage.description')}</p>
             </div>
           </div>
         </div>
@@ -152,8 +152,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('platformSelection.title')}</h2>
-              <p>{t('platformSelection.description')}</p>
+              <h2>{t('home.platformSelection.title')}</h2>
+              <p>{t('home.platformSelection.description')}</p>
             </div>
           </div>
         </div>
@@ -181,8 +181,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('accessStores.title')}</h2>
-              <p>{t('accessStores.description')}</p>
+              <h2>{t('home.accessStores.title')}</h2>
+              <p>{t('home.accessStores.description')}</p>
             </div>
           </div>
         </div>
@@ -210,8 +210,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('organizeLibrary.title')}</h2>
-              <p>{t('organizeLibrary.description')}</p>
+              <h2>{t('home.organizeLibrary.title')}</h2>
+              <p>{t('home.organizeLibrary.description')}</p>
             </div>
           </div>
         </div>
@@ -239,8 +239,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('themes.title')}</h2>
-              <p>{t('themes.description')}</p>
+              <h2>{t('home.themes.title')}</h2>
+              <p>{t('home.themes.description')}</p>
             </div>
           </div>
         </div>
@@ -267,8 +267,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('wineManager.title')}</h2>
-              <p>{t('wineManager.description')}</p>
+              <h2>{t('home.wineManager.title')}</h2>
+              <p>{t('home.wineManager.description')}</p>
             </div>
           </div>
         </div>
@@ -295,8 +295,8 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('wineSettings.title')}</h2>
-              <p>{t('wineSettings.description')}</p>
+              <h2>{t('home.wineSettings.title')}</h2>
+              <p>{t('home.wineSettings.description')}</p>
             </div>
           </div>
         </div>
@@ -323,16 +323,16 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="description">
-              <h2>{t('multiLanguage.title')}</h2>
+              <h2>{t('home.multiLanguage.title')}</h2>
               <p>
-                {t('multiLanguage.description')}{' '}
+                {t('home.multiLanguage.description')}{' '}
                 <a
                   href="https://hosted.weblate.org/projects/heroic-games-launcher/"
                   rel="norefferer"
                   target="_blank"
                 >
                   {' '}
-                  {t('multiLanguage.weblateLinkText')}
+                  {t('home.multiLanguage.weblateLinkText')}
                 </a>
               </p>
             </div>
