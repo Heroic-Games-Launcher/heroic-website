@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+  const { t } = useTranslation('common')
+
   return (
     <footer className="container">
-      <small>Heroic Games Launcher &copy; {new Date().getFullYear()}</small>
+      <small>{t('copyright')} &copy; {new Date().getFullYear()}</small>
     </footer>
   )
 }

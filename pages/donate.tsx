@@ -1,12 +1,15 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Donate: NextPage = () => {
+  const { t } = useTranslation('donate')
+
   return (
     <>
       <Head>
-        <title>Support Heroic Development</title>
+        <title>{t('pageTitle')}</title>
         <meta
           name="description"
           content="An Open Source Epic, GOG and Amazon Prime Games Launcher"
@@ -15,60 +18,49 @@ const Donate: NextPage = () => {
       </Head>
       <header className="hero">
         <div className="container">
-          <h1>Support Us</h1>
-          <p>Heroic is free! Donations help us keep the project alive.</p>
+          <h1>{t('title')}</h1>
+          <p>{t('subtitle')}</p>
 
           <hr className="spacer" />
 
           <div className="grid">
             <article>
-              <h4>Patreon</h4>
-              <small>Monthly-sub</small>
-              <p>
-                Activate a monthly subscription on Patreon to support us and get
-                rewards.
-              </p>
+              <h4>{t('patreon.title')}</h4>
+              <small>{t('patreon.type')}</small>
+              <p>{t('patreon.description')}</p>
               <footer>
                 <a href="https://patreon.com/heroicgameslauncher">
-                  <strong>Go to Patreon</strong>
+                  <strong>{t('patreon.button')}</strong>
                 </a>
               </footer>
             </article>
             <article>
-              <h4>Ko-fi</h4>
-              <small>One-time</small>
-              <p>
-                Support the project by offering us a coffee. Just like that,
-                fast and simple!
-              </p>
+              <h4>{t('kofi.title')}</h4>
+              <small>{t('kofi.type')}</small>
+              <p>{t('kofi.description')}</p>
               <footer>
                 <a href="https://ko-fi.com/heroicgames">
-                  <strong>Go to Ko-fi</strong>
+                  <strong>{t('kofi.button')}</strong>
                 </a>
               </footer>
             </article>
             <article>
-              <h4>GOG.com</h4>
-              <small>One-time</small>
-              <p>
-                Use our link when making purchases on GOG and support the
-                project. Cool right?
-              </p>
+              <h4>{t('gog.title')}</h4>
+              <small>{t('gog.type')}</small>
+              <p>{t('gog.description')}</p>
               <footer>
                 <a href="https://af.gog.com?as=1838482841">
-                  <strong>Go to GOG</strong>
+                  <strong>{t('gog.button')}</strong>
                 </a>
               </footer>
             </article>
             <article>
-              <h4>GitHub Sponsor</h4>
-              <small>One-time or flexible-sub</small>
-              <p>
-                Support us with a one-time or recurring donation through GitHub.
-              </p>
+              <h4>{t('github.title')}</h4>
+              <small>{t('github.type')}</small>
+              <p>{t('github.description')}</p>
               <footer>
                 <a href="https://github.com/sponsors/Heroic-Games-Launcher">
-                  <strong>Go to GitHub</strong>
+                  <strong>{t('github.button')}</strong>
                 </a>
               </footer>
             </article>
