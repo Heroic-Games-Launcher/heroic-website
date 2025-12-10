@@ -78,7 +78,7 @@ const Home: NextPage = () => {
                 </span>
               </Link>
               <Link href="/faq" passHref>
-                <span role="button" className="contrast outline">
+                <span role="button" className="contrast outline" style={{ marginTop: '14px' }}>
                   {t('home.faq')}
                 </span>
               </Link>
