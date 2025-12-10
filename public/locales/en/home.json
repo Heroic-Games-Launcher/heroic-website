@@ -1,0 +1,40 @@
+{
+  "heroTitle": "PLAY LIKE A HERO!",
+  "heroDescription": "Heroic is a Free and Open Source <strong>Epic</strong>, <strong>GOG</strong> and <strong>Amazon Prime Games</strong> launcher for <strong>Linux</strong>, <strong>Windows</strong> and <strong>macOS</strong>. Also available on the <strong>SteamDeck</strong>!",
+  "download": "Download",
+  "faq": "FAQ",
+  "mainFeatures": "MAIN FEATURES AND MORE INFO",
+  "gamePage": {
+    "title": "Game Page",
+    "description": "Check game details like description, publisher, download and install size, time played and more."
+  },
+  "platformSelection": {
+    "title": "Platform Selection",
+    "description": "On Linux and on MacOS you can select to install the Windows version of a native game. This might be handy in case the native version is not supported anymore. On Linux you can choose that for GOG games only."
+  },
+  "accessStores": {
+    "title": "Access to the Stores",
+    "description": "Go to the Epic, Amazon Prime or GOG store without even leaving Heroic. Get free games or buy new ones directly from Heroic's interface!"
+  },
+  "organizeLibrary": {
+    "title": "Organize your library",
+    "description": "Add games to favorites or simply hide the games you already played or will never play at all!"
+  },
+  "themes": {
+    "title": "Themes",
+    "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
+  },
+  "wineManager": {
+    "title": "Wine Manager",
+    "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
+  },
+  "wineSettings": {
+    "title": "Wine Settings",
+    "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
+  },
+  "multiLanguage": {
+    "title": "Multi Language",
+    "description": "Heroic was translated by the community in more than 40 languages, from Portuguese to Korean, from Farsi to French. You can also help with translations by accessing",
+    "weblateLinkText": "our Weblate Page"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "pageTitle": "Apoie o Desenvolvimento do Heroic",
+  "title": "Apoie-nos",
+  "subtitle": "Heroic é grátis! Doações nos ajudam a manter o projeto vivo.",
+  "patreon": {
+    "title": "Patreon",
+    "type": "Assinatura mensal",
+    "description": "Ative uma assinatura mensal no Patreon para nos apoiar e ganhar recompensas.",
+    "button": "Ir para o Patreon"
+  },
+  "kofi": {
+    "title": "Ko-fi",
+    "type": "Único",
+    "description": "Apoie o projeto nos oferecendo um café. Simples e rápido assim!",
+    "button": "Ir para o Ko-fi"
+  },
+  "gog": {
+    "title": "GOG.com",
+    "type": "Único",
+    "description": "Use nosso link ao fazer compras na GOG e apoie o projeto. Legal, né?",
+    "button": "Ir para a GOG"
+  },
+  "github": {
+    "title": "GitHub Sponsor",
+    "type": "Único ou assinatura flexível",
+    "description": "Apoie-nos com uma doação única ou recorrente através do GitHub.",
+    "button": "Ir para o GitHub"
+  }
+}

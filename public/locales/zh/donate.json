@@ -1,0 +1,29 @@
+{
+  "pageTitle": "Support Heroic Development",
+  "title": "Support Us",
+  "subtitle": "Heroic is free! Donations help us keep the project alive.",
+  "patreon": {
+    "title": "Patreon",
+    "type": "Monthly-sub",
+    "description": "Activate a monthly subscription on Patreon to support us and get rewards.",
+    "button": "Go to Patreon"
+  },
+  "kofi": {
+    "title": "Ko-fi",
+    "type": "One-time",
+    "description": "Support the project by offering us a coffee. Just like that, fast and simple!",
+    "button": "Go to Ko-fi"
+  },
+  "gog": {
+    "title": "GOG.com",
+    "type": "One-time",
+    "description": "Use our link when making purchases on GOG and support the project. Cool right?",
+    "button": "Go to GOG"
+  },
+  "github": {
+    "title": "GitHub Sponsor",
+    "type": "One-time or flexible-sub",
+    "description": "Support us with a one-time or recurring donation through GitHub.",
+    "button": "Go to GitHub"
+  }
+}

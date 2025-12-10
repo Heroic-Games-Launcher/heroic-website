@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Descargar Heroic",
+  "title": "Descargar",
+  "subtitle": "Heroic está disponible para todos los principales sistemas operativos.",
+  "supportedOS": "Versiones de SO compatibles:",
+  "linux": {
+    "title": "Linux",
+    "flatpak": {
+      "title": "Flatpak",
+      "description": "Obtén la mejor experiencia de Heroic en cualquier distribución Linux o en Steam Deck vía Flatpak.",
+      "button": "Obtener de Flathub"
+    },
+    "appimage": {
+      "title": "AppImage",
+      "description": "Descárgalo en formato AppImage para que funcione en cualquier distribución Linux. El AppImage puede actualizarse automáticamente cuando se lanza una nueva versión.",
+      "stable": "Estable",
+      "beta": "Beta"
+    },
+    "other": {
+      "title": "Otro",
+      "description": "Heroic también se distribuye en archivos RPM, DEB y TAR.XZ. Consulta repositorios alternativos en nuestro Github.",
+      "button": "Ver todos"
+    }
+  },
+  "windows": {
+    "title": "Windows",
+    "setup": {
+      "title": "Instalador",
+      "description": "Instala Heroic en tu sistema y recibe actualizaciones automáticas cuando se lance una nueva versión. ¡Siguiente, Siguiente, Finalizar!",
+      "stable": "Estable",
+      "beta": "Beta"
+    },
+    "portable": {
+      "title": "Portable",
+      "description": "Usa la versión portable si no quieres la instalación completa. Consulta las versiones x64 y arm64 en nuestro Github.",
+      "button": "Ver todos los paquetes"
+    }
+  },
+  "macos": {
+    "title": "MacOS",
+    "appleChips": {
+      "title": "Chips Apple (M1 y posteriores)",
+      "description": "Optimizado para chips Apple Silicon. Ábrelo y copia la app Heroic a la carpeta de Aplicaciones ¡y listo!",
+      "stable": "Estable",
+      "beta": "Beta"
+    },
+    "intelChips": {
+      "title": "Chips Intel",
+      "description": "Optimizado para chips Intel. Ábrelo y copia la app Heroic a la carpeta de Aplicaciones ¡y listo!",
+      "stable": "Estable",
+      "beta": "Beta"
+    }
+  }
+}

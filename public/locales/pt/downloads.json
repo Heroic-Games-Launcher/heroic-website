@@ -1,0 +1,54 @@
+{
+  "pageTitle": "Baixar Heroic",
+  "title": "Download",
+  "subtitle": "Heroic está disponível para todos os principais sistemas operacionais.",
+  "supportedOS": "Versões de SO suportadas:",
+  "linux": {
+    "title": "Linux",
+    "flatpak": {
+      "title": "Flatpak",
+      "description": "Tenha a melhor experiência do Heroic em qualquer distribuição Linux ou no Steam Deck via Flatpak.",
+      "button": "Obter do Flathub"
+    },
+    "appimage": {
+      "title": "AppImage",
+      "description": "Baixe no formato AppImage para funcionar em qualquer distro Linux. O AppImage pode se atualizar automaticamente quando uma nova versão é lançada.",
+      "stable": "Estável",
+      "beta": "Beta"
+    },
+    "other": {
+      "title": "Outros",
+      "description": "Heroic também é distribuído em RPM, DEB e arquivo TAR.XZ. Confira repositórios alternativos no nosso Github.",
+      "button": "Ver todos"
+    }
+  },
+  "windows": {
+    "title": "Windows",
+    "setup": {
+      "title": "Instalador",
+      "description": "Instale o Heroic no seu sistema e receba atualizações automáticas quando uma nova versão for lançada. Próximo, Próximo, Concluir!",
+      "stable": "Estável",
+      "beta": "Beta"
+    },
+    "portable": {
+      "title": "Portátil",
+      "description": "Use a versão portátil caso não queira a instalação completa. Confira as versões x64 e arm64 no nosso Github.",
+      "button": "Ver todos os pacotes"
+    }
+  },
+  "macos": {
+    "title": "MacOS",
+    "appleChips": {
+      "title": "Chips Apple (M1 e posteriores)",
+      "description": "Otimizado para chips Apple Silicon. Abra e copie o app Heroic para a pasta Aplicativos e pronto!",
+      "stable": "Estável",
+      "beta": "Beta"
+    },
+    "intelChips": {
+      "title": "Chips Intel",
+      "description": "Otimizado para chips Intel. Abra e copie o app Heroic para a pasta Aplicativos e pronto!",
+      "stable": "Estável",
+      "beta": "Beta"
+    }
+  }
+}

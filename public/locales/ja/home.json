@@ -1,0 +1,40 @@
+{
+  "heroTitle": "ヒーローのようにプレイ！",
+  "heroDescription": "Heroicは、<strong>Linux</strong>、<strong>Windows</strong>、<strong>macOS</strong>向けの無料オープンソース<strong>Epic</strong>、<strong>GOG</strong>、<strong>Amazon Prime Games</strong>ランチャーです。<strong>SteamDeck</strong>でも利用可能！",
+  "download": "ダウンロード",
+  "faq": "FAQ",
+  "mainFeatures": "主な機能と詳細情報",
+  "gamePage": {
+    "title": "ゲームページ",
+    "description": "説明、パブリッシャー、ダウンロードとインストールサイズ、プレイ時間などのゲーム詳細を確認できます。"
+  },
+  "platformSelection": {
+    "title": "プラットフォーム選択",
+    "description": "LinuxとmacOSでは、ネイティブゲームのWindows版をインストールすることを選択できます。ネイティブ版がサポートされなくなった場合に便利です。LinuxではGOGゲームのみで利用可能です。"
+  },
+  "accessStores": {
+    "title": "ストアへのアクセス",
+    "description": "Heroicを離れることなくEpic、Amazon Prime、GOGストアにアクセスできます。無料ゲームを入手するか、Heroicのインターフェースから直接新しいゲームを購入しましょう！"
+  },
+  "organizeLibrary": {
+    "title": "ライブラリの整理",
+    "description": "ゲームをお気に入りに追加するか、すでにプレイしたか絶対にプレイしないゲームを非表示にしましょう！"
+  },
+  "themes": {
+    "title": "テーマ",
+    "description": "デフォルトの色が気に入らない場合は、変更できます。有名なDraculaテーマも含まれています。"
+  },
+  "wineManager": {
+    "title": "Wineマネージャー",
+    "description": "Linuxでは、Wineマネージャーを使用して最新のWine-GE、Wine-Lutris、またはProton-GEバージョンをダウンロードできます。これらのWineバージョンは、ゲーム体験と互換性の向上に焦点を当てています。"
+  },
+  "wineSettings": {
+    "title": "Wine設定",
+    "description": "正しいWineバージョンを使用することに加えて、LinuxとmacOSで最高のゲーム体験を得るためにすべてを設定することが重要です。Wine設定では、DXVK、VKD3D、FSRなどのツールを自動インストールでき、プレフィックスでWineCFG、Winetricks、Run EXEを実行して、ゲームの前提条件を簡単にインストールできます。"
+  },
+  "multiLanguage": {
+    "title": "多言語対応",
+    "description": "Heroicは、ポルトガル語から韓国語、ペルシア語からフランス語まで、コミュニティによって40以上の言語に翻訳されています。翻訳を手伝うこともできます",
+    "weblateLinkText": "Weblateページ"
+  }
+}

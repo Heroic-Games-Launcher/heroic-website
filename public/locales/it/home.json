@@ -1,0 +1,40 @@
+{
+  "heroTitle": "GIOCA COME UN EROE!",
+  "heroDescription": "Heroic è un launcher gratuito e open source per <strong>Epic</strong>, <strong>GOG</strong> e <strong>Amazon Prime Games</strong> per <strong>Linux</strong>, <strong>Windows</strong> e <strong>macOS</strong>. Disponibile anche su <strong>SteamDeck</strong>!",
+  "download": "Scarica",
+  "faq": "FAQ",
+  "mainFeatures": "FUNZIONALITÀ PRINCIPALI E ALTRE INFO",
+  "gamePage": {
+    "title": "Pagina del Gioco",
+    "description": "Controlla i dettagli del gioco come descrizione, editore, dimensione download e installazione, tempo di gioco e altro."
+  },
+  "platformSelection": {
+    "title": "Selezione Piattaforma",
+    "description": "Su Linux e macOS puoi scegliere di installare la versione Windows di un gioco nativo. Questo può essere utile nel caso in cui la versione nativa non sia più supportata. Su Linux puoi scegliere questa opzione solo per i giochi GOG."
+  },
+  "accessStores": {
+    "title": "Accesso agli Store",
+    "description": "Accedi allo store Epic, Amazon Prime o GOG senza uscire da Heroic. Ottieni giochi gratis o acquistane di nuovi direttamente dall'interfaccia di Heroic!"
+  },
+  "organizeLibrary": {
+    "title": "Organizza la tua libreria",
+    "description": "Aggiungi giochi ai preferiti o semplicemente nascondi i giochi che hai già giocato o che non giocherai mai!"
+  },
+  "themes": {
+    "title": "Temi",
+    "description": "Se non ti piacciono i colori predefiniti, puoi cambiarli. Include anche il famoso tema Dracula."
+  },
+  "wineManager": {
+    "title": "Gestore Wine",
+    "description": "Su Linux, scarica l'ultima versione di Wine-GE, Wine-Lutris o anche Proton-GE usando il Gestore Wine. Queste versioni di Wine sono focalizzate sul miglioramento dell'esperienza di gioco e della compatibilità."
+  },
+  "wineSettings": {
+    "title": "Impostazioni Wine",
+    "description": "Oltre a usare la versione corretta di Wine, è importante configurare tutto per avere la migliore esperienza di gioco su Linux e macOS. Nelle Impostazioni Wine è possibile installare automaticamente strumenti come DXVK, VKD3D, FSR e anche eseguire WineCFG, Winetricks e Run EXE sul prefix, così puoi installare facilmente i prerequisiti dei giochi."
+  },
+  "multiLanguage": {
+    "title": "Multi Lingua",
+    "description": "Heroic è stato tradotto dalla comunità in più di 40 lingue, dal portoghese al coreano, dal farsi al francese. Puoi anche aiutare con le traduzioni accedendo a",
+    "weblateLinkText": "la nostra pagina Weblate"
+  }
+}

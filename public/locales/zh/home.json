@@ -1,0 +1,40 @@
+{
+  "heroTitle": "像英雄一样游戏！",
+  "heroDescription": "Heroic 是一款免费开源的 <strong>Epic</strong>、<strong>GOG</strong> 和 <strong>Amazon Prime Games</strong> 启动器，支持 <strong>Linux</strong>、<strong>Windows</strong> 和 <strong>macOS</strong>。也可在 <strong>SteamDeck</strong> 上使用！",
+  "download": "下载",
+  "faq": "常见问题",
+  "mainFeatures": "主要功能和更多信息",
+  "gamePage": {
+    "title": "游戏页面",
+    "description": "查看游戏详情，如描述、发行商、下载和安装大小、游戏时间等。"
+  },
+  "platformSelection": {
+    "title": "平台选择",
+    "description": "在 Linux 和 macOS 上，您可以选择安装原生游戏的 Windows 版本。如果原生版本不再受支持，这可能会很有用。在 Linux 上，仅适用于 GOG 游戏。"
+  },
+  "accessStores": {
+    "title": "访问商店",
+    "description": "无需离开 Heroic 即可访问 Epic、Amazon Prime 或 GOG 商店。直接从 Heroic 界面获取免费游戏或购买新游戏！"
+  },
+  "organizeLibrary": {
+    "title": "整理游戏库",
+    "description": "将游戏添加到收藏夹，或直接隐藏您已玩过或永远不会玩的游戏！"
+  },
+  "themes": {
+    "title": "主题",
+    "description": "如果您不喜欢默认颜色，可以更改它们。还包括著名的 Dracula 主题。"
+  },
+  "wineManager": {
+    "title": "Wine 管理器",
+    "description": "在 Linux 上，使用 Wine 管理器下载最新版本的 Wine-GE、Wine-Lutris 或 Proton-GE。这些 Wine 版本专注于改善游戏体验和兼容性。"
+  },
+  "wineSettings": {
+    "title": "Wine 设置",
+    "description": "除了使用正确的 Wine 版本外，在 Linux 和 macOS 上进行正确设置以获得最佳游戏体验也很重要。在 Wine 设置中，可以自动安装 DXVK、VKD3D、FSR 等工具，还可以在前缀中运行 WineCFG、Winetricks 和 Run EXE，方便安装游戏依赖项。"
+  },
+  "multiLanguage": {
+    "title": "多语言",
+    "description": "Heroic 已被社区翻译成 40 多种语言，从葡萄牙语到韩语，从波斯语到法语。您也可以访问以下网址帮助翻译",
+    "weblateLinkText": "我们的 Weblate 页面"
+  }
+}
