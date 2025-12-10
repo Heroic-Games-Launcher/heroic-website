@@ -55,7 +55,7 @@ const Footer = () => {
           ))}
         </select>
       </div>
-      <small>{t('common.copyright')} &copy; {new Date().getFullYear()}</small>
+      <small>Heroic Games Launcher &copy; {new Date().getFullYear()}</small>
     </footer>
   )
 }
