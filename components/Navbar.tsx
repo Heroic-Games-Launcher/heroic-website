@@ -26,7 +26,7 @@ export default function Navbar() {
       <li>
         <a
           rel="me"
-          title={t('navbar.heroicMastodon')}
+          title={t('navbar.heroicMastodon', 'Mastodon') as string}
           href="https://mastodon.social/@heroiclauncher"
         >
           <FontAwesomeIcon
@@ -40,7 +40,7 @@ export default function Navbar() {
       <li>
         <a
           href="https://twitter.com/HeroicLauncher"
-          title={t('navbar.heroicTwitter')}
+          title={t('navbar.heroicTwitter', 'Twitter') as string}
         >
           <FontAwesomeIcon
             icon={faTwitter}
@@ -53,7 +53,7 @@ export default function Navbar() {
       <li>
         <a
           href="https://github.com/Heroic-Games-Launcher"
-          title={t('navbar.heroicGithub')}
+          title={t('navbar.heroicGithub', 'Github') as string}
         >
           <FontAwesomeIcon
             icon={faGithub}
@@ -66,7 +66,7 @@ export default function Navbar() {
       <li>
         <a
           href="https://discord.com/invite/rHJ2uqdquK"
-          title={t('navbar.heroicDiscord')}
+          title={t('navbar.heroicDiscord', 'Discord') as string}
         >
           <FontAwesomeIcon
             icon={faDiscord}
@@ -180,12 +180,12 @@ export default function Navbar() {
                   <span className="contrast link" onClick={closeSidebar}>
                     <img
                       src={logo}
-                      title="Heroic Games Launcher"
-                      alt="Heroic Games Launcher"
+                      title="Heroic"
+                      alt="Heroic"
                       height="32px"
                       width="32px"
                     />
-                    <strong>Heroic Games Launcher</strong>
+                    <strong>Heroic</strong>
                   </span>
                 </Link>
                 <button
