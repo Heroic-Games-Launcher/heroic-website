@@ -73,7 +73,7 @@ nav.container-fluid div {
 }
 
 @media screen and (max-width: 900px) {
-  .cookieBanner > .grid {
+  .cookieBanner>.grid {
     align-items: center;
     justify-items: center;
     height: fit-content;
@@ -82,7 +82,7 @@ nav.container-fluid div {
     padding: 16px 12px;
   }
 
-  .cookieBanner > .grid .buttons {
+  .cookieBanner>.grid .buttons {
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -112,7 +112,7 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
-  .cookieBanner > .grid {
+  .cookieBanner>.grid {
     grid-template-columns: 8fr 1fr;
     align-items: center;
     justify-content: center;
@@ -120,7 +120,8 @@ footer {
     height: fit-content;
     padding: 16px 24px;
   }
-  .cookieBanner > .grid .buttons {
+
+  .cookieBanner>.grid .buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 8px;
@@ -147,7 +148,7 @@ footer {
   }
 }
 
-.cookieBanner > .grid > .buttons button {
+.cookieBanner>.grid>.buttons button {
   height: fit-content;
   padding: 0;
   width: 100px;
@@ -175,7 +176,7 @@ a {
 }
 
 @media only screen and (prefers-color-scheme: light) {
-  article > footer {
+  article>footer {
     background-color: var(--card-border-color);
   }
 }
@@ -183,5 +184,162 @@ a {
 @media screen and (min-width: 992px) {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  }
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--contrast);
+  margin: 0;
+  width: auto;
+}
+
+.hamburger-menu:hover {
+  background: transparent;
+  color: var(--primary);
+}
+
+/* Mobile Sidebar */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  max-width: 85vw;
+  height: 100vh;
+  background: var(--background-color, #1a1a2e);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header .link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.close-sidebar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--contrast);
+  margin: 0;
+  width: auto;
+}
+
+.close-sidebar:hover {
+  background: transparent;
+  color: var(--primary);
+}
+
+.sidebar-content {
+  flex: 1;
+  padding: 24px 16px;
+  overflow-y: auto;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.sidebar-content .nav-links li {
+  margin-bottom: 8px;
+}
+
+.sidebar-content .nav-links a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  color: var(--contrast);
+}
+
+.sidebar-content .nav-links a:hover {
+  background: rgba(142, 36, 170, 0.2);
+  color: var(--primary);
+}
+
+.sidebar-content .social-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-content .social-links li {
+  margin: 0;
+}
+
+.sidebar-content .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar-content .social-links a:hover {
+  background: rgba(142, 36, 170, 0.3);
+  transform: scale(1.1);
+}
+
+/* Desktop navigation container */
+.desktop-nav {
+  display: flex;
+}
+
+@media only screen and (prefers-color-scheme: light) {
+  .mobile-sidebar {
+    background: var(--background-color, #fff);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .sidebar-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-content .social-links {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-content .social-links a {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .sidebar-content .nav-links a:hover {
+    background: rgba(142, 36, 170, 0.1);
   }
 }
