@@ -43,8 +43,6 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       (rel) => rel.prerelease === true
     )[0]
 
-    console.log({ assetsStable, assetsBeta, tagStable, tagBeta })
-
     const appImageStable =
       assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
         ?.browser_download_url || defaultUrl

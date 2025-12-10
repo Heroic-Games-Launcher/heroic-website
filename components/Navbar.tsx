@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const logo = require('../assets/logo.png?webp')
 import {
@@ -12,6 +13,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
+  const { t } = useTranslation()
+
   return (
     <nav className="container-fluid">
       <ul>
@@ -35,7 +38,7 @@ export default function Navbar() {
           <li>
             <a
               rel="me"
-              title="Heroic Mastodon Page"
+              title={String(t('navbar.heroicMastodon'))}
               href="https://mastodon.social/@heroiclauncher"
             >
               <FontAwesomeIcon
@@ -49,7 +52,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://twitter.com/HeroicLauncher"
-              title="Heroic Twitter Page"
+              title={String(t('navbar.heroicTwitter'))}
             >
               <FontAwesomeIcon
                 icon={faTwitter}
@@ -62,7 +65,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://github.com/Heroic-Games-Launcher"
-              title="Heroic GitHub Page"
+              title={String(t('navbar.heroicGithub'))}
             >
               <FontAwesomeIcon
                 icon={faGithub}
@@ -75,7 +78,7 @@ export default function Navbar() {
           <li>
             <a
               href="https://discord.com/invite/rHJ2uqdquK"
-              title="Heroic Discord Server"
+              title={String(t('navbar.heroicDiscord'))}
             >
               <FontAwesomeIcon
                 icon={faDiscord}
@@ -88,18 +91,18 @@ export default function Navbar() {
         </ul>
         <ul>
           <li>
-            <Link href="/faq">FAQ</Link>
+            <Link href="/faq">{t('navbar.faq')}</Link>
           </li>
           <li>
             <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
-              Documentation
+              {t('navbar.documentation')}
             </a>
           </li>
           <li>
-            <Link href="/donate">Support Us</Link>
+            <Link href="/donate">{t('navbar.supportUs')}</Link>
           </li>
           <li>
-            <Link href="/cla">CLA</Link>
+            <Link href="/cla">{t('navbar.cla')}</Link>
           </li>
         </ul>
       </div>
