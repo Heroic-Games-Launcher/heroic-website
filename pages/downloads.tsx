@@ -31,8 +31,6 @@ const Downloads: NextPage = () => {
     return null
   }
 
-  console.log(releases)
-
   const isWindows = userAgent.toLowerCase().includes('windows')
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac

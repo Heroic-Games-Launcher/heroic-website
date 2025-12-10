@@ -10,7 +10,9 @@ const languages = [
   { code: 'it', name: 'Italiano', flag: '🇮🇹' },
   { code: 'ko', name: '한국어', flag: '🇰🇷' },
   { code: 'zh', name: '中文', flag: '🇨🇳' },
-  { code: 'ja', name: '日本語', flag: '🇯🇵' }
+  { code: 'ja', name: '日本語', flag: '🇯🇵' },
+  { code: 'pl', name: 'Polski', flag: '🇵🇱' },
+  { code: 'hu', name: 'Magyar', flag: '🇭🇺' }
 ]
 
 const Footer = () => {
