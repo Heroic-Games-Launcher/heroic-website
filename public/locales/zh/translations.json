@@ -1,0 +1,416 @@
+{
+  "common": {
+    "copyright": "Heroic Games Launcher"
+  },
+  "navbar": {
+    "home": "首页",
+    "faq": "常见问题",
+    "documentation": "文档",
+    "supportUs": "支持我们",
+    "cla": "CLA",
+    "heroicMastodon": "Heroic Mastodon页面",
+    "heroicTwitter": "Heroic Twitter页面",
+    "heroicGithub": "Heroic GitHub页面",
+    "heroicDiscord": "Heroic Discord服务器"
+  },
+  "home": {
+    "heroTitle": "像英雄一样玩游戏！",
+    "heroDescription": "Heroic是一个免费的开源<strong>Epic</strong>、<strong>GOG</strong>和<strong>Amazon Prime Games</strong>启动器，适用于<strong>Linux</strong>、<strong>Windows</strong>和<strong>macOS</strong>。也可在<strong>SteamDeck</strong>上使用！",
+    "download": "下载",
+    "faq": "常见问题",
+    "mainFeatures": "主要功能和更多信息",
+    "gamePage": {
+      "title": "游戏页面",
+      "description": "查看游戏详情，如描述、发行商、下载大小、安装大小、游玩时间等。"
+    },
+    "platformSelection": {
+      "title": "平台选择",
+      "description": "在Linux和macOS上，您可以选择安装原生游戏的Windows版本。当原生版本不再受支持时，这可能很有用。在Linux上，您只能为GOG游戏选择此项。"
+    },
+    "accessStores": {
+      "title": "访问商店",
+      "description": "直接从Heroic访问Epic、Amazon Prime或GOG商店，而无需离开Heroic。从Heroic的界面获取免费游戏或购买新游戏！"
+    },
+    "organizeLibrary": {
+      "title": "整理您的库",
+      "description": "将游戏添加到收藏夹，或简单隐藏您已经玩过的游戏或永远不会玩的游戏！"
+    },
+    "themes": {
+      "title": "主题",
+      "description": "如果您不喜欢默认颜色，您可以更改它们。它还包括著名的Dracula主题。"
+    },
+    "wineManager": {
+      "title": "Wine管理器",
+      "description": "在Linux上，使用Wine管理器下载最新的Wine-GE、Wine-Lutris或Proton-GE。这些Wine版本选择专注于改善游戏体验和兼容性。"
+    },
+    "wineSettings": {
+      "title": "Wine设置",
+      "description": "除了使用正确的Wine版本，在Linux和macOS上获得最佳游戏体验也很重要。在Wine设置下，可以自动安装DXVK、VKD3D、FSR等工具，并运行WineCFG、Winetricks和Run EXE在前缀上，以轻松安装游戏先决条件。"
+    },
+    "multiLanguage": {
+      "title": "多语言",
+      "description": "Heroic已被社区翻译成40多种语言，从葡萄牙语到韩语，从波斯语到法语。您也可以通过访问",
+      "weblateLinkText": "我们的Weblate页面来帮助翻译"
+    }
+  },
+  "downloads": {
+    "pageTitle": "下载Heroic",
+    "title": "下载",
+    "subtitle": "Heroic适用于所有主要操作系统。",
+    "supportedOS": "支持的OS版本：",
+    "osRequirements": {
+      "linux": "Ubuntu 22.04或更新，OpenSuse Tumbleweed，Fedora 37或更新，Arch Linux和衍生（例如Manjaro、Garuda和EndeavourOS）。Heroic将在大多数其他Linux发行版上运行，但可能需要额外的配置和故障排除。它也在SteamOS上受支持，但下载仅通过Discover软件中心可用。",
+      "windows": "Windows 10和11",
+      "macos": "macOS 14或更新。"
+    },
+    "linux": {
+      "title": "Linux",
+      "flatpak": {
+        "title": "Flatpak",
+        "description": "通过Flatpak在任何Linux发行版或Steam Deck上获得最佳Heroic体验。",
+        "button": "从Flathub获取"
+      },
+      "appimage": {
+        "title": "AppImage",
+        "description": "以AppImage格式下载，以便在任何Linux发行版上运行。当新版本发布时，AppImage将自动更新。",
+        "stable": "稳定",
+        "beta": "Beta"
+      },
+      "other": {
+        "title": "其他",
+        "description": "Heroic也在RPM、DEB和TAR.XZ中分发。请在我们的Github上检查替代仓库。",
+        "button": "查看全部"
+      }
+    },
+    "windows": {
+      "title": "Windows",
+      "setup": {
+        "title": "设置",
+        "description": "在您的系统上安装Heroic，并在新版本发布时获得自动更新。下一步，下一步，完成！",
+        "stable": "稳定",
+        "beta": "Beta"
+      },
+      "portable": {
+        "title": "便携",
+        "description": "如果您不想完整安装，请使用便携版本。请在我们的Github上检查x64和arm64版本。",
+        "button": "查看所有包"
+      }
+    },
+    "macos": {
+      "title": "MacOS",
+      "appleChips": {
+        "title": "Apple芯片（M1及更新）",
+        "description": "针对Apple Silicon芯片优化。打开并将Heroic应用复制到Applications文件夹，您就准备好了！",
+        "stable": "稳定",
+        "beta": "Beta"
+      },
+      "intelChips": {
+        "title": "Intel芯片",
+        "description": "针对Intel芯片优化。打开并将Heroic应用复制到Applications文件夹，您就准备好了！",
+        "stable": "稳定",
+        "beta": "Beta"
+      }
+    }
+  },
+  "donate": {
+    "pageTitle": "支持Heroic开发",
+    "title": "支持我们",
+    "subtitle": "Heroic是免费的！捐款帮助我们保持项目活跃。",
+    "patreon": {
+      "title": "Patreon",
+      "type": "每月订阅",
+      "description": "在Patreon上激活每月订阅以支持我们并获得奖励。",
+      "button": "前往Patreon"
+    },
+    "kofi": {
+      "title": "Ko-fi",
+      "description": "通过给我们一杯咖啡来支持项目。就是这样，快速而简单！",
+      "button": "前往Ko-fi"
+    },
+    "gog": {
+      "title": "GOG.com",
+      "type": "一次",
+      "description": "在GOG上购物时使用我们的链接并支持项目。酷吧？",
+      "button": "前往GOG"
+    },
+    "github": {
+      "title": "GitHub赞助",
+      "type": "一次或灵活订阅",
+      "description": "通过GitHub支持我们的一次或定期捐款。",
+      "button": "前往GitHub"
+    }
+  },
+  "cla": {
+    "pageTitle": "CLA",
+    "title": "贡献者许可协议",
+    "intro1": "本贡献者许可协议（“CLA”）由签名块中设立的个人（“您”）和Heroic Labs, Inc.（“Heroic”）之间签订，自您签名之日起生效，并规定您向Heroic提供贡献的条款。",
+    "intro2": "您同意并同意以下条款和条件适用于您提交给Heroic's Heroic Games Launcher项目的过去、现在和未来的贡献（“项目”）。作为回报，Heroic不会以违背Heroic商业目标的方式使用您的贡献。除了此处授予Heroic和Heroic分发的软件接收者的许可外，您保留对您的贡献的所有权利、所有权和利益。",
+    "definitions": {
+      "title": "定义。",
+      "contribution": "“贡献”是指您有意提交的任何原创作品，包括对现有作品的任何修改或添加，以包含在项目的文档中。",
+      "submit": "“提交”是指发送给Heroic或其代表的任何电子、口头或书面通信，包括但不限于电子邮件列表、源代码控制系统和问题跟踪系统，这些系统由Heroic或代表Heroic管理，用于讨论和改进项目的目的，不包括您明显标记或以其他方式书面指定为“不贡献”的通信。"
+    },
+    "copyrightLicense": {
+      "title": "版权许可。",
+      "content": "根据本CLA的条款和条件，您在此授予Heroic和Heroic分发的软件接收者永久、全球、非独占、无成本、免版税、不可撤销的版权许可，以复制、准备衍生作品、公开展示、公演、转许可和分发您的贡献和此类衍生作品。"
+    },
+    "patentLicense": {
+      "title": "专利许可。",
+      "content": "根据本CLA的条款和条件，您在此授予Heroic和Heroic分发的软件接收者永久、全球、非独占、无成本、免版税、不可撤销的（除本节规定的情况外）专利许可，以制造、制造、使用、提供销售、销售、进口和以其他方式转让项目，其中此类许可仅适用于您可许可的专利主张，这些主张必然由您的贡献（单独）或您的贡献与此类贡献提交到的项目的组合侵犯。如果任何实体对您或任何其他实体提起专利诉讼（包括诉讼中的反主张或交叉主张），声称您的贡献或您贡献的项目构成直接或贡献专利侵权，则本CLA下授予该实体的任何专利许可将在此类诉讼提起之日终止。"
+    },
+    "representations": {
+      "title": "陈述和保证。",
+      "intro": "许可人陈述并保证：",
+      "item1": "您有权授予上述许可，如果您的雇主（们）拥有您创建的知识产权，其中包括您的贡献，则您陈述并保证您已获得代表该雇主做出贡献的许可，该雇主已将其权利转让给Heroic以用于您的贡献，或该雇主已与Heroic执行单独的CLA；",
+      "item2": "您的每个贡献都是您的原创创作（有关代表他人提交的，请参见第6节）；以及",
+      "item3": "您的贡献提交包括您个人知晓的任何第三方许可或限制（包括但不限于相关专利和商标）的完整细节，这些细节与您的贡献的任何部分相关。"
+    },
+    "support": {
+      "title": "支持；免责声明。",
+      "content": "您不期望为您的贡献提供支持，除非您希望这样做。您可以免费、收费或根本不提供支持。除适用法律要求或书面约定外，您按“原样”提供您的贡献，不提供任何类型的保证或条件，包括但不限于标题、非侵权、适销性或特定目的适用性的任何保证或条件。"
+    },
+    "thirdParty": {
+      "title": "第三方作品。",
+      "content": "如果您希望提交不是您原创创作的作品，则您可以将其单独提交给Heroic，识别其来源的完整细节以及您个人知晓的任何许可或限制（包括但不限于相关专利、商标和许可协议），并明显标记作品为“代表第三方提交：[此处命名]”。"
+    },
+    "notice": {
+      "title": "通知。",
+      "content": "您同意通知Heroic任何您知晓的事实或情况，这些事实或情况会使本CLA中的您的陈述在任何方面不准确。"
+    },
+    "general": {
+      "title": "一般。",
+      "content": "本CLA是此处主题的完整理解和协议，并取代双方之间关于同一主题的任何和所有先前或同时理解、表示或协议。如果本CLA的任何部分被发现不可执行，则其余部分将保持充分力量和效力。除由受影响方签署的书面文件外，对本CLA的任何修改或修正，或对本CLA下权利的任何豁免，将不生效，并且任何违反或缺陷的豁免将不构成对本CLA下任何其他权利或任何后续违反或缺陷的豁免。本CLA中没有任何内容创建或双方不打算创建任何伙伴关系或合资企业。各方可以自由转让本CLA。本CLA对一方授权的继任者和受让人具有约束力并有益。本CLA将受特拉华州法律管辖。任何和所有争议的专属管辖权将在特拉华州威尔明顿的州和联邦法院。本CLA可以在副本中执行，具有与所有签名方在同一文件上签名相同的效果。"
+    },
+    "signature": {
+      "yourName": "您的姓名：",
+      "by": "由：",
+      "date": "日期：",
+      "email": "电子邮件：",
+      "heroicLabs": "Heroic Labs, Inc."
+    },
+    "printButton": "打印CLA"
+  },
+  "faq": {
+    "title": "常见问题",
+    "questions": [
+      {
+        "question": "什么是Heroic？",
+        "answers": [
+          "Heroic是一个开源的轻量级游戏启动器，可用于Linux、Windows和macOS。它是Epic Games Launcher和GOG Galaxy的替代品，并专注于隐私、使用更少资源以及支持一系列工具，如Wine、Proton、Crossover、DXVK和VKD3D。"
+        ]
+      },
+      {
+        "question": "使用Heroic安全吗？",
+        "answers": [
+          "是的，Heroic是一个安全可靠的游戏启动器，不会从用户的计算机收集数据。它也是开源的，这意味着源代码公开可用，可以由社区审查以确保不包含恶意代码。"
+        ]
+      },
+      {
+        "question": "Heroic会收集我的数据、用户名或密码吗？",
+        "answers": [
+          "不会，Heroic是一个专注于隐私的应用程序，不会从您的计算机或设备收集数据。它不会收集您的用户名、密码或任何其他个人信息。您将登录官方Epic Games Store或GOG网站，然后Heroic只会保留一个令牌，仅用于从这些商店列出、下载和启动游戏。",
+          "此外，Heroic不会从您的应用程序使用中收集使用数据或分析。您的隐私对我们很重要，我们采取措施确保您的数据安全且未经您的同意不会被收集或共享。"
+        ]
+      },
+      {
+        "question": "使用Heroic会被封禁吗？",
+        "answers": [
+          "从Epic Games Store或GOG启动游戏使用Heroic不太可能导致封禁。",
+          "但是，请注意某些行为，如作弊或违反特定游戏的服务条款，可能导致封禁。重要的是遵循每个游戏和商店的规则和指南，以避免任何问题。",
+          "一些游戏也可能在您尝试使用Wine或Proton在不受支持的操作系统上运行游戏时封禁您。"
+        ]
+      },
+      {
+        "question": "如何在我的计算机上安装Heroic？",
+        "answers": [
+          "安装Heroic的过程取决于您的操作系统。在Linux上，您可以使用包管理器如Flatpak、.deb、.pacman或.rpm安装Heroic，或者使用AppImage。在macOS上，您可以将Heroic安装为标准应用程序包，然后在终端运行命令xattr -r -d com.apple.quarantine /Applications/Heroic.app以完成安装。在Windows上，您可以使用WinGet包管理器运行命令winget install HeroicGamesLauncher.HeroicGamesLauncher，或者从网站下载并运行setup exe或portable exe。"
+        ]
+      },
+      {
+        "question": "Heroic当前有哪些功能可用，未来计划有哪些功能？",
+        "answers": [
+          "Heroic当前可用的功能包括：",
+          "支持从Epic Games Store和GOG启动游戏",
+          "支持安装、卸载、更新、修复和移动游戏",
+          "支持导入已安装游戏",
+          "支持在线玩Epic游戏（macOS和Linux上的AntiCheat取决于游戏）",
+          "支持在Linux上使用Wine或Proton玩游戏",
+          "支持在macOS上使用Crossover玩游戏",
+          "支持在Linux上下载自定义Wine和Proton版本",
+          "从Heroic界面直接访问Epic和GOG商店",
+          "在Linux上搜索ProtonDB中的游戏兼容性信息",
+          "与现有Epic Games Store安装同步已安装游戏",
+          "与云同步存档",
+          "支持自定义主题",
+          "下载队列",
+          "添加GOG和Epic以外的游戏和应用程序",
+          "未来计划的功能包括：",
+          "支持其他商店（如Amazon Gaming和IndieGala）",
+          "玩GOG游戏在线"
+        ]
+      },
+      {
+        "question": "Heroic支持哪些操作系统？",
+        "answers": [
+          "Linux：Ubuntu 22.04或更新，OpenSuse Tumbleweed，Fedora 37或更新，Arch Linux和衍生（例如Manjaro、Garuda和EndeavourOS）。Heroic将在大多数其他Linux发行版上运行，但可能需要额外配置和故障排除。它也在SteamOS上受支持，但下载仅通过Discover软件中心可用。",
+          "Windows：Windows 10和11",
+          "macOS：macOS 14或更新。"
+        ]
+      },
+      {
+        "question": "Heroic的最低系统要求是什么？",
+        "answers": [
+          "Heroic是一个基于Electron的应用程序，需要大约500MB存储空间。在硬件要求方面，运行Heroic的最低规格是：",
+          "2GB RAM",
+          "1.8GHz双核处理器",
+          "但是，请注意这些是最低要求，您可能需要更强大的硬件来运行某些游戏或应用程序。"
+        ]
+      },
+      {
+        "question": "如何使用Heroic玩游戏？",
+        "answers": [
+          "一旦您安装了Heroic，您可以使用它浏览和安装来自各种来源的游戏。您也可以使用它启动和管理您在计算机上安装的游戏。如果您遇到游戏问题，您可以检查一般文档以获取故障排除和解决方法：https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki 。如果您找不到解决方案，您也可以在Heroic Discord服务器寻求帮助：https://discord.com/invite/rHJ2uqdquK 。"
+        ]
+      },
+      {
+        "question": "我可以同时下载多个游戏吗？",
+        "answers": [
+          "是的，您可以在Heroic中使用下载队列同时下载多个游戏。要使用下载队列，只需在已经安装游戏时启动新的安装选项。这会将游戏添加到队列中，并在前面的游戏下载完成后下载。",
+          "您可以查看下载队列并在侧边栏的“下载”选项卡中监控下载进度。从那里，您也可以根据需要暂停或取消下载。"
+        ]
+      },
+      {
+        "question": "如何添加Epic或GOG以外的游戏？",
+        "answers": [
+          "您可以通过转到游戏库中的“添加游戏”按钮来添加Epic或GOG以外的游戏。这将允许您浏览计算机上的可执行文件，并将其作为自定义游戏添加到Heroic。",
+          "请注意，自定义游戏支持可能有所不同，一些功能如自动更新和存档同步可能不可用。此外，您可能需要手动配置游戏设置以确保其正常运行。"
+        ]
+      },
+      {
+        "question": "什么是Wine，它如何与Heroic一起工作？",
+        "answers": [
+          "Wine是一个免费的开源兼容层，允许Windows应用程序在包括Linux和macOS在内的Unix-like操作系统上运行。Heroic使用Wine在这些操作系统上运行Windows游戏。",
+          "Wine不是模拟器，而是将Windows API调用翻译成操作系统理解的POSIX调用。这允许Windows游戏在不需要完整Windows安装的情况下运行。",
+          "您可以在Wine项目网站了解更多关于Wine及其功能的信息：https://www.winehq.org"
+        ]
+      },
+      {
+        "question": "什么是Proton，它如何与Heroic一起工作？",
+        "answers": [
+          "Proton是由Valve开发的兼容层，允许在Linux上运行Windows游戏。它基于Wine，但包括额外的补丁和改进，使其更稳定并与更多游戏兼容。在Heroic中，您可以使用Proton在Linux上运行Windows游戏。您可以为每个游戏选择使用哪个Proton版本，您也可以直接从Heroic内的Wine管理器页面下载自定义Proton版本。重要的是要注意Proton不是为在Steam之外运行游戏而设计的，结果可能有所不同。您可以在ProtonDB网站检查每个游戏的兼容性信息：https://www.protondb.com"
+        ]
+      },
+      {
+        "question": "什么是Crossover，它如何与Heroic一起工作？",
+        "answers": [
+          "Crossover是一个商业软件，允许在Linux和macOS上运行Windows应用程序。它由CodeWeavers开发，可以从他们的网站购买：https://www.codeweavers.com/ 。",
+          "在Heroic中，您可以通过在游戏设置中选择“Crossover”版本并选择bottle名称（默认为HEROIC）来使用Crossover在macOS上运行Windows游戏。请注意Crossover是第三方软件，其使用不受Heroic官方支持。",
+          "如果您决定购买Crossover，您可以使用优惠券代码LEGENDARY获得折扣并支持Legendary应用程序的开发，该应用程序由Heroic用于与Epic Games Store集成。"
+        ]
+      },
+      {
+        "question": "我的游戏与Heroic不兼容。我该怎么办？",
+        "answers": [
+          "如果您在使用Heroic运行游戏时遇到问题，您可以：检查一般文档以获取故障排除和解决方法：https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki 。此资源可能包含帮助解决您问题的信息。",
+          "如果您在文档中找不到解决方案，您可以在Heroic Discord服务器寻求帮助：https://discord.com/invite/rHJ2uqdquK 。其他用户和Heroic团队成员可以提供建议或协助。",
+          "如果问题持续，您可以考虑在Heroic GitHub页面打开一个issue：https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues 。提供尽可能多的关于您问题的信息，如操作系统、游戏和您看到的错误消息，可以帮助团队调查和解决问题。",
+          "如果问题是特定游戏特有的，您可能想检查游戏文档或联系游戏开发者以获取协助。",
+          "最后，您可能想考虑尝试其他工具或兼容层，如Wine或Proton，看看它们是否能帮助解决问题。"
+        ]
+      },
+      {
+        "question": "我可以使用Heroic从GOG商店安装和运行原生Linux游戏吗？",
+        "answers": [
+          "是的，Heroic可以用于从GOG商店安装和运行原生Linux游戏。但是，目前无法从Epic Games商店安装或运行原生Linux游戏，因为Epic Games目前不提供原生Linux游戏。如果您在使用Heroic运行原生Linux游戏时遇到问题，您可以尝试在游戏设置菜单中启用“使用Steam Runtime”设置。此设置将使Heroic使用Steam Runtime（如果您的系统上安装了），以提供游戏可能需要的缺失库。"
+        ]
+      },
+      {
+        "question": "我可以使用Heroic从GOG和Epic Games安装和运行原生macOS游戏吗？",
+        "answers": [
+          "是的，Heroic可以用于从GOG商店和Epic Games商店安装和运行原生macOS游戏。只需在Heroic中浏览和安装游戏，就像任何其他游戏一样。"
+        ]
+      },
+      {
+        "question": "我可以在Linux上直接从界面管理并下载Wine和Proton版本吗？",
+        "answers": [
+          "是的，Heroic包括在Linux上直接从界面管理并下载Wine和Proton版本的工具。您可以通过转到主菜单的工具菜单并选择“管理Wine版本”或“管理Proton版本”来访问这些工具。"
+        ]
+      },
+      {
+        "question": "如何在Heroic中将游戏快捷方式添加到我的桌面或开始菜单？",
+        "answers": [
+          "要在Heroic中将游戏快捷方式添加到您的桌面或开始菜单，首先转到您要为其创建快捷方式的游戏页面。然后，单击页面右上角的三点图标，并在菜单中选择“添加快捷方式”。这将在您的桌面上创建游戏快捷方式，并将其添加到您的开始菜单，以便在您启动计算机时自动启动。您也可以使用“添加到Steam快捷方式”选项在Steam客户端中为游戏创建快捷方式。"
+        ]
+      },
+      {
+        "question": "如何财务上支持Heroic项目？",
+        "answers": [
+          "如果您想财务上支持Heroic项目，有几种方法。您可以在Patreon上成为赞助人，通过Ko-fi进行一次性捐款，或在GitHub Sponsors上注册为赞助人。您可以在Heroic网站找到所有这些选项的链接：https://heroicgameslauncher.com/donate 。"
+        ]
+      },
+      {
+        "question": "如何为Heroic贡献翻译？",
+        "answers": [
+          "如果您想帮助将Heroic翻译成不同语言，您可以通过Weblate平台贡献：https://hosted.weblate.org/projects/heroic-games-launcher/ 。只需在Weblate上创建一个账户并加入项目即可开始翻译。您的贡献将被Heroic团队审查并合并。"
+        ]
+      },
+      {
+        "question": "Heroic如何与Epic Games和GOG集成？",
+        "answers": [
+          "Heroic使用两个命令行工具与Epic Games商店和GOG商店集成。对于Epic Games，它使用Legendary，一个由derrod开发的开源CLI应用程序，并在GitHub上托管：https://github.com/derrod/legendary 。对于GOG，它使用GOGDL，一个由Heroic团队开发的开源CLI工具。如果您遇到这些工具的问题，您可以尝试通过转到Heroic中的高级设置菜单并选择“使用替代二进制”选项来使用替代二进制。这可能有助于解决您遇到的任何问题。"
+        ]
+      },
+      {
+        "question": "Heroic有对不同语言的支持吗？",
+        "answers": [
+          "是的，Heroic已被社区贡献翻译成40多种不同语言。您可以在Heroic网站或GitHub仓库的README文件中找到当前支持语言的列表。如果您想帮助将Heroic翻译成新语言，您可以通过Weblate平台贡献：https://hosted.weblate.org/projects/heroic-games-launcher/ 。"
+        ]
+      },
+      {
+        "question": "如何为Heroic的开发贡献或将其翻译成新语言？",
+        "answers": [
+          "您可以通过在GitHub仓库打开issue来报告bug或建议新功能：https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues 。",
+          "您可以通过在GitHub仓库创建拉取请求来贡献代码或文档",
+          "您可以通过Patreon、Ko-fi或GitHub Sponsors支持项目：https://heroicgameslauncher.com/donate 。",
+          "您可以通过Weblate平台帮助将Heroic翻译成新语言：https://hosted.weblate.org/projects/heroic-games-launcher/ 。"
+        ]
+      },
+      {
+        "question": "如何在运行GOG的原生Linux游戏时使用Steam Runtime修复Linux上的缺失库？",
+        "answers": [
+          "如果您在Linux上运行GOG商店的原生Linux游戏并遇到缺失库问题，您可以尝试使用Steam Runtime修复问题。为此，转到Heroic中的游戏设置菜单并选择“使用Steam Runtime”选项。这将使Heroic使用Steam Runtime运行游戏，这可能有助于解决缺失库问题。请注意，此选项仅在Linux上可用，并且需要您的计算机上安装Steam客户端。"
+        ]
+      },
+      {
+        "question": "我可以使用Heroic管理并运行来自其他平台如Ubisoft Connect或EA App的游戏吗？",
+        "answers": [
+          "是的，可以使用ADD GAME功能添加其他商店的前端，如Ubisoft Connect和EA APP。但是，集成与Epic和GOG的集成不同，因为在这种情况下，您需要运行Heroic，然后从Heroic内部运行其他启动器。"
+        ]
+      },
+      {
+        "question": "可以使用Heroic运行从Epic Games Store或GOG以外购买的游戏，如物理光盘或通过其他数字商店？",
+        "answers": [
+          "是的，您可以使用Heroic中的ADD GAME功能添加从Epic Games Store或GOG以外购买的游戏。正常安装游戏后，使用ADD GAME选项并填写必要信息。Heroic将自动从网络检索游戏图像。如果游戏需要在运行前运行安装程序，您可以使用ADD GAME屏幕上的“首先运行安装程序”按钮来执行。"
+        ]
+      },
+      {
+        "question": "Heroic是免费使用的吗？",
+        "answers": [
+          "是的，Heroic完全免费使用。"
+        ]
+      },
+      {
+        "question": "有Heroic的替代品吗？",
+        "answers": [
+          "是的，有时游戏由于某种原因在Heroic上不工作，开源世界的美好之处在于我们有替代品。对于Epic游戏，有一些替代品可以根据平台用于运行游戏。在Linux上，一些选项包括Bottles、Lutris和Gamehub。对于GOG游戏具体来说，Minigalaxy也是一个选项。在Windows上，Playnite是一个受欢迎的替代品。"
+        ]
+      },
+      {
+        "question": "Heroic的许可证是什么？",
+        "answers": [
+          "Heroic根据GNU通用公共许可证v3.0发布。这是一个copyleft许可证，这意味着用户可以自由使用、修改和分发应用程序，只要他们遵循许可证的条款。具体来说，任何修改版本的应用程序也必须根据相同许可证发布，并包括许可证的副本。因此，如果您分叉Heroic并出售它，您也必须根据相同许可证发布修改版本的源代码，并免费提供给其他人。您也不允许在未经许可的情况下为您的分叉使用Heroic的名称或品牌。"
+        ]
+      }
+    ]
+  }
+}

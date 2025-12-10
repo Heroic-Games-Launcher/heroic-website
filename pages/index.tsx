@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useTranslation, Trans } from 'react-i18next'
 
 import styles from '../styles/Home.module.css'
 
@@ -22,6 +23,11 @@ const hover = { scale: 1.05 }
 const transition = { duration: 0.5 }
 
 const Home: NextPage = () => {
+  const { t } = useTranslation()
+
+  // Helper to convert translation to string
+  const ts = (key: string) => String(t(`home.${key}`))
+
   return (
     <>
       <Head>
@@ -50,7 +56,7 @@ const Home: NextPage = () => {
             alignItems: 'center'
           }}
         >
-          <h1>PLAY LIKE A HERO!</h1>
+          <h1>{t('home.heroTitle')}</h1>
           <div
             style={{
               width: '90%',
@@ -58,20 +64,22 @@ const Home: NextPage = () => {
               textAlign: 'left'
             }}
           >
-            Heroic is a Free and Open Source <strong>Epic</strong>,{' '}
-            <strong>GOG</strong> and <strong>Amazon Prime Games</strong>{' '}
-            launcher for <strong>Linux</strong>, <strong>Windows</strong> and{' '}
-            <strong>macOS</strong>. Also available on the{' '}
-            <strong>SteamDeck</strong>!
+            <Trans i18nKey="home.heroDescription" t={t}>
+              Heroic is a Free and Open Source <strong>Epic</strong>,{' '}
+              <strong>GOG</strong> and <strong>Amazon Prime Games</strong>{' '}
+              launcher for <strong>Linux</strong>, <strong>Windows</strong> and{' '}
+              <strong>macOS</strong>. Also available on the{' '}
+              <strong>SteamDeck</strong>!
+            </Trans>
             <p className={styles.buttonContainer}>
               <Link href="/downloads" passHref>
                 <span role="button" className="secondary">
-                  Download
+                  {t('home.download')}
                 </span>
               </Link>
               <Link href="/faq" passHref>
                 <span role="button" className="contrast outline">
-                  FAQ
+                  {t('home.faq')}
                 </span>
               </Link>
             </p>
@@ -90,7 +98,7 @@ const Home: NextPage = () => {
           paddingInline: '25px'
         }}
       >
-        MAIN FEATURES AND MORE INFO
+        {t('home.mainFeatures')}
       </h1>
 
       <motion.section
@@ -107,19 +115,16 @@ const Home: NextPage = () => {
               <a href={img2}>
                 <img
                   src={img2}
-                  alt="Game Page"
-                  title="Game Page"
-                  aria-label="Game Page"
+                  alt={ts('gamePage.title')}
+                  title={ts('gamePage.title')}
+                  aria-label={ts('gamePage.title')}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Game Page</h2>
-              <p>
-                Check game details like description, publisher, download and
-                install size, time played and more.
-              </p>
+              <h2>{t('home.gamePage.title')}</h2>
+              <p>{t('home.gamePage.description')}</p>
             </div>
           </div>
         </div>
@@ -139,21 +144,16 @@ const Home: NextPage = () => {
               <a href={img3}>
                 <img
                   src={img3}
-                  alt="Platform Selection"
-                  title="Platform Selection"
-                  aria-label="Platform Selection"
+                  alt={ts('platformSelection.title')}
+                  title={ts('platformSelection.title')}
+                  aria-label={ts('platformSelection.title')}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Platform Selection</h2>
-              <p>
-                On Linux and on MacOS you can select to install the Windows
-                version of a native game. This might be handy in case the native
-                version is not supported anymore. On Linux you can choose that
-                for GOG games only.
-              </p>
+              <h2>{t('home.platformSelection.title')}</h2>
+              <p>{t('home.platformSelection.description')}</p>
             </div>
           </div>
         </div>
@@ -172,21 +172,17 @@ const Home: NextPage = () => {
             <div>
               <a href={img4}>
                 <img
-                  alt="Epic Store inside Heroic"
-                  title="Epic Store inside Heroic"
-                  aria-label="Epic Store inside Heroic"
+                  alt={ts('accessStores.title')}
+                  title={ts('accessStores.title')}
+                  aria-label={ts('accessStores.title')}
                   src={img4}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Access to the Stores</h2>
-              <p>
-                Go to the Epic, Amazon Prime or GOG store without even leaving
-                Heroic. Get free games or buy new ones directly from Heroic's
-                interface!
-              </p>
+              <h2>{t('home.accessStores.title')}</h2>
+              <p>{t('home.accessStores.description')}</p>
             </div>
           </div>
         </div>
@@ -205,20 +201,17 @@ const Home: NextPage = () => {
             <div>
               <a href={img8}>
                 <img
-                  alt="Context Menu"
-                  title="Context Menu"
-                  aria-label="Context Menu"
+                  alt={ts('organizeLibrary.title')}
+                  title={ts('organizeLibrary.title')}
+                  aria-label={ts('organizeLibrary.title')}
                   src={img8}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Organize your library</h2>
-              <p>
-                Add games to favorites or simply hide the games you already
-                played or will never play at all!
-              </p>
+              <h2>{t('home.organizeLibrary.title')}</h2>
+              <p>{t('home.organizeLibrary.description')}</p>
             </div>
           </div>
         </div>
@@ -237,20 +230,17 @@ const Home: NextPage = () => {
             <div>
               <a href={gif}>
                 <img
-                  alt="Themes"
-                  title="Themes"
-                  aria-label="Themes"
+                  alt={ts('themes.title')}
+                  title={ts('themes.title')}
+                  aria-label={ts('themes.title')}
                   src={gif}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Themes</h2>
-              <p>
-                If you don't like the default colors, you have the ability to
-                change them. It also includes the famous Dracula theme.{' '}
-              </p>
+              <h2>{t('home.themes.title')}</h2>
+              <p>{t('home.themes.description')}</p>
             </div>
           </div>
         </div>
@@ -269,21 +259,16 @@ const Home: NextPage = () => {
             <div>
               <a href={img5}>
                 <img
-                  alt="Wine Manager"
-                  aria-label="Wine Manager"
+                  alt={ts('wineManager.title')}
+                  aria-label={ts('wineManager.title')}
                   src={img5}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Wine Manager</h2>
-              <p>
-                On Linux, download the latest version of Wine-GE, Wine-Lutris or
-                even Proton-GE using the Wine Manager. These selection of Wine
-                version are focused on improving the gaming experience and
-                compatibility.
-              </p>
+              <h2>{t('home.wineManager.title')}</h2>
+              <p>{t('home.wineManager.description')}</p>
             </div>
           </div>
         </div>
@@ -301,24 +286,17 @@ const Home: NextPage = () => {
             <div>
               <a href={img6}>
                 <img
-                  alt="Wine Settings"
-                  title="Wine Settings"
-                  aria-label="Wine Settings"
+                  alt={ts('wineSettings.title')}
+                  title={ts('wineSettings.title')}
+                  aria-label={ts('wineSettings.title')}
                   src={img6}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Wine Settings</h2>
-              <p>
-                Besides using the right Wine version, it is important to setup
-                everything to have the best gameplay experience on Linux and on
-                macOS. Under the Wine Settings it is possible to auto install
-                tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks
-                and Run EXE on the prefix, so you can install games
-                pre-requisites in a easy way.
-              </p>
+              <h2>{t('home.wineSettings.title')}</h2>
+              <p>{t('home.wineSettings.description')}</p>
             </div>
           </div>
         </div>
@@ -336,27 +314,25 @@ const Home: NextPage = () => {
             <div>
               <a href={img7}>
                 <img
-                  alt="Heroic is supported in several languages"
-                  title="Heroic is supported in several languages"
-                  aria-label="Heroic is supported in several languages"
+                  alt={ts('multiLanguage.title')}
+                  title={ts('multiLanguage.title')}
+                  aria-label={ts('multiLanguage.title')}
                   src={img7}
                   loading="lazy"
                 />
               </a>
             </div>
             <div className="description">
-              <h2>Multi Language</h2>
+              <h2>{t('home.multiLanguage.title')}</h2>
               <p>
-                Heroic was translated by the community in more than 40
-                languages, from Portuguese to Korean, from Farsi to French. You
-                can also help with translations by accessing{' '}
+                {t('home.multiLanguage.description')}{' '}
                 <a
                   href="https://hosted.weblate.org/projects/heroic-games-launcher/"
                   rel="norefferer"
                   target="_blank"
                 >
                   {' '}
-                  our Weblate Page
+                  {t('home.multiLanguage.weblateLinkText')}
                 </a>
               </p>
             </div>

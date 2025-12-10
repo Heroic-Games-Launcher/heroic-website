@@ -4,10 +4,11 @@ import { getLatestReleases, ReleaseUrls } from './api/github'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import { osRequirements } from './api/constants'
+import { useTranslation } from 'react-i18next'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
+  const { t } = useTranslation()
 
   const userAgent = global.window?.navigator?.userAgent || ''
   const [releases, setReleases] = React.useState<ReleaseUrls>({
@@ -30,8 +31,6 @@ const Downloads: NextPage = () => {
     return null
   }
 
-  console.log(releases)
-
   const isWindows = userAgent.toLowerCase().includes('windows')
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac
@@ -45,7 +44,7 @@ const Downloads: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Download Heroic</title>
+        <title>{t('downloads.pageTitle')}</title>
         <meta
           name="description"
           content="An Open Source GOG , Amazon Prime and Epic Games Launcher"
@@ -54,40 +53,33 @@ const Downloads: NextPage = () => {
       </Head>
       <header className="hero">
         <div className="container">
-          <h1>Download</h1>
-          <p>Heroic is available for all Major operating systems.</p>
+          <h1>{t('downloads.title')}</h1>
+          <p>{t('downloads.subtitle')}</p>
 
           <hr className="spacer" />
 
           <details open={isLinux}>
-            <summary>Linux</summary>
-            <p>Supported OS versions: {osRequirements.linux}</p>
+            <summary>{t('downloads.linux.title')}</summary>
+            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.linux')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>Flatpak</h4>
-                <p>
-                  Get the best Heroic experience on any Linux distribution or on
-                  the Steam Deck via Flatpak.
-                </p>
+                <h4>{t('downloads.linux.flatpak.title')}</h4>
+                <p>{t('downloads.linux.flatpak.description')}</p>
                 <footer>
                   <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
                     <strong onClick={() => handleDownload('flatpak')}>
-                      Get from Flathub
+                      {t('downloads.linux.flatpak.button')}
                     </strong>
                   </a>
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>AppImage</h4>
-                <p>
-                  Download it in AppImage format so it will work on any Linux
-                  distro. The AppImage can update itself when a new version is
-                  released.
-                </p>
+                <h4>{t('downloads.linux.appimage.title')}</h4>
+                <p>{t('downloads.linux.appimage.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Linux}>
                     <strong onClick={() => handleDownload('appimage-stable')}>
-                      Stable
+                      {t('downloads.linux.appimage.stable')}
                     </strong>
 
                     <span className="smallText">
@@ -97,7 +89,7 @@ const Downloads: NextPage = () => {
                   {releases.LinuxBeta && (
                     <a href={releases.LinuxBeta}>
                       <strong onClick={() => handleDownload('appimage-beta')}>
-                        Beta
+                        {t('downloads.linux.appimage.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.LinuxBeta.split('/')[7] ?? ''})`}
@@ -107,15 +99,12 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>Other</h4>
-                <p>
-                  Heroic is also distributed in RPM, DEB and a TAR.XZ file.
-                  Check for alternative repos in our Github.
-                </p>
+                <h4>{t('downloads.linux.other.title')}</h4>
+                <p>{t('downloads.linux.other.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                     <strong onClick={() => handleDownload('all-packages')}>
-                      See all
+                      {t('downloads.linux.other.button')}
                     </strong>
                   </a>
                 </footer>
@@ -124,19 +113,16 @@ const Downloads: NextPage = () => {
           </details>
 
           <details open={isWindows}>
-            <summary>Windows</summary>
-            <p>Supported OS versions: {osRequirements.windows}</p>
+            <summary>{t('downloads.windows.title')}</summary>
+            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.windows')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>Setup</h4>
-                <p>
-                  Install Heroic on your system and get auto-updates when a new
-                  version is released. Next, Next, Finish!
-                </p>
+                <h4>{t('downloads.windows.setup.title')}</h4>
+                <p>{t('downloads.windows.setup.description')}</p>
                 <footer>
                   <a href={releases.Windows}>
                     <strong onClick={() => handleDownload('windows-stable')}>
-                      Stable
+                      {t('downloads.windows.setup.stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.Windows.split('/')[7] ?? ''})`}
@@ -145,7 +131,7 @@ const Downloads: NextPage = () => {
                   {releases.WindowsBeta && (
                     <a href={releases.WindowsBeta}>
                       <strong onClick={() => handleDownload('windows-beta')}>
-                        Beta
+                        {t('downloads.windows.setup.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
@@ -154,45 +140,13 @@ const Downloads: NextPage = () => {
                   )}
                 </footer>
               </article>
-              {/*               {releases.WindowsArm && (
-                <article className={styles.downloadBoxes}>
-                  <h4>Windows ARM64</h4>
-                  <p>
-                    For Windows on ARM64 devices like the Surface Pro X and
-                    others
-                  </p>
-                  <footer>
-                    <a href={releases.WindowsArm}>
-                      <strong onClick={() => handleDownload('mac-stable')}>
-                        Stable
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.WindowsArm.split('/')[7]})`}
-                      </span>
-                    </a>
-                    {releases.WindowsArmBeta && (
-                      <a href={releases.WindowsArmBeta}>
-                        <strong onClick={() => handleDownload('mac-beta')}>
-                          Beta
-                        </strong>
-                        <span className="smallText">
-                          {` (${releases.WindowsArmBeta.split('/')[7] ?? ''})`}
-                        </span>
-                      </a>
-                    )}
-                  </footer>
-                </article>
-              )} */}
               <article className={styles.downloadBoxes}>
-                <h4>Portable</h4>
-                <p>
-                  Use the portable version in case you do not want the full
-                  installation. Check for x64 and arm64 versions on our Github.
-                </p>
+                <h4>{t('downloads.windows.portable.title')}</h4>
+                <p>{t('downloads.windows.portable.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
                     <strong onClick={() => handleDownload('all-packages')}>
-                      See all packages
+                      {t('downloads.windows.portable.button')}
                     </strong>
                   </a>
                 </footer>
@@ -201,19 +155,16 @@ const Downloads: NextPage = () => {
           </details>
 
           <details open={isMac}>
-            <summary>MacOS</summary>
-            <p>Supported OS versions: {osRequirements.macos}</p>
+            <summary>{t('downloads.macos.title')}</summary>
+            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.macos')}</p>
             <div className="grid">
-            <article className={styles.downloadBoxes}>
-                <h4>Apple Chips (M1 and Newer)</h4>
-                <p>
-                  Optimized for Apple Silicon Chips. Open it and copy the Heroic
-                  App to the Applications folder and you are good to go!
-                </p>
+              <article className={styles.downloadBoxes}>
+                <h4>{t('downloads.macos.appleChips.title')}</h4>
+                <p>{t('downloads.macos.appleChips.description')}</p>
                 <footer>
                   <a href={releases.MacArm}>
                     <strong onClick={() => handleDownload('mac-stable')}>
-                      Stable
+                      {t('downloads.macos.appleChips.stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.MacArm.split('/')[7]})`}
@@ -222,7 +173,7 @@ const Downloads: NextPage = () => {
                   {releases.MacArmBeta && (
                     <a href={releases.MacArmBeta}>
                       <strong onClick={() => handleDownload('mac-beta')}>
-                        Beta
+                        {t('downloads.macos.appleChips.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.MacArmBeta.split('/')[7] ?? ''})`}
@@ -232,15 +183,12 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>Intel Chips</h4>
-                <p>
-                  Optimized for Intel Chips. Open it and copy the Heroic App to
-                  the Applications folder and you are good to go!
-                </p>
+                <h4>{t('downloads.macos.intelChips.title')}</h4>
+                <p>{t('downloads.macos.intelChips.description')}</p>
                 <footer>
                   <a href={releases.Mac}>
                     <strong onClick={() => handleDownload('mac-stable')}>
-                      Stable
+                      {t('downloads.macos.intelChips.stable')}
                     </strong>
                     <span className="smallText">
                       {` (${releases.Mac.split('/')[7]})`}
@@ -249,7 +197,7 @@ const Downloads: NextPage = () => {
                   {releases.MacBeta && (
                     <a href={releases.MacBeta}>
                       <strong onClick={() => handleDownload('mac-beta')}>
-                        Beta
+                        {t('downloads.macos.intelChips.beta')}
                       </strong>
                       <span className="smallText">
                         {` (${releases.MacBeta.split('/')[7] ?? ''})`}

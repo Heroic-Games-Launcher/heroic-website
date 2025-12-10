@@ -1,23 +1,31 @@
 import { NextPage } from 'next'
 import React from 'react'
-import { faqs } from './api/constants' // import the faqs array from constants.ts
+import { useTranslation } from 'react-i18next'
+
+interface FAQ {
+  question: string
+  answers: string[]
+}
 
 const FAQPage: NextPage = () => {
+  const { t } = useTranslation()
+  const questions = t('faq.questions', { returnObjects: true }) as FAQ[]
+
   return (
     <header className="hero">
       <div className="container">
-        <h1>Frequently Asked Questions</h1>
-        {faqs.map((faq, i) => (
+        <h1>{t('faq.title')}</h1>
+        {Array.isArray(questions) && questions.map((faq, i) => (
           <details key={i} open={i === 0}>
             <summary>{faq.question}</summary>
             <ul>
-              {faq.answer.map((answer, j) => (
+              {faq.answers.map((answer, j) => (
                 <li key={j}>
-                  {answer.split(' ').map((word) => {
+                  {answer.split(' ').map((word, k) => {
                     // check if the word is a URL
                     if (word.startsWith('https://')) {
                       return (
-                        <a href={word} target="_blank" rel="noreferrer">
+                        <a key={k} href={word} target="_blank" rel="noreferrer">
                           {word}
                         </a>
                       )

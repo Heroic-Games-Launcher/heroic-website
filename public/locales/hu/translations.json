@@ -1,0 +1,417 @@
+{
+  "common": {
+    "copyright": "Heroic Játék Indító"
+  },
+  "navbar": {
+    "home": "Kezdőlap",
+    "faq": "GYIK",
+    "documentation": "Dokumentáció",
+    "supportUs": "Támogass minket",
+    "cla": "CLA",
+    "heroicMastodon": "Heroic Mastodon oldal",
+    "heroicTwitter": "Heroic Twitter oldal",
+    "heroicGithub": "Heroic GitHub oldal",
+    "heroicDiscord": "Heroic Discord szerver"
+  },
+  "home": {
+    "heroTitle": "JÁTSSZ HŐSKÉNT!",
+    "heroDescription": "A Heroic egy ingyenes és nyílt forráskódú <strong>Epic</strong>, <strong>GOG</strong> és <strong>Amazon Prime Games</strong> indító <strong>Linux</strong>, <strong>Windows</strong> és <strong>macOS</strong> rendszerekhez. Elérhető a <strong>SteamDecken</strong> is!",
+    "download": "Letöltés",
+    "faq": "GYIK",
+    "mainFeatures": "FŐ FUNKCIÓK ÉS TÖBB INFO",
+    "gamePage": {
+      "title": "Játék oldal",
+      "description": "Ellenőrizd a játék részleteit, mint leírás, kiadó, letöltési és telepítési méret, játszott idő és még több."
+    },
+    "platformSelection": {
+      "title": "Platform kiválasztás",
+      "description": "Linuxon és macOS-en választhatsz, hogy telepítsd a natív játék Windows verzióját. Ez hasznos lehet, ha a natív verzió már nem támogatott. Linuxon ezt csak GOG játékoknál választhatod."
+    },
+    "accessStores": {
+      "title": "Hozzáférés az áruházakhoz",
+      "description": "Menj az Epic, Amazon Prime vagy GOG áruházba anélkül, hogy elhagynád a Heroicot. Szerezd meg az ingyenes játékokat vagy vásárolj újakat közvetlenül a Heroic felületéről!"
+    },
+    "organizeLibrary": {
+      "title": "Szervezd a könyvtárad",
+      "description": "Adj hozzá játékokat a kedvencekhez vagy egyszerűen rejtsd el a játékokat, amiket már játszottál vagy sosem fogsz játszani!"
+    },
+    "themes": {
+      "title": "Témák",
+      "description": "Ha nem tetszik az alapértelmezett szín, lehetőséged van megváltoztatni őket. Tartalmazza a híres Dracula témát is."
+    },
+    "wineManager": {
+      "title": "Wine kezelő",
+      "description": "Linuxon töltsd le a Wine-GE, Wine-Lutris vagy akár Proton-GE legújabb verzióját a Wine kezelővel. Ezek a Wine verzió kiválasztások a játékélmény és kompatibilitás javítására fókuszálnak."
+    },
+    "wineSettings": {
+      "title": "Wine beállítások",
+      "description": "A megfelelő Wine verzió használata mellett fontos beállítani mindent a legjobb játékélmény érdekében Linuxon és macOS-en. A Wine beállítások alatt lehetőség van automatikusan telepíteni eszközöket, mint DXVK, VKD3D, FSR és futtatni WineCFG-t, Winetricks-et és Run EXE-t a prefixen, hogy könnyen telepítsd a játék előfeltételeit."
+    },
+    "multiLanguage": {
+      "title": "Többnyelvű",
+      "description": "A Heroicot a közösség több mint 40 nyelvre lefordította, portugáltól koreaiig, perzsától franciáig. Segíthetsz a fordításokban, ha hozzáférsz",
+      "weblateLinkText": "a Weblate oldalunkhoz"
+    }
+  },
+  "downloads": {
+    "pageTitle": "Heroic letöltése",
+    "title": "Letöltés",
+    "subtitle": "A Heroic elérhető minden fő operációs rendszeren.",
+    "supportedOS": "Támogatott OS verziók:",
+    "osRequirements": {
+      "linux": "Ubuntu 22.04 vagy újabb, OpenSuse Tumbleweed, Fedora 37 vagy újabb, Arch Linux és származékai (mint Manjaro, Garuda és EndeavourOS). A Heroic működni fog a legtöbb többi Linux disztribúción, de további beállításokat és hibaelhárítást igényelhet. Támogatott a SteamOS-on is, de a letöltés csak a Discover szoftverközponton keresztül érhető el.",
+      "windows": "Windows 10 és 11",
+      "macos": "macOS 14 vagy újabb."
+    },
+    "linux": {
+      "title": "Linux",
+      "flatpak": {
+        "title": "Flatpak",
+        "description": "Szerezd meg a legjobb Heroic élményt bármely Linux disztribúción vagy Steam Deck-en Flatpak-kel.",
+        "button": "Szerezd meg Flathub-ról"
+      },
+      "appimage": {
+        "title": "AppImage",
+        "description": "Töltsd le AppImage formátumban, hogy működjön bármely Linux disztribúción. Az AppImage automatikusan frissíti magát, amikor új verzió jelenik meg.",
+        "stable": "Stabil",
+        "beta": "Beta"
+      },
+      "other": {
+        "title": "Egyéb",
+        "description": "A Heroic RPM, DEB és TAR.XZ formátumban is terjesztésre kerül. Ellenőrizd az alternatív repo-kat a Github-onkon.",
+        "button": "Lásd az összeset"
+      }
+    },
+    "windows": {
+      "title": "Windows",
+      "setup": {
+        "title": "Telepítő",
+        "description": "Telepítsd a Heroicot a rendszeredre és kapj automatikus frissítéseket, amikor új verzió jelenik meg. Tovább, Tovább, Befejezés!",
+        "stable": "Stabil",
+        "beta": "Beta"
+      },
+      "portable": {
+        "title": "Hordozható",
+        "description": "Használd a hordozható verziót, ha nem akarod a teljes telepítést. Ellenőrizd az x64 és arm64 verziókat a Github-onkon.",
+        "button": "Lásd az összes csomagot"
+      }
+    },
+    "macos": {
+      "title": "MacOS",
+      "appleChips": {
+        "title": "Apple chipek (M1 és újabbak)",
+        "description": "Optimalizálva Apple Silicon chipekhez. Nyisd meg és másold a Heroic app-ot az Applications mappába és kész vagy!",
+        "stable": "Stabil",
+        "beta": "Beta"
+      },
+      "intelChips": {
+        "title": "Intel chipek",
+        "description": "Optimalizálva Intel chipekhez. Nyisd meg és másold a Heroic app-ot az Applications mappába és kész vagy!",
+        "stable": "Stabil",
+        "beta": "Beta"
+      }
+    }
+  },
+  "donate": {
+    "pageTitle": "Támogasd a Heroic fejlesztését",
+    "title": "Támogass minket",
+    "subtitle": "A Heroic ingyenes! Az adományok segítenek életben tartani a projektet.",
+    "patreon": {
+      "title": "Patreon",
+      "type": "Havi előfizetés",
+      "description": "Aktiválj havi előfizetést Patreon-on, hogy támogass minket és kapj jutalmakat.",
+      "button": "Menj Patreon-ra"
+    },
+    "kofi": {
+      "title": "Ko-fi",
+      "type": "Egyszeri",
+      "description": "Támogasd a projektet azzal, hogy veszel nekünk egy kávét. Így, gyorsan és egyszerűen!",
+      "button": "Menj Ko-fi-ra"
+    },
+    "gog": {
+      "title": "GOG.com",
+      "type": "Egyszeri",
+      "description": "Használd a linkünket vásárláskor GOG-on és támogasd a projektet. Klassz, ugye?",
+      "button": "Menj GOG-ra"
+    },
+    "github": {
+      "title": "GitHub szponzor",
+      "type": "Egyszeri vagy rugalmas előfizetés",
+      "description": "Támogass minket egyszeri vagy ismétlődő adománnyal GitHub-on keresztül.",
+      "button": "Menj GitHub-ra"
+    }
+  },
+  "cla": {
+    "pageTitle": "CLA",
+    "title": "Közreműködői Licenc Szerződés",
+    "intro1": "Ez a Közreműködői Licenc Szerződés (a \"CLA\") a szerződés aláíró blokkjában megadott személy (\"Te\") és a Heroic Labs, Inc. (\"Heroic\") között jött létre, hatályba lépve aláírásod dátumától és szabályozva a Heroic-nak való hozzájárulásaid feltételeit.",
+    "intro2": "Elfogadod és elfogadod a következő feltételeket és rendelkezéseket a Heroic's Heroic Games Launcher projektjéhez (a \"Projekt\") való múltbeli, jelenlegi és jövőbeli hozzájárulásaidra. Cserébe a Heroic nem használja a hozzájárulásaidat olyan módon, amely ellentétes a Heroic üzleti céljaival. A Heroic által terjesztett szoftver címzettjeinek ebben a CLA-ban biztosított licenc kivételével, fenntartod minden jogot, címet és érdeket a hozzájárulásaidban.",
+    "definitions": {
+      "title": "Meghatározások.",
+      "contribution": "\"Hozzájárulás\" jelent bármilyen eredeti szerzői művet, beleértve bármilyen módosítást vagy hozzáadást egy meglévő műhöz, amelyet szándékosan benyújtasz vagy korábban benyújtottál Heroic-nak a Projekt dokumentációjának vagy dokumentációjának befoglalására.",
+      "submit": "\"Benyújtás\" jelent bármilyen elektronikus, szóbeli vagy írásbeli kommunikációt, amely Heroic-hoz vagy képviselőihez kerül elküldésre, beleértve de nem kizárólagosan az elektronikus levelezési listákon, forráskód vezérlő rendszerekben és probléma követő rendszerekben való kommunikációt, amelyeket Heroic vagy Heroic nevében kezelnek a Projekt javításának és fejlesztésének céljából, kivéve a nyilvánvalóan vagy más módon írásban kijelölt kommunikációt \"Nem hozzájárulás\" által Te által."
+    },
+    "copyrightLicense": {
+      "title": "Szerzői jog licenc.",
+      "content": "A CLA feltételei és rendelkezései szerint ezennel örökös, világszerte érvényes, nem kizárólagos, ingyenes, jogdíjmentes, visszavonhatatlan szerzői jog licencet adsz Heroic-nak és a Heroic által terjesztett szoftver címzettjeinek a hozzájárulásaid és ilyen származékos művek reprodukálására, származékos művek előkészítésére, nyilvános megjelenítésre, nyilvános előadásra, allicencre és terjesztésre."
+    },
+    "patentLicense": {
+      "title": "Szabadalmi licenc.",
+      "content": "A CLA feltételei és rendelkezései szerint ezennel örökös, világszerte érvényes, nem kizárólagos, ingyenes, jogdíjmentes, visszavonhatatlan (ebben a szakaszban meghatározott kivételektől eltekintve) szabadalmi licencet adsz Heroic-nak és a Heroic által terjesztett szoftver címzettjeinek a Projekt gyártására, gyártására, használatára, értékesítésre kínálására, értékesítésre, importálására és más módon átruházására, ahol ez a licenc csak azokra a szabadalmi igényekre vonatkozik, amelyeket Te licencelhetsz, és amelyek szükségszerűen megsértésre kerülnek a hozzájárulásaid által (önmagában) vagy a hozzájárulásaid kombinációjával azzal a Projekt-tel, amelyhez a hozzájárulás benyújtásra került. Ha bármely entitás szabadalmi pert indít ellened vagy bármely más entitás ellen (beleértve a keresetben vagy keresztkeresetben való ellentmondást), állítva, hogy a hozzájárulásod vagy a hozzájárulásod Projektje közvetlen vagy hozzájáruló szabadalmi jogsértés, akkor a CLA alapján ennek az entitásnak adott szabadalmi licencek megszűnnek azon a napon, amikor ez a per megindításra kerül."
+    },
+    "representations": {
+      "title": "Képviseletek és garanciák.",
+      "intro": "A Licencadó képviseli és garantálja:",
+      "item1": "Jogilag jogosult vagy a fenti licencek megadására, és ha a munkáltatóid (akárkik) rendelkeznek a hozzájárulásaid által létrehozott szellemi tulajdonjogokkal, amelyek magukban foglalják a hozzájárulásaidat, akkor képviselsz és garantálsz, hogy megkaptad a hozzájárulásaid benyújtásának engedélyét az adott munkáltató nevében, hogy a munkáltató lemondott ezekről a jogokról a hozzájárulásaid javára Heroic-nak, vagy hogy a munkáltató külön CLA-t kötött Heroic-kal;",
+      "item2": "Minden hozzájárulásod a te eredeti alkotásod (lásd a 6. szakaszt mások nevében történő benyújtásról); és",
+      "item3": "A hozzájárulásaid benyújtása tartalmazza a harmadik fél licenceinek vagy egyéb korlátozásoknak a teljes részleteit (beleértve de nem kizárólagosan a kapcsolódó szabadalmakat és védjegyeket), amelyekről személyesen tudsz, és amelyek bármely részével kapcsolatosak a hozzájárulásaidnak."
+    },
+    "support": {
+      "title": "Támogatás; Felelősség kizárása.",
+      "content": "Nem várod el, hogy támogatást nyújts a hozzájárulásaidért, kivéve ha azt kívánod. Ingyenesen, díjért vagy egyáltalán nem nyújthatsz támogatást. Hacsak nem szükséges a vonatkozó jogszabályok vagy írásbeli megállapodás szerint, a hozzájárulásaidat \"AHOGY VAN\" alapon biztosítod, bármilyen garancia vagy feltétel nélkül, beleértve de nem kizárólagosan a CÍM, NEM JOGSÉRTÉS, PIACI KÉSZSÉG vagy MEGHATÁROZOTT CÉLRA VALÓ ALKALMASSÁG garanciáit vagy feltételeit."
+    },
+    "thirdParty": {
+      "title": "Harmadik fél művei.",
+      "content": "Ha olyan művet kívánsz benyújtani, amely nem a te eredeti alkotásod, akkor azt külön benyújthatod Heroic-nak, azonosítva a forrásának teljes részleteit és bármilyen licencet vagy egyéb korlátozást (beleértve de nem kizárólagosan a kapcsolódó szabadalmakat, védjegyeket és licenc megállapodásokat), amelyekről személyesen tudsz, és nyilvánvalóan megjelölve a művet \"Harmadik fél nevében benyújtva: [itt nevezd meg]\"."
+    },
+    "notice": {
+      "title": "Értesítés.",
+      "content": "Elfogadod, hogy értesíted Heroic-ot bármilyen tényről vagy körülményről, amelyről tudomást szerzel, és amely miatt a CLA-ban tett képviseleteid bármely vonatkozásban pontatlanok."
+    },
+    "general": {
+      "title": "Általános.",
+      "content": "Ez a CLA a tárgyában teljes megértés és megállapodás, és felváltja a felek közötti tárgyban lévő összes és minden korábbi vagy egyidejű képviseletet, megértést vagy megállapodást. Ha ennek a CLA-nak bármely része végrehajthatatlannak bizonyul, a CLA többi része teljes erővel és hatállyal marad. Semmilyen módosítás vagy változtatás ennek a CLA-nak, sem pedig ennek a CLA-nak a jogaira való bármilyen lemondás nem lesz hatályos, hacsak nem írásban és aláírva a kötelezett fél által, és bármilyen megsértés vagy mulasztás lemondása nem fogja képezni ennek a CLA-nak vagy bármely későbbi megsértésnek vagy mulasztásnak a lemondását. Semmi ebben a CLA-ban nem hoz létre és a felek nem szándékoznak létrehozni semmilyen partnerséget vagy joint venture-t egymás között. Bármelyik fél szabadon átruházhatja ezt a CLA-t. Ez a CLA kötelező és kötelezi a felek utódait és engedményeseit. Ez a CLA a Delaware állam törvényei szerint szabályozott. Bármilyen és minden vita kizárólagos joghatósága a Delaware állambeli Wilmingtonban lévő állami és szövetségi bíróságok. Ez a CLA többszörözött példányokban hajtható végre ugyanazzal a hatállyal, mintha minden aláíró ugyanazon a dokumentumon írta volna alá."
+    },
+    "signature": {
+      "yourName": "A neved:",
+      "by": "Által:",
+      "date": "Dátum:",
+      "email": "Email:",
+      "heroicLabs": "Heroic Labs, Inc."
+    },
+    "printButton": "CLA nyomtatása"
+  },
+  "faq": {
+    "title": "Gyakran Ismételt Kérdések",
+    "questions": [
+      {
+        "question": "Mi a Heroic?",
+        "answers": [
+          "A Heroic egy nyílt forráskódú, könnyű játék indító, amely elérhető Linux, Windows és macOS rendszereken. Ez egy alternatíva az Epic Games Launcher és GOG Galaxy számára, és a magánéletre, kevesebb erőforrás használatára és számos eszköz támogatására fókuszál, mint Wine, Proton, Crossover, DXVK és VKD3D."
+        ]
+      },
+      {
+        "question": "Biztonságos a Heroic használata?",
+        "answers": [
+          "Igen, a Heroic egy biztonságos és megbízható játék indító, amely nem gyűjt adatokat a felhasználó számítógépéről. Továbbá nyílt forráskódú, ami azt jelenti, hogy a forráskód nyilvánosan elérhető és a közösség által áttekinthető, hogy biztosítsa, hogy nem tartalmaz rosszindulatú kódot."
+        ]
+      },
+      {
+        "question": "Gyűjt a Heroic adatokat, felhasználónevet vagy jelszót?",
+        "answers": [
+          "Nem, a Heroic egy magánélet-központú alkalmazás és nem gyűjt adatokat a számítógépedről vagy eszközödről. Nem gyűjt felhasználónevet, jelszót vagy bármilyen más személyes adatot. Bejelentkezel az hivatalos Epic Games Store vagy GOG weboldalra, majd a Heroic csak egy tokent tart meg, amely csak azokból az áruházakból való játékok listázására, letöltésére és indítására szolgál.",
+          "Továbbá a Heroic nem gyűjt használati adatokat vagy elemzéseket az alkalmazás használatodból. A magánélet fontos számunkra és lépéseket teszünk annak biztosítására, hogy az adataid biztonságosak legyenek és ne gyűjtésre kerüljenek vagy megosztásra kerüljenek az engedélyed nélkül."
+        ]
+      },
+      {
+        "question": "Kitilthatnak a Heroic használata miatt?",
+        "answers": [
+          "Nem valószínű, hogy kitiltanak a Heroic használata miatt játékok indításakor az Epic Games Store-ból vagy GOG-ból.",
+          "Azonban emlékezz, hogy bizonyos cselekvések, mint csalás vagy egy adott játék szolgáltatási feltételeinek megsértése, kitiltáshoz vezethetnek. Fontos betartani minden játék és áruház szabályait és irányelveit, hogy elkerülj bármilyen problémát.",
+          "Egyes játékok kitilthatnak, ha próbálod futtatni a játékot nem támogatott operációs rendszeren Wine vagy Proton használatával, például."
+        ]
+      },
+      {
+        "question": "Hogyan telepítsem a Heroicot a számítógépre?",
+        "answers": [
+          "A Heroic telepítésének folyamata attól függ, hogy milyen operációs rendszert használsz. Linuxon használhatsz csomagkezelőt, mint Flatpak, .deb, .pacman vagy .rpm a Heroic telepítéséhez, vagy használhatsz AppImage-et. macOS-en telepítheted a Heroicot standard alkalmazás csomagként, majd futtasd a parancsot xattr -r -d com.apple.quarantine /Applications/Heroic.app a terminálban a telepítés befejezéséhez. Windows-on használhatod a WinGet csomagkezelőt a winget install HeroicGamesLauncher.HeroicGamesLauncher parancs futtatásával, vagy töltsd le és futtasd a setup exe-t vagy portable exe-t a weboldalról."
+        ]
+      },
+      {
+        "question": "Milyen funkciók érhetők el jelenleg a Heroic-ban, és milyen funkciók vannak tervezve a jövőre?",
+        "answers": [
+          "Jelenleg elérhető funkciók a Heroic-ban:",
+          "Támogatás játékok indítására az Epic Games Store-ból és GOG-ból",
+          "Támogatás játékok telepítésére, eltávolítására, frissítésére, javítására és áthelyezésére",
+          "Támogatás már telepített játékok importálására",
+          "Támogatás Epic játékok online játékára (AntiCheat macOS-en és Linux-on a játéktól függ)",
+          "Támogatás játékok játékára Wine vagy Proton használatával Linux-on",
+          "Támogatás játékok játékára Crossover használatával macOS-en",
+          "Támogatás egyéni Wine és Proton verziók letöltésére Linux-on",
+          "Közvetlen hozzáférés az Epic és GOG áruházakhoz a Heroic felületéről",
+          "Játék kompatibilitási információk keresése ProtonDB-n Linux-on",
+          "Meglévő Epic Games Store telepítés szinkronizálása telepített játékokkal",
+          "Mentések szinkronizálása a felhővel",
+          "Egyéni témák támogatása",
+          "Letöltési sor",
+          "Játékok és alkalmazások hozzáadása GOG és Epic kívül",
+          "Tervezett funkciók a jövőre:",
+          "Támogatás más áruházak számára (mint Amazon Gaming és IndieGala)",
+          "GOG játékok online játékának támogatása"
+        ]
+      },
+      {
+        "question": "Milyen operációs rendszereket támogat a Heroic?",
+        "answers": [
+          "Linux: Ubuntu 22.04 vagy újabb, OpenSuse Tumbleweed, Fedora 37 vagy újabb, Arch Linux és származékai (mint Manjaro, Garuda és EndeavourOS). A Heroic működni fog a legtöbb többi Linux disztribúción, de további beállításokat és hibaelhárítást igényelhet. Támogatott a SteamOS-on is, de a letöltés csak a Discover szoftverközponton keresztül érhető el.",
+          "Windows: Windows 10 és 11",
+          "macOS: macOS 14 vagy újabb."
+        ]
+      },
+      {
+        "question": "Mik a Heroic minimális rendszerkövetelményei?",
+        "answers": [
+          "A Heroic egy Electron-alapú alkalmazás és körülbelül 500MB tárhelyet igényel. Ami a hardver követelményeket illeti, a Heroic futtatásának minimális specifikációi:",
+          "2GB RAM",
+          "1.8GHz kétmagos processzor",
+          "Azonban emlékezz, hogy ezek a minimális követelmények és szükséged lehet erősebb hardverre bizonyos játékok vagy alkalmazások futtatásához."
+        ]
+      },
+      {
+        "question": "Hogyan használjam a Heroicot játékok játékára?",
+        "answers": [
+          "Miután telepítetted a Heroicot, használhatod játékok böngészésére és telepítésére különböző forrásokból. Használhatod játékok indítására és kezelésére is, amelyek telepítve vannak a számítógépeden. Ha problémákba ütközöl játékokkal, ellenőrizd az általános dokumentációt a hibaelhárításról és megoldásokról ezen a linken: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . Ha nem találod a megoldást, kérhetsz segítséget a Heroic Discord szerverén ezen a linken: https://discord.com/invite/rHJ2uqdquK ."
+        ]
+      },
+      {
+        "question": "Tölthetek le több játékot egyszerre?",
+        "answers": [
+          "Igen, több játékot is letölthetsz egyszerre a Heroic-ban a letöltési sor használatával. A letöltési sor használatához egyszerűen indíts egy új telepítési opciót, amikor már telepítesz egy játékot. Ez hozzáadja a játékot a sorhoz és letöltésre kerül, miután a sor előtt lévő játékok befejezték a letöltést.",
+          "Megtekintheted a letöltési sort és monitorozhatod a letöltéseid előrehaladását a 'Letöltések' fülre lépve az oldalsávon. Ott szüneteltetheted vagy megszakíthatod a letöltéseket szükség szerint."
+        ]
+      },
+      {
+        "question": "Hogyan adhatok hozzá játékokat Epic vagy GOG kívül?",
+        "answers": [
+          "Hozzáadhatsz játékokat Epic vagy GOG kívül a Heroic-ban a 'Játék hozzáadása' gombra lépve a játék könyvtárban. Ez lehetővé teszi számodra, hogy böngészd az executable fájlt a számítógépeden és hozzáadd egyéni játékként a Heroic-hoz.",
+          "Kérjük, vedd figyelembe, hogy az egyéni játékok támogatása változhat és egyes funkciók, mint automatikus frissítések és mentés szinkronizálás, nem érhetők el. Továbbá manuálisan kell konfigurálnod a játék beállításait, hogy megfelelően működjön."
+        ]
+      },
+      {
+        "question": "Mi a Wine és hogyan működik a Heroic-kal?",
+        "answers": [
+          "A Wine egy ingyenes és nyílt forráskódú kompatibilitási réteg, amely lehetővé teszi Windows alkalmazások futtatását Unix-like operációs rendszereken, beleértve Linux-ot és macOS-t. A Heroic Wine-t használ Windows játékok futtatására ezeken az operációs rendszereken.",
+          "A Wine nem emulátor, hanem fordítja a Windows API hívásokat POSIX hívásokká, amelyeket az operációs rendszer ért. Ez lehetővé teszi Windows játékok futtatását teljes Windows telepítés nélkül.",
+          "Tudj meg többet a Wine-ról és képességeiről a Wine projekt weboldalán: https://www.winehq.org"
+        ]
+      },
+      {
+        "question": "Mi a Proton és hogyan működik a Heroic-kal?",
+        "answers": [
+          "A Proton a Valve által fejlesztett kompatibilitási réteg, amely lehetővé teszi Windows játékok futtatását Linux-on. A Wine-ra épül, de további javításokat és fejlesztéseket tartalmaz, hogy stabilabb és kompatibilisebb legyen több játékkal. A Heroic-ban Proton-t használhatsz Windows játékok futtatására Linux-on. Kiválaszthatod, hogy melyik Proton verziót használd minden játékhoz, és letölthetsz egyéni verziókat Proton-ból közvetlenül a Wine Manager oldalról Heroic-ban. Fontos megjegyezni, hogy a Proton nem Steam-en kívül játékok futtatására lett tervezve, és az eredmények változhatnak. Ellenőrizheted a kompatibilitási információkat minden játékhoz a ProtonDB weboldalon: https://www.protondb.com"
+        ]
+      },
+      {
+        "question": "Mi a Crossover és hogyan működik a Heroic-kal?",
+        "answers": [
+          "A Crossover egy kereskedelmi szoftver, amely lehetővé teszi Windows alkalmazások futtatását Linux-on és macOS-en. A CodeWeavers fejleszti és megvásárolható a weboldalukon: https://www.codeweavers.com/ .",
+          "A Heroic-ban Crossover-t használhatsz Windows játékok futtatására macOS-en a játék beállításokban a \"Crossover\" verzió kiválasztásával és a bottle név megadásával (alapértelmezett HEROIC). Kérjük, vedd figyelembe, hogy a Crossover harmadik fél szoftver és használata nem támogatott hivatalosan Heroic által.",
+          "Ha úgy döntesz, hogy megvásárolod a Crossover-t, használhatod a LEGENDARY kupon kódot kedvezményért és a Legendary alkalmazás fejlesztésének támogatására, amelyet a Heroic használ az Epic Games Store integrációjához."
+        ]
+      },
+      {
+        "question": "A játékom nem működik a Heroic-kal. Mit tegyek?",
+        "answers": [
+          "Ha problémákba ütközöl játék futtatásakor Heroic-kal, akkor: Ellenőrizd az általános dokumentációt a hibaelhárításról és megoldásokról ezen a linken: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . Ez az erőforrás tartalmazhat információt, amely segít megoldani a problémádat.",
+          "Ha nem találod a megoldást a dokumentációban, kérhetsz segítséget a Heroic Discord szerverén ezen a linken: https://discord.com/invite/rHJ2uqdquK . Más felhasználók és a Heroic csapat tagjai nyújthatnak tanácsot vagy segítséget.",
+          "Ha a probléma fennáll, fontold meg egy issue nyitását a Heroic GitHub oldalán ezen a linken: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . Adj meg annyi információt a problémádról, mint lehetséges, mint operációs rendszer, játék és bármilyen hibaüzenet, amit látsz, hogy segíts a csapatnak kivizsgálni és megoldani a problémát.",
+          "Ha a probléma specifikus egy adott játékra, fontold meg a játék dokumentációjának ellenőrzését vagy a játék fejlesztőjével való kapcsolatfelvételt segítségért.",
+          "Végül fontold meg más eszközök vagy kompatibilitási rétegek kipróbálását, mint Wine vagy Proton, hogy lássa, segíthetnek-e megoldani a problémát."
+        ]
+      },
+      {
+        "question": "Használhatom a Heroicot natív Linux játékok telepítésére és futtatására a GOG áruházból?",
+        "answers": [
+          "Igen, a Heroic használható natív Linux játékok telepítésére és futtatására a GOG áruházból. Azonban jelenleg nem lehetséges natív Linux játékok telepítése vagy futtatása az Epic Games Store-ból, mivel az Epic Games jelenleg nem kínál natív Linux játékokat. Ha problémákba ütközöl natív Linux játék futtatásakor Heroic-kal, próbáld meg engedélyezni a \"Steam Runtime használata\" beállítást a Játék beállítások menüben. Ez a beállítás miatt a Heroic Steam Runtime-ot használ a játék futtatására, amely segíthet megoldani a hiányzó könyvtárak problémáit."
+        ]
+      },
+      {
+        "question": "Használhatom a Heroicot natív macOS játékok telepítésére és futtatására GOG-ból és Epic Games-ből?",
+        "answers": [
+          "Igen, a Heroic használható natív macOS játékok telepítésére és futtatására a GOG áruházból és az Epic Games Store-ból. Egyszerűen böngészd és telepítsd a játékokat, mint bármely más játékot a Heroic-ban."
+        ]
+      },
+      {
+        "question": "Használhatom a Heroicot Wine és Proton verziók kezeléséhez és letöltéséhez közvetlenül az interfészről Linux-on?",
+        "answers": [
+          "Igen, a Heroic tartalmaz eszközöket Wine és Proton verziók kezeléséhez és letöltéséhez közvetlenül az interfészről Linux-on. Ezekhez az eszközökhöz hozzáférhetsz a fő menü Eszközök menüjére lépve és kiválasztva a \"Wine verziók kezelése\" vagy \"Proton verziók kezelése\" opciót."
+        ]
+      },
+      {
+        "question": "Hogyan adjak hozzá játék shortcutokat az asztalomhoz vagy start menühöz a Heroic-ban?",
+        "answers": [
+          "Játék shortcutok hozzáadásához az asztalodhoz vagy start menüdhez a Heroic-ban először menj a játék oldalára, amelyhez shortcutot szeretnél létrehozni. Ezután klikkelj a három pont ikonra az oldal jobb felső sarkában és válaszd a \"Shortcutok hozzáadása\" opciót a menüből. Ez létrehoz egy shortcutot a játékhoz az asztalodon és hozzáadja a start menüdhez, hogy automatikusan induljon, amikor elindítod a számítógépedet. Használhatod a \"Shortcut hozzáadása Steam-hez\" opciót is, hogy shortcutot hozz létre a játékhoz a Steam kliensben."
+        ]
+      },
+      {
+        "question": "Hogyan támogathatom finanszírozásban a Heroic projektet?",
+        "answers": [
+          "Ha finanszírozásban szeretnéd támogatni a Heroic projektet, több módja van. Lehetsz támogató Patreon-on, egyszeri adományt adhatsz Ko-fi-n keresztül vagy regisztrálhatsz szponzorként GitHub Sponsors-on. Ezeknek a linkjei megtalálhatók a Heroic weboldalán ezen a linken: https://heroicgameslauncher.com/donate ."
+        ]
+      },
+      {
+        "question": "Hogyan járulhatok hozzá fordításokkal a Heroic-hoz?",
+        "answers": [
+          "Ha segíteni szeretnél különböző nyelvekre fordítani a Heroicot, hozzájárulhatsz a Weblate platformon ezen a linken: https://hosted.weblate.org/projects/heroic-games-launcher/ . Egyszerűen hozz létre egy fiókot Weblate-en és csatlakozz a projekthez, hogy elkezdhesd a fordítást. A hozzájárulásaidat a Heroic csapat fogja áttekinteni és egyesíteni."
+        ]
+      },
+      {
+        "question": "Hogyan integrálódik a Heroic az Epic Games-szel és GOG-gal?",
+        "answers": [
+          "A Heroic két parancssori eszköz (CLI) segítségével integrálódik az Epic Games áruházzal és a GOG áruházzal. Az Epic Games-hez a Legendary-t használja, egy nyílt forráskódú CLI alkalmazást, amelyet derrod fejlesztett és hostolt GitHub-on ezen a linken: https://github.com/derrod/legendary . A GOG-hoz GOGDL-t használ, egy nyílt forráskódú CLI eszközt, amelyet a Heroic csapat fejlesztett. Ha problémákba ütközöl ezekkel az eszközökkel, próbálj alternatív binárist használni a Heroic-ban a Speciális beállítások menüre lépve és kiválasztva az \"Alternatív bináris használata\" opciót. Ez segíthet megoldani bármilyen problémát, amivel találkozol."
+        ]
+      },
+      {
+        "question": "Van többnyelvű támogatás a Heroic-ban?",
+        "answers": [
+          "Igen, a Heroicot a közösség több mint 40 különböző nyelvre fordította. Megtalálhatod a jelenleg támogatott nyelvek listáját a Heroic weboldalán vagy a GitHub tároló README fájljában. Ha segíteni szeretnél új nyelvre fordítani a Heroicot, hozzájárulhatsz a Weblate platformon ezen a linken: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+        ]
+      },
+      {
+        "question": "Hogyan járulhatok hozzá a Heroic fejlesztéséhez vagy fordíthatom le új nyelvre?",
+        "answers": [
+          "Hibákat jelenthetsz vagy új funkciókat javasolhatsz issue nyitásával a GitHub tárolóban ezen a linken: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues .",
+          "Kódot vagy dokumentációt járulhatsz hozzá pull request létrehozásával a GitHub tárolóban",
+          "Támogathatod a projektet finanszírozásban Patreon-on, Ko-fi-n vagy GitHub Sponsors-on ezen a linken: https://heroicgameslauncher.com/donate .",
+          "Segíthetsz új nyelvre fordítani a Heroicot a Weblate platformon történő hozzájárulással ezen a linken: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+        ]
+      },
+      {
+        "question": "Hogyan használjam a Steam Runtime-ot hiányzó könyvtárak javítására Linux-on natív Linux játékok futtatásakor GOG-ból?",
+        "answers": [
+          "Ha hiányzó könyvtárak problémáiba ütközöl natív Linux játékok futtatásakor a GOG áruházból Linux-on, próbáld meg használni a Steam Runtime-ot a javításhoz. Ehhez menj a Játék beállítások menüre Heroic-ban és válaszd a \"Steam Runtime használata\" opciót. Ez miatt a Heroic Steam Runtime-ot használ a játék futtatására, amely segíthet megoldani a hiányzó könyvtárak problémáit. Ne feledd, hogy ez az opció csak Linux-on elérhető, és Steam kliens telepítését igényli a számítógépeden."
+        ]
+      },
+      {
+        "question": "Használhatom a Heroicot más platformok, mint Ubisoft Connect vagy EA App játékainak kezeléséhez és futtatásához?",
+        "answers": [
+          "Igen, használhatod az ADD GAME funkciót más áruház frontend hozzáadására, mint Ubisoft Connect és EA APP. Azonban az integráció nem ugyanaz, mint az Epic és GOG esetében, mivel ebben az esetben el kell indítanod a Heroicot, majd elindítani a másik launchert Heroic-ból."
+        ]
+      },
+      {
+        "question": "Lehetséges-e használni a Heroicot olyan játékok futtatására, amelyeket az Epic Games Store vagy GOG kívül vásároltak, mint fizikai lemezről vagy másik digitális áruházból?",
+        "answers": [
+          "Igen, használhatod az ADD GAME funkciót Heroic-ban olyan játékok hozzáadására, amelyeket az Epic Games Store vagy GOG kívül vásároltak. A játék normál telepítése után használd az ADD GAME opciót és töltsd ki a szükséges információkat. A Heroic automatikusan letölt egy képet a játékhoz a web-ről. Ha a játéknak telepítőt kell futtatnia az indítás előtt, használhatod a \"Telepítő futtatása először\" gombot az ADD GAME képernyőn."
+        ]
+      },
+      {
+        "question": "Ingyenes a Heroic használata?",
+        "answers": [
+          "Igen, a Heroic teljesen ingyenes használatra."
+        ]
+      },
+      {
+        "question": "Vannak alternatívák a Heroic-ra?",
+        "answers": [
+          "Igen, néha valamilyen okból egy játék nem működik Heroic-kal, és a nyílt forrás világának jó része az alternatívák. Epic játékok esetében vannak alternatívák, amelyek használhatók játékok futtatására platformtól függően. Linux-on olyan opciók vannak, mint Bottles, Lutris és Gamehub. GOG játékok esetében konkrétan Minigalaxy is egy opció. Windows-on Playnite egy népszerű alternatíva."
+        ]
+      },
+      {
+        "question": "Mi a Heroic licence?",
+        "answers": [
+          "A Heroic a GNU General Public License v3.0 alatt kerül kiadásra. Ez egy copyleft licenc, ami azt jelenti, hogy a felhasználók szabadon használhatják, módosíthatják és terjeszthetik az alkalmazást, amíg követik a licenc feltételeit. Konkrétan bármilyen módosított verzió az alkalmazásnak ugyanazon a licencen kell kiadásra kerüljön, és tartalmaznia kell a licenc másolatát. Ezért ha fork-olod a Heroicot és eladod, ki kell adnod a módosított verziód forráskódját ugyanazon a licencen, és ingyen elérhetővé kell tenned mások számára. Nem használhatod a Heroic nevét vagy márkáját a fork-odhoz engedély nélkül."
+        ]
+      }
+    ]
+  }
+}
