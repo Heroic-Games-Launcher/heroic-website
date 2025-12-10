@@ -5,7 +5,7 @@
   "navbar": {
     "home": "Ev",
     "faq": "SSS",
-    "documentation": "Documentation",
+    "documentation": "Dokümentasyon",
     "supportUs": "Destekle",
     "cla": "CLA",
     "heroicMastodon": "Heroic Mastodon sayfası",
@@ -32,15 +32,15 @@
       "description": "Go to the Epic, Amazon Prime or GOG store without even leaving Heroic. Get free games or buy new ones directly from Heroic's interface!"
     },
     "organizeLibrary": {
-      "title": "Organize your library",
+      "title": "Kütüphaneni organize et",
       "description": "Add games to favorites or simply hide the games you already played or will never play at all!"
     },
     "themes": {
-      "title": "Themes",
-      "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
+      "title": "Temalar",
+      "description": "Varsayılan renkleri sevmiyorsanız, değiştirme seçeneğiniz var. Ünlü Dracula temasıda vardır."
     },
     "wineManager": {
-      "title": "Wine Manager",
+      "title": "Wine Yöneticisi",
       "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
     },
     "wineSettings": {
@@ -48,38 +48,38 @@
       "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
     },
     "multiLanguage": {
-      "title": "Multi Language",
+      "title": "Çoklu dil",
       "description": "Heroic was translated by the community in more than 40 languages, from Portuguese to Korean, from Farsi to French. You can also help with translations by accessing",
       "weblateLinkText": "our Weblate Page"
     }
   },
   "downloads": {
-    "pageTitle": "Download Heroic",
-    "title": "Download",
-    "subtitle": "Heroic is available for all Major operating systems.",
-    "supportedOS": "Supported OS versions:",
+    "pageTitle": "Heroic İndir",
+    "title": "İndir",
+    "subtitle": "Heroic bütün ana işletim sistemleri için mevcuttur.",
+    "supportedOS": "Desteklenen OS sürümleri:",
     "osRequirements": {
-      "linux": "Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.",
-      "windows": "Windows 10 and 11",
-      "macos": "macOS 14 or newer."
+      "linux": "Ubuntu 22.04 ve üstü, OpenSuse Tumbleweed, Fedora 37 ve üstü, Arch Linux ve çeşitleri (örneğin Manjaro, Garuda, ve EndeavourOS). Heroic çoğu linux dağıtımında çalışacaktır, ancak ek kurulum ve sorun giderme gerektirebilir. SteamOSdede mevcuttur, ancak indirmek sadece Discover mağazasında mevcuttur.",
+      "windows": "Windows 10 ve 11",
+      "macos": "macOS 14 ve üstü."
     },
     "linux": {
       "title": "Linux",
       "flatpak": {
         "title": "Flatpak",
         "description": "Get the best Heroic experience on any Linux distribution or on the Steam Deck via Flatpak.",
-        "button": "Get from Flathub"
+        "button": "Flathubdan kur"
       },
       "appimage": {
         "title": "AppImage",
         "description": "Download it in AppImage format so it will work on any Linux distro. The AppImage can update itself when a new version is released.",
-        "stable": "Stable",
+        "stable": "Stabil",
         "beta": "Beta"
       },
       "other": {
-        "title": "Other",
+        "title": "Diğer",
         "description": "Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.",
-        "button": "See all"
+        "button": "Tümünü gör"
       }
     },
     "windows": {
