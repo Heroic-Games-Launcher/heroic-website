@@ -3,413 +3,413 @@
     "copyright": "Heroic Games Launcher"
   },
   "navbar": {
-    "home": "Home",
+    "home": "홈",
     "faq": "FAQ",
-    "documentation": "Documentation",
-    "supportUs": "Support Us",
+    "documentation": "문서",
+    "supportUs": "지원하기",
     "cla": "CLA",
-    "heroicMastodon": "Heroic Mastodon Page",
-    "heroicTwitter": "Heroic Twitter Page",
-    "heroicGithub": "Heroic GitHub Page",
-    "heroicDiscord": "Heroic Discord Server"
+    "heroicMastodon": "Heroic Mastodon 페이지",
+    "heroicTwitter": "Heroic Twitter 페이지",
+    "heroicGithub": "Heroic GitHub 페이지",
+    "heroicDiscord": "Heroic Discord 서버"
   },
   "home": {
-    "heroTitle": "PLAY LIKE A HERO!",
-    "heroDescription": "Heroic is a Free and Open Source <strong>Epic</strong>, <strong>GOG</strong> and <strong>Amazon Prime Games</strong> launcher for <strong>Linux</strong>, <strong>Windows</strong> and <strong>macOS</strong>. Also available on the <strong>SteamDeck</strong>!",
-    "download": "Download",
+    "heroTitle": "히어로처럼 플레이하라!",
+    "heroDescription": "<strong>Linux</strong>, <strong>Windows</strong>, <strong>macOS</strong>용 무료 오픈 소스 <strong>Epic</strong>, <strong>GOG</strong>, <strong>Amazon Prime Games</strong> 런처입니다. <strong>SteamDeck</strong>에서도 사용할 수 있습니다!",
+    "download": "다운로드",
     "faq": "FAQ",
-    "mainFeatures": "MAIN FEATURES AND MORE INFO",
+    "mainFeatures": "주요 기능 및 추가 정보",
     "gamePage": {
-      "title": "Game Page",
-      "description": "Check game details like description, publisher, download and install size, time played and more."
+      "title": "게임 페이지",
+      "description": "게임 세부 정보 확인: 설명, 퍼블리셔, 다운로드 및 설치 크기, 플레이 시간 등."
     },
     "platformSelection": {
-      "title": "Platform Selection",
-      "description": "On Linux and on MacOS you can select to install the Windows version of a native game. This might be handy in case the native version is not supported anymore. On Linux you can choose that for GOG games only."
+      "title": "플랫폼 선택",
+      "description": "Linux와 macOS에서는 네이티브 게임의 Windows 버전을 설치할 수 있습니다. 이는 네이티브 버전이 더 이상 지원되지 않을 때 유용할 수 있습니다. Linux에서는 GOG 게임에 대해서만 선택할 수 있습니다."
     },
     "accessStores": {
-      "title": "Access to the Stores",
-      "description": "Go to the Epic, Amazon Prime or GOG store without even leaving Heroic. Get free games or buy new ones directly from Heroic's interface!"
+      "title": "스토어 액세스",
+      "description": "Heroic을 떠나지 않고도 Epic, Amazon Prime, GOG 스토어에 액세스하세요. Heroic의 인터페이스에서 무료 게임을 얻거나 새 게임을 구매하세요!"
     },
     "organizeLibrary": {
-      "title": "Organize your library",
-      "description": "Add games to favorites or simply hide the games you already played or will never play at all!"
+      "title": "라이브러리 정리",
+      "description": "게임을 즐겨찾기에 추가하거나 이미 플레이한 게임이나 절대 플레이하지 않을 게임을 숨기세요!"
     },
     "themes": {
-      "title": "Themes",
-      "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
+      "title": "테마",
+      "description": "기본 색상이 마음에 들지 않으면 변경할 수 있습니다. 유명한 Dracula 테마도 포함됩니다."
     },
     "wineManager": {
-      "title": "Wine Manager",
-      "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
+      "title": "Wine 관리자",
+      "description": "Linux에서 Wine 관리자를 사용하여 최신 Wine-GE, Wine-Lutris 또는 Proton-GE를 다운로드하세요. 이러한 Wine 버전은 게이밍 경험과 호환성을 향상시키는 데 초점을 맞춥니다."
     },
     "wineSettings": {
-      "title": "Wine Settings",
-      "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
+      "title": "Wine 설정",
+      "description": "올바른 Wine 버전을 사용하는 것 외에도 Linux와 macOS에서 최고의 게임 경험을 위해 모든 것을 설정하는 것이 중요합니다. Wine 설정 아래에서 DXVK, VKD3D, FSR과 같은 도구를 자동 설치하고 WineCFG, Winetricks, Run EXE를 프리픽스에서 실행하여 게임 전제 조건을 쉽게 설치할 수 있습니다."
     },
     "multiLanguage": {
-      "title": "Multi Language",
-      "description": "Heroic was translated by the community in more than 40 languages, from Portuguese to Korean, from Farsi to French. You can also help with translations by accessing",
-      "weblateLinkText": "our Weblate Page"
+      "title": "다중 언어",
+      "description": "Heroic은 커뮤니티에 의해 40개 이상의 언어로 번역되었습니다, 포르투갈어에서 한국어로, 페르시아어에서 프랑스어로. 당신도 번역에 기여할 수 있습니다",
+      "weblateLinkText": "우리의 Weblate 페이지를 방문하여"
     }
   },
   "downloads": {
-    "pageTitle": "Download Heroic",
-    "title": "Download",
-    "subtitle": "Heroic is available for all Major operating systems.",
-    "supportedOS": "Supported OS versions:",
+    "pageTitle": "Heroic 다운로드",
+    "title": "다운로드",
+    "subtitle": "Heroic은 모든 주요 운영 체제에서 사용할 수 있습니다.",
+    "supportedOS": "지원되는 OS 버전:",
     "osRequirements": {
-      "linux": "Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.",
-      "windows": "Windows 10 and 11",
-      "macos": "macOS 14 or newer."
+      "linux": "Ubuntu 22.04 이상, OpenSuse Tumbleweed, Fedora 37 이상, Arch Linux 및 파생 (Manjaro, Garuda, EndeavourOS 등). Heroic은 대부분의 다른 Linux 배포판에서 작동하지만 추가 설정과 문제 해결이 필요할 수 있습니다. SteamOS에서도 지원되지만 다운로드는 Discover 소프트웨어 센터를 통해서만 사용할 수 있습니다.",
+      "windows": "Windows 10 및 11",
+      "macos": "macOS 14 이상."
     },
     "linux": {
       "title": "Linux",
       "flatpak": {
         "title": "Flatpak",
-        "description": "Get the best Heroic experience on any Linux distribution or on the Steam Deck via Flatpak.",
-        "button": "Get from Flathub"
+        "description": "Flatpak을 통해 모든 Linux 배포판 또는 Steam Deck에서 최고의 Heroic 경험을 얻으세요.",
+        "button": "Flathub에서 가져오기"
       },
       "appimage": {
         "title": "AppImage",
-        "description": "Download it in AppImage format so it will work on any Linux distro. The AppImage can update itself when a new version is released.",
-        "stable": "Stable",
-        "beta": "Beta"
+        "description": "AppImage 형식으로 다운로드하여 모든 Linux 배포판에서 작동하도록 하세요. AppImage는 새 버전이 출시되면 자동으로 업데이트됩니다.",
+        "stable": "안정",
+        "beta": "베타"
       },
       "other": {
-        "title": "Other",
-        "description": "Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.",
-        "button": "See all"
+        "title": "기타",
+        "description": "Heroic은 RPM, DEB, TAR.XZ로도 배포됩니다. 우리의 Github에서 대체 리포를 확인하세요.",
+        "button": "모두 보기"
       }
     },
     "windows": {
       "title": "Windows",
       "setup": {
-        "title": "Setup",
-        "description": "Install Heroic on your system and get auto-updates when a new version is released. Next, Next, Finish!",
-        "stable": "Stable",
-        "beta": "Beta"
+        "title": "설정",
+        "description": "시스템에 Heroic을 설치하고 새 버전이 출시되면 자동 업데이트를 받으세요. 다음, 다음, 완료!",
+        "stable": "안정",
+        "beta": "베타"
       },
       "portable": {
-        "title": "Portable",
-        "description": "Use the portable version in case you do not want the full installation. Check for x64 and arm64 versions on our Github.",
-        "button": "See all packages"
+        "title": "휴대용",
+        "description": "전체 설치를 원하지 않는 경우 휴대용 버전을 사용하세요. 우리의 Github에서 x64 및 arm64 버전을 확인하세요.",
+        "button": "모든 패키지 보기"
       }
     },
     "macos": {
       "title": "MacOS",
       "appleChips": {
-        "title": "Apple Chips (M1 and Newer)",
-        "description": "Optimized for Apple Silicon Chips. Open it and copy the Heroic App to the Applications folder and you are good to go!",
-        "stable": "Stable",
-        "beta": "Beta"
+        "title": "Apple 칩 (M1 및 최신)",
+        "description": "Apple Silicon 칩용으로 최적화되었습니다. 열어서 Heroic 앱을 Applications 폴더에 복사하세요!",
+        "stable": "안정",
+        "beta": "베타"
       },
       "intelChips": {
-        "title": "Intel Chips",
-        "description": "Optimized for Intel Chips. Open it and copy the Heroic App to the Applications folder and you are good to go!",
-        "stable": "Stable",
-        "beta": "Beta"
+        "title": "Intel 칩",
+        "description": "Intel 칩용으로 최적화되었습니다. 열어서 Heroic 앱을 Applications 폴더에 복사하세요!",
+        "stable": "안정",
+        "beta": "베타"
       }
     }
   },
   "donate": {
-    "pageTitle": "Support Heroic Development",
-    "title": "Support Us",
-    "subtitle": "Heroic is free! Donations help us keep the project alive.",
+    "pageTitle": "Heroic 개발 지원",
+    "title": "지원하기",
+    "subtitle": "Heroic은 무료입니다! 기부가 프로젝트를 유지합니다.",
     "patreon": {
       "title": "Patreon",
-      "type": "Monthly-sub",
-      "description": "Activate a monthly subscription on Patreon to support us and get rewards.",
-      "button": "Go to Patreon"
+      "type": "월간 구독",
+      "description": "Patreon에서 월간 구독을 활성화하여 우리를 지원하고 보상을 받으세요.",
+      "button": "Patreon으로 가기"
     },
     "kofi": {
       "title": "Ko-fi",
-      "type": "One-time",
-      "description": "Support the project by offering us a coffee. Just like that, fast and simple!",
-      "button": "Go to Ko-fi"
+      "type": "한 번",
+      "description": "우리에게 커피를 제공하여 프로젝트를 지원하세요. 그냥 그뿐, 빠르고 간단하게!",
+      "button": "Ko-fi로 가기"
     },
     "gog": {
       "title": "GOG.com",
-      "type": "One-time",
-      "description": "Use our link when making purchases on GOG and support the project. Cool right?",
-      "button": "Go to GOG"
+      "type": "한 번",
+      "description": "GOG에서 구매 시 우리의 링크를 사용하고 프로젝트를 지원하세요. 멋지죠?",
+      "button": "GOG로 가기"
     },
     "github": {
-      "title": "GitHub Sponsor",
-      "type": "One-time or flexible-sub",
-      "description": "Support us with a one-time or recurring donation through GitHub.",
-      "button": "Go to GitHub"
+      "title": "GitHub 스폰서",
+      "type": "한 번 또는 유연한 구독",
+      "description": "GitHub을 통해 한 번 또는 정기 기부로 우리를 지원하세요.",
+      "button": "GitHub으로 가기"
     }
   },
   "cla": {
     "pageTitle": "CLA",
-    "title": "Contributor License Agreement",
-    "intro1": "This Contribution License Agreement (the <strong>\"CLA\"</strong>) is between the individual set forth in the signature block (<strong>\"You\"</strong>) and Heroic Labs, Inc. (<strong>\"Heroic\"</strong>), effective as of the date of Your signature and sets forth the terms pursuant to which You may provide Contributions to Heroic.",
-    "intro2": "You accept and agree to the following terms and conditions for Your past, present and future Contributions submitted to Heroic's Heroic Games Launcher project (the \"Project\"). In return, Heroic will not use Your Contributions in a way that is contrary to Heroic's business objectives. Except for the license granted herein to Heroic and recipients of software distributed by Heroic, You reserve all right, title, and interest in and to Your Contributions.",
+    "title": "기여자 라이선스 계약",
+    "intro1": "이 기여자 라이선스 계약(\"CLA\")은 서명 블록에 명시된 개인(\"귀하\")과 Heroic Labs, Inc.(\"Heroic\") 사이에 있으며, 귀하의 서명 날짜부터 유효하며 Heroic에 기여를 제공하는 조건을 규정합니다.",
+    "intro2": "귀하는 Heroic's Heroic Games Launcher 프로젝트(\"프로젝트\")에 제출된 귀하의 과거, 현재 및 미래 기여에 대한 다음 조건과 조건에 동의하고 동의합니다. 대가로, Heroic은 Heroic의 비즈니스 목표에 반하는 방식으로 귀하의 기여를 사용하지 않습니다. 여기서 Heroic 및 Heroic에 의해 배포되는 소프트웨어 수령인에게 부여된 라이선스를 제외하고, 귀하는 귀하의 기여에 대한 모든 권리, 제목 및 관심을 유지합니다.",
     "definitions": {
-      "title": "Definitions.",
-      "contribution": "<strong>\"Contribution\"</strong> means any original work of authorship, including any modifications or additions to an existing work, that You intentionally submit, or have submitted previously, to Heroic for inclusion in, or documentation of, the Project.",
-      "submit": "<strong>\"Submit\"</strong> means any form of electronic, verbal, or written communication sent to Heroic or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, Heroic for the purpose of discussing and improving the Project, but excluding communication that is conspicuously marked or otherwise designated in writing by You as \"Not a Contribution.\""
+      "title": "정의.",
+      "contribution": "\"기여\"는 프로젝트에 포함 또는 문서화를 위해 귀하가 의도적으로 제출하거나 이전에 제출한 기존 작업에 대한 수정 또는 추가를 포함하는 모든 원본 저작물.",
+      "submit": "\"제출\"은 Heroic 또는 그 대표자에게 전송된 전자, 구두 또는 서면 통신을 의미하며, Heroic에 의해 관리되는 전자 메일 리스트, 소스 코드 제어 시스템 및 문제 추적 시스템을 포함하지만 이에 국한되지 않으며, 프로젝트의 토론 및 개선을 목적으로 하며, 귀하에 의해 명시적으로 \"기여 아님\"으로 표시되거나 지정된 통신을 제외합니다."
     },
     "copyrightLicense": {
-      "title": "Copyright License.",
-      "content": "Subject to the terms and conditions of this CLA, You hereby grant to Heroic and to recipients of software distributed by Heroic a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute Your Contributions and such derivative works."
+      "title": "저작권 라이선스.",
+      "content": "이 CLA의 조건과 조건에 따라, 귀하는 여기서 Heroic 및 Heroic에 의해 배포되는 소프트웨어 수령인에게 귀하의 기여 및 그러한 파생물을 복제, 파생물 준비, 공공 표시, 공공 수행, 하위 라이선스 및 배포하기 위한 영구적, 전 세계적, 비독점적, 무상, 로열티 프리, 취소 불가능한 저작권 라이선스를 부여합니다."
     },
     "patentLicense": {
-      "title": "Patent License.",
-      "content": "Subject to the terms and conditions of this CLA, You hereby grant to Heroic and to recipients of software distributed by Heroic a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Project, where such license applies only to those patent claims licensable by You that are necessarily infringed by Your Contribution(s) alone or by combination of Your Contribution(s) with the Project to which such Contribution(s) was submitted. If any entity institutes patent litigation against You or any other entity (including a cross-claim or counterclaim in a lawsuit) alleging that Your Contribution, or the Project to which You have contributed, constitutes direct or contributory patent infringement, then any patent licenses granted to that entity under this CLA for that Contribution or Project will terminate as of the date such litigation is filed."
+      "title": "특허 라이선스.",
+      "content": "이 CLA의 조건과 조건에 따라, 귀하는 여기서 Heroic 및 Heroic에 의해 배포되는 소프트웨어 수령인에게 프로젝트를 만들고, 만들고, 사용하고, 판매 오퍼하고, 판매하고, 수입하고, 그 외 다른 방식으로 이전하기 위한 영구적, 전 세계적, 비독점적, 무상, 로열티 프리, 취소 불가능한(이 섹션에 명시된 경우 제외) 특허 라이선스를 부여합니다. 여기서 그러한 라이선스는 귀하가 라이선스할 수 있는 특허 청구에만 적용되며, 귀하의 기여(단독) 또는 귀하의 기여와 프로젝트의 조합에 의해 필연적으로 침해됩니다. 어떤 엔티티가 귀하 또는 다른 엔티티에 대해 특허 침해 소송을 제기하는 경우(소송에서 반소 또는 교차 청구 포함), 귀하의 기여 또는 귀하가 기여한 프로젝트가 직접 또는 기여 특허 침해를 구성한다고 주장하는 경우, 이 CLA 하에 그 엔티티에 부여된 특허 라이선스는 그러한 소송이 제기된 날짜에 종료됩니다."
     },
     "representations": {
-      "title": "Representations and Warranties.",
-      "intro": "The Licensor represents and warrants that:",
-      "item1": "You are legally entitled to grant the above license, and if Your employer(s) has rights to intellectual property that You create that includes Your Contributions, then You represent and warrant that You have received permission to make Contributions on behalf of that employer, that Your employer has waived such rights for Your Contributions to Heroic, or that Your employer has executed a separate CLA with Heroic;",
-      "item2": "Each of Your Contributions is Your original creation (see section 6 for submissions on behalf of others); and",
-      "item3": "Your Contribution submissions include complete details of any third-party license or other restriction (including, but not limited to, related patents and trademarks) of which You are personally aware and which are associated with any part of Your Contributions."
+      "title": "표현 및 보증.",
+      "intro": "라이선시는 다음을 표현하고 보증합니다:",
+      "item1": "귀하는 위의 라이선스를 부여할 법적 권리가 있습니다. 귀하의 고용주(들)가 귀하의 기여를 포함하는 지적 재산권을 소유하는 경우, 귀하는 고용주가 그러한 권리를 Heroic에 양도했거나 고용주가 Heroic와 별도의 CLA를 실행했다고 표현하고 보증합니다.",
+      "item2": "귀하의 각 기여는 귀하의 원본 생성입니다(다른 사람을 위한 제출에 대해서는 섹션 6 참조).",
+      "item3": "귀하의 기여 제출에는 귀하가 개인적으로 알고 있는 모든 제3자 라이선스 또는 제한(관련 특허 및 상표 포함하지만 이에 국한되지 않음)의 완전한 세부 사항이 포함되며, 귀하의 기여의 일부에 관련됩니다."
     },
     "support": {
-      "title": "Support; Disclaimer.",
-      "content": "You are not expected to provide support for Your Contributions, except to the extent You desire to do so. You may provide support for free, for a fee, or not at all. Unless required by applicable law or agreed to in writing, You provide Your Contributions on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE."
+      "title": "지원; 면책.",
+      "content": "귀하는 귀하의 기여에 대한 지원을 제공할 것으로 기대되지 않습니다, 단 귀하가 원하는 경우에 한합니다. 귀하는 무료로, 수수료로 또는 전혀 지원을 제공할 수 있습니다. 적용 가능한 법에 요구되지 않거나 서면으로 합의되지 않는 한, 귀하는 귀하의 기여를 \"있는 그대로\" 제공합니다, 제목, 비침해, 상품성 또는 특정 목적에 대한 적합성의 보증 또는 조건을 포함하지 않습니다."
     },
     "thirdParty": {
-      "title": "Third Party Works.",
-      "content": "If You wish to submit work that is not Your original creation, then You may submit it to Heroic separately from any Contribution, identifying the complete details of its source and of any license or other restriction (including, but not limited to, related patents, trademarks, and license agreements) of which You are personally aware, and conspicuously marking the work as \"Submitted on behalf of a third-party: [named here]\"."
+      "title": "제3자 작업.",
+      "content": "귀하가 귀하의 원본 생성이 아닌 작업을 제출하려는 경우, 귀하는 그것을 Heroic에 별도로 제출할 수 있습니다, 그 소스의 완전한 세부 사항을 식별하고, 귀하가 개인적으로 알고 있는 모든 라이선스 또는 제한(관련 특허, 상표 및 라이선스 계약 포함하지만 이에 국한되지 않음)을 식별하며, 작업을 명시적으로 \"제3자를 위해 제출: [여기에 이름]\"으로 표시합니다."
     },
     "notice": {
-      "title": "Notice.",
-      "content": "You agree to notify Heroic of any facts or circumstances of which You become aware that would make Your representations in this CLA inaccurate in any respect."
+      "title": "통지.",
+      "content": "귀하는 이 CLA에서 귀하의 표현이 어떤 측면에서든 부정확하게 만드는 사실이나 상황을 Heroic에 통지하는 데 동의합니다."
     },
     "general": {
-      "title": "General.",
-      "content": "This CLA is the entire understanding and agreement with respect to the subject matter hereof, and supersedes any and all prior or contemporaneous representations, understandings, and agreements, between the parties regarding same. If any part of this CLA is found to be unenforceable, the remaining portions of this CLA will remain in full force and effect. No modification of or amendment to this CLA, nor any waiver of any rights under this CLA, will be effective unless in writing signed by the party to be charged, and the waiver of any breach or default will not constitute a waiver of any other right under this CLA or any subsequent breach or default. Nothing in this CLA creates and the parties do not intend to create, any partnership or joint venture between themselves. Either party may freely assign this CLA. This CLA is binding upon and will inure to the benefit of a party's successors and permitted assigns. This CLA will be governed by the laws of the State of Delaware. Exclusive jurisdiction of any and all disputes hereunder will be in the state and federal courts in Wilmington, Delaware. This CLA may be executed in counterparts with the same effect as if all signatories had signed the same document."
+      "title": "일반.",
+      "content": "이 CLA는 여기의 주제에 대한 완전한 이해와 합의이며, 당사자 간의 이전 또는 동시 표현, 이해 또는 합의를 대체합니다. 이 CLA의 어떤 부분이 비실행 가능하다고 판정되는 경우, 나머지 부분은 이 CLA의 완전한 힘과 효과를 유지합니다. 이 CLA 하의 권리의 어떤 수정 또는 포기도, 또는 이 CLA 하의 권리의 어떤 위반 또는 결함의 포기도, 부과될 당사자에 의해 서명된 서면에 의하지 않고는 효과적이지 않습니다. 이 CLA는 당사자 간에 파트너십 또는 조인트 벤처를 생성하지 않으며, 의도하지 않습니다. 각 당사자는 이 CLA를 자유롭게 양도할 수 있습니다. 이 CLA는 한 당사자의 허가된 후계자 및 양수인에게 구속력 있고 효력이 있습니다. 이 CLA는 델라웨어 주 법에 따라 통치됩니다. 독점 관할권은 델라웨어 윌밍턴의 주 및 연방 법원에 있습니다. 이 CLA는 모든 서명자가 같은 문서에 서명한 것과 같은 효과를 가진 반대 증거로 실행될 수 있습니다."
     },
     "signature": {
-      "yourName": "Your Name:",
-      "by": "By:",
-      "date": "Date:",
-      "email": "Email:",
+      "yourName": "귀하의 이름:",
+      "by": "에 의해:",
+      "date": "날짜:",
+      "email": "이메일:",
       "heroicLabs": "Heroic Labs, Inc."
     },
-    "printButton": "Print CLA"
+    "printButton": "CLA 인쇄"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "자주 묻는 질문",
     "questions": [
       {
-        "question": "What is Heroic?",
+        "question": "Heroic은 무엇인가요?",
         "answers": [
-          "Heroic is an open source, lightweight games launcher that is available for Linux, Windows, and macOS. It is an alternative to the Epic Games Launcher and GOG Galaxy, and it is focused on privacy, using fewer resources, and supporting a range of tools such as Wine, Proton, Crossover, DXVK, and VKD3D."
+          "Heroic은 Linux, Windows 및 macOS에서 사용할 수 있는 오픈 소스 경량 게임 런처입니다. Epic Games Launcher 및 GOG Galaxy의 대안으로, 프라이버시, 적은 리소스 사용 및 Wine, Proton, Crossover, DXVK, VKD3D와 같은 도구 지원에 초점을 맞춥니다."
         ]
       },
       {
-        "question": "Is Heroic safe to use?",
+        "question": "Heroic은 안전하게 사용할 수 있나요?",
         "answers": [
-          "Yes, Heroic is a safe and secure games launcher that does not collect any data from the user's computer. It is also open source, which means that the source code is publicly available and can be reviewed by the community to ensure that it does not contain any malicious code."
+          "예, Heroic은 사용자의 컴퓨터에서 데이터를 수집하지 않는 안전하고 신뢰할 수 있는 게임 런처입니다. 또한 오픈 소스이므로 소스 코드는 공개적으로 사용할 수 있으며, 커뮤니티에 의해 검토되어 악성 코드가 포함되지 않았음을 확인할 수 있습니다."
         ]
       },
       {
-        "question": "Does Heroic collect my data, username, or password?",
+        "question": "Heroic은 내 데이터를 수집하나요, 사용자 이름이나 비밀번호를?",
         "answers": [
-          "No, Heroic is a privacy-centered application and does not collect any data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.",
-          "In addition, Heroic does not collect any usage data or analytics from your use of the application. Your privacy is important to us and we take steps to ensure that your data is secure and not collected or shared without your consent."
+          "아니요, Heroic은 프라이버시에 초점을 맞춘 애플리케이션으로, 귀하의 컴퓨터나 장치에서 데이터를 수집하지 않습니다. 귀하는 공식 Epic Games Store 또는 GOG 웹사이트에 로그인하고, 그 후 Heroic은 그러한 스토어에서 게임을 나열, 다운로드 및 실행하기 위해 토큰만 유지합니다.",
+          "또한, Heroic은 귀하의 애플리케이션 사용으로부터 사용 데이터나 분석을 수집하지 않습니다. 귀하의 프라이버시는 우리에게 중요하며, 귀하의 데이터가 안전하고 귀하의 동의 없이 수집되거나 공유되지 않도록 조치를 취합니다."
         ]
       },
       {
-        "question": "Can I get banned for using Heroic?",
+        "question": "Heroic을 사용하면 BAN될 수 있나요?",
         "answers": [
-          "It is unlikely that you will get banned for using Heroic to launch games from the Epic Games Store or GOG.",
-          "However, please note that certain actions, such as cheating or violating the terms of service for a particular game, may result in a ban. It is important to follow the rules and guidelines of each game and store in order to avoid any issues.",
-          "Some games also might ban you if you are trying to run the game on a non-supported operating system using Wine or Proton, for example."
+          "Epic Games Store 또는 GOG에서 게임을 실행하기 위해 Heroic을 사용하는 것은 BAN되지 않을 가능성이 높습니다.",
+          "그러나, 특정 게임의 이용 약관을 위반하는 치팅이나 기타 행동은 BAN으로 이어질 수 있습니다. 각 게임과 스토어의 규칙과 지침을 따르는 것이 중요합니다.",
+          "일부 게임은 Wine이나 Proton을 사용하여 지원되지 않는 운영 체제에서 게임을 실행하려고 할 때 귀하를 BAN할 수 있습니다."
         ]
       },
       {
-        "question": "How do I install Heroic on my computer?",
+        "question": "내 컴퓨터에 Heroic을 설치하려면 어떻게 해야 하나요?",
         "answers": [
-          "The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package and then run the command xattr -r -d com.apple.quarantine /Applications/Heroic.app in the terminal to complete the installation. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website."
+          "Heroic 설치 프로세스는 귀하의 운영 체제에 따라 다릅니다. Linux에서는 Flatpak, .deb, .pacman 또는 .rpm과 같은 패키지 관리자를 사용하여 Heroic을 설치할 수 있습니다, 또는 AppImage를 사용할 수 있습니다. macOS에서는 표준 애플리케이션 패키지로 Heroic을 설치하고, 터미널에서 xattr -r -d com.apple.quarantine /Applications/Heroic.app 명령을 실행하여 설치를 완료합니다. Windows에서는 WinGet 패키지 관리자를 사용하여 winget install HeroicGamesLauncher.HeroicGamesLauncher 명령을 실행하거나, 웹사이트에서 setup exe 또는 portable exe를 다운로드하여 실행합니다."
         ]
       },
       {
-        "question": "What features are currently available in Heroic, and what features are planned for the future?",
+        "question": "Heroic에서 현재 사용할 수 있는 기능은 무엇이며, 미래 기능은 무엇인가요?",
         "answers": [
-          "Currently available features in Heroic include:",
-          "Support for launching games from the Epic Games Store and GOG",
-          "Support for installing, uninstalling, updating, repairing, and moving games",
-          "Support for importing already installed games",
-          "Support for playing Epic games online (AntiCheat on macOS and on Linux depends on the game)",
-          "Support for playing games using Wine or Proton on Linux",
-          "Support for playing games using Crossover on macOS",
-          "Support for downloading custom Wine and Proton versions on Linux",
-          "Direct access to the Epic and GOG stores from within the Heroic interface",
-          "Search for game compatibility information on ProtonDB on Linux",
-          "Sync installed games with an existing Epic Games Store installation",
-          "Sync saves with the cloud",
-          "Custom theming support",
-          "Download queue",
-          "Add games and applications outside of GOG and Epic Games",
-          "Planned features for the future include:",
-          "Support for other stores (such as Amazon Gaming and IndieGala)",
-          "Play GOG games online"
+          "Heroic에서 현재 사용할 수 있는 기능에는:",
+          "Epic Games Store 및 GOG에서 게임 실행 지원",
+          "게임 설치, 제거, 업데이트, 복구 및 이동 지원",
+          "이미 설치된 게임 가져오기 지원",
+          "Epic 게임 온라인 플레이 지원 (AntiCheat은 macOS 및 Linux에서 게임에 따라 다름)",
+          "Linux에서 Wine 또는 Proton을 사용하여 게임 플레이 지원",
+          "macOS에서 Crossover를 사용하여 게임 플레이 지원",
+          "Linux에서 사용자 정의 Wine 및 Proton 버전 다운로드 지원",
+          "Heroic 인터페이스에서 Epic 및 GOG 스토어 직접 액세스",
+          "Linux에서 ProtonDB에서 게임 호환성 정보 검색",
+          "기존 Epic Games Store 설치와 설치된 게임 동기화",
+          "클라우드와 세이브 동기화",
+          "사용자 정의 테마 지원",
+          "다운로드 큐",
+          "GOG 및 Epic 외 게임 및 애플리케이션 추가",
+          "미래 기능에는:",
+          "Amazon Gaming 및 IndieGala와 같은 다른 스토어 지원",
+          "GOG 게임 온라인 플레이"
         ]
       },
       {
-        "question": "What are the supported operating systems for Heroic?",
+        "question": "Heroic의 지원되는 운영 체제는 무엇인가요?",
         "answers": [
-          "Linux: Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.",
-          "Windows: Windows 10 and 11",
-          "macOS: macOS 14 or newer."
+          "Linux: Ubuntu 22.04 이상, OpenSuse Tumbleweed, Fedora 37 이상, Arch Linux 및 파생 (Manjaro, Garuda, EndeavourOS 등). Heroic은 대부분의 다른 Linux 배포판에서 작동하지만 추가 설정과 문제 해결이 필요할 수 있습니다. SteamOS에서도 지원되지만 다운로드는 Discover 소프트웨어 센터를 통해서만 사용할 수 있습니다.",
+          "Windows: Windows 10 및 11",
+          "macOS: macOS 14 이상."
         ]
       },
       {
-        "question": "What are the minimum system requirements for Heroic?",
+        "question": "Heroic의 최소 시스템 요구 사항은 무엇인가요?",
         "answers": [
-          "Heroic is an Electron-based application and requires approximately 500MB of storage space. In terms of hardware requirements, the minimum specifications for running Heroic are:",
-          "2GB of RAM",
-          "1.8GHz dual-core processor",
-          "However, please note that these are the minimum requirements and you may need more powerful hardware in order to run certain games or applications."
+          "Heroic은 Electron 기반 애플리케이션으로, 약 500MB의 저장 공간이 필요합니다. 하드웨어 요구 사항 측면에서, Heroic을 실행하기 위한 최소 사양은:",
+          "2GB RAM",
+          "1.8GHz 듀얼 코어 프로세서",
+          "그러나, 이러한 것은 최소 요구 사항임을 유의하세요. 특정 게임이나 애플리케이션을 실행하기 위해 더 강력한 하드웨어가 필요할 수 있습니다."
         ]
       },
       {
-        "question": "How do I use Heroic to play games?",
+        "question": "Heroic으로 게임을 플레이하려면 어떻게 해야 하나요?",
         "answers": [
-          "Once you have installed Heroic, you can use it to browse and install games from a range of sources. You can also use it to launch and manage games that you have installed on your computer. If you encounter any issues with games, you can check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . If you are unable to find a solution, you can also seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK ."
+          "Heroic을 설치한 후, 다양한 소스에서 게임을 탐색하고 설치할 수 있습니다. 또한 귀하의 컴퓨터에 설치된 게임을 실행하고 관리할 수 있습니다. 게임으로 문제가 발생하면 일반 문서에서 문제 해결 및 해결 방법을 확인할 수 있습니다: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . 해결 방법을 찾을 수 없는 경우, Heroic Discord 서버에서 도움을 요청할 수도 있습니다: https://discord.com/invite/rHJ2uqdquK ."
         ]
       },
       {
-        "question": "Can I download multiple games at once?",
+        "question": "여러 게임을 동시에 다운로드할 수 있나요?",
         "answers": [
-          "Yes, you can download multiple games at once in Heroic by using the download queue. To use the download queue, simply start a new Install option when already installing a game. This will add the game to the queue and it will be downloaded once the games in front of it have finished downloading.",
-          "You can view the download queue and monitor the progress of your downloads by going to the 'Downloads' tab in the sidebar. From there, you can also pause or cancel downloads as needed."
+          "예, Heroic에서 다운로드 큐를 사용하여 여러 게임을 동시에 다운로드할 수 있습니다. 다운로드 큐를 사용하려면, 이미 게임을 설치하고 있는 동안 새 설치 옵션을 시작하세요. 그러면 게임이 큐에 추가되고 앞의 게임이 다운로드를 완료할 때 다운로드됩니다.",
+          "다운로드 큐를 보고 사이드바에서 다운로드 진행 상황을 모니터링할 수 있습니다. 거기에서 필요에 따라 다운로드를 일시 중지하거나 취소할 수 있습니다."
         ]
       },
       {
-        "question": "How can I add games outside Epic or GOG?",
+        "question": "Epic 또는 GOG 외 게임을 추가하려면 어떻게 해야 하나요?",
         "answers": [
-          "You can add games outside Epic or GOG to Heroic by going to the 'Add Games' button on the game Library. This will allow you to browse for the executable on your computer and add it to Heroic as a custom game.",
-          "Please note that support for custom games may vary and some features, such as automatic updates and save syncing, may not be available. In addition, you may need to configure the game's settings manually in order to get it to run properly."
+          "Epic 또는 GOG 외 게임을 Heroic에 추가하려면 게임 라이브러리의 '게임 추가' 버튼으로 이동하세요. 그러면 귀하의 컴퓨터에서 실행 파일을 탐색하고 Heroic에 사용자 정의 게임으로 추가할 수 있습니다.",
+          "사용자 정의 게임 지원은 다를 수 있음을 유의하세요. 일부 기능, 자동 업데이트 및 세이브 동기화 등은 사용할 수 없을 수 있습니다. 또한 게임이 제대로 작동하는지 확인하기 위해 게임 설정을 수동으로 구성해야 할 수 있습니다."
         ]
       },
       {
-        "question": "What is Wine and how does it work with Heroic?",
+        "question": "Wine은 무엇이며, Heroic에서 어떻게 작동하나요?",
         "answers": [
-          "Wine is a free and open-source compatibility layer that allows Windows applications to run on Unix-like operating systems, including Linux and macOS. Heroic uses Wine to run Windows games on those operating systems.",
-          "Wine is not an emulator, but rather it translates the Windows API calls into POSIX calls that are understood by the operating system. This allows Windows games to run without the need for a full Windows installation.",
-          "You can learn more about Wine and its capabilities on the Wine project website: https://www.winehq.org"
+          "Wine은 Linux 및 macOS를 포함한 Unix-like 운영 체제에서 Windows 애플리케이션을 실행하기 위한 무료 오픈 소스 호환성 레이어입니다. Heroic은 이러한 운영 체제에서 Windows 게임을 실행하기 위해 Wine을 사용합니다.",
+          "Wine은 에뮬레이터가 아니며, Windows API 호출을 운영 체제가 이해하는 POSIX 호출로 변환합니다. 이는 완전한 Windows 설치 없이 Windows 게임을 실행할 수 있게 합니다.",
+          "Wine과 그 기능에 대해 자세히 알아보려면 Wine 프로젝트 웹사이트를 방문하세요: https://www.winehq.org"
         ]
       },
       {
-        "question": "What is Proton and how does it work with Heroic?",
+        "question": "Proton은 무엇이며, Heroic에서 어떻게 작동하나요?",
         "answers": [
-          "Proton is a compatibility layer developed by Valve that allows running Windows games on Linux. It is based on Wine, but includes additional patches and improvements to make it more stable and compatible with a larger number of games. In Heroic, you can use Proton to run Windows games on Linux. You can choose which version of Proton to use for each game, and you can also download custom versions of Proton directly from the Wine Manager page inside Heroic. It is important to note that Proton was not designed to run games outside of Steam, and the results may vary. You can check for compatibility information for each game on the ProtonDB website: https://www.protondb.com"
+          "Proton은 Valve에 의해 개발된 호환성 레이어로, Linux에서 Windows 게임을 실행할 수 있게 합니다. Wine에 기반하며, 더 안정적이고 많은 게임과 호환되는 추가 패치와 개선을 포함합니다. Heroic에서는 Linux에서 Windows 게임을 실행하기 위해 Proton을 사용할 수 있습니다. 각 게임에 사용할 Proton 버전을 선택할 수 있으며, Heroic 내 Wine Manager 페이지에서 사용자 정의 Proton 버전을 다운로드할 수 있습니다. Proton은 Steam 외 게임을 실행하도록 설계되지 않았음을 유의하세요. 결과는 다를 수 있습니다. 각 게임의 호환성 정보는 ProtonDB 웹사이트에서 확인할 수 있습니다: https://www.protondb.com"
         ]
       },
       {
-        "question": "What is Crossover and how does it work with Heroic?",
+        "question": "Crossover는 무엇이며, Heroic에서 어떻게 작동하나요?",
         "answers": [
-          "Crossover is a commercial software that allows you to run Windows applications on Linux and macOS. It is developed by CodeWeavers and can be purchased from their website: https://www.codeweavers.com/ .",
-          "In Heroic, you can use Crossover to run Windows games on macOS by selecting the \"Crossover\" version in the game settings and also the bottle name (default is HEROIC). Please note that Crossover is a third-party software and its usage is not officially supported by Heroic.",
-          "If you decide to purchase Crossover, you can use the coupon code LEGENDARY to get a discount and support the development of the Legendary app, which is used by Heroic to integrate with the Epic Games Store."
+          "Crossover는 Linux 및 macOS에서 Windows 애플리케이션을 실행하기 위한 상업 소프트웨어입니다. CodeWeavers에 의해 개발되며, 그들의 웹사이트에서 구매할 수 있습니다: https://www.codeweavers.com/ .",
+          "Heroic에서는 게임 설정에서 \"Crossover\" 버전을 선택하고 bottle 이름도 선택하여 macOS에서 Windows 게임을 실행할 수 있습니다 (기본은 HEROIC). Crossover는 제3자 소프트웨어이며, 그 사용은 Heroic에 의해 공식적으로 지원되지 않음을 유의하세요.",
+          "Crossover를 구매하려는 경우, LEGENDARY 쿠폰 코드를 사용하여 할인을 받고, Heroic이 Epic Games Store와 통합하는 데 사용하는 Legendary 앱의 개발을 지원할 수 있습니다."
         ]
       },
       {
-        "question": "My game is not working with Heroic. What should I do?",
+        "question": "내 게임이 Heroic에서 작동하지 않습니다. 어떻게 해야 하나요?",
         "answers": [
-          "If you are having trouble running a game with Heroic, you can: Check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . This resource may contain information that can help you resolve your issue.",
-          "If you are unable to find a solution in the documentation, you can seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK . Other users and members of the Heroic team may be able to offer advice or assistance.",
-          "If the issue persists, you can consider opening an issue on the Heroic GitHub page at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . Providing as much information as possible about your issue, such as the operating system, game, and any error messages you are seeing, can help the team investigate and resolve the issue.",
-          "If the issue is specific to a particular game, you may want to check the game's documentation or contact the game developer for assistance.",
-          "Finally, you may want to consider trying other tools or compatibility layers, such as Wine or Proton, to see if they can help resolve the issue."
+          "Heroic에서 게임을 실행하는 데 문제가 있는 경우: 문제 해결 및 해결 방법의 일반 문서를 확인하세요: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . 이 리소스에는 귀하의 문제를 해결하는 데 도움이 되는 정보가 포함될 수 있습니다.",
+          "문서에서 해결 방법을 찾을 수 없는 경우, Heroic Discord 서버에서 도움을 요청할 수 있습니다: https://discord.com/invite/rHJ2uqdquK . 다른 사용자와 Heroic 팀의 구성원이 조언이나 지원을 제공할 수 있습니다.",
+          "문제가 지속되는 경우, Heroic GitHub 페이지에서 issue를 열는 것을 고려하세요: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . 귀하의 문제를 최대한 많이 설명하는 정보를 제공함으로써 팀이 문제를 조사하고 해결하는 데 도움이 됩니다, 귀하의 OS, 게임 및 보고 있는 오류 메시지 등.",
+          "문제가 특정 게임에 특유한 경우, 게임 문서를 확인하거나 게임 개발자에게 연락하여 지원을 요청할 수 있습니다.",
+          "마지막으로, Wine이나 Proton과 같은 다른 도구나 호환성 레이어를 시도하여 문제를 해결할 수 있는지 확인하는 것을 고려하세요."
         ]
       },
       {
-        "question": "Can I use Heroic to install and run native Linux games from the GOG store?",
+        "question": "GOG 스토어에서 네이티브 Linux 게임을 설치 및 실행하기 위해 Heroic을 사용할 수 있나요?",
         "answers": [
-          "Yes, Heroic can be used to install and run native Linux games from the GOG store. However, it is not currently possible to install or run native Linux games from the Epic Games store, as Epic Games does not currently offer native Linux games. If you encounter issues running a native Linux game with Heroic, you may be able to resolve them by enabling the \"Use Steam Runtime\" setting in the Game Settings menu. This setting will use the Steam Runtime, if it is installed on your system, to provide any missing libraries that the game may require."
+          "예, Heroic을 사용하여 GOG 스토어에서 네이티브 Linux 게임을 설치 및 실행할 수 있습니다. 그러나 현재 Epic Games 스토어에서 네이티브 Linux 게임을 설치 또는 실행할 수 없습니다. 왜냐하면 Epic Games는 현재 네이티브 Linux 게임을 제공하지 않기 때문입니다. Heroic으로 네이티브 Linux 게임을 실행하는 데 문제가 발생하는 경우, 게임 설정 메뉴에서 \"Steam Runtime 사용\" 설정을 활성화해 보세요. 이 설정은 시스템에 설치된 경우 Steam Runtime을 사용하여 게임을 실행하도록 Heroic에 지시하며, 게임이 필요로 할 수 있는 누락 라이브러리를 제공할 수 있습니다."
         ]
       },
       {
-        "question": "Can I use Heroic to install and run native macOS games from GOG and Epic Games?",
+        "question": "GOG 및 Epic Games에서 네이티브 macOS 게임을 설치 및 실행하기 위해 Heroic을 사용할 수 있나요?",
         "answers": [
-          "Yes, Heroic can be used to install and run native macOS games from the GOG store and the Epic Games store. Simply browse and install the games as you would any other game in Heroic."
+          "예, Heroic을 사용하여 GOG 스토어 및 Epic Games 스토어에서 네이티브 macOS 게임을 설치 및 실행할 수 있습니다. Heroic에서 다른 게임과 마찬가지로 게임을 탐색 및 설치하세요."
         ]
       },
       {
-        "question": "Can I use Heroic to manage and download Wine and Proton versions directly from the interface on Linux?",
+        "question": "Linux에서 인터페이스에서 직접 Wine 및 Proton 버전을 관리 및 다운로드하기 위해 Heroic을 사용할 수 있나요?",
         "answers": [
-          "Yes, Heroic includes tools for managing and downloading Wine and Proton versions directly from the interface on Linux. You can access these tools by going to the Tools menu in the main menu and selecting either \"Manage Wine Versions\" or \"Manage Proton Versions.\""
+          "예, Heroic에는 Linux에서 인터페이스에서 직접 Wine 및 Proton 버전을 관리 및 다운로드하기 위한 도구가 포함됩니다. 이러한 도구에 액세스하려면 메인 메뉴의 도구 메뉴로 이동하여 \"Wine 버전 관리\" 또는 \"Proton 버전 관리\"를 선택하세요."
         ]
       },
       {
-        "question": "How can I add game shortcuts to my Desktop or Startup menu in Heroic?",
+        "question": "Heroic에서 데스크톱 또는 시작 메뉴에 게임 바로 가기를 추가하려면 어떻게 해야 하나요?",
         "answers": [
-          "To add game shortcuts to your Desktop or Startup menu in Heroic, first go to the page for the game you want to create a shortcut for. Then, click on the three dots icon in the top right corner of the page and select \"Add Shortcuts\" from the menu. This will create a shortcut for the game on your Desktop and add it to your Startup menu, so that it will be launched automatically when you start your computer. You can also use the \"Add Shortcut to Steam\" option to create a shortcut for the game in the Steam client."
+          "Heroic에서 데스크톱 또는 시작 메뉴에 게임 바로 가기를 추가하려면, 먼저 바로 가기를 만들 게임의 페이지로 이동하세요. 그런 다음 페이지의 오른쪽 상단에 있는 3개의 점 아이콘을 클릭하고 메뉴에서 \"바로 가기 추가\"를 선택하세요. 그러면 귀하의 데스크톱에 게임 바로 가기가 생성되고 시작 메뉴에 추가되어 컴퓨터를 시작할 때 자동으로 실행됩니다. Steam 클라이언트에서 게임 바로 가기를 만들기 위한 \"Steam에 바로 가기 추가\" 옵션도 사용할 수 있습니다."
         ]
       },
       {
-        "question": "How can I support the Heroic project financially?",
+        "question": "Heroic 프로젝트를 재정적으로 지원하려면 어떻게 해야 하나요?",
         "answers": [
-          "If you would like to support the Heroic project financially, there are a few ways you can do so. You can become a patron on Patreon, make a one-time donation through Ko-fi, or sign up as a sponsor on GitHub Sponsors. You can find links to all of these options on the Heroic website at this link: https://heroicgameslauncher.com/donate ."
+          "Heroic 프로젝트를 재정적으로 지원하고 싶은 경우, 몇 가지 방법이 있습니다. Patreon에서 후원자가 되거나, Ko-fi를 통해 일회 기부하거나, GitHub Sponsors에서 스폰서가 되세요. 이러한 옵션에 대한 링크는 Heroic 웹사이트에 있습니다: https://heroicgameslauncher.com/donate ."
         ]
       },
       {
-        "question": "How can I contribute with translations for Heroic?",
+        "question": "Heroic 번역에 기여하려면 어떻게 해야 하나요?",
         "answers": [
-          "If you would like to help translate Heroic into different languages, you can contribute through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ . Simply create an account on Weblate and join the project to start translating. Your contributions will be reviewed and merged by the Heroic team."
+          "다른 언어로 Heroic을 번역하는 것을 돕고 싶은 경우, 이 링크의 Weblate 플랫폼을 통해 기여할 수 있습니다: https://hosted.weblate.org/projects/heroic-games-launcher/ . Weblate에서 계정을 만들고 프로젝트에 가입하여 번역을 시작하세요. 귀하의 기여는 Heroic 팀에 의해 검토되고 병합됩니다."
         ]
       },
       {
-        "question": "How does Heroic integrate with Epic Games and GOG?",
+        "question": "Heroic은 Epic Games 및 GOG와 어떻게 통합되나요?",
         "answers": [
-          "Heroic uses two command-line interface (CLI) tools to integrate with the Epic Games store and the GOG store. For Epic Games, it uses Legendary, an open source CLI app developed by derrod and hosted on GitHub at this link: https://github.com/derrod/legendary . For GOG, it uses GOGDL, an open source CLI tool developed by the Heroic team. If you encounter issues with these tools, you can try using an alternative binary by going to the Advanced Settings menu in Heroic and selecting the \"Use alternative binary\" option. This may help resolve any issues you are experiencing."
+          "Heroic은 Epic Games 스토어 및 GOG 스토어와 통합하기 위해 두 개의 명령줄 인터페이스 도구를 사용합니다. Epic Games의 경우, derrod에 의해 개발되고 GitHub에서 호스트된 오픈 소스 CLI 앱 Legendary를 사용합니다: https://github.com/derrod/legendary . GOG의 경우, Heroic 팀에 의해 개발된 오픈 소스 CLI 도구 GOGDL을 사용합니다. 이러한 도구로 문제가 발생하는 경우, Heroic의 고급 설정 메뉴로 이동하여 \"대체 바이너리 사용\" 옵션을 선택하여 대체 바이너리를 시도할 수 있습니다. 이는 귀하가 겪는 문제를 해결할 수 있습니다."
         ]
       },
       {
-        "question": "Is there support for different languages in Heroic?",
+        "question": "Heroic에는 다른 언어 지원이 있나요?",
         "answers": [
-          "Yes, Heroic has been translated into more than 40 different languages thanks to contributions from the community. You can find a list of the currently supported languages on the Heroic website or in the README file on the GitHub repository. If you would like to help translate Heroic into a new language, you can contribute through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+          "예, Heroic은 커뮤니티의 기여 덕분에 40개 이상의 다른 언어로 번역되었습니다. 현재 지원되는 언어 목록은 Heroic 웹사이트 또는 GitHub 리포의 README 파일에서 찾을 수 있습니다. 새로운 언어로 Heroic을 번역하는 것을 돕고 싶은 경우, 이 링크의 Weblate 플랫폼을 통해 기여할 수 있습니다: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
         ]
       },
       {
-        "question": "How can I contribute to the development of Heroic or translate it into a new language?",
+        "question": "Heroic의 개발에 기여하거나 새로운 언어로 번역하려면 어떻게 해야 하나요?",
         "answers": [
-          "You can report bugs or suggest new features by opening an issue on the GitHub repository at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues .",
-          "You can contribute code or documentation by creating a pull request on the GitHub repository",
-          "You can support the project financially through Patreon, Ko-fi, or GitHub Sponsors at this link: https://heroicgameslauncher.com/donate .",
-          "You can help translate Heroic into a new language by contributing through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+          "GitHub 리포에서 issue를 열어 버그를 보고하거나 새로운 기능을 제안할 수 있습니다: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues .",
+          "GitHub 리포에서 풀 리퀘스트를 만들어 코드나 문서를 기여할 수 있습니다",
+          "Patreon, Ko-fi 또는 GitHub Sponsors를 통해 프로젝트를 재정적으로 지원할 수 있습니다: https://heroicgameslauncher.com/donate .",
+          "Weblate 플랫폼을 통해 새로운 언어로 Heroic을 번역하는 것을 돕을 수 있습니다: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
         ]
       },
       {
-        "question": "How do I use the Steam Runtime to fix missing libraries on Linux when running native Linux games from GOG?",
+        "question": "GOG에서 네이티브 Linux 게임을 실행할 때 Linux에서 누락 라이브러리를 수정하기 위해 Steam Runtime을 사용하려면 어떻게 해야 하나요?",
         "answers": [
-          "If you are running native Linux games from the GOG store on Linux and encounter issues with missing libraries, you can try using the Steam Runtime to fix the problem. To do this, go to the Game Settings menu in Heroic and select the \"Use Steam Runtime\" option. This will cause Heroic to use the Steam Runtime to launch the game, which may help to resolve issues with missing libraries. Note that this option is only available on Linux, and it requires that you have the Steam client installed on your computer."
+          "Linux에서 GOG 스토어에서 네이티브 Linux 게임을 실행하고 누락 라이브러리로 문제가 발생하는 경우, 문제를 수정하기 위해 Steam Runtime을 사용할 수 있습니다. 이를 위해 Heroic의 게임 설정 메뉴로 이동하여 \"Steam Runtime 사용\" 옵션을 선택하세요. 그러면 Heroic은 Steam Runtime을 사용하여 게임을 실행하며, 누락 라이브러리 문제를 해결할 수 있습니다. 이 옵션은 Linux에서만 사용할 수 있으며, 컴퓨터에 Steam 클라이언트가 설치되어 있어야 합니다."
         ]
       },
       {
-        "question": "Can I use Heroic to manage and launch games from other platforms, such as Ubisoft Connect or the EA App?",
+        "question": "Ubisoft Connect나 EA App과 같은 다른 플랫폼에서 게임을 관리 및 실행하기 위해 Heroic을 사용할 수 있나요?",
         "answers": [
-          "Yes, it is possible to use the feature ADD GAME to add another store frontend like Ubisoft Connect and EA APP. However, the integration is not the same as it has for Epic and GOG, since in this case you will need to launch Heroic and then launch the other launcher from within Heroic."
+          "예, ADD GAME 기능을 사용하여 Ubisoft Connect나 EA APP과 같은 다른 스토어 프론트엔드를 추가할 수 있습니다. 그러나 통합은 Epic과 GOG의 것과 같지 않습니다. 이 경우 Heroic을 실행한 후 Heroic 내에서 다른 런처를 실행해야 합니다."
         ]
       },
       {
-        "question": "Is it possible to use Heroic to launch games that have been purchased outside of the Epic Games Store or GOG, such as on a physical disc or through another digital store?",
+        "question": "Epic Games Store 또는 GOG 외에서 구매한 게임, 예를 들어 물리 디스크나 다른 디지털 스토어를 통해 구매한 게임을 실행하기 위해 Heroic을 사용할 수 있나요?",
         "answers": [
-          "Yes, you can use the ADD GAME feature in Heroic to add games that have been purchased outside of the Epic Games Store or GOG. After installing the game normally, use the ADD GAME option and fill in the necessary information. Heroic will automatically retrieve an image for the game from the web. If the game requires an installer to be run before launching, you can use the \"Run Installer First\" button on the ADD GAME screen to do so."
+          "예, Epic Games Store 또는 GOG 외에서 구매한 게임을 추가하기 위해 Heroic의 ADD GAME 기능을 사용할 수 있습니다. 게임을 정상적으로 설치한 후 ADD GAME 옵션을 사용하여 필요한 정보를 입력하세요. Heroic은 자동으로 웹에서 게임 이미지를 검색합니다. 게임이 실행되기 전에 설치 프로그램을 실행해야 하는 경우, ADD GAME 화면의 \"설치 프로그램 먼저 실행\" 버튼을 사용하여 실행할 수 있습니다."
         ]
       },
       {
-        "question": "Is Heroic free to use?",
+        "question": "Heroic은 무료로 사용할 수 있나요?",
         "answers": [
-          "Yes, Heroic is completely free to use."
+          "예, Heroic은 완전히 무료로 사용할 수 있습니다."
         ]
       },
       {
-        "question": "Are there any alternatives to Heroic?",
+        "question": "Heroic의 대안이 있나요?",
         "answers": [
-          "Yes, sometimes some game won't work on Heroic for some reason and the good thing about the open source world we have alternatives. For Epic games there are a few alternatives that can be used to launch games depending on the platform. On Linux, some options include Bottles, Lutris, and Gamehub. For GOG games specifically, Minigalaxy is also an option. On Windows, Playnite is a popular alternative."
+          "예, 때때로 게임이 어떤 이유로 Heroic에서 작동하지 않으며, 오픈 소스 세계의 좋은 점은 대안이 있다는 것입니다. Epic 게임의 경우, 플랫폼에 따라 게임을 실행하기 위해 사용할 수 있는 몇 가지 대안이 있습니다. Linux에서는 Bottles, Lutris, Gamehub 등의 옵션이 있습니다. GOG 게임 전용으로는 Minigalaxy도 옵션입니다. Windows에서는 Playnite가 인기 있는 대안입니다."
         ]
       },
       {
-        "question": "What is Heroic's license?",
+        "question": "Heroic의 라이선스는 무엇인가요?",
         "answers": [
-          "Heroic is released under the GNU General Public License v3.0. This is a copyleft license, which means that users are free to use, modify, and distribute the app as they see fit, as long as they follow the terms of the license. In particular, any modified version of the app must also be released under the same license, and must include a copy of the license. Therefore, if you make a fork of Heroic and sell it, you must also release the source code for your modified version under the same license, and make it available to others for free. You are also not allowed to use the Heroic name or branding for your fork without permission."
+          "Heroic은 GNU General Public License v3.0 하에 출시됩니다. 이는 copyleft 라이선스로, 사용자가 라이선스의 조건을 따르는 한 앱을 사용, 수정 및 배포할 수 있는 자유가 있습니다. 특히, 수정된 버전의 앱도 같은 라이선스 하에 출시되어야 하며, 라이선스의 사본을 포함해야 합니다. 따라서 Heroic의 포크를 만들고 판매하는 경우, 같은 라이선스 하에 수정된 버전의 소스 코드를 출시하고, 다른 사람들이 무료로 사용할 수 있도록 해야 합니다. 허가 없이 포크에 Heroic의 이름이나 브랜딩을 사용할 수도 없습니다."
         ]
       }
     ]

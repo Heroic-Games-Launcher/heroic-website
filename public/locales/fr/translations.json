@@ -3,413 +3,413 @@
     "copyright": "Heroic Games Launcher"
   },
   "navbar": {
-    "home": "Home",
+    "home": "Accueil",
     "faq": "FAQ",
     "documentation": "Documentation",
-    "supportUs": "Support Us",
+    "supportUs": "Nous soutenir",
     "cla": "CLA",
-    "heroicMastodon": "Heroic Mastodon Page",
-    "heroicTwitter": "Heroic Twitter Page",
-    "heroicGithub": "Heroic GitHub Page",
-    "heroicDiscord": "Heroic Discord Server"
+    "heroicMastodon": "Page Mastodon de Heroic",
+    "heroicTwitter": "Page Twitter de Heroic",
+    "heroicGithub": "Page GitHub de Heroic",
+    "heroicDiscord": "Serveur Discord de Heroic"
   },
   "home": {
-    "heroTitle": "PLAY LIKE A HERO!",
-    "heroDescription": "Heroic is a Free and Open Source <strong>Epic</strong>, <strong>GOG</strong> and <strong>Amazon Prime Games</strong> launcher for <strong>Linux</strong>, <strong>Windows</strong> and <strong>macOS</strong>. Also available on the <strong>SteamDeck</strong>!",
-    "download": "Download",
+    "heroTitle": "JOUEZ COMME UN HÉROS !",
+    "heroDescription": "Heroic est un lanceur de jeux gratuit et open source pour <strong>Epic</strong>, <strong>GOG</strong> et <strong>Amazon Prime Games</strong> pour <strong>Linux</strong>, <strong>Windows</strong> et <strong>macOS</strong>. Aussi disponible sur le <strong>SteamDeck</strong> !",
+    "download": "Télécharger",
     "faq": "FAQ",
-    "mainFeatures": "MAIN FEATURES AND MORE INFO",
+    "mainFeatures": "FONCTIONNALITÉS PRINCIPALES ET PLUS D'INFOS",
     "gamePage": {
-      "title": "Game Page",
-      "description": "Check game details like description, publisher, download and install size, time played and more."
+      "title": "Page du jeu",
+      "description": "Vérifiez les détails du jeu comme la description, l'éditeur, la taille de téléchargement et d'installation, le temps joué et plus."
     },
     "platformSelection": {
-      "title": "Platform Selection",
-      "description": "On Linux and on MacOS you can select to install the Windows version of a native game. This might be handy in case the native version is not supported anymore. On Linux you can choose that for GOG games only."
+      "title": "Sélection de plateforme",
+      "description": "Sur Linux et macOS, vous pouvez sélectionner pour installer la version Windows d'un jeu natif. Cela pourrait être utile si la version native n'est plus supportée. Sur Linux, vous pouvez choisir cela seulement pour les jeux GOG."
     },
     "accessStores": {
-      "title": "Access to the Stores",
-      "description": "Go to the Epic, Amazon Prime or GOG store without even leaving Heroic. Get free games or buy new ones directly from Heroic's interface!"
+      "title": "Accès aux boutiques",
+      "description": "Allez à la boutique Epic, Amazon Prime ou GOG sans même quitter Heroic. Obtenez des jeux gratuits ou achetez-en de nouveaux directement depuis l'interface de Heroic !"
     },
     "organizeLibrary": {
-      "title": "Organize your library",
-      "description": "Add games to favorites or simply hide the games you already played or will never play at all!"
+      "title": "Organisez votre bibliothèque",
+      "description": "Ajoutez des jeux aux favoris ou cachez simplement les jeux que vous avez déjà joués ou que vous ne jouerez jamais !"
     },
     "themes": {
-      "title": "Themes",
-      "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
+      "title": "Thèmes",
+      "description": "Si vous n'aimez pas les couleurs par défaut, vous avez la possibilité de les changer. Il inclut aussi le thème Dracula célèbre."
     },
     "wineManager": {
-      "title": "Wine Manager",
-      "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
+      "title": "Gestionnaire Wine",
+      "description": "Sur Linux, téléchargez la dernière version de Wine-GE, Wine-Lutris ou même Proton-GE en utilisant le Gestionnaire Wine. Ces sélections de versions Wine sont focalisées sur l'amélioration de l'expérience de jeu et de la compatibilité."
     },
     "wineSettings": {
-      "title": "Wine Settings",
-      "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
+      "title": "Paramètres Wine",
+      "description": "En plus d'utiliser la bonne version de Wine, il est important de tout configurer pour avoir la meilleure expérience de jeu sur Linux et macOS. Sous les Paramètres Wine, il est possible d'installer automatiquement des outils comme DXVK, VKD3D, FSR et aussi d'exécuter WineCFG, Winetricks et Run EXE sur le préfixe, pour installer les prérequis des jeux de manière facile."
     },
     "multiLanguage": {
-      "title": "Multi Language",
-      "description": "Heroic was translated by the community in more than 40 languages, from Portuguese to Korean, from Farsi to French. You can also help with translations by accessing",
-      "weblateLinkText": "our Weblate Page"
+      "title": "Multi-langue",
+      "description": "Heroic a été traduit par la communauté en plus de 40 langues, du portugais au coréen, du farsi au français. Vous pouvez aussi aider avec les traductions en accédant à",
+      "weblateLinkText": "notre page Weblate"
     }
   },
   "downloads": {
-    "pageTitle": "Download Heroic",
-    "title": "Download",
-    "subtitle": "Heroic is available for all Major operating systems.",
-    "supportedOS": "Supported OS versions:",
+    "pageTitle": "Télécharger Heroic",
+    "title": "Télécharger",
+    "subtitle": "Heroic est disponible pour tous les systèmes d'exploitation majeurs.",
+    "supportedOS": "Versions OS supportées :",
     "osRequirements": {
-      "linux": "Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.",
-      "windows": "Windows 10 and 11",
-      "macos": "macOS 14 or newer."
+      "linux": "Ubuntu 22.04 ou plus récent, OpenSuse Tumbleweed, Fedora 37 ou plus récent, Arch Linux et dérivés (comme Manjaro, Garuda et EndeavourOS). Heroic fonctionnera sur la plupart des autres distros Linux, mais peut nécessiter une configuration et un dépannage supplémentaires. Il est aussi supporté sur SteamOS, mais le téléchargement n'est disponible que via le centre logiciel Discover.",
+      "windows": "Windows 10 et 11",
+      "macos": "macOS 14 ou plus récent."
     },
     "linux": {
       "title": "Linux",
       "flatpak": {
         "title": "Flatpak",
-        "description": "Get the best Heroic experience on any Linux distribution or on the Steam Deck via Flatpak.",
-        "button": "Get from Flathub"
+        "description": "Obtenez la meilleure expérience Heroic sur toute distribution Linux ou sur le Steam Deck via Flatpak.",
+        "button": "Obtenir de Flathub"
       },
       "appimage": {
         "title": "AppImage",
-        "description": "Download it in AppImage format so it will work on any Linux distro. The AppImage can update itself when a new version is released.",
+        "description": "Téléchargez-le au format AppImage pour qu'il fonctionne sur toute distro Linux. L'AppImage se mettra à jour automatiquement lorsqu'une nouvelle version est publiée.",
         "stable": "Stable",
         "beta": "Beta"
       },
       "other": {
-        "title": "Other",
-        "description": "Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.",
-        "button": "See all"
+        "title": "Autres",
+        "description": "Heroic est aussi distribué en RPM, DEB et TAR.XZ. Vérifiez pour des repos alternatifs sur notre Github.",
+        "button": "Voir tout"
       }
     },
     "windows": {
       "title": "Windows",
       "setup": {
         "title": "Setup",
-        "description": "Install Heroic on your system and get auto-updates when a new version is released. Next, Next, Finish!",
+        "description": "Installez Heroic sur votre système et obtenez des mises à jour automatiques lorsqu'une nouvelle version est publiée. Suivant, Suivant, Terminer !",
         "stable": "Stable",
         "beta": "Beta"
       },
       "portable": {
         "title": "Portable",
-        "description": "Use the portable version in case you do not want the full installation. Check for x64 and arm64 versions on our Github.",
-        "button": "See all packages"
+        "description": "Utilisez la version portable si vous ne voulez pas l'installation complète. Vérifiez les versions x64 et arm64 sur notre Github.",
+        "button": "Voir tous les paquets"
       }
     },
     "macos": {
       "title": "MacOS",
       "appleChips": {
-        "title": "Apple Chips (M1 and Newer)",
-        "description": "Optimized for Apple Silicon Chips. Open it and copy the Heroic App to the Applications folder and you are good to go!",
+        "title": "Puces Apple (M1 et plus récentes)",
+        "description": "Optimisé pour les puces Silicon Apple. Ouvrez-le et copiez l'app Heroic dans le dossier Applications et vous êtes prêt !",
         "stable": "Stable",
         "beta": "Beta"
       },
       "intelChips": {
-        "title": "Intel Chips",
-        "description": "Optimized for Intel Chips. Open it and copy the Heroic App to the Applications folder and you are good to go!",
+        "title": "Puces Intel",
+        "description": "Optimisé pour les puces Intel. Ouvrez-le et copiez l'app Heroic dans le dossier Applications et vous êtes prêt !",
         "stable": "Stable",
         "beta": "Beta"
       }
     }
   },
   "donate": {
-    "pageTitle": "Support Heroic Development",
-    "title": "Support Us",
-    "subtitle": "Heroic is free! Donations help us keep the project alive.",
+    "pageTitle": "Soutenir le développement de Heroic",
+    "title": "Nous soutenir",
+    "subtitle": "Heroic est gratuit ! Les dons nous aident à maintenir le projet en vie.",
     "patreon": {
       "title": "Patreon",
-      "type": "Monthly-sub",
-      "description": "Activate a monthly subscription on Patreon to support us and get rewards.",
-      "button": "Go to Patreon"
+      "type": "Abonnement mensuel",
+      "description": "Activez un abonnement mensuel sur Patreon pour nous soutenir et obtenir des récompenses.",
+      "button": "Aller sur Patreon"
     },
     "kofi": {
       "title": "Ko-fi",
-      "type": "One-time",
-      "description": "Support the project by offering us a coffee. Just like that, fast and simple!",
-      "button": "Go to Ko-fi"
+      "type": "Une fois",
+      "description": "Soutenez le projet en nous offrant un café. Juste comme ça, rapide et simple !",
+      "button": "Aller sur Ko-fi"
     },
     "gog": {
       "title": "GOG.com",
-      "type": "One-time",
-      "description": "Use our link when making purchases on GOG and support the project. Cool right?",
-      "button": "Go to GOG"
+      "type": "Une fois",
+      "description": "Utilisez notre lien lors des achats sur GOG et soutenez le projet. Cool, hein ?",
+      "button": "Aller sur GOG"
     },
     "github": {
       "title": "GitHub Sponsor",
-      "type": "One-time or flexible-sub",
-      "description": "Support us with a one-time or recurring donation through GitHub.",
-      "button": "Go to GitHub"
+      "type": "Une fois ou abonnement flexible",
+      "description": "Soutenez-nous avec un don unique ou récurrent via GitHub.",
+      "button": "Aller sur GitHub"
     }
   },
   "cla": {
     "pageTitle": "CLA",
-    "title": "Contributor License Agreement",
-    "intro1": "This Contribution License Agreement (the <strong>\"CLA\"</strong>) is between the individual set forth in the signature block (<strong>\"You\"</strong>) and Heroic Labs, Inc. (<strong>\"Heroic\"</strong>), effective as of the date of Your signature and sets forth the terms pursuant to which You may provide Contributions to Heroic.",
-    "intro2": "You accept and agree to the following terms and conditions for Your past, present and future Contributions submitted to Heroic's Heroic Games Launcher project (the \"Project\"). In return, Heroic will not use Your Contributions in a way that is contrary to Heroic's business objectives. Except for the license granted herein to Heroic and recipients of software distributed by Heroic, You reserve all right, title, and interest in and to Your Contributions.",
+    "title": "Accord de Licence de Contributeur",
+    "intro1": "Cet Accord de Licence de Contributeur (le <strong>\"CLA\"</strong>) est entre l'individu établi dans le bloc de signature (<strong>\"Vous\"</strong>) et Heroic Labs, Inc. (<strong>\"Heroic\"</strong>), effectif à compter de la date de votre signature et établit les termes selon lesquels vous pouvez fournir des Contributions à Heroic.",
+    "intro2": "Vous acceptez et convenez des termes et conditions suivants pour vos Contributions passées, présentes et futures soumises à Heroic's Heroic Games Launcher project (le \"Projet\"). En retour, Heroic n'utilisera pas vos Contributions d'une manière contraire aux objectifs commerciaux de Heroic. Sauf pour la licence accordée ici à Heroic et aux destinataires de logiciels distribués par Heroic, vous conservez tous les droits, titre et intérêt dans et à vos Contributions.",
     "definitions": {
-      "title": "Definitions.",
-      "contribution": "<strong>\"Contribution\"</strong> means any original work of authorship, including any modifications or additions to an existing work, that You intentionally submit, or have submitted previously, to Heroic for inclusion in, or documentation of, the Project.",
-      "submit": "<strong>\"Submit\"</strong> means any form of electronic, verbal, or written communication sent to Heroic or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, Heroic for the purpose of discussing and improving the Project, but excluding communication that is conspicuously marked or otherwise designated in writing by You as \"Not a Contribution.\""
+      "title": "Définitions.",
+      "contribution": "<strong>\"Contribution\"</strong> signifie tout travail original d'auteur, y compris toute modification ou addition à un travail existant, que vous soumettez intentionnellement, ou avez soumis précédemment, à Heroic pour inclusion dans, ou documentation de, le Projet.",
+      "submit": "<strong>\"Soumettre\"</strong> signifie toute forme de communication électronique, verbale ou écrite envoyée à Heroic ou ses représentants, y compris mais non limité à communication sur listes de courrier électronique, systèmes de contrôle de code source et systèmes de suivi d'issues qui sont gérés par, ou au nom de, Heroic pour le but de discuter et améliorer le Projet, excluant communication qui est conspicuously marquée ou autrement désignée par écrit par vous comme \"Pas une Contribution.\""
     },
     "copyrightLicense": {
-      "title": "Copyright License.",
-      "content": "Subject to the terms and conditions of this CLA, You hereby grant to Heroic and to recipients of software distributed by Heroic a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute Your Contributions and such derivative works."
+      "title": "Licence de Droits d'Auteur.",
+      "content": "Sous réserve des termes et conditions de ce CLA, vous accordez ici à Heroic et aux destinataires de logiciels distribués par Heroic une licence perpétuelle, mondiale, non-exclusive, sans frais, libre de redevances, irrévocable de droits d'auteur pour reproduire, préparer des travaux dérivés de, afficher publiquement, exécuter publiquement, sous-licencier et distribuer vos Contributions et tels travaux dérivés."
     },
     "patentLicense": {
-      "title": "Patent License.",
-      "content": "Subject to the terms and conditions of this CLA, You hereby grant to Heroic and to recipients of software distributed by Heroic a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Project, where such license applies only to those patent claims licensable by You that are necessarily infringed by Your Contribution(s) alone or by combination of Your Contribution(s) with the Project to which such Contribution(s) was submitted. If any entity institutes patent litigation against You or any other entity (including a cross-claim or counterclaim in a lawsuit) alleging that Your Contribution, or the Project to which You have contributed, constitutes direct or contributory patent infringement, then any patent licenses granted to that entity under this CLA for that Contribution or Project will terminate as of the date such litigation is filed."
+      "title": "Licence de Brevet.",
+      "content": "Sous réserve des termes et conditions de ce CLA, vous accordez ici à Heroic et aux destinataires de logiciels distribués par Heroic une licence perpétuelle, mondiale, non-exclusive, sans frais, libre de redevances, irrévocable (sauf comme établi dans cette section) de brevet pour faire, avoir fait, utiliser, offrir vendre, vendre, importer et transférer autrement le Projet, où telle licence s'applique seulement aux réclamations de brevet licenciables par vous qui sont nécessairement enfreintes par vos Contribution(s) seule ou par combinaison de vos Contribution(s) avec le Projet auquel telles Contribution(s) ont été soumises. Si toute entité institue un litige de brevet contre vous ou toute autre entité (y compris une contre-réclamation ou réclamation croisée dans un litige) alléguant que votre Contribution, ou le Projet auquel vous avez contribué, constitue une infraction directe ou contributoire de brevet, alors toute licence de brevet accordée à cette entité sous ce CLA pour cette Contribution ou Projet cessera à la date où tel litige est déposé."
     },
     "representations": {
-      "title": "Representations and Warranties.",
-      "intro": "The Licensor represents and warrants that:",
-      "item1": "You are legally entitled to grant the above license, and if Your employer(s) has rights to intellectual property that You create that includes Your Contributions, then You represent and warrant that You have received permission to make Contributions on behalf of that employer, that Your employer has waived such rights for Your Contributions to Heroic, or that Your employer has executed a separate CLA with Heroic;",
-      "item2": "Each of Your Contributions is Your original creation (see section 6 for submissions on behalf of others); and",
-      "item3": "Your Contribution submissions include complete details of any third-party license or other restriction (including, but not limited to, related patents and trademarks) of which You are personally aware and which are associated with any part of Your Contributions."
+      "title": "Représentations et Garanties.",
+      "intro": "Le Licencié représente et garantit que :",
+      "item1": "Vous êtes légalement autorisé à accorder la licence ci-dessus, et si vos employeur(s) ont des droits à propriété intellectuelle que vous créez qui inclut vos Contributions, alors vous représentez et garantissez que vous avez reçu permission de faire des Contributions au nom de cet employeur, que votre employeur a cédé tels droits pour vos Contributions à Heroic, ou que votre employeur a exécuté un CLA séparé avec Heroic ;",
+      "item2": "Chaque une de vos Contributions est votre création originale (voir section 6 pour soumissions au nom d'autres) ; et",
+      "item3": "Vos soumissions de Contributions incluent des détails complets de toute licence de tiers ou restriction (y compris, mais non limité à, brevets et marques associés) dont vous êtes personnellement au courant et qui sont associés à toute partie de vos Contributions."
     },
     "support": {
-      "title": "Support; Disclaimer.",
-      "content": "You are not expected to provide support for Your Contributions, except to the extent You desire to do so. You may provide support for free, for a fee, or not at all. Unless required by applicable law or agreed to in writing, You provide Your Contributions on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE."
+      "title": "Soutien ; Clause de non-responsabilité.",
+      "content": "Vous n'êtes pas attendu à fournir du soutien pour vos Contributions, sauf dans la mesure où vous désirez le faire. Vous pouvez fournir du soutien gratuitement, pour une redevance ou pas du tout. Sauf requis par loi applicable ou convenu par écrit, vous fournissez vos Contributions \"TEL QUEL\", SANS GARANTIES OU CONDITIONS DE QUELQUE NATURE QUE CE SOIT, y compris, sans limitation, toute garantie ou condition de TITRE, NON-INFRACTION, MARCHANDABILITÉ ou APTITUDE POUR UN BUT PARTICULIER."
     },
     "thirdParty": {
-      "title": "Third Party Works.",
-      "content": "If You wish to submit work that is not Your original creation, then You may submit it to Heroic separately from any Contribution, identifying the complete details of its source and of any license or other restriction (including, but not limited to, related patents, trademarks, and license agreements) of which You are personally aware, and conspicuously marking the work as \"Submitted on behalf of a third-party: [named here]\"."
+      "title": "Travaux de Tiers.",
+      "content": "Si vous souhaitez soumettre du travail qui n'est pas votre création originale, alors vous pouvez le soumettre à Heroic séparément de toute Contribution, identifiant les détails complets de sa source et de toute licence ou restriction (y compris, mais non limité à, brevets associés, marques et accords de licence) dont vous êtes personnellement au courant, et marquant conspicuously le travail comme \"Soumis au nom d'un tiers : [nommé ici]\"."
     },
     "notice": {
-      "title": "Notice.",
-      "content": "You agree to notify Heroic of any facts or circumstances of which You become aware that would make Your representations in this CLA inaccurate in any respect."
+      "title": "Avis.",
+      "content": "Vous acceptez de notifier Heroic de tout fait ou circonstance dont vous prenez connaissance qui rendrait vos représentations dans ce CLA inexactes en quelque aspect."
     },
     "general": {
-      "title": "General.",
-      "content": "This CLA is the entire understanding and agreement with respect to the subject matter hereof, and supersedes any and all prior or contemporaneous representations, understandings, and agreements, between the parties regarding same. If any part of this CLA is found to be unenforceable, the remaining portions of this CLA will remain in full force and effect. No modification of or amendment to this CLA, nor any waiver of any rights under this CLA, will be effective unless in writing signed by the party to be charged, and the waiver of any breach or default will not constitute a waiver of any other right under this CLA or any subsequent breach or default. Nothing in this CLA creates and the parties do not intend to create, any partnership or joint venture between themselves. Either party may freely assign this CLA. This CLA is binding upon and will inure to the benefit of a party's successors and permitted assigns. This CLA will be governed by the laws of the State of Delaware. Exclusive jurisdiction of any and all disputes hereunder will be in the state and federal courts in Wilmington, Delaware. This CLA may be executed in counterparts with the same effect as if all signatories had signed the same document."
+      "title": "Général.",
+      "content": "Ce CLA est l'entente et l'accord complet concernant le sujet ici, et remplace tout et chaque entente, représentation ou accord antérieur ou contemporain, entre les parties concernant le même. Si toute partie de ce CLA est trouvée non exécutable, les portions restantes de ce CLA resteront en plein vigueur et effet. Aucune modification ou amendement à ce CLA, ni aucun waiver de droits sous ce CLA, sera effectif sauf en écriture signée par la partie à être chargée, et le waiver de toute violation ou défaut ne constituera pas un waiver de tout autre droit sous ce CLA ou toute violation ou défaut subséquent. Rien dans ce CLA crée et les parties n'entendent pas créer, quelque partenariat ou joint venture entre elles. Chaque partie peut librement céder ce CLA. Ce CLA est contraignant sur et enurecera aux bénéfices des successeurs et cessionnaires autorisés d'une partie. Ce CLA sera gouverné par les lois de l'État du Delaware. Juridiction exclusive de tout et chaque différend ici sous sera dans les tribunaux étatiques et fédéraux à Wilmington, Delaware. Ce CLA peut être exécuté en contreparties avec le même effet comme si toutes les signatures avaient signé le même document."
     },
     "signature": {
-      "yourName": "Your Name:",
-      "by": "By:",
-      "date": "Date:",
-      "email": "Email:",
+      "yourName": "Votre Nom :",
+      "by": "Par :",
+      "date": "Date :",
+      "email": "Email :",
       "heroicLabs": "Heroic Labs, Inc."
     },
-    "printButton": "Print CLA"
+    "printButton": "Imprimer CLA"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Questions Fréquemment Posées",
     "questions": [
       {
-        "question": "What is Heroic?",
+        "question": "Qu'est-ce que Heroic ?",
         "answers": [
-          "Heroic is an open source, lightweight games launcher that is available for Linux, Windows, and macOS. It is an alternative to the Epic Games Launcher and GOG Galaxy, and it is focused on privacy, using fewer resources, and supporting a range of tools such as Wine, Proton, Crossover, DXVK, and VKD3D."
+          "Heroic est un lanceur de jeux open source, léger qui est disponible pour Linux, Windows et macOS. C'est une alternative au Epic Games Launcher et GOG Galaxy, et il se concentre sur la confidentialité, utilisant moins de ressources et supportant une gamme d'outils tels que Wine, Proton, Crossover, DXVK et VKD3D."
         ]
       },
       {
-        "question": "Is Heroic safe to use?",
+        "question": "Heroic est-il sûr à utiliser ?",
         "answers": [
-          "Yes, Heroic is a safe and secure games launcher that does not collect any data from the user's computer. It is also open source, which means that the source code is publicly available and can be reviewed by the community to ensure that it does not contain any malicious code."
+          "Oui, Heroic est un lanceur de jeux sûr et fiable qui ne collecte pas de données de l'ordinateur de l'utilisateur. Il est aussi open source, ce qui signifie que le code source est disponible publiquement et peut être examiné par la communauté pour s'assurer qu'il ne contient pas de code malveillant."
         ]
       },
       {
-        "question": "Does Heroic collect my data, username, or password?",
+        "question": "Heroic collecte-t-il mes données, nom d'utilisateur ou mot de passe ?",
         "answers": [
-          "No, Heroic is a privacy-centered application and does not collect any data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.",
-          "In addition, Heroic does not collect any usage data or analytics from your use of the application. Your privacy is important to us and we take steps to ensure that your data is secure and not collected or shared without your consent."
+          "Non, Heroic est une application axée sur la confidentialité et ne collecte pas de données de votre ordinateur ou appareil. Il ne collecte pas votre nom d'utilisateur, mot de passe ou toute autre information personnelle. Vous vous connecterez sur le site officiel d'Epic Games Store ou GOG et ensuite Heroic gardera seulement un token qui sert seulement à lister, télécharger et lancer des jeux de ces boutiques.",
+          "De plus, Heroic ne collecte pas de données d'utilisation ou d'analyses de votre utilisation de l'application. Votre confidentialité est importante pour nous et nous prenons des mesures pour assurer que vos données sont sécurisées et non collectées ou partagées sans votre consentement."
         ]
       },
       {
-        "question": "Can I get banned for using Heroic?",
+        "question": "Puis-je être banni pour utiliser Heroic ?",
         "answers": [
-          "It is unlikely that you will get banned for using Heroic to launch games from the Epic Games Store or GOG.",
-          "However, please note that certain actions, such as cheating or violating the terms of service for a particular game, may result in a ban. It is important to follow the rules and guidelines of each game and store in order to avoid any issues.",
-          "Some games also might ban you if you are trying to run the game on a non-supported operating system using Wine or Proton, for example."
+          "Il est improbable que vous soyez banni pour utiliser Heroic pour lancer des jeux du Epic Games Store ou GOG.",
+          "Cependant, veuillez noter que certaines actions, comme tricher ou violer les termes de service d'un jeu particulier, peuvent entraîner un bannissement. Il est important de suivre les règles et directives de chaque jeu et boutique pour éviter tout problème.",
+          "Certains jeux pourraient aussi vous bannir si vous essayez de faire tourner le jeu sur un système d'exploitation non supporté en utilisant Wine ou Proton, par exemple."
         ]
       },
       {
-        "question": "How do I install Heroic on my computer?",
+        "question": "Comment installer Heroic sur mon ordinateur ?",
         "answers": [
-          "The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package and then run the command xattr -r -d com.apple.quarantine /Applications/Heroic.app in the terminal to complete the installation. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website."
+          "Le processus pour installer Heroic dépend de votre système d'exploitation. Sur Linux, vous pouvez utiliser un gestionnaire de paquets comme Flatpak, .deb, .pacman ou .rpm pour installer Heroic, ou vous pouvez utiliser un AppImage. Sur macOS, vous pouvez installer Heroic comme un paquet d'application standard et ensuite exécuter la commande xattr -r -d com.apple.quarantine /Applications/Heroic.app dans le terminal pour compléter l'installation. Sur Windows, vous pouvez utiliser le gestionnaire de paquets WinGet en exécutant la commande winget install HeroicGamesLauncher.HeroicGamesLauncher, ou vous pouvez télécharger et exécuter le setup exe ou portable exe depuis le site web."
         ]
       },
       {
-        "question": "What features are currently available in Heroic, and what features are planned for the future?",
+        "question": "Quelles fonctionnalités sont actuellement disponibles dans Heroic, et quelles fonctionnalités sont planifiées pour le futur ?",
         "answers": [
-          "Currently available features in Heroic include:",
-          "Support for launching games from the Epic Games Store and GOG",
-          "Support for installing, uninstalling, updating, repairing, and moving games",
-          "Support for importing already installed games",
-          "Support for playing Epic games online (AntiCheat on macOS and on Linux depends on the game)",
-          "Support for playing games using Wine or Proton on Linux",
-          "Support for playing games using Crossover on macOS",
-          "Support for downloading custom Wine and Proton versions on Linux",
-          "Direct access to the Epic and GOG stores from within the Heroic interface",
-          "Search for game compatibility information on ProtonDB on Linux",
-          "Sync installed games with an existing Epic Games Store installation",
-          "Sync saves with the cloud",
-          "Custom theming support",
-          "Download queue",
-          "Add games and applications outside of GOG and Epic Games",
-          "Planned features for the future include:",
-          "Support for other stores (such as Amazon Gaming and IndieGala)",
-          "Play GOG games online"
+          "Les fonctionnalités disponibles actuellement dans Heroic incluent :",
+          "Support pour lancer des jeux du Epic Games Store et GOG",
+          "Support pour installer, désinstaller, mettre à jour, réparer et déplacer des jeux",
+          "Support pour importer des jeux déjà installés",
+          "Support pour jouer à des jeux Epic en ligne (AntiCheat sur macOS et sur Linux dépend du jeu)",
+          "Support pour jouer à des jeux en utilisant Wine ou Proton sur Linux",
+          "Support pour jouer à des jeux en utilisant Crossover sur macOS",
+          "Support pour télécharger des versions personnalisées de Wine et Proton sur Linux",
+          "Accès direct aux boutiques Epic et GOG depuis l'interface Heroic",
+          "Rechercher des informations de compatibilité de jeu sur ProtonDB sur Linux",
+          "Synchroniser des jeux installés avec une installation existante d'Epic Games Store",
+          "Synchroniser les sauvegardes avec le cloud",
+          "Support pour thèmes personnalisés",
+          "File d'attente de téléchargement",
+          "Ajouter des jeux et applications en dehors de GOG et Epic",
+          "Les fonctionnalités planifiées pour le futur incluent :",
+          "Support pour d'autres boutiques (telles que Amazon Gaming et IndieGala)",
+          "Jouer à des jeux GOG en ligne"
         ]
       },
       {
-        "question": "What are the supported operating systems for Heroic?",
+        "question": "Quels sont les systèmes d'exploitation supportés pour Heroic ?",
         "answers": [
-          "Linux: Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.",
-          "Windows: Windows 10 and 11",
-          "macOS: macOS 14 or newer."
+          "Linux : Ubuntu 22.04 ou plus récent, OpenSuse Tumbleweed, Fedora 37 ou plus récent, Arch Linux et dérivés (comme Manjaro, Garuda et EndeavourOS). Heroic fonctionnera sur la plupart des autres distros Linux, mais peut nécessiter une configuration et un dépannage supplémentaires. Il est aussi supporté sur SteamOS, mais le téléchargement n'est disponible que via le centre logiciel Discover.",
+          "Windows : Windows 10 et 11",
+          "macOS : macOS 14 ou plus récent."
         ]
       },
       {
-        "question": "What are the minimum system requirements for Heroic?",
+        "question": "Quels sont les exigences minimales du système pour Heroic ?",
         "answers": [
-          "Heroic is an Electron-based application and requires approximately 500MB of storage space. In terms of hardware requirements, the minimum specifications for running Heroic are:",
-          "2GB of RAM",
-          "1.8GHz dual-core processor",
-          "However, please note that these are the minimum requirements and you may need more powerful hardware in order to run certain games or applications."
+          "Heroic est une application basée sur Electron et nécessite environ 500MB d'espace de stockage. En termes d'exigences matérielles, les spécifications minimales pour exécuter Heroic sont :",
+          "2GB de RAM",
+          "Processeur dual-core de 1.8GHz",
+          "Cependant, veuillez noter que ce sont les exigences minimales et vous pourriez avoir besoin de matériel plus puissant pour exécuter certains jeux ou applications."
         ]
       },
       {
-        "question": "How do I use Heroic to play games?",
+        "question": "Comment utiliser Heroic pour jouer à des jeux ?",
         "answers": [
-          "Once you have installed Heroic, you can use it to browse and install games from a range of sources. You can also use it to launch and manage games that you have installed on your computer. If you encounter any issues with games, you can check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . If you are unable to find a solution, you can also seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK ."
+          "Une fois que vous avez installé Heroic, vous pouvez l'utiliser pour naviguer et installer des jeux d'une variété de sources. Vous pouvez aussi l'utiliser pour lancer et gérer des jeux que vous avez installés sur votre ordinateur. Si vous rencontrez des problèmes avec des jeux, vous pouvez vérifier la documentation générale pour dépannage et workarounds à ce lien : https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . Si vous ne pouvez pas trouver une solution, vous pouvez aussi chercher de l'aide sur le serveur Discord Heroic à ce lien : https://discord.com/invite/rHJ2uqdquK ."
         ]
       },
       {
-        "question": "Can I download multiple games at once?",
+        "question": "Puis-je télécharger plusieurs jeux à la fois ?",
         "answers": [
-          "Yes, you can download multiple games at once in Heroic by using the download queue. To use the download queue, simply start a new Install option when already installing a game. This will add the game to the queue and it will be downloaded once the games in front of it have finished downloading.",
-          "You can view the download queue and monitor the progress of your downloads by going to the 'Downloads' tab in the sidebar. From there, you can also pause or cancel downloads as needed."
+          "Oui, vous pouvez télécharger plusieurs jeux à la fois dans Heroic en utilisant la file d'attente de téléchargement. Pour utiliser la file d'attente de téléchargement, commencez simplement une nouvelle option d'Installation tout en installant déjà un jeu. Cela ajoutera le jeu à la file d'attente et il sera téléchargé une fois que les jeux devant lui auront terminé de se télécharger.",
+          "Vous pouvez voir la file d'attente de téléchargement et surveiller le progrès de vos téléchargements en allant à l'onglet 'Téléchargements' dans la barre latérale. Depuis là, vous pouvez aussi mettre en pause ou annuler des téléchargements selon les besoins."
         ]
       },
       {
-        "question": "How can I add games outside Epic or GOG?",
+        "question": "Comment puis-je ajouter des jeux en dehors d'Epic ou GOG ?",
         "answers": [
-          "You can add games outside Epic or GOG to Heroic by going to the 'Add Games' button on the game Library. This will allow you to browse for the executable on your computer and add it to Heroic as a custom game.",
-          "Please note that support for custom games may vary and some features, such as automatic updates and save syncing, may not be available. In addition, you may need to configure the game's settings manually in order to get it to run properly."
+          "Vous pouvez ajouter des jeux en dehors d'Epic ou GOG à Heroic en allant au bouton 'Ajouter Jeux' dans la Bibliothèque de jeux. Cela vous permettra de naviguer vers l'exécutable sur votre ordinateur et de l'ajouter à Heroic comme un jeu personnalisé.",
+          "Veuillez noter que le support pour les jeux personnalisés peut varier et certaines fonctionnalités, telles que les mises à jour automatiques et la synchronisation des sauvegardes, peuvent ne pas être disponibles. De plus, vous pourriez avoir besoin de configurer manuellement les paramètres du jeu pour vous assurer qu'il fonctionne correctement."
         ]
       },
       {
-        "question": "What is Wine and how does it work with Heroic?",
+        "question": "Qu'est-ce que Wine et comment fonctionne-t-il avec Heroic ?",
         "answers": [
-          "Wine is a free and open-source compatibility layer that allows Windows applications to run on Unix-like operating systems, including Linux and macOS. Heroic uses Wine to run Windows games on those operating systems.",
-          "Wine is not an emulator, but rather it translates the Windows API calls into POSIX calls that are understood by the operating system. This allows Windows games to run without the need for a full Windows installation.",
-          "You can learn more about Wine and its capabilities on the Wine project website: https://www.winehq.org"
+          "Wine est une couche de compatibilité gratuite et open source qui permet aux applications Windows de s'exécuter sur des systèmes d'exploitation de type Unix, y compris Linux et macOS. Heroic utilise Wine pour exécuter des jeux Windows sur ces systèmes d'exploitation.",
+          "Wine n'est pas un émulateur, mais plutôt il traduit les appels d'API Windows en appels POSIX qui sont compris par le système d'exploitation. Cela permet aux jeux Windows de s'exécuter sans la nécessité d'une installation complète de Windows.",
+          "Vous pouvez en apprendre plus sur Wine et ses capacités sur le site web du projet Wine : https://www.winehq.org"
         ]
       },
       {
-        "question": "What is Proton and how does it work with Heroic?",
+        "question": "Qu'est-ce que Proton et comment fonctionne-t-il avec Heroic ?",
         "answers": [
-          "Proton is a compatibility layer developed by Valve that allows running Windows games on Linux. It is based on Wine, but includes additional patches and improvements to make it more stable and compatible with a larger number of games. In Heroic, you can use Proton to run Windows games on Linux. You can choose which version of Proton to use for each game, and you can also download custom versions of Proton directly from the Wine Manager page inside Heroic. It is important to note that Proton was not designed to run games outside of Steam, and the results may vary. You can check for compatibility information for each game on the ProtonDB website: https://www.protondb.com"
+          "Proton est une couche de compatibilité développée par Valve qui permet d'exécuter des jeux Windows sur Linux. Il est basé sur Wine, mais inclut des patches et améliorations supplémentaires pour le rendre plus stable et compatible avec un plus grand nombre de jeux. Dans Heroic, vous pouvez utiliser Proton pour exécuter des jeux Windows sur Linux. Vous pouvez choisir quelle version de Proton utiliser pour chaque jeu, et vous pouvez aussi télécharger des versions personnalisées de Proton directement depuis la page du Gestionnaire Wine à l'intérieur de Heroic. Il est important de noter que Proton n'a pas été conçu pour exécuter des jeux en dehors de Steam, et les résultats peuvent varier. Vous pouvez vérifier des informations de compatibilité pour chaque jeu sur le site web de ProtonDB : https://www.protondb.com"
         ]
       },
       {
-        "question": "What is Crossover and how does it work with Heroic?",
+        "question": "Qu'est-ce que Crossover et comment fonctionne-t-il avec Heroic ?",
         "answers": [
-          "Crossover is a commercial software that allows you to run Windows applications on Linux and macOS. It is developed by CodeWeavers and can be purchased from their website: https://www.codeweavers.com/ .",
-          "In Heroic, you can use Crossover to run Windows games on macOS by selecting the \"Crossover\" version in the game settings and also the bottle name (default is HEROIC). Please note that Crossover is a third-party software and its usage is not officially supported by Heroic.",
-          "If you decide to purchase Crossover, you can use the coupon code LEGENDARY to get a discount and support the development of the Legendary app, which is used by Heroic to integrate with the Epic Games Store."
+          "Crossover est un logiciel commercial qui permet d'exécuter des applications Windows sur Linux et macOS. Il est développé par CodeWeavers et peut être acheté depuis leur site web : https://www.codeweavers.com/ .",
+          "Dans Heroic, vous pouvez utiliser Crossover pour exécuter des jeux Windows sur macOS en sélectionnant la version \"Crossover\" dans les paramètres du jeu et aussi le nom du bottle (par défaut est HEROIC). Veuillez noter que Crossover est un logiciel tiers et son utilisation n'est pas officiellement supportée par Heroic.",
+          "Si vous décidez d'acheter Crossover, vous pouvez utiliser le code de coupon LEGENDARY pour obtenir une remise et soutenir le développement de l'app Legendary, qui est utilisée par Heroic pour s'intégrer avec le Epic Games Store."
         ]
       },
       {
-        "question": "My game is not working with Heroic. What should I do?",
+        "question": "Mon jeu ne fonctionne pas avec Heroic. Que dois-je faire ?",
         "answers": [
-          "If you are having trouble running a game with Heroic, you can: Check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . This resource may contain information that can help you resolve your issue.",
-          "If you are unable to find a solution in the documentation, you can seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK . Other users and members of the Heroic team may be able to offer advice or assistance.",
-          "If the issue persists, you can consider opening an issue on the Heroic GitHub page at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . Providing as much information as possible about your issue, such as the operating system, game, and any error messages you are seeing, can help the team investigate and resolve the issue.",
-          "If the issue is specific to a particular game, you may want to check the game's documentation or contact the game developer for assistance.",
-          "Finally, you may want to consider trying other tools or compatibility layers, such as Wine or Proton, to see if they can help resolve the issue."
+          "Si vous avez des problèmes pour exécuter un jeu avec Heroic, vous pouvez : Vérifier la documentation générale pour dépannage et workarounds à ce lien : https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . Cette ressource peut contenir des informations qui vous aident à résoudre votre problème.",
+          "Si vous ne pouvez pas trouver une solution dans la documentation, vous pouvez chercher de l'aide sur le serveur Discord Heroic à ce lien : https://discord.com/invite/rHJ2uqdquK . D'autres utilisateurs et membres de l'équipe Heroic peuvent offrir des conseils ou une assistance.",
+          "Si le problème persiste, vous pouvez considérer ouvrir un issue sur la page GitHub de Heroic à ce lien : https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . Fournir autant d'informations que possible sur votre problème, telles que système d'exploitation, jeu et messages d'erreur que vous voyez, peut aider l'équipe à enquêter et résoudre le problème.",
+          "Si le problème est spécifique à un jeu particulier, vous pourriez vouloir vérifier la documentation du jeu ou contacter le développeur du jeu pour une assistance.",
+          "Enfin, vous pourriez vouloir considérer essayer d'autres outils ou couches de compatibilité, telles que Wine ou Proton, pour voir s'ils peuvent aider à résoudre le problème."
         ]
       },
       {
-        "question": "Can I use Heroic to install and run native Linux games from the GOG store?",
+        "question": "Puis-je utiliser Heroic pour installer et exécuter des jeux natifs Linux depuis la boutique GOG ?",
         "answers": [
-          "Yes, Heroic can be used to install and run native Linux games from the GOG store. However, it is not currently possible to install or run native Linux games from the Epic Games store, as Epic Games does not currently offer native Linux games. If you encounter issues running a native Linux game with Heroic, you may be able to resolve them by enabling the \"Use Steam Runtime\" setting in the Game Settings menu. This setting will use the Steam Runtime, if it is installed on your system, to provide any missing libraries that the game may require."
+          "Oui, Heroic peut être utilisé pour installer et exécuter des jeux natifs Linux depuis la boutique GOG. Cependant, il n'est actuellement pas possible d'installer ou exécuter des jeux natifs Linux depuis la boutique Epic Games, car Epic Games n'offre actuellement pas de jeux natifs Linux. Si vous rencontrez des problèmes en exécutant un jeu natif Linux avec Heroic, vous pouvez essayer d'activer le paramètre \"Utiliser Steam Runtime\" dans le menu Paramètres du Jeu. Ce paramètre fera que Heroic utilise le Steam Runtime, s'il est installé sur votre système, pour fournir des bibliothèques manquantes que le jeu pourrait nécessiter."
         ]
       },
       {
-        "question": "Can I use Heroic to install and run native macOS games from GOG and Epic Games?",
+        "question": "Puis-je utiliser Heroic pour installer et exécuter des jeux natifs macOS depuis GOG et Epic Games ?",
         "answers": [
-          "Yes, Heroic can be used to install and run native macOS games from the GOG store and the Epic Games store. Simply browse and install the games as you would any other game in Heroic."
+          "Oui, Heroic peut être utilisé pour installer et exécuter des jeux natifs macOS depuis la boutique GOG et la boutique Epic Games. Naviguez et installez simplement les jeux comme vous le feriez pour tout autre jeu dans Heroic."
         ]
       },
       {
-        "question": "Can I use Heroic to manage and download Wine and Proton versions directly from the interface on Linux?",
+        "question": "Puis-je utiliser Heroic pour gérer et télécharger des versions de Wine et Proton directement depuis l'interface sur Linux ?",
         "answers": [
-          "Yes, Heroic includes tools for managing and downloading Wine and Proton versions directly from the interface on Linux. You can access these tools by going to the Tools menu in the main menu and selecting either \"Manage Wine Versions\" or \"Manage Proton Versions.\""
+          "Oui, Heroic inclut des outils pour gérer et télécharger des versions de Wine et Proton directement depuis l'interface sur Linux. Vous pouvez accéder à ces outils en allant au menu Outils dans le menu principal et en sélectionnant soit \"Gérer Versions Wine\" ou \"Gérer Versions Proton\"."
         ]
       },
       {
-        "question": "How can I add game shortcuts to my Desktop or Startup menu in Heroic?",
+        "question": "Comment puis-je ajouter des raccourcis de jeu à mon Bureau ou menu Démarrage dans Heroic ?",
         "answers": [
-          "To add game shortcuts to your Desktop or Startup menu in Heroic, first go to the page for the game you want to create a shortcut for. Then, click on the three dots icon in the top right corner of the page and select \"Add Shortcuts\" from the menu. This will create a shortcut for the game on your Desktop and add it to your Startup menu, so that it will be launched automatically when you start your computer. You can also use the \"Add Shortcut to Steam\" option to create a shortcut for the game in the Steam client."
+          "Pour ajouter des raccourcis de jeu à votre Bureau ou menu Démarrage dans Heroic, allez d'abord à la page du jeu pour lequel vous voulez créer un raccourci. Ensuite, cliquez sur l'icône trois points dans le coin supérieur droit de la page et sélectionnez \"Ajouter Raccourcis\" dans le menu. Cela créera un raccourci pour le jeu sur votre Bureau et l'ajoutera à votre menu Démarrage, pour qu'il se lance automatiquement lorsque vous démarrez votre ordinateur. Vous pouvez aussi utiliser l'option \"Ajouter Raccourci à Steam\" pour créer un raccourci pour le jeu dans le client Steam."
         ]
       },
       {
-        "question": "How can I support the Heroic project financially?",
+        "question": "Comment puis-je soutenir le projet Heroic financièrement ?",
         "answers": [
-          "If you would like to support the Heroic project financially, there are a few ways you can do so. You can become a patron on Patreon, make a one-time donation through Ko-fi, or sign up as a sponsor on GitHub Sponsors. You can find links to all of these options on the Heroic website at this link: https://heroicgameslauncher.com/donate ."
+          "Si vous voulez soutenir le projet Heroic financièrement, il y a quelques façons de le faire. Vous pouvez devenir un patron sur Patreon, faire un don unique via Ko-fi, ou vous inscrire comme sponsor sur GitHub Sponsors. Vous pouvez trouver des liens vers toutes ces options sur le site web de Heroic à ce lien : https://heroicgameslauncher.com/donate ."
         ]
       },
       {
-        "question": "How can I contribute with translations for Heroic?",
+        "question": "Comment puis-je contribuer avec des traductions pour Heroic ?",
         "answers": [
-          "If you would like to help translate Heroic into different languages, you can contribute through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ . Simply create an account on Weblate and join the project to start translating. Your contributions will be reviewed and merged by the Heroic team."
+          "Si vous voulez aider à traduire Heroic dans différentes langues, vous pouvez contribuer via la plateforme Weblate à ce lien : https://hosted.weblate.org/projects/heroic-games-launcher/ . Créez simplement un compte sur Weblate et rejoignez le projet pour commencer à traduire. Vos contributions seront examinées et fusionnées par l'équipe Heroic."
         ]
       },
       {
-        "question": "How does Heroic integrate with Epic Games and GOG?",
+        "question": "Comment Heroic s'intègre-t-il avec Epic Games et GOG ?",
         "answers": [
-          "Heroic uses two command-line interface (CLI) tools to integrate with the Epic Games store and the GOG store. For Epic Games, it uses Legendary, an open source CLI app developed by derrod and hosted on GitHub at this link: https://github.com/derrod/legendary . For GOG, it uses GOGDL, an open source CLI tool developed by the Heroic team. If you encounter issues with these tools, you can try using an alternative binary by going to the Advanced Settings menu in Heroic and selecting the \"Use alternative binary\" option. This may help resolve any issues you are experiencing."
+          "Heroic utilise deux outils de ligne de commande pour s'intégrer avec la boutique Epic Games et la boutique GOG. Pour Epic Games, il utilise Legendary, une app CLI open source développée par derrod et hébergée sur GitHub à ce lien : https://github.com/derrod/legendary . Pour GOG, il utilise GOGDL, un outil CLI open source développé par l'équipe Heroic. Si vous rencontrez des problèmes avec ces outils, vous pouvez essayer d'utiliser un binaire alternatif en allant au menu Paramètres Avancés dans Heroic et en sélectionnant l'option \"Utiliser binaire alternatif\". Cela peut aider à résoudre tout problème que vous rencontrez."
         ]
       },
       {
-        "question": "Is there support for different languages in Heroic?",
+        "question": "Y a-t-il un support pour différentes langues dans Heroic ?",
         "answers": [
-          "Yes, Heroic has been translated into more than 40 different languages thanks to contributions from the community. You can find a list of the currently supported languages on the Heroic website or in the README file on the GitHub repository. If you would like to help translate Heroic into a new language, you can contribute through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+          "Oui, Heroic a été traduit dans plus de 40 langues différentes grâce aux contributions de la communauté. Vous pouvez trouver une liste des langues actuellement supportées sur le site web de Heroic ou dans le fichier README sur le dépôt GitHub. Si vous voulez aider à traduire Heroic dans une nouvelle langue, vous pouvez contribuer via la plateforme Weblate à ce lien : https://hosted.weblate.org/projects/heroic-games-launcher/ ."
         ]
       },
       {
-        "question": "How can I contribute to the development of Heroic or translate it into a new language?",
+        "question": "Comment puis-je contribuer au développement de Heroic ou le traduire dans une nouvelle langue ?",
         "answers": [
-          "You can report bugs or suggest new features by opening an issue on the GitHub repository at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues .",
-          "You can contribute code or documentation by creating a pull request on the GitHub repository",
-          "You can support the project financially through Patreon, Ko-fi, or GitHub Sponsors at this link: https://heroicgameslauncher.com/donate .",
-          "You can help translate Heroic into a new language by contributing through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+          "Vous pouvez signaler des bugs ou suggérer de nouvelles fonctionnalités en ouvrant un issue sur le dépôt GitHub à ce lien : https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues .",
+          "Vous pouvez contribuer du code ou de la documentation en créant une pull request sur le dépôt GitHub",
+          "Vous pouvez soutenir le projet financièrement via Patreon, Ko-fi ou GitHub Sponsors à ce lien : https://heroicgameslauncher.com/donate .",
+          "Vous pouvez aider à traduire Heroic dans une nouvelle langue en contribuant via la plateforme Weblate à ce lien : https://hosted.weblate.org/projects/heroic-games-launcher/ ."
         ]
       },
       {
-        "question": "How do I use the Steam Runtime to fix missing libraries on Linux when running native Linux games from GOG?",
+        "question": "Comment utiliser le Steam Runtime pour corriger des bibliothèques manquantes sur Linux lors de l'exécution de jeux natifs Linux depuis GOG ?",
         "answers": [
-          "If you are running native Linux games from the GOG store on Linux and encounter issues with missing libraries, you can try using the Steam Runtime to fix the problem. To do this, go to the Game Settings menu in Heroic and select the \"Use Steam Runtime\" option. This will cause Heroic to use the Steam Runtime to launch the game, which may help to resolve issues with missing libraries. Note that this option is only available on Linux, and it requires that you have the Steam client installed on your computer."
+          "Si vous exécutez des jeux natifs Linux depuis la boutique GOG sur Linux et rencontrez des problèmes avec des bibliothèques manquantes, vous pouvez essayer d'utiliser le Steam Runtime pour corriger le problème. Pour faire cela, allez au menu Paramètres du Jeu dans Heroic et sélectionnez l'option \"Utiliser Steam Runtime\". Cela fera que Heroic utilise le Steam Runtime pour lancer le jeu, ce qui peut aider à résoudre des problèmes avec des bibliothèques manquantes. Notez que cette option n'est disponible que sur Linux, et elle nécessite que le client Steam soit installé sur votre ordinateur."
         ]
       },
       {
-        "question": "Can I use Heroic to manage and launch games from other platforms, such as Ubisoft Connect or the EA App?",
+        "question": "Puis-je utiliser Heroic pour gérer et lancer des jeux d'autres plateformes, telles que Ubisoft Connect ou l'App EA ?",
         "answers": [
-          "Yes, it is possible to use the feature ADD GAME to add another store frontend like Ubisoft Connect and EA APP. However, the integration is not the same as it has for Epic and GOG, since in this case you will need to launch Heroic and then launch the other launcher from within Heroic."
+          "Oui, il est possible d'utiliser la fonction AJOUTER JEU pour ajouter un frontend d'une autre boutique comme Ubisoft Connect et EA APP. Cependant, l'intégration n'est pas la même que celle qu'il a pour Epic et GOG, puisque dans ce cas vous devrez lancer Heroic et ensuite lancer l'autre lanceur depuis l'intérieur de Heroic."
         ]
       },
       {
-        "question": "Is it possible to use Heroic to launch games that have been purchased outside of the Epic Games Store or GOG, such as on a physical disc or through another digital store?",
+        "question": "Est-il possible d'utiliser Heroic pour lancer des jeux qui ont été achetés en dehors de la boutique Epic Games ou GOG, tels que sur un disque physique ou via une autre boutique numérique ?",
         "answers": [
-          "Yes, you can use the ADD GAME feature in Heroic to add games that have been purchased outside of the Epic Games Store or GOG. After installing the game normally, use the ADD GAME option and fill in the necessary information. Heroic will automatically retrieve an image for the game from the web. If the game requires an installer to be run before launching, you can use the \"Run Installer First\" button on the ADD GAME screen to do so."
+          "Oui, vous pouvez utiliser la fonction AJOUTER JUEGO pour ajouter des jeux qui ont été achetés en dehors de la boutique Epic Games ou GOG. Après avoir installé le jeu normalement, utilisez l'option AJOUTER JUEGO et remplissez les informations nécessaires. Heroic récupérera automatiquement une image pour le jeu depuis le web. Si le jeu nécessite qu'un installateur soit exécuté avant de se lancer, vous pouvez utiliser le bouton \"Exécuter Installateur D'abord\" sur l'écran AJOUTER JUEGO pour le faire."
         ]
       },
       {
-        "question": "Is Heroic free to use?",
+        "question": "Heroic est-il gratuit à utiliser ?",
         "answers": [
-          "Yes, Heroic is completely free to use."
+          "Oui, Heroic est complètement gratuit à utiliser."
         ]
       },
       {
-        "question": "Are there any alternatives to Heroic?",
+        "question": "Y a-t-il des alternatives à Heroic ?",
         "answers": [
-          "Yes, sometimes some game won't work on Heroic for some reason and the good thing about the open source world we have alternatives. For Epic games there are a few alternatives that can be used to launch games depending on the platform. On Linux, some options include Bottles, Lutris, and Gamehub. For GOG games specifically, Minigalaxy is also an option. On Windows, Playnite is a popular alternative."
+          "Oui, parfois un jeu ne fonctionnera pas sur Heroic pour une raison quelconque et le bon côté du monde open source est que nous avons des alternatives. Pour les jeux Epic il y a quelques alternatives qui peuvent être utilisées pour lancer des jeux selon la plateforme. Sur Linux, quelques options incluent Bottles, Lutris et Gamehub. Pour les jeux GOG spécifiquement, Minigalaxy est aussi une option. Sur Windows, Playnite est une alternative populaire."
         ]
       },
       {
-        "question": "What is Heroic's license?",
+        "question": "Quelle est la licence de Heroic ?",
         "answers": [
-          "Heroic is released under the GNU General Public License v3.0. This is a copyleft license, which means that users are free to use, modify, and distribute the app as they see fit, as long as they follow the terms of the license. In particular, any modified version of the app must also be released under the same license, and must include a copy of the license. Therefore, if you make a fork of Heroic and sell it, you must also release the source code for your modified version under the same license, and make it available to others for free. You are also not allowed to use the Heroic name or branding for your fork without permission."
+          "Heroic est publié sous la Licence Publique Générale GNU v3.0. C'est une licence copyleft, ce qui signifie que les utilisateurs sont libres d'utiliser, modifier et distribuer l'app comme ils le souhaitent, tant qu'ils suivent les termes de la licence. En particulier, toute version modifiée de l'app doit aussi être publiée sous la même licence, et inclure une copie de la licence. Par conséquent, si vous faites un fork de Heroic et le vendez, vous devez aussi publier le code source pour votre version modifiée sous la même licence, et le rendre disponible pour d'autres gratuitement. Vous n'êtes pas non plus autorisé à utiliser le nom ou le branding de Heroic pour votre fork sans permission."
         ]
       }
     ]
