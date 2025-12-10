@@ -1,25 +1,28 @@
 @media (min-width: 576px) {
-  body > footer,
-  body > header,
-  body > main,
+
+  body>footer,
+  body>header,
+  body>main,
   section {
     --block-spacing-vertical: calc(var(--spacing) * 1.2);
   }
 }
 
 @media (min-width: 768px) {
-  body > footer,
-  body > header,
-  body > main,
+
+  body>footer,
+  body>header,
+  body>main,
   section {
     --block-spacing-vertical: calc(var(--spacing) * 1);
   }
 }
 
 @media (min-width: 992px) {
-  body > footer,
-  body > header,
-  body > main,
+
+  body>footer,
+  body>header,
+  body>main,
   section {
     --block-spacing-vertical: calc(var(--spacing) * 2);
   }
@@ -28,15 +31,36 @@
 @media (max-width: 990px) {
   nav.container-fluid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
-  nav.container-fluid div {
+  nav.container-fluid>ul {
+    margin: 0;
+  }
+
+  /* Hide desktop navigation on mobile */
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* Show hamburger menu on mobile */
+  .hamburger-menu {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Desktop: Ensure hamburger is hidden */
+@media (min-width: 991px) {
+  .hamburger-menu {
+    display: none !important;
+  }
+
+  .desktop-nav {
+    display: flex;
   }
 }
 

@@ -4,6 +4,7 @@
   },
   "navbar": {
     "home": "홈",
+    "downloads": "다운로드",
     "faq": "FAQ",
     "documentation": "문서",
     "supportUs": "지원하기",
