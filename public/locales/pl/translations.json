@@ -1,6 +1,6 @@
 {
   "common": {
-    "copyright": "Uruchamiacz Gier Heroic"
+    "copyright": "Heroic Games Launcher"
   },
   "navbar": {
     "home": "Strona główna",
@@ -15,7 +15,7 @@
     "heroicDiscord": "Serwer Heroic Discord"
   },
   "home": {
-    "heroTitle": "GRAJ JAK HERO!",
+    "heroTitle": "GRAJ JAK BOHATER!",
     "heroDescription": "Heroic to darmowy i otwarty <strong>Epic</strong>, <strong>GOG</strong> i <strong>Amazon Prime Games</strong> launcher dla <strong>Linux</strong>, <strong>Windows</strong> i <strong>macOS</strong>. Dostępny także na <strong>SteamDecku</strong>!",
     "download": "Pobierz",
     "faq": "FAQ",
