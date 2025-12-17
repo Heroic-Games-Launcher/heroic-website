@@ -3,10 +3,10 @@
     "copyright": "Heroic Games Launcher"
   },
   "navbar": {
-    "home": "Ev",
+    "home": "Ana Sayfa",
     "faq": "SSS",
     "documentation": "Dokümentasyon",
-    "supportUs": "Destekle",
+    "supportUs": "Bizi Destekle",
     "cla": "CLA",
     "heroicMastodon": "Heroic Mastodon sayfası",
     "heroicTwitter": "Heroic Twitter sayfası",
@@ -15,41 +15,41 @@
   },
   "home": {
     "heroTitle": "PLAY LIKE A HERO!",
-    "heroDescription": "Heroic is a Free and Open Source <strong>Epic</strong>, <strong>GOG</strong> and <strong>Amazon Prime Oyunları</strong> launcher for <strong>Linux</strong>, <strong>Windows</strong> ve <strong>macOS</strong>. Ayrıca <strong>SteamDeck</strong> 'te mevcuttur.",
+    "heroDescription": "Heroic, <strong>Linux</strong>, <strong>Windows</strong> ve <strong>macOS</strong> için <strong>Epic</strong>, <strong>GOG</strong> ve <strong>Amazon Prime Oyunları</strong>nı destekleyen, ücretsiz ve açık kaynaklı bir oyun başlatıcısıdır. Ayrıca <strong>Steam Deck</strong> üzerinde de kullanılabilir.",
     "download": "İndir",
     "faq": "SSS",
-    "mainFeatures": "MAIN FEATURES AND MORE INFO",
+    "mainFeatures": "ANA ÖZELLİKLER VE DAHA FAZLASI",
     "gamePage": {
-      "title": "Game Page",
-      "description": "Check game details like description, publisher, download and install size, time played and more."
+      "title": "Oyun Sayfası",
+      "description": "Açıklama, yayıncı, indirme ve kurulum boyutu, oynama süresi ve daha fazlası gibi oyun detaylarını görüntüleyin."
     },
     "platformSelection": {
       "title": "Platform Seçimi",
-      "description": "On Linux and on MacOS you can select to install the Windows version of a native game. This might be handy in case the native version is not supported anymore. On Linux you can choose that for GOG games only."
+      "description": "Linux ve macOS üzerinde, yerel bir oyunun Windows sürümünü yüklemeyi seçebilirsiniz. Bu yerel sürümü artık desteklenmeyen oyunlar için kullanışlıdır. Linux üzerinde bu seçenek yalnızca GOG oyunları için kullanılabilir."
     },
     "accessStores": {
       "title": "Mağazalara erişim",
-      "description": "Go to the Epic, Amazon Prime or GOG store without even leaving Heroic. Get free games or buy new ones directly from Heroic's interface!"
+      "description": "Heroic’ten çıkmadan Epic, Amazon Prime veya GOG mağazalarına göz atın. Ücretsiz oyunları alın veya yeni oyunları doğrudan Heroic arayüzünden satın alın!"
     },
     "organizeLibrary": {
       "title": "Kütüphaneni organize et",
-      "description": "Add games to favorites or simply hide the games you already played or will never play at all!"
+      "description": "Oyunları favorilere ekleyin ya da oynadığınız veya hiç oynamayacağınız oyunları gizleyin."
     },
     "themes": {
       "title": "Temalar",
       "description": "Varsayılan renkleri sevmiyorsanız, değiştirme seçeneğiniz var. Ünlü Dracula temasıda vardır."
     },
     "wineManager": {
-      "title": "Wine Yöneticisi",
-      "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
+      "title": "Wine yöneticisi",
+      "description": "Linux üzerinde Wine-GE, Wine-Lutris veya Proton-GE gibi sürümleri Wine Yöneticisi ile indirebilirsiniz. Bu Wine sürümleri oyun deneyimini ve uyumluluğu artırmaya odaklanır."
     },
     "wineSettings": {
-      "title": "Wine Settings",
-      "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
+      "title": "Wine ayarları",
+      "description": "Doğru Wine sürümünü kullanmanın yanı sıra, Linux ve macOS üzerinde en iyi oyun deneyimi için ayarların doğru yapılması önemlidir. Wine Ayarları bölümünden DXVK, VKD3D ve FSR gibi araçları otomatik kurabilir, WineCFG, Winetricks çalıştırabilir ve prefix içinde EXE dosyaları çalıştırabilirsiniz böylece oyunların gereksinimlerini kolayca kurabilirsiniz."
     },
     "multiLanguage": {
       "title": "Çoklu dil",
-      "description": "Heroic topluluk tarafından 40'tan fazla dile çevirildi. Çeviriye weblate sayfamıza giderek yardım edebilirsiniz.",
+      "description": "Heroic topluluk tarafından 40'tan fazla dile çevirilmiştir. Çeviriye weblate sayfamıza giderek katkıda bulunabilirsiniz.",
       "weblateLinkText": "Weblate sayfamız"
     }
   },
@@ -72,13 +72,13 @@
       },
       "appimage": {
         "title": "AppImage",
-        "description": "Download it in AppImage format so it will work on any Linux distro. The AppImage can update itself when a new version is released.",
+        "description": "Her Linux dağıtımında çalışması için AppImage formatında indirin. Yeni sürüm çıktığında AppImage kendini güncelleyebilir.",
         "stable": "Stabil",
         "beta": "Beta"
       },
       "other": {
         "title": "Diğer",
-        "description": "Heroic is also distributed in RPM, DEB and a TAR.XZ file. Check for alternative repos in our Github.",
+        "description": "Heroic ayrıca RPM, DEB ve TAR.XZ formatlarında da sunulmaktadır. Alternatif depolar için GitHub sayfamıza bakın.",
         "button": "Tümünü gör"
       }
     },
@@ -86,13 +86,13 @@
       "title": "Windows",
       "setup": {
         "title": "Kurulum",
-        "description": "Install Heroic on your system and get auto-updates when a new version is released. Next, Next, Finish!",
+        "description": "Heroic’i sisteminize kurun ve yeni sürümler çıktığında otomatik güncellemeleri alın.",
         "stable": "Stabil",
         "beta": "Beta"
       },
       "portable": {
-        "title": "Portable",
-        "description": "Use the portable version in case you do not want the full installation. Check for x64 and arm64 versions on our Github.",
+        "title": "Taşınılabilir",
+        "description": "Tam kurulumu istemiyorsanız taşınabilir sürümü kullanın. GitHub üzerinden x64 ve arm64 sürümlerine ulaşabilirsiniz.",
         "button": "Tüm paketleri gör"
       }
     },
@@ -100,7 +100,7 @@
       "title": "MacOS",
       "appleChips": {
         "title": "Apple Chips (M1 ve üstü)",
-        "description": "Optimized for Apple Silicon Chips. Open it and copy the Heroic App to the Applications folder and you are good to go!",
+        "description": "Apple Silicon için optimize edilmiştir. Uygulamayı açıp Heroic’i Applications klasörüne kopyalamanız yeterlidir.",
         "stable": "Stabil",
         "beta": "Beta"
       },
@@ -113,26 +113,26 @@
     }
   },
   "donate": {
-    "pageTitle": "Support Heroic Development",
-    "title": "Support Us",
-    "subtitle": "Heroic is free! Donations help us keep the project alive.",
+    "pageTitle": "Heroic gelişimini destekle",
+    "title": "Bizi destekle",
+    "subtitle": "Heroic ücretsizdir! Bağışlar projenin devam etmesine yardımcı olur.",
     "patreon": {
       "title": "Patreon",
       "type": "Aylık-abone",
-      "description": "Activate a monthly subscription on Patreon to support us and get rewards.",
+      "description": "Patreon üzerinden aylık destek olun ve ödüller kazanın.",
       "button": "Patreon'a git"
     },
     "kofi": {
       "title": "Ko-fi",
       "type": "Tek seferlik",
-      "description": "Support the project by offering us a coffee. Just like that, fast and simple!",
-      "button": "Go to Ko-fi"
+      "description": "Bize bir kahve ısmarlayarak projeyi destekleyin. Hızlı ve kolay!",
+      "button": "Kofi'ye git"
     },
     "gog": {
       "title": "GOG.com",
       "type": "Tek seferlik",
-      "description": "Use our link when making purchases on GOG and support the project. Cool right?",
-      "button": "Go to GOG"
+      "description": "GOG alışverişlerinizde bağlantımızı kullanarak projeyi destekleyin.",
+      "button": "GOG'ye git"
     },
     "github": {
       "title": "GitHub Sponsor",
