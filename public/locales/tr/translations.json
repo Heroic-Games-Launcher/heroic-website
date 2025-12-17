@@ -261,50 +261,51 @@
       {
         "question": "Heroic için minimum sistem gereksinimleri nelerdir?",
         "answers": [
-          "Heroic Electron tabanlı bir uygulamadır ve yaklaşık 500MB depolama alanır gerektirir. In terms of hardware requirements, the minimum specifications for running Heroic are:",
+          "Heroic Electron tabanlı bir uygulamadır ve yaklaşık 500MB depolama alanır gerektirir. Donanım açısından minimum gereksinimler:",
           "2GB RAM",
           "1.8GHz iki çekirdekli işlemci",
-          "However, please note that these are the minimum requirements and you may need more powerful hardware in order to run certain games or applications."
+          "Ancak bunların minimum gereksinimler olduğunu ve bazı oyunlar veya uygulamalar için daha güçlü donanımlara ihtiyaç duyabileceğinizi unutmayın."
         ]
       },
       {
         "question": "Heroic'i oyun oynamak için nasıl kullanabilirim?",
         "answers": [
-          "Once you have installed Heroic, you can use it to browse and install games from a range of sources. You can also use it to launch and manage games that you have installed on your computer. If you encounter any issues with games, you can check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . If you are unable to find a solution, you can also seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK ."
+          "Heroic’i kurduktan sonra farklı kaynaklardan oyunlara göz atabilir ve oyunları kurabilirsiniz. Ayrıca bilgisayarınızda kurulu olan oyunları başlatmak ve yönetmek için de kullanabilirsiniz. Sorun yaşarsanız şu bağlantıdaki genel dokümantasyona göz atabilirsiniz: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . Çözüm bulamazsanız şu bağlantıdan Heroic Discord sunucusundan yardım isteyebilirsiniz: https://discord.com/invite/rHJ2uqdquK ."
         ]
       },
       {
         "question": "Aynı anda birsürü oyun indirebilir miyim?",
         "answers": [
-          "Yes, you can download multiple games at once in Heroic by using the download queue. To use the download queue, simply start a new Install option when already installing a game. This will add the game to the queue and it will be downloaded once the games in front of it have finished downloading.",
-          "You can view the download queue and monitor the progress of your downloads by going to the 'Downloads' tab in the sidebar. From there, you can also pause or cancel downloads as needed."
+          "Evet. Heroic’te indirme kuyruğunu kullanarak aynı anda birden fazla oyun indirebilirsiniz. Bir oyun indirilirken yeni bir kurulum başlattığınızda oyun kuyruğa eklenir ve önceki indirmeler tamamlandıktan sonra indirilir.",
+          "İndirme kuyruğunu sol menüdeki “İndirilenler” sekmesinden görüntüleyebilir, ilerlemeyi takip edebilir, indirmeleri duraklatabilir veya iptal edebilirsiniz."
         ]
       },
       {
-        "question": "Epic ve GOG dışı nasıl oyun eklerim?",
+        "question": "Epic ve GOG dışı nasıl oyunları eklerim?",
         "answers": [
-          "You can add games outside Epic or GOG to Heroic by going to the 'Add Games' button on the game Library. This will allow you to browse for the executable on your computer and add it to Heroic as a custom game.",
-          "Please note that support for custom games may vary and some features, such as automatic updates and save syncing, may not be available. In addition, you may need to configure the game's settings manually in order to get it to run properly."
+          "Oyun Kütüphanesindeki “Oyun Ekle” butonunu kullanarak Epic veya GOG dışındaki oyunları Heroic’e ekleyebilirsiniz. Bu bilgisayarınızdaki çalıştırılabilir dosyayı seçip oyunu platform dışı oyun olarak ekleyebilirsiniz.",
+          "Platform dışı oyunlar için destek değişkenlik gösterebilir. Otomatik güncellemeler veya kayıt senkronizasyonu gibi bazı özellikler mevcut olmayabilir. Ayrıca oyunun düzgün çalışması için ayarları kendiniz yapılandırmanız gerekebilir."
         ]
       },
       {
-        "question": "What is Wine and how does it work with Heroic?",
+        "question": "Wine nedir ve Heroic ile nasıl çalışır?",
         "answers": [
-          "Wine is a free and open-source compatibility layer that allows Windows applications to run on Unix-like operating systems, including Linux and macOS. Heroic uses Wine to run Windows games on those operating systems.",
-          "Wine is not an emulator, but rather it translates the Windows API calls into POSIX calls that are understood by the operating system. This allows Windows games to run without the need for a full Windows installation.",
-          "You can learn more about Wine and its capabilities on the Wine project website: https://www.winehq.org"
+          "Wine, Windows uygulamalarının Linux ve macOS gibi Unix benzeri işletim sistemlerinde çalışmasını sağlayan ücretsiz ve açık kaynaklı bir uyumluluk katmanıdır. Heroic, Windows oyunlarını bu sistemlerde çalıştırmak için Wine kullanır.",
+          "Wine bir emülatör değildir; Windows API çağrılarını işletim sisteminin anlayabileceği POSIX çağrılarına çevirir. Bu sayede tam bir Windows kurulumu gerekmez.",
+          "Wine hakkında daha fazla bilgiyi şu adreste bulabilirsiniz: https://www.winehq.org"
         ]
       },
       {
         "question": "Proton nedir ve Heroicle nasıl çalışır?",
         "answers": [
-          "Proton is a compatibility layer developed by Valve that allows running Windows games on Linux. It is based on Wine, but includes additional patches and improvements to make it more stable and compatible with a larger number of games. In Heroic, you can use Proton to run Windows games on Linux. You can choose which version of Proton to use for each game, and you can also download custom versions of Proton directly from the Wine Manager page inside Heroic. It is important to note that Proton was not designed to run games outside of Steam, and the results may vary. You can check for compatibility information for each game on the ProtonDB website: https://www.protondb.com"
+          "Proton, Valve tarafından geliştirilen ve Linux’ta Windows oyunlarını çalıştırmayı sağlayan bir uyumluluk katmanıdır. Wine tabanlıdır ancak daha fazla oyun için ek yamalar ve iyileştirmeler içerir. Heroic’te Linux’ta Windows oyunlarını çalıştırmak için Proton’u kullanabilirsiniz. Her oyun için kullanılacak Proton sürümünü seçebilir ve Heroic içindeki Wine yöneticisi kısmından özel Proton sürümleri indirebilirsiniz.",
+          "Proton Steam dışı oyunlar için tasarlanmamıştır, bu nedenle sonuçlar oyuna göre değişebilir. Oyun uyumluluğunu ProtonDB sitesinden kontrol edebilirsiniz: https://www.protondb.com"
         ]
       },
       {
-        "question": "What is Crossover and how does it work with Heroic?",
+        "question": "Crossover nedir ve Heroic ile nasıl çalışır?",
         "answers": [
-          "Crossover is a commercial software that allows you to run Windows applications on Linux and macOS. It is developed by CodeWeavers and can be purchased from their website: https://www.codeweavers.com/ .",
+          "Crossover, Windows uygulamalarını Linux ve macOS’te çalıştırmanızı sağlayan ticari bir yazılımdır. CodeWeavers tarafından geliştirilmiştir ve https://www.codeweavers.com/ adresinden satın alınabilir.",
           "In Heroic, you can use Crossover to run Windows games on macOS by selecting the \"Crossover\" version in the game settings and also the bottle name (default is HEROIC). Please note that Crossover is a third-party software and its usage is not officially supported by Heroic.",
           "If you decide to purchase Crossover, you can use the coupon code LEGENDARY to get a discount and support the development of the Legendary app, which is used by Heroic to integrate with the Epic Games Store."
         ]
