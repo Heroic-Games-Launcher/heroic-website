@@ -201,7 +201,7 @@
         ]
       },
       {
-        "question": "Heroic kullanmak güvenli mi?",
+        "question": "Heroic kullanmak güvenli midir?",
         "answers": [
           "Evet, Heroic güvenli ve kullanıcılarından veri toplamayan bir oyun başlatıcısıdır. It is also open source, which means that the source code is publicly available and can be reviewed by the community to ensure that it does not contain any malicious code."
         ]
@@ -395,7 +395,7 @@
         ]
       },
       {
-        "question": "Heroic ücretsiz mi?",
+        "question": "Heroic ücretsiz midir?",
         "answers": [
           "Evet, Heroic tamamıyla ücretsizdir."
         ]
