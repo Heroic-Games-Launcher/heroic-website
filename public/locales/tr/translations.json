@@ -404,7 +404,7 @@
       {
         "question": "Heroic'in alternatifleri var mıdır?",
         "answers": [
-          "Yes, sometimes some game won't work on Heroic for some reason and the good thing about the open source world we have alternatives. For Epic games there are a few alternatives that can be used to launch games depending on the platform. On Linux, some options include Bottles, Lutris, and Gamehub. For GOG games specifically, Minigalaxy is also an option. On Windows, Playnite is a popular alternative."
+          "Evet. Bazı oyunlar çeşitli nedenlerle Heroic üzerinde çalışmayabilir ve açık kaynak dünyasında alternatifler mevcuttur. Epic oyunları için platforma bağlı olarak birkaç alternatif vardır. Linux’ta Bottles, Lutris ve Gamehub gibi seçenekler vardır. GOG oyunları için Minigalaxy bir alternatiftir. Windows üzerinde ise Playnite popüler bir alternatiftir."
         ]
       },
       {
