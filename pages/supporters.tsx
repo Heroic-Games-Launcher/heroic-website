@@ -1,36 +1,22 @@
-import { NextPage } from 'next'
+import { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { getGitHubSponsors, getPatreonSupporters, Supporter } from '../lib/supporters'
 
-// Mock data - In a real scenario, this would be fetched in getStaticProps
-const MOCK_SUPPORTERS = {
-  patreon: [
-    { name: 'Patron Large 1' },
-    { name: 'Patron Large 2' },
-    { name: 'Patron 3' },
-    { name: 'Patron 4' },
-    { name: 'Patron 5' },
-    { name: 'Patron 6' },
-  ],
-  github: [
-    { name: 'Sponsor 1' },
-    { name: 'Sponsor 2' },
-    { name: 'Sponsor 3' },
-  ],
-  kofi: [
-    { name: 'Supporter 1' },
-    { name: 'Supporter 2' },
-  ]
+interface SupportersProps {
+  github: Supporter[]
+  patreon: Supporter[]
+  kofi: Supporter[]
 }
 
-const Supporters: NextPage = () => {
+const Supporters: NextPage<SupportersProps> = ({ github, patreon, kofi }) => {
   const { t } = useTranslation()
 
   return (
     <>
       <Head>
-        <title>{t('supporters.pageTitle')}</title>
+        <title>{t('donate.supporters.pageTitle')}</title>
         <meta
           name="description"
           content="Heroic Games Launcher Supporters"
@@ -44,33 +30,71 @@ const Supporters: NextPage = () => {
           <section>
             <h2>{t('donate.supporters.patreon')}</h2>
             <div className="supporter-grid">
-              {MOCK_SUPPORTERS.patreon.map((s, i) => (
-                <span key={i} className="supporter-tag">{s.name}</span>
-              ))}
+              {patreon.length > 0 ? (
+                patreon.map((s, i) => (
+                  <div key={i} className={`supporter-tag ${!s.avatar ? 'no-avatar' : ''}`}>
+                    {s.avatar && <img src={s.avatar} alt="" className="supporter-avatar" />}
+                    <span>{s.name}</span>
+                  </div>
+                ))
+              ) : (
+                <p>Loading or no supporters found.</p>
+              )}
             </div>
           </section>
 
           <section>
             <h2>{t('donate.supporters.github')}</h2>
             <div className="supporter-grid">
-              {MOCK_SUPPORTERS.github.map((s, i) => (
-                <span key={i} className="supporter-tag">{s.name}</span>
-              ))}
+              {github.length > 0 ? (
+                github.map((s, i) => (
+                  <div key={i} className={`supporter-tag ${!s.avatar ? 'no-avatar' : ''}`}>
+                    {s.avatar && <img src={s.avatar} alt="" className="supporter-avatar" />}
+                    <span>{s.name}</span>
+                  </div>
+                ))
+              ) : (
+                <p>Loading or no supporters found.</p>
+              )}
             </div>
           </section>
 
           <section>
             <h2>{t('donate.supporters.kofi')}</h2>
             <div className="supporter-grid">
-              {MOCK_SUPPORTERS.kofi.map((s, i) => (
-                <span key={i} className="supporter-tag">{s.name}</span>
-              ))}
+              {kofi.length > 0 ? (
+                kofi.map((s, i) => (
+                  <div key={i} className={`supporter-tag ${!s.avatar ? 'no-avatar' : ''}`}>
+                    {s.avatar && <img src={s.avatar} alt="" className="supporter-avatar" />}
+                    <span>{s.name}</span>
+                  </div>
+                ))
+              ) : (
+                <p>Manual update required for Ko-fi.</p>
+              )}
             </div>
           </section>
         </div>
       </header>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const [github, patreon] = await Promise.all([
+    getGitHubSponsors(),
+    getPatreonSupporters()
+  ])
+
+  return {
+    props: {
+      github,
+      patreon,
+      kofi: [] // Ko-fi requires manual list or webhooks
+    },
+    // Revalidate once a day
+    revalidate: 86400
+  }
 }
 
 export default Supporters
