@@ -140,6 +140,14 @@
       "type": "One-time or flexible-sub",
       "description": "Support us with a one-time or recurring donation through GitHub.",
       "button": "Go to GitHub"
+    },
+    "supporters": {
+      "pageTitle": "Our Supporters",
+      "title": "Supporters",
+      "subtitle": "A huge thank you to everyone who supports Heroic development!",
+      "github": "GitHub Sponsors",
+      "patreon": "Patreon",
+      "kofi": "Ko-fi"
     }
   },
   "cla": {

@@ -343,3 +343,21 @@ a {
     background: rgba(142, 36, 170, 0.1);
   }
 }
+
+/* Supporters Page */
+.supporter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.supporter-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--card-sectioning-background-color);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--hr-border-color);
+}

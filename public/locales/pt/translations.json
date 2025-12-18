@@ -140,6 +140,14 @@
       "type": "Uma vez ou assinatura flexível",
       "description": "Apoie-nos com uma doação única ou recorrente via GitHub.",
       "button": "Ir para GitHub"
+    },
+    "supporters": {
+      "pageTitle": "Nossos Apoiadores",
+      "title": "Apoiadores",
+      "subtitle": "Um enorme obrigado a todos que apoiam o desenvolvimento do Heroic!",
+      "github": "GitHub Sponsors",
+      "patreon": "Patreon",
+      "kofi": "Ko-fi"
     }
   },
   "cla": {
