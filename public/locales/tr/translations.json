@@ -25,7 +25,7 @@
     },
     "platformSelection": {
       "title": "Platform Seçimi",
-      "description": "Linux ve macOS üzerinde, yerel bir oyunun Windows sürümünü yüklemeyi seçebilirsiniz. Bu yerel sürümü artık desteklenmeyen oyunlar için kullanışlıdır. Linux üzerinde bu seçenek yalnızca GOG oyunları için kullanılabilir."
+      "description": "Linux ve macOS üzerinde, yerel (native) bir oyunun Windows sürümünü yüklemeyi seçebilirsiniz. Bu yerel (native) sürümü artık desteklenmeyen oyunlar için kullanışlıdır. Linux üzerinde bu seçenek yalnızca GOG oyunları için kullanılabilir."
     },
     "accessStores": {
       "title": "Mağazalara erişim",
@@ -306,93 +306,93 @@
         "question": "Crossover nedir ve Heroic ile nasıl çalışır?",
         "answers": [
           "Crossover, Windows uygulamalarını Linux ve macOS’te çalıştırmanızı sağlayan ticari bir yazılımdır. CodeWeavers tarafından geliştirilmiştir ve https://www.codeweavers.com/ adresinden satın alınabilir.",
-          "In Heroic, you can use Crossover to run Windows games on macOS by selecting the \"Crossover\" version in the game settings and also the bottle name (default is HEROIC). Please note that Crossover is a third-party software and its usage is not officially supported by Heroic.",
-          "If you decide to purchase Crossover, you can use the coupon code LEGENDARY to get a discount and support the development of the Legendary app, which is used by Heroic to integrate with the Epic Games Store."
+          "Heroic ile, macOS üzerinde Windows oyunlarını oyun ayarlarında \"Crossover\" sürümünü ve ayrıca bottle adını (varsayılan: HEROIC) seçerek oynayabilirsiniz. Ancak Crossover üçüncü taraf bir yazılımdır ve Heroic tarafından resmi olarak desteklenmez.",
+          "Crossover satın almaya karar verirseniz, LEGENDARY kupon kodunu kullanarak indirim alabilir ve Heroic’in Epic Games Store entegrasyonu için kullandığı Legendary uygulamasının geliştirilmesini destekleyebilirsiniz."
         ]
       },
       {
-        "question": "My game is not working with Heroic. What should I do?",
+        "question": "Oyun Heroic ile çalışmıyor. Ne yapmalıyım?",
         "answers": [
-          "If you are having trouble running a game with Heroic, you can: Check the general documentation for troubleshooting and workarounds at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . This resource may contain information that can help you resolve your issue.",
-          "If you are unable to find a solution in the documentation, you can seek help on the Heroic Discord server at this link: https://discord.com/invite/rHJ2uqdquK . Other users and members of the Heroic team may be able to offer advice or assistance.",
-          "If the issue persists, you can consider opening an issue on the Heroic GitHub page at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . Providing as much information as possible about your issue, such as the operating system, game, and any error messages you are seeing, can help the team investigate and resolve the issue.",
-          "If the issue is specific to a particular game, you may want to check the game's documentation or contact the game developer for assistance.",
-          "Finally, you may want to consider trying other tools or compatibility layers, such as Wine or Proton, to see if they can help resolve the issue."
+          "Heroic ile bir oyunu çalıştırmakta sorun yaşıyorsanız genel sorun giderme dokümantasyonu için şu bağlantıyı kontrol edin: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki . Burada sorununuzu çözmenize yardımcı olabilecek bilgiler bulundurabilir.",
+          "Dokümantasyonda bir çözüm bulamazsanız, şu bağlantıdaki Heroic Discord sunucusundan yardım isteyebilirsiniz: https://discord.com/invite/rHJ2uqdquK . Diğer kullanıcılar ve Heroic ekibi üyeleri size yardımcı olabilir.",
+          "Sorun devam ederse, şu bağlantıdan Heroic GitHub sayfasında bir hata raporu açmayı düşünebilirsiniz: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues . İşletim sistemi, oyun adı ve aldığınız hata mesajları gibi mümkün olduğunca fazla bilgi vermek sorunun çözülmesini kolaylaştırabilir.",
+          "Sorun belirli bir oyuna özgüyse, oyunun kendi dokümantasyonunu kontrol edebilirsiniz veya oyun geliştiricisiyle iletişime geçebilirsiniz.",
+          "Son olarak, Wine veya Proton gibi başka araçlar ya da uyumluluk katmanlarını denemeyi düşünebilirsiniz."
         ]
       },
       {
-        "question": "Can I use Heroic to install and run native Linux games from the GOG store?",
+        "question": "Heroic ile GOG mağazasından yerel (native) Linux oyunlarını kurup çalıştırabilir miyim?",
         "answers": [
-          "Yes, Heroic can be used to install and run native Linux games from the GOG store. However, it is not currently possible to install or run native Linux games from the Epic Games store, as Epic Games does not currently offer native Linux games. If you encounter issues running a native Linux game with Heroic, you may be able to resolve them by enabling the \"Use Steam Runtime\" setting in the Game Settings menu. This setting will use the Steam Runtime, if it is installed on your system, to provide any missing libraries that the game may require."
+          "Evet, Heroic GOG mağazasından yerel Linux oyunlarını kurmak ve çalıştırmak için kullanılabilir. Ancak şu anda Epic Games Store üzerinden yerel Linux oyunlarını kurmak veya çalıştırmak mümkün değildir, çünkü Epic Games yerel Linux oyunları sunmamaktadır. Yerel bir Linux oyununu çalıştırırken sorun yaşarsanız, Oyun Ayarları menüsünden \"Steam Runtime Kullan\" seçeneğini etkinleştirmeyi deneyebilirsiniz. Bu ayar, sisteminizde yüklüyse, eksik kütüphaneleri sağlamak için Steam Runtime’ı kullanır."
         ]
       },
       {
-        "question": "Can I use Heroic to install and run native macOS games from GOG and Epic Games?",
+        "question": "Heroic ile GOG ve Epic Games’ten yerel (native) macOS oyunlarını çalıştırabilir miyim?",
         "answers": [
-          "Yes, Heroic can be used to install and run native macOS games from the GOG store and the Epic Games store. Simply browse and install the games as you would any other game in Heroic."
+          "Evet, Heroic GOG ve Epic Games Store’dan yerel macOS oyunlarını kurmak ve çalıştırmak için kullanılabilir. Sadece Heroic içinde oyunlara göz atıp kurmanız yeterlidir."
         ]
       },
       {
-        "question": "Can I use Heroic to manage and download Wine and Proton versions directly from the interface on Linux?",
+        "question": "Linux’ta Heroic üzerinden Wine ve Proton sürümlerini doğrudan arayüzden yönetebilir miyim?",
         "answers": [
-          "Yes, Heroic includes tools for managing and downloading Wine and Proton versions directly from the interface on Linux. You can access these tools by going to the Tools menu in the main menu and selecting either \"Manage Wine Versions\" or \"Manage Proton Versions.\""
+          "Evet, Heroic Linux üzerinde Wine ve Proton sürümlerini doğrudan arayüzden yönetmek ve indirmek için araçlar sunar. Bu araçlara ana menüdeki Araçlar (Tools) bölümüne giderek \"Wine Sürümlerini Yönet\" veya \"Proton Sürümlerini Yönet\" seçeneklerinden erişebilirsiniz."
         ]
       },
       {
-        "question": "How can I add game shortcuts to my Desktop or Startup menu in Heroic?",
+        "question": "Heroic’te oyunlar için Masaüstü veya Başlangıç kısayollarını nasıl eklerim?",
         "answers": [
-          "To add game shortcuts to your Desktop or Startup menu in Heroic, first go to the page for the game you want to create a shortcut for. Then, click on the three dots icon in the top right corner of the page and select \"Add Shortcuts\" from the menu. This will create a shortcut for the game on your Desktop and add it to your Startup menu, so that it will be launched automatically when you start your computer. You can also use the \"Add Shortcut to Steam\" option to create a shortcut for the game in the Steam client."
+          "Bir oyuna masaüstü veya başlangıç kısayolu eklemek için, önce oyunun sayfasına gidin. Ardından sağ üst köşedeki üç nokta simgesine tıklayıp \"Kısayol Ekle\" seçeneğini seçin. Bu işlem oyunun masaüstüne ve başlangıç menüsüne kısayol ekler. Ayrıca \"Steam’e Kısayol Ekle\" seçeneğini kullanarak oyunu Steam istemcisine de ekleyebilirsiniz."
         ]
       },
       {
-        "question": "How can I support the Heroic project financially?",
+        "question": "Heroic'i maddi olarak nasıl destekleyebilirim?",
         "answers": [
-          "If you would like to support the Heroic project financially, there are a few ways you can do so. You can become a patron on Patreon, make a one-time donation through Ko-fi, or sign up as a sponsor on GitHub Sponsors. You can find links to all of these options on the Heroic website at this link: https://heroicgameslauncher.com/donate ."
+          "Heroic’i maddi olarak desteklemek isterseniz, bunu yapmak için birkaç seçeneğiniz vardır. Patreon üzerinden destekçi olabilir, Ko-fi ile tek seferlik bağış yapabilir veya GitHub Sponsors üzerinden sponsor olabilirsiniz. Tüm bağlantıları şu sayfada bulabilirsiniz: https://heroicgameslauncher.com/donate ."
         ]
       },
       {
-        "question": "How can I contribute with translations for Heroic?",
+        "question": "Heroic'in çevirilerine nasıl katkıda bulunabilirim?",
         "answers": [
-          "If you would like to help translate Heroic into different languages, you can contribute through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ . Simply create an account on Weblate and join the project to start translating. Your contributions will be reviewed and merged by the Heroic team."
+          "Heroic’i farklı dillere çevirmeye yardımcı olmak için Weblate platformu üzerinden katkıda bulunabilirsiniz: https://hosted.weblate.org/projects/heroic-games-launcher/ . Bir Weblate hesabı oluşturup projeye katılarak çevirilere başlayabilirsiniz. Katkılarınız Heroic ekibi tarafından incelenip kabul edilir."
         ]
       },
       {
-        "question": "How does Heroic integrate with Epic Games and GOG?",
+        "question": "Heroic, Epic Games ve GOG ile nasıl entegre olur?",
         "answers": [
-          "Heroic uses two command-line interface (CLI) tools to integrate with the Epic Games store and the GOG store. For Epic Games, it uses Legendary, an open source CLI app developed by derrod and hosted on GitHub at this link: https://github.com/derrod/legendary . For GOG, it uses GOGDL, an open source CLI tool developed by the Heroic team. If you encounter issues with these tools, you can try using an alternative binary by going to the Advanced Settings menu in Heroic and selecting the \"Use alternative binary\" option. This may help resolve any issues you are experiencing."
+          "Heroic, Epic Games Store ve GOG mağazalarıyla entegrasyon için iki adet komut satırı aracı (CLI) kullanır. Epic Games için derrod tarafından geliştirilen ve GitHub’da olan açık kaynaklı Legendary aracı kullanılır: https://github.com/derrod/legendary . GOG için ise Heroic ekibi tarafından geliştirilen açık kaynaklı GOGDL aracı kullanılır. Bu araçlarla ilgili sorun yaşarsanız, Gelişmiş Ayarlar menüsünden \"Alternatif çalıştırılabilir kullan\" seçeneğini deneyebilirsiniz. Bu yaşadığınız sorunları gidermeye yardımcı olabilir."
         ]
       },
       {
-        "question": "Is there support for different languages in Heroic?",
+        "question": "Heroic farklı dilleri destekliyor mu?",
         "answers": [
-          "Yes, Heroic has been translated into more than 40 different languages thanks to contributions from the community. You can find a list of the currently supported languages on the Heroic website or in the README file on the GitHub repository. If you would like to help translate Heroic into a new language, you can contribute through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+          "Evet, Heroic topluluk katkıları sayesinde 40’tan fazla dile çevrilmiştir. Desteklenen dillerin listesini Heroic web sitesinde veya GitHub deposundaki README dosyasında bulabilirsiniz. Yeni bir dil eklemek isterseniz Weblate üzerinden katkıda bulunabilirsiniz."
         ]
       },
       {
         "question": "Heroic'in geliştirilmesine yada çevirilmesine nasıl katkıda bulunurum?",
         "answers": [
-          "You can report bugs or suggest new features by opening an issue on the GitHub repository at this link: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues .",
-          "You can contribute code or documentation by creating a pull request on the GitHub repository",
-          "You can support the project financially through Patreon, Ko-fi, or GitHub Sponsors at this link: https://heroicgameslauncher.com/donate .",
-          "You can help translate Heroic into a new language by contributing through the Weblate platform at this link: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
+          "GitHub deposunda bir hata raporu (issue) açarak hata raporlayabilir veya yeni özellikler önerebilirsiniz: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues .",
+          "Kod veya dokümantasyon katkısı yapmak için GitHub üzerinde bir pull request oluşturabilirsiniz.",
+          "Patreon, Ko-fi veya GitHub Sponsors üzerinden projeyi maddi olarak destekleyebilirsiniz: https://heroicgameslauncher.com/donate .",
+          "Weblate platformu üzerinden Heroic’in çevirilerine katkıda bulunabilirsiniz: https://hosted.weblate.org/projects/heroic-games-launcher/ ."
         ]
       },
       {
-        "question": "How do I use the Steam Runtime to fix missing libraries on Linux when running native Linux games from GOG?",
+        "question": "Linux’ta GOG’dan çalıştırılan yerel oyunlarda eksik kütüphaneleri Steam Runtime ile nasıl düzeltebilirim?",
         "answers": [
-          "If you are running native Linux games from the GOG store on Linux and encounter issues with missing libraries, you can try using the Steam Runtime to fix the problem. To do this, go to the Game Settings menu in Heroic and select the \"Use Steam Runtime\" option. This will cause Heroic to use the Steam Runtime to launch the game, which may help to resolve issues with missing libraries. Note that this option is only available on Linux, and it requires that you have the Steam client installed on your computer."
+          "GOG’dan yerel Linux oyunlarını çalıştırırken eksik kütüphane sorunları yaşarsanız, Steam Runtime kullanmayı deneyebilirsiniz. Bunun için Heroic’te Oyun Ayarları menüsüne gidip \"Steam Runtime Kullan\" seçeneğini etkinleştirin. Bu seçenek Heroic'in oyunların Steam Runtime kullanarak başlamasına sağlıyıcaktır. Bu eksik kütüphanelerle ilgili sorunları çözebilir. Bu özellik yalnızca Linux’ta kullanılabilir ve sisteminizde Steam kurulu olmasını gerektirir."
         ]
       },
       {
-        "question": "Can I use Heroic to manage and launch games from other platforms, such as Ubisoft Connect or the EA App?",
+        "question": "Heroic ile Ubisoft Connect veya EA App gibi diğer platformlardaki oyunları yönetebilir miyim?",
         "answers": [
-          "Yes, it is possible to use the feature ADD GAME to add another store frontend like Ubisoft Connect and EA APP. However, the integration is not the same as it has for Epic and GOG, since in this case you will need to launch Heroic and then launch the other launcher from within Heroic."
+          "Evet, Oyun Ekle özelliğini kullanarak Ubisoft Connect veya EA gibi başka mağaza istemcilerini Heroic’e ekleyebilirsiniz. Ancak bu entegrasyon Epic ve GOG gibi değildir çünkü ilk Heroic’i açıp diğer launcher’ı Heroic içinden başlatmanız gerekir."
         ]
       },
       {
-        "question": "Is it possible to use Heroic to launch games that have been purchased outside of the Epic Games Store or GOG, such as on a physical disc or through another digital store?",
+        "question": "Epic Games Store ve GOG dışından başka bir mağazadan satın alınmış veya fiziksel oyunları Heroic ile çalıştırmak mümkün müdür?",
         "answers": [
-          "Yes, you can use the ADD GAME feature in Heroic to add games that have been purchased outside of the Epic Games Store or GOG. After installing the game normally, use the ADD GAME option and fill in the necessary information. Heroic will automatically retrieve an image for the game from the web. If the game requires an installer to be run before launching, you can use the \"Run Installer First\" button on the ADD GAME screen to do so."
+          "Evet, Heroic’te Oyun Ekle özelliğini kullanarak Epic veya GOG dışından satın aldığınız oyunları ekleyebilirsiniz. Oyunu normal şekilde kurduktan sonra Oyun Ekle seçeneğini kullanarak gerekli bilgileri girin. Heroic oyun için internetten otomatik olarak bir görsel indirir. Eğer oyun çalışmadan önce bir kurulum dosyası çalıştırılması gerekiyorsa, Oyun Ekle ekranındaki \"Önce Kurucuyu Çalıştırın\" seçeneğini kullanabilirsiniz."
         ]
       },
       {
@@ -410,7 +410,7 @@
       {
         "question": "Heroic'in lisansı nedir?",
         "answers": [
-          "Heroic is released under the GNU General Public License v3.0. This is a copyleft license, which means that users are free to use, modify, and distribute the app as they see fit, as long as they follow the terms of the license. In particular, any modified version of the app must also be released under the same license, and must include a copy of the license. Therefore, if you make a fork of Heroic and sell it, you must also release the source code for your modified version under the same license, and make it available to others for free. You are also not allowed to use the Heroic name or branding for your fork without permission."
+          "Heroic, GNU Genel Kamu Lisansı v3.0 (GPL-3.0) ile lisanslanmıştır. Bu telif müsadeli bir lisanstır; yani uygulamayı istediğiniz gibi kullanabilir, değiştirebilir ve dağıtabilirsiniz ancak lisans şartlarına uymanız gerekir. Değiştirilmiş sürümler de aynı lisansla yayımlanmalı ve kaynak kodu açık olmalıdır. Ayrıca izin almadan Heroic adını veya markasını çatallarınızda kullanamazsınız."
         ]
       }
     ]
