@@ -13,6 +13,25 @@ interface SupportersProps {
 const Supporters: NextPage<SupportersProps> = ({ github, patreon, kofi }) => {
   const { t } = useTranslation()
 
+  const formatCurrency = (amountInCents?: number) => {
+    if (!amountInCents) return null
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      maximumFractionDigits: 0
+    }).format(amountInCents / 100)
+  }
+
+  const renderSupporter = (s: Supporter, i: number) => (
+    <div key={i} className={`supporter-tag ${!s.avatar ? 'no-avatar' : ''}`}>
+      {s.avatar && <img src={s.avatar} alt="" className="supporter-avatar" />}
+      <div className="supporter-info">
+        <span className="supporter-name">{s.name}</span>
+        {s.amount && <span className="supporter-amount">{formatCurrency(s.amount)}</span>}
+      </div>
+    </div>
+  )
+
   return (
     <>
       <Head>
@@ -31,12 +50,7 @@ const Supporters: NextPage<SupportersProps> = ({ github, patreon, kofi }) => {
             <h2>{t('donate.supporters.patreon')}</h2>
             <div className="supporter-grid">
               {patreon.length > 0 ? (
-                patreon.map((s, i) => (
-                  <div key={i} className={`supporter-tag ${!s.avatar ? 'no-avatar' : ''}`}>
-                    {s.avatar && <img src={s.avatar} alt="" className="supporter-avatar" />}
-                    <span>{s.name}</span>
-                  </div>
-                ))
+                patreon.map((s, i) => renderSupporter(s, i))
               ) : (
                 <p>Loading or no supporters found.</p>
               )}
@@ -47,12 +61,7 @@ const Supporters: NextPage<SupportersProps> = ({ github, patreon, kofi }) => {
             <h2>{t('donate.supporters.github')}</h2>
             <div className="supporter-grid">
               {github.length > 0 ? (
-                github.map((s, i) => (
-                  <div key={i} className={`supporter-tag ${!s.avatar ? 'no-avatar' : ''}`}>
-                    {s.avatar && <img src={s.avatar} alt="" className="supporter-avatar" />}
-                    <span>{s.name}</span>
-                  </div>
-                ))
+                github.map((s, i) => renderSupporter(s, i))
               ) : (
                 <p>Loading or no supporters found.</p>
               )}
@@ -63,12 +72,7 @@ const Supporters: NextPage<SupportersProps> = ({ github, patreon, kofi }) => {
             <h2>{t('donate.supporters.kofi')}</h2>
             <div className="supporter-grid">
               {kofi.length > 0 ? (
-                kofi.map((s, i) => (
-                  <div key={i} className={`supporter-tag ${!s.avatar ? 'no-avatar' : ''}`}>
-                    {s.avatar && <img src={s.avatar} alt="" className="supporter-avatar" />}
-                    <span>{s.name}</span>
-                  </div>
-                ))
+                kofi.map((s, i) => renderSupporter(s, i))
               ) : (
                 <p>Manual update required for Ko-fi.</p>
               )}
