@@ -15,8 +15,7 @@ const MarqueeRow = ({
   supporters,
   direction = 'left',
   label,
-  link,
-  icon
+  link
 }: {
   supporters: Supporter[],
   direction?: 'left' | 'right',

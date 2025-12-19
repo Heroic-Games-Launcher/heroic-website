@@ -4,6 +4,39 @@ export interface Supporter {
   avatar?: string;
 }
 
+interface GitHubSponsorNode {
+  tier: {
+    monthlyPriceInCents: number;
+  };
+  sponsorEntity: {
+    login: string;
+    name: string | null;
+    avatarUrl: string;
+  };
+}
+
+interface PatreonMember {
+  attributes: {
+    full_name: string;
+    lifetime_support_cents: number;
+  };
+  relationships?: {
+    user?: {
+      data?: {
+        id: string;
+      };
+    };
+  };
+}
+
+interface PatreonUser {
+  id: string;
+  type: string;
+  attributes?: {
+    image_url?: string;
+  };
+}
+
 export async function getGitHubSponsors(): Promise<Supporter[]> {
   const token = process.env.G_SPONSORS;
   if (!token) {
@@ -48,16 +81,16 @@ export async function getGitHubSponsors(): Promise<Supporter[]> {
     });
 
     const result = await response.json();
-    const nodes = result.data?.organization?.sponsorshipsAsMaintainer?.nodes || [];
+    const nodes: GitHubSponsorNode[] = result.data?.organization?.sponsorshipsAsMaintainer?.nodes || [];
 
     return nodes
-      .map((node: any) => ({
+      .map((node: GitHubSponsorNode) => ({
         name: node.sponsorEntity.name || node.sponsorEntity.login,
         amount: node.tier.monthlyPriceInCents,
         avatar: node.sponsorEntity.avatarUrl,
       }))
       .filter((s: Supporter) => (s.amount || 0) > 0)
-      .sort((a: any, b: any) => (b.amount || 0) - (a.amount || 0));
+      .sort((a: Supporter, b: Supporter) => (b.amount || 0) - (a.amount || 0));
   } catch (error) {
     console.error('Error fetching GitHub sponsors:', error);
     return [];
@@ -90,13 +123,13 @@ export async function getPatreonSupporters(): Promise<Supporter[]> {
       }
 
       const result = await response.json();
-      const members = result.data || [];
-      const included = result.included || [];
+      const members: PatreonMember[] = result.data || [];
+      const included: PatreonUser[] = result.included || [];
 
       const pageSupporters = members
-        .map((member: any) => {
+        .map((member: PatreonMember) => {
           const userId = member.relationships?.user?.data?.id;
-          const user = included.find((inc: any) => inc.type === 'user' && inc.id === userId);
+          const user = included.find((inc: PatreonUser) => inc.type === 'user' && inc.id === userId);
 
           return {
             name: member.attributes.full_name,

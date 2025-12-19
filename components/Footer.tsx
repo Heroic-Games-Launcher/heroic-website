@@ -18,7 +18,7 @@ const languages = [
 ]
 
 const Footer = () => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
   const [theme, setTheme] = useState<'light' | 'dark'>('dark')
 
   useEffect(() => {

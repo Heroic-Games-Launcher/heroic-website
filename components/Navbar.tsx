@@ -1,10 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const logo = require('../assets/logo.png?webp')
+
 import {
   faTwitter,
   faGithub,
