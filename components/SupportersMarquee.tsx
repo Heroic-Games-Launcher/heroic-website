@@ -4,6 +4,7 @@ import { Supporter } from '../lib/supporters'
 import { faGithub, faPatreon } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useTranslation } from 'react-i18next'
 import styles from './SupportersMarquee.module.css'
 
@@ -50,7 +51,8 @@ const MarqueeRow = ({
   supporters,
   direction = 'left',
   label,
-  link
+  link,
+  icon
 }: {
   supporters: Supporter[],
   direction?: 'left' | 'right',
@@ -67,6 +69,7 @@ const MarqueeRow = ({
   return (
     <div className={styles.marqueeRow}>
       <p className={styles.marqueeLabel}>
+        <FontAwesomeIcon icon={icon} size="sm" />
         {label}
       </p>
       <a href={link} target="_blank" rel="noopener noreferrer" className={styles.marqueeLink}>
@@ -104,7 +107,7 @@ const SupportersMarquee: React.FC<SupportersMarqueeProps> = ({ github, patreon, 
   return (
     <section className={styles.marqueeSection}>
       <h4 className={styles.marqueeTitle}>
-        {t('supportersMarquee.title', 'Thanks our great supporters!')}
+        🗡️ {t('supportersMarquee.title', 'A heartfelt thank you to our incredible supporters!')}
       </h4>
       <MarqueeRow
         supporters={patreon}

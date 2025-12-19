@@ -4,7 +4,7 @@
   padding: 1.5rem 1rem;
   border: 1px solid rgba(142, 36, 170, 0.15);
   border-radius: 12px;
-  background: rgba(142, 36, 170, 0.02);
+  background: linear-gradient(135deg, rgba(142, 36, 170, 0.03) 0%, rgba(186, 104, 200, 0.02) 100%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   width: 100%;
   max-width: 1200px;
@@ -41,6 +41,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+.marqueeLabel svg {
+  width: 0.8em !important;
+  height: 0.8em !important;
+  font-size: 0.7rem !important;
 }
 
 .marqueeContainer {
