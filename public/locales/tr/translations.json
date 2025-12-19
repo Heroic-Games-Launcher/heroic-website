@@ -207,7 +207,7 @@
         ]
       },
       {
-        "question": "Heroic, kullanıcı adlarımı yada şifrelerimi vs. toplar mı?",
+        "question": "Heroic, kullanıcı adımı yada şifremi vs. toplar mı?",
         "answers": [
           "Hayır, Heroic gizlilik odaklı bir uygulamadır ve bilgisayarınızdan veya cihazınızdan herhangi bir veri toplamaz. Kullanıcı adınızı, şifrenizi veya başka herhangi bir kişisel bilginizi toplamaz. Resmî Epic Games Store veya GOG web sitesinde giriş yaparsınız ve Heroic yalnızca bu mağazalardaki oyunları listelemek, indirmek ve başlatmak için kullanılan bir belirteci (token) saklar.",
           "Ayrıca Heroic, uygulamayı kullanımınızla ilgili herhangi bir kullanım verisi veya analiz (analytics) toplamaz. Gizliliğiniz bizim için önemlidir ve verilerinizin güvenliğini sağlamak, izniniz olmadan toplanılmaması veya paylaşılmaması için önlem alırız."
