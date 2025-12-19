@@ -145,56 +145,6 @@
       "button": "Zu GitHub gehen"
     }
   },
-  "cla": {
-    "pageTitle": "CLA",
-    "title": "Contributor License Agreement",
-    "intro1": "Diese Contribution License Agreement (die <strong>\"CLA\"</strong>) ist zwischen der im Signaturblock genannten Person (<strong>\"Du\"</strong>) und Heroic Labs, Inc. (<strong>\"Heroic\"</strong>), wirksam ab dem Datum deiner Unterschrift und legt die Bedingungen fest, unter denen du Beiträge zu Heroic leisten kannst.",
-    "intro2": "Du akzeptierst und stimmst den folgenden Bedingungen und Konditionen für deine vergangenen, gegenwärtigen und zukünftigen Beiträge zu Heroics Heroic Games Launcher Projekt (das \"Projekt\") zu. Im Gegenzug wird Heroic deine Beiträge nicht in einer Weise verwenden, die den Geschäftszielen von Heroic widerspricht. Mit Ausnahme der Lizenz, die hierin an Heroic und Empfänger von Software, die von Heroic vertrieben wird, gewährt wird, behältst du alle Rechte, Titel und Interessen an deinen Beiträgen.",
-    "definitions": {
-      "title": "Definitionen.",
-      "contribution": "<strong>\"Beitrag\"</strong> bedeutet jedes Originalwerk der Urheberschaft, einschließlich Modifikationen oder Ergänzungen zu einem bestehenden Werk, das du absichtlich einreichst oder zuvor eingereicht hast, um es in das Projekt aufzunehmen oder zu dokumentieren.",
-      "submit": "<strong>\"Einreichen\"</strong> bedeutet jede Form elektronischer, verbaler oder schriftlicher Kommunikation, die an Heroic oder seine Vertreter gesendet wird, einschließlich, aber nicht beschränkt auf Kommunikation über elektronische Mailinglisten, Quellcode-Kontrollsysteme und Issue-Tracking-Systeme, die von oder im Auftrag von Heroic verwaltet werden, um das Projekt zu diskutieren und zu verbessern, mit Ausnahme von Kommunikation, die ausdrücklich als \"Kein Beitrag\" gekennzeichnet oder anderweitig schriftlich bezeichnet ist."
-    },
-    "copyrightLicense": {
-      "title": "Urheberrechtslizenz.",
-      "content": "Vorbehaltlich der Bedingungen und Konditionen dieser CLA erteilst du hiermit Heroic und Empfängern von Software, die von Heroic vertrieben wird, eine dauerhafte, weltweite, nicht-exklusive, kostenlose, gebührenfreie, unwiderrufliche Urheberrechtslizenz zur Vervielfältigung, Vorbereitung von Derivaten, öffentlichen Anzeige, öffentlichen Aufführung, Unterlizenzierung und Verbreitung deiner Beiträge und solcher Derivate."
-    },
-    "patentLicense": {
-      "title": "Patentlizenz.",
-      "content": "Vorbehaltlich der Bedingungen und Konditionen dieser CLA erteilst du hiermit Heroic und Empfängern von Software, die von Heroic vertrieben wird, eine dauerhafte, weltweite, nicht-exklusive, kostenlose, gebührenfreie, unwiderrufliche (außer wie in diesem Abschnitt angegeben) Patentlizenz zur Herstellung, zum Herstellen, zur Verwendung, zum Angebot zum Verkauf, zum Verkauf, zum Import und anderweitigen Transfer des Projekts, wobei diese Lizenz nur für die Patentansprüche gilt, die du lizenzieren kannst, die notwendigerweise durch deine Beiträge allein oder durch Kombination deiner Beiträge mit dem Projekt, zu dem solche Beiträge eingereicht wurden, verletzt werden. Wenn irgendeine Einheit Patentverletzungsklagen gegen dich oder eine andere Einheit erhebt (einschließlich einer Gegenklage oder Widerklage in einem Rechtsstreit), die behauptet, dass dein Beitrag oder das Projekt, zu dem du beigetragen hast, direkte oder mittelbare Patentverletzung darstellt, dann enden alle Patentlizenzen, die unter dieser CLA an diese Einheit für diesen Beitrag oder dieses Projekt gewährt wurden, ab dem Datum, an dem eine solche Klage eingereicht wird."
-    },
-    "representations": {
-      "title": "Darstellungen und Gewährleistungen.",
-      "intro": "Der Lizenznehmer stellt dar und gewährleistet:",
-      "item1": "Du bist rechtlich berechtigt, die oben genannte Lizenz zu erteilen, und wenn deine Arbeitgeber Rechte an geistigem Eigentum haben, das du schaffst, das deine Beiträge umfasst, dann stellst du dar und gewährleistest, dass du die Erlaubnis erhalten hast, Beiträge im Namen dieses Arbeitgebers zu leisten, dass dein Arbeitgeber solche Rechte für deine Beiträge an Heroic abgetreten hat, oder dass dein Arbeitgeber eine separate CLA mit Heroic ausgeführt hat;",
-      "item2": "Jeder deiner Beiträge ist dein originales Werk (siehe Abschnitt 6 für Einreichungen im Namen anderer); und",
-      "item3": "Deine Beitragseinreichungen enthalten vollständige Details zu jeglichen Drittlizenzen oder anderen Einschränkungen (einschließlich, aber nicht beschränkt auf, damit verbundene Patente und Marken), von denen du persönlich Kenntnis hast und die mit irgendeinem Teil deiner Beiträge verbunden sind."
-    },
-    "support": {
-      "title": "Support; Haftungsausschluss.",
-      "content": "Du wirst nicht erwartet, Support für deine Beiträge zu leisten, außer in dem Umfang, in dem du es wünschst. Du kannst Support kostenlos, gegen Gebühr oder gar nicht leisten. Sofern nicht durch geltendes Recht erforderlich oder schriftlich vereinbart, stellst du deine Beiträge \"WIE BESEHEN\" zur Verfügung, OHNE GARANTIEN ODER BEDINGUNGEN IRGENDEINER ART, einschließlich, ohne Einschränkung, jeglicher Garantien oder Bedingungen von TITEL, NICHTVERLETZUNG, MARKTGÄNGIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK."
-    },
-    "thirdParty": {
-      "title": "Drittwerke.",
-      "content": "Wenn du daran interessiert bist, Arbeit einzureichen, die nicht dein originales Werk ist, dann kannst du es separat an Heroic einreichen, wobei du die vollständigen Details zu seiner Quelle identifizierst und zu jeglicher Lizenz oder anderen Einschränkung (einschließlich, aber nicht beschränkt auf, damit verbundene Patente, Marken und Lizenzvereinbarungen), von denen du persönlich Kenntnis hast, und wobei du die Arbeit ausdrücklich als \"Im Namen eines Dritten eingereicht: [hier benannt]\" markierst."
-    },
-    "notice": {
-      "title": "Hinweis.",
-      "content": "Du stimmst zu, Heroic über jegliche Fakten oder Umstände zu informieren, von denen du Kenntnis erlangst, die deine Darstellungen in dieser CLA in irgendeiner Hinsicht ungenau machen würden."
-    },
-    "general": {
-      "title": "Allgemein.",
-      "content": "Diese CLA ist die gesamte Vereinbarung und das Verständnis in Bezug auf den Gegenstand hiervon und ersetzt alle und jede vorherigen oder gleichzeitigen Darstellungen, Verständnisse und Vereinbarungen zwischen den Parteien in Bezug darauf. Wenn irgendein Teil dieser CLA als nicht durchsetzbar befunden wird, bleiben die verbleibenden Teile dieser CLA in voller Kraft und Wirkung. Keine Modifikation oder Änderung dieser CLA oder Verzicht auf Rechte unter dieser CLA ist wirksam, es sei denn, sie ist schriftlich von der Partei unterzeichnet, die gebunden werden soll, und der Verzicht auf irgendeine Verletzung oder Standard wird nicht als Verzicht auf irgendein anderes Recht unter dieser CLA oder irgendeine nachfolgende Verletzung oder Standard gelten. Nichts in dieser CLA schafft oder beabsichtigt die Parteien zu schaffen, irgendeine Partnerschaft oder Joint Venture zwischen ihnen. Jede Partei kann diese CLA frei zuweisen. Diese CLA ist bindend für und wird zugunsten der Nachfolger und zulässigen Abtretungen einer Partei in Kraft treten. Diese CLA unterliegt den Gesetzen des Staates Delaware. Ausschließliche Gerichtsbarkeit jeglicher und aller Streitigkeiten hierunter liegt bei den staatlichen und bundesstaatlichen Gerichten in Wilmington, Delaware. Diese CLA kann in Gegenstücken ausgeführt werden und hat die gleiche Wirkung, als ob alle Unterzeichner die gleiche Urkunde unterzeichnet hätten."
-    },
-    "signature": {
-      "yourName": "Dein Name:",
-      "by": "Von:",
-      "date": "Datum:",
-      "email": "E-Mail:",
-      "heroicLabs": "Heroic Labs, Inc."
-    },
-    "printButton": "CLA drucken"
-  },
   "faq": {
     "title": "Häufig gestellte Fragen",
     "questions": [

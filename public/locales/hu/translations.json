@@ -145,56 +145,6 @@
       "button": "Menj GitHub-ra"
     }
   },
-  "cla": {
-    "pageTitle": "CLA",
-    "title": "Közreműködői Licenc Szerződés",
-    "intro1": "Ez a Közreműködői Licenc Szerződés (a \"CLA\") a szerződés aláíró blokkjában megadott személy (\"Te\") és a Heroic Labs, Inc. (\"Heroic\") között jött létre, hatályba lépve aláírásod dátumától és szabályozva a Heroic-nak való hozzájárulásaid feltételeit.",
-    "intro2": "Elfogadod és elfogadod a következő feltételeket és rendelkezéseket a Heroic's Heroic Games Launcher projektjéhez (a \"Projekt\") való múltbeli, jelenlegi és jövőbeli hozzájárulásaidra. Cserébe a Heroic nem használja a hozzájárulásaidat olyan módon, amely ellentétes a Heroic üzleti céljaival. A Heroic által terjesztett szoftver címzettjeinek ebben a CLA-ban biztosított licenc kivételével, fenntartod minden jogot, címet és érdeket a hozzájárulásaidban.",
-    "definitions": {
-      "title": "Meghatározások.",
-      "contribution": "\"Hozzájárulás\" jelent bármilyen eredeti szerzői művet, beleértve bármilyen módosítást vagy hozzáadást egy meglévő műhöz, amelyet szándékosan benyújtasz vagy korábban benyújtottál Heroic-nak a Projekt dokumentációjának vagy dokumentációjának befoglalására.",
-      "submit": "\"Benyújtás\" jelent bármilyen elektronikus, szóbeli vagy írásbeli kommunikációt, amely Heroic-hoz vagy képviselőihez kerül elküldésre, beleértve de nem kizárólagosan az elektronikus levelezési listákon, forráskód vezérlő rendszerekben és probléma követő rendszerekben való kommunikációt, amelyeket Heroic vagy Heroic nevében kezelnek a Projekt javításának és fejlesztésének céljából, kivéve a nyilvánvalóan vagy más módon írásban kijelölt kommunikációt \"Nem hozzájárulás\" által Te által."
-    },
-    "copyrightLicense": {
-      "title": "Szerzői jog licenc.",
-      "content": "A CLA feltételei és rendelkezései szerint ezennel örökös, világszerte érvényes, nem kizárólagos, ingyenes, jogdíjmentes, visszavonhatatlan szerzői jog licencet adsz Heroic-nak és a Heroic által terjesztett szoftver címzettjeinek a hozzájárulásaid és ilyen származékos művek reprodukálására, származékos művek előkészítésére, nyilvános megjelenítésre, nyilvános előadásra, allicencre és terjesztésre."
-    },
-    "patentLicense": {
-      "title": "Szabadalmi licenc.",
-      "content": "A CLA feltételei és rendelkezései szerint ezennel örökös, világszerte érvényes, nem kizárólagos, ingyenes, jogdíjmentes, visszavonhatatlan (ebben a szakaszban meghatározott kivételektől eltekintve) szabadalmi licencet adsz Heroic-nak és a Heroic által terjesztett szoftver címzettjeinek a Projekt gyártására, gyártására, használatára, értékesítésre kínálására, értékesítésre, importálására és más módon átruházására, ahol ez a licenc csak azokra a szabadalmi igényekre vonatkozik, amelyeket Te licencelhetsz, és amelyek szükségszerűen megsértésre kerülnek a hozzájárulásaid által (önmagában) vagy a hozzájárulásaid kombinációjával azzal a Projekt-tel, amelyhez a hozzájárulás benyújtásra került. Ha bármely entitás szabadalmi pert indít ellened vagy bármely más entitás ellen (beleértve a keresetben vagy keresztkeresetben való ellentmondást), állítva, hogy a hozzájárulásod vagy a hozzájárulásod Projektje közvetlen vagy hozzájáruló szabadalmi jogsértés, akkor a CLA alapján ennek az entitásnak adott szabadalmi licencek megszűnnek azon a napon, amikor ez a per megindításra kerül."
-    },
-    "representations": {
-      "title": "Képviseletek és garanciák.",
-      "intro": "A Licencadó képviseli és garantálja:",
-      "item1": "Jogilag jogosult vagy a fenti licencek megadására, és ha a munkáltatóid (akárkik) rendelkeznek a hozzájárulásaid által létrehozott szellemi tulajdonjogokkal, amelyek magukban foglalják a hozzájárulásaidat, akkor képviselsz és garantálsz, hogy megkaptad a hozzájárulásaid benyújtásának engedélyét az adott munkáltató nevében, hogy a munkáltató lemondott ezekről a jogokról a hozzájárulásaid javára Heroic-nak, vagy hogy a munkáltató külön CLA-t kötött Heroic-kal;",
-      "item2": "Minden hozzájárulásod a te eredeti alkotásod (lásd a 6. szakaszt mások nevében történő benyújtásról); és",
-      "item3": "A hozzájárulásaid benyújtása tartalmazza a harmadik fél licenceinek vagy egyéb korlátozásoknak a teljes részleteit (beleértve de nem kizárólagosan a kapcsolódó szabadalmakat és védjegyeket), amelyekről személyesen tudsz, és amelyek bármely részével kapcsolatosak a hozzájárulásaidnak."
-    },
-    "support": {
-      "title": "Támogatás; Felelősség kizárása.",
-      "content": "Nem várod el, hogy támogatást nyújts a hozzájárulásaidért, kivéve ha azt kívánod. Ingyenesen, díjért vagy egyáltalán nem nyújthatsz támogatást. Hacsak nem szükséges a vonatkozó jogszabályok vagy írásbeli megállapodás szerint, a hozzájárulásaidat \"AHOGY VAN\" alapon biztosítod, bármilyen garancia vagy feltétel nélkül, beleértve de nem kizárólagosan a CÍM, NEM JOGSÉRTÉS, PIACI KÉSZSÉG vagy MEGHATÁROZOTT CÉLRA VALÓ ALKALMASSÁG garanciáit vagy feltételeit."
-    },
-    "thirdParty": {
-      "title": "Harmadik fél művei.",
-      "content": "Ha olyan művet kívánsz benyújtani, amely nem a te eredeti alkotásod, akkor azt külön benyújthatod Heroic-nak, azonosítva a forrásának teljes részleteit és bármilyen licencet vagy egyéb korlátozást (beleértve de nem kizárólagosan a kapcsolódó szabadalmakat, védjegyeket és licenc megállapodásokat), amelyekről személyesen tudsz, és nyilvánvalóan megjelölve a művet \"Harmadik fél nevében benyújtva: [itt nevezd meg]\"."
-    },
-    "notice": {
-      "title": "Értesítés.",
-      "content": "Elfogadod, hogy értesíted Heroic-ot bármilyen tényről vagy körülményről, amelyről tudomást szerzel, és amely miatt a CLA-ban tett képviseleteid bármely vonatkozásban pontatlanok."
-    },
-    "general": {
-      "title": "Általános.",
-      "content": "Ez a CLA a tárgyában teljes megértés és megállapodás, és felváltja a felek közötti tárgyban lévő összes és minden korábbi vagy egyidejű képviseletet, megértést vagy megállapodást. Ha ennek a CLA-nak bármely része végrehajthatatlannak bizonyul, a CLA többi része teljes erővel és hatállyal marad. Semmilyen módosítás vagy változtatás ennek a CLA-nak, sem pedig ennek a CLA-nak a jogaira való bármilyen lemondás nem lesz hatályos, hacsak nem írásban és aláírva a kötelezett fél által, és bármilyen megsértés vagy mulasztás lemondása nem fogja képezni ennek a CLA-nak vagy bármely későbbi megsértésnek vagy mulasztásnak a lemondását. Semmi ebben a CLA-ban nem hoz létre és a felek nem szándékoznak létrehozni semmilyen partnerséget vagy joint venture-t egymás között. Bármelyik fél szabadon átruházhatja ezt a CLA-t. Ez a CLA kötelező és kötelezi a felek utódait és engedményeseit. Ez a CLA a Delaware állam törvényei szerint szabályozott. Bármilyen és minden vita kizárólagos joghatósága a Delaware állambeli Wilmingtonban lévő állami és szövetségi bíróságok. Ez a CLA többszörözött példányokban hajtható végre ugyanazzal a hatállyal, mintha minden aláíró ugyanazon a dokumentumon írta volna alá."
-    },
-    "signature": {
-      "yourName": "A neved:",
-      "by": "Által:",
-      "date": "Dátum:",
-      "email": "Email:",
-      "heroicLabs": "Heroic Labs, Inc."
-    },
-    "printButton": "CLA nyomtatása"
-  },
   "faq": {
     "title": "Gyakran Ismételt Kérdések",
     "questions": [
