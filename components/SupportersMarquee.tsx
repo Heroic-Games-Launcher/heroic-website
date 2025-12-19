@@ -4,7 +4,8 @@ import { Supporter } from '../lib/supporters'
 import { faGithub, faPatreon } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
-import { t } from 'i18next'
+import { useTranslation } from 'react-i18next'
+import styles from './SupportersMarquee.module.css'
 
 interface SupportersMarqueeProps {
   github: Supporter[]
@@ -22,7 +23,7 @@ const getRoleStyle = (role?: string): React.CSSProperties => {
       color: '#FFD700', // Gold
       fontWeight: 800,
       textShadow: '0 0 12px rgba(255, 215, 0, 0.6)',
-      scale: 1.1,
+      transform: 'scale(1.1)',
     }
   }
   if (normalizedRole.includes('hero supporter')) {
@@ -57,50 +58,35 @@ const MarqueeRow = ({
   link: string,
   icon: IconDefinition
 }) => {
+  if (!supporters || supporters.length === 0) return null
+
   // Duplicate the list to ensure smooth infinite scroll
-  const repeatedSupporters = [...supporters, ...supporters]
-  const duration = Math.max(supporters.length * 3, 20)
+  const repeatedSupporters = [...supporters, ...supporters, ...supporters]
+  const duration = Math.max(supporters.length * 4, 30)
 
   return (
-    <div style={{ marginBottom: '1.5rem', overflow: 'hidden' }}>
-      <p style={{
-        textAlign: 'center',
-        fontSize: '0.7rem',
-        opacity: 0.6,
-        marginBottom: '0.75rem',
-        textTransform: 'uppercase',
-        letterSpacing: '2px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '0.5rem'
-      }}>
+    <div className={styles.marqueeRow}>
+      <p className={styles.marqueeLabel}>
         {label}
       </p>
-      <a href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-        <div style={{ position: 'relative', width: '100%', whiteSpace: 'nowrap' }}>
+      <a href={link} target="_blank" rel="noopener noreferrer" className={styles.marqueeLink}>
+        <div className={styles.marqueeContainer}>
           <motion.div
-            initial={{ x: direction === 'left' ? '0%' : '-50%' }}
+            initial={{ x: direction === 'left' ? '0%' : '-33.33%' }}
             animate={{
-              x: direction === 'left' ? '-50%' : '0%'
+              x: direction === 'left' ? '-33.33%' : '0%'
             }}
             transition={{
               duration: duration,
               ease: 'linear',
               repeat: Infinity
             }}
-            style={{ display: 'inline-flex', gap: '3rem' }}
+            className={styles.marqueeContent}
           >
             {repeatedSupporters.map((s, i) => {
               const roleStyle = getRoleStyle(s.role)
               return (
-                <span key={i} style={{
-                  fontSize: '0.9rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  ...roleStyle
-                }}>
+                <span key={i} className={styles.marqueeName} style={roleStyle}>
                   {s.name}
                 </span>
               )
@@ -113,26 +99,11 @@ const MarqueeRow = ({
 }
 
 const SupportersMarquee: React.FC<SupportersMarqueeProps> = ({ github, patreon, kofi }) => {
-  console.log({ github, patreon, kofi })
+  const { t } = useTranslation()
+
   return (
-    <section className="container" style={{
-      marginTop: '4rem',
-      marginBottom: '4rem',
-      padding: '0.5rem 1rem',
-      border: '1px solid rgba(142, 36, 170, 0.15)',
-      borderRadius: '12px',
-      background: 'rgba(142, 36, 170, 0.02)',
-      boxShadow: '0 4px 30px rgba(0, 0, 0, 0.03)'
-    }}>
-      <h4 style={{
-        textAlign: 'center',
-        marginBottom: '1rem',
-        fontSize: '1rem',
-        fontWeight: 600,
-        background: 'linear-gradient(135deg, #8E24AA 0%, #BA68C8 100%)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-      }}>
+    <section className={styles.marqueeSection}>
+      <h4 className={styles.marqueeTitle}>
         {t('supportersMarquee.title', 'Thanks our great supporters!')}
       </h4>
       <MarqueeRow
@@ -156,29 +127,11 @@ const SupportersMarquee: React.FC<SupportersMarqueeProps> = ({ github, patreon, 
         link="https://ko-fi.com/heroicgames"
         icon={faCoffee}
       />
-      <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        gap: '2rem',
-        marginTop: '2rem',
-        flexWrap: 'wrap',
-        paddingTop: '1.5rem',
-        borderTop: '1px solid rgba(142, 36, 170, 0.1)'
-      }}>
+      <div className={styles.marqueeLegend}>
         {['Mega Supporter', 'Hero Supporter', 'Supporter Plus', 'Supporter'].map((role) => {
           const style = getRoleStyle(role);
           return (
-            <span key={role} style={{
-              fontSize: '0.6rem',
-              fontWeight: 600,
-              textTransform: 'uppercase',
-              letterSpacing: '1px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              ...style,
-              scale: 1 // Reset scale for the legend to keep it tidy
-            }}>
+            <span key={role} className={styles.legendItem} style={{ ...style, transform: 'none', scale: 1 }}>
               {role}
             </span>
           );

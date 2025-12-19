@@ -61,7 +61,9 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon }) => {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center'
+            alignItems: 'center',
+            width: '100%',
+            overflow: 'hidden'
           }}
         >
           <h1>{t('home.heroTitle')}</h1>
