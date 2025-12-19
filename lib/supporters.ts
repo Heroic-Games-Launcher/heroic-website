@@ -2,6 +2,14 @@ export interface Supporter {
   name: string;
   amount?: number;
   avatar?: string;
+  role?: string;
+}
+
+export function getRoleFromAmount(amountCents: number): string {
+  if (amountCents >= 2000) return 'mega supporter';
+  if (amountCents >= 700) return 'hero supporter';
+  if (amountCents > 300) return 'supporter plus';
+  return 'supporter';
 }
 
 interface GitHubSponsorNode {
@@ -26,6 +34,20 @@ interface PatreonMember {
         id: string;
       };
     };
+    currently_entitled_tiers?: {
+      data?: {
+        id: string;
+        type: string;
+      }[];
+    };
+  };
+}
+
+interface PatreonTier {
+  id: string;
+  type: string;
+  attributes?: {
+    title?: string;
   };
 }
 
@@ -88,9 +110,21 @@ export async function getGitHubSponsors(): Promise<Supporter[]> {
         name: node.sponsorEntity.name || node.sponsorEntity.login,
         amount: node.tier.monthlyPriceInCents,
         avatar: node.sponsorEntity.avatarUrl,
+        role: getRoleFromAmount(node.tier.monthlyPriceInCents),
       }))
       .filter((s: Supporter) => (s.amount || 0) > 0)
-      .sort((a: Supporter, b: Supporter) => (b.amount || 0) - (a.amount || 0));
+      .sort((a: Supporter, b: Supporter) => {
+        const roleOrder: Record<string, number> = {
+          'mega supporter': 4,
+          'hero supporter': 3,
+          'supporter plus': 2,
+          'supporter': 1
+        };
+        const orderA = roleOrder[a.role || ''] || 0;
+        const orderB = roleOrder[b.role || ''] || 0;
+        if (orderA !== orderB) return orderB - orderA;
+        return (b.amount || 0) - (a.amount || 0);
+      });
   } catch (error) {
     console.error('Error fetching GitHub sponsors:', error);
     return [];
@@ -107,7 +141,7 @@ export async function getPatreonSupporters(): Promise<Supporter[]> {
   }
 
   let allSupporters: Supporter[] = [];
-  let nextUrl: string | null = `https://www.patreon.com/api/oauth2/v2/campaigns/${campaignId}/members?include=user&fields[member]=full_name,lifetime_support_cents&fields[user]=image_url&page[size]=100`;
+  let nextUrl: string | null = `https://www.patreon.com/api/oauth2/v2/campaigns/${campaignId}/members?include=user,currently_entitled_tiers&fields[member]=full_name,lifetime_support_cents&fields[user]=image_url&fields[tier]=title&page[size]=100`;
 
   try {
     while (nextUrl) {
@@ -124,20 +158,24 @@ export async function getPatreonSupporters(): Promise<Supporter[]> {
 
       const result = await response.json();
       const members: PatreonMember[] = result.data || [];
-      const included: PatreonUser[] = result.included || [];
+      const included: (PatreonUser | PatreonTier)[] = result.included || [];
 
       const pageSupporters = members
         .map((member: PatreonMember) => {
           const userId = member.relationships?.user?.data?.id;
-          const user = included.find((inc: PatreonUser) => inc.type === 'user' && inc.id === userId);
+          const user = included.find((inc): inc is PatreonUser => inc.type === 'user' && inc.id === userId);
+          const tierId = member.relationships?.currently_entitled_tiers?.data?.[0]?.id;
+          const tier = included.find((inc): inc is PatreonTier => inc.type === 'tier' && inc.id === tierId);
 
           return {
             name: member.attributes.full_name,
             amount: member.attributes.lifetime_support_cents,
             avatar: user?.attributes?.image_url,
+            role: tier?.attributes?.title?.toLowerCase() || 'supporter',
           };
         })
-        .filter((s: Supporter) => (s.amount || 0) >= 1000);
+        .filter((s: Supporter) => (s.amount || 0) >= 1000)
+        .filter((s: Supporter) => s.role !== 'free');
 
       allSupporters = [...allSupporters, ...pageSupporters];
       nextUrl = result.links?.next || null;
@@ -146,7 +184,31 @@ export async function getPatreonSupporters(): Promise<Supporter[]> {
       if (allSupporters.length > 5000) break;
     }
 
-    return allSupporters.sort((a, b) => (b.amount || 0) - (a.amount || 0));
+    // Separate high-tier and regular supporters
+    const highTiers = allSupporters.filter(s => (s.role || '') !== 'supporter');
+    const regularSupporters = allSupporters
+      .filter(s => (s.role || '') === 'supporter')
+      .sort((a, b) => (b.amount || 0) - (a.amount || 0))
+      .slice(0, 10);
+
+    const filteredSupporters = [...highTiers, ...regularSupporters];
+
+    const roleOrder: Record<string, number> = {
+      'mega supporter': 4,
+      'hero supporter': 3,
+      'supporter plus': 2,
+      'supporter': 1
+    };
+
+    return filteredSupporters.sort((a, b) => {
+      const orderA = roleOrder[a.role || ''] || 0;
+      const orderB = roleOrder[b.role || ''] || 0;
+
+      if (orderA !== orderB) {
+        return orderB - orderA;
+      }
+      return (b.amount || 0) - (a.amount || 0);
+    });
   } catch (error) {
     console.error('Error fetching Patreon supporters:', error);
     return allSupporters;

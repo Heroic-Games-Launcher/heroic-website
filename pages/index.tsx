@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTranslation, Trans } from 'react-i18next'
-import { Supporter, getGitHubSponsors, getPatreonSupporters } from '../lib/supporters'
+import { Supporter, getGitHubSponsors, getPatreonSupporters, getRoleFromAmount } from '../lib/supporters'
 import kofiData from '../lib/kofi_supporters.json'
 import SupportersMarquee from '../components/SupportersMarquee'
 
@@ -359,7 +359,22 @@ export const getStaticProps: GetStaticProps = async () => {
   ])
 
   const sortedKofi = [...kofiData]
-    .sort((a, b) => b.amount - a.amount)
+    .map(s => ({
+      ...s,
+      role: getRoleFromAmount(s.amount)
+    }))
+    .sort((a, b) => {
+      const roleOrder: Record<string, number> = {
+        'mega supporter': 4,
+        'hero supporter': 3,
+        'supporter plus': 2,
+        'supporter': 1
+      };
+      const orderA = roleOrder[a.role || ''] || 0;
+      const orderB = roleOrder[b.role || ''] || 0;
+      if (orderA !== orderB) return orderB - orderA;
+      return b.amount - a.amount;
+    })
 
   return {
     props: {
