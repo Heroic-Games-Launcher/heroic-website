@@ -127,3 +127,28 @@
     gap: 0.25rem;
   }
 }
+
+/* Role-specific styles */
+.megaSupporter {
+  color: #FFD700;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  transform: scale(1.1);
+}
+
+.heroSupporter {
+  color: #FF4081;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 64, 129, 0.4);
+}
+
+.plusSupporter {
+  color: #00bbffff;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 187, 255, 0.4);
+}
+
+.supporter {
+  opacity: 0.9;
+  font-weight: 500;
+}

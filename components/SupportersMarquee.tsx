@@ -14,38 +14,13 @@ interface SupportersMarqueeProps {
   kofi: Supporter[]
 }
 
-const getRoleStyle = (role?: string): React.CSSProperties => {
-  if (!role) return { opacity: 0.8 }
-
-  const normalizedRole = role.toLowerCase()
-
-  if (normalizedRole.includes('mega supporter')) {
-    return {
-      color: '#FFD700',
-      fontWeight: 800,
-      textShadow: '0 0 12px rgba(255, 215, 0, 0.6)',
-      transform: 'scale(1.1)',
-    }
-  }
-  if (normalizedRole.includes('hero supporter')) {
-    return {
-      color: '#FF4081',
-      fontWeight: 700,
-      textShadow: '0 0 10px rgba(255, 64, 129, 0.4)',
-    }
-  }
-  if (normalizedRole.includes('supporter plus')) {
-    return {
-      color: '#00bbffff',
-      textShadow: '0 0 8px rgba(0, 187, 255, 0.4)',
-      fontWeight: 600,
-    }
-  }
-  // Default 'supporter' or others
-  return {
-    opacity: 0.9,
-    fontWeight: 500,
-  }
+const getRoleClass = (role?: string): string => {
+  if (!role) return ''
+  const lowerRole = role.toLowerCase()
+  if (lowerRole.includes('mega supporter')) return styles.megaSupporter
+  if (lowerRole.includes('hero supporter')) return styles.heroSupporter
+  if (lowerRole.includes('supporter plus')) return styles.plusSupporter
+  return styles.supporter
 }
 
 const MarqueeRow = ({
@@ -55,10 +30,10 @@ const MarqueeRow = ({
   link,
   icon
 }: {
-  supporters: Supporter[],
-  direction?: 'left' | 'right',
-  label: string,
-  link: string,
+  supporters: Supporter[]
+  direction?: 'left' | 'right'
+  label: string
+  link: string
   icon: IconDefinition
 }) => {
   if (!supporters || supporters.length === 0) return null
@@ -69,11 +44,11 @@ const MarqueeRow = ({
 
   return (
     <div className={styles.marqueeRow}>
+      <a href={link} target="_blank" rel="noopener noreferrer" className={styles.marqueeLink}>
       <p className={styles.marqueeLabel}>
         <FontAwesomeIcon icon={icon} size="sm" />
         {label}
       </p>
-      <a href={link} target="_blank" rel="noopener noreferrer" className={styles.marqueeLink}>
         <div className={styles.marqueeContainer}>
           <motion.div
             initial={{ x: direction === 'left' ? '0%' : '-33.33%' }}
@@ -88,9 +63,9 @@ const MarqueeRow = ({
             className={styles.marqueeContent}
           >
             {repeatedSupporters.map((s, i) => {
-              const roleStyle = getRoleStyle(s.role)
+              const roleClass = getRoleClass(s.role)
               return (
-                <span key={i} className={styles.marqueeName} style={roleStyle}>
+                <span key={i} className={`${styles.marqueeName} ${roleClass}`}>
                   {s.name}
                 </span>
               )
@@ -133,9 +108,9 @@ const SupportersMarquee: React.FC<SupportersMarqueeProps> = ({ github, patreon, 
       />
       <div className={styles.marqueeLegend}>
         {['Mega Supporter', 'Hero Supporter', 'Supporter Plus', 'Supporter'].map((role) => {
-          const style = getRoleStyle(role);
+          const roleClass = getRoleClass(role)
           return (
-            <span key={role} className={styles.legendItem} style={{ ...style, transform: 'none', scale: 1 }}>
+            <span key={role} className={`${styles.legendItem} ${roleClass}`}>
               {role}
             </span>
           );
