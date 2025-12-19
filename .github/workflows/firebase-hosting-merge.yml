@@ -9,6 +9,10 @@ name: Deploy to Firebase Hosting on merge
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    env:
+      G_SPONSORS: ${{ secrets.G_SPONSORS }}
+      PATREON_TOKEN: ${{ secrets.PATREON_TOKEN }}
+      PATREON_CAMPAIGN_ID: ${{ secrets.PATREON_CAMPAIGN_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
