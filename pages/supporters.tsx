@@ -1,39 +1,21 @@
 import { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Supporter } from '../lib/supporters'
+import { Supporter, getGitHubSponsors, getPatreonSupporters } from '../lib/supporters'
 import kofiData from '../lib/kofi_supporters.json'
 
 interface SupportersProps {
   kofi: Supporter[]
+  github: Supporter[]
+  patreon: Supporter[]
 }
 
-const Supporters: NextPage<SupportersProps> = ({ kofi }) => {
+const Supporters: NextPage<SupportersProps> = ({ kofi, github, patreon }) => {
   const { t } = useTranslation()
-  const [github, setGithub] = useState<Supporter[]>([])
-  const [patreon, setPatreon] = useState<Supporter[]>([])
-  const [loading, setLoading] = useState(true)
   const [showAllPatreon, setShowAllPatreon] = useState(false)
   const [showAllGithub, setShowAllGithub] = useState(false)
   const [showAllKofi, setShowAllKofi] = useState(false)
-
-  useEffect(() => {
-    const fetchSupporters = async () => {
-      try {
-        const response = await fetch('/api/supporters')
-        const data = await response.json()
-        setGithub(data.github || [])
-        setPatreon(data.patreon || [])
-      } catch (error) {
-        console.error('Failed to fetch supporters:', error)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchSupporters()
-  }, [])
 
   const formatCurrency = (amountInCents?: number) => {
     if (!amountInCents) return null
@@ -74,15 +56,13 @@ const Supporters: NextPage<SupportersProps> = ({ kofi }) => {
           <section>
             <h2>{t('donate.supporters.patreon')}</h2>
             <div className="supporter-grid">
-              {loading ? (
-                <p>{t('common.loading') || 'Loading...'}</p>
-              ) : patreon.length > 0 ? (
+              {patreon.length > 0 ? (
                 displayedPatreon.map((s, i) => renderSupporter(s, i))
               ) : (
                 <p>No supporters found.</p>
               )}
             </div>
-            {!loading && patreon.length > 20 && (
+            {patreon.length > 20 && (
               <button
                 className="outline"
                 onClick={() => setShowAllPatreon(!showAllPatreon)}
@@ -98,15 +78,13 @@ const Supporters: NextPage<SupportersProps> = ({ kofi }) => {
           <section>
             <h2>{t('donate.supporters.github')}</h2>
             <div className="supporter-grid">
-              {loading ? (
-                <p>{t('common.loading') || 'Loading...'}</p>
-              ) : github.length > 0 ? (
+              {github.length > 0 ? (
                 displayedGithub.map((s, i) => renderSupporter(s, i))
               ) : (
                 <p>No supporters found.</p>
               )}
             </div>
-            {!loading && github.length > 30 && (
+            {github.length > 30 && (
               <button
                 className="outline"
                 onClick={() => setShowAllGithub(!showAllGithub)}
@@ -152,6 +130,12 @@ const Supporters: NextPage<SupportersProps> = ({ kofi }) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  // Fetch GitHub and Patreon supporters on the server side
+  const [github, patreon] = await Promise.all([
+    getGitHubSponsors(),
+    getPatreonSupporters()
+  ])
+
   // Sorting Ko-fi data by amount and filtering those < $10
   const sortedKofi = [...kofiData]
     .filter((s) => s.amount >= 1000)
@@ -159,7 +143,9 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      kofi: sortedKofi
+      kofi: sortedKofi,
+      github,
+      patreon
     },
     // Revalidate once a day
     revalidate: 86400
