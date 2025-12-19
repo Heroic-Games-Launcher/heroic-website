@@ -15,6 +15,7 @@
     "@fortawesome/free-brands-svg-icons": "6.1.1",
     "@fortawesome/free-solid-svg-icons": "6.1.1",
     "@fortawesome/react-fontawesome": "0.2.6",
+    "@swc/helpers": "^0.5.17",
     "framer-motion": "^6.3.10",
     "i18next": "22",
     "i18next-browser-languagedetector": "^8.2.0",

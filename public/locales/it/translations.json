@@ -1,6 +1,9 @@
 {
   "common": {
-    "copyright": "Heroic Games Launcher"
+    "copyright": "Heroic Games Launcher",
+    "supportersMarquee": {
+      "title": "Un sentito ringraziamento ai nostri incredibili sostenitori!"
+    }
   },
   "navbar": {
     "home": "Home",
@@ -141,56 +144,6 @@
       "description": "Supportaci con una donazione unica o ricorrente tramite GitHub.",
       "button": "Vai su GitHub"
     }
-  },
-  "cla": {
-    "pageTitle": "CLA",
-    "title": "Accordo di Licenza del Contributore",
-    "intro1": "Questo Accordo di Licenza del Contributore (il <strong>\"CLA\"</strong>) è tra l'individuo stabilito nel blocco firma (<strong>\"Tu\"</strong>) e Heroic Labs, Inc. (<strong>\"Heroic\"</strong>), effettivo a partire dalla data della tua firma e stabilisce i termini secondo i quali puoi fornire Contributi a Heroic.",
-    "intro2": "Accetti e convieni dei seguenti termini e condizioni per i tuoi Contributi passati, presenti e futuri inviati a Heroic's Heroic Games Launcher project (il \"Progetto\"). In cambio, Heroic non utilizzerà i tuoi Contributi in un modo contrario agli obiettivi aziendali di Heroic. Eccetto per la licenza concessa qui a Heroic e ai destinatari di software distribuito da Heroic, ritieni tutti i diritti, titolo e interesse in e ai tuoi Contributi.",
-    "definitions": {
-      "title": "Definizioni.",
-      "contribution": "<strong>\"Contributo\"</strong> significa qualsiasi lavoro originale di autore, incluso qualsiasi modifica o aggiunta a un lavoro esistente, che invii intenzionalmente, o abbia inviato precedentemente, a Heroic per inclusione in, o documentazione di, il Progetto.",
-      "submit": "<strong>\"Invia\"</strong> significa qualsiasi forma di comunicazione elettronica, verbale o scritta inviata a Heroic o ai suoi rappresentanti, incluso ma non limitato a comunicazione su liste di posta elettronica, sistemi di controllo codice sorgente e sistemi di tracciamento issue che sono gestiti da, o per conto di, Heroic per lo scopo di discutere e migliorare il Progetto, escludendo comunicazione che è conspicuously contrassegnata o altrimenti designata per iscritto da te come \"Non un Contributo.\""
-    },
-    "copyrightLicense": {
-      "title": "Licenza di Copyright.",
-      "content": "Soggetto ai termini e condizioni di questo CLA, tu qui concedi a Heroic e ai destinatari di software distribuito da Heroic una licenza perpetua, mondiale, non-esclusiva, senza costi, libera da royalty, irrevocabile di copyright per riprodurre, preparare lavori derivati di, visualizzare pubblicamente, eseguire pubblicamente, sublicenziare e distribuire i tuoi Contributi e tali lavori derivati."
-    },
-    "patentLicense": {
-      "title": "Licenza di Brevetto.",
-      "content": "Soggetto ai termini e condizioni di questo CLA, tu qui concedi a Heroic e ai destinatari di software distribuito da Heroic una licenza perpetua, mondiale, non-esclusiva, senza costi, libera da royalty, irrevocabile (eccetto come stabilito in questa sezione) di brevetto per fare, avere fatto, usare, offrire vendere, vendere, importare e trasferire altrimenti il Progetto, dove tale licenza si applica solo a reclami di brevetto licenziabili da te che sono necessariamente infranti dai tuoi Contributi(s) sola o per combinazione dei tuoi Contributi(s) con il Progetto al quale tali Contributi(s) furono inviati. Se qualsiasi entità istituisce contenzioso di brevetto contro di te o qualsiasi altra entità (incluso un contro-reclamo o reclamo incrociato in un contenzioso) allegando che il tuo Contributo, o il Progetto al quale hai contribuito, costituisce infrazione diretta o contributoria di brevetto, allora qualsiasi licenza di brevetto concessa a quella entità sotto questo CLA per quel Contributo o Progetto terminerà alla data in cui tale contenzioso è depositato."
-    },
-    "representations": {
-      "title": "Rappresentazioni e Garanzie.",
-      "intro": "Il Licenziatario rappresenta e garantisce che:",
-      "item1": "Sei legalmente autorizzato a concedere la licenza sopra, e se i tuoi datori di lavoro(s) hanno diritti a proprietà intellettuale che tu crei che includa i tuoi Contributi, allora rappresenti e garantisci che hai ricevuto permesso di fare Contributi per conto di quel datore di lavoro, che il tuo datore di lavoro ha ceduto tali diritti per i tuoi Contributi a Heroic, o che il tuo datore di lavoro ha eseguito un CLA separato con Heroic;",
-      "item2": "Ogni uno dei tuoi Contributi è la tua creazione originale (vedi sezione 6 per invii per conto di altri); e",
-      "item3": "I tuoi invii di Contributi includono dettagli completi di qualsiasi licenza di terzi o restrizione (incluso, ma non limitato a, brevetti e marchi associati) della quale sei personalmente a conoscenza e che sono associati con qualsiasi parte dei tuoi Contributi."
-    },
-    "support": {
-      "title": "Supporto; Rinuncia alla Responsabilità.",
-      "content": "Non ti è richiesto di fornire supporto per i tuoi Contributi, eccetto nella misura in cui desideri farlo. Puoi fornire supporto gratuitamente, per una tariffa o non affatto. Eccetto come richiesto da legge applicabile o convenuto per iscritto, fornisci i tuoi Contributi \"COME SONO\", SENZA GARANZIE O CONDIZIONI DI QUALSIASI TIPO, incluso, senza limitazione, qualsiasi garanzia o condizione di TITOLO, NON-INFRACCIÓN, COMMERCIABILITÀ o IDONEITÀ PER UNO SCOPO PARTICOLARE."
-    },
-    "thirdParty": {
-      "title": "Lavori di Terzi.",
-      "content": "Se desideri inviare lavoro che non è la tua creazione originale, allora puoi inviarlo a Heroic separatamente da qualsiasi Contributo, identificando i dettagli completi della sua fonte e di qualsiasi licenza o restrizione (incluso, ma non limitato a, brevetti associati, marchi e accordi di licenza) della quale sei personalmente a conoscenza, e contrassegnando conspicuously il lavoro come \"Inviato per conto di un terzo: [nominato qui]\"."
-    },
-    "notice": {
-      "title": "Avviso.",
-      "content": "Accetti di notificare Heroic di qualsiasi fatto o circostanza della quale vieni a conoscenza che renda le tue rappresentazioni in questo CLA inaccurate in qualsiasi aspetto."
-    },
-    "general": {
-      "title": "Generale.",
-      "content": "Questo CLA è l'intesa e l'accordo completo riguardo al soggetto qui, e sostituisce qualsiasi e ogni intesa, rappresentazione o accordo precedente o contemporaneo, tra le parti riguardo allo stesso. Se qualsiasi parte di questo CLA è trovata non eseguibile, le porzioni rimanenti di questo CLA rimarranno in pieno vigore e effetto. Nessuna modifica o emendamento a questo CLA, né qualsiasi waiver di diritti sotto questo CLA, sarà effettivo salvo in scrittura firmata dalla parte da essere caricata, e il waiver di qualsiasi violazione o difetto non costituirà un waiver di qualsiasi altro diritto sotto questo CLA o qualsiasi violazione o difetto successivo. Niente in questo CLA crea e le parti non intendono creare, qualsiasi partnership o joint venture tra loro. Ogni parte può liberamente assegnare questo CLA. Questo CLA è vincolante su e inurecerà ai benefici dei successori e assegnatari autorizzati di una parte. Questo CLA sarà governato dalle leggi dello Stato del Delaware. Giurisdizione esclusiva di qualsiasi e ogni disputa qui sotto sarà nei tribunali statali e federali a Wilmington, Delaware. Questo CLA può essere eseguito in controparti con lo stesso effetto come se tutte le firme avessero firmato lo stesso documento."
-    },
-    "signature": {
-      "yourName": "Il Tuo Nome:",
-      "by": "Da:",
-      "date": "Data:",
-      "email": "Email:",
-      "heroicLabs": "Heroic Labs, Inc."
-    },
-    "printButton": "Stampa CLA"
   },
   "faq": {
     "title": "Domande Frequenti",

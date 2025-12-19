@@ -1,6 +1,9 @@
 {
   "common": {
-    "copyright": "Heroic Games Launcher"
+    "copyright": "Heroic Games Launcher",
+    "supportersMarquee": {
+      "title": "Serdeczne podziękowania dla naszych niesamowitych wspierających!"
+    }
   },
   "navbar": {
     "home": "Strona główna",
@@ -141,56 +144,6 @@
       "description": "Wesprzyj nas jednorazową lub cykliczną darowizną przez GitHub.",
       "button": "Przejdź do GitHub"
     }
-  },
-  "cla": {
-    "pageTitle": "CLA",
-    "title": "Umowa Licencyjna Współtwórcy",
-    "intro1": "Niniejsza Umowa Licencyjna Współtwórcy (\"CLA\") jest zawarta między Tobą, osobą wskazaną w bloku podpisu (\"Ty\"), a Heroic Labs, Inc. (\"Heroic\"), obowiązująca od daty Twojego podpisu i regulująca warunki, na jakich możesz przekazywać Wkład do Heroic.",
-    "intro2": "Akceptujesz i zgadzasz się na następujące warunki i postanowienia dotyczące Twojego przeszłego, obecnego i przyszłego Wkładu przekazywanego do projektu Heroic Games Launcher Heroic (\"Projekt\"). W zamian Heroic nie będzie wykorzystywał Twojego Wkładu w sposób sprzeczny z celami biznesowymi Heroic. Z wyjątkiem licencji przyznanej tutaj Heroic i odbiorcom oprogramowania dystrybuowanego przez Heroic, zachowujesz wszystkie prawa, tytuł i interesy w swoim Wkładzie.",
-    "definitions": {
-      "title": "Definicje.",
-      "contribution": "\"Wkład\" oznacza dowolne oryginalne dzieło autorstwa, w tym wszelkie modyfikacje lub dodatki do istniejącego dzieła, które celowo przekazujesz lub wcześniej przekazałeś Heroic w celu włączenia do dokumentacji Projektu.",
-      "submit": "\"Przekazać\" oznacza dowolną formę elektronicznej, ustnej lub pisemnej komunikacji wysyłanej do Heroic lub jego przedstawicieli, w tym między innymi komunikację na listach mailingowych elektronicznych, systemach kontroli wersji źródłowej i systemach śledzenia problemów zarządzanych przez lub w imieniu Heroic w celu dyskusji i poprawy Projektu, z wykluczeniem komunikacji wyraźnie oznaczonej lub w inny sposób wskazanej pisemnie przez Ciebie jako \"Nie Wkład\"."
-    },
-    "copyrightLicense": {
-      "title": "Licencja Copyright.",
-      "content": "Zgodnie z warunkami i postanowieniami niniejszej CLA, niniejszym przyznajesz Heroic i odbiorcom oprogramowania dystrybuowanego przez Heroic wieczystą, światową, nieekskluzywną, bezpłatną, wolną od opłat licencyjnych, nieodwołalną licencję na copyright na reprodukcję, przygotowanie dzieł pochodnych, publiczne wyświetlanie, publiczne wykonywanie, sublicencjonowanie i dystrybucję Twojego Wkładu i takich dzieł pochodnych."
-    },
-    "patentLicense": {
-      "title": "Licencja Patentowa.",
-      "content": "Zgodnie z warunkami i postanowieniami niniejszej CLA, niniejszym przyznajesz Heroic i odbiorcom oprogramowania dystrybuowanego przez Heroic wieczystą, światową, nieekskluzywną, bezpłatną, wolną od opłat licencyjnych, nieodwołalną (z wyjątkiem określonym w niniejszym punkcie) licencję patentową na wytwarzanie, wytwarzanie, używanie, oferowanie sprzedaży, sprzedaż, importowanie i w inny sposób przenoszenie Projektu, gdzie taka licencja dotyczy tylko roszczeń patentowych, które Ty możesz licencjonować, które są koniecznie naruszane przez Twój Wkład (samodzielnie) lub przez kombinację Twojego Wkładu z Projektem, do którego taki Wkład został przekazany. Jeśli jakakolwiek strona wytoczy powództwo patentowe przeciwko Tobie lub jakiejkolwiek innej stronie (w tym roszczenie wzajemne lub krzyżowe w pozwie), twierdząc, że Twój Wkład lub Projekt, do którego wniosłeś wkład, stanowi bezpośrednie lub wtórne naruszenie patentu, wówczas wszelkie licencje patentowe przyznane takiej stronie na podstawie niniejszej CLA dla tego Wkładu lub Projektu wygasną z datą wytoczenia takiego pozwu."
-    },
-    "representations": {
-      "title": "Oświadczenia i Gwarancje.",
-      "intro": "Licencjodawca oświadcza i gwarantuje:",
-      "item1": "Masz prawo do przyznania powyższych licencji, a jeśli Twój pracodawca(-y) posiada prawa własności intelektualnej, które obejmują Twój Wkład, oświadczasz i gwarantujesz, że uzyskałeś zgodę na przekazywanie Wkładu w imieniu tego pracodawcy, że pracodawca zrzekł się takich praw na rzecz Twojego Wkładu do Heroic, lub że pracodawca zawarł oddzielną CLA z Heroic;",
-      "item2": "Każdy z Twoich Wkładów jest Twoim oryginalnym dziełem (patrz punkt 6 dotyczący przekazywania w imieniu innych); oraz",
-      "item3": "Twoje przekazywanie Wkładu obejmuje pełne szczegóły wszelkich licencji lub innych ograniczeń stron trzecich (w tym między innymi związanych patentów i znaków towarowych), o których wiesz osobiście i które dotyczą jakiejkolwiek części Twojego Wkładu."
-    },
-    "support": {
-      "title": "Wsparcie; Wyłączenie Odpowiedzialności.",
-      "content": "Nie oczekuje się od Ciebie wsparcia dla Twojego Wkładu, z wyjątkiem przypadków, gdy chcesz to zrobić. Możesz zapewniać wsparcie bezpłatnie, za opłatą lub wcale. O ile nie jest to wymagane przez obowiązujące prawo lub uzgodnione pisemnie, dostarczasz swój Wkład \"W STANIE, W JAKIM JEST\", bez jakichkolwiek gwarancji lub warunków, w tym między innymi gwarancji lub warunków TYTUŁU, NIENARUSZANIA, PRZYDATNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO OKREŚLONEGO CELU."
-    },
-    "thirdParty": {
-      "title": "Dzieła Stron Trzecich.",
-      "content": "Jeśli chcesz przekazać dzieło, które nie jest Twoim oryginalnym dziełem, możesz je przekazać Heroic oddzielnie od jakiegokolwiek Wkładu, identyfikując pełne szczegóły jego źródła oraz wszelkich licencji lub innych ograniczeń (w tym między innymi związanych patentów, znaków towarowych i umów licencyjnych), o których wiesz osobiście, i wyraźnie oznaczając dzieło jako \"Przekazane w imieniu strony trzeciej: [nazwa tutaj]\"."
-    },
-    "notice": {
-      "title": "Powiadomienie.",
-      "content": "Zgadzasz się powiadomić Heroic o wszelkich faktach lub okolicznościach, o których dowiesz się, że sprawiają, iż Twoje oświadczenia w niniejszej CLA są niedokładne w jakimkolwiek aspekcie."
-    },
-    "general": {
-      "title": "Ogólne.",
-      "content": "Niniejsza CLA jest pełnym zrozumieniem i porozumieniem w przedmiocie niniejszym i zastępuje wszelkie i wszystkie wcześniejsze lub równoczesne reprezentacje, zrozumienia lub porozumienia między stronami w tym przedmiocie. Jeśli jakakolwiek część niniejszej CLA zostanie uznana za niewykonalną, pozostałe części niniejszej CLA pozostaną w pełnej mocy i efekcie. Żadne modyfikacje ani zmiany niniejszej CLA, ani żadne zrzeczenie się praw na podstawie niniejszej CLA, nie będą skuteczne, chyba że zostaną sporządzone pisemnie i podpisane przez stronę, której to dotyczy, a zrzeczenie się jakiegokolwiek naruszenia lub uchybienia nie będzie stanowić zrzeczenia się jakiegokolwiek innego prawa na podstawie niniejszej CLA lub jakiegokolwiek późniejszego naruszenia lub uchybienia. Nic w niniejszej CLA nie tworzy ani strony nie zamierzają tworzyć, żadnego partnerstwa lub joint venture między sobą. Każda ze stron może swobodnie przenosić niniejszą CLA. Niniejsza CLA jest wiążąca dla i obowiązuje na rzecz następców i cesjonariuszy każdej ze stron. Niniejsza CLA będzie podlegać prawu stanu Delaware. Wyłączna jurysdykcja wszelkich i wszystkich sporów wynikających stąd będzie w sądach stanowych i federalnych w Wilmington, Delaware. Niniejsza CLA może być wykonana w egzemplarzach z tym samym skutkiem, jak gdyby wszystkie strony podpisały ten sam dokument."
-    },
-    "signature": {
-      "yourName": "Twoje Imię:",
-      "by": "Przez:",
-      "date": "Data:",
-      "email": "Email:",
-      "heroicLabs": "Heroic Labs, Inc."
-    },
-    "printButton": "Drukuj CLA"
   },
   "faq": {
     "title": "Często Zadawane Pytania",

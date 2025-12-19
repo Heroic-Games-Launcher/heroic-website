@@ -1,10 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const logo = require('../assets/logo.png?webp')
+
 import {
   faTwitter,
   faGithub,
@@ -82,14 +83,14 @@ export default function Navbar() {
   const navLinks = (
     <ul className="nav-links">
       <li>
-        <Link href="/downloads">
+        <Link href="/downloads" >
           <a onClick={closeSidebar}>
             {t('navbar.downloads')}
           </a>
         </Link>
       </li>
       <li>
-        <Link href="/faq">
+        <Link href="/faq" >
           <a onClick={closeSidebar}>
             {t('navbar.faq')}
           </a>
@@ -101,14 +102,14 @@ export default function Navbar() {
         </a>
       </li>
       <li>
-        <Link href="/donate">
+        <Link href="/donate" >
           <a onClick={closeSidebar}>
             {t('navbar.supportUs')}
           </a>
         </Link>
       </li>
       <li>
-        <Link href="/cla">
+        <Link href="/cla" >
           <a onClick={closeSidebar}>
             {t('navbar.cla')}
           </a>
@@ -122,7 +123,7 @@ export default function Navbar() {
       <nav className="container-fluid">
         <ul>
           <li>
-            <Link href="/" passHref>
+            <Link href="/" passHref >
               <span className="contrast link">
                 <img
                   src={logo}
@@ -176,7 +177,7 @@ export default function Navbar() {
               transition={{ type: 'tween', duration: 0.3, ease: 'easeInOut' }}
             >
               <div className="sidebar-header">
-                <Link href="/" passHref>
+                <Link href="/" passHref >
                   <span className="contrast link" onClick={closeSidebar}>
                     <img
                       src={logo}

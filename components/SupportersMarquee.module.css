@@ -1,0 +1,154 @@
+.marqueeSection {
+  margin-top: 5rem;
+  margin-bottom: auto;
+  padding: 1.5rem 1rem;
+  border: 1px solid rgba(142, 36, 170, 0.15);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(142, 36, 170, 0.03) 0%, rgba(186, 104, 200, 0.02) 100%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marqueeTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #e281fc 0%, #BA68C8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marqueeRow {
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.marqueeLabel {
+  text-align: center;
+  font-size: 0.7rem;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.marqueeLabel svg {
+  width: 0.8em !important;
+  height: 0.8em !important;
+  font-size: 0.7rem !important;
+}
+
+.marqueeContainer {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.marqueeContent {
+  display: inline-flex;
+  gap: 3rem;
+}
+
+.marqueeName {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.marqueeLegend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(142, 36, 170, 0.1);
+  width: 100%;
+}
+
+.legendItem {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .marqueeSection {
+    margin-top: 3rem;
+    padding: 1rem 0.5rem;
+    width: 100% !important;
+    max-width: calc(100vw - 2rem) !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  .marqueeTitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .marqueeRow {
+    margin-bottom: 1.5rem;
+  }
+
+  .marqueeContent {
+    gap: 1.5rem;
+  }
+
+  .marqueeName {
+    font-size: 0.85rem;
+  }
+
+  .marqueeLegend {
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+  }
+
+  .legendItem {
+    font-size: 0.6rem;
+    gap: 0.25rem;
+  }
+}
+
+/* Role-specific styles */
+.megaSupporter {
+  color: #FFD700;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  transform: scale(1.1);
+}
+
+.heroSupporter {
+  color: #FF4081;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 64, 129, 0.4);
+}
+
+.plusSupporter {
+  color: #00bbffff;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(0, 187, 255, 0.4);
+}
+
+.supporter {
+  opacity: 0.9;
+  font-weight: 500;
+}

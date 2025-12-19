@@ -1,6 +1,9 @@
 {
   "common": {
-    "copyright": "Heroic Games Launcher"
+    "copyright": "Heroic Games Launcher",
+    "supportersMarquee": {
+      "title": "Um sincero agradecimento aos nossos incríveis apoiadores!"
+    }
   },
   "navbar": {
     "home": "Início",
@@ -140,57 +143,17 @@
       "type": "Uma vez ou assinatura flexível",
       "description": "Apoie-nos com uma doação única ou recorrente via GitHub.",
       "button": "Ir para GitHub"
+    },
+    "supporters": {
+      "pageTitle": "Nossos Apoiadores",
+      "title": "Apoiadores",
+      "subtitle": "Um enorme obrigado a todos que apoiam o desenvolvimento do Heroic!",
+      "github": "GitHub Sponsors",
+      "patreon": "Patreon",
+      "kofi": "Ko-fi",
+      "showAll": "Mostrar todos os apoiadores",
+      "hideAll": "Ocultar apoiadores"
     }
-  },
-  "cla": {
-    "pageTitle": "CLA",
-    "title": "Acordo de Licença de Contribuidor",
-    "intro1": "Este Acordo de Licença de Contribuidor (o <strong>\"CLA\"</strong>) é entre o indivíduo estabelecido no bloco de assinatura (<strong>\"Você\"</strong>) e Heroic Labs, Inc. (<strong>\"Heroic\"</strong>), efetivo a partir da data da sua assinatura e estabelece os termos sob os quais você pode fornecer Contribuições para Heroic.",
-    "intro2": "Você aceita e concorda com os seguintes termos e condições para suas Contribuições passadas, presentes e futuras enviadas para Heroic's Heroic Games Launcher project (o \"Projeto\"). Em troca, Heroic não utilizará suas Contribuições de uma maneira contrária aos objetivos comerciais de Heroic. Exceto pela licença concedida aqui a Heroic e receptores de software distribuído por Heroic, você retém todos os direitos, título e interesse em e às suas Contribuições.",
-    "definitions": {
-      "title": "Definições.",
-      "contribution": "<strong>\"Contribuição\"</strong> significa qualquer trabalho original de autoria, incluindo qualquer modificação ou adição a um trabalho existente, que você submete intencionalmente, ou tenha submetido anteriormente, a Heroic para inclusão em, ou documentação de, o Projeto.",
-      "submit": "<strong>\"Submeter\"</strong> significa qualquer forma de comunicação eletrônica, verbal ou escrita enviada a Heroic ou seus representantes, incluindo mas não limitado a comunicação em listas de correio eletrônico, sistemas de controle de código fonte e sistemas de rastreamento de issues que são gerenciados por, ou em nome de, Heroic para o propósito de discutir e melhorar o Projeto, excluindo comunicação que é conspicuously marcada ou designada de outra maneira por escrito por você como \"Não uma Contribuição.\""
-    },
-    "copyrightLicense": {
-      "title": "Licença de Direitos Autorais.",
-      "content": "Sujeito aos termos e condições deste CLA, você aqui concede a Heroic e a receptores de software distribuído por Heroic uma licença perpétua, mundial, não-exclusiva, sem custos, livre de royalties, irrevocable de direitos autorais para reproduzir, preparar trabalhos derivados de, exibir publicamente, executar publicamente, sublicenciar e distribuir suas Contribuições e tais trabalhos derivados."
-    },
-    "patentLicense": {
-      "title": "Licença de Patente.",
-      "content": "Sujeito aos termos e condições deste CLA, você aqui concede a Heroic e a receptores de software distribuído por Heroic uma licença perpétua, mundial, não-exclusiva, sem custos, livre de royalties, irrevocable (exceto como estabelecido nesta seção) de patente para fazer, ter feito, usar, oferecer vender, vender, importar e transferir de outra maneira o Projeto, onde tal licença se aplica apenas a reivindicações de patente licenciáveis por você que são necessariamente infringidas por suas Contribuição(s) sozinho ou por combinação de suas Contribuição(s) com o Projeto ao qual tais Contribuição(s) foram enviadas. Se qualquer entidade instituir litígio de patente contra você ou qualquer outra entidade (incluindo uma contrarreivindicação ou reivindicação cruzada em um litígio) alegando que sua Contribuição, ou o Projeto ao qual você contribuiu, constitui infração direta ou contributória de patente, então qualquer licença de patente concedida a essa entidade sob este CLA para essa Contribuição ou Projeto terminará na data em que tal litígio for depositado."
-    },
-    "representations": {
-      "title": "Representações e Garantias.",
-      "intro": "O Licenciador representa e garante que:",
-      "item1": "Você é legalmente autorizado a conceder a licença acima, e se seus empregador(es) têm direitos a propriedade intelectual que você cria que inclui suas Contribuições, então você representa e garante que recebeu permissão para fazer Contribuições em nome desse empregador, que seu empregador cedeu tais direitos para suas Contribuições a Heroic, ou que seu empregador executou um CLA separado com Heroic;",
-      "item2": "Cada uma de suas Contribuições é sua criação original (veja seção 6 para submissões em nome de outros); e",
-      "item3": "Suas submissões de Contribuições incluem detalhes completos de qualquer licença de terceiros ou restrição (incluindo, mas não limitado a, patentes e marcas associadas) da qual você está pessoalmente ciente e que estão associadas com qualquer parte de suas Contribuições."
-    },
-    "support": {
-      "title": "Suporte; Isenção de Responsabilidade.",
-      "content": "Você não é esperado para fornecer suporte para suas Contribuições, exceto na medida em que deseje fazê-lo. Você pode fornecer suporte gratuitamente, por uma taxa ou não de todo. Exceto como requerido por lei aplicável ou acordado por escrito, você fornece suas Contribuições \"COMO ESTÃO\", SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, incluindo, sem limitação, qualquer garantia ou condição de TÍTULO, NÃO-INFRACCIÓN, COMERCIABILIDADE ou ADEQUAÇÃO PARA UM PROPÓSITO PARTICULAR."
-    },
-    "thirdParty": {
-      "title": "Trabalhos de Terceiros.",
-      "content": "Se você desejar submeter trabalho que não é sua criação original, então você pode submetê-lo a Heroic separadamente de qualquer Contribuição, identificando os detalhes completos de sua fonte e de qualquer licença ou restrição (incluindo, mas não limitado a, patentes associadas, marcas e acordos de licença) da qual você está pessoalmente ciente, e marcando conspicuously o trabalho como \"Submetido em nome de um terceiro: [nomeado aqui]\"."
-    },
-    "notice": {
-      "title": "Aviso.",
-      "content": "Você concorda em notificar Heroic de qualquer fato ou circunstância da qual você toma conhecimento que tornaria suas representações neste CLA inexatas em qualquer aspecto."
-    },
-    "general": {
-      "title": "Geral.",
-      "content": "Este CLA é o entendimento e acordo completos com respeito ao assunto aqui, e substitui qualquer e todos os entendimentos, representações ou acordos anteriores ou contemporâneos, entre as partes com respeito ao mesmo. Se qualquer parte deste CLA for encontrada não executável, as porções restantes deste CLA permanecerão em pleno vigor e efeito. Nenhuma modificação ou emenda a este CLA, nem qualquer waiver de direitos sob este CLA, será efetiva salvo em escrita assinada pela parte a ser carregada, e o waiver de qualquer violação ou defeito não constituirá um waiver de qualquer outro direito sob este CLA ou qualquer violação ou defeito subsequente. Nada neste CLA cria e as partes não pretendem criar, qualquer parceria ou joint venture entre elas. Cada parte pode livremente ceder este CLA. Este CLA é vinculativo sobre e enurecerá aos benefícios dos sucessores e cessionários autorizados de uma parte. Este CLA será governado pelas leis do Estado de Delaware. Jurisdição exclusiva de qualquer e todos os disputas aqui sob será nos tribunais estaduais e federais em Wilmington, Delaware. Este CLA pode ser executado em contrapartes com o mesmo efeito como se todas as assinaturas tivessem sido assinadas no mesmo documento."
-    },
-    "signature": {
-      "yourName": "Seu Nome:",
-      "by": "Por:",
-      "date": "Data:",
-      "email": "Email:",
-      "heroicLabs": "Heroic Labs, Inc."
-    },
-    "printButton": "Imprimir CLA"
   },
   "faq": {
     "title": "Perguntas Frequentes",

@@ -19,7 +19,10 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "settings": {
     "react": {
       "version": "17.0"
@@ -33,7 +36,10 @@
     "quotes": [
       "error",
       "single",
-      { "avoidEscape": true, "allowTemplateLiterals": true }
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
     ]
   }
 }
