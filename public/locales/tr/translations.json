@@ -203,55 +203,55 @@
       {
         "question": "Heroic kullanmak güvenli midir?",
         "answers": [
-          "Evet, Heroic güvenli ve kullanıcılarından veri toplamayan bir oyun başlatıcısıdır. It is also open source, which means that the source code is publicly available and can be reviewed by the community to ensure that it does not contain any malicious code."
+          "Evet, Heroic güvenli ve kullanıcılarından veri toplamayan bir oyun başlatıcısıdır. Ayrıca açık kaynaklıdır; yani kaynak kodu herkese açıktır ve kötü amaçlı kod içermediğinden emin olunabilmesi için topluluk tarafından incelenebilir."
         ]
       },
       {
-        "question": "Heroic verilerimi, kullanıcı adımı yada şifremi toplar mı?",
+        "question": "Heroic, kullanıcı adlarımı yada şifrelerimi vs. toplar mı?",
         "answers": [
-          "No, Heroic is a privacy-centered application and does not collect any data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.",
-          "In addition, Heroic does not collect any usage data or analytics from your use of the application. Your privacy is important to us and we take steps to ensure that your data is secure and not collected or shared without your consent."
+          "Hayır, Heroic gizlilik odaklı bir uygulamadır ve bilgisayarınızdan veya cihazınızdan herhangi bir veri toplamaz. Kullanıcı adınızı, şifrenizi veya başka herhangi bir kişisel bilginizi toplamaz. Resmî Epic Games Store veya GOG web sitesinde giriş yaparsınız ve Heroic yalnızca bu mağazalardaki oyunları listelemek, indirmek ve başlatmak için kullanılan bir belirteci (token) saklar.",
+          "Ayrıca Heroic, uygulamayı kullanımınızla ilgili herhangi bir kullanım verisi veya analiz (analytics) toplamaz. Gizliliğiniz bizim için önemlidir ve verilerinizin güvenliğini sağlamak, izniniz olmadan toplanılmaması veya paylaşılmaması için önlem alırız."
         ]
       },
       {
-        "question": "Heroic kullanmaktan dolayı ban yiyebilir miyim?",
+        "question": "Heroic kullanmaktan dolayı banlanabilir miyim?",
         "answers": [
-          "It is unlikely that you will get banned for using Heroic to launch games from the Epic Games Store or GOG.",
-          "However, please note that certain actions, such as cheating or violating the terms of service for a particular game, may result in a ban. It is important to follow the rules and guidelines of each game and store in order to avoid any issues.",
-          "Some games also might ban you if you are trying to run the game on a non-supported operating system using Wine or Proton, for example."
+          "Epic Games Store veya GOG’dan oyun başlatmak için Heroic kullanmanız nedeniyle banlanmanız pek olası değildir.",
+          "Ancak hile yapmak veya belirli bir oyunun hizmet şartlarını ihlal etmek gibi bazı eylemlerin yasaklanmaya yol açabileceğini unutmayın. Sorun yaşamamak için her oyunun ve mağazanın kurallarına ve yönergelerine uymanız önemlidir.",
+          "Ayrıca bazı oyunlar, örneğin Wine veya Proton kullanarak oyunu desteklenmeyen bir işletim sisteminde çalıştırmaya çalışırsanız sizi banlayabilir."
         ]
       },
       {
         "question": "Heroic'i bilgisayarıma nasıl kurarım?",
         "answers": [
-          "The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package and then run the command xattr -r -d com.apple.quarantine /Applications/Heroic.app in the terminal to complete the installation. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website."
+          "Heroic’in kurulumu kullandığınız işletim sistemine bağlıdır. Linux’ta Heroic’i Flatpak, .deb, .pacman veya .rpm gibi bir paket yöneticisiyle kurabilir ya da AppImage kullanabilirsiniz. macOS’te Heroic’i standart bir uygulama paketi olarak kurabilir ve ardından kurulumu tamamlamak için terminalde `xattr -r -d com.apple.quarantine /Applications/Heroic.app` komutunu çalıştırabilirsiniz. Windows’ta ise WinGet paket yöneticisini şu komutu çalıştırarak kullanabilirsiniz `winget install HeroicGamesLauncher.HeroicGamesLauncher` ya da web sitesinden kurulum exe veya taşınabilir (portable) exe dosyasını indirip çalıştırabilirsiniz."
         ]
       },
       {
-        "question": "Heroic şuan hangi özelliklere sahip ve hangi özellikler gelecekte gelicek?",
+        "question": "Heroic şuan hangi özelliklere sahip ve hangi özellikler gelecekte eklenicek?",
         "answers": [
-          "Currently available features in Heroic include:",
-          "Support for launching games from the Epic Games Store and GOG",
-          "Support for installing, uninstalling, updating, repairing, and moving games",
-          "Support for importing already installed games",
-          "Support for playing Epic games online (AntiCheat on macOS and on Linux depends on the game)",
-          "Support for playing games using Wine or Proton on Linux",
-          "Support for playing games using Crossover on macOS",
-          "Support for downloading custom Wine and Proton versions on Linux",
-          "Direct access to the Epic and GOG stores from within the Heroic interface",
-          "Search for game compatibility information on ProtonDB on Linux",
-          "Sync installed games with an existing Epic Games Store installation",
-          "Sync saves with the cloud",
-          "Custom theming support",
-          "Download queue",
-          "Add games and applications outside of GOG and Epic Games",
-          "Planned features for the future include:",
-          "Support for other stores (such as Amazon Gaming and IndieGala)",
-          "GOG oyunlarını online oynamak"
+          "Heroic’te şu anda mevcut olan özellikler şunlardır:",
+          "Epic Games Store ve GOG’dan oyun başlatma desteği",
+          "Oyunları yükleme, kaldırma, güncelleme, onarma ve taşıma desteği",
+          "Halihazırda yüklü olan oyunları içe aktarma desteği",
+          "Epic oyunlarını çevrim içi oynama desteği (macOS ve Linux’ta AntiCheat desteği oyuna bağlıdır)",
+          "Linux’ta Wine veya Proton kullanarak oyun oynama desteği",
+          "macOS’te Crossover kullanarak oyun oynama desteği",
+          "Linux’ta özel Wine ve Proton sürümlerini indirme desteği",
+          "Heroic arayüzü içinden Epic ve GOG mağazalarına doğrudan erişim",
+          "Linux’ta ProtonDB üzerinden oyun uyumluluk bilgilerini arama",
+          "Yüklü oyunları mevcut bir Epic Games Store kurulumu ile senkronize etme",
+          "Kayıt dosyalarını bulut ile senkronize etme",
+          "Özel tema desteği",
+          "İndirme kuyruğu",
+          "GOG ve Epic Games dışındaki oyunları ve uygulamaları ekleme",
+          "Gelecek için planlanan özellikler şunlardır:",
+          "Diğer mağazalar için destek (Amazon Gaming ve IndieGala gibi)",
+          "GOG oyunlarını online oynama desteği"
         ]
       },
       {
-        "question": "What are the supported operating systems for Heroic?",
+        "question": "Heroic için desteklenen işletim sistemleri nelerdir?",
         "answers": [
           "Linux: Ubuntu 22.04 ve üstü, OpenSuse Tumbleweed, Fedora 37 ve üstü, Arch Linux ve çeşitleri (örneğin Manjaro, Garuda, ve EndeavourOS). Heroic çoğu linux dağıtımında çalışır, ancak ek kurulum ve sorun giderme gerektirebilir. SteamOSdede mevcuttur, ancak indirmek sadece Discover mağazasında mevcuttur.",
           "Windows: Windows 10 ve 11",
