@@ -1,7 +1,9 @@
 {
   "common": {
     "copyright": "Heroic Games Launcher",
-    "loading": "Carregando..."
+    "supportersMarquee": {
+      "title": "Um sincero agradecimento aos nossos incríveis apoiadores!"
+    }
   },
   "navbar": {
     "home": "Início",

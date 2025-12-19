@@ -1,7 +1,10 @@
 {
   "common": {
     "copyright": "Heroic Games Launcher",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "supportersMarquee": {
+      "title": "A heartfelt thank you to our incredible supporters!"
+    }
   },
   "navbar": {
     "home": "Home",

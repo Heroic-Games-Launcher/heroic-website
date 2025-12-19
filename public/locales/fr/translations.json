@@ -1,6 +1,9 @@
 {
   "common": {
-    "copyright": "Heroic Games Launcher"
+    "copyright": "Heroic Games Launcher",
+    "supportersMarquee": {
+      "title": "Un sincère merci à nos incroyables soutiens !"
+    }
   },
   "navbar": {
     "home": "Accueil",

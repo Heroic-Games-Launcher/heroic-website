@@ -1,6 +1,9 @@
 {
   "common": {
-    "copyright": "Heroic Játék Indító"
+    "copyright": "Heroic Játék Indító",
+    "supportersMarquee": {
+      "title": "Őszinte köszönet hihetetlen támogatóinknak!"
+    }
   },
   "navbar": {
     "home": "Kezdőlap",
