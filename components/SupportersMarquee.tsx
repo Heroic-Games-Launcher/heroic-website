@@ -21,7 +21,7 @@ const getRoleStyle = (role?: string): React.CSSProperties => {
 
   if (normalizedRole.includes('mega supporter')) {
     return {
-      color: '#FFD700', // Gold
+      color: '#FFD700',
       fontWeight: 800,
       textShadow: '0 0 12px rgba(255, 215, 0, 0.6)',
       transform: 'scale(1.1)',
@@ -29,14 +29,15 @@ const getRoleStyle = (role?: string): React.CSSProperties => {
   }
   if (normalizedRole.includes('hero supporter')) {
     return {
-      color: '#FF4081', // Pink/Magenta
+      color: '#FF4081',
       fontWeight: 700,
       textShadow: '0 0 10px rgba(255, 64, 129, 0.4)',
     }
   }
   if (normalizedRole.includes('supporter plus')) {
     return {
-      color: '#00E5FF', // Cyan
+      color: '#00bbffff',
+      textShadow: '0 0 8px rgba(0, 187, 255, 0.4)',
       fontWeight: 600,
     }
   }
