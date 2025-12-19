@@ -1,9 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTranslation, Trans } from 'react-i18next'
+import { Supporter, getGitHubSponsors, getPatreonSupporters } from '../lib/supporters'
+import kofiData from '../lib/kofi_supporters.json'
+import SupportersMarquee from '../components/SupportersMarquee'
 
 import styles from '../styles/Home.module.css'
 
@@ -22,7 +24,13 @@ const final = { y: '0px', opacity: 1 }
 const hover = { scale: 1.05 }
 const transition = { duration: 0.5 }
 
-const Home: NextPage = () => {
+interface HomeProps {
+  kofi: Supporter[]
+  github: Supporter[]
+  patreon: Supporter[]
+}
+
+const Home: NextPage<HomeProps> = ({ kofi, github, patreon }) => {
   const { t } = useTranslation()
 
   // Helper to convert translation to string
@@ -90,6 +98,7 @@ const Home: NextPage = () => {
             title="Heroic Games Launcher preview"
             className="heroicPreview"
           />
+          <SupportersMarquee github={github} patreon={patreon} kofi={kofi} />
         </div>
       </motion.header>
       <h1
@@ -341,6 +350,25 @@ const Home: NextPage = () => {
       </motion.section>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const [github, patreon] = await Promise.all([
+    getGitHubSponsors(),
+    getPatreonSupporters()
+  ])
+
+  const sortedKofi = [...kofiData]
+    .sort((a, b) => b.amount - a.amount)
+
+  return {
+    props: {
+      kofi: sortedKofi,
+      github,
+      patreon
+    },
+    revalidate: 86400
+  }
 }
 
 export default Home

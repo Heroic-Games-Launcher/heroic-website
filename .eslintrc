@@ -7,8 +7,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended"
   ],
   "root": true,
   "parser": "@typescript-eslint/parser",
@@ -19,7 +18,10 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "settings": {
     "react": {
       "version": "17.0"
@@ -33,7 +35,10 @@
     "quotes": [
       "error",
       "single",
-      { "avoidEscape": true, "allowTemplateLiterals": true }
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
     ]
   }
 }

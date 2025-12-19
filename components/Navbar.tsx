@@ -108,13 +108,6 @@ export default function Navbar() {
         </Link>
       </li>
       <li>
-        <Link href="/supporters" >
-          <a onClick={closeSidebar}>
-            {t('donate.supporters.title')}
-          </a>
-        </Link>
-      </li>
-      <li>
         <Link href="/cla" >
           <a onClick={closeSidebar}>
             {t('navbar.cla')}
