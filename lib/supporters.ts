@@ -104,7 +104,7 @@ export async function getPatreonSupporters(): Promise<Supporter[]> {
             avatar: user?.attributes?.image_url,
           };
         })
-        .filter((s: Supporter) => (s.amount || 0) > 0);
+        .filter((s: Supporter) => (s.amount || 0) >= 1000);
 
       allSupporters = [...allSupporters, ...pageSupporters];
       nextUrl = result.links?.next || null;

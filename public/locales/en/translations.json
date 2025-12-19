@@ -1,6 +1,7 @@
 {
   "common": {
-    "copyright": "Heroic Games Launcher"
+    "copyright": "Heroic Games Launcher",
+    "loading": "Loading..."
   },
   "navbar": {
     "home": "Home",
@@ -147,7 +148,9 @@
       "subtitle": "A huge thank you to everyone who supports Heroic development!",
       "github": "GitHub Sponsors",
       "patreon": "Patreon",
-      "kofi": "Ko-fi"
+      "kofi": "Ko-fi",
+      "showAll": "Show All Supporters",
+      "hideAll": "Hide Supporters"
     }
   },
   "cla": {
