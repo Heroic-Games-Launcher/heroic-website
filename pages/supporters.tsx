@@ -3,6 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { getGitHubSponsors, getPatreonSupporters, Supporter } from '../lib/supporters'
+import kofiData from '../lib/kofi_supporters.json'
 
 interface SupportersProps {
   github: Supporter[]
@@ -70,11 +71,14 @@ const Supporters: NextPage<SupportersProps> = ({ github, patreon, kofi }) => {
 
           <section>
             <h2>{t('donate.supporters.kofi')}</h2>
+            <p style={{ opacity: 0.8, fontSize: '0.9rem', marginBottom: '1rem' }}>
+              <strong>* Monthly Supporters only</strong>
+            </p>
             <div className="supporter-grid">
               {kofi.length > 0 ? (
                 kofi.map((s, i) => renderSupporter(s, i))
               ) : (
-                <p>Manual update required for Ko-fi.</p>
+                <p>No supporters found.</p>
               )}
             </div>
           </section>
@@ -90,11 +94,14 @@ export const getStaticProps: GetStaticProps = async () => {
     getPatreonSupporters()
   ])
 
+  // Sorting Ko-fi data by amount
+  const sortedKofi = [...kofiData].sort((a, b) => b.amount - a.amount)
+
   return {
     props: {
       github,
       patreon,
-      kofi: [] // Ko-fi requires manual list or webhooks
+      kofi: sortedKofi
     },
     // Revalidate once a day
     revalidate: 86400
