@@ -78,7 +78,7 @@ export async function getPatreonSupporters(): Promise<Supporter[]> {
 
   try {
     while (nextUrl) {
-      const response = await fetch(nextUrl, {
+      const response: Response = await fetch(nextUrl, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
