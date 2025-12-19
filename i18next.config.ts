@@ -12,7 +12,8 @@ export default defineConfig({
     "pt",
     "zh",
     "pl",
-    "hu"
+    "hu",
+    "tr"
   ],
   "extract": {
     "input": [
