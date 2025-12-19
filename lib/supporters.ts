@@ -50,11 +50,14 @@ export async function getGitHubSponsors(): Promise<Supporter[]> {
     const result = await response.json();
     const nodes = result.data?.organization?.sponsorshipsAsMaintainer?.nodes || [];
 
-    return nodes.map((node: any) => ({
-      name: node.sponsorEntity.name || node.sponsorEntity.login,
-      amount: node.tier.monthlyPriceInCents,
-      avatar: node.sponsorEntity.avatarUrl,
-    })).sort((a: any, b: any) => (b.amount || 0) - (a.amount || 0));
+    return nodes
+      .map((node: any) => ({
+        name: node.sponsorEntity.name || node.sponsorEntity.login,
+        amount: node.tier.monthlyPriceInCents,
+        avatar: node.sponsorEntity.avatarUrl,
+      }))
+      .filter((s: Supporter) => (s.amount || 0) > 0)
+      .sort((a: any, b: any) => (b.amount || 0) - (a.amount || 0));
   } catch (error) {
     console.error('Error fetching GitHub sponsors:', error);
     return [];
@@ -70,31 +73,49 @@ export async function getPatreonSupporters(): Promise<Supporter[]> {
     return [];
   }
 
-  const url = `https://www.patreon.com/api/oauth2/v2/campaigns/${campaignId}/members?include=user&fields[member]=full_name,lifetime_support_cents&fields[user]=image_url`;
+  let allSupporters: Supporter[] = [];
+  let nextUrl: string | null = `https://www.patreon.com/api/oauth2/v2/campaigns/${campaignId}/members?include=user&fields[member]=full_name,lifetime_support_cents&fields[user]=image_url&page[size]=100`;
 
   try {
-    const response = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-      },
-    });
+    while (nextUrl) {
+      const response = await fetch(nextUrl, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
 
-    const result = await response.json();
-    const members = result.data || [];
-    const included = result.included || [];
+      if (!response.ok) {
+        console.error(`Patreon API error: ${response.status} ${response.statusText}`);
+        break;
+      }
 
-    return members.map((member: any) => {
-      const userId = member.relationships?.user?.data?.id;
-      const user = included.find((inc: any) => inc.type === 'user' && inc.id === userId);
+      const result = await response.json();
+      const members = result.data || [];
+      const included = result.included || [];
 
-      return {
-        name: member.attributes.full_name,
-        amount: member.attributes.lifetime_support_cents,
-        avatar: user?.attributes?.image_url,
-      };
-    }).sort((a: any, b: any) => (b.amount || 0) - (a.amount || 0));
+      const pageSupporters = members
+        .map((member: any) => {
+          const userId = member.relationships?.user?.data?.id;
+          const user = included.find((inc: any) => inc.type === 'user' && inc.id === userId);
+
+          return {
+            name: member.attributes.full_name,
+            amount: member.attributes.lifetime_support_cents,
+            avatar: user?.attributes?.image_url,
+          };
+        })
+        .filter((s: Supporter) => (s.amount || 0) > 0);
+
+      allSupporters = [...allSupporters, ...pageSupporters];
+      nextUrl = result.links?.next || null;
+
+      // Safety break to avoid infinite loops
+      if (allSupporters.length > 5000) break;
+    }
+
+    return allSupporters.sort((a, b) => (b.amount || 0) - (a.amount || 0));
   } catch (error) {
     console.error('Error fetching Patreon supporters:', error);
-    return [];
+    return allSupporters;
   }
 }
