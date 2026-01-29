@@ -39,9 +39,9 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     const { assets: assetsStable, tag_name: tagStable } = releases.filter(
       (rel) => rel.prerelease === false
     )[0]
-    const { assets: assetsBeta, tag_name: tagBeta } = releases.filter(
-      (rel) => rel.prerelease === true
-    )[0]
+    // const { assets: assetsBeta, tag_name: tagBeta } = releases.filter(
+    //   (rel) => rel.prerelease === true
+    // )[0]
 
     const appImageStable =
       assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
@@ -66,7 +66,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
       dmgBeta = null,
       dmgArmBeta = null
 
-    const isSameMajor = tagStable >= tagBeta.split('-')[0]
+    // const isSameMajor = tagStable >= tagBeta.split('-')[0]
 
     /*     if (!isSameMajor) {
       appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0]
