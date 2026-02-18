@@ -54,6 +54,11 @@
       "title": "Çoklu dil",
       "description": "Heroic topluluk tarafından 40'tan fazla dile çevirilmiştir. Çeviriye weblate sayfamıza giderek katkıda bulunabilirsiniz.",
       "weblateLinkText": "Weblate sayfamız"
+    },
+    "sponsors": {
+      "title": "Sponsorlarımız",
+      "weblateDescription": "Çevirilerimize ev sahipliği yapıyor",
+      "signpathDescription": "Windows ikili dosyalarının ücretsiz imzalanmasını sağlıyor"
     }
   },
   "downloads": {

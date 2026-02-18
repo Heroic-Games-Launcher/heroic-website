@@ -55,6 +55,11 @@
       "title": "Többnyelvű",
       "description": "A Heroicot a közösség több mint 40 nyelvre lefordította, portugáltól koreaiig, perzsától franciáig. Segíthetsz a fordításokban, ha hozzáférsz",
       "weblateLinkText": "a Weblate oldalunkhoz"
+    },
+    "sponsors": {
+      "title": "Támogatóink",
+      "weblateDescription": "Fordításaink helyszíne",
+      "signpathDescription": "Ingyenes Windows bináris aláírás biztosítása"
     }
   },
   "downloads": {

@@ -55,6 +55,11 @@
       "title": "多语言",
       "description": "Heroic已被社区翻译成40多种语言，从葡萄牙语到韩语，从波斯语到法语。您也可以通过访问",
       "weblateLinkText": "我们的Weblate页面来帮助翻译"
+    },
+    "sponsors": {
+      "title": "我们的赞助商",
+      "weblateDescription": "托管我们的翻译",
+      "signpathDescription": "提供免费的 Windows 二进制文件签名"
     }
   },
   "downloads": {
