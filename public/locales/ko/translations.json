@@ -55,6 +55,11 @@
       "title": "다중 언어",
       "description": "Heroic은 커뮤니티에 의해 40개 이상의 언어로 번역되었습니다, 포르투갈어에서 한국어로, 페르시아어에서 프랑스어로. 당신도 번역에 기여할 수 있습니다",
       "weblateLinkText": "우리의 Weblate 페이지를 방문하여"
+    },
+    "sponsors": {
+      "title": "우리의 스폰서",
+      "weblateDescription": "번역 호스팅",
+      "signpathDescription": "Windows 바이너리 무료 서명 제공"
     }
   },
   "downloads": {

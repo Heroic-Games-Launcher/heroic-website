@@ -6,6 +6,7 @@ import { useTranslation, Trans } from 'react-i18next'
 import { Supporter, getGitHubSponsors, getPatreonSupporters, getRoleFromAmount } from '../lib/supporters'
 import kofiData from '../lib/kofi_supporters.json'
 import SupportersMarquee from '../components/SupportersMarquee'
+import Sponsorship from '../components/Sponsorship'
 
 import styles from '../styles/Home.module.css'
 
@@ -350,6 +351,7 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon }) => {
           </div>
         </div>
       </motion.section>
+      <Sponsorship />
     </>
   )
 }

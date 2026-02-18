@@ -1,0 +1,91 @@
+.sponsorshipSection {
+  padding: 80px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  padding-inline: 25px;
+  margin-bottom: 50px;
+}
+
+.sponsorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sponsorCard {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  width: 100%;
+}
+
+.sponsorCard:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.logoWrapper {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.logo {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+.info {
+  text-align: center;
+}
+
+.sponsorName {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.sponsorDescription {
+  font-size: 1rem;
+  color: #aaa;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .sponsorshipSection {
+    padding: 60px 15px;
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .sponsorCard {
+    padding: 30px;
+  }
+
+  .logoWrapper {
+    height: 80px;
+  }
+}

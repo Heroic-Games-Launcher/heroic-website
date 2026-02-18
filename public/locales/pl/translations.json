@@ -55,6 +55,11 @@
       "title": "Wielojęzyczny",
       "description": "Heroic został przetłumaczony przez społeczność na ponad 40 języków, od portugalskiego do koreańskiego, od perskiego do francuskiego. Możesz także pomóc w tłumaczeniach, uzyskując dostęp do",
       "weblateLinkText": "naszej strony Weblate"
+    },
+    "sponsors": {
+      "title": "Nasi sponsorzy",
+      "weblateDescription": "Hosting naszych tłumaczeń",
+      "signpathDescription": "Darmowe podpisywanie plików binarnych Windows"
     }
   },
   "downloads": {

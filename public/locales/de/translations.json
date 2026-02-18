@@ -55,6 +55,11 @@
       "title": "Mehrsprachig",
       "description": "Heroic wurde von der Community in mehr als 40 Sprachen übersetzt, von Portugiesisch bis Koreanisch, von Farsi bis Französisch. Du kannst auch helfen, Übersetzungen beizutragen, indem du",
       "weblateLinkText": "unsere Weblate-Seite besuchst"
+    },
+    "sponsors": {
+      "title": "Unsere Sponsoren",
+      "weblateDescription": "Hosting für unsere Übersetzungen",
+      "signpathDescription": "Kostenlose Signierung von Windows-Binärdateien"
     }
   },
   "downloads": {
