@@ -110,6 +110,9 @@
         "stable": "Stable",
         "beta": "Beta"
       },
+      "setupArm": {
+        "description": "For Windows on ARM devices (such as Snapdragon X / Surface). Installs Heroic with auto-updates, same as the x64 version."
+      },
       "portable": {
         "title": "Portable",
         "description": "Use the portable version in case you do not want the full installation. Check for x64 and arm64 versions on our Github.",

@@ -117,9 +117,9 @@ const Downloads: NextPage = () => {
             <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.windows')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.windows.setup.title')}</h4>
+                <h4>{t('downloads.windows.setup.title')} (x64)</h4>
                 <p>{t('downloads.windows.setup.description')}</p>
-                <footer>
+                <footer className="downloadLink">
                   <a href={releases.Windows}>
                     <strong onClick={() => handleDownload('windows-stable')}>
                       {t('downloads.windows.setup.stable')}
@@ -135,6 +135,30 @@ const Downloads: NextPage = () => {
                       </strong>
                       <span className="smallText">
                         {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
+                  )}
+                </footer>
+              </article>
+              <article className={styles.downloadBoxes}>
+                <h4>{t('downloads.windows.setup.title')} (ARM64)</h4>
+                <p>{t('downloads.windows.setupArm.description')}</p>
+                <footer className="downloadLink">
+                  <a href={releases.WindowsArm}>
+                    <strong onClick={() => handleDownload('windows-arm-stable')}>
+                      {t('downloads.windows.setup.stable')}
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.WindowsArm.split('/')[7] ?? ''})`}
+                    </span>
+                  </a>
+                  {releases.WindowsArmBeta && (
+                    <a href={releases.WindowsArmBeta}>
+                      <strong onClick={() => handleDownload('windows-arm-beta')}>
+                        {t('downloads.windows.setup.beta')}
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.WindowsArmBeta.split('/')[7] ?? ''})`}
                       </span>
                     </a>
                   )}
