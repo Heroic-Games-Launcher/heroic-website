@@ -30,3 +30,20 @@ a {
 .link {
   cursor: pointer;
 }
+
+/* Skip to content link — visible only when focused via keyboard */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -48px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--primary, #8e24aa);
+  color: #fff;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 8px;
+}

@@ -131,16 +131,15 @@ export default function Navbar() {
         <ul>
           <li>
             <Link href="/" passHref >
-              <span className="contrast link">
+              <a className="contrast link">
                 <img
                   src={logo}
-                  title="Heroic Games Launcher"
                   alt="Heroic Games Launcher"
                   height="32px"
                   width="32px"
                 />
                 <strong>Heroic Games Launcher</strong>
-              </span>
+              </a>
             </Link>
           </li>
         </ul>
@@ -185,16 +184,15 @@ export default function Navbar() {
             >
               <div className="sidebar-header">
                 <Link href="/" passHref >
-                  <span className="contrast link" onClick={closeSidebar}>
+                  <a className="contrast link" onClick={closeSidebar}>
                     <img
                       src={logo}
-                      title="Heroic"
                       alt="Heroic"
                       height="32px"
                       width="32px"
                     />
                     <strong>Heroic</strong>
-                  </span>
+                  </a>
                 </Link>
                 <button
                   className="close-sidebar"

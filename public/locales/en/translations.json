@@ -2,6 +2,7 @@
   "common": {
     "copyright": "Heroic Games Launcher",
     "loading": "Loading...",
+    "skipToContent": "Skip to content",
     "supportersMarquee": {
       "title": "A heartfelt thank you to our incredible supporters!"
     }
