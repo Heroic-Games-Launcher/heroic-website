@@ -90,6 +90,13 @@ export default function Navbar() {
         </Link>
       </li>
       <li>
+        <Link href="/steamdeck" >
+          <a onClick={closeSidebar}>
+            {t('navbar.steamdeck')}
+          </a>
+        </Link>
+      </li>
+      <li>
         <Link href="/faq" >
           <a onClick={closeSidebar}>
             {t('navbar.faq')}

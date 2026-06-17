@@ -1,0 +1,61 @@
+.deck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Side grips */
+.grip {
+  flex: 0 0 auto;
+  width: 110px;
+  height: 320px;
+  background: linear-gradient(180deg, #2a2a30 0%, #1b1b20 100%);
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.06);
+}
+
+.gripLeft {
+  border-radius: 80px 28px 28px 80px;
+}
+
+.gripRight {
+  border-radius: 28px 80px 80px 28px;
+}
+
+/* Screen housing */
+.screen {
+  flex: 1 1 auto;
+  background: #15151a;
+  padding: 18px;
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  max-width: 680px;
+}
+
+.screen :global(img),
+.screen :global(video) {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .grip {
+    width: 48px;
+    height: 200px;
+  }
+
+  .screen {
+    padding: 10px;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grip {
+    display: none;
+  }
+}

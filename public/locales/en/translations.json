@@ -9,6 +9,7 @@
   "navbar": {
     "home": "Home",
     "downloads": "Downloads",
+    "steamdeck": "Steam Deck",
     "faq": "FAQ",
     "documentation": "Documentation",
     "supportUs": "Support Us",
@@ -158,6 +159,25 @@
         "stable": "Stable",
         "beta": "Beta"
       }
+    }
+  },
+  "steamdeck": {
+    "pageTitle": "Heroic on the Steam Deck",
+    "title": "Heroic on the Steam Deck",
+    "subtitle": "Install once and play your Epic, GOG and Amazon games in a controller-friendly, full-screen Console Mode built for the Deck.",
+    "mockupAlt": "Heroic running in Console Mode on a Steam Deck",
+    "getFlathub": "Get from Flathub",
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "A full-screen, controller-first interface designed for the Steam Deck. Browse, install and launch your games without ever touching the desktop."
+    },
+    "install": {
+      "title": "Easy to install",
+      "description": "Heroic is on Flathub, so you can install it straight from the Discover store in SteamOS Desktop Mode, then add it to Steam to launch it from Game Mode."
+    },
+    "compatibility": {
+      "title": "Built for compatibility",
+      "description": "Manage Proton and Wine versions, enable DXVK and VKD3D, and check ProtonDB ratings to get your games running smoothly on the Deck."
     }
   },
   "donate": {
