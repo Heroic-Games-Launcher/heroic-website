@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import React from 'react'
-import { getLatestReleases, ReleaseUrls } from './api/github'
+import { getLatestReleases, ReleaseUrls } from '../lib/github'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
 import Head from 'next/head'

@@ -1,0 +1,20 @@
+.dropdown {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+}
+
+/* Make the dropdown trigger look like the primary call to action. */
+.dropdown > .trigger {
+  min-width: 240px;
+  font-weight: 600;
+}
+
+.dropdown > .trigger::after {
+  /* keep Pico's caret aligned to the right edge */
+  float: right;
+}
+
+.allLink {
+  font-weight: 600;
+}

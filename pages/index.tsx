@@ -4,9 +4,11 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTranslation, Trans } from 'react-i18next'
 import { Supporter, getGitHubSponsors, getPatreonSupporters, getRoleFromAmount } from '../lib/supporters'
+import { getLatestReleases, ReleaseUrls } from '../lib/github'
 import kofiData from '../lib/kofi_supporters.json'
 import SupportersMarquee from '../components/SupportersMarquee'
 import Sponsorship from '../components/Sponsorship'
+import DownloadButton from '../components/DownloadButton'
 
 import styles from '../styles/Home.module.css'
 
@@ -29,9 +31,10 @@ interface HomeProps {
   kofi: Supporter[]
   github: Supporter[]
   patreon: Supporter[]
+  releases: ReleaseUrls
 }
 
-const Home: NextPage<HomeProps> = ({ kofi, github, patreon }) => {
+const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
   const { t } = useTranslation()
 
   // Helper to convert translation to string
@@ -83,11 +86,7 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon }) => {
               <strong>SteamDeck</strong>!
             </Trans>
             <p className={styles.buttonContainer}>
-              <Link href="/downloads" passHref>
-                <span role="button" className="secondary">
-                  {t('home.download')}
-                </span>
-              </Link>
+              <DownloadButton releases={releases} />
               <Link href="/faq" passHref>
                 <span role="button" className="contrast outline" style={{ marginTop: '14px' }}>
                   {t('home.faq')}
@@ -357,9 +356,10 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon }) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const [github, patreon] = await Promise.all([
+  const [github, patreon, releases] = await Promise.all([
     getGitHubSponsors(),
-    getPatreonSupporters()
+    getPatreonSupporters(),
+    getLatestReleases()
   ])
 
   const sortedKofi = [...kofiData]
@@ -384,7 +384,8 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       kofi: sortedKofi,
       github,
-      patreon
+      patreon,
+      releases
     },
     revalidate: 86400
   }

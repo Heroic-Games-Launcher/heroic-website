@@ -22,6 +22,16 @@
     "heroTitle": "PLAY LIKE A HERO!",
     "heroDescription": "Heroic is a Free and Open Source <strong>Epic</strong>, <strong>GOG</strong> and <strong>Amazon Prime Games</strong> launcher for <strong>Linux</strong>, <strong>Windows</strong> and <strong>macOS</strong>. Also available on the <strong>SteamDeck</strong>!",
     "download": "Download",
+    "downloadMenu": {
+      "forOS": "Download for {{os}}",
+      "windowsInstaller": "Windows Installer (x64)",
+      "windowsArm": "Windows Installer (ARM64)",
+      "macApple": "macOS — Apple Silicon (M1+)",
+      "macIntel": "macOS — Intel",
+      "linuxFlatpak": "Linux — Flatpak",
+      "linuxAppImage": "Linux — AppImage",
+      "allVersions": "All versions & platforms →"
+    },
     "faq": "FAQ",
     "mainFeatures": "MAIN FEATURES AND MORE INFO",
     "gamePage": {
