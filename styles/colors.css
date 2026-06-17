@@ -7,6 +7,9 @@
   /* keep the brand purple as the accent in light mode (Pico defaults to azure) */
   --primary: #8e24aa;
   --primary-hover: #7b1f93;
+  /* Darken Pico's default muted text (#73828c was only ~3.2:1 on the light
+     background) so secondary copy meets WCAG AA. */
+  --muted-color: #565e69;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -16,10 +19,28 @@
     --secondary-hover: #fff;
     --secondary-inverse: #191919;
     --background: #161e3e;
+    --primary: #8e24aa;
+    --primary-hover: #7b1f93;
+    --muted-color: #adb5c5;
   }
   nav li > a {
     color: var(--h1-color);
   }
+}
+
+/* The theme toggle forces [data-theme='dark'] even on light-preference systems
+   (and dark is the default), so the brand + contrast overrides must also apply
+   outside the media query. Pico's forced-dark defaults otherwise leave an azure
+   --primary (white CTA text only ~3.4:1) and a muted grey (~4.1:1), both failing
+   WCAG AA. */
+[data-theme='dark'] {
+  --secondary: #fff;
+  --secondary-hover: #fff;
+  --secondary-inverse: #191919;
+  --background: #161e3e;
+  --primary: #8e24aa;
+  --primary-hover: #7b1f93;
+  --muted-color: #adb5c5;
 }
 
 body {
