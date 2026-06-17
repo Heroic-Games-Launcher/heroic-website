@@ -83,13 +83,6 @@ export default function Navbar() {
   const navLinks = (
     <ul className="nav-links">
       <li>
-        <Link href="/downloads" >
-          <a onClick={closeSidebar}>
-            {t('navbar.downloads')}
-          </a>
-        </Link>
-      </li>
-      <li>
         <Link href="/steamdeck" >
           <a onClick={closeSidebar}>
             {t('navbar.steamdeck')}
@@ -116,9 +109,9 @@ export default function Navbar() {
         </Link>
       </li>
       <li>
-        <Link href="/cla" >
-          <a onClick={closeSidebar}>
-            {t('navbar.cla')}
+        <Link href="/downloads" >
+          <a className="nav-cta" onClick={closeSidebar}>
+            {t('navbar.downloads')}
           </a>
         </Link>
       </li>
@@ -127,7 +120,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="container-fluid">
+      <nav className="container-fluid site-nav">
         <ul>
           <li>
             <Link href="/" passHref >
@@ -155,7 +148,6 @@ export default function Navbar() {
 
         {/* Desktop navigation - hidden on mobile */}
         <div className="desktop-nav">
-          {socialLinks}
           {navLinks}
         </div>
       </nav>

@@ -1,0 +1,84 @@
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin: 0;
+  border-radius: 8px;
+  border: 1px solid var(--muted-border-color, rgba(128, 128, 128, 0.3));
+  background: var(--card-background-color, transparent);
+  color: var(--contrast);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  width: auto;
+  transition: border-color 0.2s;
+}
+
+.trigger:hover {
+  border-color: var(--primary, #8e24aa);
+}
+
+.globe {
+  width: 16px;
+  height: 16px;
+  color: var(--primary, #8e24aa);
+}
+
+.chevron {
+  width: 11px;
+  height: 11px;
+  opacity: 0.6;
+}
+
+.menu {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+  min-width: 190px;
+  max-height: 320px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  background: var(--card-background-color, #1a2138);
+  border: 1px solid var(--muted-border-color, rgba(128, 128, 128, 0.3));
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 50;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: var(--contrast);
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.option:hover {
+  background: rgba(142, 36, 170, 0.15);
+}
+
+.active {
+  color: var(--primary, #8e24aa);
+  font-weight: 700;
+}
+
+.flag {
+  font-size: 16px;
+}

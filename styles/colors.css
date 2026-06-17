@@ -4,6 +4,9 @@
   --secondary: #323035;
   --secondary-hover: #151f3c;
   --background: #e7e8ed;
+  /* keep the brand purple as the accent in light mode (Pico defaults to azure) */
+  --primary: #8e24aa;
+  --primary-hover: #7b1f93;
 }
 
 @media only screen and (prefers-color-scheme: dark) {

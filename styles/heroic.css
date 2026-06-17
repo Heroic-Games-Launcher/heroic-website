@@ -33,11 +33,6 @@ code.snippet.hljs {
   line-height: 1.6em;
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-}
-
 /* Extra */
 .icon {
   margin-top: 7px;
@@ -97,13 +92,6 @@ nav.container-fluid div {
 
 .feature .description {
   margin: auto 15px auto 8px;
-}
-
-footer {
-  margin-top: 100px;
-  padding: 50px;
-  font-weight: 700;
-  color: var(--secondary);
 }
 
 .smallText {
@@ -319,6 +307,54 @@ a {
 /* Desktop navigation container */
 .desktop-nav {
   display: flex;
+}
+
+/* Modern sticky navbar */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--background-color) 85%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--muted-border-color, rgba(128, 128, 128, 0.18));
+}
+
+.desktop-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav .nav-links li {
+  margin: 0;
+}
+
+.desktop-nav .nav-links a {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: color 0.2s, background-color 0.2s, filter 0.2s;
+}
+
+.desktop-nav .nav-links a:hover {
+  color: var(--primary, #8e24aa);
+  background: rgba(142, 36, 170, 0.1);
+}
+
+.desktop-nav .nav-links a.nav-cta {
+  background: var(--primary, #8e24aa);
+  color: #fff;
+  margin-left: 8px;
+}
+
+.desktop-nav .nav-links a.nav-cta:hover {
+  filter: brightness(1.12);
+  color: #fff;
 }
 
 @media only screen and (prefers-color-scheme: light) {

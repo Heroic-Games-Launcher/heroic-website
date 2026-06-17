@@ -20,6 +20,13 @@
     "heroicGithub": "Heroic GitHub Page",
     "heroicDiscord": "Heroic Discord Server"
   },
+  "footer": {
+    "tagline": "Free and open source games launcher for Epic, GOG and Amazon Prime Games on Linux, Windows, macOS and the Steam Deck.",
+    "getHeroic": "Get Heroic",
+    "resources": "Resources",
+    "project": "Project",
+    "license": "GPLv3 licensed"
+  },
   "home": {
     "heroTitle": "PLAY LIKE A HERO!",
     "heroDescription": "Heroic is a Free and Open Source <strong>Epic</strong>, <strong>GOG</strong> and <strong>Amazon Prime Games</strong> launcher for <strong>Linux</strong>, <strong>Windows</strong> and <strong>macOS</strong>. Also available on the <strong>SteamDeck</strong>!",
