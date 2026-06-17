@@ -61,15 +61,11 @@ export default function DownloadButton({ releases }: Props) {
     : t('home.download')
 
   return (
-    <details role="list" className={styles.dropdown}>
-      <summary
-        aria-haspopup="listbox"
-        role="button"
-        className={styles.trigger}
-      >
+    <details className={styles.dropdown}>
+      <summary role="button" className={styles.trigger}>
         {label}
       </summary>
-      <ul role="listbox">
+      <ul className={styles.menu}>
         {options.map((option) => (
           <li key={option.label}>
             <a href={option.href}>{option.label}</a>

@@ -2,6 +2,9 @@
   display: inline-block;
   width: auto;
   margin: 0;
+  /* Anchor for the absolutely-positioned menu. Pico previously supplied this
+     via details[role='list'], which we dropped for accessibility. */
+  position: relative;
 }
 
 /* Make the dropdown trigger look like the primary call to action. */
@@ -10,9 +13,69 @@
   font-weight: 600;
 }
 
+/* Re-create the dropdown caret that Pico drew via
+   `details[role='list'] summary::after` (removed with the inaccessible role).
+   `summary[role='button']` still supplies the chevron image + height. */
 .dropdown > .trigger::after {
-  /* keep Pico's caret aligned to the right edge */
+  display: block;
+  width: 1rem;
+  height: calc(1rem * var(--line-height, 1.5));
+  margin-inline-start: 0.5rem;
   float: right;
+  background-image: var(--icon-chevron-button);
+  background-position: right center;
+  background-size: 1rem auto;
+  background-repeat: no-repeat;
+  content: '';
+  transition: transform 0.2s ease;
+}
+
+.dropdown[open] > .trigger::after {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menu — replicates Pico's `details[role='list'] summary+ul` styling
+   without the list/listbox ARIA roles, which require listitem/option children
+   this menu of links does not have. */
+.menu {
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: var(--border-width, 1px) solid
+    var(--dropdown-border-color, var(--muted-border-color));
+  border-radius: var(--border-radius, 0.25rem);
+  background-color: var(--dropdown-background-color, var(--card-background-color));
+  box-shadow: var(--card-box-shadow, 0 8px 24px rgba(0, 0, 0, 0.18));
+  color: var(--dropdown-color, var(--color));
+}
+
+.menu li {
+  width: 100%;
+  margin: 0;
+  padding: calc(var(--form-element-spacing-vertical) * 0.5)
+    var(--form-element-spacing-horizontal);
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  margin: calc(var(--form-element-spacing-vertical) * -0.5)
+    calc(var(--form-element-spacing-horizontal) * -1);
+  padding: calc(var(--form-element-spacing-vertical) * 0.5)
+    var(--form-element-spacing-horizontal);
+  color: var(--dropdown-color, var(--color));
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: var(--dropdown-hover-background-color);
 }
 
 .allLink {
