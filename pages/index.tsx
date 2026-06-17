@@ -1,5 +1,4 @@
 import type { NextPage, GetStaticProps } from 'next'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTranslation, Trans } from 'react-i18next'
 import { Supporter, getGitHubSponsors, getPatreonSupporters, getRoleFromAmount } from '../lib/supporters'
@@ -8,6 +7,7 @@ import kofiData from '../lib/kofi_supporters.json'
 import SupportersMarquee from '../components/SupportersMarquee'
 import Sponsorship from '../components/Sponsorship'
 import DownloadButton from '../components/DownloadButton'
+import Highlights from '../components/Highlights'
 import ScreenshotsCarousel, { Slide } from '../components/ScreenshotsCarousel'
 import Seo, { SITE_URL } from '../components/Seo'
 
@@ -129,11 +129,14 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
             </Trans>
             <p className={styles.buttonContainer}>
               <DownloadButton releases={releases} />
-              <Link href="/faq" passHref>
-                <span role="button" className="contrast outline" style={{ marginTop: '14px' }}>
-                  {t('home.faq')}
-                </span>
-              </Link>
+              <a
+                href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
+                role="button"
+                className="contrast outline"
+                style={{ marginTop: '14px' }}
+              >
+                {t('home.viewOnGithub')}
+              </a>
             </p>
           </div>
           <img
@@ -145,6 +148,9 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
           <SupportersMarquee github={github} patreon={patreon} kofi={kofi} />
         </div>
       </motion.header>
+
+      <Highlights />
+
       <h1
         style={{
           textAlign: 'center',

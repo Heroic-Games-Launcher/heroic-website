@@ -34,6 +34,25 @@
     },
     "faq": "FAQ",
     "mainFeatures": "MAIN FEATURES AND MORE INFO",
+    "viewOnGithub": "View on GitHub",
+    "highlights": {
+      "privacy": {
+        "title": "Privacy-first",
+        "description": "No telemetry and no tracking. Heroic never collects your data."
+      },
+      "openSource": {
+        "title": "Free & Open Source",
+        "description": "GPLv3 licensed and built in the open by the community."
+      },
+      "crossPlatform": {
+        "title": "Cross-platform",
+        "description": "Linux, Windows, macOS and the Steam Deck."
+      },
+      "languages": {
+        "title": "40+ languages",
+        "description": "Translated by the community all around the world."
+      }
+    },
     "screenshots": {
       "ariaLabel": "Heroic Games Launcher screenshots",
       "previous": "Previous screenshot",
