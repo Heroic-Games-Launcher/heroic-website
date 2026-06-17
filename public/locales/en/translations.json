@@ -50,6 +50,10 @@
         "title": "Cross-platform",
         "description": "Linux, Windows, macOS and the Steam Deck."
       },
+      "themes": {
+        "title": "Make it yours",
+        "description": "Custom themes, including the famous Dracula theme, to match your style."
+      },
       "languages": {
         "title": "40+ languages",
         "description": "Translated by the community all around the world."
@@ -80,6 +84,10 @@
     "themes": {
       "title": "Themes",
       "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
+    },
+    "customizeGames": {
+      "title": "Customize every game",
+      "description": "Fine-tune each game on its own: pick the Wine or Proton version, add launch arguments and environment variables, set wrappers and more."
     },
     "wineManager": {
       "title": "Wine Manager",

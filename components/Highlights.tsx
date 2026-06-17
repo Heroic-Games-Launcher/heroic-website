@@ -5,6 +5,7 @@ import {
   faLock,
   faCodeBranch,
   faGamepad,
+  faPalette,
   faLanguage,
   IconDefinition
 } from '@fortawesome/free-solid-svg-icons'
@@ -19,6 +20,7 @@ const highlights: Highlight[] = [
   { icon: faLock, key: 'privacy' },
   { icon: faCodeBranch, key: 'openSource' },
   { icon: faGamepad, key: 'crossPlatform' },
+  { icon: faPalette, key: 'themes' },
   { icon: faLanguage, key: 'languages' }
 ]
 

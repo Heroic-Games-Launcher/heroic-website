@@ -13,15 +13,13 @@ import Seo, { SITE_URL } from '../components/Seo'
 
 import styles from '../styles/Home.module.css'
 
-const img1 = require('../assets/heroic_01.webp')
-const img2 = require('../assets/heroic_game.webp')
-const img3 = require('../assets/heroic_install.webp')
-const img4 = require('../assets/heroic_stores.webp')
-const img5 = require('../assets/heroic_wine.webp')
-const img6 = require('../assets/heroic_wine_settings.webp')
-const img7 = require('../assets/heroic_langs.png?webp')
-const img8 = require('../assets/heroic_menu.webp')
-const gif = require('../assets/themes.gif')
+const heroImg = require('../assets/screenshots/01-home.webp')
+const shotGamePage = require('../assets/screenshots/02-gamepage.webp')
+const shotStores = require('../assets/screenshots/08-stores.webp')
+const shotPlatforms = require('../assets/screenshots/07-platforms.webp')
+const shotEditGame = require('../assets/screenshots/06-edit-game.webp')
+const shotWineManager = require('../assets/screenshots/05-wine-manager.webp')
+const shotWineSettings = require('../assets/screenshots/09-wine-settings.webp')
 
 const initial = { y: '300px', opacity: 0 }
 const final = { y: '0px', opacity: 1 }
@@ -41,14 +39,12 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
   const ts = (key: string) => String(t(`home.${key}`))
 
   const screenshots: Slide[] = [
-    { src: img2, title: ts('gamePage.title'), description: ts('gamePage.description') },
-    { src: img3, title: ts('platformSelection.title'), description: ts('platformSelection.description') },
-    { src: img4, title: ts('accessStores.title'), description: ts('accessStores.description') },
-    { src: img8, title: ts('organizeLibrary.title'), description: ts('organizeLibrary.description') },
-    { src: gif, title: ts('themes.title'), description: ts('themes.description') },
-    { src: img5, title: ts('wineManager.title'), description: ts('wineManager.description') },
-    { src: img6, title: ts('wineSettings.title'), description: ts('wineSettings.description') },
-    { src: img7, title: ts('multiLanguage.title'), description: ts('multiLanguage.description') }
+    { src: shotGamePage, title: ts('gamePage.title'), description: ts('gamePage.description') },
+    { src: shotStores, title: ts('accessStores.title'), description: ts('accessStores.description') },
+    { src: shotPlatforms, title: ts('platformSelection.title'), description: ts('platformSelection.description') },
+    { src: shotEditGame, title: ts('customizeGames.title'), description: ts('customizeGames.description') },
+    { src: shotWineManager, title: ts('wineManager.title'), description: ts('wineManager.description') },
+    { src: shotWineSettings, title: ts('wineSettings.title'), description: ts('wineSettings.description') }
   ]
 
   const version = releases.Linux.split('/')[7]
@@ -140,9 +136,8 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
             </p>
           </div>
           <img
-            src={img1}
+            src={heroImg}
             alt="Heroic Games Launcher preview"
-            title="Heroic Games Launcher preview"
             className="heroicPreview"
           />
           <SupportersMarquee github={github} patreon={patreon} kofi={kofi} />

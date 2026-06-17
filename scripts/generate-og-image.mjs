@@ -27,7 +27,7 @@ const overlay = `
   <text x="64" y="590" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#b06fd6">FREE &amp; OPEN SOURCE</text>
 </svg>`
 
-await sharp(resolve(root, 'assets/heroic_01.webp'))
+await sharp(resolve(root, 'assets/screenshots/01-home.webp'))
   .resize(W, H, { fit: 'cover', position: 'top' })
   .composite([{ input: Buffer.from(overlay), top: 0, left: 0 }])
   .png()

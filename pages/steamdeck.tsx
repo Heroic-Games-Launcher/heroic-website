@@ -4,8 +4,7 @@ import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
 import SteamDeckMockup from '../components/SteamDeckMockup'
 
-// TODO: replace with the Console Mode GIF/screenshot once it is ready.
-const deckMedia = require('../assets/heroic_01.webp')
+const deckMedia = require('../assets/screenshots/04-console.webp')
 
 const SteamDeck: NextPage = () => {
   const { t } = useTranslation()
