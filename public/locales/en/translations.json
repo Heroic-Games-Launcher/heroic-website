@@ -34,6 +34,12 @@
     },
     "faq": "FAQ",
     "mainFeatures": "MAIN FEATURES AND MORE INFO",
+    "screenshots": {
+      "ariaLabel": "Heroic Games Launcher screenshots",
+      "previous": "Previous screenshot",
+      "next": "Next screenshot",
+      "goToSlide": "Go to screenshot"
+    },
     "gamePage": {
       "title": "Game Page",
       "description": "Check game details like description, publisher, download and install size, time played and more."

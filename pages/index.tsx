@@ -8,6 +8,7 @@ import kofiData from '../lib/kofi_supporters.json'
 import SupportersMarquee from '../components/SupportersMarquee'
 import Sponsorship from '../components/Sponsorship'
 import DownloadButton from '../components/DownloadButton'
+import ScreenshotsCarousel, { Slide } from '../components/ScreenshotsCarousel'
 import Seo, { SITE_URL } from '../components/Seo'
 
 import styles from '../styles/Home.module.css'
@@ -24,7 +25,6 @@ const gif = require('../assets/themes.gif')
 
 const initial = { y: '300px', opacity: 0 }
 const final = { y: '0px', opacity: 1 }
-const hover = { scale: 1.05 }
 const transition = { duration: 0.5 }
 
 interface HomeProps {
@@ -39,6 +39,17 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
 
   // Helper to convert translation to string
   const ts = (key: string) => String(t(`home.${key}`))
+
+  const screenshots: Slide[] = [
+    { src: img2, title: ts('gamePage.title'), description: ts('gamePage.description') },
+    { src: img3, title: ts('platformSelection.title'), description: ts('platformSelection.description') },
+    { src: img4, title: ts('accessStores.title'), description: ts('accessStores.description') },
+    { src: img8, title: ts('organizeLibrary.title'), description: ts('organizeLibrary.description') },
+    { src: gif, title: ts('themes.title'), description: ts('themes.description') },
+    { src: img5, title: ts('wineManager.title'), description: ts('wineManager.description') },
+    { src: img6, title: ts('wineSettings.title'), description: ts('wineSettings.description') },
+    { src: img7, title: ts('multiLanguage.title'), description: ts('multiLanguage.description') }
+  ]
 
   const version = releases.Linux.split('/')[7]
   const organizationLd = {
@@ -143,244 +154,8 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
         {t('home.mainFeatures')}
       </h1>
 
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img2}>
-                <img
-                  src={img2}
-                  alt={ts('gamePage.title')}
-                  title={ts('gamePage.title')}
-                  aria-label={ts('gamePage.title')}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.gamePage.title')}</h2>
-              <p>{t('home.gamePage.description')}</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
+      <ScreenshotsCarousel slides={screenshots} />
 
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img3}>
-                <img
-                  src={img3}
-                  alt={ts('platformSelection.title')}
-                  title={ts('platformSelection.title')}
-                  aria-label={ts('platformSelection.title')}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.platformSelection.title')}</h2>
-              <p>{t('home.platformSelection.description')}</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        transition={transition}
-        initial={initial}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img4}>
-                <img
-                  alt={ts('accessStores.title')}
-                  title={ts('accessStores.title')}
-                  aria-label={ts('accessStores.title')}
-                  src={img4}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.accessStores.title')}</h2>
-              <p>{t('home.accessStores.description')}</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img8}>
-                <img
-                  alt={ts('organizeLibrary.title')}
-                  title={ts('organizeLibrary.title')}
-                  aria-label={ts('organizeLibrary.title')}
-                  src={img8}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.organizeLibrary.title')}</h2>
-              <p>{t('home.organizeLibrary.description')}</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        initial={initial}
-        whileInView={final}
-        transition={transition}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={gif}>
-                <img
-                  alt={ts('themes.title')}
-                  title={ts('themes.title')}
-                  aria-label={ts('themes.title')}
-                  src={gif}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.themes.title')}</h2>
-              <p>{t('home.themes.description')}</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img5}>
-                <img
-                  alt={ts('wineManager.title')}
-                  aria-label={ts('wineManager.title')}
-                  src={img5}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.wineManager.title')}</h2>
-              <p>{t('home.wineManager.description')}</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img6}>
-                <img
-                  alt={ts('wineSettings.title')}
-                  title={ts('wineSettings.title')}
-                  aria-label={ts('wineSettings.title')}
-                  src={img6}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.wineSettings.title')}</h2>
-              <p>{t('home.wineSettings.description')}</p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={initial}
-        transition={transition}
-        whileInView={final}
-        viewport={{ once: true }}
-        whileHover={hover}
-        className="container feature"
-      >
-        <div className="hero">
-          <div className="grid center">
-            <div>
-              <a href={img7}>
-                <img
-                  alt={ts('multiLanguage.title')}
-                  title={ts('multiLanguage.title')}
-                  aria-label={ts('multiLanguage.title')}
-                  src={img7}
-                  loading="lazy"
-                />
-              </a>
-            </div>
-            <div className="description">
-              <h2>{t('home.multiLanguage.title')}</h2>
-              <p>
-                {t('home.multiLanguage.description')}{' '}
-                <a
-                  href="https://hosted.weblate.org/projects/heroic-games-launcher/"
-                  rel="norefferer"
-                  target="_blank"
-                >
-                  {' '}
-                  {t('home.multiLanguage.weblateLinkText')}
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
       <Sponsorship />
     </>
   )
