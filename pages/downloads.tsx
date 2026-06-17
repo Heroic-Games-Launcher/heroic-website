@@ -48,7 +48,7 @@ const Downloads: NextPage = () => {
         title="Download Heroic Games Launcher — Linux, Windows & macOS"
         description="Download Heroic Games Launcher for Linux, Windows and macOS. Available as Flatpak, AppImage, Windows installer (x64 and ARM64), and macOS app for Apple Silicon and Intel."
       />
-      <header className="hero">
+      <header className="hero" style={{ width: '100%' }}>
         <div className="container">
           <h1>{t('downloads.title')}</h1>
           <p>{t('downloads.subtitle')}</p>
