@@ -2,9 +2,9 @@
   margin-top: 5rem;
   margin-bottom: auto;
   padding: 1.5rem 1rem;
-  border: 1px solid rgba(142, 36, 170, 0.15);
+  border: 1px solid rgba(26, 90, 143, 0.15);
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(142, 36, 170, 0.03) 0%, rgba(186, 104, 200, 0.02) 100%);
+  background: linear-gradient(135deg, rgba(26, 90, 143, 0.03) 0%, rgba(90, 150, 200, 0.02) 100%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   width: 100%;
   max-width: 1200px;
@@ -74,7 +74,7 @@
   margin-top: 2rem;
   flex-wrap: wrap;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(142, 36, 170, 0.1);
+  border-top: 1px solid rgba(26, 90, 143, 0.1);
   width: 100%;
 }
 

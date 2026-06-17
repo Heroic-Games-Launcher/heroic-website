@@ -64,7 +64,7 @@
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background: var(--primary, #8e24aa);
+  background: var(--primary, #1a5a8f);
   color: #fff;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   z-index: 2;
@@ -107,7 +107,7 @@
 .dotActive {
   opacity: 1;
   transform: scale(1.2);
-  background-color: var(--primary, #8e24aa);
+  background-color: var(--primary, #1a5a8f);
 }
 
 @media (min-width: 992px) {

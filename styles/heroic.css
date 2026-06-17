@@ -1,5 +1,5 @@
 :root {
-  --primary: #8e24aa;
+  --primary: #1a5a8f;
 }
 
 /* Hero */
@@ -286,7 +286,7 @@ a {
 }
 
 .sidebar-content .nav-links a:hover {
-  background: rgba(142, 36, 170, 0.2);
+  background: rgba(26, 90, 143, 0.2);
   color: var(--primary);
 }
 
@@ -314,7 +314,7 @@ a {
 }
 
 .sidebar-content .social-links a:hover {
-  background: rgba(142, 36, 170, 0.3);
+  background: rgba(26, 90, 143, 0.3);
   transform: scale(1.1);
 }
 
@@ -356,12 +356,12 @@ a {
 }
 
 .desktop-nav .nav-links a:hover {
-  color: var(--primary, #8e24aa);
-  background: rgba(142, 36, 170, 0.1);
+  color: var(--primary, #1a5a8f);
+  background: rgba(26, 90, 143, 0.1);
 }
 
 .desktop-nav .nav-links a.nav-cta {
-  background: var(--primary, #8e24aa);
+  background: var(--primary, #1a5a8f);
   color: #fff;
   margin-left: 8px;
 }
@@ -390,7 +390,7 @@ a {
   }
 
   .sidebar-content .nav-links a:hover {
-    background: rgba(142, 36, 170, 0.1);
+    background: rgba(26, 90, 143, 0.1);
   }
 }
 

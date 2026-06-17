@@ -4,9 +4,11 @@
   --secondary: #323035;
   --secondary-hover: #151f3c;
   --background: #e7e8ed;
-  /* keep the brand purple as the accent in light mode (Pico defaults to azure) */
-  --primary: #8e24aa;
-  --primary-hover: #7b1f93;
+  /* Brand accent: the darker blue sampled from the Heroic logo. Pico defaults to
+     a lighter azure (#1095c1) whose white-text contrast fails AA (~3.4:1); this
+     navy passes at 7.23:1. */
+  --primary: #1a5a8f;
+  --primary-hover: #154a78;
   /* Darken Pico's default muted text (#73828c was only ~3.2:1 on the light
      background) so secondary copy meets WCAG AA. */
   --muted-color: #565e69;
@@ -19,8 +21,8 @@
     --secondary-hover: #fff;
     --secondary-inverse: #191919;
     --background: #161e3e;
-    --primary: #8e24aa;
-    --primary-hover: #7b1f93;
+    --primary: #1a5a8f;
+    --primary-hover: #154a78;
     --muted-color: #adb5c5;
   }
   nav li > a {
@@ -38,8 +40,8 @@
   --secondary-hover: #fff;
   --secondary-inverse: #191919;
   --background: #161e3e;
-  --primary: #8e24aa;
-  --primary-hover: #7b1f93;
+  --primary: #1a5a8f;
+  --primary-hover: #154a78;
   --muted-color: #adb5c5;
 }
 

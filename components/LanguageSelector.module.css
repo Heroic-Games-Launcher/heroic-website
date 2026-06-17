@@ -21,13 +21,13 @@
 }
 
 .trigger:hover {
-  border-color: var(--primary, #8e24aa);
+  border-color: var(--primary, #1a5a8f);
 }
 
 .globe {
   width: 16px;
   height: 16px;
-  color: var(--primary, #8e24aa);
+  color: var(--primary, #1a5a8f);
 }
 
 .chevron {
@@ -76,11 +76,11 @@
 }
 
 .option:hover {
-  background: rgba(142, 36, 170, 0.15);
+  background: rgba(26, 90, 143, 0.15);
 }
 
 .active {
-  color: var(--primary, #8e24aa);
+  color: var(--primary, #1a5a8f);
   font-weight: 700;
 }
 

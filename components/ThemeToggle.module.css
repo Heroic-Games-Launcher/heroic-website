@@ -15,8 +15,8 @@
 }
 
 .toggle:hover {
-  border-color: var(--primary, #8e24aa);
-  color: var(--primary, #8e24aa);
+  border-color: var(--primary, #1a5a8f);
+  color: var(--primary, #1a5a8f);
   transform: translateY(-1px);
 }
 
