@@ -116,6 +116,7 @@
     "pageTitle": "Download Heroic",
     "title": "Download",
     "subtitle": "Heroic is available for all Major operating systems.",
+    "recommended": "Recommended",
     "supportedOS": "Supported OS versions:",
     "osRequirements": {
       "linux": "Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.",
