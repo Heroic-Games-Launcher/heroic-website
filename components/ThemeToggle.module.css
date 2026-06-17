@@ -1,0 +1,26 @@
+.toggle {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--muted-border-color, rgba(128, 128, 128, 0.3));
+  background: var(--card-background-color, transparent);
+  color: var(--contrast);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.toggle:hover {
+  border-color: var(--primary, #8e24aa);
+  color: var(--primary, #8e24aa);
+  transform: translateY(-1px);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}

@@ -3,7 +3,9 @@
     "copyright": "Heroic Játék Indító",
     "supportersMarquee": {
       "title": "Őszinte köszönet hihetetlen támogatóinknak!"
-    }
+    },
+    "loading": "Betöltés...",
+    "skipToContent": "Ugrás a tartalomra"
   },
   "navbar": {
     "home": "Kezdőlap",
@@ -15,7 +17,8 @@
     "heroicMastodon": "Heroic Mastodon oldal",
     "heroicTwitter": "Heroic Twitter oldal",
     "heroicGithub": "Heroic GitHub oldal",
-    "heroicDiscord": "Heroic Discord szerver"
+    "heroicDiscord": "Heroic Discord szerver",
+    "steamdeck": "Steam Deck"
   },
   "home": {
     "heroTitle": "JÁTSSZ HŐSKÉNT!",
@@ -45,11 +48,11 @@
     },
     "wineManager": {
       "title": "Wine kezelő",
-      "description": "Linuxon töltsd le a Wine-GE, Wine-Lutris vagy akár Proton-GE legújabb verzióját a Wine kezelővel. Ezek a Wine verzió kiválasztások a játékélmény és kompatibilitás javítására fókuszálnak."
+      "description": "Töltsd le és kezeld a legjobb kompatibilitási eszközöket közvetlenül a Heroicból: Wine-GE, Wine-Lutris és Proton-GE Linuxon, vagy Wine-Crossover, Wine-Staging és a Game Porting Toolkit macOS-en, mind játékra hangolva."
     },
     "wineSettings": {
       "title": "Wine beállítások",
-      "description": "A megfelelő Wine verzió használata mellett fontos beállítani mindent a legjobb játékélmény érdekében Linuxon és macOS-en. A Wine beállítások alatt lehetőség van automatikusan telepíteni eszközöket, mint DXVK, VKD3D, FSR és futtatni WineCFG-t, Winetricks-et és Run EXE-t a prefixen, hogy könnyen telepítsd a játék előfeltételeit."
+      "description": "A Heroic a legtöbb játékhoz automatikusan kiválasztja a legjobb beállításokat Linuxon és macOS-en, és minden haladó beállítást kéznél tart arra az esetre, ha pontosan finomhangolnád, hogyan fusson egy játék."
     },
     "multiLanguage": {
       "title": "Többnyelvű",
@@ -60,6 +63,57 @@
       "title": "Támogatóink",
       "weblateDescription": "Fordításaink helyszíne",
       "signpathDescription": "Ingyenes Windows bináris aláírás biztosítása"
+    },
+    "downloadMenu": {
+      "forOS": "Letöltés erre: {{os}}",
+      "windowsInstaller": "Windows telepítő (x64)",
+      "windowsArm": "Windows telepítő (ARM64)",
+      "macApple": "macOS — Apple Silicon (M1+)",
+      "macIntel": "macOS — Intel",
+      "linuxFlatpak": "Linux — Flatpak",
+      "linuxAppImage": "Linux — AppImage",
+      "allVersions": "Minden verzió és platform →"
+    },
+    "viewOnGithub": "Megtekintés a GitHubon",
+    "highlights": {
+      "privacy": {
+        "title": "Adatvédelem mindenekelőtt",
+        "description": "Nincsenek hirdetések, és soha nem adjuk el az adataidat. Az analitika névtelen, és alapból ki van kapcsolva."
+      },
+      "openSource": {
+        "title": "Ingyenes és nyílt forráskódú",
+        "description": "GPLv3 licenc alatt, a közösség által nyíltan fejlesztve."
+      },
+      "crossPlatform": {
+        "title": "Több platformon elérhető",
+        "description": "Linux, Windows, macOS és a Steam Deck."
+      },
+      "themes": {
+        "title": "Tedd a sajátoddá",
+        "description": "Egyéni témák, köztük a híres Dracula téma, hogy illeszkedjen a stílusodhoz."
+      },
+      "languages": {
+        "title": "40+ nyelv",
+        "description": "A világ minden tájáról érkező közösség által lefordítva."
+      }
+    },
+    "screenshots": {
+      "ariaLabel": "Heroic Games Launcher képernyőképek",
+      "previous": "Előző képernyőkép",
+      "next": "Következő képernyőkép",
+      "goToSlide": "Ugrás a képernyőképre"
+    },
+    "downloadQueue": {
+      "title": "Letöltési sor",
+      "description": "Sorba állíthatod az Epic, GOG és Amazon telepítéseit, és hagyhatod, hogy egymás után lefussanak. Élőben nézheted a letöltési és lemezsebességet, bármikor szüneteltetheted vagy folytathatod, és láthatod, mi készült el már."
+    },
+    "customizeGames": {
+      "title": "Egyéni grafika",
+      "description": "Átnevezhetsz egy játékot, és egyéni borítót, valamint négyzetes grafikát választhatsz közvetlenül a SteamGridDB-ből, így az importált címek és a minden áruházból származó játékok jól néznek ki a könyvtáradban."
+    },
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "Válts egy teljes képernyős, kontrollerbarát felületre, amelyet a TV-hez és a Steam Deckhez terveztek. Böngészd, telepítsd és indítsd el a játékaidat a kanapéról, egér nélkül."
     }
   },
   "downloads": {
@@ -103,6 +157,9 @@
         "title": "Hordozható",
         "description": "Használd a hordozható verziót, ha nem akarod a teljes telepítést. Ellenőrizd az x64 és arm64 verziókat a Github-onkon.",
         "button": "Lásd az összes csomagot"
+      },
+      "setupArm": {
+        "description": "Windowst futtató ARM-eszközökhöz (például Snapdragon X / Surface). Automatikus frissítéssel telepíti a Heroicot, ugyanúgy, mint az x64-es verzió."
       }
     },
     "macos": {
@@ -119,7 +176,8 @@
         "stable": "Stabil",
         "beta": "Beta"
       }
-    }
+    },
+    "recommended": "Ajánlott"
   },
   "donate": {
     "pageTitle": "Támogasd a Heroic fejlesztését",
@@ -372,5 +430,35 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "tagline": "Ingyenes és nyílt forráskódú játékindító az Epic, GOG és Amazon Prime Games számára Linuxon, Windowson, macOS-en és Steam Decken.",
+    "getHeroic": "Heroic letöltése",
+    "resources": "Források",
+    "project": "Projekt",
+    "license": "GPLv3 licenc alatt"
+  },
+  "steamdeck": {
+    "pageTitle": "Heroic a Steam Decken",
+    "title": "Heroic a Steam Decken",
+    "subtitle": "Telepítsd egyszer, és játssz az Epic, GOG és Amazon játékaiddal egy kontrollerbarát, teljes képernyős Console Mode-ban, amelyet a Deckhez készítettek.",
+    "mockupAlt": "Heroic Console Mode-ban futva egy Steam Decken",
+    "getFlathub": "Letöltés a Flathubról",
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "Egy teljes képernyős, kontroller-központú felület, amelyet a Steam Deckhez terveztek. Böngészd, telepítsd és indítsd el a játékaidat anélkül, hogy valaha az asztalhoz nyúlnál."
+    },
+    "install": {
+      "title": "Egyszerűen telepíthető",
+      "description": "A Heroic elérhető a Flathubon, így közvetlenül a Discover áruházból telepítheted SteamOS Asztali módban, majd hozzáadhatod a Steamhez, hogy Game Mode-ból indítsd."
+    },
+    "compatibility": {
+      "title": "Kompatibilitásra építve",
+      "description": "Kezeld a Proton- és Wine-verziókat, engedélyezd a DXVK-t és a VKD3D-t, és nézd meg a ProtonDB-értékeléseket, hogy a játékaid zökkenőmentesen fussanak a Decken."
+    },
+    "library": {
+      "title": "A teljes könyvtárad bárhol",
+      "description": "Férj hozzá rengeteg játékhoz az Epic, GOG, Amazon és más boltokból, közvetlenül a kedvenc kézi konzolodon."
+    }
   }
 }

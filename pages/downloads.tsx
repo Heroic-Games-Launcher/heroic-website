@@ -1,16 +1,20 @@
 import { NextPage } from 'next'
 import React from 'react'
-import { getLatestReleases, ReleaseUrls } from './api/github'
+import { getLatestReleases, ReleaseUrls } from '../lib/github'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
+import Seo from '../components/Seo'
 import { useTranslation } from 'react-i18next'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinux, faWindows, faApple } from '@fortawesome/free-brands-svg-icons'
 
 const Downloads: NextPage = () => {
   const router = useRouter()
   const { t } = useTranslation()
 
-  const userAgent = global.window?.navigator?.userAgent || ''
+  // Resolved after mount so server and client render the same markup (avoids a
+  // hydration mismatch on the <details open> defaults).
+  const [userAgent, setUserAgent] = React.useState('')
   const [releases, setReleases] = React.useState<ReleaseUrls>({
     Linux: '',
     Windows: '',
@@ -20,6 +24,7 @@ const Downloads: NextPage = () => {
   })
 
   React.useEffect(() => {
+    setUserAgent(global.window?.navigator?.userAgent || '')
     const getLatestPackages = async () => {
       const latests = await getLatestReleases()
       setReleases(latests)
@@ -27,15 +32,11 @@ const Downloads: NextPage = () => {
     getLatestPackages()
   }, [])
 
-  if (!userAgent) {
-    return null
-  }
-
   const isWindows = userAgent.toLowerCase().includes('windows')
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac
 
-  function handleDownload(version: string) {
+  function handleDownload(_version: string) {
     setTimeout(() => {
       router.push('/donate')
     }, 3000)
@@ -43,15 +44,11 @@ const Downloads: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>{t('downloads.pageTitle')}</title>
-        <meta
-          name="description"
-          content="An Open Source GOG , Amazon Prime and Epic Games Launcher"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <header className="hero">
+      <Seo
+        title="Download Heroic Games Launcher — Linux, Windows & macOS"
+        description="Download Heroic Games Launcher for Linux, Windows and macOS. Available as Flatpak, AppImage, Windows installer (x64 and ARM64), and macOS app for Apple Silicon and Intel."
+      />
+      <header className="hero" style={{ width: '100%' }}>
         <div className="container">
           <h1>{t('downloads.title')}</h1>
           <p>{t('downloads.subtitle')}</p>
@@ -59,11 +56,19 @@ const Downloads: NextPage = () => {
           <hr className="spacer" />
 
           <details open={isLinux}>
-            <summary>{t('downloads.linux.title')}</summary>
+            <summary className={styles.osSummary}>
+              <FontAwesomeIcon icon={faLinux} />
+              {t('downloads.linux.title')}
+            </summary>
             <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.linux')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.linux.flatpak.title')}</h4>
+                <h4>
+                  {t('downloads.linux.flatpak.title')}
+                  <span className={styles.recommended}>
+                    {t('downloads.recommended')}
+                  </span>
+                </h4>
                 <p>{t('downloads.linux.flatpak.description')}</p>
                 <footer>
                   <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
@@ -113,13 +118,21 @@ const Downloads: NextPage = () => {
           </details>
 
           <details open={isWindows}>
-            <summary>{t('downloads.windows.title')}</summary>
+            <summary className={styles.osSummary}>
+              <FontAwesomeIcon icon={faWindows} />
+              {t('downloads.windows.title')}
+            </summary>
             <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.windows')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.windows.setup.title')}</h4>
+                <h4>
+                  {t('downloads.windows.setup.title')} (x64)
+                  <span className={styles.recommended}>
+                    {t('downloads.recommended')}
+                  </span>
+                </h4>
                 <p>{t('downloads.windows.setup.description')}</p>
-                <footer>
+                <footer className="downloadLink">
                   <a href={releases.Windows}>
                     <strong onClick={() => handleDownload('windows-stable')}>
                       {t('downloads.windows.setup.stable')}
@@ -141,6 +154,30 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
+                <h4>{t('downloads.windows.setup.title')} (ARM64)</h4>
+                <p>{t('downloads.windows.setupArm.description')}</p>
+                <footer className="downloadLink">
+                  <a href={releases.WindowsArm}>
+                    <strong onClick={() => handleDownload('windows-arm-stable')}>
+                      {t('downloads.windows.setup.stable')}
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.WindowsArm.split('/')[7] ?? ''})`}
+                    </span>
+                  </a>
+                  {releases.WindowsArmBeta && (
+                    <a href={releases.WindowsArmBeta}>
+                      <strong onClick={() => handleDownload('windows-arm-beta')}>
+                        {t('downloads.windows.setup.beta')}
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.WindowsArmBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
+                  )}
+                </footer>
+              </article>
+              <article className={styles.downloadBoxes}>
                 <h4>{t('downloads.windows.portable.title')}</h4>
                 <p>{t('downloads.windows.portable.description')}</p>
                 <footer>
@@ -155,7 +192,10 @@ const Downloads: NextPage = () => {
           </details>
 
           <details open={isMac}>
-            <summary>{t('downloads.macos.title')}</summary>
+            <summary className={styles.osSummary}>
+              <FontAwesomeIcon icon={faApple} />
+              {t('downloads.macos.title')}
+            </summary>
             <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.macos')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>

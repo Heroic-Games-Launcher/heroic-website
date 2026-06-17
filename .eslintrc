@@ -5,8 +5,7 @@
     "node": true
   },
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
+    "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
@@ -20,7 +19,6 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react",
     "@typescript-eslint"
   ],
   "settings": {
@@ -31,7 +29,10 @@
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-var-requires": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-img-element": "off",
     "complexity": "off",
     "quotes": [
       "error",

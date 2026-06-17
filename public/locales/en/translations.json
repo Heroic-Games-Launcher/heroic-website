@@ -2,6 +2,7 @@
   "common": {
     "copyright": "Heroic Games Launcher",
     "loading": "Loading...",
+    "skipToContent": "Skip to content",
     "supportersMarquee": {
       "title": "A heartfelt thank you to our incredible supporters!"
     }
@@ -9,6 +10,7 @@
   "navbar": {
     "home": "Home",
     "downloads": "Downloads",
+    "steamdeck": "Steam Deck",
     "faq": "FAQ",
     "documentation": "Documentation",
     "supportUs": "Support Us",
@@ -18,12 +20,58 @@
     "heroicGithub": "Heroic GitHub Page",
     "heroicDiscord": "Heroic Discord Server"
   },
+  "footer": {
+    "tagline": "Free and open source games launcher for Epic, GOG and Amazon Prime Games on Linux, Windows, macOS and the Steam Deck.",
+    "getHeroic": "Get Heroic",
+    "resources": "Resources",
+    "project": "Project",
+    "license": "GPLv3 licensed"
+  },
   "home": {
     "heroTitle": "PLAY LIKE A HERO!",
     "heroDescription": "Heroic is a Free and Open Source <strong>Epic</strong>, <strong>GOG</strong> and <strong>Amazon Prime Games</strong> launcher for <strong>Linux</strong>, <strong>Windows</strong> and <strong>macOS</strong>. Also available on the <strong>SteamDeck</strong>!",
     "download": "Download",
+    "downloadMenu": {
+      "forOS": "Download for {{os}}",
+      "windowsInstaller": "Windows Installer (x64)",
+      "windowsArm": "Windows Installer (ARM64)",
+      "macApple": "macOS — Apple Silicon (M1+)",
+      "macIntel": "macOS — Intel",
+      "linuxFlatpak": "Linux — Flatpak",
+      "linuxAppImage": "Linux — AppImage",
+      "allVersions": "All versions & platforms →"
+    },
     "faq": "FAQ",
     "mainFeatures": "MAIN FEATURES AND MORE INFO",
+    "viewOnGithub": "View on GitHub",
+    "highlights": {
+      "privacy": {
+        "title": "Privacy-first",
+        "description": "No ads and we never sell your data. Analytics are anonymous and off by default."
+      },
+      "openSource": {
+        "title": "Free & Open Source",
+        "description": "GPLv3 licensed and built in the open by the community."
+      },
+      "crossPlatform": {
+        "title": "Cross-platform",
+        "description": "Linux, Windows, macOS and the Steam Deck."
+      },
+      "themes": {
+        "title": "Make it yours",
+        "description": "Custom themes, including the famous Dracula theme, to match your style."
+      },
+      "languages": {
+        "title": "40+ languages",
+        "description": "Translated by the community all around the world."
+      }
+    },
+    "screenshots": {
+      "ariaLabel": "Heroic Games Launcher screenshots",
+      "previous": "Previous screenshot",
+      "next": "Next screenshot",
+      "goToSlide": "Go to screenshot"
+    },
     "gamePage": {
       "title": "Game Page",
       "description": "Check game details like description, publisher, download and install size, time played and more."
@@ -44,13 +92,25 @@
       "title": "Themes",
       "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
     },
+    "downloadQueue": {
+      "title": "Download queue",
+      "description": "Line up installs from Epic, GOG and Amazon and let them run back to back. Watch live download and disk speeds, pause or resume anytime, and see what's already finished."
+    },
+    "customizeGames": {
+      "title": "Custom artwork",
+      "description": "Rename a game and pick custom cover and square art straight from SteamGridDB, so imported titles and games from every store look right in your library."
+    },
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "Switch to a full-screen, controller-friendly interface made for the TV and the Steam Deck. Browse, install and launch your games from the couch, no mouse needed."
+    },
     "wineManager": {
       "title": "Wine Manager",
-      "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
+      "description": "Download and manage the best compatibility tools right from Heroic: Wine-GE, Wine-Lutris and Proton-GE on Linux, or Wine-Crossover, Wine-Staging and the Game Porting Toolkit on macOS, all tuned for gaming."
     },
     "wineSettings": {
       "title": "Wine Settings",
-      "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
+      "description": "Heroic picks the best settings automatically for most games on Linux and macOS, and keeps every advanced option within reach for when you want to fine-tune exactly how a game runs."
     },
     "multiLanguage": {
       "title": "Multi Language",
@@ -67,6 +127,7 @@
     "pageTitle": "Download Heroic",
     "title": "Download",
     "subtitle": "Heroic is available for all Major operating systems.",
+    "recommended": "Recommended",
     "supportedOS": "Supported OS versions:",
     "osRequirements": {
       "linux": "Ubuntu 22.04 or newer, OpenSuse Tumbleweed, Fedora 37 or newer, Arch Linux and derivatives (such as Manjaro, Garuda, and EndeavourOS). Heroic will work on most other Linux distros, but it may require some additional setup and troubleshooting. It is also supported on SteamOS, but downloading is only available through the Discover software center.",
@@ -100,6 +161,9 @@
         "stable": "Stable",
         "beta": "Beta"
       },
+      "setupArm": {
+        "description": "For Windows on ARM devices (such as Snapdragon X / Surface). Installs Heroic with auto-updates, same as the x64 version."
+      },
       "portable": {
         "title": "Portable",
         "description": "Use the portable version in case you do not want the full installation. Check for x64 and arm64 versions on our Github.",
@@ -120,6 +184,29 @@
         "stable": "Stable",
         "beta": "Beta"
       }
+    }
+  },
+  "steamdeck": {
+    "pageTitle": "Heroic on the Steam Deck",
+    "title": "Heroic on the Steam Deck",
+    "subtitle": "Install once and play your Epic, GOG and Amazon games in a controller-friendly, full-screen Console Mode built for the Deck.",
+    "mockupAlt": "Heroic running in Console Mode on a Steam Deck",
+    "getFlathub": "Get from Flathub",
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "A full-screen, controller-first interface designed for the Steam Deck. Browse, install and launch your games without ever touching the desktop."
+    },
+    "library": {
+      "title": "Your whole library on the go",
+      "description": "Access a huge range of games from Epic, GOG, Amazon and more, right on your favorite handheld."
+    },
+    "install": {
+      "title": "Easy to install",
+      "description": "Heroic is on Flathub, so you can install it straight from the Discover store in SteamOS Desktop Mode, then add it to Steam to launch it from Game Mode."
+    },
+    "compatibility": {
+      "title": "Built for compatibility",
+      "description": "Manage Proton and Wine versions, enable DXVK and VKD3D, and check ProtonDB ratings to get your games running smoothly on the Deck."
     }
   },
   "donate": {
@@ -167,7 +254,7 @@
       {
         "question": "What is Heroic?",
         "answers": [
-          "Heroic is an open source, lightweight games launcher that is available for Linux, Windows, and macOS. It is an alternative to the Epic Games Launcher and GOG Galaxy, and it is focused on privacy, using fewer resources, and supporting a range of tools such as Wine, Proton, Crossover, DXVK, and VKD3D."
+          "Heroic is an open source, lightweight games launcher available for Linux, Windows, and macOS, and it also runs great on the Steam Deck. It lets you install and play games from the Epic Games Store, GOG and Amazon Prime Gaming, and it is focused on privacy, using fewer resources, and supporting a range of tools such as Wine, Proton, Crossover, DXVK, and VKD3D."
         ]
       },
       {
@@ -179,8 +266,8 @@
       {
         "question": "Does Heroic collect my data, username, or password?",
         "answers": [
-          "No, Heroic is a privacy-centered application and does not collect any data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.",
-          "In addition, Heroic does not collect any usage data or analytics from your use of the application. Your privacy is important to us and we take steps to ensure that your data is secure and not collected or shared without your consent."
+          "No, Heroic is a privacy-centered application and does not collect any personal data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.",
+          "Usage analytics are optional and turned off by default. If you choose to opt in, Heroic uses Plausible, a privacy-friendly and cookieless analytics service, to collect anonymous, aggregated usage data that helps guide development. No personal information is included, you can disable it at any time, and nothing is shared without your consent."
         ]
       },
       {
@@ -194,14 +281,14 @@
       {
         "question": "How do I install Heroic on my computer?",
         "answers": [
-          "The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package and then run the command xattr -r -d com.apple.quarantine /Applications/Heroic.app in the terminal to complete the installation. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website."
+          "The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package by opening the .dmg and dragging Heroic to your Applications folder. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website."
         ]
       },
       {
         "question": "What features are currently available in Heroic, and what features are planned for the future?",
         "answers": [
           "Currently available features in Heroic include:",
-          "Support for launching games from the Epic Games Store and GOG",
+          "Support for launching games from the Epic Games Store, GOG and Amazon Prime Gaming",
           "Support for installing, uninstalling, updating, repairing, and moving games",
           "Support for importing already installed games",
           "Support for playing Epic games online (AntiCheat on macOS and on Linux depends on the game)",
@@ -216,8 +303,9 @@
           "Download queue",
           "Add games and applications outside of GOG and Epic Games",
           "Planned features for the future include:",
-          "Support for other stores (such as Amazon Gaming and IndieGala)",
-          "Play GOG games online"
+          "Support for itch.io",
+          "Support for Humble Bundle",
+          "Tighter integration with EA games"
         ]
       },
       {
@@ -326,9 +414,9 @@
         ]
       },
       {
-        "question": "How does Heroic integrate with Epic Games and GOG?",
+        "question": "How does Heroic integrate with Epic Games, GOG and Amazon Prime Gaming?",
         "answers": [
-          "Heroic uses two command-line interface (CLI) tools to integrate with the Epic Games store and the GOG store. For Epic Games, it uses Legendary, an open source CLI app developed by derrod and hosted on GitHub at this link: https://github.com/derrod/legendary . For GOG, it uses GOGDL, an open source CLI tool developed by the Heroic team. If you encounter issues with these tools, you can try using an alternative binary by going to the Advanced Settings menu in Heroic and selecting the \"Use alternative binary\" option. This may help resolve any issues you are experiencing."
+          "Heroic uses open source command-line interface (CLI) tools to integrate with each store. For Epic Games, it uses Legendary, developed by derrod and hosted on GitHub at this link: https://github.com/derrod/legendary . For GOG, it uses GOGDL, and for Amazon Prime Gaming it uses Nile, both open source CLI tools maintained by the Heroic team. If you encounter issues with these tools, you can try using an alternative binary by going to the Advanced Settings menu in Heroic and selecting the \"Use alternative binary\" option. This may help resolve any issues you are experiencing."
         ]
       },
       {

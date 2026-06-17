@@ -3,7 +3,9 @@
     "copyright": "Heroic Games Launcher",
     "supportersMarquee": {
       "title": "素晴らしいサポーターの皆さんに心から感謝します！"
-    }
+    },
+    "loading": "読み込み中...",
+    "skipToContent": "コンテンツへスキップ"
   },
   "navbar": {
     "home": "ホーム",
@@ -15,7 +17,8 @@
     "heroicMastodon": "Heroic Mastodonページ",
     "heroicTwitter": "Heroic Twitterページ",
     "heroicGithub": "Heroic GitHubページ",
-    "heroicDiscord": "Heroic Discordサーバー"
+    "heroicDiscord": "Heroic Discordサーバー",
+    "steamdeck": "Steam Deck"
   },
   "home": {
     "heroTitle": "ヒーローのようにプレイせよ！",
@@ -45,11 +48,11 @@
     },
     "wineManager": {
       "title": "Wineマネージャー",
-      "description": "LinuxでWineマネージャーを使用して最新のWine-GE、Wine-Lutris、またはProton-GEをダウンロード。これらのWineバージョンはゲーミング体験と互換性を向上させることに焦点を当てています。"
+      "description": "最適な互換ツールを Heroic から直接ダウンロード・管理できます。Linux では Wine-GE、Wine-Lutris、Proton-GE、macOS では Wine-Crossover、Wine-Staging、Game Porting Toolkit など、すべてゲーム向けに調整されています。"
     },
     "wineSettings": {
       "title": "Wine設定",
-      "description": "正しいWineバージョンを使用するだけでなく、LinuxとmacOSで最高のゲーム体験を得るためにすべてを設定することが重要です。Wine設定の下でDXVK、VKD3D、FSRなどのツールを自動インストールし、WineCFG、Winetricks、Run EXEをプレフィックスで実行してゲームの前提条件を簡単にインストール可能です。"
+      "description": "Heroic は Linux と macOS のほとんどのゲームで最適な設定を自動的に選択し、ゲームの動作を細かく調整したいときのために、あらゆる高度なオプションにすぐアクセスできるようにしています。"
     },
     "multiLanguage": {
       "title": "多言語",
@@ -60,6 +63,57 @@
       "title": "私たちのスポンサー",
       "weblateDescription": "翻訳のホスティング",
       "signpathDescription": "Windowsバイナリの無料署名を提供"
+    },
+    "downloadMenu": {
+      "forOS": "{{os}} 版をダウンロード",
+      "windowsInstaller": "Windows インストーラー (x64)",
+      "windowsArm": "Windows インストーラー (ARM64)",
+      "macApple": "macOS — Apple Silicon (M1+)",
+      "macIntel": "macOS — Intel",
+      "linuxFlatpak": "Linux — Flatpak",
+      "linuxAppImage": "Linux — AppImage",
+      "allVersions": "すべてのバージョンとプラットフォーム →"
+    },
+    "viewOnGithub": "GitHub で見る",
+    "highlights": {
+      "privacy": {
+        "title": "プライバシー第一",
+        "description": "広告は表示せず、あなたのデータを販売することは決してありません。アナリティクスは匿名で、デフォルトでオフになっています。"
+      },
+      "openSource": {
+        "title": "無料＆オープンソース",
+        "description": "GPLv3 ライセンスのもと、コミュニティによってオープンに開発されています。"
+      },
+      "crossPlatform": {
+        "title": "クロスプラットフォーム",
+        "description": "Linux、Windows、macOS、そして Steam Deck に対応。"
+      },
+      "themes": {
+        "title": "自分好みにカスタマイズ",
+        "description": "有名な Dracula テーマをはじめ、カスタムテーマであなたのスタイルに合わせられます。"
+      },
+      "languages": {
+        "title": "40以上の言語",
+        "description": "世界中のコミュニティによって翻訳されています。"
+      }
+    },
+    "screenshots": {
+      "ariaLabel": "Heroic Games Launcher のスクリーンショット",
+      "previous": "前のスクリーンショット",
+      "next": "次のスクリーンショット",
+      "goToSlide": "スクリーンショットへ移動"
+    },
+    "downloadQueue": {
+      "title": "ダウンロードキュー",
+      "description": "Epic、GOG、Amazon からのインストールを順番に並べて、連続して実行できます。ダウンロードとディスクの速度をリアルタイムで確認したり、いつでも一時停止・再開したり、完了済みのものを確認したりできます。"
+    },
+    "customizeGames": {
+      "title": "カスタムアートワーク",
+      "description": "ゲームの名前を変更したり、SteamGridDB から直接カスタムのカバーアートやスクエアアートを選んだりできるので、インポートしたタイトルやあらゆるストアのゲームもライブラリで美しく表示されます。"
+    },
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "テレビや Steam Deck 向けに作られた、全画面でコントローラーに最適化されたインターフェースに切り替えられます。マウスなしで、ソファに座ったままゲームを閲覧・インストール・起動できます。"
     }
   },
   "downloads": {
@@ -103,6 +157,9 @@
         "title": "ポータブル",
         "description": "完全なインストールを望まない場合、ポータブルバージョンを使用。私たちのGithubでx64およびarm64バージョンを確認してください。",
         "button": "すべてのパッケージを見る"
+      },
+      "setupArm": {
+        "description": "ARM デバイス上の Windows（Snapdragon X / Surface など）向け。x64 版と同様に、自動アップデート付きで Heroic をインストールします。"
       }
     },
     "macos": {
@@ -119,7 +176,8 @@
         "stable": "安定版",
         "beta": "ベータ"
       }
-    }
+    },
+    "recommended": "おすすめ"
   },
   "donate": {
     "pageTitle": "Heroic開発をサポート",
@@ -372,5 +430,35 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "tagline": "Linux、Windows、macOS、Steam Deck で Epic、GOG、Amazon Prime Games のゲームを楽しめる、無料でオープンソースのゲームランチャー。",
+    "getHeroic": "Heroic を入手",
+    "resources": "リソース",
+    "project": "プロジェクト",
+    "license": "GPLv3 ライセンス"
+  },
+  "steamdeck": {
+    "pageTitle": "Steam Deck で Heroic を",
+    "title": "Steam Deck で Heroic を",
+    "subtitle": "一度インストールすれば、Deck 向けに作られたコントローラー対応の全画面 Console Mode で Epic、GOG、Amazon のゲームをプレイできます。",
+    "mockupAlt": "Steam Deck 上で Console Mode で動作する Heroic",
+    "getFlathub": "Flathub から入手",
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "Steam Deck 向けに設計された、全画面でコントローラーを最優先したインターフェース。デスクトップに一切触れることなく、ゲームを閲覧・インストール・起動できます。"
+    },
+    "install": {
+      "title": "簡単にインストール",
+      "description": "Heroic は Flathub にあるので、SteamOS のデスクトップモードの Discover ストアから直接インストールでき、Steam に追加すればゲームモードから起動できます。"
+    },
+    "compatibility": {
+      "title": "互換性を重視した設計",
+      "description": "Proton や Wine のバージョンを管理し、DXVK や VKD3D を有効にして、ProtonDB の評価を確認しながら、Deck でゲームをスムーズに動作させられます。"
+    },
+    "library": {
+      "title": "ライブラリをまるごと持ち運ぼう",
+      "description": "Epic、GOG、Amazon など、豊富なゲームをお気に入りの携帯機でそのまま楽しめます。"
+    }
   }
 }

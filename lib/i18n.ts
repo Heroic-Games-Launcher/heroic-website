@@ -12,6 +12,8 @@ i18n
   .init({
     fallbackLng: 'en',
     supportedLngs: supportedLanguages,
+    // Map region locales (pt-BR, de-DE, ...) to the base language we ship.
+    load: 'languageOnly',
     debug: process.env.NODE_ENV === 'development',
 
     ns: ['translations'],
@@ -26,7 +28,8 @@ i18n
     },
 
     detection: {
-      order: ['navigator', 'htmlTag'],
+      // localStorage first so a manual language choice persists across reloads.
+      order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage']
     },
 

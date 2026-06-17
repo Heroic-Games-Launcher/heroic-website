@@ -1,17 +1,97 @@
+.heroHeader {
+  margin-top: 88px;
+  margin-bottom: 112px;
+}
+
+@media (max-width: 768px) {
+  .heroHeader {
+    margin-top: 40px;
+    margin-bottom: 56px;
+  }
+}
+
 .buttonContainer {
-  margin-bottom: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
   margin-top: 32px;
+  margin-bottom: 64px;
 }
 
-.buttonContainer > span {
-  margin-right: 20px;
-}
-
+/* Downloads page cards */
 .downloadBoxes {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 0px;
+  margin-top: 0;
+  border: 1px solid var(--muted-border-color, #d0d3e0);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.downloadBoxes > p {
+  flex: 1;
+}
+
+.downloadBoxes h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.recommended {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--primary, #8e24aa);
+  color: #fff;
+}
+
+/* OS section headers */
+.osSummary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.osSummary svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--primary, #8e24aa);
+}
+
+/* Render the download actions as real buttons */
+.downloadBoxes footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: transparent;
+}
+
+.downloadBoxes footer a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--primary, #8e24aa);
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+}
+
+.downloadBoxes footer a:hover {
+  filter: brightness(1.08);
+}
+
+.downloadBoxes footer a .smallText {
+  opacity: 0.85;
+  font-weight: 400;
 }
 
 .features {

@@ -83,9 +83,9 @@ export default function Navbar() {
   const navLinks = (
     <ul className="nav-links">
       <li>
-        <Link href="/downloads" >
+        <Link href="/steamdeck" >
           <a onClick={closeSidebar}>
-            {t('navbar.downloads')}
+            {t('navbar.steamdeck')}
           </a>
         </Link>
       </li>
@@ -109,9 +109,9 @@ export default function Navbar() {
         </Link>
       </li>
       <li>
-        <Link href="/cla" >
-          <a onClick={closeSidebar}>
-            {t('navbar.cla')}
+        <Link href="/downloads" >
+          <a className="nav-cta" onClick={closeSidebar}>
+            {t('navbar.downloads')}
           </a>
         </Link>
       </li>
@@ -120,20 +120,19 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="container-fluid">
+      <nav className="container-fluid site-nav">
         <ul>
           <li>
             <Link href="/" passHref >
-              <span className="contrast link">
+              <a className="contrast link">
                 <img
                   src={logo}
-                  title="Heroic Games Launcher"
                   alt="Heroic Games Launcher"
                   height="32px"
                   width="32px"
                 />
                 <strong>Heroic Games Launcher</strong>
-              </span>
+              </a>
             </Link>
           </li>
         </ul>
@@ -149,7 +148,6 @@ export default function Navbar() {
 
         {/* Desktop navigation - hidden on mobile */}
         <div className="desktop-nav">
-          {socialLinks}
           {navLinks}
         </div>
       </nav>
@@ -178,16 +176,15 @@ export default function Navbar() {
             >
               <div className="sidebar-header">
                 <Link href="/" passHref >
-                  <span className="contrast link" onClick={closeSidebar}>
+                  <a className="contrast link" onClick={closeSidebar}>
                     <img
                       src={logo}
-                      title="Heroic"
                       alt="Heroic"
                       height="32px"
                       width="32px"
                     />
                     <strong>Heroic</strong>
-                  </span>
+                  </a>
                 </Link>
                 <button
                   className="close-sidebar"
