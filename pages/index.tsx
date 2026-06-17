@@ -19,6 +19,7 @@ const shotDownloads = require('../assets/screenshots/03-downloads.webp')
 const shotEditGame = require('../assets/screenshots/06-edit-game.webp')
 const shotWineManager = require('../assets/screenshots/05-wine-manager.webp')
 const shotWineSettings = require('../assets/screenshots/09-wine-settings.webp')
+const shotConsole = require('../assets/screenshots/04-console.webp')
 
 const initial = { y: '300px', opacity: 0 }
 const final = { y: '0px', opacity: 1 }
@@ -41,7 +42,8 @@ const Home: NextPage<HomeProps> = ({ releases }) => {
     { src: shotDownloads, title: ts('downloadQueue.title'), description: ts('downloadQueue.description') },
     { src: shotEditGame, title: ts('customizeGames.title'), description: ts('customizeGames.description') },
     { src: shotWineManager, title: ts('wineManager.title'), description: ts('wineManager.description') },
-    { src: shotWineSettings, title: ts('wineSettings.title'), description: ts('wineSettings.description') }
+    { src: shotWineSettings, title: ts('wineSettings.title'), description: ts('wineSettings.description') },
+    { src: shotConsole, title: ts('consoleMode.title'), description: ts('consoleMode.description') }
   ]
 
   const version = releases.Linux.split('/')[7]

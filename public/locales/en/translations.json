@@ -93,6 +93,10 @@
       "title": "Custom artwork",
       "description": "Rename a game and pick custom cover and square art straight from SteamGridDB, so imported titles and games from every store look right in your library."
     },
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "Switch to a full-screen, controller-friendly interface made for the TV and the Steam Deck. Browse, install and launch your games from the couch, no mouse needed."
+    },
     "wineManager": {
       "title": "Wine Manager",
       "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
