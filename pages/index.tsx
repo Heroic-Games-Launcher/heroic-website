@@ -91,11 +91,7 @@ const Home: NextPage<HomeProps> = ({ releases }) => {
         initial={initial}
         animate={final}
         transition={transition}
-        className="hero center"
-        style={{
-          marginBottom: '210px',
-          marginTop: '120px'
-        }}
+        className={`hero center ${styles.heroHeader}`}
       >
         <div
           className="container"

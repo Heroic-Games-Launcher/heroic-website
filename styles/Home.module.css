@@ -1,3 +1,15 @@
+.heroHeader {
+  margin-top: 88px;
+  margin-bottom: 112px;
+}
+
+@media (max-width: 768px) {
+  .heroHeader {
+    margin-top: 40px;
+    margin-bottom: 56px;
+  }
+}
+
 .buttonContainer {
   display: flex;
   flex-wrap: wrap;
