@@ -3,7 +3,9 @@
     "copyright": "Heroic Games Launcher",
     "supportersMarquee": {
       "title": "Ein herzliches Dankeschön an unsere unglaublichen Unterstützer!"
-    }
+    },
+    "loading": "Wird geladen...",
+    "skipToContent": "Zum Inhalt springen"
   },
   "navbar": {
     "home": "Startseite",
@@ -15,7 +17,8 @@
     "heroicMastodon": "Heroic Mastodon-Seite",
     "heroicTwitter": "Heroic Twitter-Seite",
     "heroicGithub": "Heroic GitHub-Seite",
-    "heroicDiscord": "Heroic Discord-Server"
+    "heroicDiscord": "Heroic Discord-Server",
+    "steamdeck": "Steam Deck"
   },
   "home": {
     "heroTitle": "SPIELE WIE EIN HELD!",
@@ -45,11 +48,11 @@
     },
     "wineManager": {
       "title": "Wine Manager",
-      "description": "Auf Linux lade die neueste Version von Wine-GE, Wine-Lutris oder sogar Proton-GE mit dem Wine Manager herunter. Diese Wine-Versionen sind darauf fokussiert, die Gaming-Erfahrung und Kompatibilität zu verbessern."
+      "description": "Lade und verwalte die besten Kompatibilitätstools direkt aus Heroic: Wine-GE, Wine-Lutris und Proton-GE unter Linux oder Wine-Crossover, Wine-Staging und das Game Porting Toolkit unter macOS, alle fürs Gaming abgestimmt."
     },
     "wineSettings": {
       "title": "Wine-Einstellungen",
-      "description": "Neben der Verwendung der richtigen Wine-Version ist es wichtig, alles für die beste Spielerfahrung auf Linux und macOS einzurichten. Unter den Wine-Einstellungen ist es möglich, Tools wie DXVK, VKD3D, FSR automatisch zu installieren und auch WineCFG, Winetricks und Run EXE auf dem Prefix auszuführen, um Spielvoraussetzungen auf einfache Weise zu installieren."
+      "description": "Heroic wählt für die meisten Spiele unter Linux und macOS automatisch die besten Einstellungen und hält jede erweiterte Option griffbereit, wenn du genau abstimmen möchtest, wie ein Spiel läuft."
     },
     "multiLanguage": {
       "title": "Mehrsprachig",
@@ -60,6 +63,57 @@
       "title": "Unsere Sponsoren",
       "weblateDescription": "Hosting für unsere Übersetzungen",
       "signpathDescription": "Kostenlose Signierung von Windows-Binärdateien"
+    },
+    "downloadMenu": {
+      "forOS": "Für {{os}} herunterladen",
+      "windowsInstaller": "Windows Installer (x64)",
+      "windowsArm": "Windows Installer (ARM64)",
+      "macApple": "macOS — Apple Silicon (M1+)",
+      "macIntel": "macOS — Intel",
+      "linuxFlatpak": "Linux — Flatpak",
+      "linuxAppImage": "Linux — AppImage",
+      "allVersions": "Alle Versionen & Plattformen →"
+    },
+    "viewOnGithub": "Auf GitHub ansehen",
+    "highlights": {
+      "privacy": {
+        "title": "Datenschutz an erster Stelle",
+        "description": "Keine Werbung und wir verkaufen niemals deine Daten. Die Analyse ist anonym und standardmäßig deaktiviert."
+      },
+      "openSource": {
+        "title": "Kostenlos & quelloffen",
+        "description": "Unter GPLv3 lizenziert und offen von der Community entwickelt."
+      },
+      "crossPlatform": {
+        "title": "Plattformübergreifend",
+        "description": "Linux, Windows, macOS und das Steam Deck."
+      },
+      "themes": {
+        "title": "Gestalte es nach deinem Geschmack",
+        "description": "Individuelle Themes, einschließlich des berühmten Dracula-Themes, passend zu deinem Stil."
+      },
+      "languages": {
+        "title": "Über 40 Sprachen",
+        "description": "Von der Community auf der ganzen Welt übersetzt."
+      }
+    },
+    "screenshots": {
+      "ariaLabel": "Screenshots des Heroic Games Launcher",
+      "previous": "Vorheriger Screenshot",
+      "next": "Nächster Screenshot",
+      "goToSlide": "Zum Screenshot springen"
+    },
+    "downloadQueue": {
+      "title": "Download-Warteschlange",
+      "description": "Reihe Installationen von Epic, GOG und Amazon aneinander und lass sie nacheinander ablaufen. Beobachte Download- und Festplattengeschwindigkeiten in Echtzeit, pausiere oder setze jederzeit fort und sieh, was bereits abgeschlossen ist."
+    },
+    "customizeGames": {
+      "title": "Individuelle Artworks",
+      "description": "Benenne ein Spiel um und wähle individuelle Cover- und quadratische Artworks direkt aus SteamGridDB, damit importierte Titel und Spiele aus jedem Store in deiner Bibliothek richtig aussehen."
+    },
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "Wechsle zu einer Vollbild-Oberfläche, die für Controller, den Fernseher und das Steam Deck optimiert ist. Durchstöbere, installiere und starte deine Spiele bequem vom Sofa aus, ganz ohne Maus."
     }
   },
   "downloads": {
@@ -103,6 +157,9 @@
         "title": "Portabel",
         "description": "Verwende die portable Version, falls du keine vollständige Installation möchtest. Überprüfe x64- und arm64-Versionen auf unserem Github.",
         "button": "Alle Pakete ansehen"
+      },
+      "setupArm": {
+        "description": "Für Windows auf ARM-Geräten (wie Snapdragon X / Surface). Installiert Heroic mit automatischen Updates, genau wie die x64-Version."
       }
     },
     "macos": {
@@ -119,7 +176,8 @@
         "stable": "Stabil",
         "beta": "Beta"
       }
-    }
+    },
+    "recommended": "Empfohlen"
   },
   "donate": {
     "pageTitle": "Unterstütze die Heroic-Entwicklung",
@@ -372,5 +430,31 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "tagline": "Kostenloser und quelloffener Spiele-Launcher für Epic, GOG und Amazon Prime Games unter Linux, Windows, macOS und dem Steam Deck.",
+    "getHeroic": "Heroic herunterladen",
+    "resources": "Ressourcen",
+    "project": "Projekt",
+    "license": "Unter GPLv3 lizenziert"
+  },
+  "steamdeck": {
+    "pageTitle": "Heroic auf dem Steam Deck",
+    "title": "Heroic auf dem Steam Deck",
+    "subtitle": "Einmal installieren und deine Spiele von Epic, GOG und Amazon in einem controllerfreundlichen Vollbild-Console Mode spielen, der für das Deck entwickelt wurde.",
+    "mockupAlt": "Heroic läuft im Console Mode auf einem Steam Deck",
+    "getFlathub": "Von Flathub herunterladen",
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "Eine Vollbild-Oberfläche, die in erster Linie für den Controller und das Steam Deck konzipiert ist. Durchstöbere, installiere und starte deine Spiele, ohne jemals den Desktop zu berühren."
+    },
+    "install": {
+      "title": "Einfach zu installieren",
+      "description": "Heroic ist auf Flathub verfügbar, sodass du es direkt aus dem Discover-Store im SteamOS Desktop-Modus installieren und dann zu Steam hinzufügen kannst, um es aus dem Game-Modus zu starten."
+    },
+    "compatibility": {
+      "title": "Für Kompatibilität gemacht",
+      "description": "Verwalte Proton- und Wine-Versionen, aktiviere DXVK und VKD3D und prüfe ProtonDB-Bewertungen, damit deine Spiele auf dem Deck reibungslos laufen."
+    }
   }
 }

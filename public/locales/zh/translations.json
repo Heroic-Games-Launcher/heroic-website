@@ -3,7 +3,9 @@
     "copyright": "Heroic Games Launcher",
     "supportersMarquee": {
       "title": "衷心感谢我们了不起的支持者！"
-    }
+    },
+    "loading": "加载中...",
+    "skipToContent": "跳到内容"
   },
   "navbar": {
     "home": "首页",
@@ -15,7 +17,8 @@
     "heroicMastodon": "Heroic Mastodon页面",
     "heroicTwitter": "Heroic Twitter页面",
     "heroicGithub": "Heroic GitHub页面",
-    "heroicDiscord": "Heroic Discord服务器"
+    "heroicDiscord": "Heroic Discord服务器",
+    "steamdeck": "Steam Deck"
   },
   "home": {
     "heroTitle": "像英雄一样玩游戏！",
@@ -45,11 +48,11 @@
     },
     "wineManager": {
       "title": "Wine管理器",
-      "description": "在Linux上，使用Wine管理器下载最新的Wine-GE、Wine-Lutris或Proton-GE。这些Wine版本选择专注于改善游戏体验和兼容性。"
+      "description": "直接在 Heroic 中下载和管理最佳的兼容性工具：Linux 上的 Wine-GE、Wine-Lutris 和 Proton-GE，或 macOS 上的 Wine-Crossover、Wine-Staging 和 Game Porting Toolkit，全部为游戏优化调校。"
     },
     "wineSettings": {
       "title": "Wine设置",
-      "description": "除了使用正确的Wine版本，在Linux和macOS上获得最佳游戏体验也很重要。在Wine设置下，可以自动安装DXVK、VKD3D、FSR等工具，并运行WineCFG、Winetricks和Run EXE在前缀上，以轻松安装游戏先决条件。"
+      "description": "对于 Linux 和 macOS 上的大多数游戏，Heroic 都会自动选择最佳设置，同时将每一项高级选项都置于触手可及之处，方便你在想要精细调整游戏运行方式时随时使用。"
     },
     "multiLanguage": {
       "title": "多语言",
@@ -60,6 +63,57 @@
       "title": "我们的赞助商",
       "weblateDescription": "托管我们的翻译",
       "signpathDescription": "提供免费的 Windows 二进制文件签名"
+    },
+    "downloadMenu": {
+      "forOS": "下载 {{os}} 版本",
+      "windowsInstaller": "Windows 安装程序 (x64)",
+      "windowsArm": "Windows 安装程序 (ARM64)",
+      "macApple": "macOS — Apple Silicon (M1+)",
+      "macIntel": "macOS — Intel",
+      "linuxFlatpak": "Linux — Flatpak",
+      "linuxAppImage": "Linux — AppImage",
+      "allVersions": "所有版本与平台 →"
+    },
+    "viewOnGithub": "在 GitHub 上查看",
+    "highlights": {
+      "privacy": {
+        "title": "隐私至上",
+        "description": "没有广告，我们绝不出售你的数据。分析数据为匿名收集，且默认关闭。"
+      },
+      "openSource": {
+        "title": "免费且开源",
+        "description": "采用 GPLv3 许可，由社区公开构建。"
+      },
+      "crossPlatform": {
+        "title": "跨平台",
+        "description": "支持 Linux、Windows、macOS 和 Steam Deck。"
+      },
+      "themes": {
+        "title": "打造你的专属风格",
+        "description": "自定义主题，包括著名的 Dracula 主题，契合你的个人风格。"
+      },
+      "languages": {
+        "title": "40 多种语言",
+        "description": "由世界各地的社区共同翻译。"
+      }
+    },
+    "screenshots": {
+      "ariaLabel": "Heroic Games Launcher 截图",
+      "previous": "上一张截图",
+      "next": "下一张截图",
+      "goToSlide": "跳转到截图"
+    },
+    "downloadQueue": {
+      "title": "下载队列",
+      "description": "将 Epic、GOG 和 Amazon 的安装任务排成一队，让它们依次运行。实时查看下载和磁盘速度，随时暂停或继续，并查看已完成的内容。"
+    },
+    "customizeGames": {
+      "title": "自定义封面图",
+      "description": "为游戏重命名，并直接从 SteamGridDB 挑选自定义封面图和方形图标，让导入的游戏以及来自各个商店的游戏在你的游戏库中都显示得恰到好处。"
+    },
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "切换到专为电视和 Steam Deck 打造的全屏、适配手柄的界面。无需鼠标，在沙发上就能浏览、安装和启动你的游戏。"
     }
   },
   "downloads": {
@@ -103,6 +157,9 @@
         "title": "便携",
         "description": "如果您不想完整安装，请使用便携版本。请在我们的Github上检查x64和arm64版本。",
         "button": "查看所有包"
+      },
+      "setupArm": {
+        "description": "适用于 ARM 设备上的 Windows（例如 Snapdragon X / Surface）。安装 Heroic 并支持自动更新，与 x64 版本相同。"
       }
     },
     "macos": {
@@ -119,7 +176,8 @@
         "stable": "稳定",
         "beta": "Beta"
       }
-    }
+    },
+    "recommended": "推荐"
   },
   "donate": {
     "pageTitle": "支持Heroic开发",
@@ -134,7 +192,8 @@
     "kofi": {
       "title": "Ko-fi",
       "description": "通过给我们一杯咖啡来支持项目。就是这样，快速而简单！",
-      "button": "前往Ko-fi"
+      "button": "前往Ko-fi",
+      "type": "一次性"
     },
     "gog": {
       "title": "GOG.com",
@@ -371,5 +430,31 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "tagline": "免费开源的游戏启动器，支持在 Linux、Windows、macOS 和 Steam Deck 上运行 Epic、GOG 和 Amazon Prime Games 的游戏。",
+    "getHeroic": "获取 Heroic",
+    "resources": "资源",
+    "project": "项目",
+    "license": "采用 GPLv3 许可"
+  },
+  "steamdeck": {
+    "pageTitle": "在 Steam Deck 上使用 Heroic",
+    "title": "在 Steam Deck 上使用 Heroic",
+    "subtitle": "一次安装，即可在专为 Deck 打造的适配手柄、全屏的 Console Mode 中畅玩你的 Epic、GOG 和 Amazon 游戏。",
+    "mockupAlt": "Heroic 在 Steam Deck 上以 Console Mode 运行",
+    "getFlathub": "从 Flathub 获取",
+    "consoleMode": {
+      "title": "Console Mode",
+      "description": "专为 Steam Deck 设计的全屏、手柄优先界面。无需触碰桌面即可浏览、安装和启动你的游戏。"
+    },
+    "install": {
+      "title": "安装简便",
+      "description": "Heroic 已上架 Flathub，因此你可以在 SteamOS 桌面模式下直接从 Discover 商店安装，然后将其添加到 Steam，以便从游戏模式启动。"
+    },
+    "compatibility": {
+      "title": "为兼容性而生",
+      "description": "管理 Proton 和 Wine 版本，启用 DXVK 和 VKD3D，并查看 ProtonDB 评分，让你的游戏在 Deck 上流畅运行。"
+    }
   }
 }
