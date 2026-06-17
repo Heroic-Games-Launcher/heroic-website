@@ -85,18 +85,21 @@
 .dots {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 4px;
   margin-top: 24px;
 }
 
+/* The button is a 24x24 touch target (WCAG / Lighthouse minimum) while the
+   visible dot stays 12px: padding + background-clip paints only the content box. */
 .dot {
-  width: 12px;
-  height: 12px;
-  padding: 0;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  background-clip: content-box;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background: var(--muted-border-color, #b9b9b9);
+  background-color: var(--muted-border-color, #b9b9b9);
   opacity: 0.5;
   transition: opacity 0.2s, transform 0.2s;
 }
@@ -104,7 +107,7 @@
 .dotActive {
   opacity: 1;
   transform: scale(1.2);
-  background: var(--primary, #8e24aa);
+  background-color: var(--primary, #8e24aa);
 }
 
 @media (min-width: 992px) {
