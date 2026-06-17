@@ -258,6 +258,12 @@ a {
   margin: 0 0 24px 0;
 }
 
+/* Pico sets list-style:square on li directly; reset it on the menu lists */
+.sidebar-content li,
+.desktop-nav .nav-links li {
+  list-style: none;
+}
+
 .sidebar-content .nav-links li {
   margin-bottom: 8px;
 }

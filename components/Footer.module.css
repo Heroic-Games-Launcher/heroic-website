@@ -49,6 +49,12 @@
   padding: 0;
 }
 
+/* Pico sets list-style: square directly on li, overriding the ul reset */
+.social li {
+  list-style: none;
+  margin: 0;
+}
+
 .social a {
   display: flex;
   align-items: center;
