@@ -455,6 +455,10 @@
     "compatibility": {
       "title": "互換性を重視した設計",
       "description": "Proton や Wine のバージョンを管理し、DXVK や VKD3D を有効にして、ProtonDB の評価を確認しながら、Deck でゲームをスムーズに動作させられます。"
+    },
+    "library": {
+      "title": "ライブラリをまるごと持ち運ぼう",
+      "description": "Epic、GOG、Amazon など、豊富なゲームをお気に入りの携帯機でそのまま楽しめます。"
     }
   }
 }

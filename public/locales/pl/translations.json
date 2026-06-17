@@ -455,6 +455,10 @@
     "compatibility": {
       "title": "Stworzony z myślą o zgodności",
       "description": "Zarządzaj wersjami Proton i Wine, włączaj DXVK i VKD3D oraz sprawdzaj oceny ProtonDB, aby Twoje gry działały płynnie na Steam Deck."
+    },
+    "library": {
+      "title": "Cała biblioteka w podróży",
+      "description": "Korzystaj z ogromnej oferty gier z Epic, GOG, Amazon i nie tylko – prosto na swoim ulubionym handheldzie."
     }
   }
 }

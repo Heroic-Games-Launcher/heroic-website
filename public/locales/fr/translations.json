@@ -455,6 +455,10 @@
     "compatibility": {
       "title": "Conçu pour la compatibilité",
       "description": "Gérez les versions de Proton et Wine, activez DXVK et VKD3D, et consultez les notes ProtonDB pour faire tourner vos jeux sans accroc sur le Deck."
+    },
+    "library": {
+      "title": "Toute ta bibliothèque, partout",
+      "description": "Accède à un vaste choix de jeux d’Epic, GOG, Amazon et plus encore, directement sur ta console portable préférée."
     }
   }
 }

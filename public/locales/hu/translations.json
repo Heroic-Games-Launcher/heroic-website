@@ -455,6 +455,10 @@
     "compatibility": {
       "title": "Kompatibilitásra építve",
       "description": "Kezeld a Proton- és Wine-verziókat, engedélyezd a DXVK-t és a VKD3D-t, és nézd meg a ProtonDB-értékeléseket, hogy a játékaid zökkenőmentesen fussanak a Decken."
+    },
+    "library": {
+      "title": "A teljes könyvtárad bárhol",
+      "description": "Férj hozzá rengeteg játékhoz az Epic, GOG, Amazon és más boltokból, közvetlenül a kedvenc kézi konzolodon."
     }
   }
 }

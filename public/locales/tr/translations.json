@@ -456,6 +456,10 @@
     "compatibility": {
       "title": "Uyumluluk için geliştirildi",
       "description": "Proton ve Wine sürümlerini yönetin, DXVK ve VKD3D'yi etkinleştirin ve oyunlarınızı Deck'te sorunsuz çalıştırmak için ProtonDB derecelendirmelerini kontrol edin."
+    },
+    "library": {
+      "title": "Tüm kütüphanen yanında",
+      "description": "Epic, GOG, Amazon ve daha fazlasından geniş bir oyun yelpazesine en sevdiğin el konsolunda eriş."
     }
   }
 }

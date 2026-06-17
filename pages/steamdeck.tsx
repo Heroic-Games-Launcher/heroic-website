@@ -45,6 +45,10 @@ const SteamDeck: NextPage = () => {
               <p>{t('steamdeck.consoleMode.description')}</p>
             </article>
             <article>
+              <h4>{t('steamdeck.library.title')}</h4>
+              <p>{t('steamdeck.library.description')}</p>
+            </article>
+            <article>
               <h4>{t('steamdeck.install.title')}</h4>
               <p>{t('steamdeck.install.description')}</p>
             </article>

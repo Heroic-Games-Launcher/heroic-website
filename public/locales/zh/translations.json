@@ -455,6 +455,10 @@
     "compatibility": {
       "title": "为兼容性而生",
       "description": "管理 Proton 和 Wine 版本，启用 DXVK 和 VKD3D，并查看 ProtonDB 评分，让你的游戏在 Deck 上流畅运行。"
+    },
+    "library": {
+      "title": "随身畅玩你的整个游戏库",
+      "description": "在你喜爱的掌机上，畅玩来自 Epic、GOG、Amazon 等平台的海量游戏。"
     }
   }
 }

@@ -455,6 +455,10 @@
     "compatibility": {
       "title": "호환성을 위해 설계됨",
       "description": "Proton 및 Wine 버전을 관리하고, DXVK와 VKD3D를 활성화하며, ProtonDB 평점을 확인하여 Deck에서 게임이 원활하게 실행되도록 하세요."
+    },
+    "library": {
+      "title": "내 모든 게임을 어디서나",
+      "description": "Epic, GOG, Amazon 등 다양한 게임을 좋아하는 휴대용 기기에서 바로 즐기세요."
     }
   }
 }

@@ -196,6 +196,10 @@
       "title": "Console Mode",
       "description": "A full-screen, controller-first interface designed for the Steam Deck. Browse, install and launch your games without ever touching the desktop."
     },
+    "library": {
+      "title": "Your whole library on the go",
+      "description": "Access a huge range of games from Epic, GOG, Amazon and more, right on your favorite handheld."
+    },
     "install": {
       "title": "Easy to install",
       "description": "Heroic is on Flathub, so you can install it straight from the Discover store in SteamOS Desktop Mode, then add it to Steam to launch it from Game Mode."
