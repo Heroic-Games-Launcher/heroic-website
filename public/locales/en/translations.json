@@ -180,7 +180,7 @@
       {
         "question": "What is Heroic?",
         "answers": [
-          "Heroic is an open source, lightweight games launcher that is available for Linux, Windows, and macOS. It is an alternative to the Epic Games Launcher and GOG Galaxy, and it is focused on privacy, using fewer resources, and supporting a range of tools such as Wine, Proton, Crossover, DXVK, and VKD3D."
+          "Heroic is an open source, lightweight games launcher available for Linux, Windows, and macOS, and it also runs great on the Steam Deck. It lets you install and play games from the Epic Games Store, GOG and Amazon Prime Gaming, and it is focused on privacy, using fewer resources, and supporting a range of tools such as Wine, Proton, Crossover, DXVK, and VKD3D."
         ]
       },
       {
@@ -207,14 +207,14 @@
       {
         "question": "How do I install Heroic on my computer?",
         "answers": [
-          "The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package and then run the command xattr -r -d com.apple.quarantine /Applications/Heroic.app in the terminal to complete the installation. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website."
+          "The process for installing Heroic depends on your operating system. On Linux, you can use a package manager such as Flatpak, .deb, .pacman, or .rpm to install Heroic, or you can use an AppImage. On macOS, you can install Heroic as a standard application package by opening the .dmg and dragging Heroic to your Applications folder. On Windows, you can use the WinGet package manager by running the command winget install HeroicGamesLauncher.HeroicGamesLauncher, or you can download and run the setup exe or portable exe from the website."
         ]
       },
       {
         "question": "What features are currently available in Heroic, and what features are planned for the future?",
         "answers": [
           "Currently available features in Heroic include:",
-          "Support for launching games from the Epic Games Store and GOG",
+          "Support for launching games from the Epic Games Store, GOG and Amazon Prime Gaming",
           "Support for installing, uninstalling, updating, repairing, and moving games",
           "Support for importing already installed games",
           "Support for playing Epic games online (AntiCheat on macOS and on Linux depends on the game)",
@@ -229,8 +229,9 @@
           "Download queue",
           "Add games and applications outside of GOG and Epic Games",
           "Planned features for the future include:",
-          "Support for other stores (such as Amazon Gaming and IndieGala)",
-          "Play GOG games online"
+          "Support for itch.io",
+          "Support for Humble Bundle",
+          "Tighter integration with EA games"
         ]
       },
       {
@@ -339,9 +340,9 @@
         ]
       },
       {
-        "question": "How does Heroic integrate with Epic Games and GOG?",
+        "question": "How does Heroic integrate with Epic Games, GOG and Amazon Prime Gaming?",
         "answers": [
-          "Heroic uses two command-line interface (CLI) tools to integrate with the Epic Games store and the GOG store. For Epic Games, it uses Legendary, an open source CLI app developed by derrod and hosted on GitHub at this link: https://github.com/derrod/legendary . For GOG, it uses GOGDL, an open source CLI tool developed by the Heroic team. If you encounter issues with these tools, you can try using an alternative binary by going to the Advanced Settings menu in Heroic and selecting the \"Use alternative binary\" option. This may help resolve any issues you are experiencing."
+          "Heroic uses open source command-line interface (CLI) tools to integrate with each store. For Epic Games, it uses Legendary, developed by derrod and hosted on GitHub at this link: https://github.com/derrod/legendary . For GOG, it uses GOGDL, and for Amazon Prime Gaming it uses Nile, both open source CLI tools maintained by the Heroic team. If you encounter issues with these tools, you can try using an alternative binary by going to the Advanced Settings menu in Heroic and selecting the \"Use alternative binary\" option. This may help resolve any issues you are experiencing."
         ]
       },
       {
