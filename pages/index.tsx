@@ -133,6 +133,12 @@ const Home: NextPage<HomeProps> = ({ releases }) => {
             src={heroImg}
             alt="Heroic Games Launcher preview"
             className="heroicPreview"
+            loading="eager"
+            decoding="async"
+            // The hero image is the LCP element; tell the browser to fetch it
+            // with high priority. `fetchpriority` is not in React 17's img types,
+            // so it is spread in as a raw DOM attribute.
+            {...{ fetchpriority: 'high' }}
           />
         </div>
       </motion.header>
