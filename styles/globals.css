@@ -31,19 +31,21 @@ a {
   cursor: pointer;
 }
 
-/* Skip to content link — visible only when focused via keyboard */
+/* Skip to content link — visible only when focused via keyboard.
+   Fixed + translateY keeps it reliably off-screen regardless of height/scroll. */
 .skip-link {
-  position: absolute;
+  position: fixed;
+  top: 8px;
   left: 8px;
-  top: -48px;
   z-index: 1000;
   padding: 10px 16px;
   border-radius: 8px;
   background: var(--primary, #8e24aa);
   color: #fff;
-  transition: top 0.2s ease-in-out;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease-in-out;
 }
 
 .skip-link:focus {
-  top: 8px;
+  transform: translateY(0);
 }
