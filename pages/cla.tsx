@@ -1,19 +1,15 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
 import React from 'react'
+import Seo from '../components/Seo'
 
 const Cla: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>CLA</title>
-        <meta
-          name="description"
-          content="An Open Source Epic, GOG and Amazon Prime Games Launcher"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo
+        title="Contributor License Agreement — Heroic Games Launcher"
+        description="The Contributor License Agreement for contributing to the Heroic Games Launcher project."
+      />
       <header className="hero">
         <div className="container">
           <h1>Contributor License Agreement</h1>

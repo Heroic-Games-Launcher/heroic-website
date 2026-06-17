@@ -1,6 +1,7 @@
 import { NextPage } from 'next'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Seo from '../components/Seo'
 
 interface FAQ {
   question: string
@@ -12,7 +13,12 @@ const FAQPage: NextPage = () => {
   const questions = t('faq.questions', { returnObjects: true }) as FAQ[]
 
   return (
-    <header className="hero">
+    <>
+      <Seo
+        title="Heroic Games Launcher FAQ — Frequently Asked Questions"
+        description="Answers to common questions about Heroic Games Launcher: what it is, privacy and safety, installation, Wine and Proton, supported stores, and platforms."
+      />
+      <header className="hero">
       <div className="container">
         <h1>{t('faq.title')}</h1>
         {Array.isArray(questions) && questions.map((faq, i) => (
@@ -38,7 +44,8 @@ const FAQPage: NextPage = () => {
           </details>
         ))}
       </div>
-    </header>
+      </header>
+    </>
   )
 }
 

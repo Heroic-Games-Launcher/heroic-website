@@ -3,7 +3,7 @@ import React from 'react'
 import { getLatestReleases, ReleaseUrls } from '../lib/github'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
+import Seo from '../components/Seo'
 import { useTranslation } from 'react-i18next'
 
 const Downloads: NextPage = () => {
@@ -43,14 +43,10 @@ const Downloads: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>{t('downloads.pageTitle')}</title>
-        <meta
-          name="description"
-          content="An Open Source GOG , Amazon Prime and Epic Games Launcher"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo
+        title={`${t('downloads.pageTitle')} — Linux, Windows & macOS`}
+        description="Download Heroic Games Launcher for Linux, Windows and macOS. Available as Flatpak, AppImage, Windows installer (x64 and ARM64), and macOS app for Apple Silicon and Intel."
+      />
       <header className="hero">
         <div className="container">
           <h1>{t('downloads.title')}</h1>

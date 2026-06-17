@@ -1,5 +1,4 @@
 import type { NextPage, GetStaticProps } from 'next'
-import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTranslation, Trans } from 'react-i18next'
@@ -9,6 +8,7 @@ import kofiData from '../lib/kofi_supporters.json'
 import SupportersMarquee from '../components/SupportersMarquee'
 import Sponsorship from '../components/Sponsorship'
 import DownloadButton from '../components/DownloadButton'
+import Seo from '../components/Seo'
 
 import styles from '../styles/Home.module.css'
 
@@ -42,14 +42,10 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
 
   return (
     <>
-      <Head>
-        <title>Heroic Games Launcher</title>
-        <meta
-          name="description"
-          content="An Open Source Epic, GOG and Amazon Prime Games Launcher"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo
+        title="Heroic Games Launcher — Free Epic, GOG & Amazon Games Launcher"
+        description="Heroic is a free and open source launcher for Epic Games, GOG and Amazon Prime Games. Play your games on Linux, Windows, macOS and the Steam Deck."
+      />
       <motion.header
         initial={initial}
         animate={final}

@@ -1,21 +1,17 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import Seo from '../components/Seo'
 
 const Donate: NextPage = () => {
   const { t } = useTranslation()
 
   return (
     <>
-      <Head>
-        <title>{t('donate.pageTitle')}</title>
-        <meta
-          name="description"
-          content="An Open Source Epic, GOG and Amazon Prime Games Launcher"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Seo
+        title={t('donate.pageTitle') as string}
+        description="Heroic Games Launcher is free and open source. Support its development through Patreon, Ko-fi, GitHub Sponsors or by shopping on GOG with our link."
+      />
       <header className="hero">
         <div className="container">
           <h1>{t('donate.title')}</h1>
