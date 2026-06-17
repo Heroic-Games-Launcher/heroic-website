@@ -34,7 +34,7 @@ const Downloads: NextPage = () => {
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac
 
-  function handleDownload(version: string) {
+  function handleDownload(_version: string) {
     setTimeout(() => {
       router.push('/donate')
     }, 3000)

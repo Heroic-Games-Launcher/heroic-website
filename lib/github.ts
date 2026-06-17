@@ -36,62 +36,27 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
   try {
     const data = await fetch(githubApi)
     const releases: Release[] = await data.json()
-    const { assets: assetsStable, tag_name: tagStable } = releases.filter(
-      (rel) => rel.prerelease === false
-    )[0]
-    // const { assets: assetsBeta, tag_name: tagBeta } = releases.filter(
-    //   (rel) => rel.prerelease === true
-    // )[0]
+    const assetsStable = releases.filter((rel) => rel.prerelease === false)[0]
+      .assets
 
-    const appImageStable =
-      assetsStable.filter((a) => a.name.endsWith('.AppImage'))[0]
-        ?.browser_download_url || defaultUrl
-    const windowsSetupStable =
-      assetsStable.filter((a) => a.name.includes('Setup-x64'))[0]
-        ?.browser_download_url || defaultUrl
-    const WindowsSetupArmStable =
-      assetsStable.filter((a) => a.name.includes('Setup-arm64'))[0]
-        ?.browser_download_url || defaultUrl
-    const dmgStable =
-      assetsStable.filter((a) => a.name.includes('macOS-x64'))[0]
-        ?.browser_download_url || defaultUrl
-    const dmgArmStable =
-      assetsStable.filter((a) => a.name.includes('macOS-arm64'))[0]
-        ?.browser_download_url || defaultUrl
+    const urlFor = (match: string, endsWith = false) =>
+      assetsStable.filter((a) =>
+        endsWith ? a.name.endsWith(match) : a.name.includes(match)
+      )[0]?.browser_download_url || defaultUrl
 
-    let appImageBeta,
-      windowsPortableBeta,
-      windowsSetupBeta,
-      windowsSetupArmBeta,
-      dmgBeta = null,
-      dmgArmBeta = null
-
-    // const isSameMajor = tagStable >= tagBeta.split('-')[0]
-
-    /*     if (!isSameMajor) {
-      appImageBeta = assetsBeta.filter((a) => a.name.endsWith('.AppImage'))[0]
-        .browser_download_url
-      windowsSetupBeta = assetsBeta.filter((a) => a.name.includes('Setup'))[0]
-        .browser_download_url
-      windowsSetupArmBeta = assetsBeta.filter((a) =>
-        a.name.includes('Setup-arm64')
-      )[0].browser_download_url
-      dmgBeta = assetsBeta.filter((a) => a.name.endsWith('.dmg'))[0]
-        .browser_download_url
-      dmgArmBeta = assetsBeta.filter((a) => a.name.includes('macOS-arm64'))[0]
-    } */
-
+    // Beta downloads are currently disabled; they fall back to null so the UI
+    // hides them. See the git history for the previous prerelease parsing.
     return {
-      Linux: appImageStable,
-      LinuxBeta: appImageBeta ?? null,
-      Windows: windowsSetupStable,
-      WindowsArm: WindowsSetupArmStable,
-      WindowsBeta: windowsSetupBeta ?? null,
-      WindowsArmBeta: windowsSetupArmBeta ?? null,
-      Mac: dmgStable,
-      MacArm: dmgArmStable,
-      MacBeta: dmgBeta ?? null,
-      MacArmBeta: dmgArmBeta ?? null
+      Linux: urlFor('.AppImage', true),
+      LinuxBeta: null,
+      Windows: urlFor('Setup-x64'),
+      WindowsArm: urlFor('Setup-arm64'),
+      WindowsBeta: null,
+      WindowsArmBeta: null,
+      Mac: urlFor('macOS-x64'),
+      MacArm: urlFor('macOS-arm64'),
+      MacBeta: null,
+      MacArmBeta: null
     }
   } catch (error) {
     console.error({ error })
