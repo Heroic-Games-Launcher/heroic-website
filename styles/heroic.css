@@ -26,6 +26,14 @@ article header h4 {
   margin: 0;
 }
 
+/* Card titles inside <article> (downloads, steamdeck, donate) were demoted from
+   h4 to h2 to keep a valid heading order on each page; preserve their original
+   h4 visual size and spacing via Pico's typography custom properties. */
+article h2 {
+  --font-size: 1.25rem;
+  --typography-spacing-vertical: 1.874rem;
+}
+
 /* Snippet */
 code.snippet,
 code.snippet.hljs {

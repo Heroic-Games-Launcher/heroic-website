@@ -25,7 +25,7 @@ const Sponsorship: React.FC = () => {
 
   return (
     <section className={`${styles.sponsorshipSection} container`}>
-      <h1 className={styles.title}>{t('home.sponsors.title', 'Our Sponsors')}</h1>
+      <h2 className={styles.title}>{t('home.sponsors.title', 'Our Sponsors')}</h2>
       <div className={styles.sponsorsGrid}>
         {sponsors.map((sponsor) => (
           <motion.a

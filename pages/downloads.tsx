@@ -63,12 +63,12 @@ const Downloads: NextPage = () => {
             <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.linux')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>
+                <h2>
                   {t('downloads.linux.flatpak.title')}
                   <span className={styles.recommended}>
                     {t('downloads.recommended')}
                   </span>
-                </h4>
+                </h2>
                 <p>{t('downloads.linux.flatpak.description')}</p>
                 <footer>
                   <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
@@ -79,7 +79,7 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.linux.appimage.title')}</h4>
+                <h2>{t('downloads.linux.appimage.title')}</h2>
                 <p>{t('downloads.linux.appimage.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Linux}>
@@ -104,7 +104,7 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.linux.other.title')}</h4>
+                <h2>{t('downloads.linux.other.title')}</h2>
                 <p>{t('downloads.linux.other.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
@@ -125,12 +125,12 @@ const Downloads: NextPage = () => {
             <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.windows')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>
+                <h2>
                   {t('downloads.windows.setup.title')} (x64)
                   <span className={styles.recommended}>
                     {t('downloads.recommended')}
                   </span>
-                </h4>
+                </h2>
                 <p>{t('downloads.windows.setup.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Windows}>
@@ -154,7 +154,7 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.windows.setup.title')} (ARM64)</h4>
+                <h2>{t('downloads.windows.setup.title')} (ARM64)</h2>
                 <p>{t('downloads.windows.setupArm.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.WindowsArm}>
@@ -178,7 +178,7 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.windows.portable.title')}</h4>
+                <h2>{t('downloads.windows.portable.title')}</h2>
                 <p>{t('downloads.windows.portable.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
@@ -199,7 +199,7 @@ const Downloads: NextPage = () => {
             <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.macos')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.macos.appleChips.title')}</h4>
+                <h2>{t('downloads.macos.appleChips.title')}</h2>
                 <p>{t('downloads.macos.appleChips.description')}</p>
                 <footer>
                   <a href={releases.MacArm}>
@@ -223,7 +223,7 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h4>{t('downloads.macos.intelChips.title')}</h4>
+                <h2>{t('downloads.macos.intelChips.title')}</h2>
                 <p>{t('downloads.macos.intelChips.description')}</p>
                 <footer>
                   <a href={releases.Mac}>

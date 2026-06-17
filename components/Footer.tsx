@@ -50,12 +50,12 @@ const Footer = () => {
 
         <nav className={styles.cols}>
           <div className={styles.col}>
-            <h4>{t('footer.getHeroic')}</h4>
+            <h2>{t('footer.getHeroic')}</h2>
             <Link href="/downloads"><a>{t('navbar.downloads')}</a></Link>
             <Link href="/steamdeck"><a>{t('navbar.steamdeck')}</a></Link>
           </div>
           <div className={styles.col}>
-            <h4>{t('footer.resources')}</h4>
+            <h2>{t('footer.resources')}</h2>
             <Link href="/faq"><a>{t('navbar.faq')}</a></Link>
             <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki">
               {t('navbar.documentation')}
@@ -63,7 +63,7 @@ const Footer = () => {
             <Link href="/donate"><a>{t('navbar.supportUs')}</a></Link>
           </div>
           <div className={styles.col}>
-            <h4>{t('footer.project')}</h4>
+            <h2>{t('footer.project')}</h2>
             <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher">GitHub</a>
             <a href="https://discord.com/invite/rHJ2uqdquK">Discord</a>
             <Link href="/cla"><a>{t('navbar.cla')}</a></Link>

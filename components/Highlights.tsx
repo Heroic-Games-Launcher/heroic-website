@@ -38,7 +38,7 @@ export default function Highlights() {
             width={28}
             aria-hidden
           />
-          <h3>{t(`home.highlights.${key}.title`)}</h3>
+          <h2>{t(`home.highlights.${key}.title`)}</h2>
           <p>{t(`home.highlights.${key}.description`)}</p>
         </div>
       ))}

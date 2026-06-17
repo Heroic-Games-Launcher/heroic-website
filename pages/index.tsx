@@ -145,14 +145,17 @@ const Home: NextPage<HomeProps> = ({ releases }) => {
 
       <Highlights />
 
-      <h1
+      <h2
         style={{
           textAlign: 'center',
-          paddingInline: '25px'
+          paddingInline: '25px',
+          // Section heading: keep the previous h1 visual size while fixing the
+          // heading order (the page already has its single h1 in the hero).
+          fontSize: '2rem'
         }}
       >
         {t('home.mainFeatures')}
-      </h1>
+      </h2>
 
       <ScreenshotsCarousel slides={screenshots} />
 
