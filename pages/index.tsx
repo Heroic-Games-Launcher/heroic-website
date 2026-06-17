@@ -8,7 +8,7 @@ import kofiData from '../lib/kofi_supporters.json'
 import SupportersMarquee from '../components/SupportersMarquee'
 import Sponsorship from '../components/Sponsorship'
 import DownloadButton from '../components/DownloadButton'
-import Seo from '../components/Seo'
+import Seo, { SITE_URL } from '../components/Seo'
 
 import styles from '../styles/Home.module.css'
 
@@ -40,11 +40,46 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
   // Helper to convert translation to string
   const ts = (key: string) => String(t(`home.${key}`))
 
+  const version = releases.Linux.split('/')[7]
+  const organizationLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Heroic Games Launcher',
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
+    sameAs: [
+      'https://github.com/Heroic-Games-Launcher',
+      'https://twitter.com/HeroicLauncher',
+      'https://mastodon.social/@heroiclauncher',
+      'https://discord.com/invite/rHJ2uqdquK'
+    ]
+  }
+  const softwareLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Heroic Games Launcher',
+    applicationCategory: 'GameApplication',
+    operatingSystem: 'Linux, Windows, macOS',
+    url: SITE_URL,
+    downloadUrl: `${SITE_URL}/downloads`,
+    image: `${SITE_URL}/og-image.png`,
+    description:
+      'Free and open source launcher for Epic Games, GOG and Amazon Prime Games on Linux, Windows, macOS and the Steam Deck.',
+    license: 'https://www.gnu.org/licenses/gpl-3.0.html',
+    isAccessibleForFree: true,
+    ...(version && version.startsWith('v')
+      ? { softwareVersion: version.replace(/^v/, '') }
+      : {}),
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    author: { '@type': 'Organization', name: 'Heroic Games Launcher' }
+  }
+
   return (
     <>
       <Seo
         title="Heroic Games Launcher — Free Epic, GOG & Amazon Games Launcher"
         description="Heroic is a free and open source launcher for Epic Games, GOG and Amazon Prime Games. Play your games on Linux, Windows, macOS and the Steam Deck."
+        jsonLd={[organizationLd, softwareLd]}
       />
       <motion.header
         initial={initial}

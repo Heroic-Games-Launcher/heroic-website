@@ -12,11 +12,27 @@ const FAQPage: NextPage = () => {
   const { t } = useTranslation()
   const questions = t('faq.questions', { returnObjects: true }) as FAQ[]
 
+  const faqLd = Array.isArray(questions)
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: questions.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answers.join(' ')
+          }
+        }))
+      }
+    : undefined
+
   return (
     <>
       <Seo
         title="Heroic Games Launcher FAQ — Frequently Asked Questions"
         description="Answers to common questions about Heroic Games Launcher: what it is, privacy and safety, installation, Wine and Proton, supported stores, and platforms."
+        jsonLd={faqLd}
       />
       <header className="hero">
       <div className="container">
