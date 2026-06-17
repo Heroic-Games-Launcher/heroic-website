@@ -99,11 +99,11 @@
     },
     "wineManager": {
       "title": "Wine Manager",
-      "description": "On Linux, download the latest version of Wine-GE, Wine-Lutris or even Proton-GE using the Wine Manager. These selection of Wine version are focused on improving the gaming experience and compatibility."
+      "description": "Download and manage the best compatibility tools right from Heroic: Wine-GE, Wine-Lutris and Proton-GE on Linux, or Wine-Crossover, Wine-Staging and the Game Porting Toolkit on macOS, all tuned for gaming."
     },
     "wineSettings": {
       "title": "Wine Settings",
-      "description": "Besides using the right Wine version, it is important to setup everything to have the best gameplay experience on Linux and on macOS. Under the Wine Settings it is possible to auto install tools like DXVK, VKD3D, FSR and also to run WineCFG, Winetricks and Run EXE on the prefix, so you can install games pre-requisites in a easy way."
+      "description": "Heroic picks the best settings automatically for most games on Linux and macOS, and keeps every advanced option within reach for when you want to fine-tune exactly how a game runs."
     },
     "multiLanguage": {
       "title": "Multi Language",
