@@ -2,30 +2,31 @@ import { NextPage } from 'next'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
+import enTranslations from '../public/locales/en/translations.json'
 
 interface FAQ {
   question: string
   answers: string[]
 }
 
+// Built from the static English source so the FAQ structured data is present
+// in the pre-rendered HTML (the live translations are loaded on the client).
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: (enTranslations.faq.questions as FAQ[]).map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answers.join(' ')
+    }
+  }))
+}
+
 const FAQPage: NextPage = () => {
   const { t } = useTranslation()
   const questions = t('faq.questions', { returnObjects: true }) as FAQ[]
-
-  const faqLd = Array.isArray(questions)
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: questions.map((faq) => ({
-          '@type': 'Question',
-          name: faq.question,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answers.join(' ')
-          }
-        }))
-      }
-    : undefined
 
   return (
     <>

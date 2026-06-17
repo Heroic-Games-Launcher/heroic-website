@@ -10,7 +10,9 @@ const Downloads: NextPage = () => {
   const router = useRouter()
   const { t } = useTranslation()
 
-  const userAgent = global.window?.navigator?.userAgent || ''
+  // Resolved after mount so server and client render the same markup (avoids a
+  // hydration mismatch on the <details open> defaults).
+  const [userAgent, setUserAgent] = React.useState('')
   const [releases, setReleases] = React.useState<ReleaseUrls>({
     Linux: '',
     Windows: '',
@@ -20,16 +22,13 @@ const Downloads: NextPage = () => {
   })
 
   React.useEffect(() => {
+    setUserAgent(global.window?.navigator?.userAgent || '')
     const getLatestPackages = async () => {
       const latests = await getLatestReleases()
       setReleases(latests)
     }
     getLatestPackages()
   }, [])
-
-  if (!userAgent) {
-    return null
-  }
 
   const isWindows = userAgent.toLowerCase().includes('windows')
   const isMac = userAgent.toLowerCase().includes('mac')
@@ -44,7 +43,7 @@ const Downloads: NextPage = () => {
   return (
     <>
       <Seo
-        title={`${t('downloads.pageTitle')} — Linux, Windows & macOS`}
+        title="Download Heroic Games Launcher — Linux, Windows & macOS"
         description="Download Heroic Games Launcher for Linux, Windows and macOS. Available as Flatpak, AppImage, Windows installer (x64 and ARM64), and macOS app for Apple Silicon and Intel."
       />
       <header className="hero">

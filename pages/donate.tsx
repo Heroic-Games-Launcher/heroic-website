@@ -9,7 +9,7 @@ const Donate: NextPage = () => {
   return (
     <>
       <Seo
-        title={t('donate.pageTitle') as string}
+        title="Support Heroic Development — Heroic Games Launcher"
         description="Heroic Games Launcher is free and open source. Support its development through Patreon, Ko-fi, GitHub Sponsors or by shopping on GOG with our link."
       />
       <header className="hero">

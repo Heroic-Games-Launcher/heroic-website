@@ -83,14 +83,15 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
 
     return {
       Linux: appImageStable,
-      LinuxBeta: appImageBeta,
+      LinuxBeta: appImageBeta ?? null,
       Windows: windowsSetupStable,
       WindowsArm: WindowsSetupArmStable,
-      WindowsBeta: windowsSetupBeta,
-      WindowsArmBeta: windowsSetupArmBeta,
+      WindowsBeta: windowsSetupBeta ?? null,
+      WindowsArmBeta: windowsSetupArmBeta ?? null,
       Mac: dmgStable,
       MacArm: dmgArmStable,
-      MacBeta: dmgBeta
+      MacBeta: dmgBeta ?? null,
+      MacArmBeta: dmgArmBeta ?? null
     }
   } catch (error) {
     console.error({ error })
