@@ -40,7 +40,7 @@
     "highlights": {
       "privacy": {
         "title": "Privacy-first",
-        "description": "No telemetry and no tracking. Heroic never collects your data."
+        "description": "No ads and we never sell your data. Analytics are anonymous and off by default."
       },
       "openSource": {
         "title": "Free & Open Source",
@@ -250,8 +250,8 @@
       {
         "question": "Does Heroic collect my data, username, or password?",
         "answers": [
-          "No, Heroic is a privacy-centered application and does not collect any data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.",
-          "In addition, Heroic does not collect any usage data or analytics from your use of the application. Your privacy is important to us and we take steps to ensure that your data is secure and not collected or shared without your consent."
+          "No, Heroic is a privacy-centered application and does not collect any personal data from your computer or device. It does not collect your username, password, or any other personal information. You will login on the official Epic Games Store or GOG website and then Heroic will keep only a token that serves only to list, download and to launch games from those stores.",
+          "Usage analytics are optional and turned off by default. If you choose to opt in, Heroic uses Plausible, a privacy-friendly and cookieless analytics service, to collect anonymous, aggregated usage data that helps guide development. No personal information is included, you can disable it at any time, and nothing is shared without your consent."
         ]
       },
       {
