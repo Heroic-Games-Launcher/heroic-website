@@ -133,20 +133,29 @@ const Home: NextPage<HomeProps> = ({ releases }) => {
             src={heroImg}
             alt="Heroic Games Launcher preview"
             className="heroicPreview"
+            loading="eager"
+            decoding="async"
+            // The hero image is the LCP element; tell the browser to fetch it
+            // with high priority. `fetchpriority` is not in React 17's img types,
+            // so it is spread in as a raw DOM attribute.
+            {...{ fetchpriority: 'high' }}
           />
         </div>
       </motion.header>
 
       <Highlights />
 
-      <h1
+      <h2
         style={{
           textAlign: 'center',
-          paddingInline: '25px'
+          paddingInline: '25px',
+          // Section heading: keep the previous h1 visual size while fixing the
+          // heading order (the page already has its single h1 in the hero).
+          fontSize: '2rem'
         }}
       >
         {t('home.mainFeatures')}
-      </h1>
+      </h2>
 
       <ScreenshotsCarousel slides={screenshots} />
 

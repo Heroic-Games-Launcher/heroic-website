@@ -8,6 +8,26 @@
         "destination": "/index.html"
       }
     ],
+    "headers": [
+      {
+        "source": "**/_next/static/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(png|webp|jpg|jpeg|gif|svg|ico|avif)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=2592000"
+          }
+        ]
+      }
+    ],
     "cleanUrls": true
   }
 }

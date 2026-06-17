@@ -36,7 +36,7 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
 
           <div className="grid">
             <article>
-              <h4>{t('donate.patreon.title')}</h4>
+              <h2>{t('donate.patreon.title')}</h2>
               <small>{t('donate.patreon.type')}</small>
               <p>{t('donate.patreon.description')}</p>
               <footer>
@@ -46,7 +46,7 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
-              <h4>{t('donate.kofi.title')}</h4>
+              <h2>{t('donate.kofi.title')}</h2>
               <small>{t('donate.kofi.type')}</small>
               <p>{t('donate.kofi.description')}</p>
               <footer>
@@ -56,7 +56,7 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
-              <h4>{t('donate.gog.title')}</h4>
+              <h2>{t('donate.gog.title')}</h2>
               <small>{t('donate.gog.type')}</small>
               <p>{t('donate.gog.description')}</p>
               <footer>
@@ -66,7 +66,7 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
-              <h4>{t('donate.github.title')}</h4>
+              <h2>{t('donate.github.title')}</h2>
               <small>{t('donate.github.type')}</small>
               <p>{t('donate.github.description')}</p>
               <footer>

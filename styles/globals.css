@@ -49,7 +49,7 @@ a {
   z-index: 1000;
   padding: 10px 16px;
   border-radius: 8px;
-  background: var(--primary, #8e24aa);
+  background: var(--primary, #1a5a8f);
   color: #fff;
   transform: translateY(-200%);
   transition: transform 0.2s ease-in-out;

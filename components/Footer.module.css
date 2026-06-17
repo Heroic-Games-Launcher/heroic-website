@@ -69,8 +69,8 @@
 }
 
 .social a:hover {
-  color: var(--primary, #8e24aa);
-  border-color: var(--primary, #8e24aa);
+  color: var(--primary, #1a5a8f);
+  border-color: var(--primary, #1a5a8f);
   transform: translateY(-2px);
 }
 
@@ -86,7 +86,7 @@
   gap: 12px;
 }
 
-.col h4 {
+.col h2 {
   margin: 0 0 4px;
   font-size: 0.8rem;
   font-weight: 700;
@@ -103,7 +103,7 @@
 }
 
 .col a:hover {
-  color: var(--primary, #8e24aa);
+  color: var(--primary, #1a5a8f);
 }
 
 .bottom {

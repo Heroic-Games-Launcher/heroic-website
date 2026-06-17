@@ -33,7 +33,7 @@
   flex: 1;
 }
 
-.downloadBoxes h4 {
+.downloadBoxes h2 {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -47,7 +47,7 @@
   letter-spacing: 0.04em;
   padding: 3px 8px;
   border-radius: 999px;
-  background: var(--primary, #8e24aa);
+  background: var(--primary, #1a5a8f);
   color: #fff;
 }
 
@@ -64,7 +64,7 @@
   width: 26px;
   height: 26px;
   flex-shrink: 0;
-  color: var(--primary, #8e24aa);
+  color: var(--primary, #1a5a8f);
 }
 
 /* Render the download actions as real buttons */
@@ -79,7 +79,7 @@
   display: block;
   padding: 10px 14px;
   border-radius: 8px;
-  background: var(--primary, #8e24aa);
+  background: var(--primary, #1a5a8f);
   color: #fff !important;
   text-align: center;
   text-decoration: none;

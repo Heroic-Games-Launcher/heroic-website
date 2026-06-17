@@ -82,9 +82,9 @@ const SupportersMarquee: React.FC<SupportersMarqueeProps> = ({ github, patreon, 
 
   return (
     <section className={styles.marqueeSection}>
-      <h4 className={styles.marqueeTitle}>
+      <h2 className={styles.marqueeTitle}>
         🗡️ {t('common.supportersMarquee.title', 'A heartfelt thank you to our incredible supporters!')}
-      </h4>
+      </h2>
       <MarqueeRow
         supporters={patreon}
         direction="left"

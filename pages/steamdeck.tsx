@@ -41,19 +41,19 @@ const SteamDeck: NextPage = () => {
 
           <div className="grid" style={{ textAlign: 'left' }}>
             <article>
-              <h4>{t('steamdeck.consoleMode.title')}</h4>
+              <h2>{t('steamdeck.consoleMode.title')}</h2>
               <p>{t('steamdeck.consoleMode.description')}</p>
             </article>
             <article>
-              <h4>{t('steamdeck.library.title')}</h4>
+              <h2>{t('steamdeck.library.title')}</h2>
               <p>{t('steamdeck.library.description')}</p>
             </article>
             <article>
-              <h4>{t('steamdeck.install.title')}</h4>
+              <h2>{t('steamdeck.install.title')}</h2>
               <p>{t('steamdeck.install.description')}</p>
             </article>
             <article>
-              <h4>{t('steamdeck.compatibility.title')}</h4>
+              <h2>{t('steamdeck.compatibility.title')}</h2>
               <p>{t('steamdeck.compatibility.description')}</p>
             </article>
           </div>

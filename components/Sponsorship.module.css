@@ -8,6 +8,9 @@
   text-align: center;
   padding-inline: 25px;
   margin-bottom: 50px;
+  /* Section heading demoted from h1 to h2 for correct heading order; keep the
+     original h1 visual size. */
+  font-size: 2rem;
 }
 
 .sponsorsGrid {

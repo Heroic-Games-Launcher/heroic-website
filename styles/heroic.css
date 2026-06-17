@@ -1,5 +1,5 @@
 :root {
-  --primary: #8e24aa;
+  --primary: #1a5a8f;
 }
 
 /* Hero */
@@ -24,6 +24,14 @@ article header h2,
 article header h3,
 article header h4 {
   margin: 0;
+}
+
+/* Card titles inside <article> (downloads, steamdeck, donate) were demoted from
+   h4 to h2 to keep a valid heading order on each page; preserve their original
+   h4 visual size and spacing via Pico's typography custom properties. */
+article h2 {
+  --font-size: 1.25rem;
+  --typography-spacing-vertical: 1.874rem;
 }
 
 /* Snippet */
@@ -278,7 +286,7 @@ a {
 }
 
 .sidebar-content .nav-links a:hover {
-  background: rgba(142, 36, 170, 0.2);
+  background: rgba(26, 90, 143, 0.2);
   color: var(--primary);
 }
 
@@ -306,7 +314,7 @@ a {
 }
 
 .sidebar-content .social-links a:hover {
-  background: rgba(142, 36, 170, 0.3);
+  background: rgba(26, 90, 143, 0.3);
   transform: scale(1.1);
 }
 
@@ -348,12 +356,12 @@ a {
 }
 
 .desktop-nav .nav-links a:hover {
-  color: var(--primary, #8e24aa);
-  background: rgba(142, 36, 170, 0.1);
+  color: var(--primary, #1a5a8f);
+  background: rgba(26, 90, 143, 0.1);
 }
 
 .desktop-nav .nav-links a.nav-cta {
-  background: var(--primary, #8e24aa);
+  background: var(--primary, #1a5a8f);
   color: #fff;
   margin-left: 8px;
 }
@@ -382,7 +390,7 @@ a {
   }
 
   .sidebar-content .nav-links a:hover {
-    background: rgba(142, 36, 170, 0.1);
+    background: rgba(26, 90, 143, 0.1);
   }
 }
 
