@@ -85,9 +85,13 @@
       "title": "Themes",
       "description": "If you don't like the default colors, you have the ability to change them. It also includes the famous Dracula theme."
     },
+    "downloadQueue": {
+      "title": "Download queue",
+      "description": "Line up installs from Epic, GOG and Amazon and let them run back to back. Watch live download and disk speeds, pause or resume anytime, and see what's already finished."
+    },
     "customizeGames": {
-      "title": "Customize every game",
-      "description": "Fine-tune each game on its own: pick the Wine or Proton version, add launch arguments and environment variables, set wrappers and more."
+      "title": "Custom artwork",
+      "description": "Rename a game and pick custom cover and square art straight from SteamGridDB, so imported titles and games from every store look right in your library."
     },
     "wineManager": {
       "title": "Wine Manager",

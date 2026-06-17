@@ -17,6 +17,7 @@ const heroImg = require('../assets/screenshots/01-home.webp')
 const shotGamePage = require('../assets/screenshots/02-gamepage.webp')
 const shotStores = require('../assets/screenshots/08-stores.webp')
 const shotPlatforms = require('../assets/screenshots/07-platforms.webp')
+const shotDownloads = require('../assets/screenshots/03-downloads.webp')
 const shotEditGame = require('../assets/screenshots/06-edit-game.webp')
 const shotWineManager = require('../assets/screenshots/05-wine-manager.webp')
 const shotWineSettings = require('../assets/screenshots/09-wine-settings.webp')
@@ -42,6 +43,7 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
     { src: shotGamePage, title: ts('gamePage.title'), description: ts('gamePage.description') },
     { src: shotStores, title: ts('accessStores.title'), description: ts('accessStores.description') },
     { src: shotPlatforms, title: ts('platformSelection.title'), description: ts('platformSelection.description') },
+    { src: shotDownloads, title: ts('downloadQueue.title'), description: ts('downloadQueue.description') },
     { src: shotEditGame, title: ts('customizeGames.title'), description: ts('customizeGames.description') },
     { src: shotWineManager, title: ts('wineManager.title'), description: ts('wineManager.description') },
     { src: shotWineSettings, title: ts('wineSettings.title'), description: ts('wineSettings.description') }
