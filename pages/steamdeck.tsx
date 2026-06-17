@@ -2,9 +2,8 @@ import { NextPage } from 'next'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
-import SteamDeckMockup from '../components/SteamDeckMockup'
 
-const deckMedia = require('../assets/screenshots/04-console.webp')
+const deckImage = require('../assets/screenshots/console-on-deck.webp')
 
 const SteamDeck: NextPage = () => {
   const { t } = useTranslation()
@@ -22,9 +21,11 @@ const SteamDeck: NextPage = () => {
             {t('steamdeck.subtitle')}
           </p>
 
-          <SteamDeckMockup>
-            <img src={deckMedia} alt={t('steamdeck.mockupAlt') as string} />
-          </SteamDeckMockup>
+          <img
+            src={deckImage}
+            alt={t('steamdeck.mockupAlt') as string}
+            style={{ width: '100%', maxWidth: '860px', height: 'auto' }}
+          />
 
           <p style={{ marginTop: '48px' }}>
             <a
