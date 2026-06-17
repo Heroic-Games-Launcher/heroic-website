@@ -5,6 +5,11 @@
   /* Anchor for the absolutely-positioned menu. Pico previously supplied this
      via details[role='list'], which we dropped for accessibility. */
   position: relative;
+  /* Pico's base <details> adds a bottom border + padding (the accordion
+     separator). details[role='list'] used to reset them; reset them here too
+     now that the role is gone, otherwise a stray line/gap shows below the CTA. */
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 /* Make the dropdown trigger look like the primary call to action. */
