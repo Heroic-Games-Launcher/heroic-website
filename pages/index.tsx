@@ -1,10 +1,8 @@
 import type { NextPage, GetStaticProps } from 'next'
 import { motion } from 'framer-motion'
 import { useTranslation, Trans } from 'react-i18next'
-import { Supporter, getGitHubSponsors, getPatreonSupporters, getRoleFromAmount } from '../lib/supporters'
 import { getLatestReleases, ReleaseUrls } from '../lib/github'
-import kofiData from '../lib/kofi_supporters.json'
-import SupportersMarquee from '../components/SupportersMarquee'
+import { cached } from '../lib/cache'
 import Sponsorship from '../components/Sponsorship'
 import DownloadButton from '../components/DownloadButton'
 import Highlights from '../components/Highlights'
@@ -27,13 +25,10 @@ const final = { y: '0px', opacity: 1 }
 const transition = { duration: 0.5 }
 
 interface HomeProps {
-  kofi: Supporter[]
-  github: Supporter[]
-  patreon: Supporter[]
   releases: ReleaseUrls
 }
 
-const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
+const Home: NextPage<HomeProps> = ({ releases }) => {
   const { t } = useTranslation()
 
   // Helper to convert translation to string
@@ -125,24 +120,22 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
               <strong>macOS</strong>. Also available on the{' '}
               <strong>SteamDeck</strong>!
             </Trans>
-            <p className={styles.buttonContainer}>
+            <div className={styles.buttonContainer}>
               <DownloadButton releases={releases} />
               <a
                 href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
                 role="button"
                 className="contrast outline"
-                style={{ marginTop: '14px' }}
               >
                 {t('home.viewOnGithub')}
               </a>
-            </p>
+            </div>
           </div>
           <img
             src={heroImg}
             alt="Heroic Games Launcher preview"
             className="heroicPreview"
           />
-          <SupportersMarquee github={github} patreon={patreon} kofi={kofi} />
         </div>
       </motion.header>
 
@@ -165,35 +158,12 @@ const Home: NextPage<HomeProps> = ({ kofi, github, patreon, releases }) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const [github, patreon, releases] = await Promise.all([
-    getGitHubSponsors(),
-    getPatreonSupporters(),
-    getLatestReleases()
-  ])
-
-  const sortedKofi = [...kofiData]
-    .map(s => ({
-      ...s,
-      role: getRoleFromAmount(s.amount)
-    }))
-    .sort((a, b) => {
-      const roleOrder: Record<string, number> = {
-        'mega supporter': 4,
-        'hero supporter': 3,
-        'supporter plus': 2,
-        'supporter': 1
-      };
-      const orderA = roleOrder[a.role || ''] || 0;
-      const orderB = roleOrder[b.role || ''] || 0;
-      if (orderA !== orderB) return orderB - orderA;
-      return b.amount - a.amount;
-    })
+  // Supporters moved to /donate; the home only needs release URLs, which is a
+  // single fast request, so the page is no longer blocked by Patreon paging.
+  const releases = await cached('releases', 60 * 60 * 1000, getLatestReleases)
 
   return {
     props: {
-      kofi: sortedKofi,
-      github,
-      patreon,
       releases
     },
     revalidate: 86400

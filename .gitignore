@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# build-time fetch cache (supporters, releases)
+/.cache/
+
 # production
 /build
 

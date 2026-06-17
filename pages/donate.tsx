@@ -1,9 +1,24 @@
-import { NextPage } from 'next'
+import { NextPage, GetStaticProps } from 'next'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Seo from '../components/Seo'
+import SupportersMarquee from '../components/SupportersMarquee'
+import {
+  Supporter,
+  getGitHubSponsors,
+  getPatreonSupporters,
+  getRoleFromAmount
+} from '../lib/supporters'
+import { cached } from '../lib/cache'
+import kofiData from '../lib/kofi_supporters.json'
 
-const Donate: NextPage = () => {
+interface DonateProps {
+  kofi: Supporter[]
+  github: Supporter[]
+  patreon: Supporter[]
+}
+
+const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
   const { t } = useTranslation()
 
   return (
@@ -63,8 +78,44 @@ const Donate: NextPage = () => {
           </div>
         </div>
       </header>
+
+      <SupportersMarquee github={github} patreon={patreon} kofi={kofi} />
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const [github, patreon] = await Promise.all([
+    cached('github-sponsors', 6 * 60 * 60 * 1000, getGitHubSponsors),
+    cached('patreon-supporters', 6 * 60 * 60 * 1000, getPatreonSupporters)
+  ])
+
+  const sortedKofi = [...kofiData]
+    .map((s) => ({
+      ...s,
+      role: getRoleFromAmount(s.amount)
+    }))
+    .sort((a, b) => {
+      const roleOrder: Record<string, number> = {
+        'mega supporter': 4,
+        'hero supporter': 3,
+        'supporter plus': 2,
+        supporter: 1
+      }
+      const orderA = roleOrder[a.role || ''] || 0
+      const orderB = roleOrder[b.role || ''] || 0
+      if (orderA !== orderB) return orderB - orderA
+      return b.amount - a.amount
+    })
+
+  return {
+    props: {
+      kofi: sortedKofi,
+      github,
+      patreon
+    },
+    revalidate: 86400
+  }
 }
 
 export default Donate
