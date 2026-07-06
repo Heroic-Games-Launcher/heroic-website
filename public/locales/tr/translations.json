@@ -23,6 +23,11 @@
   "home": {
     "heroTitle": "KAHRAMANLAR GİBİ OYNA!",
     "heroDescription": "Heroic, <strong>Linux</strong>, <strong>Windows</strong> ve <strong>macOS</strong> için <strong>Epic</strong>, <strong>GOG</strong> ve <strong>Amazon Prime Oyunları</strong>nı destekleyen, ücretsiz ve açık kaynaklı bir oyun başlatıcısıdır. Ayrıca <strong>Steam Deck</strong> üzerinde de kullanılabilir.",
+    "stats": {
+      "downloads": "İndirme",
+      "users": "Aylık Kullanıcı",
+      "ariaLabel": "Rakamlarla Heroic"
+    },
     "download": "İndir",
     "faq": "SSS",
     "mainFeatures": "ANA ÖZELLİKLER VE DAHA FAZLASI",

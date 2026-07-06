@@ -128,6 +128,17 @@ const Home: NextPage<HomeProps> = ({ releases }) => {
                 {t('home.viewOnGithub')}
               </a>
             </div>
+            <dl className={styles.stats} aria-label={ts('stats.ariaLabel')}>
+              <div className={styles.stat}>
+                <dt className={styles.statLabel}>{t('home.stats.downloads')}</dt>
+                <dd className={styles.statValue}>20M+</dd>
+              </div>
+              <div className={styles.statDivider} aria-hidden="true" />
+              <div className={styles.stat}>
+                <dt className={styles.statLabel}>{t('home.stats.users')}</dt>
+                <dd className={styles.statValue}>500K+</dd>
+              </div>
+            </dl>
           </div>
           <img
             src={heroImg}

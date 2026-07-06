@@ -16,7 +16,76 @@
   align-items: center;
   gap: 16px;
   margin-top: 32px;
-  margin-bottom: 64px;
+  margin-bottom: 36px;
+}
+
+/* Social-proof stats strip under the hero CTAs */
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 0 0 64px;
+}
+
+.stat {
+  display: flex;
+  /* column-reverse keeps the big number visually on top while the DOM stays in
+     natural <dl> order (label = dt first, value = dd second). */
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+}
+
+.statValue {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  /* Brand navy on the light background (passes AA). On the dark navy background
+     #1a5a8f only reaches ~2.25:1, so the dark theme uses a lighter azure that
+     clears AA — same pattern the theme toggle uses in colors.css. */
+  color: var(--primary, #1a5a8f);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  .statValue {
+    color: #5aa9e6;
+  }
+}
+
+:global([data-theme='dark']) .statValue {
+  color: #5aa9e6;
+}
+
+:global([data-theme='light']) .statValue {
+  color: var(--primary, #1a5a8f);
+}
+
+.statLabel {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+}
+
+.statDivider {
+  width: 1px;
+  align-self: stretch;
+  min-height: 44px;
+  background: var(--muted-border-color, #d0d3e0);
+}
+
+@media (max-width: 480px) {
+  .stats {
+    gap: 20px;
+  }
+
+  .statValue {
+    font-size: 1.85rem;
+  }
 }
 
 /* Downloads page cards */

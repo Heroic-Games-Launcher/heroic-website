@@ -23,6 +23,11 @@
   "home": {
     "heroTitle": "GRAJ JAK BOHATER!",
     "heroDescription": "Heroic to darmowy i otwarty <strong>Epic</strong>, <strong>GOG</strong> i <strong>Amazon Prime Games</strong> launcher dla <strong>Linux</strong>, <strong>Windows</strong> i <strong>macOS</strong>. Dostępny także na <strong>SteamDecku</strong>!",
+    "stats": {
+      "downloads": "Pobrań",
+      "users": "Użytkowników miesięcznie",
+      "ariaLabel": "Heroic w liczbach"
+    },
     "download": "Pobierz",
     "faq": "FAQ",
     "mainFeatures": "GŁÓWNE FUNKCJE I WIĘCEJ INFORMACJI",

@@ -23,6 +23,11 @@
   "home": {
     "heroTitle": "JÁTSSZ HŐSKÉNT!",
     "heroDescription": "A Heroic egy ingyenes és nyílt forráskódú <strong>Epic</strong>, <strong>GOG</strong> és <strong>Amazon Prime Games</strong> indító <strong>Linux</strong>, <strong>Windows</strong> és <strong>macOS</strong> rendszerekhez. Elérhető a <strong>SteamDecken</strong> is!",
+    "stats": {
+      "downloads": "Letöltés",
+      "users": "Havi felhasználó",
+      "ariaLabel": "Heroic számokban"
+    },
     "download": "Letöltés",
     "faq": "GYIK",
     "mainFeatures": "FŐ FUNKCIÓK ÉS TÖBB INFO",

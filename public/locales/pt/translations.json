@@ -23,6 +23,11 @@
   "home": {
     "heroTitle": "JOGUE COMO UM HERÓI!",
     "heroDescription": "Heroic é um launcher gratuito e de código aberto para <strong>Epic</strong>, <strong>GOG</strong> e <strong>Amazon Prime Games</strong> para <strong>Linux</strong>, <strong>Windows</strong> e <strong>macOS</strong>. Também disponível no <strong>SteamDeck</strong>!",
+    "stats": {
+      "downloads": "Downloads",
+      "users": "Usuários mensais",
+      "ariaLabel": "Heroic em números"
+    },
     "download": "Baixar",
     "faq": "Perguntas Frequentes",
     "mainFeatures": "RECURSOS PRINCIPAIS E MAIS INFORMAÇÕES",

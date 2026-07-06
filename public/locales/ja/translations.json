@@ -23,6 +23,11 @@
   "home": {
     "heroTitle": "ヒーローのようにプレイせよ！",
     "heroDescription": "Heroicは<strong>Linux</strong>、<strong>Windows</strong>、<strong>macOS</strong>向けの無料でオープンソースの<strong>Epic</strong>、<strong>GOG</strong>、<strong>Amazon Prime Games</strong>ランチャーです。<strong>SteamDeck</strong>でも利用可能です！",
+    "stats": {
+      "downloads": "ダウンロード",
+      "users": "月間ユーザー",
+      "ariaLabel": "数字で見る Heroic"
+    },
     "download": "ダウンロード",
     "faq": "FAQ",
     "mainFeatures": "主な機能と詳細情報",

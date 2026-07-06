@@ -23,6 +23,11 @@
   "home": {
     "heroTitle": "像英雄一样玩游戏！",
     "heroDescription": "Heroic是一个免费的开源<strong>Epic</strong>、<strong>GOG</strong>和<strong>Amazon Prime Games</strong>启动器，适用于<strong>Linux</strong>、<strong>Windows</strong>和<strong>macOS</strong>。也可在<strong>SteamDeck</strong>上使用！",
+    "stats": {
+      "downloads": "下载量",
+      "users": "月活跃用户",
+      "ariaLabel": "数据一览"
+    },
     "download": "下载",
     "faq": "常见问题",
     "mainFeatures": "主要功能和更多信息",
