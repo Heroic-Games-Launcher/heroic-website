@@ -201,6 +201,12 @@
       "description": "Usa nuestro enlace cuando hagas compras en GOG y apoya el proyecto. Genial, ¿verdad?",
       "button": "Ir a GOG"
     },
+    "gmg": {
+      "title": "Green Man Gaming",
+      "type": "Única",
+      "description": "Ayúdanos comprando cualquier juego para cualquier plataforma en Green Man Gaming con nuestro enlace de afiliados.",
+      "button": "Ir a Green Man Gaming"
+    },
     "github": {
       "title": "GitHub Sponsor",
       "type": "Una vez o suscripción flexible",

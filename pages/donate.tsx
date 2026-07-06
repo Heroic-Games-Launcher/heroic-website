@@ -66,6 +66,16 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
+              <h2>{t('donate.gmg.title')}</h2>
+              <small>{t('donate.gmg.type')}</small>
+              <p>{t('donate.gmg.description')}</p>
+              <footer>
+                <a href="https://greenmangaming.sjv.io/c/7460208/1219987/15105">
+                  <strong>{t('donate.gmg.button')}</strong>
+                </a>
+              </footer>
+            </article>
+            <article>
               <h2>{t('donate.github.title')}</h2>
               <small>{t('donate.github.type')}</small>
               <p>{t('donate.github.description')}</p>

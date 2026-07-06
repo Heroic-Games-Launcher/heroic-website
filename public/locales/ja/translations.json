@@ -201,6 +201,12 @@
       "description": "GOGでの購入時に私たちのリンクを使用し、プロジェクトをサポート。クールだよね？",
       "button": "GOGに行く"
     },
+    "gmg": {
+      "title": "Green Man Gaming",
+      "type": "一回",
+      "description": "私たちのアフィリエイトリンクから Green Man Gaming で好きなプラットフォームの好きなゲームを購入して支援してください。",
+      "button": "Green Man Gaming へ"
+    },
     "github": {
       "title": "GitHubスポンサー",
       "type": "一度きりまたは柔軟なサブスクリプション",

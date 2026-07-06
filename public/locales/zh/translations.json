@@ -201,6 +201,12 @@
       "description": "在GOG上购物时使用我们的链接并支持项目。酷吧？",
       "button": "前往GOG"
     },
+    "gmg": {
+      "title": "Green Man Gaming",
+      "type": "一次性",
+      "description": "通过我们的推广链接在 Green Man Gaming 购买任意平台的任意游戏来支持我们。",
+      "button": "前往 Green Man Gaming"
+    },
     "github": {
       "title": "GitHub赞助",
       "type": "一次或灵活订阅",

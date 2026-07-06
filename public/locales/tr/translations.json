@@ -201,6 +201,12 @@
       "description": "GOG alışverişlerinizde bağlantımızı kullanarak projeyi destekleyin.",
       "button": "GOG'ye git"
     },
+    "gmg": {
+      "title": "Green Man Gaming",
+      "type": "Tek seferlik",
+      "description": "Green Man Gaming'de herhangi bir platform için herhangi bir oyunu satış ortağı bağlantımızla satın alarak bize destek olun.",
+      "button": "Green Man Gaming'e git"
+    },
     "github": {
       "title": "GitHub Sponsor",
       "type": "Tek seferlik veya esnek abonelik",

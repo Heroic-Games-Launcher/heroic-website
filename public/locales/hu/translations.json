@@ -201,6 +201,12 @@
       "description": "Használd a linkünket vásárláskor GOG-on és támogasd a projektet. Klassz, ugye?",
       "button": "Menj GOG-ra"
     },
+    "gmg": {
+      "title": "Green Man Gaming",
+      "type": "Egyszeri",
+      "description": "Segíts nekünk azzal, hogy bármilyen platformra vásárolsz bármilyen játékot a Green Man Gamingen a partneri linkünkkel.",
+      "button": "Irány a Green Man Gaming"
+    },
     "github": {
       "title": "GitHub szponzor",
       "type": "Egyszeri vagy rugalmas előfizetés",
