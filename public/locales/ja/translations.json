@@ -212,6 +212,12 @@
       "description": "私たちのアフィリエイトリンクから Green Man Gaming で好きなプラットフォームの好きなゲームを購入して支援してください。",
       "button": "Green Man Gaming へ"
     },
+    "humble": {
+      "title": "Humble Bundle",
+      "type": "一回",
+      "description": "私たちのアフィリエイトリンクから Humble Bundle でゲームやバンドルを購入して支援してください。",
+      "button": "Humble Bundle へ"
+    },
     "github": {
       "title": "GitHubスポンサー",
       "type": "一度きりまたは柔軟なサブスクリプション",

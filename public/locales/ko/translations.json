@@ -212,6 +212,12 @@
       "description": "저희 제휴 링크로 Green Man Gaming에서 모든 플랫폼의 게임을 구매하여 저희를 지원해 주세요.",
       "button": "Green Man Gaming으로 이동"
     },
+    "humble": {
+      "title": "Humble Bundle",
+      "type": "일회성",
+      "description": "저희 제휴 링크로 Humble Bundle에서 게임이나 번들을 구매하여 저희를 지원해 주세요.",
+      "button": "Humble Bundle로 이동"
+    },
     "github": {
       "title": "GitHub 스폰서",
       "type": "한 번 또는 유연한 구독",

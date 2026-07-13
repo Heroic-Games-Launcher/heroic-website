@@ -11,6 +11,14 @@ import {
 } from '../lib/supporters'
 import { cached } from '../lib/cache'
 import kofiData from '../lib/kofi_supporters.json'
+import {
+  PatreonIcon,
+  KofiIcon,
+  GogIcon,
+  HumbleBundleIcon,
+  GreenManGamingIcon,
+  GitHubIcon
+} from '../components/DonateIcons'
 
 interface DonateProps {
   kofi: Supporter[]
@@ -36,7 +44,10 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
 
           <div className="grid">
             <article>
-              <h2>{t('donate.patreon.title')}</h2>
+              <h2 className="donate-card-title">
+                <PatreonIcon className="donate-card-icon" />
+                {t('donate.patreon.title')}
+              </h2>
               <small>{t('donate.patreon.type')}</small>
               <p>{t('donate.patreon.description')}</p>
               <footer>
@@ -46,7 +57,10 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
-              <h2>{t('donate.kofi.title')}</h2>
+              <h2 className="donate-card-title">
+                <KofiIcon className="donate-card-icon" />
+                {t('donate.kofi.title')}
+              </h2>
               <small>{t('donate.kofi.type')}</small>
               <p>{t('donate.kofi.description')}</p>
               <footer>
@@ -56,7 +70,10 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
-              <h2>{t('donate.gog.title')}</h2>
+              <h2 className="donate-card-title">
+                <GogIcon className="donate-card-icon" />
+                {t('donate.gog.title')}
+              </h2>
               <small>{t('donate.gog.type')}</small>
               <p>{t('donate.gog.description')}</p>
               <footer>
@@ -66,7 +83,23 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
-              <h2>{t('donate.gmg.title')}</h2>
+              <h2 className="donate-card-title">
+                <HumbleBundleIcon className="donate-card-icon" />
+                {t('donate.humble.title')}
+              </h2>
+              <small>{t('donate.humble.type')}</small>
+              <p>{t('donate.humble.description')}</p>
+              <footer>
+                <a href="https://humblebundleinc.sjv.io/heroic">
+                  <strong>{t('donate.humble.button')}</strong>
+                </a>
+              </footer>
+            </article>
+            <article>
+              <h2 className="donate-card-title">
+                <GreenManGamingIcon className="donate-card-icon" />
+                {t('donate.gmg.title')}
+              </h2>
               <small>{t('donate.gmg.type')}</small>
               <p>{t('donate.gmg.description')}</p>
               <footer>
@@ -76,7 +109,10 @@ const Donate: NextPage<DonateProps> = ({ kofi, github, patreon }) => {
               </footer>
             </article>
             <article>
-              <h2>{t('donate.github.title')}</h2>
+              <h2 className="donate-card-title">
+                <GitHubIcon className="donate-card-icon" />
+                {t('donate.github.title')}
+              </h2>
               <small>{t('donate.github.type')}</small>
               <p>{t('donate.github.description')}</p>
               <footer>

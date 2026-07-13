@@ -212,6 +212,12 @@
       "description": "通过我们的推广链接在 Green Man Gaming 购买任意平台的任意游戏来支持我们。",
       "button": "前往 Green Man Gaming"
     },
+    "humble": {
+      "title": "Humble Bundle",
+      "type": "一次性",
+      "description": "通过我们的推广链接在 Humble Bundle 购买游戏或捆绑包来支持我们。",
+      "button": "前往 Humble Bundle"
+    },
     "github": {
       "title": "GitHub赞助",
       "type": "一次或灵活订阅",

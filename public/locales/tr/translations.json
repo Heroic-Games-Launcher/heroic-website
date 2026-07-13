@@ -212,6 +212,12 @@
       "description": "Green Man Gaming'de herhangi bir platform için herhangi bir oyunu satış ortağı bağlantımızla satın alarak bize destek olun.",
       "button": "Green Man Gaming'e git"
     },
+    "humble": {
+      "title": "Humble Bundle",
+      "type": "Tek seferlik",
+      "description": "Humble Bundle'da oyunları veya paketleri satış ortağı bağlantımızla satın alarak bize destek olun.",
+      "button": "Humble Bundle'a git"
+    },
     "github": {
       "title": "GitHub Sponsor",
       "type": "Tek seferlik veya esnek abonelik",

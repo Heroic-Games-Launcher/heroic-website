@@ -34,6 +34,19 @@ article h2 {
   --typography-spacing-vertical: 1.874rem;
 }
 
+/* Donate cards: brand icon next to the card title */
+.donate-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.donate-card-icon {
+  flex-shrink: 0;
+  font-size: 1.4em;
+  line-height: 1;
+}
+
 /* Snippet */
 code.snippet,
 code.snippet.hljs {

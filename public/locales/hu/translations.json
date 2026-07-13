@@ -212,6 +212,12 @@
       "description": "Segíts nekünk azzal, hogy bármilyen platformra vásárolsz bármilyen játékot a Green Man Gamingen a partneri linkünkkel.",
       "button": "Irány a Green Man Gaming"
     },
+    "humble": {
+      "title": "Humble Bundle",
+      "type": "Egyszeri",
+      "description": "Segíts nekünk azzal, hogy játékokat vagy csomagokat vásárolsz a Humble Bundle-ön a partneri linkünkkel.",
+      "button": "Irány a Humble Bundle"
+    },
     "github": {
       "title": "GitHub szponzor",
       "type": "Egyszeri vagy rugalmas előfizetés",

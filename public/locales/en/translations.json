@@ -242,6 +242,12 @@
       "description": "Help us by buying any game for any platform on Green Man Gaming using our affiliate link.",
       "button": "Go to Green Man Gaming"
     },
+    "humble": {
+      "title": "Humble Bundle",
+      "type": "One-time",
+      "description": "Help us by buying games or bundles on Humble Bundle using our affiliate link.",
+      "button": "Go to Humble Bundle"
+    },
     "github": {
       "title": "GitHub Sponsor",
       "type": "One-time or flexible-sub",

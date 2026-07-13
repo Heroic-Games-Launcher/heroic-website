@@ -212,6 +212,12 @@
       "description": "Pomóż nam, kupując dowolną grę na dowolną platformę w Green Man Gaming przez nasz link afiliacyjny.",
       "button": "Przejdź do Green Man Gaming"
     },
+    "humble": {
+      "title": "Humble Bundle",
+      "type": "Jednorazowo",
+      "description": "Pomóż nam, kupując gry lub pakiety w Humble Bundle przez nasz link afiliacyjny.",
+      "button": "Przejdź do Humble Bundle"
+    },
     "github": {
       "title": "Sponsor GitHub",
       "type": "Jednorazowa lub elastyczna subskrypcja",
