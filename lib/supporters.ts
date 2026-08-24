@@ -15,7 +15,7 @@ export function getRoleFromAmount(amountCents: number): string {
 interface GitHubSponsorNode {
   tier: {
     monthlyPriceInCents: number;
-  };
+  } | null;
   sponsorEntity: {
     login: string;
     name: string | null;
@@ -106,11 +106,12 @@ export async function getGitHubSponsors(): Promise<Supporter[]> {
     const nodes: GitHubSponsorNode[] = result.data?.organization?.sponsorshipsAsMaintainer?.nodes || [];
 
     return nodes
+      .filter((node: GitHubSponsorNode) => node.tier != null)
       .map((node: GitHubSponsorNode) => ({
         name: node.sponsorEntity.name || node.sponsorEntity.login,
-        amount: node.tier.monthlyPriceInCents,
+        amount: node.tier!.monthlyPriceInCents,
         avatar: node.sponsorEntity.avatarUrl,
-        role: getRoleFromAmount(node.tier.monthlyPriceInCents),
+        role: getRoleFromAmount(node.tier!.monthlyPriceInCents),
       }))
       .filter((s: Supporter) => (s.amount || 0) > 0)
       .sort((a: Supporter, b: Supporter) => {
