@@ -36,9 +36,13 @@ export default function DownloadButton({ releases }: Props) {
   }, [])
 
   const optionsByOs: Record<OS, DownloadOption[]> = {
+    // Windows downloads open the GitHub releases page instead of downloading
+    // an installer directly.
     windows: [
-      { label: t('home.downloadMenu.windowsInstaller'), href: releases.Windows },
-      { label: t('home.downloadMenu.windowsArm'), href: releases.WindowsArm }
+      {
+        label: t('home.downloadMenu.windowsGithub', 'Windows — GitHub Releases'),
+        href: releases.Windows
+      }
     ],
     mac: [
       { label: t('home.downloadMenu.macApple'), href: releases.MacArm },

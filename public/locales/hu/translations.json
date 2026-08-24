@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "Minden verzió és platform →"
+      "allVersions": "Minden verzió és platform →",
+      "windowsGithub": "Windows — GitHub kiadások"
     },
     "viewOnGithub": "Megtekintés a GitHubon",
     "highlights": {
@@ -165,6 +166,10 @@
       },
       "setupArm": {
         "description": "Windowst futtató ARM-eszközökhöz (például Snapdragon X / Surface). Automatikus frissítéssel telepíti a Heroicot, ugyanúgy, mint az x64-es verzió."
+      },
+      "github": {
+        "description": "A Windows letöltések (x64, ARM64 és hordozható) a GitHub kiadási oldalunkon érhetők el.",
+        "button": "Letöltés a GitHubról"
       }
     },
     "macos": {

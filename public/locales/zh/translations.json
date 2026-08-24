@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "所有版本与平台 →"
+      "allVersions": "所有版本与平台 →",
+      "windowsGithub": "Windows — GitHub 发布页"
     },
     "viewOnGithub": "在 GitHub 上查看",
     "highlights": {
@@ -165,6 +166,10 @@
       },
       "setupArm": {
         "description": "适用于 ARM 设备上的 Windows（例如 Snapdragon X / Surface）。安装 Heroic 并支持自动更新，与 x64 版本相同。"
+      },
+      "github": {
+        "description": "Windows 版本下载（x64、ARM64 和便携版）可在我们的 GitHub 发布页面获取。",
+        "button": "从 GitHub 下载"
       }
     },
     "macos": {

@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "すべてのバージョンとプラットフォーム →"
+      "allVersions": "すべてのバージョンとプラットフォーム →",
+      "windowsGithub": "Windows — GitHubリリース"
     },
     "viewOnGithub": "GitHub で見る",
     "highlights": {
@@ -165,6 +166,10 @@
       },
       "setupArm": {
         "description": "ARM デバイス上の Windows（Snapdragon X / Surface など）向け。x64 版と同様に、自動アップデート付きで Heroic をインストールします。"
+      },
+      "github": {
+        "description": "Windows版のダウンロード（x64、ARM64、ポータブル版）は、GitHubのリリースページから入手できます。",
+        "button": "GitHubからダウンロード"
       }
     },
     "macos": {

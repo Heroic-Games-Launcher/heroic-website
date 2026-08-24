@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "Tüm sürümler ve platformlar →"
+      "allVersions": "Tüm sürümler ve platformlar →",
+      "windowsGithub": "Windows — GitHub Sürümleri"
     },
     "viewOnGithub": "GitHub'da görüntüle",
     "highlights": {
@@ -165,6 +166,10 @@
       },
       "setupArm": {
         "description": "ARM cihazlardaki Windows için (Snapdragon X / Surface gibi). Heroic'i x64 sürümüyle aynı şekilde otomatik güncellemelerle kurar."
+      },
+      "github": {
+        "description": "Windows indirmeleri (x64, ARM64 ve taşınabilir) GitHub sürümler sayfamızda mevcuttur.",
+        "button": "GitHub'dan indir"
       }
     },
     "macos": {
