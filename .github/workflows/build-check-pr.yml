@@ -1,0 +1,22 @@
+name: Build check on PR
+
+on: pull_request
+
+jobs:
+  build:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    env:
+      G_SPONSORS: ${{ secrets.G_SPONSORS }}
+      PATREON_TOKEN: ${{ secrets.PATREON_TOKEN }}
+      PATREON_CAMPAIGN_ID: ${{ secrets.PATREON_CAMPAIGN_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Just validates the PR builds and exports cleanly. This intentionally
+      # does not deploy anywhere - there's no preview-channel for now
+      - run: yarn && yarn build && yarn export
