@@ -44,8 +44,7 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "All versions & platforms →",
-      "windowsGithub": "Windows — GitHub Releases"
+      "allVersions": "All versions & platforms →"
     },
     "faq": "FAQ",
     "mainFeatures": "MAIN FEATURES AND MORE INFO",
@@ -174,10 +173,6 @@
         "title": "Portable",
         "description": "Use the portable version in case you do not want the full installation. Check for x64 and arm64 versions on our Github.",
         "button": "See all packages"
-      },
-      "github": {
-        "description": "Windows downloads (x64, ARM64 and portable) are available on our GitHub releases page.",
-        "button": "Download from GitHub"
       }
     },
     "macos": {

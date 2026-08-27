@@ -122,22 +122,68 @@ const Downloads: NextPage = () => {
               <FontAwesomeIcon icon={faWindows} />
               {t('downloads.windows.title')}
             </summary>
+            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.windows')}</p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
-                <h2>{t('downloads.windows.title')}</h2>
-                <p>
-                  {t(
-                    'downloads.windows.github.description',
-                    'Windows downloads (x64, ARM64 and portable) are available on our GitHub releases page.'
+                <h2>
+                  {t('downloads.windows.setup.title')} (x64)
+                  <span className={styles.recommended}>
+                    {t('downloads.recommended')}
+                  </span>
+                </h2>
+                <p>{t('downloads.windows.setup.description')}</p>
+                <footer className="downloadLink">
+                  <a href={releases.Windows}>
+                    <strong onClick={() => handleDownload('windows-stable')}>
+                      {t('downloads.windows.setup.stable')}
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.Windows.split('/')[7] ?? ''})`}
+                    </span>
+                  </a>
+                  {releases.WindowsBeta && (
+                    <a href={releases.WindowsBeta}>
+                      <strong onClick={() => handleDownload('windows-beta')}>
+                        {t('downloads.windows.setup.beta')}
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
                   )}
-                </p>
+                </footer>
+              </article>
+              <article className={styles.downloadBoxes}>
+                <h2>{t('downloads.windows.setup.title')} (ARM64)</h2>
+                <p>{t('downloads.windows.setupArm.description')}</p>
+                <footer className="downloadLink">
+                  <a href={releases.WindowsArm}>
+                    <strong onClick={() => handleDownload('windows-arm-stable')}>
+                      {t('downloads.windows.setup.stable')}
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.WindowsArm.split('/')[7] ?? ''})`}
+                    </span>
+                  </a>
+                  {releases.WindowsArmBeta && (
+                    <a href={releases.WindowsArmBeta}>
+                      <strong onClick={() => handleDownload('windows-arm-beta')}>
+                        {t('downloads.windows.setup.beta')}
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.WindowsArmBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
+                  )}
+                </footer>
+              </article>
+              <article className={styles.downloadBoxes}>
+                <h2>{t('downloads.windows.portable.title')}</h2>
+                <p>{t('downloads.windows.portable.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
-                    <strong onClick={() => handleDownload('windows-github')}>
-                      {t(
-                        'downloads.windows.github.button',
-                        'Download from GitHub'
-                      )}
+                    <strong onClick={() => handleDownload('all-packages')}>
+                      {t('downloads.windows.portable.button')}
                     </strong>
                   </a>
                 </footer>

@@ -46,13 +46,11 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
 
     // Beta downloads are currently disabled; they fall back to null so the UI
     // hides them. See the git history for the previous prerelease parsing.
-    // Windows downloads link to the GitHub releases page instead of the
-    // installer asset directly.
     return {
       Linux: urlFor('.AppImage', true),
       LinuxBeta: null,
-      Windows: defaultUrl,
-      WindowsArm: defaultUrl,
+      Windows: urlFor('Setup-x64'),
+      WindowsArm: urlFor('Setup-arm64'),
       WindowsBeta: null,
       WindowsArmBeta: null,
       Mac: urlFor('macOS-x64'),

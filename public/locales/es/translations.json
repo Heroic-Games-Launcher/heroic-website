@@ -77,8 +77,7 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "Todas las versiones y plataformas →",
-      "windowsGithub": "Windows — Releases de GitHub"
+      "allVersions": "Todas las versiones y plataformas →"
     },
     "viewOnGithub": "Ver en GitHub",
     "highlights": {
@@ -166,10 +165,6 @@
       },
       "setupArm": {
         "description": "Para Windows en dispositivos ARM (como Snapdragon X / Surface). Instala Heroic con actualizaciones automáticas, igual que la versión x64."
-      },
-      "github": {
-        "description": "Las descargas para Windows (x64, ARM64 y portable) están disponibles en nuestra página de releases de GitHub.",
-        "button": "Descargar desde GitHub"
       }
     },
     "macos": {
