@@ -7,7 +7,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "yarn && yarn build && yarn export",
+    "deploy": "./deploy.sh",
     "i18n:extract": "i18next-cli extract"
   },
   "dependencies": {

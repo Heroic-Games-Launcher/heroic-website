@@ -1,0 +1,11 @@
+allowBuilds:
+  '@fortawesome/fontawesome-common-types': true
+  '@fortawesome/fontawesome-svg-core': true
+  '@fortawesome/free-brands-svg-icons': true
+  '@fortawesome/free-solid-svg-icons': true
+  '@swc/core': true
+  cwebp-bin: true
+  fsevents: true
+  gifsicle: true
+  optipng-bin: true
+  sharp: true

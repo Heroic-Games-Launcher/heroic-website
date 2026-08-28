@@ -19,4 +19,4 @@ jobs:
 
       # Just validates the PR builds and exports cleanly. This intentionally
       # does not deploy anywhere - there's no preview-channel for now
-      - run: yarn && yarn build && yarn export
+      - run: pnpm install && pnpm build && pnpm export

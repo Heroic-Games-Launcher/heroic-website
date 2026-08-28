@@ -1,15 +1,26 @@
 name: Deploy to VPS on merge
 
+# Hostinger blocks inbound SSH from GitHub Actions runner IP ranges (raw TCP
+# to the VPS times out from runners on both port 22 and 2222, while the same
+# ports are reachable from residential IPs). So instead of pushing over SSH,
+# this workflow publishes the static export to the "deploy" branch, and the
+# VPS pulls it from GitHub on a cron (outbound traffic is never blocked).
+# See scripts/vps-pull-deploy.sh for the VPS side.
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+  # Nightly rebuild so sponsor data stays fresh
   schedule:
     - cron: '0 0 * * *'
 
+permissions:
+  contents: write
+
 jobs:
-  build_and_deploy:
+  build_and_publish:
     runs-on: ubuntu-latest
     env:
       G_SPONSORS: ${{ secrets.G_SPONSORS }}
@@ -18,34 +29,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - run: yarn && yarn build && yarn export
+      - run: pnpm install && pnpm build && pnpm export
 
-      - name: Configure SSH
+      - name: Publish static export to the deploy branch
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          # -T caps how long ssh-keyscan waits, and "|| true" keeps a transient
-          # network hiccup from failing the whole step (bash runs with -e here).
-          # This is best-effort anyway: the rsync step below already uses
-          # StrictHostKeyChecking=no, so a missing known_hosts entry is fine.
-          ssh-keyscan -T 15 -p 2222 -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts || true
-
-      - name: Test raw TCP connectivity to VPS
-        run: |
-          echo "Testing TCP connect to ${{ secrets.VPS_HOST }}:2222 ..."
-          timeout 10 bash -c "cat < /dev/null > /dev/tcp/${{ secrets.VPS_HOST }}/2222" \
-            && echo "OK: port 2222 reachable" \
-            || echo "FAILED: port 2222 NOT reachable from this runner"
-
-      - name: Deploy static export to VPS
-        run: |
-          set -x
-          rsync -avvz --delete \
-            -e "ssh -v -p 2222 -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o ConnectTimeout=15 -o BatchMode=yes" \
-            out/ deploy@${{ secrets.VPS_HOST }}:
-          echo "rsync exit code: $?"
+          cd out
+          git init -b deploy
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Deploy ${GITHUB_SHA}"
+          git push --force \
+            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" \
+            deploy
