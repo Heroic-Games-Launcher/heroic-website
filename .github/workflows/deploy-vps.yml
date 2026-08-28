@@ -29,13 +29,23 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -T 15 -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts || true
+          # -T caps how long ssh-keyscan waits, and "|| true" keeps a transient
+          # network hiccup from failing the whole step (bash runs with -e here).
+          # This is best-effort anyway: the rsync step below already uses
+          # StrictHostKeyChecking=no, so a missing known_hosts entry is fine.
+          ssh-keyscan -T 15 -p 2222 -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts || true
 
-      # The deploy user on the VPS is restricted (via an rrsync command in
-      # authorized_keys) to only rsync into /docker/heroic-website/data, so
-      # the destination path after the colon is intentionally left empty.
+      - name: Test raw TCP connectivity to VPS
+        run: |
+          echo "Testing TCP connect to ${{ secrets.VPS_HOST }}:2222 ..."
+          timeout 10 bash -c "cat < /dev/null > /dev/tcp/${{ secrets.VPS_HOST }}/2222" \
+            && echo "OK: port 2222 reachable" \
+            || echo "FAILED: port 2222 NOT reachable from this runner"
+
       - name: Deploy static export to VPS
         run: |
-          rsync -avz --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+          set -x
+          rsync -avvz --delete \
+            -e "ssh -v -p 2222 -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o ConnectTimeout=15 -o BatchMode=yes" \
             out/ deploy@${{ secrets.VPS_HOST }}:
+          echo "rsync exit code: $?"
