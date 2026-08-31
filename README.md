@@ -1,4 +1,4 @@
-This is a the Heroic Games Launcher Website repository
+This is the Heroic Games Launcher Website repository
 
 ## How to contribute
 
