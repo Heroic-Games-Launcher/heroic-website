@@ -146,7 +146,7 @@
       },
       "other": {
         "title": "其他",
-        "description": "Heroic也在RPM、DEB和TAR.XZ中分发。请在我们的Github上检查替代仓库。",
+        "description": "Heroic也提供适用于x64和ARM64（aarch64）Linux的RPM、DEB、Pacman和TAR.XZ。请在我们的Github上检查替代仓库。",
         "button": "查看全部"
       }
     },

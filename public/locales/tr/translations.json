@@ -146,7 +146,7 @@
       },
       "other": {
         "title": "Diğer",
-        "description": "Heroic ayrıca RPM, DEB ve TAR.XZ formatlarında da sunulmaktadır. Alternatif depolar için GitHub sayfamıza bakın.",
+        "description": "Heroic ayrıca x64 ve ARM64 (aarch64) Linux için RPM, DEB, Pacman ve TAR.XZ formatlarında da sunulmaktadır. Alternatif depolar için GitHub sayfamıza bakın.",
         "button": "Tümünü gör"
       }
     },

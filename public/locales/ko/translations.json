@@ -146,7 +146,7 @@
       },
       "other": {
         "title": "기타",
-        "description": "Heroic은 RPM, DEB, TAR.XZ로도 배포됩니다. 우리의 Github에서 대체 리포를 확인하세요.",
+        "description": "Heroic은 x64 및 ARM64(aarch64) Linux용 RPM, DEB, Pacman, TAR.XZ로도 배포됩니다. 우리의 Github에서 대체 리포를 확인하세요.",
         "button": "모두 보기"
       }
     },

@@ -146,7 +146,7 @@
       },
       "other": {
         "title": "Egyéb",
-        "description": "A Heroic RPM, DEB és TAR.XZ formátumban is terjesztésre kerül. Ellenőrizd az alternatív repo-kat a Github-onkon.",
+        "description": "A Heroic RPM, DEB, Pacman és TAR.XZ formátumban is terjesztésre kerül x64 és ARM64 (aarch64) Linuxra. Ellenőrizd az alternatív repo-kat a Github-onkon.",
         "button": "Lásd az összeset"
       }
     },

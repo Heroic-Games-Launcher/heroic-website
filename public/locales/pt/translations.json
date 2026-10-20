@@ -146,7 +146,7 @@
       },
       "other": {
         "title": "Outros",
-        "description": "Heroic também é distribuído em RPM, DEB e TAR.XZ. Verifique repos alternativos no nosso Github.",
+        "description": "Heroic também é distribuído em RPM, DEB, Pacman e TAR.XZ, para Linux x64 e ARM64 (aarch64). Verifique repos alternativos no nosso Github.",
         "button": "Ver todos"
       }
     },

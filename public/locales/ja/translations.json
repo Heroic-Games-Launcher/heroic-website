@@ -146,7 +146,7 @@
       },
       "other": {
         "title": "その他",
-        "description": "HeroicはRPM、DEB、TAR.XZでも配布されています。私たちのGithubで代替リポジトリを確認してください。",
+        "description": "HeroicはRPM、DEB、Pacman、TAR.XZでも、x64とARM64（aarch64）のLinux向けに配布されています。私たちのGithubで代替リポジトリを確認してください。",
         "button": "すべて見る"
       }
     },
