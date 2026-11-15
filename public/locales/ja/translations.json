@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "すべてのバージョンとプラットフォーム →"
+      "allVersions": "すべてのバージョンとプラットフォーム →",
+      "support": "支援する →"
     },
     "viewOnGithub": "GitHub で見る",
     "highlights": {
@@ -119,6 +120,30 @@
     "consoleMode": {
       "title": "Console Mode",
       "description": "テレビや Steam Deck 向けに作られた、全画面でコントローラーに最適化されたインターフェースに切り替えられます。マウスなしで、ソファに座ったままゲームを閲覧・インストール・起動できます。"
+    },
+    "downloadNudge": {
+      "message": "ダウンロードを開始しました。Heroic は無料で、ボランティアによって開発されています。時間の節約になっているなら、ぜひプロジェクトへのご支援をご検討ください。",
+      "cta": "Heroic を支援する",
+      "dismiss": "通知を閉じる"
+    },
+    "supportCta": {
+      "title": "Heroic は無料です。このまま続けられるようご協力ください。",
+      "subtitle": "広告なし、トラッキングなし、有料プランもなし。ボランティアが作るランチャーです。Heroic がお役に立っているなら、開発へのご支援をご検討ください。",
+      "options": {
+        "patreon": {
+          "title": "Patreon",
+          "description": "毎月の支援（特典あり）"
+        },
+        "kofi": {
+          "title": "Ko-fi",
+          "description": "アカウント不要の単発の寄付"
+        },
+        "github": {
+          "title": "GitHub Sponsors",
+          "description": "GitHub 経由の毎月の支援"
+        }
+      },
+      "allWays": "Heroic を支援するすべての方法を見る →"
     }
   },
   "downloads": {

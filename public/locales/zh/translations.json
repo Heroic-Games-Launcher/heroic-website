@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "所有版本与平台 →"
+      "allVersions": "所有版本与平台 →",
+      "support": "支持我们 →"
     },
     "viewOnGithub": "在 GitHub 上查看",
     "highlights": {
@@ -119,6 +120,30 @@
     "consoleMode": {
       "title": "Console Mode",
       "description": "切换到专为电视和 Steam Deck 打造的全屏、适配手柄的界面。无需鼠标，在沙发上就能浏览、安装和启动你的游戏。"
+    },
+    "downloadNudge": {
+      "message": "下载已开始。Heroic 是免费的，由志愿者开发——如果它为你节省了时间，请考虑支持这个项目。",
+      "cta": "支持 Heroic",
+      "dismiss": "关闭通知"
+    },
+    "supportCta": {
+      "title": "Heroic 是免费的，请帮助我们保持下去。",
+      "subtitle": "没有广告、没有跟踪、没有付费版——只有一个由志愿者开发的启动器。如果 Heroic 为你节省了时间，请考虑支持它的开发。",
+      "options": {
+        "patreon": {
+          "title": "Patreon",
+          "description": "每月支持，可获得奖励"
+        },
+        "kofi": {
+          "title": "Ko-fi",
+          "description": "一次性捐赠，无需账号"
+        },
+        "github": {
+          "title": "GitHub Sponsors",
+          "description": "通过 GitHub 每月支持"
+        }
+      },
+      "allWays": "查看支持 Heroic 的所有方式 →"
     }
   },
   "downloads": {

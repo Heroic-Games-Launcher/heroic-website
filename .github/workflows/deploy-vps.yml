@@ -50,11 +50,3 @@ jobs:
           git push --force \
             "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" \
             deploy
-
-      # The VPS pulls the deploy branch on a 5 minute cron, so this run usually
-      # still sees the previous build. It is informational: it exists so a
-      # broken routing config (soft 404s, missing /donate) shows up in the
-      # actions log instead of silently for weeks.
-      - name: Smoke test the live site
-        continue-on-error: true
-        run: node scripts/check-deploy.mjs

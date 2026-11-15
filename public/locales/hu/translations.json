@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "Minden verzió és platform →"
+      "allVersions": "Minden verzió és platform →",
+      "support": "Támogass minket →"
     },
     "viewOnGithub": "Megtekintés a GitHubon",
     "highlights": {
@@ -119,6 +120,30 @@
     "consoleMode": {
       "title": "Console Mode",
       "description": "Válts egy teljes képernyős, kontrollerbarát felületre, amelyet a TV-hez és a Steam Deckhez terveztek. Böngészd, telepítsd és indítsd el a játékaidat a kanapéról, egér nélkül."
+    },
+    "downloadNudge": {
+      "message": "Elindult a letöltés. A Heroic ingyenes, önkéntesek fejlesztik — ha időt spórol neked, fontold meg a projekt támogatását.",
+      "cta": "Heroic támogatása",
+      "dismiss": "Értesítés bezárása"
+    },
+    "supportCta": {
+      "title": "A Heroic ingyenes. Segíts, hogy az is maradjon.",
+      "subtitle": "Nincs reklám, nincs követés és nincs fizetős csomag — csak egy launcher, amit önkéntesek fejlesztenek. Ha a Heroic időt spórol neked, fontold meg a fejlesztés támogatását.",
+      "options": {
+        "patreon": {
+          "title": "Patreon",
+          "description": "Havi támogatás, jutalmakkal"
+        },
+        "kofi": {
+          "title": "Ko-fi",
+          "description": "Egyszeri adomány, fiók nélkül"
+        },
+        "github": {
+          "title": "GitHub Sponsors",
+          "description": "Havi támogatás GitHubon keresztül"
+        }
+      },
+      "allWays": "Nézd meg a Heroic támogatásának összes módját →"
     }
   },
   "downloads": {
