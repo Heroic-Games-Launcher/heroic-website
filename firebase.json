@@ -2,6 +2,12 @@
   "hosting": {
     "public": "out",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
     "headers": [
       {
         "source": "**/_next/static/**",
@@ -22,7 +28,6 @@
         ]
       }
     ],
-    "cleanUrls": true,
-    "trailingSlash": false
+    "cleanUrls": true
   }
 }

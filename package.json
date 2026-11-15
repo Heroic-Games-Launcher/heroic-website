@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "./deploy.sh",
-    "check:deploy": "node scripts/check-deploy.mjs",
     "i18n:extract": "i18next-cli extract"
   },
   "dependencies": {
