@@ -2,15 +2,15 @@ import { NextPage } from 'next'
 import React from 'react'
 import { getLatestReleases, ReleaseUrls } from '../lib/github'
 import styles from '../styles/Home.module.css'
-import { useRouter } from 'next/router'
 import Seo from '../components/Seo'
+import DownloadNudge, { useDownloadNudge } from '../components/DownloadNudge'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinux, faWindows, faApple } from '@fortawesome/free-brands-svg-icons'
 
 const Downloads: NextPage = () => {
-  const router = useRouter()
   const { t } = useTranslation()
+  const { show: showNudge, notify, dismiss } = useDownloadNudge()
 
   // Resolved after mount so server and client render the same markup (avoids a
   // hydration mismatch on the <details open> defaults).
@@ -36,12 +36,6 @@ const Downloads: NextPage = () => {
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac
 
-  function handleDownload(_version: string) {
-    setTimeout(() => {
-      router.push('/donate')
-    }, 3000)
-  }
-
   return (
     <>
       <Seo
@@ -60,7 +54,9 @@ const Downloads: NextPage = () => {
               <FontAwesomeIcon icon={faLinux} />
               {t('downloads.linux.title')}
             </summary>
-            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.linux')}</p>
+            <p>
+              {t('downloads.supportedOS')} {t('downloads.osRequirements.linux')}
+            </p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
                 <h2>
@@ -71,8 +67,12 @@ const Downloads: NextPage = () => {
                 </h2>
                 <p>{t('downloads.linux.flatpak.description')}</p>
                 <footer>
-                  <a href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl">
-                    <strong onClick={() => handleDownload('flatpak')}>
+                  <a
+                    href="https://flathub.org/apps/details/com.heroicgameslauncher.hgl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <strong onClick={notify}>
                       {t('downloads.linux.flatpak.button')}
                     </strong>
                   </a>
@@ -83,7 +83,7 @@ const Downloads: NextPage = () => {
                 <p>{t('downloads.linux.appimage.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Linux}>
-                    <strong onClick={() => handleDownload('appimage-stable')}>
+                    <strong onClick={notify}>
                       {t('downloads.linux.appimage.stable')}
                     </strong>
 
@@ -93,7 +93,7 @@ const Downloads: NextPage = () => {
                   </a>
                   {releases.LinuxBeta && (
                     <a href={releases.LinuxBeta}>
-                      <strong onClick={() => handleDownload('appimage-beta')}>
+                      <strong onClick={notify}>
                         {t('downloads.linux.appimage.beta')}
                       </strong>
                       <span className="smallText">
@@ -108,7 +108,7 @@ const Downloads: NextPage = () => {
                 <p>{t('downloads.linux.other.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
-                    <strong onClick={() => handleDownload('all-packages')}>
+                    <strong onClick={notify}>
                       {t('downloads.linux.other.button')}
                     </strong>
                   </a>
@@ -122,7 +122,10 @@ const Downloads: NextPage = () => {
               <FontAwesomeIcon icon={faWindows} />
               {t('downloads.windows.title')}
             </summary>
-            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.windows')}</p>
+            <p>
+              {t('downloads.supportedOS')}{' '}
+              {t('downloads.osRequirements.windows')}
+            </p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
                 <h2>
@@ -134,7 +137,7 @@ const Downloads: NextPage = () => {
                 <p>{t('downloads.windows.setup.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Windows}>
-                    <strong onClick={() => handleDownload('windows-stable')}>
+                    <strong onClick={notify}>
                       {t('downloads.windows.setup.stable')}
                     </strong>
                     <span className="smallText">
@@ -143,7 +146,7 @@ const Downloads: NextPage = () => {
                   </a>
                   {releases.WindowsBeta && (
                     <a href={releases.WindowsBeta}>
-                      <strong onClick={() => handleDownload('windows-beta')}>
+                      <strong onClick={notify}>
                         {t('downloads.windows.setup.beta')}
                       </strong>
                       <span className="smallText">
@@ -158,7 +161,7 @@ const Downloads: NextPage = () => {
                 <p>{t('downloads.windows.setupArm.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.WindowsArm}>
-                    <strong onClick={() => handleDownload('windows-arm-stable')}>
+                    <strong onClick={notify}>
                       {t('downloads.windows.setup.stable')}
                     </strong>
                     <span className="smallText">
@@ -167,7 +170,7 @@ const Downloads: NextPage = () => {
                   </a>
                   {releases.WindowsArmBeta && (
                     <a href={releases.WindowsArmBeta}>
-                      <strong onClick={() => handleDownload('windows-arm-beta')}>
+                      <strong onClick={notify}>
                         {t('downloads.windows.setup.beta')}
                       </strong>
                       <span className="smallText">
@@ -182,7 +185,7 @@ const Downloads: NextPage = () => {
                 <p>{t('downloads.windows.portable.description')}</p>
                 <footer>
                   <a href="https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest">
-                    <strong onClick={() => handleDownload('all-packages')}>
+                    <strong onClick={notify}>
                       {t('downloads.windows.portable.button')}
                     </strong>
                   </a>
@@ -196,14 +199,16 @@ const Downloads: NextPage = () => {
               <FontAwesomeIcon icon={faApple} />
               {t('downloads.macos.title')}
             </summary>
-            <p>{t('downloads.supportedOS')} {t('downloads.osRequirements.macos')}</p>
+            <p>
+              {t('downloads.supportedOS')} {t('downloads.osRequirements.macos')}
+            </p>
             <div className="grid">
               <article className={styles.downloadBoxes}>
                 <h2>{t('downloads.macos.appleChips.title')}</h2>
                 <p>{t('downloads.macos.appleChips.description')}</p>
                 <footer>
                   <a href={releases.MacArm}>
-                    <strong onClick={() => handleDownload('mac-stable')}>
+                    <strong onClick={notify}>
                       {t('downloads.macos.appleChips.stable')}
                     </strong>
                     <span className="smallText">
@@ -212,7 +217,7 @@ const Downloads: NextPage = () => {
                   </a>
                   {releases.MacArmBeta && (
                     <a href={releases.MacArmBeta}>
-                      <strong onClick={() => handleDownload('mac-beta')}>
+                      <strong onClick={notify}>
                         {t('downloads.macos.appleChips.beta')}
                       </strong>
                       <span className="smallText">
@@ -227,7 +232,7 @@ const Downloads: NextPage = () => {
                 <p>{t('downloads.macos.intelChips.description')}</p>
                 <footer>
                   <a href={releases.Mac}>
-                    <strong onClick={() => handleDownload('mac-stable')}>
+                    <strong onClick={notify}>
                       {t('downloads.macos.intelChips.stable')}
                     </strong>
                     <span className="smallText">
@@ -236,7 +241,7 @@ const Downloads: NextPage = () => {
                   </a>
                   {releases.MacBeta && (
                     <a href={releases.MacBeta}>
-                      <strong onClick={() => handleDownload('mac-beta')}>
+                      <strong onClick={notify}>
                         {t('downloads.macos.intelChips.beta')}
                       </strong>
                       <span className="smallText">
@@ -250,6 +255,8 @@ const Downloads: NextPage = () => {
           </details>
         </div>
       </header>
+
+      <DownloadNudge show={showNudge} onDismiss={dismiss} />
     </>
   )
 }

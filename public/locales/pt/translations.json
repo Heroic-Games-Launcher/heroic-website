@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "Todas as versões e plataformas →"
+      "allVersions": "Todas as versões e plataformas →",
+      "support": "Apoie-nos →"
     },
     "viewOnGithub": "Ver no GitHub",
     "highlights": {
@@ -119,6 +120,30 @@
     "consoleMode": {
       "title": "Console Mode",
       "description": "Mude para uma interface em tela cheia e amigável a controles, feita para a TV e o Steam Deck. Navegue, instale e inicie seus jogos do sofá, sem precisar de mouse."
+    },
+    "downloadNudge": {
+      "message": "Seu download começou. O Heroic é gratuito e feito por voluntários — se ele te ajuda, considere apoiar o projeto.",
+      "cta": "Apoiar o Heroic",
+      "dismiss": "Fechar notificação"
+    },
+    "supportCta": {
+      "title": "O Heroic é gratuito. Ajude a mantê-lo assim.",
+      "subtitle": "Sem anúncios, sem rastreamento e sem plano pago — apenas um launcher feito por voluntários. Se o Heroic te economiza tempo, considere apoiar o desenvolvimento.",
+      "options": {
+        "patreon": {
+          "title": "Patreon",
+          "description": "Apoio mensal, com recompensas"
+        },
+        "kofi": {
+          "title": "Ko-fi",
+          "description": "Doação única, sem precisar de conta"
+        },
+        "github": {
+          "title": "GitHub Sponsors",
+          "description": "Apoio mensal pelo GitHub"
+        }
+      },
+      "allWays": "Veja todas as formas de apoiar o Heroic →"
     }
   },
   "downloads": {
@@ -440,9 +465,7 @@
       },
       {
         "question": "Heroic é gratuito para usar?",
-        "answers": [
-          "Sim, Heroic é completamente gratuito para usar."
-        ]
+        "answers": ["Sim, Heroic é completamente gratuito para usar."]
       },
       {
         "question": "Há alternativas ao Heroic?",
