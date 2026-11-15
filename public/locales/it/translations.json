@@ -77,7 +77,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "Tutte le versioni e piattaforme →"
+      "allVersions": "Tutte le versioni e piattaforme →",
+      "support": "Sostienici →"
     },
     "viewOnGithub": "Visualizza su GitHub",
     "highlights": {
@@ -119,6 +120,30 @@
     "consoleMode": {
       "title": "Console Mode",
       "description": "Passa a un'interfaccia a schermo intero e ottimizzata per il controller, pensata per la TV e lo Steam Deck. Sfoglia, installa e avvia i tuoi giochi dal divano, senza bisogno del mouse."
+    },
+    "downloadNudge": {
+      "message": "Il download è iniziato. Heroic è gratuito ed è sviluppato da volontari: se ti fa risparmiare tempo, valuta di sostenere il progetto.",
+      "cta": "Sostieni Heroic",
+      "dismiss": "Chiudi notifica"
+    },
+    "supportCta": {
+      "title": "Heroic è gratuito. Aiutaci a mantenerlo così.",
+      "subtitle": "Niente pubblicità, niente tracciamento e nessun piano a pagamento: solo un launcher sviluppato da volontari. Se Heroic ti fa risparmiare tempo, valuta di sostenere lo sviluppo.",
+      "options": {
+        "patreon": {
+          "title": "Patreon",
+          "description": "Sostegno mensile, con ricompense"
+        },
+        "kofi": {
+          "title": "Ko-fi",
+          "description": "Donazione una tantum, senza account"
+        },
+        "github": {
+          "title": "GitHub Sponsors",
+          "description": "Sostegno mensile tramite GitHub"
+        }
+      },
+      "allWays": "Scopri tutti i modi per sostenere Heroic →"
     }
   },
   "downloads": {
