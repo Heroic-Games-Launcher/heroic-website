@@ -1,0 +1,83 @@
+/* Post-download donation nudge: a non-blocking toast in the corner. */
+.nudge {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 320px;
+  max-width: calc(100vw - 24px);
+  padding: 18px;
+  border: var(--border-width, 1px) solid var(--muted-border-color, #d0d3e0);
+  border-radius: 12px;
+  background-color: var(--card-background-color, var(--background));
+  box-shadow: var(--card-box-shadow, 0 12px 32px rgba(0, 0, 0, 0.28));
+  text-align: left;
+  animation: nudgeIn 0.25s ease-out;
+}
+
+@keyframes nudgeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.text {
+  margin: 0;
+  padding-right: 16px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.cta {
+  padding: 9px 14px;
+  border-radius: 8px;
+  background: var(--primary, #1a5a8f);
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta:hover {
+  filter: brightness(1.08);
+}
+
+.close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  padding: 4px 8px;
+  border: 0;
+  background: transparent;
+  color: var(--muted-color, #565e69);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .nudge {
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nudge {
+    animation: none;
+  }
+}

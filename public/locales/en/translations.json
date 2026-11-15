@@ -44,7 +44,8 @@
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
       "linuxAppImage": "Linux — AppImage",
-      "allVersions": "All versions & platforms →"
+      "allVersions": "All versions & platforms →",
+      "support": "Support us →"
     },
     "faq": "FAQ",
     "mainFeatures": "MAIN FEATURES AND MORE INFO",
@@ -126,6 +127,30 @@
       "title": "Our Sponsors",
       "weblateDescription": "Hosting our translations",
       "signpathDescription": "Providing free signing of Windows binaries"
+    },
+    "downloadNudge": {
+      "message": "Your download has started. Heroic is free and built by volunteers — if it saves you time, consider supporting the project.",
+      "cta": "Support Heroic",
+      "dismiss": "Dismiss notification"
+    },
+    "supportCta": {
+      "title": "Heroic is free. Help keep it that way.",
+      "subtitle": "No ads, no tracking and no paid tier — just a launcher built by volunteers. If Heroic saves you time, consider supporting its development.",
+      "options": {
+        "patreon": {
+          "title": "Patreon",
+          "description": "Monthly support, with rewards"
+        },
+        "kofi": {
+          "title": "Ko-fi",
+          "description": "One-time donation, no account needed"
+        },
+        "github": {
+          "title": "GitHub Sponsors",
+          "description": "Monthly support through GitHub"
+        }
+      },
+      "allWays": "See all the ways you can support Heroic →"
     }
   },
   "downloads": {
@@ -471,9 +496,7 @@
       },
       {
         "question": "Is Heroic free to use?",
-        "answers": [
-          "Yes, Heroic is completely free to use."
-        ]
+        "answers": ["Yes, Heroic is completely free to use."]
       },
       {
         "question": "Are there any alternatives to Heroic?",

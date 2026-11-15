@@ -56,7 +56,10 @@
   border: var(--border-width, 1px) solid
     var(--dropdown-border-color, var(--muted-border-color));
   border-radius: var(--border-radius, 0.25rem);
-  background-color: var(--dropdown-background-color, var(--card-background-color));
+  background-color: var(
+    --dropdown-background-color,
+    var(--card-background-color)
+  );
   box-shadow: var(--card-box-shadow, 0 8px 24px rgba(0, 0, 0, 0.18));
   color: var(--dropdown-color, var(--color));
 }
@@ -85,4 +88,30 @@
 
 .allLink {
   font-weight: 600;
+}
+
+/* "Support us" entry, separated from the download links so it reads as a
+   different kind of action rather than a third-party download source. */
+.supportItem {
+  border-top: 1px solid var(--muted-border-color, #d0d3e0);
+}
+
+.menu .supportLink {
+  font-weight: 700;
+  /* Brand navy on light, azure on dark (navy on the navy background is ~2.2:1). */
+  color: var(--primary, #1a5a8f);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  .menu .supportLink {
+    color: #5aa9e6;
+  }
+}
+
+:global([data-theme='dark']) .menu .supportLink {
+  color: #5aa9e6;
+}
+
+:global([data-theme='light']) .menu .supportLink {
+  color: var(--primary, #1a5a8f);
 }

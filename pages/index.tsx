@@ -6,6 +6,7 @@ import { cached } from '../lib/cache'
 import Sponsorship from '../components/Sponsorship'
 import DownloadButton from '../components/DownloadButton'
 import Highlights from '../components/Highlights'
+import SupportCta from '../components/SupportCta'
 import ScreenshotsCarousel, { Slide } from '../components/ScreenshotsCarousel'
 import Seo, { SITE_URL } from '../components/Seo'
 
@@ -155,6 +156,8 @@ const Home: NextPage<HomeProps> = ({ releases }) => {
       </motion.header>
 
       <Highlights />
+
+      <SupportCta />
 
       <h2
         style={{

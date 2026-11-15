@@ -1,0 +1,106 @@
+.section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 72px 20px 80px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 12px;
+  /* Section heading: same visual size as the other home section headings while
+     staying an h2 in the document outline. */
+  font-size: 2rem;
+}
+
+.subtitle {
+  max-width: 640px;
+  margin: 0 auto 32px;
+  color: var(--muted-color, #565e69);
+  line-height: 1.6;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--muted-border-color, #d0d3e0);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  background: var(--card-background-color, transparent);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.option:hover,
+.option:focus-visible {
+  border-color: var(--primary, #1a5a8f);
+  transform: translateY(-2px);
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  /* Brand navy on light backgrounds (AA), lighter azure on the dark theme where
+     #1a5a8f would only reach ~2.2:1 — same override pattern as Home.module.css. */
+  color: var(--primary, #1a5a8f);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  .icon {
+    color: #5aa9e6;
+  }
+}
+
+:global([data-theme='dark']) .icon {
+  color: #5aa9e6;
+}
+
+:global([data-theme='light']) .icon {
+  color: var(--primary, #1a5a8f);
+}
+
+.optionText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.35;
+}
+
+.optionText small {
+  color: var(--muted-color, #565e69);
+}
+
+.allLink {
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .option {
+    transition: border-color 0.2s ease;
+  }
+
+  .option:hover,
+  .option:focus-visible {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 48px 16px 56px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
