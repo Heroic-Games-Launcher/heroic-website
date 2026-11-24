@@ -76,7 +76,8 @@
       "macApple": "macOS — Apple Silicon (M1+)",
       "macIntel": "macOS — Intel",
       "linuxFlatpak": "Linux — Flatpak",
-      "linuxAppImage": "Linux — AppImage",
+      "linuxAppImage": "Linux — AppImage (x86_64)",
+      "linuxAppImageArm": "Linux — AppImage (ARM64)",
       "allVersions": "所有版本与平台 →",
       "support": "支持我们 →"
     },

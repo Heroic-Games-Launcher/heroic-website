@@ -17,6 +17,7 @@ const Downloads: NextPage = () => {
   const [userAgent, setUserAgent] = React.useState('')
   const [releases, setReleases] = React.useState<ReleaseUrls>({
     Linux: '',
+    LinuxArm: '',
     Windows: '',
     WindowsArm: '',
     Mac: '',
@@ -79,7 +80,9 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h2>{t('downloads.linux.appimage.title')}</h2>
+                <h2>
+                  {t('downloads.linux.appimage.title')} (x86_64)
+                </h2>
                 <p>{t('downloads.linux.appimage.description')}</p>
                 <footer className="downloadLink">
                   <a href={releases.Linux}>
@@ -98,6 +101,30 @@ const Downloads: NextPage = () => {
                       </strong>
                       <span className="smallText">
                         {` (${releases.LinuxBeta.split('/')[7] ?? ''})`}
+                      </span>
+                    </a>
+                  )}
+                </footer>
+              </article>
+              <article className={styles.downloadBoxes}>
+                <h2>{t('downloads.linux.appimage.title')} (ARM64)</h2>
+                <p>{t('downloads.linux.appimage.description')}</p>
+                <footer className="downloadLink">
+                  <a href={releases.LinuxArm}>
+                    <strong onClick={notify}>
+                      {t('downloads.linux.appimage.stable')}
+                    </strong>
+                    <span className="smallText">
+                      {` (${releases.LinuxArm.split('/')[7] ?? ''})`}
+                    </span>
+                  </a>
+                  {releases.LinuxArmBeta && (
+                    <a href={releases.LinuxArmBeta}>
+                      <strong onClick={notify}>
+                        {t('downloads.linux.appimage.beta')}
+                      </strong>
+                      <span className="smallText">
+                        {` (${releases.LinuxArmBeta.split('/')[7] ?? ''})`}
                       </span>
                     </a>
                   )}

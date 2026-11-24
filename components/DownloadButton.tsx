@@ -71,7 +71,8 @@ export default function DownloadButton({ releases }: Props) {
         href: FLATHUB,
         newTab: true
       },
-      { label: t('home.downloadMenu.linuxAppImage'), href: releases.Linux }
+      { label: t('home.downloadMenu.linuxAppImage'), href: releases.Linux },
+      { label: t('home.downloadMenu.linuxAppImageArm'), href: releases.LinuxArm }
     ]
   }
 

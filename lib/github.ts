@@ -18,11 +18,13 @@ export interface Release {
 
 export interface ReleaseUrls {
   Linux: string
+  LinuxArm: string
   Windows: string
   WindowsArm: string
   Mac: string
   MacArm: string
   LinuxBeta?: string | null
+  LinuxArmBeta?: string | null
   WindowsBeta?: string | null
   WindowsArmBeta?: string | null
   MacBeta?: string | null
@@ -47,8 +49,10 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     // Beta downloads are currently disabled; they fall back to null so the UI
     // hides them. See the git history for the previous prerelease parsing.
     return {
-      Linux: urlFor('.AppImage', true),
+      Linux: urlFor('x86_64.AppImage', true),
+      LinuxArm: urlFor('arm64.AppImage', true),
       LinuxBeta: null,
+      LinuxArmBeta: null,
       Windows: urlFor('Setup-x64'),
       WindowsArm: urlFor('Setup-arm64'),
       WindowsBeta: null,
@@ -62,6 +66,7 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
     console.error({ error })
     return {
       Linux: defaultUrl,
+      LinuxArm: defaultUrl,
       Windows: defaultUrl,
       WindowsArm: defaultUrl,
       Mac: defaultUrl,
