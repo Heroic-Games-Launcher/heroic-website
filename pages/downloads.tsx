@@ -80,54 +80,25 @@ const Downloads: NextPage = () => {
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
-                <h2>
-                  {t('downloads.linux.appimage.title')} (x86_64)
-                </h2>
+                <h2>{t('downloads.linux.appimage.title')}</h2>
                 <p>{t('downloads.linux.appimage.description')}</p>
-                <footer className="downloadLink">
-                  <a href={releases.Linux}>
+                <footer className="downloadLink" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: '10px' }}>
+                  <a href={releases.Linux} style={{ flex: 1 }}>
                     <strong onClick={notify}>
-                      {t('downloads.linux.appimage.stable')}
+                      x86_64
                     </strong>
-
                     <span className="smallText">
                       {` (${releases.Linux.split('/')[7] ?? ''})`}
                     </span>
                   </a>
-                  {releases.LinuxBeta && (
-                    <a href={releases.LinuxBeta}>
-                      <strong onClick={notify}>
-                        {t('downloads.linux.appimage.beta')}
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.LinuxBeta.split('/')[7] ?? ''})`}
-                      </span>
-                    </a>
-                  )}
-                </footer>
-              </article>
-              <article className={styles.downloadBoxes}>
-                <h2>{t('downloads.linux.appimage.title')} (ARM64)</h2>
-                <p>{t('downloads.linux.appimage.description')}</p>
-                <footer className="downloadLink">
-                  <a href={releases.LinuxArm}>
+                  <a href={releases.LinuxArm} style={{ flex: 1 }}>
                     <strong onClick={notify}>
-                      {t('downloads.linux.appimage.stable')}
+                      ARM64
                     </strong>
                     <span className="smallText">
                       {` (${releases.LinuxArm.split('/')[7] ?? ''})`}
                     </span>
                   </a>
-                  {releases.LinuxArmBeta && (
-                    <a href={releases.LinuxArmBeta}>
-                      <strong onClick={notify}>
-                        {t('downloads.linux.appimage.beta')}
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.LinuxArmBeta.split('/')[7] ?? ''})`}
-                      </span>
-                    </a>
-                  )}
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
