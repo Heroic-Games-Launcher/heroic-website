@@ -4,6 +4,7 @@ import { getLatestReleases, ReleaseUrls } from '../lib/github'
 import styles from '../styles/Home.module.css'
 import Seo from '../components/Seo'
 import DownloadNudge, { useDownloadNudge } from '../components/DownloadNudge'
+import VersionDropdown, { VersionOption } from '../components/VersionDropdown'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinux, faWindows, faApple } from '@fortawesome/free-brands-svg-icons'
@@ -37,11 +38,29 @@ const Downloads: NextPage = () => {
   const isMac = userAgent.toLowerCase().includes('mac')
   const isLinux = !isWindows && !isMac
 
+  // Download URLs look like https://github.com/.../releases/download/<tag>/<file>,
+  // so the tag is the 8th path segment.
+  const versionOf = (url?: string | null) => url?.split('/')[7] ?? ''
+
+  // Stable is always the default action; beta joins the menu only when the
+  // latest prerelease actually ships an asset for this platform.
+  const channels = (
+    stableLabel: string,
+    stableUrl: string,
+    betaLabel: string,
+    betaUrl?: string | null
+  ): VersionOption[] => [
+    { label: stableLabel, version: versionOf(stableUrl), href: stableUrl },
+    ...(betaUrl
+      ? [{ label: betaLabel, version: versionOf(betaUrl), href: betaUrl }]
+      : [])
+  ]
+
   return (
     <>
       <Seo
         title="Download Heroic Games Launcher — Linux, Windows & macOS"
-        description="Download Heroic Games Launcher for Linux, Windows and macOS. Available as Flatpak, AppImage, Windows installer (x64 and ARM64), and macOS app for Apple Silicon and Intel."
+        description="Download Heroic Games Launcher for Linux, Windows and macOS. Available as Flatpak, AppImage, Windows installer (x64 and ARM64), and macOS app for Apple Silicon and Intel, in stable and beta builds."
       />
       <header className="hero" style={{ width: '100%' }}>
         <div className="container">
@@ -82,23 +101,35 @@ const Downloads: NextPage = () => {
               <article className={styles.downloadBoxes}>
                 <h2>{t('downloads.linux.appimage.title')}</h2>
                 <p>{t('downloads.linux.appimage.description')}</p>
-                <footer className="downloadLink" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: '10px' }}>
-                  <a href={releases.Linux} style={{ flex: 1 }}>
-                    <strong onClick={notify}>
-                      x86_64
-                    </strong>
-                    <span className="smallText">
-                      {` (${releases.Linux.split('/')[7] ?? ''})`}
-                    </span>
-                  </a>
-                  <a href={releases.LinuxArm} style={{ flex: 1 }}>
-                    <strong onClick={notify}>
-                      ARM64
-                    </strong>
-                    <span className="smallText">
-                      {` (${releases.LinuxArm.split('/')[7] ?? ''})`}
-                    </span>
-                  </a>
+                <footer>
+                  <div className={styles.appImageGrid}>
+                    <div className={styles.archColumn}>
+                      <span className={styles.archLabel}>x86_64</span>
+                      <VersionDropdown
+                        label={t('home.download')}
+                        options={channels(
+                          t('downloads.linux.appimage.stable'),
+                          releases.Linux,
+                          t('downloads.linux.appimage.beta'),
+                          releases.LinuxBeta
+                        )}
+                        onSelect={notify}
+                      />
+                    </div>
+                    <div className={styles.archColumn}>
+                      <span className={styles.archLabel}>ARM64</span>
+                      <VersionDropdown
+                        label={t('home.download')}
+                        options={channels(
+                          t('downloads.linux.appimage.stable'),
+                          releases.LinuxArm,
+                          t('downloads.linux.appimage.beta'),
+                          releases.LinuxArmBeta
+                        )}
+                        onSelect={notify}
+                      />
+                    </div>
+                  </div>
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
@@ -133,49 +164,33 @@ const Downloads: NextPage = () => {
                   </span>
                 </h2>
                 <p>{t('downloads.windows.setup.description')}</p>
-                <footer className="downloadLink">
-                  <a href={releases.Windows}>
-                    <strong onClick={notify}>
-                      {t('downloads.windows.setup.stable')}
-                    </strong>
-                    <span className="smallText">
-                      {` (${releases.Windows.split('/')[7] ?? ''})`}
-                    </span>
-                  </a>
-                  {releases.WindowsBeta && (
-                    <a href={releases.WindowsBeta}>
-                      <strong onClick={notify}>
-                        {t('downloads.windows.setup.beta')}
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.WindowsBeta.split('/')[7] ?? ''})`}
-                      </span>
-                    </a>
-                  )}
+                <footer>
+                  <VersionDropdown
+                    label={t('home.download')}
+                    options={channels(
+                      t('downloads.windows.setup.stable'),
+                      releases.Windows,
+                      t('downloads.windows.setup.beta'),
+                      releases.WindowsBeta
+                    )}
+                    onSelect={notify}
+                  />
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
                 <h2>{t('downloads.windows.setup.title')} (ARM64)</h2>
                 <p>{t('downloads.windows.setupArm.description')}</p>
-                <footer className="downloadLink">
-                  <a href={releases.WindowsArm}>
-                    <strong onClick={notify}>
-                      {t('downloads.windows.setup.stable')}
-                    </strong>
-                    <span className="smallText">
-                      {` (${releases.WindowsArm.split('/')[7] ?? ''})`}
-                    </span>
-                  </a>
-                  {releases.WindowsArmBeta && (
-                    <a href={releases.WindowsArmBeta}>
-                      <strong onClick={notify}>
-                        {t('downloads.windows.setup.beta')}
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.WindowsArmBeta.split('/')[7] ?? ''})`}
-                      </span>
-                    </a>
-                  )}
+                <footer>
+                  <VersionDropdown
+                    label={t('home.download')}
+                    options={channels(
+                      t('downloads.windows.setup.stable'),
+                      releases.WindowsArm,
+                      t('downloads.windows.setup.beta'),
+                      releases.WindowsArmBeta
+                    )}
+                    onSelect={notify}
+                  />
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
@@ -205,48 +220,32 @@ const Downloads: NextPage = () => {
                 <h2>{t('downloads.macos.appleChips.title')}</h2>
                 <p>{t('downloads.macos.appleChips.description')}</p>
                 <footer>
-                  <a href={releases.MacArm}>
-                    <strong onClick={notify}>
-                      {t('downloads.macos.appleChips.stable')}
-                    </strong>
-                    <span className="smallText">
-                      {` (${releases.MacArm.split('/')[7]})`}
-                    </span>
-                  </a>
-                  {releases.MacArmBeta && (
-                    <a href={releases.MacArmBeta}>
-                      <strong onClick={notify}>
-                        {t('downloads.macos.appleChips.beta')}
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.MacArmBeta.split('/')[7] ?? ''})`}
-                      </span>
-                    </a>
-                  )}
+                  <VersionDropdown
+                    label={t('home.download')}
+                    options={channels(
+                      t('downloads.macos.appleChips.stable'),
+                      releases.MacArm,
+                      t('downloads.macos.appleChips.beta'),
+                      releases.MacArmBeta
+                    )}
+                    onSelect={notify}
+                  />
                 </footer>
               </article>
               <article className={styles.downloadBoxes}>
                 <h2>{t('downloads.macos.intelChips.title')}</h2>
                 <p>{t('downloads.macos.intelChips.description')}</p>
                 <footer>
-                  <a href={releases.Mac}>
-                    <strong onClick={notify}>
-                      {t('downloads.macos.intelChips.stable')}
-                    </strong>
-                    <span className="smallText">
-                      {` (${releases.Mac.split('/')[7]})`}
-                    </span>
-                  </a>
-                  {releases.MacBeta && (
-                    <a href={releases.MacBeta}>
-                      <strong onClick={notify}>
-                        {t('downloads.macos.intelChips.beta')}
-                      </strong>
-                      <span className="smallText">
-                        {` (${releases.MacBeta.split('/')[7] ?? ''})`}
-                      </span>
-                    </a>
-                  )}
+                  <VersionDropdown
+                    label={t('home.download')}
+                    options={channels(
+                      t('downloads.macos.intelChips.stable'),
+                      releases.Mac,
+                      t('downloads.macos.intelChips.beta'),
+                      releases.MacBeta
+                    )}
+                    onSelect={notify}
+                  />
                 </footer>
               </article>
             </div>

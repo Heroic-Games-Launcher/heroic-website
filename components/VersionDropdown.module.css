@@ -1,0 +1,111 @@
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+/* Same look as the plain download buttons on the cards. Shared by the trigger
+   and by the single-option fallback link. */
+.primaryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary, #1a5a8f);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  line-height: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primaryButton:hover,
+.primaryButton:focus-visible {
+  filter: brightness(1.08);
+}
+
+.primaryButton:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.single {
+  display: block;
+}
+
+.single .smallText {
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+.chevron {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.open .chevron {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 30;
+  min-width: 100%;
+  margin: 4px 0 0;
+  padding: 6px;
+  list-style: none;
+  border: var(--border-width, 1px) solid var(--muted-border-color, #d0d3e0);
+  border-radius: 8px;
+  background: var(--card-background-color, #fff);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* Transparent bridge over the gap, so moving the pointer from the button to
+   the menu on hover does not leave the component and close it. */
+.menu::before {
+  position: absolute;
+  top: -6px;
+  right: 0;
+  left: 0;
+  height: 6px;
+  content: '';
+}
+
+.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color, inherit);
+  font-weight: 400;
+  text-decoration: none;
+  text-align: left;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+  background: var(--dropdown-hover-background-color, rgba(26, 90, 143, 0.1));
+  filter: none;
+}
+
+.version {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.75;
+}

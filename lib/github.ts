@@ -38,29 +38,43 @@ export const getLatestReleases = async (): Promise<ReleaseUrls> => {
   try {
     const data = await fetch(githubApi)
     const releases: Release[] = await data.json()
-    const assetsStable = releases.filter((rel) => rel.prerelease === false)[0]
-      .assets
 
-    const urlFor = (match: string, endsWith = false) =>
-      assetsStable.filter((a) =>
-        endsWith ? a.name.endsWith(match) : a.name.includes(match)
-      )[0]?.browser_download_url || defaultUrl
+    // The API returns releases newest-first by creation date, but a beta created
+    // before a stable one can be published later, so sort explicitly.
+    const latestOf = (prerelease: boolean) =>
+      releases
+        .filter((rel) => rel.prerelease === prerelease)
+        .sort(
+          (a, b) =>
+            new Date(b.published_at).getTime() -
+            new Date(a.published_at).getTime()
+        )[0]
 
-    // Beta downloads are currently disabled; they fall back to null so the UI
-    // hides them. See the git history for the previous prerelease parsing.
+    const stable = latestOf(false)
+    const beta = latestOf(true)
+
+    const urlFor = (
+      release: Release | undefined,
+      match: string,
+      endsWith = false
+    ) =>
+      release?.assets.find((asset) =>
+        endsWith ? asset.name.endsWith(match) : asset.name.includes(match)
+      )?.browser_download_url || null
+
     return {
-      Linux: urlFor('x86_64.AppImage', true),
-      LinuxArm: urlFor('arm64.AppImage', true),
-      LinuxBeta: null,
-      LinuxArmBeta: null,
-      Windows: urlFor('Setup-x64'),
-      WindowsArm: urlFor('Setup-arm64'),
-      WindowsBeta: null,
-      WindowsArmBeta: null,
-      Mac: urlFor('macOS-x64'),
-      MacArm: urlFor('macOS-arm64'),
-      MacBeta: null,
-      MacArmBeta: null
+      Linux: urlFor(stable, 'x86_64.AppImage', true) || defaultUrl,
+      LinuxArm: urlFor(stable, 'arm64.AppImage', true) || defaultUrl,
+      LinuxBeta: urlFor(beta, 'x86_64.AppImage', true),
+      LinuxArmBeta: urlFor(beta, 'arm64.AppImage', true),
+      Windows: urlFor(stable, 'Setup-x64.exe') || defaultUrl,
+      WindowsArm: urlFor(stable, 'Setup-arm64.exe') || defaultUrl,
+      WindowsBeta: urlFor(beta, 'Setup-x64.exe'),
+      WindowsArmBeta: urlFor(beta, 'Setup-arm64.exe'),
+      Mac: urlFor(stable, 'macOS-x64.dmg') || defaultUrl,
+      MacArm: urlFor(stable, 'macOS-arm64.dmg') || defaultUrl,
+      MacBeta: urlFor(beta, 'macOS-x64.dmg'),
+      MacArmBeta: urlFor(beta, 'macOS-arm64.dmg')
     }
   } catch (error) {
     console.error({ error })

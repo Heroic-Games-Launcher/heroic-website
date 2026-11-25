@@ -95,7 +95,8 @@
   margin-top: 0;
   border: 1px solid var(--muted-border-color, #d0d3e0);
   border-radius: 12px;
-  overflow: hidden;
+  /* The version menu hangs below the button, so it must not be clipped. */
+  overflow: visible;
 }
 
 .downloadBoxes > p {
@@ -144,7 +145,7 @@
   background: transparent;
 }
 
-.downloadBoxes footer a {
+.downloadBoxes footer > a {
   display: block;
   padding: 10px 14px;
   border-radius: 8px;
@@ -154,13 +155,34 @@
   text-decoration: none;
 }
 
-.downloadBoxes footer a:hover {
+.downloadBoxes footer > a:hover {
   filter: brightness(1.08);
 }
 
-.downloadBoxes footer a .smallText {
+.downloadBoxes footer > a .smallText {
   opacity: 0.85;
   font-weight: 400;
+}
+
+/* AppImage needs two architectures, each with stable and beta builds */
+.appImageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.archColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.archLabel {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--muted-color, #5b6178);
 }
 
 .features {
